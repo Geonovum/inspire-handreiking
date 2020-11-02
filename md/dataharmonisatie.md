@@ -106,3 +106,99 @@ In onderstaande figuur zijn de 3 scenario’s bezien in het licht van de INSPIRE
 
 ## Prioritaire datasets (e-reporting)
 Sinds 2016 geeft de Europese Commissie prioriteit aan datasets die relevant zijn in het kader van de verplichte Europese rapporteringen m.b.t. het milieu, de zogenoemde “Priority list of datasets for e-Reporting”. Dit is een dynamische lijst. Naast de ontsluiting en het opmaken van metadata, hebben deze datasets ook wat betreft de dataharmonisatie prioriteit in harmonisatie. Uiteraard is dit binnen het INSPIRE-tijdschema voor de desbetreffende annex en voor as-is versus nieuwe datasets. Meer info is te vinden op de website van [JRC](https://ies-svn.jrc.ec.europa.eu/projects/2016-5/wiki).
+
+## Generic Conceptual Model
+Om data consistent te kunnen uitwisselen beschrijft INSPIRE voor elk thema een datamodel van de gegevens die uitgewisseld moeten worden. Daarnaast beschrijft het ook een bestandsformaat waarin de gegevens moeten worden uitgewisseld. Algemene specificaties (die voor alle thema's hetzelfde zijn) worden beschreven in het [Generic Conceptual Model](https://inspire.ec.europa.eu/documents/Data_Specifications/D2.5_v3.4rc3.pdf) (GCM). Een dataspecificatie moet dus altijd gelezen worden in de context van het generieke model.
+
+### Hoofdstukken GCM
+- In **hoofdstuk 8 t/m 14** wordt het feitelijke INSPIRE-datamodel beschreven.
+- **Hoofdstukken 15 t/m 17** beschrijven de datatransformatie, de beschrijving van de data en services en de te gebruiken registers.
+- **Hoofdstuk 18** beschrijft de randvoorwaarden voor de metadata.
+- **Hoofdstuk 19** beschrijft de onderhoudsprocedures.
+- **Hoofdstukken 20 t/m 25** beschrijven de zaken die te maken met de datakwaliteit, dataconsistentie en datarepresentatie.
+- **Hoofdstuk 26** beschrijft de conformiteitseisen.
+- **Annex A** beschrijft een generieke abstracte testsuite die kan helpen om te testen of de uiteindelijke geleverde data conform de specificatie is.
+- **Annex B t/m G** zijn informatieve annexen die het volgende beschrijven:
+	- **Annex B**: Consistentie tussen data;
+	- **Annex C**: Voorvoegsels voor klassenamen;
+	- **Annex D**: Objectverwijzingen;
+	- **Annex E**: Voorbeelden van life-cycle-informatie;
+	- **Annex F**: Voorbeeld van een extensie;
+	- **Annex G**: Codelijstprincipes.
+
+### Overzicht dataspecificaties
+Op [deze locatie](https://inspire.ec.europa.eu/Themes/Data%20Specifications/2892) zijn de data specificaties per thema te vinden. Globaal bevatten de dataspecificaties per thema een overzicht van de technische richtlijnen om een INSPIRE-dataset te maken. Op [deze locatie](https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeTheme.action) kun je interactief door de data specificaties bladeren.
+
+Hieronder volgt een opsomming van thema-specifieke dataspecificaties per annex.
+
+**Annex I data specifications**
+- D2.8.I.1 Data Specification on Coordinate Reference Systems – Technical Guidelines
+- D2.8.I.2 Data Specification on Geographical Grid Systems – Technical Guidelines
+- D2.8.I.3 Data Specification on Geographical Names – Technical Guidelines
+- D2.8.I.4 Data Specification on Administrative Units – Technical Guidelines
+- D2.8.I.5 Data Specification on Addresses – Technical Guidelines
+- D2.8.I.6 Data Specification on Cadastral Parcels – Technical Guidelines
+- D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines
+- D2.8.I.8 Data Specification on Hydrography – Technical Guidelines
+- D2.8.I.9 Data Specifications on Protected Sites - Technical Guidelines
+
+**Annex II data specifications**
+- D2.8.II.1 Data Specification on Elevation – Technical Guidelines
+- D2.8.II.2 Data Specification on Land Cover – Technical Guidelines
+- D2.8.II.3 Data Specification on Orthoimagery – Technical Guidelines
+- D2.8.II.4 Data Specification on Geology – Technical Guidelines
+
+**Annex III data specifications**
+- D2.8.III.1 Data Specification on Statistical Units – Technical Guidelines
+- D2.8.III.2 Data Specification on Buildings – Technical Guidelines
+- D2.8.III.3 Data Specification on Soil – Technical Guidelines
+- D2.8.III.4 Data Specification on Land Use – Technical Guidelines
+- D2.8.III.5 Data Specification on Human Health and Safety – Technical Guidelines
+- D2.8.III.6 Data Specification on Utility and Government Services – Technical Guidelines
+- D2.8.II/III.7 Data Specification on Environmental Monitoring Facilities – Technical Guidelines
+- D2.8.III.8 Data Specification on Production and Industrial Facilities – Technical Guidelines
+- D2.8.III.9 Data Specification on Agricultural and Aquaculture Facilities – Technical Guidelines
+- D2.8.III.10 Data Specification on Population Distribution – Technical Guidelines
+- D2.8.III.11 Data Specification on Area Management/Restriction/Regulation Zones and Reporting Units – Technical Guidelines
+- D2.8.III.12 Data Specification on Natural Risk Zones – Technical Guidelines
+- D2.8.III.13-14 Data Specification on Atmospheric Conditions and Meteorological Geographical Features – Technical Guidelines
+- D2.8.III.15 Data Specification on Oceanographic geographical features – Technical Guidelines
+- D2.8.III.16 Data Specification on Sea Regions – Technical Guidelines
+- D2.8.III.17 Data Specification on Bio-geographical Regions – Technical Guidelines
+- D2.8.III.18 Data Specification on Habitats and Biotopes – Technical Guidelines
+- D2.8.III.19 Data Specification on Species Distribution – Technical Guidelines
+- D2.8.III.20 Data Specification on Energy Resources – Technical Guidelines
+- D2.8.III.21 Data Specification on Mineral Resources – Technical Guidelines
+
+## INSPIRE-ID
+Volgens de richtlijnen van INSPIRE moet elk object (feature) voorzien worden van een unieke identificatie: het InspireId. Zo kunnen derden ondubbelzinnig aan het object kunnen refereren. Dataproviders dienen dus – buiten eventuele eigen ID’s die de organisatie gebruikt – de ruimtelijke objecten van een unieke INSPIRE identificatie te voorzien. Belangrijk hierbij is, dat de identifier **uniek** en **persistent** moet zijn. Persistent betekent dat de identifier gedurende de levensduur van het object ongewijzigd moet blijven. Een InspireId bestaat uit de volgende onderdelen:
+- Namespace (verplicht)
+- LocalId (verplicht)
+- VersionId (optioneel)
+
+### Namespaces
+Een namespace heeft als belangrijkste doel dat het de ruimte definieert waar binnen de localId uniek is. Om te voorkomen dat verschillende dataproviders dezelfde namespace gebruiken, en om consistentie te verkrijgen, is er in Nederland (en Europa) een zogenaamd Namespaceregister opgezet. Namespaces in Nederland moeten worden geregistreerd in het [nationale namespaceregister](http://inspirelab.geonovum.nl/namespaces/), zie ook [deze paragraaf](#namespaceregister).
+
+### LocalId
+De LocalId is de unieke identifier voor een object (binnen een namespace). De dataprovider is verantwoordelijk voor het uitdelen van unieke identifiers (de localId). In hoofdstuk 14 ('Identifier management') van het Generic Conceptual Model wordt algemene uitleg gegeven over het gebruik van unieke identifiers. Per thema kunnen er nog specifieke uitbreidingen staan in **paragraaf 5.2.1.4** van de dataspecificatie.
+
+#### Uniform Resource Identifiers
+Uniform Resource Identifiers (URI's) zijn de gestandaardiseerde manier om op het internet dingen (pagina's met informatie, objecten, datasets) uniek te identificeren. Dit kan door middel van een Uniform Resource Name (URN) of met een Uniform Resource Locator (URL). Bij een URN krijgt een ding een unieke naam toebedeeld. Bij een URL krijgt een ding een adres waarmee het op internet kan worden gevonden (de ons welbekende website-adressen). Door URI's te gebruiken, kun je op een unieke manier naar een ding verwijzen en ze daardoor uniek onderscheiden. Het advies met de huidige stand van zaken is om stabiele HTTP URI’s te gebruiken voor geo-objecten en datasets. Binnen INSPIRE en NEN3610 is afgesproken om elk object op basis van de bestaande interne identifier een URI te geven, waarmee binnen de INSPIRE en NEN3610 context het object uniek te identificeren én op te vragen is. [Lees hier ook de aanzet tot een nationale URI-strategie](http://www.pilod.nl/wiki/Boek/URI-strategie).
+
+### VersionId
+Een InspireId kan ook een (optioneel) versionId hebben. Dit versienummer kan gebruikt worden als er van hetzelfde object op verschillende tijdstippen verschillende versies in omloop zijn die van elkaar onderscheiden moeten worden.
+
+## Codelijsten
+INSPIRE-data wordt mede aan de hand van codelijsten en opsommingen (*enumerations*) geharmoniseerd. Beide worden gebruik om een lijstje toegestane waarden voor een attribuut te bepalen. In het geval van een enumeration zijn de toegestane waarden bekend vanaf het moment dat het model gemaakt is; de waarden maken deel uit van het model. Meestal gaat het om kleine lijstjes waar geen discussie over mogelijk is. Bij codelijsten zijn de toegestane waarden nog niet (allemaal) bekend op het moment dat het model gemaakt wordt; de toegestane waarden worden op een andere manier bepaald. Er zijn een verschillende regimes waarmee de waarden van een codelijst beheerd kunnen worden. Een uitgebreide beschrijving hiervaan staat in paragraaf 9.5.2.2 (*The code list classifiers*) van het Generic Conceptual Model. Codelijsten voor specifieke thema's staan in Annex C van de betreffende dataspecificatie.
+
+### Uitbreidbaarheid van codelijsten
+Iedere INSPIRE-codelijst valt onder een van de volgende uitbreidingsregimes:
+- **none**: deze codelijsten zijn niet uitbreidbaar. Alleen waarden zoals beschreven in de Implementing Rule kunnen worden gebruikt.
+- **narrower**: bij deze codelijsten mogen de data providers zelf nieuwe waarden toevoegen, zolang de nieuwe waarden maar meer specifiek zijn dan de waarden die in de IR worden gegeven.
+- **open**: een dataprovider mag waarden uit de centrale codelist gebruiken, maar mag zelf ook eigen waarden bedenken.
+- **any**: in dit geval zijn geen waarden bekend in de centrale codelijst en moet de data provider zijn eigen codelijst publiceren.
+
+### Codelijstregister
+Er is een centraal codelijstregister waarin de waarden van de door de EU beheerde codelijsten gepubliceerd worden. Bij een codelijst is altijd een verwijzing opgenomen naar dit [*codelist register*](http://inspire.ec.europa.eu/codelist/). Wanneer een dataprovider zijn eigen uitbreiding op een codelist definieert, moeten deze in een lokaal codelist register beheerd worden.
+
+### Portrayal
