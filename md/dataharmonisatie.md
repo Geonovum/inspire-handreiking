@@ -201,4 +201,58 @@ Iedere INSPIRE-codelijst valt onder een van de volgende uitbreidingsregimes:
 ### Codelijstregister
 Er is een centraal codelijstregister waarin de waarden van de door de EU beheerde codelijsten gepubliceerd worden. Bij een codelijst is altijd een verwijzing opgenomen naar dit [*codelist register*](http://inspire.ec.europa.eu/codelist/). Wanneer een dataprovider zijn eigen uitbreiding op een codelist definieert, moeten deze in een lokaal codelist register beheerd worden.
 
-### Portrayal
+## Portrayal
+Het *portrayal*-hoofdstuk van een dataspecificatie (hoofdstuk 11) betreft voornamelijk de grafische weergave van de data in een viewservice. Aangezien een aantal zaken in de view services thema-afhankelijk zijn, worden ze in de data-specificatie toegelicht en niet in de Guideline / Guidance van de view service zelf.
+
+De layer definition bestaat uit de volgende onderdelen:
+
+- **Layer types**: De INSPIRE *view services* kennen een specifieke, thema-afhankelijke opbouw. Soms wordt een thema in één layer getoond, maar dat is niet altijd het geval. De paragraaf layer types geeft de definitie van de layeropbouw voor de viewservice van het betreffende thema. In deze paragraaf wordt hetvolgende van de viewservice bepaald:
+	- Layer name
+	- Layer title
+	- Spatial Object Type
+	- Keywords
+- **Layer Styles**: presentatie van de view layers. Kleuren, lijndikte, symbolen, presentatie-regels m.b.t. tot bepaalde groepen objecten, etc. De dataspecificaties van INSPIRE leveren voor default styles ook met SLD-code. Dat geldt ook voor de Other styles, maar deze worden niet bij elk thema geimplementeerd.
+- **Layer organisation**: layer aggregation binnen een thema.
+- **Symbols**: voor Annex I alleen voor het thema hydrografie van toepassing.
+
+De INSPIRE-richtlijn zelf dicteert niets over de presentatie van de ruimtelijke data. Om toch consistentie in de datasets te brengen en ze over de verschillende lidstaten ‘leesbaar’ te houden in de viewservice, worden er basale regels in de dataspecificaties gegeven. De portrayal-richtlijnen gaan uit van een enkel thema tegelijk; het gaat dus niet om het maken van ‘mooie kaarten’ maar om het leesbaar houden van de data.
+
+De standaarden voor de presentatie van data:
+- [standaard] - [namespace prefix]
+- OGC Styled-Layer Descriptor - sld="http://www.opengis.net/sld" (WMS/SLD 1.1)
+- OGC Symbology Standards - se="http://www.opengis.net/se" (SE 1.1)
+- OGC Filter Encoding Standards - ogc="http://www.opengis.net/ogc" (FE 1.1)
+
+Overzicht portrayal per thema:
+
+| Thema 					| Layer type 	| Default styles 	| Layer organisation| Other | Symbol| 
+|------------				|-------------	|-------------		|------------		|-------|-------|
+| **Addresses**  			| 1   			| 1					| -					| -		| -		|
+| **Protected sites**  		| 10  			| 1					| ja				| -		| -		|
+| **Administrative units**  | 4   			| 4					| -					| -		| -		|
+| **Cadastral parcels**  	| 3  			| 3					| -					| 3		| -		|
+| **Hydrography**  			| 13  			| 13				| -					| 3		| ja	|
+| **Transport networks** 	| 21 			| 21				| -					| -		| -		|
+| **Geographical names**  	| 1			 	| -					| -					| -		| -		|
+
+Indien de dataspecificatie geen default style aanbiedt, definieert het Generic Conceptual Model de style:
+- Punt: grey square, 6 px;
+- Lijn/Arc: zwarte solid lijn, 1 px;
+- Vlak: zwarte solid lijn, 1px, grijs gevuld.
+
+### Data capture
+Met *data capture rules* worden INSPIRE-afspraken/regels omtrent de toepassingsschaal bedoeld. Voor sommige datasets is het nodig om resoluties te specificeren, met  gevolgen voor het detailniveau van de digitale kaart. Een dataset van een schaal van 1:1000.000 kent andere details dan dezelfde dataset met een schaal van 1:10.000. De capturing rules worden per thema gedefinieerd. Sommige thema’s hebben geen specifieke regels, terwijl anderen zeer specifiek zijn. Voor de specifieke afspraken wordt naar de data specificatie van het betreffende verwezen (hoofdstuk 10).
+
+Overzicht data capturing rules per thema:
+
+| Thema 					| Data capturing rules 		|
+|------------				|-------------				|
+| **Addresses**  			| Geen specifieke regels 	|
+| **Protected sites**  		| Afhankelijk van lidstaat	|
+| **Administrative units**  | Geen specifieke regels 	|
+| **Cadastral parcels**  	| Specifiek 				|
+| **Geo. grid systems**  	| Geen specifieke regels 	|
+| **Hydrography**  			| Specifiek 				|
+| **Transport networks** 	| Specifiek 				|
+| **CRS**  					| Geen specifieke regels 	|
+| **Geographical names**  	| Update cycle 				|
