@@ -256,3 +256,55 @@ Overzicht data capturing rules per thema:
 | **Transport networks** 	| Specifiek 				|
 | **CRS**  					| Geen specifieke regels 	|
 | **Geographical names**  	| Update cycle 				|
+
+## Geometrie
+In het Generic Conceptual Model en de dataspecificaties wordt aangegeven welke geometrietypen zijn toegestaan. In de meeste dataspecificaties wordt verwezen naar de *simple feature* specificatie van OGC, waarin exact beschreven staat hoe een valide geometrie eruit moet zien. In een aantal dataspecificaties worden ook geometrieën beschreven die buiten de simple features vallen (zoals 3D-objecten).
+
+Geometrische objecten moeten voldoen aan de regels zoals deze door het OGC worden gesteld. De [Europese INSPIRE-validatieservice](https://inspire.ec.europa.eu/validator/L) kan helpen bij het detecteren van invalide geometrieën. Via deze validatiedienst kan, vergelijkbaar met de metadata-validatiediensten, een dataset van een dataprovider getest worden op haar ‘INSPIRE-conformiteit’. Deze validatie test niet alleen de geometrie, maar ook het applicatieschema.
+
+Wanneer je alleen de geometrie wilt valideren, zijn er verschillende opties die conform de OGC-regels testen: zowel open-source (bv. JavaTopologySuite (JTS)) als closed-source tools zijn hiervoor geschikt.
+
+Naast de geometrische benadering van 'valide objecten' zijn er ook specifieke regels voor bepaalde thema's.
+
+### Aansluitende netwerken
+Binnen de thema's **hydrografie** en **transportnetwerken** zijn er aanvullende eisen gedefinieerd over het op elkaar aansluiten van hydrografie- en transportnetwerken (voorbeeld: wegen op waterwegen op spoor). Hiervoor is een mechanisme uitgewerkt waarin aangegeven moet worden welke knooppunten op elkaar horen aan te sluiten. Hiermee is het mogelijk de verschillende netwerken te koppelen zonder dat deze fysiek al op elkaar liggen. Dit moet op datasetniveau worden opgepakt.
+
+De onderliggende documentatie hiervoor staat in de dataspecificaties voor [transportnetwerken](https://inspire.ec.europa.eu/id/document/tg/tn) en [hydrografie](https://inspire.ec.europa.eu/id/document/tg/hy).
+
+### Cross-boundary harmonisatie
+Bij het gebruik van geodata over lands-, regio- en administratieve grenzen heen kunnen verschillende typen fouten optreden, o.a. door
+- Het hanteren van verschillende classificaties aan beide kanten van de grens;
+- Het gebruik van een verschillend Level of Detail (LoD) bij dezelfde thematiek;
+- Verschillende interpretatie van de grens;
+- Overlappende objecten en geometrische verschuivingen.
+
+Het onderstaande figuur geeft dit grafisch weer.
+
+![grensproblemen](media/grensproblemen.png "Gebruik van geodata over grenzen heen kan leiden tot verschillende soorten fouten")
+
+Het verbeteren van grensoverstijgende onregelmatigheden kan alleen op basis van wederzijdse afstemming en goedkeuring plaatsvinden. INSPIRE geeft op verschillende plaatsen aan welke zogenaamde *edge matching*-technieken er gebruikt kunnen worden om met deze situaties om te gaan.
+- Annex B van D2.6 **Methodology for the development of data specifications** kent een uitvoerige uitleg over verschillende situaties en welke oplossingen INSPIRE adviseert.
+- De dataspecificaties van **Hydrography** (paragraaf 10.2.7) kennen ook specifieke aandacht voor grensoverschrijdende dataharmonisatiesituaties. De dataspecificaties van de andere thema's kennen geen specifieke aandacht voor dit onderwerp. Dat wil overigens niet zeggen dat de problematiek van cross-boundary harmonisation daar niet zal voorkomen. Ook het thema Transport Networks zal wel degelijk met edge-matching te maken kunnen krijgen.
+
+## Datavalidatie
+Validatie is een mechanisme om te controleren of een bepaalde dataset aan de specificaties voldoet en is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Het valideren van de dataset helpt bij het ontwikkelen van INSPIRE-conforme data. INSPIRE-validators zijn bedoeld als hulpmiddelen om fouten in de toepassing van standaarden te verminderen. Er zijn verschillende validatietools beschikbaar om (verschillende onderdelen van) een INSPIRE-dataset te valideren.
+
+*Validatietools zijn nooit feilloos. Er kunnen bugs in zitten en de tools kunnen achterlopen op de ontwikkeling van Technical Guidelines. Ook kunnen twee tools (bijvoorbeeld die van Geonovum en de Europese validator) op hetzelfde onderdeel testen en toch een andere uitkomst geven. Dat kan bijvoorbeeld komen doordat bij de ontwikkeling van validatietools bepaalde afwegingen gemaakt worden, bijvoorbeeld hoe er getest wordt. Het is het belangrijk te realiseren dat validatietools voornamelijk technisch valideren (bijvoorbeeld, er is een identifier). Of iets fout is ingevuld (bijvoorbeeld, de identifier verwijst niet naar de juiste dataset) kan niet altijd ondervangen worden. Daarnaast zijn niet alle vereisten door middel van geautomatiseerde processen te testen. Vanzelfsprekend doen wij ons best om de tooling zo snel mogelijk in lijn te krijgen met de laatste inzichten rond het implementeren van de Inspire regelgeving en zo veel mogelijk vereisten geautomatiseerd te testen. Toch raden we u aan om ook zelf kritisch naar uw gepubliceerde data en services te kijken, bijvoorbeeld door te controleren of deze goed vindbaar en te bekijken en te downloaden zijn in de [Thematic Viewer](https://inspire-geoportal.ec.europa.eu/tv_home.html).*
+
+### Europese INSPIRE-validator
+Op 25 juli 2017 is de Europese INSPIRE-validator gelanceerd. Daarmee is er nu voor alle lidstaten één tool waarmee je kunt testen in hoeverre je voldoet aan de INSPIRE-vereisten. De Europese validator is ontwikkeld voor INSPIRE-datasets in Annex I. Dat wil zeggen: alle INSPIRE-GML-data kan gevalideerd worden, maar alleen voor Annex I-data wordt ook tegen het applicatieschema gevalideerd. Er wordt gewerkt aan Annex II/III-validators voor de desbetreffende applicatieschema's. De voortgang hierin is in [dit GitHub-issue](https://github.com/inspire-eu-validation/community/issues/336) te vinden.
+
+Nederland heeft via de INSPIRE Maintenance and Implementation Group een actieve bijdrage geleverd aan de ontwikkeling van deze validator. De lancering van deze Europese validator vermindert de kans op interpretatieverschillen door lidstaten van de technische richtlijnen. De validator wordt nu op Europees niveau onderhouden en doorontwikkeld.
+
+Met de Europese validator, kunnen testen worden uitgevoerd voor de volgende onderdelen:
+- INSPIRE-themaspecifieke vereisten
+- Generieke vereisten voor INSPIRE-datasets
+- Applicatieschema
+- GML
+
+De Europese INSPIRE-validator is [hier te vinden](https://inspire.ec.europa.eu/validator/).
+
+### Nederlandse INSPIRE-validator
+Voordat de Europese validator beschikbaar was kon Nederlandse INSPIRE-data gevalideerd worden via de [Nederlandse INSPIRE-validator](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE). Vanaf 1 september 2020 is het advies echter om voor het controleren van de toepassing van de INSPIRE-standaard alleen nog de Europese validator te gebruiken. Op die datum is in Nederland overgestapt op metadataprofiel 2.1.0. In de Nederlandse validatietools hiervoor worden de INSPIRE-regels niet meer geüpdatet.
+
+## Checklist dataharmonisatie
