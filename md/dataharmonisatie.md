@@ -308,3 +308,27 @@ De Europese INSPIRE-validator is [hier te vinden](https://inspire.ec.europa.eu/v
 Voordat de Europese validator beschikbaar was kon Nederlandse INSPIRE-data gevalideerd worden via de [Nederlandse INSPIRE-validator](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE). Vanaf 1 september 2020 is het advies echter om voor het controleren van de toepassing van de INSPIRE-standaard alleen nog de Europese validator te gebruiken. Op die datum is in Nederland overgestapt op metadataprofiel 2.1.0. In de Nederlandse validatietools hiervoor worden de INSPIRE-regels niet meer geüpdatet.
 
 ## Checklist dataharmonisatie
+Bij dataharmonisatie is het van belang op de volgende punten te letten:
+
+1. Registreer de namespaces via het [namespaceregister](http://inspirelab.geonovum.nl/namespaces/).
+2. Valideer de datasets tussentijds met de INSPIRE-validator, zodat vroegtijdig eventuele fouten opgelost kunnen worden. Informatie over datasetvalidatie is [hier](#datavalidatie) op deze pagina te vinden.
+3. Werk de datasetmetadata van de betreffende dataset bij en voer de conformiteit op in de metadata. Voor geharmoniseerde data zijn er drie extra metadata-elementen die ingevuld dienen te worden; zie de [invulinstructies voor de metadata](#invulinstructie-voor-datasets). [Valideer daarna de datasetmetadata](#metadatavalidatie).
+4. Zorg dat de view service, die de geharmoniseerde dataset ontsluit, voldoet aan de eisen die INSPIRE stelt voor geharmoniseerde data. Zie in de betreffende dataspecificatie het hoofdstuk Portrayal. Daar staan eisen in voor laagnamen en visualisatie. Let ook op de eisen voor geharmoniseerde data om te valideren (die zitten in de optionele tests omdat die nog niet verplicht zijn voor alle Annexen van INSPIRE). [Hier kan meer informatie over servicevalidatie gevonden worden](#valideren-services).
+5. Zorg dat de download service, die de geharmoniseerde dataset ontsluit, voldoet aan de eisen die INSPIRE stelt voor geharmoniseerde data. Bijvoorbeeld, voor een WFS: controleer of de WFS de featureTypes aanbiedt zoals die in de INSPIRE-GML-schemas van de dataspecificaties staan.
+6. Controleer of de servicemetadata nog klopt. Bijvoorbeeld als er een ander service-endpoint is (voor de download service en/of view service), moet de servicemetadata bijgewerkt worden. Informatie over servicemetadata-validatie is [hier te vinden](#valideren-metadata-services).
+7. Contoleer in het NGR of de categorie `inspire` voor de datasetmetadata en de servicemetadata is geactiveerd, anders verschijnt de metadata niet in de INSPIRE Discovery Service.
+8. Voer de verwijzing naar de metadata (de UUID) van de geharmoniseerde dataset op in [het INSPIRE aanmerkingsregister](https://inspireaanmerking.nl/), zodat bekend is voor welke aangemerkte dataset daadwerkelijk data gepubliceerd is conform de eisen van INSPIRE.
+9. Check in de [Thematic Viewer](https://inspire-geoportal.ec.europa.eu/tv_home.html) of de data daadwerkelijk te bekijken en te downloaden is en onder het correcte thema te vinden is.
+
+## Extensies
+De INSPIRE-dataspecificaties zijn zo ontworpen dat ze eenvoudig [uitbreidbaar](https://inspire.ec.europa.eu/portfolio/inspire-extensions) zijn. Dit uitbreiden van modellen en specificiaties wordt 'extending' genoemd en de uitbreidingen zijn 'extensions'.
+
+In opdracht van (en in samenwerking met) Geonovum heeft het bedrijf WeTransform onderzoek verricht naar INSPIRE-extenses. De resultaten hiervan zijn op [een website](http://inspire-extensions.wetransform.to/) verzameld waarop veel informatie te vinden is over het uitbreiden van INSPIRE-dataspecificiaties.
+
+Op deze site vindt u onder meer:
+
+- De resultaten van een onderzoek naar bestaande INSPIRE-extensies en een [overzicht van bestaande extensies](http://inspire-extensions.wetransform.to/models/index.html).
+- Een overzicht van [*extension patterns*](http://inspire-extensions.wetransform.to/patterns/index.html), waarin bepaalde ontwikkelpatronen beschreven worden.
+- Een [tutorial](http://inspire-extensions.wetransform.to/tutorial/tutorial.html) waarin stapsgewijs wordt beschreven hoe een extension ontwikkeld kan worden.
+
+Er is tevens een [nuttige pagina op het INSPIRE community forum over het uitbreiden van codelijsten](https://inspire.ec.europa.eu/forum/pages/view/162571/how-to-extend-inspire-code-lists).
