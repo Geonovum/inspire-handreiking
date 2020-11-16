@@ -323,7 +323,7 @@ Bij dataharmonisatie is het van belang op de volgende punten te letten:
 ## Extensies
 De INSPIRE-dataspecificaties zijn zo ontworpen dat ze eenvoudig [uitbreidbaar](https://inspire.ec.europa.eu/portfolio/inspire-extensions) zijn. Dit uitbreiden van modellen en specificiaties wordt 'extending' genoemd en de uitbreidingen zijn 'extensions'.
 
-In opdracht van (en in samenwerking met) Geonovum heeft het bedrijf WeTransform onderzoek verricht naar INSPIRE-extenses. De resultaten hiervan zijn op [een website](http://inspire-extensions.wetransform.to/) verzameld waarop veel informatie te vinden is over het uitbreiden van INSPIRE-dataspecificiaties.
+In opdracht van (en in samenwerking met) Geonovum heeft het bedrijf WeTransform onderzoek verricht naar INSPIRE-extensies. De resultaten hiervan zijn op [een website](http://inspire-extensions.wetransform.to/) verzameld waarop veel informatie te vinden is over het uitbreiden van INSPIRE-dataspecificiaties.
 
 Op deze site vindt u onder meer:
 
@@ -332,3 +332,50 @@ Op deze site vindt u onder meer:
 - Een [tutorial](http://inspire-extensions.wetransform.to/tutorial/tutorial.html) waarin stapsgewijs wordt beschreven hoe een extension ontwikkeld kan worden.
 
 Er is tevens een [nuttige pagina op het INSPIRE community forum over het uitbreiden van codelijsten](https://inspire.ec.europa.eu/forum/pages/view/162571/how-to-extend-inspire-code-lists).
+
+## INSPIRE community forum
+Het [*INSPIRE community forum*](https://inspire.ec.europa.eu/forum/homepage) is het Europese samenwerkingsplatform dat INSPIRE-implementatieondersteuning biedt aan de lidstaten. Voorheen heette dit forum *Thematic Clusters*. Het is een online platform waarop ervaringen en best practices gedeeld worden, maar waar ook vragen en issues aangemeld kunnen worden. Het forum is opgedeeld in elf clusters, waarvan negen *thematic domains*.
+
+### Thematic domains
+Elk Thematic Cluster omvat meerdere INSPIRE thema's en wordt beheerd door een *facilitator*. Om deel te nemen aan discussies, dien je je eenmalig te registreren. Momenteel zijn de volgende thematic clusters actief:
+
+| Clusternaam 				| INSPIRE-thema's		|
+|------------				|-------------				|
+| [Statistics & Health](https://inspire.ec.europa.eu/forum/groups/profile/45/statistics-health) 			| Statistical Units, Population Distribution, Human Health and Safety 	|
+| [Marine and Atmosphere](https://inspire.ec.europa.eu/forum/groups/profile/213/marine-atmosphere)		| Oceanographic Geographical Features, Sea Regions, Atmospheric Conditions and Meteorological Geographical Features	|
+| [Earth Science](https://inspire.ec.europa.eu/forum/groups/profile/131/earth-science) 			| Geology, Soil, Natural Risk Zones, Mineral resources, Energy resources	|
+| [Land Cover and Use](https://inspire.ec.europa.eu/forum/groups/profile/205/land-cover-use)	| Land Use, Land Cover				|
+| [Elevation, Ortho & Grids](https://inspire.ec.europa.eu/forum/groups/profile/206/elevation-ortho-grids)	|Elevation, Orthoimagery, Coordinate Reference Systems, Geographical Grid 	|
+| [Environmental Monitoring & Observations](https://inspire.ec.europa.eu/forum/groups/profile/207/environmental-monitoring-observations)	| Environmental Monitoring Facilities, Observations and Measurements	|
+| [Biodiversity and Area Management](https://inspire.ec.europa.eu/forum/groups/profile/214/biodiversity-area-management)	| Protected Sites, Area Management/Restriction/Regulation Zones and Reporting Units, Habitats and Biotopes, Species Distribution, Bio-geographical Regions	|
+| [Facilities, Utilities and Public Services](https://inspire.ec.europa.eu/forum/groups/profile/208/facilities-utilities-public-services)			| Facilities, Utilities and Public Services|
+| [Topo & Cadastral, Reference Data](https://inspire.ec.europa.eu/forum/groups/profile/209/topo-cadastre-reference-data)	| Hydrography, Geographical Names, Administrative Units, Cadastral Parcels, Addresses, Buildings, Transport Networks	|
+
+### Cross-domain clusters
+Daarnaast zijn er op het community forum nog twee cross-domain clusters:
+- [INSPIRE & Environmental Policy](https://inspire.ec.europa.eu/forum/groups/profile/215871/inspire-environmental-policy)
+- [Software & Tools](https://inspire.ec.europa.eu/forum/groups/profile/215867/software-tools)
+
+## FAQ dataharmonisatie
+Hieronder worden een aantal veelgestelde vragen rondom dataharmonisatie behandeld.
+
+**Vraag: Als ik niet langer optreed als dataprovider voor een INSPIRE-thema, wat betekent dit dan voor mijn aanmerking?**
+
+In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. In het [processchema wijziging aanmerking dataproviders](https://www.geonovum.nl/uploads/documents/proces%20wijziging%20aanmerking%20data%20provider%20v3.0.pdf) staat welke stappen er doorlopen moeten worden om de aanmerking te wijzigen.
+
+![processtappenaanmerking](media/Processtappen_wijzigingsverzoek.png "De stappen die genomen moeten worden om een aanmerking te wijzigen.")
+
+**Vraag: Wat doe ik met mijn *as-is* datasets nadat ik mijn data geharmoniseerd heb naar INSPIRE-dataspecificaties?**
+
+In het licht van de INSPIRE-directive is het de bedoeling dat de aanwezige rijke “as-is” data beschikbaar wordt gesteld. Over het algemeen zijn de as-is data 'rijker' gevuld dan die geharmoniseerd zijn voor INSPIRE. Er zijn twee opties om deze data dan beschikbaar te stellen:
+- zowel de 'rijke' as-is datasets én de 'arme' INSPIRE-datasets worden aangeboden via de gestandaardiseerde INSPIRE-netwerkdiensten, of
+- de 'arme' INSPIRE-geharmoniseerde dataset wordt middels een extensie op het bestaande INSPIRE-schema verrijkt met alle data uit de as-is dataset en wordt aangeboden via de gestandaardiseerde INSPIRE-netwerkdiensten.
+
+Kort gezegd komt het erop neer dat wanneer de as-is dataset meer attributen heeft dan de INSPIRE-dataset, de as-is dataset nog steeds wordt aangeboden als view- en downloadservice met het vinkje 'INSPIRE' aangevinkt in het NGR. Het is dan weliswaar geen INSPIRE-geharmoniseerde dataset maar biedt nog wel steeds meerwaarde voor de INSPIRE-community.
+Meer info is te vinden in [het in december 2013 in de Klankbordgroep besproken stuk](https://wiki.geonovum.nl/images/Bijlage_4.1_Memo_INSPIRE_Datasets_%27as_is%27_4DEC2013_v2.pdf). Zie ook [deze paragraaf](#as-is-versus-geharmoniseerd).
+
+**Vraag: Waar kan ik terecht met vragen, opmerkingen en verbetervoorstellen over de dataspecificaties van mijn thema?**
+Meld je vragen, opmerkingen en verbetervoorstellen aan bij de verschillende [Thematic Cluster Groups](https://inspire.ec.europa.eu/forum/tcoverview). Op deze wijze wordt je vraag gedeeld met, en wellicht beantwoordt door, de INSPIRE-community voor dat themacluster. De thematische clusters zijn de plek waar verbetervoorstellen moeten worden ingediend, zodat deze leiden tot aanpassingen in de dataspecificaties.
+
+**Vraag: Hoe maak ik extensies?**
+Op de [extensions-website](http://inspire-extensions.wetransform.to/index.html) vindt u allerlei praktische tips en trucs voor het maken van extensies. Zie ook [deze paragraaf](#extensies).
