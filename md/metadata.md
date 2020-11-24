@@ -202,8 +202,110 @@ De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd m
 &lt;/gmd:descriptiveKeywords&gt;
 </pre>
 
+### Voorbeeldbestand prioritaire datasets
 [Hier is een voorbeeldbestand waarin beide scenario's zijn uitgewerkt](https://wiki.geonovum.nl/images/Voorbeeld_XML_prioritaire_dataset.xml).
 
 ## Voorbeeldbestand XML voor INSPIRE dataset-metadata
 
 Hier is een [voorbeeld-metadatabestand](https://wiki.geonovum.nl/images/Voorbeeld_Metadata_Dataset_2019.zip) te vinden voor een fictive dataset.
+
+## Metadata-validatie
+Validatie is een mechanisme om te controleren of een bepaalde metadatabeschrijving aan de specificaties voldoet. Het is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Er zijn verschillende validatietools beschikbaar om (verschillende onderdelen van) INSPIRE-metadata te valideren. Zie hiervoor [het hoofdstuk validatie](#validatie).
+
+## FAQ metadata
+**Vraag: Is mijn metadata conform INSPIRE als mijn metadata ISO 19115 volgt?**
+
+INSPIRE volgt bestaande internationale standaarden, maar metadata die volledig conform ISO 19115 is voldoet niet aan de INSPIRE Implementing Rule Metadata. Op een aantal elementen is INSPIRE strikter dan de ISO: het zijn delen waarin de wetgeving bepaalde metadata-informatie verplicht stelt.
+
+**Vraag: Welke validator moet gebruikt worden voor de INSPIRE-conformiteitstoetsen?**
+
+Voor de INSPIRE-conformiteittoetsen voor metadata kan men gebruik maken van de Europese [INSPIRE-validators](https://inspire.ec.europa.eu/validator/).
+
+**Vraag: Waarom kan ik mijn metadata niet in het EU INSPIRE portaal terugvinden?**
+
+Alleen metadata met de aanduiding 'categorie INSPIRE' wordt doorgeleverd aan de EU voor INSPIRE. In het hoofstuk [Publiceren](#publiceren) is beschreven hoe dat uitgevoerd kan worden.
+
+**Vraag: Trefwoord uit GEMET INSPIRE thema. Is een trefwoord verplicht in het metadatadocument?**
+
+Voor datasets en dataset-series die onder INSPIRE vallen, dient men de thema’s waar de data onder valt op te nemen. Deze INSPIRE-thema’s zijn te vinden in de [thesaurus GEMET](http://www.eionet.europa.eu/gemet/inspire_themes). Voor INSPIRE moet tenminste één trefwoord uit deze thesaurus over worden genomen. Het is ook mogelijk daarnaast zelfgedefinieerde trefwoorden, of trefwoorden uit een andere thesaurus in te vullen.
+
+Een voorbeeld:
+<pre class="xml">
+&lt;gmd:descriptiveKeywords&gt;
+   &lt;gmd:MD_Keywords&gt;
+      &lt;gmd:keyword&gt;
+          &lt;gco:CharacterString&gt;infoMapAccessService&lt;/gco:CharacterString&gt;
+     &lt;/gmd:keyword&gt;
+   &lt;/gmd:MD_Keywords&gt;
+&lt;/gmd:descriptiveKeywords&gt;
+
+&lt;gmd:descriptiveKeywords&gt;
+   &lt;gmd:MD_Keywords&gt;
+       &lt;gmd:keyword&gt;
+          &lt;gco:CharacterString&gt;Beschermde gebieden&lt;/gco:CharacterString&gt;
+       &lt;/gmd:keyword&gt;
+       &lt;gmd:thesaurusName&gt;
+           &lt;gmd:CI_Citation&gt;
+                &lt;gmd:title&gt;
+                     &lt;gco:CharacterString&gt;GEMET - INSPIRE themes, version 1.0&lt;/gco:CharacterString&gt;
+                &lt;/gmd:title&gt;
+       .......
+   &lt;/gmd:MD_Keywords&gt;
+&lt;/gmd:descriptiveKeywords&gt;
+</pre>
+
+**Vraag: Is thesaurus titel, datum en datum type verplicht (thesaurusName element)?**
+
+Nee, het thesaurusName element is een conditioneel element. Het is verplicht als er een trefwoord wordt opgenomen afkomstig uit een thesaurus. Het bevat dan de naam van de thesaurus waar het trefwoord uit afkomstig is.
+
+Een voorbeeld:
+
+<pre class="xml">
+&lt;gmd:thesaurusName&gt;
+   &lt;gmd:CI_Citation&gt;
+      &lt;gmd:title&gt;
+        &lt;gco:CharacterString&gt;GEMET - INSPIRE themes, version 1.0&lt;/gco:CharacterString&gt;
+      &lt;/gmd:title&gt;
+      &lt;gmd:date&gt;
+         &lt;gmd:CI_Date&gt;
+             &lt;gmd:date&gt;
+                  &lt;gco:Date&gt;2008-06-01&lt;/gco:Date&gt;
+             &lt;/gmd:date&gt;
+             &lt;gmd:dateType&gt;
+                 &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&gt;publication&lt;/gmd:CI_DateTypeCode&gt;
+             &lt;/gmd:dateType&gt;
+         &lt;/gmd:CI_Date&gt;
+      &lt;/gmd:date&gt;
+   &lt;/gmd:CI_Citation&gt;
+&lt;/gmd:thesaurusName&gt;
+</pre>
+
+**Vraag: Is het mogelijk ook zelf gedefinieerde trefwoorden in te vullen?**
+
+Het is ook mogelijk zelfgedefinieerde trefwoorden, of trefwoorden uit een andere thesaurus in te vullen. Als de trefwoorden uit een thesaurus komen, dient thesaurus, datum en datum type gemeld te worden.
+
+Een voorbeeld:
+
+<pre class="xml">
+&lt;gmd:descriptiveKeywords&gt;
+    &lt;gmd:MD_Keywords&gt;
+      &lt;gmd:keyword&gt;
+         &lt;gco:CharacterString&gt;Ruimtegebruik&lt;/gco:CharacterString&gt;
+      &lt;/gmd:keyword&gt;
+      &lt;gmd:keyword&gt;
+         &lt;gco:CharacterString&gt;Planologie&lt;/gco:CharacterString&gt;
+      &lt;/gmd:keyword&gt;
+   &lt;/gmd:MD_Keywords&gt;
+</pre>
+
+**Vraag: Is de metadata-taal een verplicht element?**
+
+Ja, het metadata-taalelement is verplicht. In dit element wordt vastgelegd in welke taal de metadata is beschreven. Gebruik hiervoor alleen de drie-letter codes van 639-2/B (bibliographic codes), zoals gedefinieerd op http://www.loc.gov/standards/iso639-2/. Voor Nederlands is de code dut.
+
+Een voorbeeld:
+
+<pre class="xml">
+&lt;gmd:language&gt;
+   &lt;gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut"&gt;Nederlands&lt;/gmd:LanguageCode&gt;
+&lt;/gmd:language>
+</pre>

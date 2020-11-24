@@ -375,7 +375,9 @@ Kort gezegd komt het erop neer dat wanneer de as-is dataset meer attributen heef
 Meer info is te vinden in [het in december 2013 in de Klankbordgroep besproken stuk](https://wiki.geonovum.nl/images/Bijlage_4.1_Memo_INSPIRE_Datasets_%27as_is%27_4DEC2013_v2.pdf). Zie ook [deze paragraaf](#as-is-versus-geharmoniseerd).
 
 **Vraag: Waar kan ik terecht met vragen, opmerkingen en verbetervoorstellen over de dataspecificaties van mijn thema?**
+
 Meld je vragen, opmerkingen en verbetervoorstellen aan bij de verschillende [Thematic Cluster Groups](https://inspire.ec.europa.eu/forum/tcoverview). Op deze wijze wordt je vraag gedeeld met, en wellicht beantwoordt door, de INSPIRE-community voor dat themacluster. De thematische clusters zijn de plek waar verbetervoorstellen moeten worden ingediend, zodat deze leiden tot aanpassingen in de dataspecificaties.
 
 **Vraag: Hoe maak ik extensies?**
+
 Op de [extensions-website](http://inspire-extensions.wetransform.to/index.html) vindt u allerlei praktische tips en trucs voor het maken van extensies. Zie ook [deze paragraaf](#extensies).
