@@ -1,7 +1,7 @@
 # Inrichten organisatie
 
 ## Dataproviders
-In Nederland is het Ministerie van Infrastructuur en Milieu (IenM) verantwoordelijk voor de invoering van INSPIRE. Indien een (overheids-)partij beschikt over een dataset die past binnen een INSPIRE-thema of -*feature type*, is deze partij verplicht deze gegevens conform the INSPIRE-richtlijn te ontsluiten. Het ministerie kiest er daarom voor om deze partijen (*dataproviders*) hierop te attenderen door middel van een [aanmerking](#aanmerking). Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt, heeft het Ministerie van Infrastructuur en Milieu het [INSPIRE-aanmerkingsregister](#aanmerkingsregister) ontwikkeld. Dit register houdt de voortgang van het harmonisatieproces bij. Een organisatie in een Europese lidstaat die ruimtelijke gegevens levert voor één of meerdere INSPIRE-thema's of -feature types heet in dit verband een **dataprovider**.
+In Nederland is het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties (BZK) verantwoordelijk voor de invoering van INSPIRE. Indien een (overheids-)partij beschikt over een dataset die past binnen een INSPIRE-thema of -*feature type*, is deze partij verplicht deze gegevens conform the INSPIRE-richtlijn te ontsluiten. Het ministerie kiest er daarom voor om deze partijen (*dataproviders*) hierop te attenderen door middel van een [aanmerking](#aanmerking). Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt, heeft BZK het [INSPIRE-aanmerkingsregister](#aanmerkingsregister) ontwikkeld. Dit register houdt de voortgang van het harmonisatieproces bij. Een organisatie in een Europese lidstaat die ruimtelijke gegevens levert voor één of meerdere INSPIRE-thema's of -feature types heet in dit verband een **dataprovider**.
 
 ### Rollen
 Daarnaast is het voor een dataprovider belangrijk om na te gaan welke rollen er binnen de organisatie zijn te onderscheiden. Deze rollen komen bij elke processtap terug. Het gaat daarbij met name om rollen binnen het geo-ICT-vakgebied. Vaak hebben meerdere mensen in verschillende hoedanigheden met een dataset te maken. Ook komt het vaak voor dat verschillende rollen bij één persoon belegd zijn (verschillende hoedanigheden). Welke hoedanigheden dat precies zijn en hoe deze zijn ingedeeld binnen een organisatie zal verschillen per organisatie. Om een indruk te geven van de verschillende rollen in het stappenproces, valt te denken aan:
@@ -44,7 +44,7 @@ Het exacte werkproces zal per organisatie en per dataset verschillen. Toch zijn 
 De INSPIRE richtlijn biedt ruimte voor de lidstaten om met haar eigen wettelijk kader aan de richtlijn te gaan voldoen. In de Nederlandse implementatie wet is geregeld dat:
 
 - INSPIRE is voor een gemeente of een waterschap uitsluitend van toepassing op gegevens die worden verzameld dan wel verspreid op grond van een bij of krachtens een wet gegeven regel.
-- Indien een verzameling ruimtelijke gegevens die door of namens een bestuursorgaan wordt bewaard, onderdeel is van een verzameling ruimtelijke gegevens die is opgenomen in een door de minister van VROM aangewezen voorziening, is deze wet uitsluitend van toepassing op laatstgenoemde verzameling.
+- Indien een verzameling ruimtelijke gegevens die door of namens een bestuursorgaan wordt bewaard, onderdeel is van een verzameling ruimtelijke gegevens die is opgenomen in een door de minister van BZK aangewezen voorziening, is deze wet uitsluitend van toepassing op laatstgenoemde verzameling.
 
 NL streeft naar een pragmatische invoering van INSPIRE. Uitgangspunten hierbij zijn:
 
@@ -53,7 +53,7 @@ NL streeft naar een pragmatische invoering van INSPIRE. Uitgangspunten hierbij z
 - Bepaalde informatie is niet expliciet in bestaande datasets aanwezig, maar wel impliciet (af te leiden). In het kader van INSPIRE wordt informatie als ‘aanwezig’ beschouwd, als het vereiste gegeven geautomatiseerd uit beschikbare datasets kan worden afgeleid. Als menselijke tussenkomst (interpretatie of aanvulling) nodig is, wordt de informatie als ‘niet-aanwezig’ beschouwd (en daarmee niet te leveren)
 
 ## Aanmerking
-Voor het beschikbaar stellen van INSPIRE-gegevens, merkt het Ministerie van Infrastructuur en Milieu de betrokken INSPIRE dataproviders aan. De aanmerking van INSPIRE dataproviders heeft te maken met de manier waarop Nederland INSPIRE invoert. Nederland stelt alleen de meest geëigende datasets als INSPIRE-data beschikbaar. Het voordeel van deze aanpak is, dat de kwaliteit van de INSPIRE datasets hoog is, terwijl de invoeringslasten, nationaal bezien, beperkt blijven. In goed overleg tussen Geonovum en de verschillende dataproviders is per thema bepaald welke partij(en) in Nederland voor welk (sub)thema’s uit Annex III de relevante geo-informatie conform de INSPIRE-voorschriften gaat leveren.
+Voor het beschikbaar stellen van INSPIRE-gegevens, merkt het Ministerie van BZK de betrokken INSPIRE dataproviders aan. De aanmerking van INSPIRE dataproviders heeft te maken met de manier waarop Nederland INSPIRE invoert. Nederland stelt alleen de meest geëigende datasets als INSPIRE-data beschikbaar. Het voordeel van deze aanpak is, dat de kwaliteit van de INSPIRE datasets hoog is, terwijl de invoeringslasten, nationaal bezien, beperkt blijven. In goed overleg tussen Geonovum en de verschillende dataproviders is per thema bepaald welke partij(en) in Nederland voor welk (sub)thema’s uit Annex III de relevante geo-informatie conform de INSPIRE-voorschriften gaat leveren.
 
 ### Aanmerkingsproces
 De aanmerking van de INSPIRE datasets heeft per annex plaats gevonden. Hieronder vindt u per Annex een korte toelichting op het aanmerkingsproces.
@@ -64,7 +64,7 @@ Voor datasets onder Annex I is in 2009 per INSPIRE feature type of attribuut é�
 In 2013 zijn de maritieme eenheden aan het thema Administratieve eenheden toegevoegd (en niet ondergebracht bij het Annex III thema Zeegebieden). De aanmerking voor deze eenheden zijn tijdens het aanmerkingsproces van Annex III meegenomen en hebben geleid tot een aanmerking van de Dienst der Hydrografie van het Ministerie van Defensie.
 
 **Dataproviders Annex II**
-Begin 2011 is voor Annex II in beeld gebracht welke organisaties voorlopig als dataprovider zijn aangemerkt. U vindt de resultaten van de inventarisatie voor Annex II in het [rapport Nederlandse INSPIRE-data Annex II](https://www.geonovum.nl/uploads/documents/rapportage_annexiiv1.1.pdf). In juni 2013 is door het Ministerie van IenM de voorlopige aanmerking, zoals beschreven in het rapport, omgezet in de definitieve aanmerking.
+Begin 2011 is voor Annex II in beeld gebracht welke organisaties voorlopig als dataprovider zijn aangemerkt. U vindt de resultaten van de inventarisatie voor Annex II in het [rapport Nederlandse INSPIRE-data Annex II](https://www.geonovum.nl/uploads/documents/rapportage_annexiiv1.1.pdf). In juni 2013 is door het Ministerie van BZK de voorlopige aanmerking, zoals beschreven in het rapport, omgezet in de definitieve aanmerking.
 
 **Dataproviders Annex III**
 In april 2012 is gestart met het aanmerkingsproces van de thema’s van Annex III. Dit heeft eind 2012 geleid tot een formele voorlopige aanmerking. Op dat moment stonden voor een aantal thema’s nog onderzoekspunten open. Daarnaast waren de dataspecificaties van de Europese Commissie, op basis waarvan de voorlopige aanmerking heeft plaatsgevonden, nog niet definitief. Geonovum heeft begin 2013 samen met de potentiële dataproviders de openstaande onderzoekspunten nader onderzocht en heeft de definitieve dataspecificaties, die in april 2013 beschikbaar zijn gekomen, nagelopen op wijzigingen ten opzichte van de versie eind 2012. Dit heeft geleid tot een wijziging in de aanmerking, resulterend in de definitieve aanmerking.
@@ -73,7 +73,7 @@ Het Ministerie van IenM heeft in juni 2013 de definitieve aanmerkingsbrieven ver
 
 
 ## Aanmerkingsregister
-Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt, heeft het Ministerie van Infrastructuur en Milieu het INSPIRE aanmerkingsregister ontwikkeld. Dit register is openbaar en online toegankelijk en is sinds 4 juli 2017 officieel online. Via [deze link](https://inspireaanmerking.nl/) kunt u het register raadplegen.
+Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt, heeft het Ministerie van BZK het INSPIRE aanmerkingsregister ontwikkeld. Dit register is openbaar en online toegankelijk en is sinds 4 juli 2017 officieel online. Via [deze link](https://inspireaanmerking.nl/) kunt u het register raadplegen.
 
 ### Doel
 Het doel van het INSPIRE aanmerkingsregister is meervoudig.
@@ -82,7 +82,7 @@ Het doel van het INSPIRE aanmerkingsregister is meervoudig.
 - Vanuit het aanmerkingsregister is er ook een directe link naar de publicatie van de metadata van betreffende dataset in het [Nationaal Georegister](https://www.nationaalgeoregister.nl/). De dataset is daar dan ook te raadplegen.
 
 ### Dataset aanmelden
-Indien er voor een INSPIRE-thema of feature type een dataset bestaat die nog niet voorkomt in het aanmerkingsregister, kan deze dataset worden aangemeld via het tabblad [aanmelden dataset](https://inspireaanmerking.nl/aanmelden-dataset). Nadat het Ministerie van Infrastructuur en Milieu de aanmelding heeft beoordeeld, wordt het besluit teruggemeld aan de aanmelder en, indien de dataset wordt aangemerkt, ook aan de dataprovider.
+Indien er voor een INSPIRE-thema of feature type een dataset bestaat die nog niet voorkomt in het aanmerkingsregister, kan deze dataset worden aangemeld via het tabblad [aanmelden dataset](https://inspireaanmerking.nl/aanmelden-dataset). Nadat het Ministerie van BZK de aanmelding heeft beoordeeld, wordt het besluit teruggemeld aan de aanmelder en, indien de dataset wordt aangemerkt, ook aan de dataprovider.
 
 ### Gesloten gedeelte
 Aanvullend biedt het register ook een gesloten omgeving voor betrokken partijen. Deze omgeving voorziet in extra functionaliteit om het aanmerkings- en implementatieproces te ondersteunen. Binnen deze omgeving kunnen dataproviders per dataset de gegevens bewerken of een wijzigingsverzoek indienen.
