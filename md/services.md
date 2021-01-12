@@ -819,8 +819,458 @@ Wanneer u een wijziging doorvoert in uw dataset of service, kan dit gevolgen heb
 
 ## Download service
 
+Een introductie
+
+### Downloadservice implementaties
+De [Technical Guidances](#technische-richtlijnen) en de [Commission Regulation amending Regulation (EC) No 976/2009 as regards download services and transformation service](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02009R0976-20101228) zijn de huidig geldige documenten die downloadservices en de eisen eraan beschrijven. De Commission Regulation is de wettekst die aangeeft welke downloadservices moeten en mogen worden aangeboden binnen INSPIRE. De Technical Guidance geeft richtlijnen hoe deze services conform de Implementing Rule moeten worden toegepast.
+
+Op 9 augustus 2013 is versie 3.1 van de Technical Guidance definitief gepubliceerd met de specificaties voor WFS- en ATOM-implementaties van een downloadservice. Op 16 december 2016 zijn specificaties gepubliceerd voor implementatie van een downloadservice via WCS (voor coverage-data) of via SOS (voor sensordata). Dit hoofdstuk geeft een korte toelichting per servicetype over de eisen.
+
+#### Pre-defined en direct access
+INSPIRE verlangt onder andere dat datasets te downloaden moeten zijn via een downloadservice. Indien relevant, moeten ook *delen* van datasets te downloaden zijn. Volgens de Implementing Rules bestaan er twee soorten downloadservices die mogen worden geïmplementeerd:
+
+**Pre-defined dataset download services**
+
+Dit is een volledige dataset of een deel van een volledige dataset, die als een enkele, vooraf gedefinieerde eenheid wordt aangeboden om te downloaden. Hierbij is het niet mogelijk om selecties te maken op basis van locatie of om inhoud te wijzigen, zoals bijvoorbeeld de codering of het coordinate reference system (CRS).
+
+**Direct Access download services**
+
+De direct access downloadservice kent een uitbreiding van de functionaliteit ten opzichte van de pre-defined dataset downloadservice. De direct access downloadservice geeft meer controle over de download door directe toegang te verlenen tot de inhoud van de dataset. Hierbij kan men denken aan het downloaden van selecties van de dataset door middel van een query. Zo'n query kan ruimtelijke criteria definiëren, maar kan ook een selectie doen op basis van bepaalde attributen van de ruimtelijke objecten in de dataset of waardes van een coverage.
+
+#### Methoden uit technical guidance
+Hieronder volgt voor verschillende soorten data een beknopte beschrijving van de Technical Guidances.
+
+##### Vectordata
+Versie 3.1 van de Technical Guidance voor Download Services onderscheidt drie methoden voor het implementeren van een Download Service voor vector data.
+
+1. **Atom-implementatie van een Pre-defined Dataset Download Service**
+
+Dit betreft een dataset die in zijn geheel (als één bestand) gedownload kan worden, zonder dat er een selectie van de dataset gemaakt wordt door de client. Met andere woorden: de data is van te voren klaargezet. Het bestand mag gecomprimeerd worden. Met *predefined part* van een dataset wordt bedoeld dat er met deze download een geografisch deel van een INSPIRE-thema geleverd kan worden. Het hoeft dus niet altijd een download van de dataset voor heel Nederland te zijn, maar het kan bijvoorbeeld ook een download per provincie of ander deelgebied zijn. De aanbieder bepaalt hoe de dataset opgedeeld wordt; de client kan geen eigen selecties / filters toepassen.
+
+Kenmerken zijn:
+- Meest simpele oplossing die toegang tot de data zelf oplevert.
+- De Atomfeed beschrijft waar de data te downloaden is, op welke datum die gepubliceerd is en legt relaties met metadata-records.
+- De pre-defined dataset kent een metadata-record dat via de discovery service gevonden kan worden.
+
+Een nadere toelichting op deze methode is [hier te vinden](#atom-feed).
+
+2. **Web Feature Service en Filter Encoding implementatie van een Pre-defined Dataset Download Service**
+
+Een dataset kan ook via Web Feature Services in zijn geheel gedownload worden. De gebruiker (client) kan via het WFS-protocol gegevens downloaden, maar kan nog niet uitgebreid filters / eigen selecties toepassen. Voor deze methode hoeft een Web Feature Service maar een beperkt deel van de volledige WFS-standaard te ondersteunen. Deze vorm is een opstap naar een volledige Direct Access implementatie met Web Feature Services.
+
+Kenmerken zijn:
+- Een Web Feature Service (WFS) op basis van ISO DIS 19142 Geographic Information – Web Feature Service, ook wel WFS 2.0.
+- Downloaden van gehele dataset of voorgedefinieerd deel ervan.
+- Beperkte query-mogelijkheid.
+- Requests via HTTP GET.
+
+Een nadere toelichting op deze methode is [hier te vinden](#wfs-pre-defined).
+
+![wfs](media/Wfs.png "Interactie tussen een client en een basic WFS.")
+
+3. **Web Feature Service en Filter Encoding implementatie van Direct Access Download Service**
+
+Met de direct access download is het mogelijk om meer controle over de download te krijgen, dan bij de pre-defined download het geval is. Zo kunnen er downloads samengesteld worden op basis van een ruimtelijke query, of op basis van een query naar attribuutinformatie.
+
+Kenmerken zijn:
+- Een Web Feature Service (WFS) op basis van ISO DIS 19142 Geographic Information – Web Feature Service, ook wel WFS 2.0.
+- De functionaliteit van een Pre-defined dataset Download Service via WFS (zie hierboven), uitgebreid met ondersteuning voor:
+	- "Ad Hoc Query" op basis van Filter encoding (ISO 19143, Filter encoding 2.0).
+	- Standaard, ruimtelijke en temporele filters.
+	- XPath.
+	- Enkele Stored Queries, bijvoorbeeld om datasets in een ander Coördinaat Referentie Stelsel (CRS) op te vragen.
+
+Een nadere toelichting op deze methode is [hier te vinden](#wfs-direct-access).
+
+##### Rasterdata
+Vanaf 16 december 2016 is er een [Technical Guidance](https://inspire.ec.europa.eu/id/document/tg/download-wcs) om coverage-data via Web Coverage Services te publiceren. Deze Technical Guidance neemt de OGC WCS 2.0 specificatie als basis voor een downloadservice. De INSPIRE-operaties worden gemapped op de WCS-operaties. Daarnaast worden aanvullende eisen gesteld, over onder andere:
+- de te gebruiken (metadata) elementen in het Capabilities-document;
+- ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities;
+- hoe Direct Access in te vullen via de processing extension van WCS;
+- Quality of Service voor de verschillende operaties.
+
+Een nadere toelichting op deze methode is [hier te vinden](#wcs).
+
+##### Sensordata
+Vanaf 16 december 2016 is er ook een [Technical Guidance](https://inspire.ec.europa.eu/id/document/tg/download-sos) om sensordata via Sensor Observation Services te publiceren. Deze Technical Guidance neemt de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding als basis voor een downloadservice. De INSPIR- operaties worden gemapped op de SOS-operaties en de Filter encoding-classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
+- de te gebruiken (metadata) elementen in het Capabilitiesdocument;
+- ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities;
+- gebruik van de GetObservationByID opeartie om Direct Access in te vullen;
+- Quality of Service voor de verschillende operaties.
+
+Een nadere toelichting op deze methode is [hier te vinden](#sos).
+
+### Atom feed
+De [Atom-standaard](https://tools.ietf.org/html/rfc4287) is een (voorgestelde) standaard van IETF, the [Internet Engineering Task Force](https://www.ietf.org/). Atom is een XML-formaat om (op internet beschikbare) informatie te publiceren in feeds. Deze feeds bevatten vaak een algemeen deel en verscheidene items. Zo'n item (entry) bestaat uit elementen die de informatie beschrijven en ernaar verwijzen. Items kunnen bijvoorbeeld nieuwsberichten zijn, weblog-posts of gepubliceerde video's.
+
+De [GeoRSS-specificatie](https://www.ogc.org/standards/georss) breidt feeds uit met elementen om de geografische eigenschappen van gegevens te publiceren. Dit is bijvoorbeeld een puntlocatie of bounding box van het gebied waar de gegevens betrekking op hebben.
+
+Deze pagina beschrijft de eisen van INSPIRE aan Atom feeds en geeft enkele voorbeelden.
+
+De Technical Guidance voor Download Services beschrijft hoe pre-defined datasets via Atom gepubliceerd kunnen worden, om te voldoen aan de Implementing Rule voor Download Services. Globaal komt het erop neer dat de downloadservice via enkele Atom-feeds wordt beschreven en de downloadlocaties aanbiedt van de bestanden om gehele datasets of delen daarvan te downloaden. Atom feeds van een Pre-defined dataset bevat daarvoor (onder andere):
+1. gegevens over de aanbieder van de downloadservice. Deze gegevens staan in de *Atom Service feed*;
+2. algemene gegevens over de downloadservice, zoals een id, locatie en de datum van laatste wijzigingen en copyrights en verwijzingen naar de Atom Dataset Feeds. Ook deze gegevens staan in de Atom Service feed.
+3. per dataset, of deel van een dataset: beschrijvende gegevens, zoals een titel, beknopte samenvatting, copyrights en andere rechten, het CRS, het geografisch gebied van de data en verwijzingen (URL) naar de data zelf. Deze gegevens staan in de *Atom Dataset feed(s)*;
+4. indien van toepassing: verwijzingen naar feeds in een andere taal (meertaligheid INSPIRE).
+5. verwijzingen naar [OpenSearch-functionaliteit](http://www.opensearch.org/Specifications/OpenSearch/1.1) om de feeds te kunnen doorzoeken. Deze gegevens staan in de Atom Service feed;
+
+De afbeelding hieronder geeft de samenhang van de feeds weer voor pre-defined datasets, die als (statisch) bestand te downloaden zijn van een standaard webserver.
+
+![atom](media/Atom_feeds_overview.png "Overview van atomfeeds.")
+
+Een Atom service feed kan naar meerdere Atom Dataset feeds verwijzen. Een Dataset feed kan vervolgens per combinatie van CRS, taal en formaat naar meerdere bestanden wijzen. Zie de afbeeldingen hieronder.
+
+![atom_structuur](media/Atom_feeds_structuur.png "Structuur van atomfeeds.")
+
+Enkele genoemde voor- en nadelen van Atom zijn:
+
+Voordelen:
+- eenvoudig te gebruiken met standaard web technologie: browsers en newsreaders om te openen, code / programmeerbibliotheken om te verwerken en maken;
+- te indexeren door zoekmachines (gebeurt bij ISO metadata meestal niet);
+- relatief eenvoudig XML-formaat.
+
+Nadelen:
+- niet standaard ondersteuning voor in geo-software;
+- zoals nu gebruikt in de TG: veel overlap met ISO-metadata;
+- zoals nu beschreven: mogelijkerwijs zijn veel feeds nodig om op te stellen.
+
+#### Elementen service feed
+
+De onderstaande tabel bevat een overzicht van de elementen van een Atom-feed, zoals de Technical Guidance die beschrijft en die van toepassing zijn op de gehele feed. Het betreft geen volledige opsomming van alle details, zie daarvoor de Technical Guidance zelf.
+
+| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
+| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
+| title | | Taal (xml:lang) | Ja | Een voor mensen leesbare titel van de feed als geheel, m.a.w. van de Download Service, inclusief opgave van de taal van dit element. |
+| subtitle | | Taal (xml:lang) | Nee | Een voor mensen leesbare subtitel, met extra toelichting over de feed als geheel, inclusief opgave van de taal van dit element. |
+| link | service metadata | Soort link (rel="describedby"), Type (type="application/xml") | Ja | Link naar de metadata record van deze download service in de discovery service. | 
+| link | zelf referentie | Soort link (rel="self"), Taal (hreflang="en"), Titel (title="Title of this document"), Type (type="application/atom+xml") | Ja | Verwijzing naar de URL van de feed zelf. Dit is een vereiste van Atom en is bijvoorbeeld handig als een feed lokaal wordt opgeslagen of gekopieerd, dan is de oorspronkelijke (online) locatie van de feed via deze link nog te achterhalen.
+| link | alternatieve talen | Soort link (rel="alternate"), Type (bijv. type="text/html"), Alternatieve taal (bijv. hreflang="de"), Titel (bijv. title="An HTML version of this document in German") | Verplicht als er meerdere talen van de Download Service zijn | Als een Download Service ook in andere talen beschikbaar is, dient deze link opgenomen te worden en te verwijzen naar de feed in de andere talen.
+| link | OpenSearch document | Soort link (rel="search"), Type (bijv. type="application/opensearchdescription+xml"), Taal (bijv. hreflang="en") | Verwijst naar een OpenSearch description van de Download Service. | |
+| link | alternatieve formaten | Soort link (rel="alternate"), Type (bijv. type="text/html"), Titel (bijv. title="An HTML version of this document") | Nee | Dit gaat om alternatieve formaten van de feed zelf, dus niet van de datasets. Bijvoorbeeld als er een website is over de Download Service. |
+| id | | | Ja | Dit is de identifier van de feed. De waarde dient een URI te zijn, aanbevolen is de URI van de feed te gebruiken. |
+| rights | | | Ja | Informatie over de rechten en restricties die gelden voor de feed. Vaak komt dit overeen met de waarde voor 'accessConstraints' in de overeenkomstige service metadata record. Individuele entries in de feed kunnen ook hun eigen rechten en restricties hebben. |
+| updated | | | Ja | Datum en tijd van de laatste wijzgingen van de feed. |
+| author | | Contactinformatie over de feed, Name en email | Ja | Het kan contactinformatie zijn van een individu of een organisatie die verantwoordelijke is voor de feed. Tenminste moet een naam en e-mailadres worden verstrekt. |
+
+#### Elementen entry service feed
+
+Voor elke Dataset feed, dient de Atom Service feed een entry-element te bevatten. Voor elk entry-element zijn de volgende subelementen beschikbaar:
+
+| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
+| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
+| INSPIRE dataset identifier | INSPIRE elementen | INSPIRE custom elementen, spatial_dataset_identifier_code, spatial_dataset_identifier_namespace | Ja | Verwijzingen naar de INSPIRE dataset identifier code en namespace. De XML elementen zijn door INSPIRE specifiek voor Download Services gedefinieerd. |
+| title | | Taal (xml:lang) | Ja | Een voor mensen leesbare titel van de entry, m.a.w. van de dataset (of deel daarvan), inclusief opgave van de taal van dit element |
+| link | Metadata | Soort link (rel="describedby" en type="application/xml") | Ja | Link naar het metadata record van de dataset |
+| link | Dataset feed | Soort link (rel="alternate" en type="application/atom+xml") | Ja | Link naar de Atom dataset feed horend bij de dataset van de entry. |
+| subtitle | | Taal (xml:lang) | Nee | Een voor mensen leesbare subtitel, met extra toelichting over de entry, inclusief opgave van de taal van dit element |
+| id | | | Ja | Dit is de identifier van de datasets. De waarde dient een URI te zijn, aanbevolen is de URL van de dataset te gebruiken, dus dezelfde URL als in het href-attribuut van de link van de dataset. |
+| rights | | | Nee | Informatie over de rechten en restricties die gelden voor de entry. Indien dit niet opgegeven is, geldt de informatie zoals opgegeven bij de rights van de gehele feed. |
+| updated | | | Ja | Datum en tijd van de laatste wijzgingen van de feed |
+| author | | Contactinformatie over de dataset, Name en email | Nee | Gegevens voor contact over de datasets. Naam en emailadres zijn, op basis van de INSPIRE Metadata IR, minimaal vereist. Indien dit niet opgegeven is, geldt de informatie zoals opgegeven bij de rights van de gehele feed. |
+| georss | | | Nee | Het gebied waar de dataset betrekking op heeft, uitgedrukt met bijvoorbeeld een boundingbox. De geometrie wordt opgegeven conform GeoRSS(-Simple). De coordinaten staan in latitude/longitude  conform WGS84. |
+| category | CRSen | Well-known definitie van het CRS (attribuut term) en eventueel het label voor de leesbare toelichting. | Ja | CRSen waarin de dataset feed de data aanbiedt. |
+
+#### Elementen dataset feed
+
+Dataset feeds bevatten de informatie om de bestanden daadwerkelijk te kunnen downloaden. Dataset feeds bevatten de onderstaande elementen.
+
+| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
+| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
+| title | | Taal (xml:lang) | Ja | Een voor mensen leesbare titel van de dataset feed, inclusief opgave van de taal van dit element |
+| subtitle | | Taal (xml:lang) | Nee | Een voor mensen leesbare subtitel, met extra toelichting over de dataset feed, inclusief opgave van de taal van dit element |
+| id | | | Ja | Dit is de identifier van de dataset feed. De waarde dient een URI te zijn, de URL van de dataset feed zelf. |
+| rights | | | Nee | Informatie over de rechten en restricties die gelden voor de dataset feed. |
+| updated | | | Ja | Datum en tijd van de laatste wijzgingen van de feed |
+| author | | Contactinformatie over de dataset feed, met naam en emailadres | Ja | Gegevens voor contact over de datasets. Naam en emailadres zijn, op basis van de INSPIRE Metadata IR, minimaal vereist. Indien dit niet opgegeven is, geldt de informatie zoals opgegeven bij de rights van de gehele feed. |
+| link | | Spatial Object description, via een link met rel="describedby" en type="text/html", vindt verwijzing naar een (INSPIRE) Registry en/of een ander registry plaats | Ja | Een of meerdere elementen die aangeven welke Spatial Object Types die in de dataset zitten. De waardes hiervan komen uit de INSPIRE Registry in geval de data aan een Data specifictie voldoet, zie https://inspire.ec.europa.eu/featureconcept voor waardes (spatial object types). |
+| link | Service feed | Soort link (rel="up"), Type link (type="application/atom+xml") | Nee | Link naar de Atom service feed ("omhoog" / terug verwijzing naar de service feed) |
+
+#### Elementen entry dataset feed
+
+Een dataset feed bevat tenminste een entry van een dataset om te downloaden. Elke entry in een Dataset feed beschrijft per combinatie van een formaat en CRS een te downloaden bestand. Per entry gelden de volgende regels.
+
+| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
+| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
+| link | Dataset | Soort link (rel="alternate"), Formaat / type (type), Groote in octetten  / bytes (length), Taal van het bestand  waarnaar verwezen is (hreflang), indien het een van de alternatieve talen betreft | Ja | Link naar de dataset of delen daarvan, bijvoorbeeld naar een GML document. Het type geeft het formaat aan, bijvoorbeeld "application/gml+xml;version=3.2" voor een ongecomprimeerd GML bestand. De dataset kan ook gecomprimeerd aangeboden worden of in een ander formaat. Dit is bijvoorbeeld bij rasterdata van Elevation te verwachten. *Voor datasets die in meerdere CRSen beschikbaar zijn, volgt nog een voorgestelde oplossing.* |
+| georss | | | Nee | Het gebied waar de dataset betrekking op heeft, uitgedrukt met bijvoorbeeld een boundingbox. De geometrie wordt opgegeven conform GeoRSS(-Simple). De coordinaten staan in latitude/longitude conform WGS84. |
+| category | CRSen | Well-known definitie van het CRS (attribuut term) en eventueel het label voor de leesbare toelichting. | Ja | CRSen waarin de dataset feed de data aanbiedt. |
+
+#### Meertaligheid
+
+Door gebruik te maken van de Atom-ondersteuning voor andere talen, wordt automatisch voldaan aan de eisen van INSPIRE voor meertaligheid van de service.
+
+#### OpenSearch
+
+Een INSPIRE-downloadservice met Atom-feeds dient een OpenSearch Description en zoekfunctionaliteit aan te bieden. Voor dergelijke OpenSearch-functionaliteit biedt het Nationaal GeoRegister nu een eenvoudige manier aan voor dataproviders die niet zelf de functionaliteit willen of kunnen bieden. Dataproviders hoeven hiermee (in de meeste gevallen) dus zelf geen implementatie van OpenSearch meer te doen, maar hoeven alleen hun Atom feeds en de metadata op orde te hebben. Hieronder volgt een gedetailleerde beschrijving hoe dit te implementeren.
+
+Om gebruik te maken van een OpenSearch Description, dienen de feeds en metadata aan de volgende voorwaarden te voldoen:
+1. **algemeen**: de Atom feeds dienen uiteraard, op de OpenSearch-vereisten na, aan alle INSPIRE-eisen te voldoen. Dus zorg voor de juiste links naar de dataset-feeds en de juiste metadata-verwijzingen en valide metadata. Het NGR kan anders wellicht geen OpenSearch Description genereren.
+2. **servicemetadata**: het protocol van de ResourceLocator moet in het XML-bestand op "INSPIRE Atom" staan. In het NGR is dit eenvoudig te kiezen in de metadata-editor. Kies dan uit de keuzelijst Protocol de optie "Atom Service Feed". Dit is de enige wijziging die nodig is in service-metadata.
+3. **datasetmetadata**: het protocol van de URL dient in het XML-bestand op "INSPIRE Atom" staan. In het NGR is dit eenvoudig te kiezen in de metadata-editor. Kies dan uit de keuzelijst Protocol de optie "Atom Service Feed". Dit moet voor alle dataset metadata waar de Atom feeds en de service naar verwijzen gedaan worden.
+4. **in de Atom service-feed**: de URL van de OpenSearchDescription moet toegevoegd worden aan de service-feed. Het NGR gaat de OpenSearch Description genereren (let op: zie opmerking hieronder) op basis van de metadata-identifier (fileIdentifier) van de metadata van de service. Het format van de URL van de OpenSearch Description die het NGR gaat genereren is:
+
+http://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/{metadataidentifier_service}/OpenSearchDescription.xml
+
+Bijvoorbeeld:
+
+http://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/ef2a7962-8bb4-483f-ac78-851b619f357f/OpenSearchDescription.xml
+
+De samenhang van de onderdelen van een ATOM Download Service is weergegeven in onderstaande afbeelding:
+
+![atom_componenten](media/atom_componenten.png "Componenten van de ATOM downloadservice.")
+
+##### Aandachtspunten
+
+- **Let op met identifiers van de bron van de dataset**. Het NGR doet de aanname dat de identifier van de bron van de dataset uniek is in NGR voor de dataset-metadata-records (oftewel: beschreven is in één dataset-metadata-record). Dit heeft te maken met de interne werking en controles om tot een geldige OpenSearchDescription te komen. Als er meerdere dataset-metadata-records voorkomen in NGR met dezelfde dataset-identifier, dan kan het zijn dat de OpenSearchDescription niet volledig opgebouwd wordt. Een dataprovider dient dan zelf zorg te dragen voor de OpenSearchDescription.
+- **Volgende dag beschikbaar**. Punten 1 t/m 3 hierboven zijn nodig voor NGR om een OpenSearch Description te kunnen genereren. Het NGR moet daarvoor de feeds en metadata ophalen en analyseren. Dit gebeurt dagelijks. Een OpenSearch Description is dus niet gelijk beschikbaar, maar doorgaans wel de volgende dag.
+- **Hoofdlettergebruik**. Het is essentieel voor de werking dat links en identifiers exact kloppen en dat codes exact overeenkomen met codes uit de codelijsten. Dit is inclusief het gebruik van hoofdletters. Let daar dus op, vooral bij handmatige wijzigingen in XML bestanden.
+
+
+### WFS pre-defined
+
+De Technical Guidance beschrijft in hoofdstuk 6 hoe een Download service voor Pre-defined datasets geïmplementeerd kan worden met een Web Feature Service en Filter Encoding.
+
+#### WFS 2.0
+
+De OGC standaard voor [Web Feature Service 2.0 (WFS 2.0)](https://www.ogc.org/standards/wfs) is in samenwerking met ISO opgesteld. Bij ISO heet deze standaard formeel ISO 19142. WFS 2.0 specificeert een webservice-interface om geografische gegevens te bevragen. Een WFS geeft standaard GML terug (3.2 voor WFS 2.0). Voor het bevragen maakt WFS gebruik van filters. Voorbeelden van filters zijn: gegevens selecteren op basis van een bepaald gebied en/of bepaalde attribuutwaarden. Deze filters dienen conform de [Filter Encoding 2.0 (FE 2.0)](https://www.ogc.org/standards/filter) gecodeerd te zijn. Deze standaard is ook in samenwerking met ISO opgesteld en heet daar ISO 19143.
+
+#### Conformance classes
+
+Om aan te geven welke delen van de WFS 2.0 en FE 2.0 standaard ondersteund zijn in een implementatie, zijn in de standaarden zogenaamde conformance classes gedefinieerd. Een conformance class groepeert een deel van de eisen uit de standaard. Als een implementatie claimt aan een bepaalde conformance class te voldoen, dan is voor een gebruiker duidelijk welke functionaliteit ondersteund wordt.
+
+Voorbeelden van conformance classes uit WFS 2.0 en FE 2.0 zijn:
+- HTTP GET: een WFS voldoet hiermee aan alle eisen die met HTTP GET te maken hebben, zoals de encoding van requests.
+- HTTP POST: een WFS voldoet hiermee aan alle eisen die met HTTP POST te maken hebben, zoals de encoding van requests in XML.
+- Minimum Spatial Filter: een WFS ondersteunt een set filters om ruimtelijke queries op te kunnen lossen.
+- Basic WFS: een WFS ondersteunt de basis functies van de WFS standaard. De WFS ondersteunt onder andere de requests GetCapabilities, DescribeFeatureType en GetFeature en enkele ruimtelijke filters.
+- Transactional WFS: een WFS biedt de functies die vereist zijn voor het bewerken van gegevens via WFS.
+
+Meestal zullen implementaties meerdere conformance classes ondersteunen.
+
+#### INSPIRE-eisen
+
+Het aanbieden van Pre-defined datasets via een Web Feature Service is een methode om aan de eisen uit de Implementing Rule te kunnen voldoen. Een dergelijke WFS is in staat om van datasets een applicatie schema te geven en via GetFeature in zijn geheel op te halen of individuele objecten via hun identifier.
+
+De Technical Guidance bevat de eisen die INSPIRE stelt aan een dergelijke WFS:
+- voldoen aan de conformance class Simple WFS uit WFS 2.0. Dit is o.a. inclusief de operaties GetCapabilities, DescribeFeatureType, ListStoredQueries, DescribeStoredQueries, GetFeature en de stored query GetFeatureById. De WFS geeft GML 3.2 terug.
+- voldoen aan de conformance class HTTP GET uit WFS 2.0: de WFS dient in ieder geval de HTTP GET vormen van de requests te ondersteunen.
+- voldoen aan de conformance class Query uit FE 2.0. De WFS is in staat een query uit te voeren (zoals de stored query GetFeatureById).
+- ondersteuning van Stored Queries om de pre-defined datasets om alle mogelijke combinaties van het CRS, een dataset (via de dataset ID) en de taal terug te geven. De WFS moet hiervoor Stored Queries aanbieden.
+
+##### Stored queries
+
+Stored Queries zijn een nieuw mechanisme in WFS 2.0. Hiermee worden een soort query-templates aangeboden, waarmee een client niet een geheel filter hoeft op te stellen, maar alleen enkele van te voren opgegeven parameters hoeft te specificeren. WFS-requests worden hier eenvoudiger van. Een service kan hiermee een soort FAQs aanbieden van WFS-requests, die voor een client makkelijk te gebruiken zijn. Bijvoorbeeld requests om op basis van een typering (categorie) een dataset te bevragen.
+
+##### Meertaligheid
+
+INSPIRE stelt via de Implementing Rules aan Netwerk Services, zoals View Services, Discovery Services en ook Download Services, eisen ten aanzien van ondersteuning van meerdere talen. WFS 2.0 biedt zelf geen mechanisme hiertoe. De Technical Guidance van Download Services stelt daarom de volgende aanvullende eisen aan een WFS-2.0-implementatie om meertaligheid te ondersteunen:
+1. voor het GetCapabilities request via HTTP GET dient de WFS een extra parameter te ondersteunen waarmee de client de taal van de Capabilities kan opvragen. De parameter naam is LANGUAGE, de waardes komen uit de ISO 839-2/B apha 3 lijst. Voorbeelden van waardes zijn: "dut" voor Nederlands, "eng" voor Engels.
+2. de Capabilities elementen Title en Abstract dienen in de gevraagde taal teruggegeven worden of in de standaard taal als de gevraagde taal niet ondersteund wordt.
+3. De Capabilities bevatten een lijst van ondersteunde talen in de Extended Capabilities. Dit mechanisme is hetzelfde als bij View Services.
+
+Handig om te weten is dat een WFS, als die maar één taal ondersteunt, de parameter LANGUAGE kan negeren als een client die verstuurt. Dit omdat een WFS de standaard taal mag teruggeven als de gevraagde taal niet ondersteund wordt. Dit betekent als een WFS maar één taal ondersteunt dat altijd die Capabilities teruggegeven hoeven te worden.
+
+De andere operaties hoeven geen extra zaken te ondersteunen voor meertaligheid, omdat:
+1. DescribeFeatureType een technische beschrijving teruggeeft, een schema, waarop een natuurlijke taal niet van toepassing is;
+2. de GetFeature operation geeft data terug, op den duur conform de INSPIRE-applicatieschema's. Deze schema's bevatten al een mechanisme om waardes in meerdere talen op te geven. De Technical Guidance stelt daarom dat het niet van toepassing is om hier een aparte parameter voor op te geven.
+
+Naast de eisen doet de Technical Guidance de volgende aanbevelingen, voor het geval een service provider meerdere talen wil aanbieden:
+1. Gebruik aparte URLs voor verschillende talen, dus voor requests op Engelstalige data een andere URL dan voor requests op Nederlandstalige data. Dit houdt het overzichtelijk.
+2. Geef foutmeldingen in de talen die de service aanbiedt.
+
+#### Aandachtspunten
+
+- Als er nog geen webservices draaien om een dataset aan te bieden en de dataset is niet erg dynamisch, dan is vaak een Atom feed het snelste en meest eenvoudige om te maken. Bij grote datasets kan het dataverkeer (over de netwerkverbinding) ook te veel gaan vragen en kan opsplitsen van het bestand nodig zijn. Dit vraagt om extra handelingen bij het inrichten. Is de dataset dynamischer van aard of is het niet gewenst om de data in verschillende CRSen op te slaan, dan kan een Download Service op basis van WFS (implementaties ondersteunen vaak on-the-fly herprojectie) handiger zijn. Webservices bieden ook voordelen voor gebruik van de data in andere processen.
+- In INSPIRE komt het voor dat vanuit data verwezen wordt naar andere datasets, bijvoorbeeld om gebruik te maken van de geometrie van een andere dataset als de dat zelf geen geometrie bevat. Dit gebeurt bijvoorbeeld bij Human Health en Statistical Units of bij Transport Networks. Als een organisatie data aanbiedt waar een andere dataset naar verwijst, is het voor de technische werking van de links noodzakelijk dat de data per object te linken is. Bij datasets die alleen via Atom feeds als bestand worden aangeboden is dit technisch vaak lastig. Met WFS kan dit wel, door gebruik te maken van requests om 1 object op te halen. Het verdient daarom aanbeveling om data waar andere datasets naar (kunnen) verwijzen, aan te bieden via WFS.
+
+### WFS direct access
+
+De Technical Guidance beschrijft in hoofdstuk 7 hoe een Download service voor Direct Access geïmplementeerd kan worden met een Web Feature Service en Filter Encoding. Een dergelijke Web Feature Service biedt uitgebreide filtermogelijkheden op INSPIRE-datasets, zodat gebruikers de selecties kunnen maken en downloaden die ze zelf wensen.
+
+Het aanbieden van Direct Access Download Service via een Web Feature Service is een methode om aan de eisen uit de Implementing Rule te kunnen voldoen. Een dergelijke WFS stelt een gebruiker in staat om, in aanvulling op alles wat een [Pre-defined datasets Download Service via WFS](#wfs-pre-defined) biedt, eigen selecties te maken van de data en dat direct te gebruiken (of downloaden). Bijvoorbeeld door selecties te maken met ruimtelijke, temporele en administratieve filters. Een dergelijke Download service biedt de meeste funtionaliteit aan een gebruiker en maakt het mogelijk om alleen die data op te vragen (en versturen) die nodig is, in plaats van gehele datasets. Dit kan vooral bij grote datasets en/of dynamische datasets erg belangrijk zijn.
+
+De Technical Guidance bevat de eisen die INSPIRE stelt aan een dergelijke WFS:
+1. voldoen aan alle eisen die gelden voor een Pre-defined datasets Download Service via WFS;
+2. voldoen aan de conformance class Basic WFS uit WFS 2.0, zodat de WFS minimale filtering ondersteunt en de operatie GetPropertyValue;
+3. voldoen aan de conformance class Ad hoc Query uit FE 2.0, zodat de WFS door de client gemaakte filters kan verwerken;
+4. voldoen aan de conformance class Resource Identification uit FE 2.0, zodat de WFS met Resource Identifiers bevraagd kan worden. Het gebruik van Resource Identifiers ten opzichte van GetFeatureById is bijvoorbeeld handig bij gebruik van versiemechanismes van features, zodat alle versies van een resource opgevraagd kunnen worden;
+5. voldoen aan de conformance class Minimum Standard Filter uit FE 2.0. Dit is met de filter operatoren PropertyIsEqualTo, PropertyIsNotEqualTo, PropertyIsLessThan, PropertyIsGreaterThan, PropertyIsLessThanOrEqualTo, PropertyIsGreaterThanOrEqualTo en alle logische operatoren (And, Or, Not).
+6. voldoen aan de conformance class Minimum Spatial Filter uit FE 2.0. Dit betekent dat de filter operator BBOX ondersteund moet worden.
+7. voldoen aan de conformance class Minimum Temporal Filter uit FE 2.0. Dit betekent dat de filter operator During ondersteund moet worden. Hiermee kunnen 8. objecten opgevraagd worden die wat betreft tijd (of tijsperiode) vallen in een bepaalde periode;
+voldoen aan de conformance class Minimum XPath uit FE 2.0. Hiermee kunnen via XPath opgegeven waardes gebruikt worden in een filter. Er wordt een subset van XPath ondersteuning vereist. Deze is beschreven in paragraaf 7.4.4 van de [Filter Encoding standaard 2.0](https://www.ogc.org/standards/filter).
+
+De eisen voor meertaligeheid zijn dezelfde als voor WFS pre-defined.
+
+#### Verhouding tot Nederlands profiel
+
+Het Nederlands profiel op ISO 19142 WFS 2.0 versie 1.1 stelt eisen aan Nederlandse WFS-implementaties. Het Nederlands profiel is afgestemd op de INSPIRE-specificaties. Per eis staat in het Nederlands profiel aangegeven of die van INSPIRE komt of dat het een specifieke aanvulling voor Nederland is. Een voorbeeld van dat laatste is ondersteuning voor het Rijksdriehoekstelsel.
+
+Het profiel bevat ook een aparte bijlage met de zaken die INSPIRE nog extra vereist ten opzichte van het Nederlands profiel.
+
+### WCS
+
+Vanaf 16 december 2016 is er een [Technical Guidance](https://inspire.ec.europa.eu/id/document/tg/download-wcs) om coverage data via Web Coverage Services te publiceren. Deze Technical Guidance neemt als basis voor een Download service de OGC WCS 2.0 specificatie. De INSPIRE-operaties worden gemapped op de WCS-operaties. Daarnaast worden aanvullende eisen gesteld, over onder andere:
+- de te gebruiken (metadata)-elementen in het Capabilities-document
+- ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities
+- hoe Direct Access in te vullen via de processing extension van WCS
+- Quality of Service voor de verschillende operaties.
+
+### SOS
+
+Vanaf 16 december 2016 is er ook een [Technical Guidance](http://inspire.ec.europa.eu/id/document/tg/download-sos) om sensor data via Sensor Observation Services te publiceren. Deze Technical Guidance neemt als basis voor een Download service de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding. De INSPIRE operaties worden gemapped op de SOS operaties en de Filter encoding classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
+- de te gebruiken (metadata) elementen in het Capabilitiesdocument
+- ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities
+- gebruik van de GetObservationByID operatie om Direct Access in te vullen
+- Quality of Service voor de verschillende operaties.
+
+### FAQ downloadservices
+
+**Vraag: Is WFS verplicht voor INSPIRE Download Services?**
+
+Nee, WFS is niet verplicht. Bij de implementatie van een Download Service beschrijfven de Technical Guidances verschillende opties waaruit de dataprovider kan kiezen:
+- Pre-defined dataset download services kunnen worden aangeboden als:
+	- Atom (Atom Syndication Format) óf als:
+	- ISO DIS 19142 – Web Feature Service, met beperkte filter mogelijkheid óf als:
+	- Web Coverage Service óf als:
+	- Sensor Observation Service
+- Direct access download services mogen worden aangeboden als:
+	- ISO DIS 19142 – Web Feature Service met ISO DIS 19143 – Filter Encoding voor aanvullende filtermogelijkheden.
+	- Web Coverage Service met processing mogelijkheid óf
+	- Sensor Observation Service met extra bevragingsmogelijkheden.
+
+**Vraag: Is het nu al verplicht GML te leveren als (bestands)formaat voor (vector)gegevens via ATOM Download Services?**
+
+Strikt genomen is GML pas verplicht voor INSPIRE zodra de dataspecificaties, inclusief de encodingregels per thema, verplicht zijn. Zie de [INSPIRE Roadmap](https://inspire.ec.europa.eu/road-map-graphic/32443) voor de deadlines per thema. INSPIRE heeft een lijst van te gebruiken [media-types](https://inspire.ec.europa.eu/media-types/) gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP-betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
+
+Merk op: GML is voor Nederland als uitwisselingsformaat reeds verplicht voorgeschreven, zie de zogenaamde [Pas-toe-of-Leg-Uit-lijst van geo-standaarden](https://www.forumstandaardisatie.nl/open-standaarden). Bij een implementatie via WFS wordt standaard GML geboden.
+
+**Vraag: Welke bestandsformaten zijn toegestaan bij Download Services?**
+
+INSPIRE heeft een lijst van te gebruiken [media-types](https://inspire.ec.europa.eu/media-types/) gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
+
+**Vraag: Hoe ga ik om met wijzigingen in INSPIRE-netwerkdiensten die ik al aanbiedt?**
+
+Wanneer u een wijziging doorvoert in uw dataset of service, kan dit gevolgen hebben voor bijvoorbeeld de metadata, atomfeeds en conformiteit van uw data en services. In het document [wijzigingen en INSPIRE](https://www.geonovum.nl/uploads/documents/inspire-en-wat-te-doen-bij-wijzigingen.pdf) vindt u een praktische handreiking van de punten die u kunt controleren na een wijziging van uw INSPIRE-datasets en services.
+
 ## Service-metadata
 
-## Validatie services
+Elke OGC-service heeft een capabilities-document dat tijdens het ontwikkelen van de service aangemaakt wordt. Het is een beschrijving van de informatie-inhoud van de dienst. Buiten de informatie van de service zelf (bv request parameters), bevat de capabilities ook metadata over de geserveerde kaarten (waaronder Layer en Style definities). Het is dit XML-document dat als antwoord op het GetCapabilities-request door de server terug aan de client gegeven wordt. In dit capabilities-document worden automatisch enkele, en niet alle voor INSPIRE verplichte, metadata elementen toegevoegd. Het automatisch gegenereerde document is dus niet volledig en dient aangevuld te worden met de voor INSPIRE verplichte en conditionele velden, alvorens het ‘gepubliceerd’ wordt. Het aanvullen kan door de capabilities uit te breiden met de verplichtte elementen, of door te verwijzen naar het XML-bestand waar alle metadata-elementen in beschreven zijn. Met ‘metadata publiceren’ worden de acties bedoeld die dit document als XML-bestand aan de repository van het nationale register (het NGT) toevoegt.
+
+### Invulinstructie
+
+De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen voor netwerkservices. Voor Spatial Data Services gelden andere instructies.
+
+De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Verklaring en Indicatie van conformiteit worden meerdere keren opgenomen. Voor alle netwerk services is het opgeven van de conformiteit met de verordening netwerkdiensten verplicht. Aanbevolen wordt om de conformiteit met de technische specificaties,voor view en download etc. op te nemen.
+
+| Metadata-element | Longname | INSPIRE-verplicht | Omschrijving | Voorbeeldwaarde |
+| ---------------- | -------- | ----------------- | ------------ | --------------- |
+| Trefwoord	| MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.keyword | Ja | Voor INSPIRE-services dient er op z’n minst één keyword de categorie of subcategorie te bevatten uit deel D.4 van de commissie regulation 1205/2008 | infoMapAccessService |
+| Trefwoord	| MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.keyword | Ja | Voor INSPIRE-services wordt ook het thema als trefwoord opgenomen uit de GEMET INSPIRE themes thesaurus | Hydrografie |
+| Naam van Thesaurus | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.title | C | Verplichte thesaurus voor INSPIRE. | GEMET - INSPIRE themes, version 1.0 |
+| Thesaurus Datum | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.date | C | De datum van publicatie | 2008-06-01 |
+| Thesaurus Datum Type | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.dateType | C | Het datumtype | publicatie |
+| Specificatie Titel | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | ja | Voor INSPIRE netwerk services dient de conformiteit met de verordening  netwerk diensten opgenomen te worden | VERORDENING (EG) Nr. 976/2009 VAN DE COMMISSIE van 19 oktober 2009 tot uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad wat betreft de netwerkdiensten |
+| Specificatie Datum | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | ja | Publicatiedatum van de Inspire verordening | 2009-10-19 |
+| SpecificatieDatum Type | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | ja | | Publication |
+| Verklaring | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | ja | | |
+| Indicatie van conformiteit met de specificatie | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | ja | | true |
+| Specificatie Titel | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | ja | Voor INSPIRE netwerk services dient de conformiteit met de technische specificaties  (view, download etc) opgenomen te worden | Technical Guidance for the implementation of INSPIRE View Services |
+| Specificatie Datum | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | ja | Publicatiedatum van de Inspire technische specificatie | 2013-04-04 |
+| SpecificatieDatum Type | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | ja | | Publication |
+| Verklaring | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | ja | | |
+| Indicatie van conformiteit met de specificatie | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | ja | | true |
+| Rol organisatie metadata | MD_Metadata.contact> CI_ResponsibleParty.role | Ja | Het betreft de rol van de organisatie. Inspire verplicht hier om contactpunt in te vullen. | pointOfContact |
+
+### Voorbeeldbestand XML voor INSPIRE service-metadata
+
+[Hier is een voorbeeld XML-bestand te vinden voor service-metadata](https://wiki.geonovum.nl/images/Voorbeeld_Metadata_Service_2019.zip).
 
 ## Spatial data services
+
+Spatial Data Services (SDS) worden ook wel Ruimtelijke datadiensten, of “diensten met betrekking tot ruimtelijke gegevens” genoemd. Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. Er kan ook andere data in de service zijn ontsloten. Alle Spatial Data Services, moeten van metadata worden voorzien. Deze metadata moet vervolgens ontsloten worden in het NGR.
+
+Met behulp van onderstaand stroomschema kan worden bepaald wat voor soort SDS een service is.
+
+![sds_schema](media/SDS_schema.png "Stroomdiagram om service-type te bepalen.")
+
+### SDS-categorieën
+
+Spatial Data Services die onder de verordening SDS vallen zijn, afhankelijk van het niveau van interoperabiliteit, verder onder te verdelen in drie categorieën: Invocable SDS, Interoperable SDS and Harmonised SDS. Spatial Data Services die onder de verordening *netwerkverordening* vallen bestaan uit vier verschillende service types: discovery services, view services, download services and transformation services.
+
+Onderstaande figuur geeft een overzicht van de verschillende types Spatial Data Services
+
+![sds_schema2](media/SDS_en_network_services.png "SDS-types.")
+
+Spatial Data Services kunnen heel verschillende services zijn, waardoor er geen specificaties in technische richtlijnen voor mogelijk is. Om te bepalen in wat voor categorie een Spatial Data Service valt, kan onderstaande stroomschema worden gebruikt.
+
+![sds_cat](media/SDS_cat.png "Stroomdiagram om SDS-categorie te bepalen.")
+
+#### Invocable SDS
+
+Spatial Data Services van de categorie *invocable* moeten naast servicemetadata voorzien worden van metadata over **Category conformance** en **Technische specificatie conformance**. Dit kan in de metadata-elementen die ook voor de conformance met de verordening worden gebruikt. In onderstaande tabel zijn de invulinstructies opgenomen.
+
+![conformance_invoke](media/Conformance_invoke.png "Tabel metadata-element invocable SDS.")
+
+Er zijn aanvullende vereisten voor het metadata-element **servicetype**. Dit kan in het geval van een invocable SDS alleen de waarde *other* hebben.
+
+![servicetype](media/Servicetype_invul.png "Servicetype heeft waarde other.")
+
+De **Resource Locator** voor een SDS moet een access point zijn. Een access point is gedefinieerd als “An internet address containing a detailed description of a spatial data service, including a list of endpoints to allow its execution.” In geval van een OGC-service is dat de URL naar de capabilities. In het bijbehorende metadata-element **Resource locator description**, dat nu geen onderdeel uitmaakt van het NL-profiel, maar wel een ISO-element is, moet specifiek worden opgenomen dat het een access point is.
+
+![accesspoint](media/Resourceloc_invul.png "Resource locator description heeft waarde accessPoint.")
+
+#### Interoperable SDS
+
+Spatial Data Services van de categorie interoperable moeten, naast de vereiste elementen voor invocable services, worden voorzien van metadata over verschillende extra elementen:
+1. **Coördinaat referentie systeem**: alle CRS waarin een service beschikbaar is moeten worden opgegeven middels een URI. Gebruik voor elke URI een apart metadata element. Bijvoorbeeld:
+
+http://www.opengis.net/def/crs/EPSG/0/4937 (ETRS 89) http://www.opengis.net/def/crs/EPSG/0/4326 (WGS84) http://www.opengis.net/def/crs/EPSG/0/28992 (RD)
+
+In onderstaande tabel is de invulinstructie opgenomen.
+
+![CRS_invul](media/CRS_invul.png "Invulinstructie voor CRS.")
+
+2. **Kwaliteit van de service**. Dit is de minimum kwaliteit van de service die word bepaald door de verantwoordelijke partij voor die service met een verwachtte geldigheid gedurende een langere periode. De kwaliteit van de service moet voor drie criteria worden opgenomen:
+	- *Beschikbaarheid*. Ondergrens van het geraamde percentage van de tijd die de dienst beschikbaar is op jaarbasis.
+	- *Performance*. De maximale responstijd waarbinnen een typisch verzoek aan de service kan worden uitgevoerd in een normale situatie.
+	- *Capaciteit*. Ondergrens van het maximum aantal gelijktijdige verzoeken dat kan worden voltooid binnen de grenzen van de gedeclareerde performance.
+
+In onderstaande tabel zijn de invulinstructies voor de kwaliteit van service opgenomen.
+
+![QoS_invul](media/QoS_invul.png "Invulinstructie voor servicekwaliteit.")
+
+3. Er aanvullende vereisten voor **verantwoordelijke organisatie**, deze zal in ieder geval de beschrijving bevatten van de organisatie die de verantwoordelijkheid heeft geaccepteerd en de zorg draagt voor het beheer van de service. De rol van de organisatie is beheerder.
+4. Er zijn aanvullende vereisten voor **restricties voor toegang en gebruik**. Hier moeten ook de "technische restricties" worden aangegeven, in één instantie van accessConstraints of useConstraints. Dit komt grotendeels overeen met de huidige invulling van toegangsrestricties, URL naar de creative commons licenties worden als technische restricties gezien.
+5. De categorie die in de **specification title** is opgenomen, moet van invocable naar interoperable worden aangepast!
+
+#### Harmonised SDS
+
+Spatial Data Services van de categorie harmonised moeten, naast de vereiste elementen voor interoperable services, worden voorzien van metadata over invocation.
+
+Invocation-metadata is informatie over de operaties die een service kan uitvoeren. Deze informatie kan op twee verschillende manieren beschikbaar worden gesteld.
+
+- *Optie 1*: Alle operaties en de lijst van connect punten voor hen, samen met de informatie over de vereiste en optionele parameters voor elke operatie wordt geleverd door het access point van de dienst. Dit accespoint wordt ook in de SV_OperationMetadata opgenomen. de operaties die mogelijk zijn worden dan niet apart in de metadata beschreven.
+- *Optie 2*: Alle operaties en de lijst van connect punten voor hen, samen met de informatie over de vereiste en optionele parameters voor elke operatie wordt in de metadata beschreven via een SV_OperationMetadata element voor elke operatie.
+
+In onderstaande tabel de invulinstrucies voor optie 1.
+
+![Invoke1](media/Invoke_invul1.png "Invulinstructie voor optie 1.")
+
+In onderstaande tabel de invul instrucies voor optie 2.
+
+![Invoke2](media/Invoke_invul2.png "Invulinstructie voor optie 2.")
+
+Voor de categorie harmonised zijn er vereisten op de service zelf:
+- **kwaliteit** "a harmonised spatial data service shall be available 98 % of the time."
+- **operaties** "a harmonised spatial data service shall include a Get Harmonised Spatial Data Service Metadata operation, similar to the Get Discovery/View/Download/Transformation Service Metadata Operations."
+- **output encoding** "If a request to the spatial data service returns spatial objects in the scope of the [INS DIR], the returned data shall meet the requirements for encoding specified for these spatial objects in Art. 7 and the relevant annexes of [INS ISDSS]."
+
+The INSPIRE data specifications Technical Guidelines contain default encoding rules for all spatial data themes meet the requirements of [INS ISDSS].
+
+### Metadata-templates SDS
+
+Voor het aanmaken voor metadata voor de verschillende Spatial Data Service categorieën zijn templates beschikbaar, waarin de benodigde metadata-elementen zijn opgenomen en informatie deels is ingevuld.
+
+- [Template NL profiel op ISO19119 v12 SDS invocable](https://wiki.geonovum.nl/images/Template_NL_profiel_op_ISO19119_v12_SDS_invocable.xml)
+- [Template NL profiel op ISO19119 v12 SDS interoperable](https://wiki.geonovum.nl/images/Template_NL_profiel_op_ISO19119_v12_SDS_interoperable.xml)
+- [Template NL profiel op ISO19119 v12 SDS harmonised](https://wiki.geonovum.nl/images/Template_NL_profiel_op_ISO19119_v12_SDS_harmonised.xml)
