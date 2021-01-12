@@ -78,7 +78,7 @@ Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt,
 ### Doel
 Het doel van het INSPIRE aanmerkingsregister is meervoudig.
 
-- Via dit register kan iedereen de voortgang van de INSPIRE implementatie volgen. Bijvoorbeeld hoe ver de INSPIRE-dataproviders zijn met de eerstvolgende INSPIRE deadline: de harmonisatie van Annex I datasets op 23 november 2017;
+- Via dit register kan iedereen de voortgang van de INSPIRE implementatie volgen. Bijvoorbeeld hoe ver de INSPIRE-dataproviders zijn met de eerstvolgende INSPIRE deadline;
 - Vanuit het aanmerkingsregister is er ook een directe link naar de publicatie van de metadata van betreffende dataset in het [Nationaal Georegister](https://www.nationaalgeoregister.nl/). De dataset is daar dan ook te raadplegen.
 
 ### Dataset aanmelden
@@ -91,7 +91,7 @@ Aanvullend biedt het register ook een gesloten omgeving voor betrokken partijen.
 Daarnaast is het mogelijk om overzichten te generen van gegevens uit het aanmerkingsregister. Tot slot vindt ook de onderlinge communicatie tussen de verschillende partijen plaats via het aanmerkingsregister. Het INSPIRE aanmerkingsregister ondersteunt hiermee het gehele aanmerkingsproces.
 
 ## Namespaceregister
-Het [INSPIRE namespace register](http://inspirelab.geonovum.nl/namespaces/) bevat een lijst van reeds geregistreerde namespaces door Nederlandse INSPIRE dataproviders.
+INSPIRE gebruikt [namespaces](#namespaces). Het [INSPIRE namespace register](http://inspirelab.geonovum.nl/namespaces/) bevat een lijst van reeds geregistreerde namespaces door Nederlandse INSPIRE dataproviders.
 
 Voor het registreren van namespaces is een account nodig. Geonovum verstrekt deze accounts. Voor registratie, neem contact op met Geonovum.
 
