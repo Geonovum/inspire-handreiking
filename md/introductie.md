@@ -4,7 +4,7 @@ Welkom bij de wiki "Aan de slag met INSPIRE". Deze wiki is bedoeld voor INSPIRE-
 - welke (delen van) de INSPIRE-richtlijnen er betrekking op hebben en
 - of er in aanvulling op de Nederlandse standaarden nog specifieke stappen uitgevoerd moeten worden.
 
-Waar mogelijk zijn voorbeelden uitgewerkt. De processtappen zijn terug te vinden in de inhoudsopgave als aparte hoofdstukken.Met deze inhoudsopgave kunt u snel navigeren tussen verschillende processtappen. De inhoudsopgave vindt u aan de linker zeide van deze pagina en kan open- of dichtgeklapt worden met de pijlen linksonderin.
+Waar mogelijk zijn voorbeelden uitgewerkt. De processtappen zijn terug te vinden in de inhoudsopgave als aparte hoofdstukken. Met deze inhoudsopgave kunt u snel navigeren tussen verschillende processtappen. De inhoudsopgave vindt u aan de linker zeide van deze pagina en kan open- of dichtgeklapt worden met de pijlen linksonderin.
 
 ## Betrokken partijen
 De INSPIRE-wiki is tot stand gekomen dankzij de medewerking en betrokkenheid van:
