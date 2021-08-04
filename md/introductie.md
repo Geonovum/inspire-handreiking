@@ -1,10 +1,10 @@
-# Introductie
+r# Introductie
 Welkom bij de wiki "Aan de slag met INSPIRE". Deze wiki is bedoeld voor INSPIRE-dataproviders en geeft informatie om te voldoen aan de (technische) INSPIRE-verplichtingen. De opbouw van de INSPIRE-wiki is gebaseerd op de verschillende [processtappen](#processtappen) die dataproviders doorlopen. Per (deel)processtap is aangegeven
 - welke Nederlandse standaard erop van toepassing is;
 - welke (delen van) de INSPIRE-richtlijnen er betrekking op hebben en
 - of er in aanvulling op de Nederlandse standaarden nog specifieke stappen uitgevoerd moeten worden.
 
-Waar mogelijk zijn voorbeelden uitgewerkt. De onderstaande procesbalk geeft telkens aan op welk deel van het proces de pagina betrekking heeft. Hiermee kunt u snel navigeren tussen verschillende processtappen. Deze balk vindt u bovenaan elke pagina.
+Waar mogelijk zijn voorbeelden uitgewerkt. De processtappen zijn terug te vinden in de inhoudsopgave als aparte hoofdstukken.Met deze inhoudsopgave kunt u snel navigeren tussen verschillende processtappen. De inhoudsopgave vindt u aan de linker zeide van deze pagina en kan open- of dichtgeklapt worden met de pijlen linksonderin.
 
 ## Betrokken partijen
 De INSPIRE-wiki is tot stand gekomen dankzij de medewerking en betrokkenheid van:
@@ -18,7 +18,7 @@ De INSPIRE-wiki is tot stand gekomen dankzij de medewerking en betrokkenheid van
 - Universiteiten: Dresden, TU Delft en Wageningen Universiteit
 
 ## Doelgroep
-Deze wiki bedient meerdere doelgroepen, maar richt zich in eerste instantie op partijen die verantwoordelijk zijn voor de uitvoering. Daarnaast is de informatie ook relevant voor andere partijen die aan slag gaan INSPIRE. Het belangrijkste doel van deze wiki is om het werkproces inzichtelijk te maken en kennis hierover op een overzichtelijke manier ter beschikking te stellen.
+Deze wiki bedient meerdere doelgroepen, maar richt zich in eerste instantie op partijen die verantwoordelijk zijn voor de uitvoering. Daarnaast is de informatie ook relevant voor andere partijen die aan slag gaan met INSPIRE. Het belangrijkste doel van deze wiki is om het werkproces inzichtelijk te maken en kennis hierover op een overzichtelijke manier ter beschikking te stellen.
 
 ### Uitvoerders
 Onder partijen die verantwoordelijk zijn voor de uitvoering verstaan wij die personen en organisaties die praktisch en technisch met INSPIRE aan de slag gaan. Dat gaat hier concreet om de Nederlandse dataproviders. Zij zullen de processtappen uitvoeren die nodig zijn om te voldoen aan de INSPIRE-richtlijnen. Ook zijn zij verantwoordelijk voor het publiceren van de metadata, het ontsluiten van de data via services en het harmoniseren van de data. Dit kan door verschillende personen binnen een organisatie uitgevoerd worden, zoals data-beheerders, applicatie-specialisten, dba’ers van ruimtelijke databases en ICT'ers.
