@@ -1,4 +1,4 @@
-Dit document is de vervanging van de oude wiki voor INSPIRE die te vinden was op https://wiki.geonovum.nl/.
+Dit document is de wiki voor INSPIRE.
 Het beschrijft de volgende 6 processtappen:
 1. [Inrichten organisatie](https://geonovum.github.io/inspire-wiki/#inrichten-organisatie)
 2. [Data harmonisatie](https://geonovum.github.io/inspire-wiki/#dataharmonisatie)
