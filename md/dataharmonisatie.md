@@ -57,8 +57,6 @@ Het is ook nuttig te wijzen op de markt die de INSPIRE-richtlijn indirect creëe
 - [MapForce](https://www.altova.com/mapforce);
 - [GO Publisher](https://snowflakesoftware.com/geospatial-products/);
 
-Een volledige lijst met INSPIRE-tools is terug te vinden op de pagina [INSPIRE tools](https://inspire-reference.jrc.ec.europa.eu/tools). Hierop kan men op eenvoudige wijze alle ETL- maar ook andere tools terugvinden.
-
 ![etlplaatje](media/etl.gif "ETL-stappen te nemen voor INSPIRE")
 
 #### On the fly converteren
