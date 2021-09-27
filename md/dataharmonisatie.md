@@ -57,7 +57,7 @@ Het is ook nuttig te wijzen op de markt die de INSPIRE-richtlijn indirect creëe
 - [MapForce](https://www.altova.com/mapforce);
 - [GO Publisher](https://snowflakesoftware.com/geospatial-products/);
 
-![etlplaatje](media/etl.gif "ETL-stappen te nemen voor INSPIRE")
+![etlplaatje](media/Etl.gif "ETL-stappen te nemen voor INSPIRE")
 
 #### On the fly converteren
 Bovenstaande principes zijn gericht op het klaarzetten van data alvorens ze te ontsluiten (ook wel *pre-defined*). Dat hoeft niet in alle gevallen. Het is ook mogelijk om data *on the fly* te converteren. Let er echter op dat dit voor grote datasets geen bruikbare toepassing is omdat de performance van de service teveel te wensen over zal laten. Waar deze grens ligt en bij welke dataset-grootte het breekpunt tussen ‘on the fly’ en ‘pre-defined’ ligt, is alleen op basis van testresultaten vast te stellen.
@@ -76,7 +76,7 @@ De ‘spin-off’ is een zijdelingse overweging die bij de keuze van harmonisati
 ## As-is versus geharmoniseerd
 Deze vraag is voorgelegd aan de EU commissie:
 
-*What is the position of INSPIRE regarding the status of the view and download services serving the INSPIRE data ‘as is’ at the moment the harmonized data shall to be served? Are the data providers in the member states allowed to ‘pull out the plug’ after the view and download service offers harmonized data. Or are the view and download services serving the INSPIRE data ‘as is’ considered as SDSs? Or both? The data providers can decide themselves how to deal with this? Keep the service up or pull out the plug. Are you able to give us the reference to the Directive with respect to this issue?*
+*What is the position of INSPIRE regarding the status of the view and download services serving the INSPIRE data ‘as is’ at the moment the harmonized data shall to be served? Are the data providers in the member states allowed to ‘pull out the plug’ after the view and download service offer harmonized data. Or are the view and download services serving the INSPIRE data ‘as is’ considered as SDSs? Or both? The data providers can decide themselves how to deal with this? Keep the service up or pull out the plug. Are you able to give us the reference to the Directive with respect to this issue?*
 
 Het antwoord luidde als volgt:
 
