@@ -57,7 +57,7 @@ Het is ook nuttig te wijzen op de markt die de INSPIRE-richtlijn indirect creëe
 - [MapForce](https://www.altova.com/mapforce);
 - [GO Publisher](https://snowflakesoftware.com/geospatial-products/);
 
-![etlplaatje](media/Etl.gif "ETL-stappen te nemen voor INSPIRE")
+![etlplaatje](../media/Etl.gif "ETL-stappen te nemen voor INSPIRE")
 
 #### On the fly converteren
 Bovenstaande principes zijn gericht op het klaarzetten van data alvorens ze te ontsluiten (ook wel *pre-defined*). Dat hoeft niet in alle gevallen. Het is ook mogelijk om data *on the fly* te converteren. Let er echter op dat dit voor grote datasets geen bruikbare toepassing is omdat de performance van de service teveel te wensen over zal laten. Waar deze grens ligt en bij welke dataset-grootte het breekpunt tussen ‘on the fly’ en ‘pre-defined’ ligt, is alleen op basis van testresultaten vast te stellen.
