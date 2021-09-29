@@ -52,7 +52,7 @@ Bij het harmoniseren van de data in het kader van INSPIRE is het vooral de ‘T�
 
 Het is ook nuttig te wijzen op de markt die de INSPIRE-richtlijn indirect creëert. Er zijn verschillende bedrijven die software bouwen die specifiek gericht is op dataproviders die data leveren voor INSPIRE-thema’s. Op deze manier voldoen zij aan een groeiende behoefte die ontstaat uit nieuwe wetgeving en standaarden. Een aantal populaire ETL software tools zijn:
 - [FME](https://www.safe.com/);
-- [HALE](https://www.wetransform.to/products/halestudio/); Een beknopte handleiding, gemaakt door RVO, is [hier te vinden](../docs/Handleiding_Gebruik_HALE_voor_INSPIRE_dataharmonisatie_120618.pdf).
+- [HALE](https://www.wetransform.to/products/halestudio/); Een beknopte handleiding, gemaakt door RVO, is [hier te vinden](https://github.com/Geonovum/inspire-wiki/blob/main/docs/Handleiding_Gebruik_HALE_voor_INSPIRE_dataharmonisatie_120618.pdf).
 - [Talend](https://www.talend.com/resources/what-is-etl/);
 - [MapForce](https://www.altova.com/mapforce);
 - [GO Publisher](https://snowflakesoftware.com/geospatial-products/);
