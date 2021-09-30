@@ -310,8 +310,8 @@ Bij dataharmonisatie is het van belang op de volgende punten te letten:
 
 1. Registreer de namespaces via het [namespaceregister](http://inspirelab.geonovum.nl/namespaces/).
 2. Valideer de datasets tussentijds met de INSPIRE-validator, zodat vroegtijdig eventuele fouten opgelost kunnen worden. Informatie over datasetvalidatie is [hier](#datavalidatie) op deze pagina te vinden.
-3. Werk de datasetmetadata van de betreffende dataset bij en voer de conformiteit op in de metadata. Voor geharmoniseerde data zijn er drie extra metadata-elementen die ingevuld dienen te worden; zie de [invulinstructies voor de metadata](#invulinstructie-voor-datasets). [Valideer daarna de datasetmetadata](#metadatavalidatie).
-4. Zorg dat de view service, die de geharmoniseerde dataset ontsluit, voldoet aan de eisen die INSPIRE stelt voor geharmoniseerde data. Zie in de betreffende dataspecificatie het hoofdstuk Portrayal. Daar staan eisen in voor laagnamen en visualisatie. Let ook op de eisen voor geharmoniseerde data om te valideren (die zitten in de optionele tests omdat die nog niet verplicht zijn voor alle Annexen van INSPIRE). [Hier kan meer informatie over servicevalidatie gevonden worden](#valideren-services).
+3. Werk de datasetmetadata van de betreffende dataset bij en voer de conformiteit op in de metadata. Voor geharmoniseerde data zijn er drie extra metadata-elementen die ingevuld dienen te worden; zie de [invulinstructies voor de metadata](#invulinstructie-voor-datasets). [Valideer daarna de datasetmetadata](#metadata-validatie).
+4. Zorg dat de view service, die de geharmoniseerde dataset ontsluit, voldoet aan de eisen die INSPIRE stelt voor geharmoniseerde data. Zie in de betreffende dataspecificatie het hoofdstuk Portrayal. Daar staan eisen in voor laagnamen en visualisatie. Let ook op de eisen voor geharmoniseerde data om te valideren. [Hier kan meer informatie over servicevalidatie gevonden worden](#valideren-services).
 5. Zorg dat de download service, die de geharmoniseerde dataset ontsluit, voldoet aan de eisen die INSPIRE stelt voor geharmoniseerde data. Bijvoorbeeld, voor een WFS: controleer of de WFS de featureTypes aanbiedt zoals die in de INSPIRE-GML-schemas van de dataspecificaties staan.
 6. Controleer of de servicemetadata nog klopt. Bijvoorbeeld als er een ander service-endpoint is (voor de download service en/of view service), moet de servicemetadata bijgewerkt worden. Informatie over servicemetadata-validatie is [hier te vinden](#valideren-metadata-services).
 7. Contoleer in het NGR of de categorie `inspire` voor de datasetmetadata en de servicemetadata is geactiveerd, anders verschijnt de metadata niet in de INSPIRE Discovery Service.
@@ -331,28 +331,29 @@ Op deze site vindt u onder meer:
 
 Er is tevens een [nuttige pagina op het INSPIRE community forum over het uitbreiden van codelijsten](https://inspire.ec.europa.eu/forum/pages/view/162571/how-to-extend-inspire-code-lists).
 
-## INSPIRE community forum
-Het [*INSPIRE community forum*](https://inspire.ec.europa.eu/forum/homepage) is het Europese samenwerkingsplatform dat INSPIRE-implementatieondersteuning biedt aan de lidstaten. Voorheen heette dit forum *Thematic Clusters*. Het is een online platform waarop ervaringen en best practices gedeeld worden, maar waar ook vragen en issues aangemeld kunnen worden. Het forum is opgedeeld in elf clusters, waarvan negen *thematic domains*.
+## INSPIRE helpdesk ##
+
+Het [*INSPIRE community forum*] is per januari 2021 opgeheven en vervangen door de [INSPIRE helpdesk](https://inspire.ec.europa.eu/inspire-helpdesk). Het oude platform is gearchiveerd en kan nog [hier](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/) gevonden worden. Voorheen heette dit oude forum *Thematic Clusters*. Het was een online platform waarop ervaringen en best practices gedeeld konden worden, maar waar ook vragen en issues aangemeld konden worden. Het forum was opgedeeld in elf clusters, waarvan negen *thematic domains*.
 
 ### Thematic domains
-Elk Thematic Cluster omvat meerdere INSPIRE thema's en wordt beheerd door een *facilitator*. Om deel te nemen aan discussies, dien je je eenmalig te registreren. Momenteel zijn de volgende thematic clusters actief:
+Elk Thematic Cluster omvatte meerdere INSPIRE thema's en werd beheerd door een *facilitator*. Om deel te nemen aan discussies, diende je je eenmalig te registreren. De volgende thematic clusters waren actief:
 
 | Clusternaam 				| INSPIRE-thema's		|
 |------------				|-------------				|
-| [Statistics & Health](https://inspire.ec.europa.eu/forum/groups/profile/45/statistics-health) 			| Statistical Units, Population Distribution, Human Health and Safety 	|
-| [Marine and Atmosphere](https://inspire.ec.europa.eu/forum/groups/profile/213/marine-atmosphere)		| Oceanographic Geographical Features, Sea Regions, Atmospheric Conditions and Meteorological Geographical Features	|
-| [Earth Science](https://inspire.ec.europa.eu/forum/groups/profile/131/earth-science) 			| Geology, Soil, Natural Risk Zones, Mineral resources, Energy resources	|
-| [Land Cover and Use](https://inspire.ec.europa.eu/forum/groups/profile/205/land-cover-use)	| Land Use, Land Cover				|
-| [Elevation, Ortho & Grids](https://inspire.ec.europa.eu/forum/groups/profile/206/elevation-ortho-grids)	|Elevation, Orthoimagery, Coordinate Reference Systems, Geographical Grid 	|
-| [Environmental Monitoring & Observations](https://inspire.ec.europa.eu/forum/groups/profile/207/environmental-monitoring-observations)	| Environmental Monitoring Facilities, Observations and Measurements	|
-| [Biodiversity and Area Management](https://inspire.ec.europa.eu/forum/groups/profile/214/biodiversity-area-management)	| Protected Sites, Area Management/Restriction/Regulation Zones and Reporting Units, Habitats and Biotopes, Species Distribution, Bio-geographical Regions	|
+| [Statistics & Health](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/45/statistics-health) 			| Statistical Units, Population Distribution, Human Health and Safety 	|
+| [Marine and Atmosphere]https://wayback.archive-it.org/12090/20210119102755/(https://inspire.ec.europa.eu/forum/groups/profile/213/marine-atmosphere)		| Oceanographic Geographical Features, Sea Regions, Atmospheric Conditions and Meteorological Geographical Features	|
+| [Earth Science](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/131/earth-science) 			| Geology, Soil, Natural Risk Zones, Mineral resources, Energy resources	|
+| [Land Cover and Use](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/205/land-cover-use)	| Land Use, Land Cover				|
+| [Elevation, Ortho & Grids](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/206/elevation-ortho-grids)	|Elevation, Orthoimagery, Coordinate Reference Systems, Geographical Grid 	|
+| [Environmental Monitoring & Observations](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/207/environmental-monitoring-observations)	| Environmental Monitoring Facilities, Observations and Measurements	|
+| [Biodiversity and Area Management](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/214/biodiversity-area-management)	| Protected Sites, Area Management/Restriction/Regulation Zones and Reporting Units, Habitats and Biotopes, Species Distribution, Bio-geographical Regions	|
 | [Facilities, Utilities and Public Services](https://inspire.ec.europa.eu/forum/groups/profile/208/facilities-utilities-public-services)			| Facilities, Utilities and Public Services|
-| [Topo & Cadastral, Reference Data](https://inspire.ec.europa.eu/forum/groups/profile/209/topo-cadastre-reference-data)	| Hydrography, Geographical Names, Administrative Units, Cadastral Parcels, Addresses, Buildings, Transport Networks	|
+| [Topo & Cadastral, Reference Data](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/209/topo-cadastre-reference-data)	| Hydrography, Geographical Names, Administrative Units, Cadastral Parcels, Addresses, Buildings, Transport Networks	|
 
 ### Cross-domain clusters
-Daarnaast zijn er op het community forum nog twee cross-domain clusters:
-- [INSPIRE & Environmental Policy](https://inspire.ec.europa.eu/forum/groups/profile/215871/inspire-environmental-policy)
-- [Software & Tools](https://inspire.ec.europa.eu/forum/groups/profile/215867/software-tools)
+Daarnaast waren er op het community forum nog twee cross-domain clusters:
+- [INSPIRE & Environmental Policy](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/215871/inspire-environmental-policy)
+- [Software & Tools](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/215867/software-tools)
 
 ## FAQ dataharmonisatie
 Hieronder worden een aantal veelgestelde vragen rondom dataharmonisatie behandeld.
@@ -374,7 +375,7 @@ Meer info is te vinden in [het in december 2013 in de Klankbordgroep besproken s
 
 **Vraag: Waar kan ik terecht met vragen, opmerkingen en verbetervoorstellen over de dataspecificaties van mijn thema?**
 
-Meld je vragen, opmerkingen en verbetervoorstellen aan bij de verschillende [Thematic Cluster Groups](https://inspire.ec.europa.eu/forum/tcoverview). Op deze wijze wordt je vraag gedeeld met, en wellicht beantwoordt door, de INSPIRE-community voor dat themacluster. De thematische clusters zijn de plek waar verbetervoorstellen moeten worden ingediend, zodat deze leiden tot aanpassingen in de dataspecificaties.
+Meld je vragen, opmerkingen en verbetervoorstellen aan bij de [INSPIRE helpdesk issues](https://github.com/INSPIRE-MIF/helpdesk/issues). Op deze wijze wordt je vraag gedeeld met, en wellicht beantwoord door, de INSPIRE-community. 
 
 **Vraag: Hoe maak ik extensies?**
 
