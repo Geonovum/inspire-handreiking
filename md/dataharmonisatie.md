@@ -12,7 +12,7 @@ Met ingang van 10 December 2013 zijn er van alle thema's stabiele versies van de
 |-----------------|-------------|-------------|-------------|
 | [Dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892)  | 4.0  | 2017-04-01   | Data specificaties voor alle themas in UML,GML,Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
 | [Definition of Annex Themes and Scope](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.3_Definition_of_Annex_Themes_and_scope_v3.0.pdf) (D2.3)  | 3.0  | 2008-10-03   | -   |
-| [INSPIRE Generic Conceptual Model](https://inspire.ec.europa.eu/documents/Data_Specifications/D2.5_v3.4rc3.pdf) (D2.5)  | 3.4rc3   | 2013-04-05   | Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
+| [INSPIRE Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) (D2.5)  | 3.4   | 2014-04-08   | Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
 | [Methodology for the development of data specifications: baseline version](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.6_v3.0.pdf) (D2.6)  | 3.0   | 2008-06-20	   | -   |
 | [Guidelines for the Encoding of Spatial Data](https://inspire.ec.europa.eu/file/1412/download?token=lHYwKEk5) (D2.7)  | 	3.3   | 2014-04-08   | -   |
 | [Data models](http://inspire.ec.europa.eu/Data-Models/Data-Specifications/2892) | 	r 4618   | 	2011-02-06  | Delen van modellen die genoemd worden in IR's zijn definitief (*approved*). Dit geldt niet voor de *extended* delen (geen onderdeel IR's, wel van dataspecificaties) (*draft*)   |
@@ -331,7 +331,7 @@ Op deze site vindt u onder meer:
 
 Er is tevens een [nuttige pagina op het INSPIRE community forum over het uitbreiden van codelijsten](https://inspire.ec.europa.eu/forum/pages/view/162571/how-to-extend-inspire-code-lists).
 
-## INSPIRE helpdesk ##
+## INSPIRE helpdesk
 
 Het [*INSPIRE community forum*] is per januari 2021 opgeheven en vervangen door de [INSPIRE helpdesk](https://inspire.ec.europa.eu/inspire-helpdesk). Het oude platform is gearchiveerd en kan nog [hier](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/) gevonden worden. Voorheen heette dit oude forum *Thematic Clusters*. Het was een online platform waarop ervaringen en best practices gedeeld konden worden, maar waar ook vragen en issues aangemeld konden worden. Het forum was opgedeeld in elf clusters, waarvan negen *thematic domains*.
 
