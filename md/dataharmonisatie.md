@@ -333,7 +333,7 @@ Er is tevens een [nuttige pagina op het INSPIRE community forum over het uitbrei
 
 ## INSPIRE helpdesk
 
-Het [*INSPIRE community forum*] is per januari 2021 opgeheven en vervangen door de [INSPIRE helpdesk](https://inspire.ec.europa.eu/inspire-helpdesk). Het oude platform is gearchiveerd en kan nog [hier](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/) gevonden worden. Voorheen heette dit oude forum *Thematic Clusters*. Het was een online platform waarop ervaringen en best practices gedeeld konden worden, maar waar ook vragen en issues aangemeld konden worden. Het forum was opgedeeld in elf clusters, waarvan negen *thematic domains*.
+Het *INSPIRE community forum* is per januari 2021 opgeheven en vervangen door de [INSPIRE helpdesk](https://inspire.ec.europa.eu/inspire-helpdesk). Het oude platform is gearchiveerd en kan nog [hier](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/) gevonden worden. Voorheen heette dit oude forum *Thematic Clusters*. Het was een online platform waarop ervaringen en best practices gedeeld konden worden, maar waar ook vragen en issues aangemeld konden worden. Het forum was opgedeeld in elf clusters, waarvan negen *thematic domains*.
 
 ### Thematic domains
 Elk Thematic Cluster omvatte meerdere INSPIRE thema's en werd beheerd door een *facilitator*. Om deel te nemen aan discussies, diende je je eenmalig te registreren. De volgende thematic clusters waren actief:
@@ -341,7 +341,7 @@ Elk Thematic Cluster omvatte meerdere INSPIRE thema's en werd beheerd door een *
 | Clusternaam 				| INSPIRE-thema's		|
 |------------				|-------------				|
 | [Statistics & Health](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/45/statistics-health) 			| Statistical Units, Population Distribution, Human Health and Safety 	|
-| [Marine and Atmosphere]https://wayback.archive-it.org/12090/20210119102755/(https://inspire.ec.europa.eu/forum/groups/profile/213/marine-atmosphere)		| Oceanographic Geographical Features, Sea Regions, Atmospheric Conditions and Meteorological Geographical Features	|
+| [Marine and Atmosphere](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/213/marine-atmosphere)		| Oceanographic Geographical Features, Sea Regions, Atmospheric Conditions and Meteorological Geographical Features	|
 | [Earth Science](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/131/earth-science) 			| Geology, Soil, Natural Risk Zones, Mineral resources, Energy resources	|
 | [Land Cover and Use](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/205/land-cover-use)	| Land Use, Land Cover				|
 | [Elevation, Ortho & Grids](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/206/elevation-ortho-grids)	|Elevation, Orthoimagery, Coordinate Reference Systems, Geographical Grid 	|
