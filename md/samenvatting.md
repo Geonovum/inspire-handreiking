@@ -1,6 +1,7 @@
-Welkom bij de wiki "Aan de slag met INSPIRE". Deze wiki is bedoeld voor INSPIRE-dataproviders en geeft informatie om te voldoen aan de (technische) INSPIRE-verplichtingen.
+Welkom bij de wiki "Aan de slag met INSPIRE". 
+Deze wiki is bedoeld voor INSPIRE-dataproviders en geeft informatie om te voldoen aan de (technische) INSPIRE-verplichtingen.
 
-De opbouw van de INSPIRE-wiki is gebaseerd op de verschillende processtappen die dataproviders doorlopen. Per (deel)processtap is aangegeven:
+De opbouw van de INSPIRE-wiki is gebaseerd op de verschillende [processtappen](https://geonovum.github.io/inspire-wiki/#processtappen) die dataproviders doorlopen. Per (deel)processtap is aangegeven:
 - welke Nederlandse standaard erop van toepassing is;
 - welke (delen van) de INSPIRE-richtlijnen er betrekking op hebben en
 - of er in aanvulling op de Nederlandse standaarden nog specifieke stappen uitgevoerd moeten worden.
