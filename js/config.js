@@ -1,6 +1,6 @@
 var respecConfig = {
-  specStatus: "GN-BASIS", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specStatus
-  specType: "PR", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specType
+  specStatus: "GN-WV", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specStatus
+  specType: "HR", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specType
   //pubDomain: "wp", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/pubDomain. Of vraag aan bij beheerders
   publishDate: "2020-11-01", // Datum als jjjj-mm-dd, bijvoorbeeld
   editors: [
