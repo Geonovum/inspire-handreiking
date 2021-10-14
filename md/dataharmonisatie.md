@@ -164,11 +164,11 @@ Volgens de richtlijnen van INSPIRE moet elk object (feature) voorzien worden van
 - VersionId (optioneel)
 
 ### Namespaces
-Een namespace heeft als belangrijkste doel dat het de ruimte definieert waarbinnen de localId uniek is. Om te voorkomen dat verschillende dataproviders dezelfde namespace gebruiken, en om consistentie te verkrijgen, is er in Nederland (en Europa) een zogenaamd Namespaceregister opgezet. Namespaces in Nederland moeten worden geregistreerd in het [nationale namespaceregister](http://inspirelab.geonovum.nl/namespaces/). 
+Een namespace heeft als belangrijkste doel dat het de ruimte definieert waarbinnen de localId uniek is. Om te voorkomen dat verschillende dataproviders dezelfde namespace gebruiken, en om consistentie te verkrijgen, is er in Nederland (en Europa) een zogenaamd Namespaceregister opgezet. Namespaces in Nederland moeten worden geregistreerd in het [nationale namespaceregister](http://inspirelab.geonovum.nl/namespaces/). Let op: omdat dit nog een http i.p.v. een https adres is, kan het zijn dat deze link niet werkt in elke browser. In Chrome helpt het om de geschiedenis te verwijderen.
 
 Het namespaceregister bevat een lijst van reeds geregistreerde namespaces door Nederlandse INSPIRE dataproviders.
 
-Voor het registreren van namespaces is een account nodig. Geonovum verstrekt deze accounts. Voor registratie, neem contact op met [Geonovum](INSPIRE@geonovum.nl).
+Voor het registreren van namespaces is een account nodig. Geonovum verstrekt deze accounts. Voor registratie, neem contact op met Geonovum via INSPIRE@geonovum.nl.
 
 Na het [inloggen](http://inspirelab.geonovum.nl/namespaces/login.php) kunt u voor uw gegevensbron een nieuwe namespace registreren.
 
@@ -188,16 +188,16 @@ De volgende lexicografische spelregels (restricties) gelden voor de INSPIRE name
 </aside>
 
 ### LocalId
-De LocalId is de unieke identifier voor een object (binnen een namespace). De dataprovider is verantwoordelijk voor het uitdelen van unieke identifiers (de localId). In hoofdstuk 14 ('Identifier management') van het Generic Conceptual Model wordt algemene uitleg gegeven over het gebruik van unieke identifiers. Per thema kunnen er nog specifieke uitbreidingen staan in **paragraaf 5.2.1.4** van de dataspecificatie.
+De LocalId is de unieke identifier voor een object (binnen een namespace). De dataprovider is verantwoordelijk voor het uitdelen van unieke identifiers (de localId). In hoofdstuk 14 ('Identifier management') van het [Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) wordt algemene uitleg gegeven over het gebruik van unieke identifiers. Per thema kunnen er nog specifieke uitbreidingen staan in de dataspecificatie van dat thema.
 
 #### Uniform Resource Identifiers
-Uniform Resource Identifiers (URI's) zijn de gestandaardiseerde manier om op het internet dingen (pagina's met informatie, objecten, datasets) uniek te identificeren. Dit kan door middel van een Uniform Resource Name (URN) of met een Uniform Resource Locator (URL). Bij een URN krijgt een ding een unieke naam toebedeeld. Bij een URL krijgt een ding een adres waarmee het op internet kan worden gevonden (de ons welbekende website-adressen). Door URI's te gebruiken, kun je op een unieke manier naar een ding verwijzen en ze daardoor uniek onderscheiden. Het advies met de huidige stand van zaken is om stabiele HTTP URI’s te gebruiken voor geo-objecten en datasets. Binnen INSPIRE en NEN3610 is afgesproken om elk object op basis van de bestaande interne identifier een URI te geven, waarmee binnen de INSPIRE en NEN3610 context het object uniek te identificeren én op te vragen is. [Lees hier ook de aanzet tot een nationale URI-strategie](http://www.pilod.nl/wiki/Boek/URI-strategie).
+Uniform Resource Identifiers (URI's) zijn de gestandaardiseerde manier om op het internet objecten (bv. pagina's met informatie, datasets of afbeeldingen) uniek te identificeren. Dit kan door middel van een Uniform Resource Name (URN) of met een Uniform Resource Locator (URL). Bij een URN krijgt een object een unieke naam toebedeeld. Bij een URL krijgt een object een adres waarmee het op internet kan worden gevonden (de ons welbekende website-adressen). Door URI's te gebruiken, kun je op een unieke manier naar een object verwijzen en ze daardoor uniek onderscheiden. Het advies met de huidige stand van zaken is om stabiele HTTPS URI’s te gebruiken voor geo-objecten en datasets. Binnen INSPIRE en NEN3610 is afgesproken om elk object op basis van de bestaande interne identifier een URI te geven, waarmee binnen de INSPIRE en NEN3610 context het object uniek te identificeren én op te vragen is. [Lees hier ook de aanzet tot een nationale URI-strategie](https://www.geonovum.nl/themas/uri-strategie).
 
 ### VersionId
 Een InspireId kan ook een (optioneel) versionId hebben. Dit versienummer kan gebruikt worden als er van hetzelfde object op verschillende tijdstippen verschillende versies in omloop zijn die van elkaar onderscheiden moeten worden.
 
 ## Codelijsten
-INSPIRE-data wordt mede aan de hand van codelijsten en opsommingen (*enumerations*) geharmoniseerd. Beide worden gebruik om een lijstje toegestane waarden voor een attribuut te bepalen. In het geval van een enumeration zijn de toegestane waarden bekend vanaf het moment dat het model gemaakt is; de waarden maken deel uit van het model. Meestal gaat het om kleine lijstjes waar geen discussie over mogelijk is. Bij codelijsten zijn de toegestane waarden nog niet (allemaal) bekend op het moment dat het model gemaakt wordt; de toegestane waarden worden op een andere manier bepaald. Er zijn een verschillende regimes waarmee de waarden van een codelijst beheerd kunnen worden. Een uitgebreide beschrijving hiervaan staat in paragraaf 9.5.2.2 (*The code list classifiers*) van het Generic Conceptual Model. Codelijsten voor specifieke thema's staan in Annex C van de betreffende dataspecificatie.
+INSPIRE-data wordt mede aan de hand van codelijsten en opsommingen (*enumerations*) geharmoniseerd. Beide worden gebruik om een lijstje toegestane waarden voor een attribuut te bepalen. In het geval van een enumeration zijn de toegestane waarden bekend vanaf het moment dat het model gemaakt is; de waarden maken deel uit van het model. Meestal gaat het om kleine lijstjes waar geen discussie over mogelijk is. Bij codelijsten zijn de toegestane waarden nog niet (allemaal) bekend op het moment dat het model gemaakt wordt; de toegestane waarden worden op een andere manier bepaald. Er zijn een verschillende regimes waarmee de waarden van een codelijst beheerd kunnen worden. Een uitgebreide beschrijving hiervaan staat in paragraaf 9.5.2.2 (*The code list classifiers*) van het [Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model). Codelijsten voor specifieke thema's staan in Annex C van de betreffende dataspecificatie. Voor sommige thema's is het verplicht om gebruik te maken van deze codelijsten. De codelijsten staan ook in het Europese of Nederlandse [codelijstregister](#Codelijstregister).
 
 ### Uitbreidbaarheid van codelijsten
 Iedere INSPIRE-codelijst valt onder een van de volgende uitbreidingsregimes:
@@ -207,7 +207,11 @@ Iedere INSPIRE-codelijst valt onder een van de volgende uitbreidingsregimes:
 - **any**: in dit geval zijn geen waarden bekend in de centrale codelijst en moet de data provider zijn eigen codelijst publiceren.
 
 ### Codelijstregister
-Er is een centraal codelijstregister waarin de waarden van de door de EU beheerde codelijsten gepubliceerd worden. Bij een codelijst is altijd een verwijzing opgenomen naar dit [*codelist register*](http://inspire.ec.europa.eu/codelist/). Wanneer een dataprovider zijn eigen uitbreiding op een codelist definieert, moeten deze in een lokaal codelist register beheerd worden.
+Er is een centraal Europees codelijstregister waarin de waarden van de door de EU beheerde codelijsten gepubliceerd worden. Bij een codelijst is altijd een verwijzing opgenomen naar dit [*codelist register*](http://inspire.ec.europa.eu/codelist/). Wanneer een dataprovider zijn eigen uitbreiding op een codelist definieert, moeten deze in een lokaal codelist register beheerd worden.
+Daarnaast is er een [Nederlands codelijstregister](http://inspireregister.nl/codelijst).
+Voor het registreren van codelijsten op het nederlandse codelijstregister is een account nodig. Geonovum verstrekt deze accounts. Voor registratie, neem contact op met Geonovum via INSPIRE@geonovum.nl.
+Na het [inloggen](http://inspireregister.nl:8080/re3gistry2/login) met dit account kunt u voor uw gegevensbron een nieuwe codelijst registreren en vullen.
+De handleiding voor dit register is [hier](https://github.com/ec-jrc/re3gistry/blob/master/documentation/user-manual.md) te vinden.
 
 ## Portrayal
 Het *portrayal*-hoofdstuk van een dataspecificatie (hoofdstuk 11) betreft voornamelijk de grafische weergave van de data in een viewservice. Aangezien een aantal zaken in de view services thema-afhankelijk zijn, worden ze in de data-specificatie toegelicht en niet in de Guideline / Guidance van de view service zelf.
