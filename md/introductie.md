@@ -70,7 +70,7 @@ Hier is informatie te vinden via veel verschillende ingangen:
 - [Technische guidelines](https://inspire.ec.europa.eu/Technical-guidelines3)
 - [INSPIRE wetgeving](https://inspire.ec.europa.eu/inspire-legislation/26)
 
-Via [Find Your Scope] kun je bepalen onder welk(e) thema(s) uw dataset valt. Op [INSPIRE in jouw Land](https://inspire.ec.europa.eu/portfolio/inspire-your-country) is een overzicht te vinden van de huidige status van INSPIRE in de verschillende lidstaten.
+Via [Find Your Scope](https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/FindYourScope.action) kun je bepalen onder welk(e) thema(s) uw dataset valt. Op [INSPIRE in jouw Land](https://inspire.ec.europa.eu/portfolio/inspire-your-country) is een overzicht te vinden van de huidige status van INSPIRE in de verschillende lidstaten.
 
 ### Europese INSPIRE geoportal
 In het Europese [INSPIRE geoportal](https://inspire-geoportal.ec.europa.eu/) kan je Europese milieu gegevens vinden die onder de INSPIRE-richtlijn vallen. Dit portaal biedt verschillende zoekingangen. Zo is er een ingang op thema en een op datasets die relevant zijn voor milieurapportage. 
