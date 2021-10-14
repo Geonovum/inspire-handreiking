@@ -6,16 +6,18 @@ Op deze wiki gaat het over dataharmonisatie in technisch-inhoudelijke zin; het b
 ## Documentatie dataharmonisatie
 Voor ieder INSPIRE-thema is door de EU een dataspecificatie vastgelegd die beschrijft welke gegevens en op welke manier deze gegevens moeten worden geleverd. Dit is vastgelegd in een Dataspecificatie. Deze dataspecificaties worden gepubliceerd op het [officiële INSPIRE-portaal](https://inspire.ec.europa.eu/). Op dit portaal vind je de meest actuele dataspecificaties van INSPIRE: [data-specifications](https://inspire.ec.europa.eu/data-specifications/2892).
 
-Met ingang van 10 December 2013 zijn er van alle thema's stabiele versies van de dataspecificaties beschikbaar. Deze zijn te vinden via onderstaande links. De publicatie van definitieve versies van data specificaties voor annex II en III resulteert ook in gewijzigde specificaties voor annex I omdat in de oorspronkelijke annex I middels candidate types en placeholders werd verwezen naar de nog niet ontwikkelde specificaties van annex II en III. Deze voorziene wijziging van de annex I specificaties is op 17 april 2014 gepubliceerd en resulteert in data specificaties met versie nummers 3.1 voor de annex I thema's.
+Met ingang van 10 December 2013 zijn er van alle thema's stabiele versies van de dataspecificaties beschikbaar. Deze zijn te vinden via onderstaande links.
 
 |Titel | Versie | Datum | Opmerking |
 |-----------------|-------------|-------------|-------------|
 | [Dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892)  | 4.0  | 2017-04-01   | Data specificaties voor alle themas in UML,GML,Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
 | [Definition of Annex Themes and Scope](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.3_Definition_of_Annex_Themes_and_scope_v3.0.pdf) (D2.3)  | 3.0  | 2008-10-03   | -   |
-| [INSPIRE Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) (D2.5)  | 3.4   | 2014-04-08   | Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
+| [INSPIRE Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) (D2.5)  | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
 | [Methodology for the development of data specifications: baseline version](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.6_v3.0.pdf) (D2.6)  | 3.0   | 2008-06-20	   | -   |
 | [Guidelines for the Encoding of Spatial Data](https://inspire.ec.europa.eu/file/1412/download?token=lHYwKEk5) (D2.7)  | 	3.3   | 2014-04-08   | -   |
-| [Data models](http://inspire.ec.europa.eu/Data-Models/Data-Specifications/2892) | 	r 4618   | 	2011-02-06  | Delen van modellen die genoemd worden in IR's zijn definitief (*approved*). Dit geldt niet voor de *extended* delen (geen onderdeel IR's, wel van dataspecificaties) (*draft*)   |
+| [Data models](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?) | 	r 4618   | 	2011-02-06  |De modellen die hier genoemd worden in IR's zijn definitief (*approved*). Dit geldt niet voor de *extended* delen (die zijn geen onderdeel van de IR's, maar wel van dataspecificaties) (*draft*)   |
+|[handleiding voor het gebruik van "Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE"](https://inspire.ec.europa.eu/id/document/tg/d2.9-o%26m-swe)|3.0|2016-12-16|-|
+|[INSPIRE Data Specifications – Base Models – Generic Network Model](https://inspire.ec.europa.eu/documents/inspire-data-specifications-%E2%80%93-base-models-%E2%80%93-generic-network-model)|1.0rc3|2013-04-05|Algemeen basismodel voor netwerken zoals bijvoorbeeld vervoersnetwerken|
 
 ### Find your scope
 Wanneer je niet zeker bent onder welk INSPIRE-thema een bepaalde dataset valt, is de tool [find your scope](https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/FindYourScope.action) erg nuttig. Naast de mogelijkheid om het juiste INSPIRE-thema te vinden, biedt deze tool ook een overzicht van alle objecten die binnen INSPIRE zijn gedefinieerd.
