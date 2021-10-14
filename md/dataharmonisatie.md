@@ -69,7 +69,7 @@ Hieronder volgt een opsomming van thema-specifieke dataspecificaties per annex.
 
 Wanneer je niet zeker bent onder welk INSPIRE-thema een bepaalde dataset valt, is de tool [find your scope](https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/FindYourScope.action) erg nuttig. Naast de mogelijkheid om het juiste INSPIRE-thema te vinden, biedt deze tool ook een overzicht van alle objecten die binnen INSPIRE zijn gedefinieerd.
 
-![INSPIRElandschap](media/INSPIRElandschap.gif "INSPIRE-landschap")
+![INSPIRElandschap](media/inspire_wereld_gegevens.png "INSPIRE-landschap")
 
 ## Principes dataharmonisatie
 Een van de voorwaarden voor het kunnen uitwisselen van ruimtelijke data is dat alle datasets bepaalde kenmerken delen. Zo moeten de opbouw van ruimtelijke objecten, definities van objecten en verplichte attributen over alle lidstaten uniform zijn om via services uitgewisseld te kunnen worden en onderling vergeleken te kunnen worden. Dit wordt ‘interoperabiliteit’ genoemd en de handelingen die ondernomen worden om interoperabiliteit te bereiken ‘dataharmonisatie’. INSPIRE zorgt voor een hoge mate van interoperabiliteit door per thema een standaard dataspecificatie te beschrijven die door alle lidstaten geïmplementeerd moet worden. Dit betekent dat een dataprovider zijn gegevens moet vertalen naar de INSPIRE-dataspecificatie. Het harmoniseren is grotendeels afhankelijk van de structuur van de brondata, zoals deze door de dataprovider beheerd wordt. Wordt deze file-based beheerd, of in een ruimtelijke database? Hoe ziet de structuur van de data eruit? Deze vragen kunnen alleen door de dataprovider zelf beantwoord worden.
@@ -164,7 +164,28 @@ Volgens de richtlijnen van INSPIRE moet elk object (feature) voorzien worden van
 - VersionId (optioneel)
 
 ### Namespaces
-Een namespace heeft als belangrijkste doel dat het de ruimte definieert waar binnen de localId uniek is. Om te voorkomen dat verschillende dataproviders dezelfde namespace gebruiken, en om consistentie te verkrijgen, is er in Nederland (en Europa) een zogenaamd Namespaceregister opgezet. Namespaces in Nederland moeten worden geregistreerd in het [nationale namespaceregister](http://inspirelab.geonovum.nl/namespaces/), zie ook [deze paragraaf](#namespaceregister).
+Een namespace heeft als belangrijkste doel dat het de ruimte definieert waarbinnen de localId uniek is. Om te voorkomen dat verschillende dataproviders dezelfde namespace gebruiken, en om consistentie te verkrijgen, is er in Nederland (en Europa) een zogenaamd Namespaceregister opgezet. Namespaces in Nederland moeten worden geregistreerd in het [nationale namespaceregister](http://inspirelab.geonovum.nl/namespaces/). 
+
+Het namespaceregister bevat een lijst van reeds geregistreerde namespaces door Nederlandse INSPIRE dataproviders.
+
+Voor het registreren van namespaces is een account nodig. Geonovum verstrekt deze accounts. Voor registratie, neem contact op met [Geonovum](INSPIRE@geonovum.nl).
+
+Na het [inloggen](http://inspirelab.geonovum.nl/namespaces/login.php) kunt u voor uw gegevensbron een nieuwe namespace registreren.
+
+Kijk hier voor een overzicht van de [huidige geregistreerde namespaces](http://inspirelab.geonovum.nl/namespaces/listnamespaces.php).
+
+De namespace wordt per **dataset** ingericht. De namespace is onderdeel van het INSPIRE ID en moet derhalve ook in de data voorkomen.
+
+#### Richtlijnen voor namespaces
+De volgende lexicografische spelregels (restricties) gelden voor de INSPIRE namespace:
+<aside class="note">
+	
+- Gebruik alleen de volgende karakters in de namespace code: {"a"-"z","0"-"9", "-"}.
+- Gebruik alleen lowercase letters in de namespace code.
+- Gebruik geen diacrieten in de namespace code, dus geen umlaut bijvoorbeeld.
+- Begin namespace code met een letter.
+- Gebruik minimaal 3 karakters. Lange namespace codes zijn niet wenselijk.
+</aside>
 
 ### LocalId
 De LocalId is de unieke identifier voor een object (binnen een namespace). De dataprovider is verantwoordelijk voor het uitdelen van unieke identifiers (de localId). In hoofdstuk 14 ('Identifier management') van het Generic Conceptual Model wordt algemene uitleg gegeven over het gebruik van unieke identifiers. Per thema kunnen er nog specifieke uitbreidingen staan in **paragraaf 5.2.1.4** van de dataspecificatie.
