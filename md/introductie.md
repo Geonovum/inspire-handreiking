@@ -1,21 +1,13 @@
 # Introductie
-Welkom bij de wiki "Aan de slag met INSPIRE". Deze wiki is bedoeld voor INSPIRE-dataproviders en geeft informatie om te voldoen aan de (technische) INSPIRE-verplichtingen. De opbouw van de INSPIRE-wiki is gebaseerd op de verschillende [processtappen](#processtappen) die dataproviders doorlopen. Per (deel)processtap is aangegeven
+De wiki "Aan de slag met INSPIRE" is een handreiking met informatie om te voldoen aan de (technische) INSPIRE-verplichtingen. Deze INSPIRE-wiki is bedoeld voor INSPIRE-dataproviders die datasets voor INSPIRE ontsluiten. 
+
+De opbouw van de INSPIRE-wiki is gebaseerd op de verschillende [processtappen](#processtappen) die dataproviders doorlopen. Per (deel)processtap is aangegeven
 - welke Nederlandse standaard erop van toepassing is;
 - welke (delen van) de INSPIRE-richtlijnen er betrekking op hebben en
 - of er in aanvulling op de Nederlandse standaarden nog specifieke stappen uitgevoerd moeten worden.
 
-Waar mogelijk zijn voorbeelden uitgewerkt. De processtappen zijn terug te vinden in de inhoudsopgave als aparte hoofdstukken. Met deze inhoudsopgave kunt u snel navigeren tussen verschillende processtappen. De inhoudsopgave vindt u aan de linker zeide van deze pagina en kan open- of dichtgeklapt worden met de pijlen linksonderin.
+Waar mogelijk zijn voorbeelden uitgewerkt. 
 
-## Betrokken partijen
-De INSPIRE-wiki is tot stand gekomen dankzij de medewerking en betrokkenheid van:
-- 52°North
-- Alterra
-- Conterra
-- Geodan IT
-- Interactive-instruments
-- Stichting Geonovum
-- Stichting Ruimte voor Geo Informatie (RGI)
-- Universiteiten: Dresden, TU Delft en Wageningen Universiteit
 
 ## Doelgroep
 Deze wiki bedient meerdere doelgroepen, maar richt zich in eerste instantie op partijen die verantwoordelijk zijn voor de uitvoering. Daarnaast is de informatie ook relevant voor andere partijen die aan slag gaan met INSPIRE. Het belangrijkste doel van deze wiki is om het werkproces inzichtelijk te maken en kennis hierover op een overzichtelijke manier ter beschikking te stellen.
@@ -39,7 +31,7 @@ Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende docu
 4. [Publiceren in INSPIRE-portal](#publiceren)
 5. [Validatie](#validatie)
 
-![processtapplaatje](media/processtappen5.png "Processtappen voor implementeren van INSPIRE binnen een organisatie")
+![processtapplaatje](media/Processtappen5.png "Processtappen voor implementeren van INSPIRE binnen een organisatie")
 
 Per processtap wordt de bijbehorende documentatie weergegeven:
 - de EU Guidelines, Data Specs en andere docs (oranje);
