@@ -1,7 +1,9 @@
 # Introductie
-De wiki "Aan de slag met INSPIRE" is een handreiking met informatie om te voldoen aan de (technische) INSPIRE-verplichtingen. Deze INSPIRE-wiki is bedoeld voor INSPIRE-dataproviders die datasets voor INSPIRE ontsluiten. 
+De wiki "Aan de slag met INSPIRE" is een handreiking met informatie om te voldoen aan de (technische) INSPIRE-verplichtingen. Deze INSPIRE-wiki is bedoeld voor de INSPIRE-dataproviders die datasets voor INSPIRE ontsluiten. 
 
-De opbouw van de INSPIRE-wiki is gebaseerd op de verschillende [processtappen](#processtappen) die dataproviders doorlopen. Per (deel)processtap is aangegeven:
+In het kader van INSPIRE realiseren de Europese lidstaten een digitaal netwerk voor het uitwisselen van gegevens over de leefomgeving. Geonovum ondersteunt het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties en dataproviders bij de invoering van INSPIRE in Nederland. Voor meer algemene informatie over INSPIRE verwijzen we naar het INSPIRE dossier op de [Geonovum website](https://www.geonovum.nl/geo-standaarden/inspire-europese-leefomgeving).
+
+De opbouw van de INSPIRE-wiki is gebaseerd op de verschillende [processtappen](#processtappen) die de dataproviders doorlopen. Per (deel)processtap is aangegeven:
 - welke Nederlandse standaard erop van toepassing is;
 - welke (delen van) de INSPIRE-richtlijnen er betrekking op hebben en
 - of er in aanvulling op de Nederlandse standaarden nog specifieke stappen uitgevoerd moeten worden.
@@ -9,70 +11,100 @@ En waar mogelijk zijn voorbeelden uitgewerkt.
 
 
 ## Doelgroep
-Deze INSPIRE-wiki bedient meerdere doelgroepen, maar richt zich in eerste instantie op partijen die verantwoordelijk zijn voor de uitvoering. Daarnaast is de informatie ook relevant voor andere partijen die aan slag gaan met INSPIRE. Het belangrijkste doel van deze wiki is om het werkproces inzichtelijk te maken en kennis hierover op een overzichtelijke manier ter beschikking te stellen.
+Deze INSPIRE-wiki bedient meerdere doelgroepen, maar richt zich in eerste instantie op partijen die verantwoordelijk zijn voor de uitvoering van INSPIRE. Daarnaast is de informatie ook relevant voor andere partijen die aan slag gaan met INSPIRE. Het belangrijkste doel van deze wiki is om het werkproces inzichtelijk te maken en kennis hierover op een overzichtelijke manier ter beschikking te stellen.
 
 ### Uitvoerders
-Onder partijen die verantwoordelijk zijn voor de uitvoering verstaan wij die personen en organisaties die praktisch en technisch met INSPIRE aan de slag gaan. Dat gaat hier concreet om de Nederlandse dataproviders. Zij zullen de processtappen uitvoeren die nodig zijn om te voldoen aan de INSPIRE-richtlijnen. Ook zijn zij verantwoordelijk voor het publiceren van de metadata, het ontsluiten van de data via services en het harmoniseren van de data. Dit kan door verschillende personen binnen een organisatie uitgevoerd worden, zoals data-beheerders, applicatie-specialisten, dba’ers van ruimtelijke databases en ICT'ers.
+Onder partijen die verantwoordelijk zijn voor de uitvoering verstaan wij die personen en organisaties die praktisch en technisch met INSPIRE aan de slag gaan. Dat gaat hier concreet om de Nederlandse dataproviders. Zij zullen de processtappen uitvoeren die nodig zijn om te voldoen aan de INSPIRE-richtlijn. Ook zijn zij verantwoordelijk voor het publiceren van de metadata, het ontsluiten van de data via services en het harmoniseren van de data. Dit kan door verschillende personen binnen een organisatie uitgevoerd worden, zoals data-beheerders, applicatie-specialisten, dba’ers van ruimtelijke databases en ICT'ers.
 
 ### Beleidsmakers
-De wiki is daarmee momenteel meer technisch dan organisatorisch ingestoken. Ook beleidmakers en managers krijgen met INSPIRE te maken. Zij zullen ook praktisch met INSPIRE aan de slag gaan, maar op een andere manier dan de technische beheerders, GIS-operators en ICT'ers. Toch kan het verhelderend zijn een blik op de wiki te werpen om een idee te krijgen van het type werk, dat voor INSPIRE moet worden uitgevoerd.
+De wiki is daarmee momenteel meer technisch dan organisatorisch ingestoken. Ook beleidmakers en managers krijgen met INSPIRE te maken. Zij zullen ook praktisch met INSPIRE aan de slag gaan, maar op een andere manier dan de technische beheerders, GIS-operators en ICT'ers. Toch kan het verhelderend de wiki te lezen om een idee te krijgen van het type werk, dat voor INSPIRE moet worden uitgevoerd.
 
 ## Processtappen
-Het INSPIRE-implementatieproces is, na het inrichten van de eigen organisatie, opgedeeld vijf technische stappen. Deze pagina licht deze stappen kort toe. Uitgebreidere informatie over de afzonderlijke stappen vindt u door in de inhoudsopgave aan de linkerzijde het desbetreffende hoofdstuk aan te klikken.
+Het INSPIRE-implementatieproces is, na het aanmerken van de dataprovider en het vervolgens inrichten van de eigen organisatie, opgedeeld in vijf technische stappen. Deze pagina licht deze stappen kort toe. Uitgebreidere informatie over de afzonderlijke stappen staat beschreven in de afzonderlijke hoofdstukken. 
 
-Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende documentatie wordt geen rekening gehouden met processtappen die een technisch data-beheerder of GIS-operator moet ondernemen om de data conform INSPIRE te ontsluiten. Deze wiki helpt deze partijen om het werkproces inzichtelijk te maken. Dit werkproces bestaat, naast het inrichten van de organisatie uit de onderstaande vijf stappen. De informatie op deze wiki volgt deze structuur. De groene pijlen tonen de opeenvolgende stappen die men moet doorlopen om aan de *EU-directive* te voldoen.
+Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende documentatie wordt geen rekening gehouden met processtappen die een technisch data-beheerder of GIS-operator moet ondernemen om de data conform INSPIRE te ontsluiten. Deze wiki helpt deze partijen om het werkproces inzichtelijk te maken. Dit werkproces bestaat, naast het inrichten van de organisatie uit de onderstaande vijf stappen. De informatie op deze wiki volgt deze structuur. De groene pijlen tonen de opeenvolgende stappen die men moet doorlopen om aan de *INSPIRE richtlijn* te voldoen.
 
 1. [Dataharmonisatie](#dataharmonisatie)
-2. [Metadata](#dataharmonisatie)
+2. [Metadata](#metadata)
 3. [Services](#services)
 	1. [Network services](#network-services)
 	2. [Spatial data services](#spatial-data-services)
-4. [Publiceren in INSPIRE-portal](#publiceren)
+4. [Publiceren van de metadata in het Nationale Georegister](#publiceren)
 5. [Validatie](#validatie)
 
 ![processtapplaatje](media/Processtappen5.png "Processtappen voor implementeren van INSPIRE binnen een organisatie")
 
 Per processtap wordt de bijbehorende documentatie weergegeven:
-- de EU Guidelines, Data Specs en andere docs (oranje);
-- de Nederlandse standaarden die INSPIRE ondersteunen  (blauw);
-- het onderste deel (grijs) somt de overeenkomstige testbeds en best practices op die in de toekomst bij elke processtap te vinden zijn.
+- de Europese technische guidelines, dataspecificaties en andere documenten (oranje);
+- de Nederlandse standaarden die INSPIRE ondersteunen (blauw);
 Om het figuur zo overzichtelijk mogelijk te houden, is er voor gekozen om de wetteksten (IR’s - *decisions en regulations*) hier niet in op te nemen. 
 
-Overzicht van documentatie: Implementing Rules, Guidelines en andere documenten vind je op de [Geonovum website](https://www.geonovum.nl/geo-standaarden/inspire-europese-leefomgeving).
+De Europese documenten zijn te vinden op de [Europese INSPIRE website](https://inspire.ec.europa.eu/). De Nederlandse standaarden zijn te vinden via de Geo-standaarden op de [Geonovum website](https://www.geonovum.nl/geo-standaarden).
 
 ## Deadlines
-[Hier is de INSPIRE roadmap te vinden.](https://inspire.ec.europa.eu/road-map-graphic/32443). Kort gezegd houdt het in:
+Alle INSPIRE deadlines om datasets beschikbaar te maken zijn reeds verstreken. De oorspronkelijke INSPIRE roadmap met alle verschillende deadline is [hier](https://inspire.ec.europa.eu/road-map-graphic/32443) te vinden.
 
-<aside class="note">
+Alleen rondom het actualiseren van de gegevens is nog wel van kracht. Deze is in de paragraaf hieronder beschreven.
 
-- Annex I datasets en services: gereed op 23 november 2017
+### Deadline actualisatie van de INSPIRE gegevens
+In de [VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX%3A32010R1089) van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens] staat de deadline met betrekking tot de actualisatie van de INSPIRE gegevens beschreven.
 
-- Annex II datasets en services: gereed op 21 oktober 2020
-
-- Annex III datasets en services: gereed op 21 oktober 2020.
-</aside>
-
-In artikel 8, lid 2 van de VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens staat:
+In artikel 8, lid 2 staat:
 
 Uiterlijk 6 maanden nadat de wijziging in de brongegevensverzameling was aangebracht, moeten alle updates worden uitgevoerd, tenzij in bijlage II een andere periode is vastgelegd voor een specifiek ruimtelijke gegevensthema.
 
-Dat betekent dat binnen 6 maanden nadat de brondata (op dit moment: de as-is data voor Annex II en III) aangepast is:
+Dat betekent dat binnen 6 maanden nadat de brondata aangepast is:
 
-1. de metadata van de as-is dataset conform INSPIRE specificaties moet worden aangeboden (zie [invulinstructie](#invulinstructie-voor-datasets))
+1. de metadata van de dataset conform INSPIRE specificaties moet worden aangeboden (zie [invulinstructie](#invulinstructie-voor-datasets))
 2. de view en downloadservices conform INSPIRE specificaties moeten worden aangeboden
-3. de link naar de as-is metadata in het aanmerkingsregister ingevuld moet worden
-4. de geharmoniseerde data en geharmoniseerde view en downloadservices moeten uiterlijk 21 oktober 2020 aangeboden worden
+3. de link naar de metadata in het aanmerkingsregister ingevuld moet worden
 
 ## Bronnen
 
+### Europese INSPIRE website
+De [Europese INSPIRE website](https://inspire.ec.europa.eu/) is een belangrijke bron voor informatie. 
+Hier is informatie te vinden via veel verschillende ingangen:
+- [Documentenbibliotheek](https://inspire.ec.europa.eu/portfolio/document-library)
+- [Dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892)
+- [Implementing rules](https://inspire.ec.europa.eu/inspire-implementing-rules/51763)
+- [Technische guidelines](https://inspire.ec.europa.eu/Technical-guidelines3)
+- [INSPIRE wetgeving](https://inspire.ec.europa.eu/inspire-legislation/26)
+
+Via [Find Your Scope] kun je bepalen onder welk(e) thema(s) uw dataset valt. Op [INSPIRE in jouw Land](https://inspire.ec.europa.eu/portfolio/inspire-your-country) is een overzicht te vinden van de huidige status van INSPIRE in de verschillende lidstaten.
+
+### Europese INSPIRE geoportal
+In het Europese [INSPIRE geoportal](https://inspire-geoportal.ec.europa.eu/) kan je Europese milieu gegevens vinden die onder de INSPIRE-richtlijn vallen. Dit portaal biedt verschillende zoekingangen. Zo is er een ingang op thema en een op datasets die relevant zijn voor milieurapportage. 
+Het Europese geoportal harvest de metadata van 36 officieel geregistreerde nationale data calogi van Europese lidstaten en EFTA landen. Het Geoportal team bij het Joint Research Centre werkt constant aan verbeteringen. Op basis van vraag, zullen zij ook andere thematische views en functionaliteiten toevoegen.
+
+### INSPIRE registry
+De [INSPIRE registry](https://inspire.ec.europa.eu/registry) behelst een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). 
+
+De INSPIRE registry biedt een centraal toegangspunt voor een aantal centraal beheerde INSPIRE registers. De inhoud van deze registers is gebaseerd op de INSPIRE richtlijn, de implementing rules en de technische guidelines. Zo omvat de Registry onder meer de volgende elementen:
+- De [Feature Concept Dictionary (FCD)](https://inspire.ec.europa.eu/featureconcept) bevat de afgebakende concepten waarop de INSPIRE richtlijn gebouwd is, aangevuld met een korte uitleg.
+- De [Glossary](https://inspire.ec.europa.eu/glossary) bevat generieke termen en definities van veelgebruikte INSPIRE terminologie.
+- Het [Codelijst register](https://inspire.ec.europa.eu/codelist) bevat de codelijsten en hun waarden.
+- Het [Metadata code list register](https://inspire.ec.europa.eu/metadata-codelist) bevat de metadata codelijsten en hun waarden.
+- De [Enumeratielijst](https://inspire.ec.europa.eu/enumeration) bevat een overzicht van alle enumeraties en hun waarden.
+
+### Nationaal Georegister
+De Nederlandse "tegenhanger" van het INSPIRE Geoportal op Europees niveau is het [Nationaal GeoRegister (NGR)](http://www.nationaalgeoregister.nl/). Het NGR doet dienst als de INSPIRE zoekdienst (Discovery Service), die de Nederlandse metadata over de INSPIRE datasets en services naar het Europese INSPIRE Geoportal ontsluit. Het NGR biedt voor Nederlandse dataproviders een metadata editor en validator functionaliteit aan.
+
+
 ## Over deze wiki
-### INSPIRE is volop in beweging
-INSPIRE is volop in beweging. Dat betekent dat nog niet alles over INSPIRE gezegd is. De guidelines worden regelmatig herzien. De wiki wordt daarop aangepast. Verwacht hier niet alles over INSPIRE. De insteek is om *die* informatie te verstrekken die nodig is om data volgens de INSPIRE-richtlijnen beschikbaar te kunnen stellen. De meest complete bron van informatie is de richtlijn zelf (inclusief bijbehorende documentatie). Daarbij horen ook de Nederlandse profielen en standaarden. Het detail van de wiki slaat het software-niveau over; het is geen *how to* die uitlegt hoe je in specifieke software bepaalde functionaliteit oproept, of uitvoert. Wel reikt de wiki principes of mechanismen aan.
+### INSPIRE is nog steeds in beweging
+INSPIRE is nog steeds in beweging. Dat betekent dat nog niet alles over INSPIRE gezegd is. Als er aanpassingen zijn, dan wordt de INSPIRE-wiki  daarop aangepast. 
+
+Verwacht hier echter niet alles over INSPIRE. De insteek is om *die* informatie te verstrekken die nodig is om data volgens de INSPIRE-richtlijn beschikbaar te kunnen stellen. De meest complete bron van informatie is de richtlijn zelf (inclusief bijbehorende documentatie). Daarbij horen ook de Nederlandse profielen en standaarden. 
+
+Het detail van de wiki slaat het software-niveau over; het is geen *how to* die uitlegt hoe je in specifieke software bepaalde functionaliteit oproept, of uitvoert. Wel reikt de wiki principes of mechanismen aan.
 
 ### Taal en Terminologie
 INSPIRE-terminologie (Engels) wordt niet structureel vertaald naar het Nederlands. De belangrijkste reden hiervoor is dat niet van alle technische termen een eenduidige Nederlandse vertaling bestaat. Om verwarring te voorkomen hanteren we hier de Engelse termen. Engelse en INSPIRE-terminologie staan de eerste keer in *italics*. Veel juridische termen kennen wél een goede Nederlandse vertaling; die nemen we hier daarom over.
 
 ### INSPIRE Helpdesk
-- Heeft u een vraag over INSPIRE, stuur dan een e-mail naar inspire@geonovum.nl.
-- Op de Geonovum-website is informatie over het [INSPIRE-programmabureau](https://www.geonovum.nl/geo-standaarden/inspire-europese-leefomgeving) te vinden.
-- Daarnaast is de [website van Geonovum](https://www.geonovum.nl/) het informatieplatform voor de Nederlandse geo-standaarden
+Heeft u een vraag over INSPIRE, stuur dan een e-mail naar inspire@geonovum.nl.
+
+Op de Geonovum-website is algemene informatie over het [INSPIRE](https://www.geonovum.nl/geo-standaarden/inspire-europese-leefomgeving) te vinden. Daarnaast is de [website van Geonovum](https://www.geonovum.nl/) het informatieplatform voor de Nederlandse geo-standaarden.
+
+Op het Nederlandse [Geoforum](https://geoforum.nl/c/standaarden/inspire) is onder de categorie INSPIRE ook (nu nog beperkt) informatie te vinden. 
+Tot slot is op [Github pagina 'INSPIRE Maintenance and Implementation'](https://github.com/inspire-mif) de Europese helpdesks rondom INSPIRE te vinden. 
