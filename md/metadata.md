@@ -1,9 +1,9 @@
 # Metadata
 
-Introductie metadata
+Datasets die voor INSPIRE zijn aangemerkt, worden van een beschrijving (metadata) voorzien, zodat zij door anderen te vinden en te gebruiken is. Deze metadata moet voldoen aan de INSPIRE vereisten, zodat daarmee alle data in Europa op dezelfde manier beschreven is. Dit maakt het onder andere mogelijk om de data op bepaalde trefwoorden te doorzoeken. In volgende paragrafen wordt aangegeven hoe er aan deze vereisten kan worden voldaan.
 
 ## INSPIRE-metadata in het Nationaal Georegister
-In het figuur hieronder zie je een screenshot van het Nationaal Georegister (NGR), dat voor INSPIRE-metadata dienst doet als *discovery service*. Het NGR wordt echter niet alleen met INSPIRE-conforme metadata gevuld; ook andere metadata kan toegevoegd worden. INSPIRE-metadata kan gevonden worden door in het tabblad 'Zoeken' te filteren op de Categorie 'Inspire'.
+Metadata van INSPIRE datasets, wordt gepubliseerd in hetNationaal Georegister (NGR). In het figuur hieronder zie je een screenshot van het Nationaal Georegister (NGR), dat voor INSPIRE-metadata dienst doet als *discovery service*. Het NGR wordt echter niet alleen met INSPIRE-conforme metadata gevuld; ook andere metadata kan toegevoegd worden. INSPIRE-metadata kan gevonden worden door in het tabblad 'Zoeken' te filteren op de Categorie 'Inspire'.
 
 ![NGRinspire](media/NGR-FilterINSPIRE.png "Gebruik in het NGR het filter 'Inspire' om alle beschikbare INSPIRE-compliant datasets te vinden.")
 
@@ -12,12 +12,12 @@ Metadata dient ter beschikking worden gesteld voor:
 - Datasets en dataset series, én;
 - Network Services (o.a. View en Download Services).
 
-Normaal gesproken zal de dataprovider metadata aanmaken als onderdeel van beheer en publicatie van data en services. De dataprovider heeft daarbij ook de taak om na te gaan of deze metadatabestanden (XML-bestanden) voldoen aan de INSPIRE-richtlijnen. De via deze weg aangemaakte metadata wordt vervolgens in het Nationaal Georegister (NGR) gepubliceerd door het uploaden van XML-metadatabestanden, of door harvesting vanuit een eigen metadatacatalogus.
+In de meeste gevallen zal de dataprovider metadata aanmaken als onderdeel van beheer en publicatie van data en services. De dataprovider heeft daarbij ook de taak om na te gaan of deze metadatabestanden (XML-bestanden) voldoen aan de INSPIRE-richtlijnen. De via deze weg aangemaakte metadata wordt vervolgens in het Nationaal Georegister (NGR) gepubliceerd door het uploaden van XML-metadatabestanden, of door harvesting vanuit een eigen metadatacatalogus.
 
 Het aanmaken en publiceren van metadata kan ook rechtstreeks via het Nationaal Georegister. Binnen het NGR is hiervoor een metadata-editor beschikbaar.
 
 ## Eisen metadata
-De metadata-elementen die voor INSPIRE, vanuit verschillende richtlijnen, beschreven moeten worden zijn opgenomen in de Nederlandse profielen. Deze profielen zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen. Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen voor INSPIRE ook worden beschreven en aan de condities voor INSPIRE voldoen.
+De metadata-elementen die voor INSPIRE, vanuit verschillende richtlijnen, beschreven moeten worden zijn opgenomen in de Nederlandse profielen. Deze profielen zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen. Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen voor INSPIRE ook worden beschreven en aan de condities voor INSPIRE voldoen. [Nederlands metadata profiel op ISO 19115] (https://docs.geostandaarden.nl/md/mdprofiel-iso19115/) [Nederlands metadata profiel op ISO 19119] (https://docs.geostandaarden.nl/md/mdprofiel-iso19119/)
 
 Zie voor meer informatie het [dossier metadata op de Geonovum-website](https://www.geonovum.nl/geo-standaarden/metadata).
 
