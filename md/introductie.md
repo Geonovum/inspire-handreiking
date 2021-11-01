@@ -1,12 +1,13 @@
 # Introductie
-De wiki "Aan de slag met INSPIRE" is een handreiking met informatie om te voldoen aan de (technische) INSPIRE-verplichtingen. Deze INSPIRE-wiki is bedoeld voor de INSPIRE-dataproviders die datasets voor INSPIRE ontsluiten. 
+In het kader van INSPIRE realiseren de Europese lidstaten een digitaal netwerk voor het uitwisselen van gegevens over de leefomgeving. Geonovum ondersteunt het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties en de Nederlandse dataproviders bij de invoering van INSPIRE in Nederland. 
 
-In het kader van INSPIRE realiseren de Europese lidstaten een digitaal netwerk voor het uitwisselen van gegevens over de leefomgeving. Geonovum ondersteunt het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties en dataproviders bij de invoering van INSPIRE in Nederland. Voor meer algemene informatie over INSPIRE verwijzen we naar het INSPIRE dossier op de [Geonovum website](https://www.geonovum.nl/geo-standaarden/inspire-europese-leefomgeving).
+De wiki "Aan de slag met INSPIRE" is een handreiking met informatie om te voldoen aan de (technische) INSPIRE-verplichtingen. Deze INSPIRE-wiki is bedoeld voor de INSPIRE-dataproviders, die datasets voor INSPIRE ontsluiten. Voor meer algemene informatie over INSPIRE verwijzen we graag naar het INSPIRE dossier op de [Geonovum website](https://www.geonovum.nl/geo-standaarden/inspire-europese-leefomgeving).
 
 De opbouw van de INSPIRE-wiki is gebaseerd op de verschillende [processtappen](#processtappen) die de dataproviders doorlopen. Per (deel)processtap is aangegeven:
 - welke Nederlandse standaard erop van toepassing is;
 - welke (delen van) de INSPIRE-richtlijnen er betrekking op hebben en
 - of er in aanvulling op de Nederlandse standaarden nog specifieke stappen uitgevoerd moeten worden.
+ 
 En waar mogelijk zijn voorbeelden uitgewerkt. 
 
 
@@ -17,12 +18,12 @@ Deze INSPIRE-wiki bedient meerdere doelgroepen, maar richt zich in eerste instan
 Onder partijen die verantwoordelijk zijn voor de uitvoering verstaan wij die personen en organisaties die praktisch en technisch met INSPIRE aan de slag gaan. Dat gaat hier concreet om de Nederlandse dataproviders. Zij zullen de processtappen uitvoeren die nodig zijn om te voldoen aan de INSPIRE-richtlijn. Ook zijn zij verantwoordelijk voor het publiceren van de metadata, het ontsluiten van de data via services en het harmoniseren van de data. Dit kan door verschillende personen binnen een organisatie uitgevoerd worden, zoals data-beheerders, applicatie-specialisten, dba’ers van ruimtelijke databases en ICT'ers.
 
 ### Beleidsmakers
-De wiki is daarmee momenteel meer technisch dan organisatorisch ingestoken. Ook beleidmakers en managers krijgen met INSPIRE te maken. Zij zullen ook praktisch met INSPIRE aan de slag gaan, maar op een andere manier dan de technische beheerders, GIS-operators en ICT'ers. Toch kan het verhelderend de wiki te lezen om een idee te krijgen van het type werk, dat voor INSPIRE moet worden uitgevoerd.
+De wiki is daarmee momenteel meer technisch dan organisatorisch ingestoken. Ook beleidmakers en managers krijgen met INSPIRE te maken. Zij zullen ook praktisch met INSPIRE aan de slag gaan, maar op een andere manier dan de technische beheerders, GIS-operators en ICT'ers. Toch kan het verhelderend zijn de wiki te lezen om een idee te krijgen van het type werk, dat voor INSPIRE moet worden uitgevoerd.
 
 ## Processtappen
 Het INSPIRE-implementatieproces is, na het aanmerken van de dataprovider en het vervolgens inrichten van de eigen organisatie, opgedeeld in vijf technische stappen. Deze pagina licht deze stappen kort toe. Uitgebreidere informatie over de afzonderlijke stappen staat beschreven in de afzonderlijke hoofdstukken. 
 
-Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende documentatie wordt geen rekening gehouden met processtappen die een technisch data-beheerder of GIS-operator moet ondernemen om de data conform INSPIRE te ontsluiten. Deze wiki helpt deze partijen om het werkproces inzichtelijk te maken. Dit werkproces bestaat, naast het inrichten van de organisatie uit de onderstaande vijf stappen. De informatie op deze wiki volgt deze structuur. De groene pijlen tonen de opeenvolgende stappen die men moet doorlopen om aan de *INSPIRE richtlijn* te voldoen.
+Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende documentatie wordt geen rekening gehouden met processtappen die een technisch data-beheerder of GIS-operator moet ondernemen om de data conform INSPIRE te ontsluiten. Deze wiki helpt de dataproviders om het werkproces inzichtelijk te maken. Dit werkproces bestaat, naast het aanmerken en inrichten van de organisatie uit de onderstaande vijf stappen: 
 
 1. [Dataharmonisatie](#dataharmonisatie)
 2. [Metadata](#metadata)
@@ -32,14 +33,17 @@ Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende docu
 4. [Publiceren van de metadata in het Nationale Georegister](#publiceren)
 5. [Validatie](#validatie)
 
+De informatie op deze wiki volgt deze structuur (zie ook onderstaande figuur). De groene pijlen in de figuur tonen de opeenvolgende processtappen die doorlopen moeten worden om aan de *INSPIRE richtlijn* te voldoen.
+
 ![processtapplaatje](media/Processtappen5.png "Processtappen voor implementeren van INSPIRE binnen een organisatie")
 
 Per processtap wordt de bijbehorende documentatie weergegeven:
-- de Europese technische guidelines, dataspecificaties en andere documenten (oranje);
-- de Nederlandse standaarden die INSPIRE ondersteunen (blauw);
+- de Europese technische guidelines, dataspecificaties en andere documenten (in oranje);
+- de Nederlandse standaarden die INSPIRE ondersteunen (in blauw);
 Om het figuur zo overzichtelijk mogelijk te houden, is er voor gekozen om de wetteksten (IR’s - *decisions en regulations*) hier niet in op te nemen. 
 
-De Europese documenten zijn te vinden op de [Europese INSPIRE website](https://inspire.ec.europa.eu/). De Nederlandse standaarden zijn te vinden via de Geo-standaarden op de [Geonovum website](https://www.geonovum.nl/geo-standaarden).
+De Europese documenten zijn te vinden via de [Europese INSPIRE website](https://inspire.ec.europa.eu/). In het onderdeel [bronnen](#bronnen) op deze wiki worden deze documenten ook nog nader toegelicht.
+De Nederlandse standaarden zijn te vinden via de Geo-standaarden op de [Geonovum website](https://www.geonovum.nl/geo-standaarden).
 
 ## Deadlines
 Alle INSPIRE deadlines om datasets beschikbaar te maken zijn reeds verstreken. De oorspronkelijke INSPIRE roadmap met alle verschillende deadline is [hier](https://inspire.ec.europa.eu/road-map-graphic/32443) te vinden.
