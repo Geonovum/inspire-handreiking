@@ -46,9 +46,9 @@ De Europese documenten zijn te vinden via de [Europese INSPIRE website](https://
 De Nederlandse standaarden zijn te vinden via de Geo-standaarden op de [Geonovum website](https://www.geonovum.nl/geo-standaarden).
 
 ## Deadlines
-Alle INSPIRE deadlines om datasets beschikbaar te maken zijn reeds verstreken. De oorspronkelijke INSPIRE roadmap met alle verschillende deadline is [hier](https://inspire.ec.europa.eu/road-map-graphic/32443) te vinden.
+Alle INSPIRE deadlines om datasets beschikbaar te maken zijn reeds verstreken. De oorspronkelijke INSPIRE roadmap met alle verschillende deadlines is [hier](https://inspire.ec.europa.eu/road-map-graphic/32443) te vinden.
 
-Alleen rondom het actualiseren van de gegevens is nog wel van kracht. Deze is in de paragraaf hieronder beschreven.
+Alleen de deadline rondom het actualiseren van de gegevens is nog steeds van kracht. Deze actualisatie deadline is in de paragraaf hieronder beschreven.
 
 ### Deadline actualisatie van de INSPIRE gegevens
 In de [VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX%3A32010R1089) van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens] staat de deadline met betrekking tot de actualisatie van de INSPIRE gegevens beschreven.
@@ -67,28 +67,28 @@ Dat betekent dat binnen 6 maanden nadat de brondata aangepast is:
 
 ### Europese INSPIRE website
 De [Europese INSPIRE website](https://inspire.ec.europa.eu/) is een belangrijke bron voor informatie. 
-Hier is informatie te vinden via veel verschillende ingangen:
-- [Documentenbibliotheek](https://inspire.ec.europa.eu/portfolio/document-library)
-- [Dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892)
-- [Implementing rules](https://inspire.ec.europa.eu/inspire-implementing-rules/51763)
-- [Technische guidelines](https://inspire.ec.europa.eu/Technical-guidelines3)
+Hier is onder andere de volgende informatie te vinden:
 - [INSPIRE wetgeving](https://inspire.ec.europa.eu/inspire-legislation/26)
+- [Implementing rules](https://inspire.ec.europa.eu/inspire-implementing-rules/51763)
+- [Dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892)
+- [Technische guidelines](https://inspire.ec.europa.eu/Technical-guidelines3)
+- [Overzicht van de implementatie van INSPIRE in de verschillende lidstaten](https://inspire.ec.europa.eu/portfolio/inspire-your-country)
 
-Via [Find Your Scope](https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/FindYourScope.action) kun je bepalen onder welk(e) thema(s) uw dataset valt. Op [INSPIRE in jouw Land](https://inspire.ec.europa.eu/portfolio/inspire-your-country) is een overzicht te vinden van de huidige status van INSPIRE in de verschillende lidstaten.
+De online tool [Find Your Scope](https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/FindYourScope.action) ondersteunt de dataproviders bij het bepalen van de INSPIRE thema's en ruimtelijke objecttypes die relevant zijn voor de dataset(s) die de dataproviders beheren. Er zijn drie manieren om de INSPIRE thema's en/of objecttypes te bepalen namelijk via een catalogus van alle INSPIRE objecttypes, via een interactieve werkflow of via direct zoeken.
+
 
 ### Europese INSPIRE geoportal
 In het Europese [INSPIRE geoportal](https://inspire-geoportal.ec.europa.eu/) kan je Europese milieu gegevens vinden die onder de INSPIRE-richtlijn vallen. Dit portaal biedt verschillende zoekingangen. Zo is er een ingang op thema en een op datasets die relevant zijn voor milieurapportage. 
-Het Europese geoportal harvest de metadata van 36 officieel geregistreerde nationale data calogi van Europese lidstaten en EFTA landen. Het Geoportal team bij het Joint Research Centre werkt constant aan verbeteringen. Op basis van vraag, zullen zij ook andere thematische views en functionaliteiten toevoegen.
+Het Europese geoportal harvest de metadata van 36 officieel geregistreerde nationale data calogi van Europese lidstaten en EFTA landen. Het INSPIRE Geoportal team wordt ontwikkeld door het Joint Research Centre (JRC).
 
 ### INSPIRE registry
-De [INSPIRE registry](https://inspire.ec.europa.eu/registry) behelst een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). 
+De [INSPIRE registry](https://inspire.ec.europa.eu/registry) omvat een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). 
 
 De INSPIRE registry biedt een centraal toegangspunt voor een aantal centraal beheerde INSPIRE registers. De inhoud van deze registers is gebaseerd op de INSPIRE richtlijn, de implementing rules en de technische guidelines. Zo omvat de Registry onder meer de volgende elementen:
-- De [Feature Concept Dictionary (FCD)](https://inspire.ec.europa.eu/featureconcept) bevat de afgebakende concepten waarop de INSPIRE richtlijn gebouwd is, aangevuld met een korte uitleg.
-- De [Glossary](https://inspire.ec.europa.eu/glossary) bevat generieke termen en definities van veelgebruikte INSPIRE terminologie.
+- De [Feature Concept Dictionary (FCD)](https://inspire.ec.europa.eu/featureconcept) bevat termen en definities die nodig zijn voor het specificeren van de thematische ruimtelijke objecttypes en het is vooral de belangrijkste rol om de harmonisatie-inspanningen te ondersteunen en om conflicten tussen de specificaties van de ruimtelijke objecttypes in de verschillende thema's te identificeren.
 - Het [Codelijst register](https://inspire.ec.europa.eu/codelist) bevat de codelijsten en hun waarden.
 - Het [Metadata code list register](https://inspire.ec.europa.eu/metadata-codelist) bevat de metadata codelijsten en hun waarden.
-- De [Enumeratielijst](https://inspire.ec.europa.eu/enumeration) bevat een overzicht van alle enumeraties en hun waarden.
+- De [Glossary](https://inspire.ec.europa.eu/glossary) bevat generieke termen en definities van veelgebruikte INSPIRE terminologie.
 
 ### Nationaal Georegister
 De Nederlandse "tegenhanger" van het INSPIRE Geoportal op Europees niveau is het [Nationaal GeoRegister (NGR)](http://www.nationaalgeoregister.nl/). Het NGR doet dienst als de INSPIRE zoekdienst (Discovery Service), die de Nederlandse metadata over de INSPIRE datasets en services naar het Europese INSPIRE Geoportal ontsluit. Het NGR biedt voor Nederlandse dataproviders een metadata editor en validator functionaliteit aan.
@@ -96,7 +96,7 @@ De Nederlandse "tegenhanger" van het INSPIRE Geoportal op Europees niveau is het
 
 ## Over deze wiki
 ### INSPIRE is nog steeds in beweging
-INSPIRE is nog steeds in beweging. Dat betekent dat nog niet alles over INSPIRE gezegd is. Als er aanpassingen zijn, dan wordt de INSPIRE-wiki  daarop aangepast. 
+INSPIRE is nog steeds in beweging. Dat betekent dat nog niet alles over INSPIRE gezegd is. Als er aanpassingen zijn, dan wordt deze wiki daarop aangepast. 
 
 Verwacht hier echter niet alles over INSPIRE. De insteek is om *die* informatie te verstrekken die nodig is om data volgens de INSPIRE-richtlijn beschikbaar te kunnen stellen. De meest complete bron van informatie is de richtlijn zelf (inclusief bijbehorende documentatie). Daarbij horen ook de Nederlandse profielen en standaarden. 
 
@@ -106,9 +106,10 @@ Het detail van de wiki slaat het software-niveau over; het is geen *how to* die 
 INSPIRE-terminologie (Engels) wordt niet structureel vertaald naar het Nederlands. De belangrijkste reden hiervoor is dat niet van alle technische termen een eenduidige Nederlandse vertaling bestaat. Om verwarring te voorkomen hanteren we hier de Engelse termen. Engelse en INSPIRE-terminologie staan de eerste keer in *italics*. Veel juridische termen kennen wél een goede Nederlandse vertaling; die nemen we hier daarom over.
 
 ### INSPIRE Helpdesk
-Heeft u een vraag over INSPIRE, stuur dan een e-mail naar inspire@geonovum.nl.
+We proberen via deze wiki zoveel mogelijk informatie over INSPIRE te delen. Heeft u toch nog een vraag over INSPIRE, stuur dan een e-mail naar inspire@geonovum.nl.
 
-Op de Geonovum-website is algemene informatie over het [INSPIRE](https://www.geonovum.nl/geo-standaarden/inspire-europese-leefomgeving) te vinden. Daarnaast is de [website van Geonovum](https://www.geonovum.nl/) het informatieplatform voor de Nederlandse geo-standaarden.
+Daarnaast kun je op het [Geoforum](https://geoforum.nl/c/standaarden/inspire) ervaringen delen en/of vragen stellen aan vakgenoten bij collega dataproviders, specialisten van PDOK en Geonovum. Door gebruik te maken van het GeoForum kunnen we issues èn oplossingen direct met elkaar delen.
 
-Op het Nederlandse [Geoforum](https://geoforum.nl/c/standaarden/inspire) is onder de categorie INSPIRE ook (nu nog beperkt) informatie te vinden. 
-Tot slot is op [Github pagina 'INSPIRE Maintenance and Implementation'](https://github.com/inspire-mif) de Europese helpdesks rondom INSPIRE te vinden. 
+Op de Geonovum-website is zoals al eerder aangegeven algemene informatie over het [INSPIRE](https://www.geonovum.nl/geo-standaarden/inspire-europese-leefomgeving) te vinden en over de [Nederlandse geo-standaarden](https://www.geonovum.nl/geo-standaarden).
+
+Tot slot is op [Github pagina 'INSPIRE Maintenance and Implementation'](https://github.com/inspire-mif) de Europese helpdesks en discussieplatforms rondom INSPIRE te vinden. Elk centaal INSPIRE-component (Geoportal, Registry en Reference Validator) heeft hier zijn eigen helpdesk. Ook is er een algemene helpdesk voor meer generieke INSPIRE-gerelateerde vragen of problemen.
