@@ -1,4 +1,4 @@
-# Inrichten organisatie
+# Aanmerken en inrichten organisatie
 
 ## Dataproviders
 In Nederland is het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties (BZK) verantwoordelijk voor de invoering van INSPIRE. Indien een (overheids-)partij beschikt over een dataset die past binnen een INSPIRE-thema of -*feature type*, is deze partij verplicht deze gegevens conform the INSPIRE-richtlijn te ontsluiten. Het ministerie kiest er daarom voor om deze partijen (*dataproviders*) hierop te attenderen door middel van een [aanmerking](#aanmerking). Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt, heeft BZK het [INSPIRE-aanmerkingsregister](#aanmerkingsregister) ontwikkeld. Dit register houdt de voortgang van het harmonisatieproces bij. Een organisatie in een Europese lidstaat die ruimtelijke gegevens levert voor één of meerdere INSPIRE-thema's of -feature types heet in dit verband een **dataprovider**.
