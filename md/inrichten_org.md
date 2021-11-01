@@ -11,7 +11,7 @@ Nederland streeft naar een pragmatische invoering van INSPIRE. Uitgangspunten hi
 - INSPIRE maakt zoveel mogelijk gebruik van de basisregistraties en hun landelijke voorzieningen.
 - Bepaalde informatie is niet expliciet in bestaande datasets aanwezig, maar wel impliciet (af te leiden). In het kader van INSPIRE wordt informatie als ‘aanwezig’ beschouwd, als het vereiste gegeven geautomatiseerd uit beschikbare datasets kan worden afgeleid. Als menselijke tussenkomst (interpretatie of aanvulling) nodig is, wordt de informatie als ‘niet-aanwezig’ beschouwd (en daarmee niet te leveren).
 
-## Aanmerking
+## Aanmerken
 In Nederland is het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties (BZK) verantwoordelijk voor de invoering van INSPIRE. Indien een (overheids-)partij beschikt over een dataset die past binnen een INSPIRE-thema of -*feature type*, is deze partij verplicht deze gegevens conform the INSPIRE-richtlijn te ontsluiten. Nederland stelt alleen de meest geëigende datasets als INSPIRE-data beschikbaar. Het voordeel van deze aanpak is, dat de kwaliteit van de INSPIRE datasets hoog is, terwijl de invoeringslasten, nationaal bezien, beperkt blijven. 
 
 Per INSPIRE thema is bepaald welke partijen (*dataproviders*) in Nederland de relevante geo-informatie leveren. Deze partijen zijn **aangemerkt** als INSPIRE dataprovider. De dataproviders zorgen ervoor dat gegevens conform de eisen van INSPIRE vindbaar, toegankelijk en beschikbaar worden gesteld.
@@ -21,7 +21,7 @@ De aanmerking van de INSPIRE datasets heeft per annex plaats gevonden. Hieronder
 - Annex II: [Rapport Nederlandse INSPIRE-data Annex II (2011)](https://www.geonovum.nl/uploads/documents/rapportage_annexiiv1.1.pdf)
 - Annex III: [Rapport Definitieve aanmerking INSPIRE Annex III (2013)](https://www.geonovum.nl/uploads/documents/Rapport%20Definitieve%20aanmerking%20INSPIRE%20Annex%20III%20v3.0.pdf)
 
-## Aanmerkingsregister
+### Aanmerkingsregister
 Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt, heeft het Ministerie van BZK het [INSPIRE aanmerkingsregister](https://inspireaanmerking.nl/) ontwikkeld. Het register is openbaar en online toegankelijk.
 
 Het doel van het INSPIRE aanmerkingsregister is meervoudig:
@@ -33,5 +33,6 @@ Het aanmerkingregister heeft naast een open gedeelte ook een gesloten gedeelte v
 
 
 ## Inrichten organisatie
-Het inrichten van de organisatie en het exacte werkproces zal per organisatie en per dataset verschillen. Aandachtspunt is dat INSPIRE niet een eenmalig is, maar juist een doorlopend proces. Wanneer de processtappen doorlopen zijn en de dataprovider ‘conform INSPIRE’ opereert, is het zaak dat de ‘processtappen in de lijn worden opgenomen en dat de activiteiten van alle processtappen bij het dagelijkse beheer worden opgenomen. 
+Het inrichten van de organisatie en het exacte werkproces zal per organisatie en per dataset verschillen. Aandachtspunt is dat INSPIRE niet een eenmalig is, maar juist een doorlopend proces. Wanneer de processtappen doorlopen zijn en de dataprovider ‘conform INSPIRE’ opereert, is het zaak dat de ‘processtappen in de lijn worden opgenomen en dat de activiteiten van alle processtappen bij het dagelijkse beheer worden opgenomen.
+
 INSPIRE is namelijk geen project, maar ongoing concern!
