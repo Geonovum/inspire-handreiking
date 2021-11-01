@@ -21,7 +21,7 @@ Onder partijen die verantwoordelijk zijn voor de uitvoering verstaan wij die per
 De wiki is daarmee momenteel meer technisch dan organisatorisch ingestoken. Ook beleidmakers en managers krijgen met INSPIRE te maken. Zij zullen ook praktisch met INSPIRE aan de slag gaan, maar op een andere manier dan de technische beheerders, GIS-operators en ICT'ers. Toch kan het verhelderend zijn de wiki te lezen om een idee te krijgen van het type werk, dat voor INSPIRE moet worden uitgevoerd.
 
 ## Processtappen
-Het INSPIRE-implementatieproces is, na het aanmerken van de dataprovider en het vervolgens inrichten van de eigen organisatie, opgedeeld in vijf technische stappen. Deze pagina licht deze stappen kort toe. Uitgebreidere informatie over de afzonderlijke stappen staat beschreven in de afzonderlijke hoofdstukken. 
+Het INSPIRE-implementatieproces is, na het [aanmerken](#aanmerken) van de dataprovider en het vervolgens [inrichten van de eigen organisatie](#inrichten-organisatie), opgedeeld in vijf technische stappen. Deze pagina licht deze stappen kort toe. Uitgebreidere informatie over de afzonderlijke stappen staat beschreven in de afzonderlijke hoofdstukken. 
 
 Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende documentatie wordt geen rekening gehouden met processtappen die een technisch data-beheerder of GIS-operator moet ondernemen om de data conform INSPIRE te ontsluiten. Deze wiki helpt de dataproviders om het werkproces inzichtelijk te maken. Dit werkproces bestaat, naast het aanmerken en inrichten van de organisatie uit de onderstaande vijf stappen: 
 
