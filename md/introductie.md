@@ -112,4 +112,4 @@ Daarnaast kun je op het [Geoforum](https://geoforum.nl/c/standaarden/inspire) er
 
 Op de Geonovum-website is zoals al eerder aangegeven algemene informatie over het [INSPIRE](https://www.geonovum.nl/geo-standaarden/inspire-europese-leefomgeving) te vinden en over de [Nederlandse geo-standaarden](https://www.geonovum.nl/geo-standaarden).
 
-Tot slot is op [Github pagina 'INSPIRE Maintenance and Implementation'](https://github.com/inspire-mif) de Europese helpdesks en discussieplatforms rondom INSPIRE te vinden. Elk centaal INSPIRE-component (Geoportal, Registry en Reference Validator) heeft hier zijn eigen helpdesk. Ook is er een algemene helpdesk voor meer generieke INSPIRE-gerelateerde vragen of problemen.
+Tot slot zijn op [Github pagina 'INSPIRE Maintenance and Implementation'](https://github.com/inspire-mif) de Europese helpdesks en discussieplatforms rondom INSPIRE te vinden. Elk centaal INSPIRE-component (Geoportal, Registry en Reference Validator) heeft hier zijn eigen helpdesk. Ook is er een algemene helpdesk voor meer generieke INSPIRE-gerelateerde vragen of problemen.
