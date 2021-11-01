@@ -106,7 +106,7 @@ Het detail van de wiki slaat het software-niveau over; het is geen *how to* die 
 INSPIRE-terminologie (Engels) wordt niet structureel vertaald naar het Nederlands. De belangrijkste reden hiervoor is dat niet van alle technische termen een eenduidige Nederlandse vertaling bestaat. Om verwarring te voorkomen hanteren we hier de Engelse termen. Engelse en INSPIRE-terminologie staan de eerste keer in *italics*. Veel juridische termen kennen wél een goede Nederlandse vertaling; die nemen we hier daarom over.
 
 ### INSPIRE Helpdesk
-We proberen via deze wiki zoveel mogelijk informatie over INSPIRE te delen. Heeft u toch nog een vraag over INSPIRE, stuur dan een e-mail naar inspire@geonovum.nl.
+We proberen via deze wiki zoveel mogelijk informatie over INSPIRE te delen. Heb je toch nog een vraag over INSPIRE, stuur dan een e-mail naar inspire@geonovum.nl.
 
 Daarnaast kun je op het [Geoforum](https://geoforum.nl/c/standaarden/inspire) ervaringen delen en/of vragen stellen aan vakgenoten bij collega dataproviders, specialisten van PDOK en Geonovum. Door gebruik te maken van het GeoForum kunnen we issues èn oplossingen direct met elkaar delen.
 
