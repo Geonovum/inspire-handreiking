@@ -21,7 +21,7 @@ Met ingang van 10 December 2013 zijn er van alle thema's stabiele versies van de
 |[Good Practices](https://inspire.ec.europa.eu/portfolio/good-practice-library)|||Hier worden voorbeelden uit de praktijk genoemd|
 
 ### Generic Conceptual Model
-Om data consistent te kunnen uitwisselen beschrijft INSPIRE voor elk thema een datamodel van de gegevens die uitgewisseld moeten worden. Daarnaast beschrijft het ook een bestandsformaat waarin de gegevens moeten worden uitgewisseld. Algemene specificaties (die voor alle thema's hetzelfde zijn) worden beschreven in het [Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) (GCM). Een dataspecificatie moet dus altijd gelezen worden in de context van het generieke model.
+Om data consistent te kunnen uitwisselen beschrijft INSPIRE voor elk thema een datamodel van de gegevens die uitgewisseld moeten worden. Daarnaast beschrijft het ook een bestandsformaat waarin de gegevens moeten worden uitgewisseld. Algemene specificaties (die voor alle thema's hetzelfde zijn) worden beschreven in het [Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) (GCM). Een dataspecificatie moet dus altijd gelezen worden in de context van dit generieke model.
 
 ### Overzicht dataspecificaties
 Op [deze locatie](https://inspire.ec.europa.eu/Themes/Data%20Specifications/2892) zijn de data specificaties per thema te vinden. Globaal bevatten de dataspecificaties per thema een overzicht van de technische richtlijnen om een INSPIRE-dataset te maken. Op [deze locatie](https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeTheme.action) kun je interactief door de data specificaties bladeren.
@@ -158,7 +158,7 @@ In onderstaande figuur zijn de 3 scenario’s bezien in het licht van de INSPIRE
 Sinds 2016 geeft de Europese Commissie prioriteit aan datasets die relevant zijn in het kader van de verplichte Europese rapporteringen m.b.t. het milieu, de zogenoemde “Priority list of datasets for e-Reporting”. Dit is een dynamische lijst. Naast de ontsluiting en het opmaken van metadata, hebben deze datasets ook wat betreft de dataharmonisatie prioriteit in harmonisatie. Uiteraard is dit binnen het INSPIRE-tijdschema voor de desbetreffende annex en voor as-is versus nieuwe datasets. Meer info is te vinden op de website van [JRC](https://ies-svn.jrc.ec.europa.eu/projects/2016-5/wiki).
 
 ## INSPIRE-ID
-Volgens de richtlijnen van INSPIRE moet elk object (feature) voorzien worden van een unieke identificatie: het InspireId. Zo kunnen derden ondubbelzinnig aan het object kunnen refereren. Dataproviders dienen dus – buiten eventuele eigen ID’s die de organisatie gebruikt – de ruimtelijke objecten van een unieke INSPIRE identificatie te voorzien. Belangrijk hierbij is, dat de identifier **uniek** en **persistent** moet zijn. Persistent betekent dat de identifier gedurende de levensduur van het object ongewijzigd moet blijven. Een InspireId bestaat uit de volgende onderdelen:
+Volgens de richtlijnen van INSPIRE moet elk object (feature) voorzien worden van een unieke identificatie: het InspireId. Zo kunnen derden ondubbelzinnig aan het object refereren. Dataproviders dienen dus – buiten eventuele eigen ID’s die de organisatie gebruikt – de ruimtelijke objecten van een unieke INSPIRE identificatie te voorzien. Belangrijk hierbij is, dat de identifier **uniek** en **persistent** moet zijn. Persistent betekent dat de identifier gedurende de levensduur van het object ongewijzigd moet blijven. Een InspireId bestaat uit de volgende onderdelen:
 - Namespace (verplicht)
 - LocalId (verplicht)
 - VersionId (optioneel)
@@ -214,7 +214,7 @@ Na het [inloggen](http://inspireregister.nl:8080/re3gistry2/login) met dit accou
 De handleiding voor dit register is [hier](https://github.com/ec-jrc/re3gistry/blob/master/documentation/user-manual.md) te vinden.
 
 ## Portrayal
-Het *portrayal*-hoofdstuk van een dataspecificatie (hoofdstuk 11) betreft voornamelijk de grafische weergave van de data in een viewservice. Aangezien een aantal zaken in de view services thema-afhankelijk zijn, worden ze in de data-specificatie toegelicht en niet in de Guideline / Guidance van de view service zelf.
+Het *portrayal*-hoofdstuk van een dataspecificatie (meestal in hoofdstuk 11) betreft voornamelijk de grafische weergave van de data in een viewservice. Deze weergave is gedefinieerd op  basis van de dataspecificatie en kan dus pas ingesteld worden conform de dataspecificatie nadat er geharmoniseerd is. Het onderwerp wordt verder behandeld onder het hoofdstuk [view services](#view-services).
 
 De layer definition bestaat uit de volgende onderdelen:
 
