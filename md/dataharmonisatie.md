@@ -214,7 +214,7 @@ Na het [inloggen](http://inspireregister.nl:8080/re3gistry2/login) met dit accou
 De handleiding voor dit register is [hier](https://github.com/ec-jrc/re3gistry/blob/master/documentation/user-manual.md) te vinden.
 
 ## Portrayal
-Het *portrayal*-hoofdstuk van een dataspecificatie (meestal in hoofdstuk 11) betreft voornamelijk de grafische weergave van de data in een viewservice. Deze weergave is gedefinieerd op  basis van de dataspecificatie en kan dus pas ingesteld worden conform de dataspecificatie nadat er geharmoniseerd is. Het onderwerp wordt verder behandeld onder het hoofdstuk [view services](#view-services).
+Het *portrayal*-hoofdstuk van een dataspecificatie (meestal in hoofdstuk 11) betreft voornamelijk de grafische weergave van de data in een viewservice, maar kan ook in GIS-applicaties gebruikt worden. Deze weergave is gedefinieerd op  basis van de dataspecificatie en kan dus pas ingesteld worden conform de dataspecificatie nadat er geharmoniseerd is.
 
 De layer definition bestaat uit de volgende onderdelen:
 
@@ -224,8 +224,8 @@ De layer definition bestaat uit de volgende onderdelen:
 	- Spatial Object Type
 	- Keywords
 - **Layer Styles**: presentatie van de view layers. Kleuren, lijndikte, symbolen, presentatie-regels m.b.t. tot bepaalde groepen objecten, etc. De dataspecificaties van INSPIRE leveren voor default styles ook met SLD-code. Dat geldt ook voor de Other styles, maar deze worden niet bij elk thema geimplementeerd.
-- **Layer organisation**: layer aggregation binnen een thema.
-- **Symbols**: voor Annex I alleen voor het thema hydrografie van toepassing.
+- **Layer organisation**: layer aggregation binnen een thema door groepering van layers (layergroups)
+- **Symbols**: Beschrijving van de te gebuiken symbolen.
 
 De INSPIRE-richtlijn zelf dicteert niets over de presentatie van de ruimtelijke data. Om toch consistentie in de datasets te brengen en ze over de verschillende lidstaten ‘leesbaar’ te houden in de viewservice, worden er basale regels in de dataspecificaties gegeven. De portrayal-richtlijnen gaan uit van een enkel thema tegelijk; het gaat dus niet om het maken van ‘mooie kaarten’ maar om het leesbaar houden van de data.
 
@@ -235,39 +235,13 @@ De standaarden voor de presentatie van data:
 - OGC Symbology Standards - se="http://www.opengis.net/se" (SE 1.1)
 - OGC Filter Encoding Standards - ogc="http://www.opengis.net/ogc" (FE 1.1)
 
-Overzicht portrayal per thema:
-
-| Thema 					| Layer type 	| Default styles 	| Layer organisation| Other | Symbol| 
-|------------				|-------------	|-------------		|------------		|-------|-------|
-| **Addresses**  			| 1   			| 1					| -					| -		| -		|
-| **Protected sites**  		| 10  			| 1					| ja				| -		| -		|
-| **Administrative units**  | 4   			| 4					| -					| -		| -		|
-| **Cadastral parcels**  	| 3  			| 3					| -					| 3		| -		|
-| **Hydrography**  			| 13  			| 13				| -					| 3		| ja	|
-| **Transport networks** 	| 21 			| 21				| -					| -		| -		|
-| **Geographical names**  	| 1			 	| -					| -					| -		| -		|
-
 Indien de dataspecificatie geen default style aanbiedt, definieert het Generic Conceptual Model de style:
 - Punt: grey square, 6 px;
 - Lijn/Arc: zwarte solid lijn, 1 px;
 - Vlak: zwarte solid lijn, 1px, grijs gevuld.
 
-### Data capture
+## Data capture
 Met *data capture rules* worden INSPIRE-afspraken/regels omtrent de toepassingsschaal bedoeld. Voor sommige datasets is het nodig om resoluties te specificeren, met  gevolgen voor het detailniveau van de digitale kaart. Een dataset van een schaal van 1:1000.000 kent andere details dan dezelfde dataset met een schaal van 1:10.000. De capturing rules worden per thema gedefinieerd. Sommige thema’s hebben geen specifieke regels, terwijl anderen zeer specifiek zijn. Voor de specifieke afspraken wordt naar de data specificatie van het betreffende verwezen (hoofdstuk 10).
-
-Overzicht data capturing rules per thema:
-
-| Thema 					| Data capturing rules 		|
-|------------				|-------------				|
-| **Addresses**  			| Geen specifieke regels 	|
-| **Protected sites**  		| Afhankelijk van lidstaat	|
-| **Administrative units**  | Geen specifieke regels 	|
-| **Cadastral parcels**  	| Specifiek 				|
-| **Geo. grid systems**  	| Geen specifieke regels 	|
-| **Hydrography**  			| Specifiek 				|
-| **Transport networks** 	| Specifiek 				|
-| **CRS**  					| Geen specifieke regels 	|
-| **Geographical names**  	| Update cycle 				|
 
 ## Geometrie
 In het Generic Conceptual Model en de dataspecificaties wordt aangegeven welke geometrietypen zijn toegestaan. In de meeste dataspecificaties wordt verwezen naar de *simple feature* specificatie van OGC, waarin exact beschreven staat hoe een valide geometrie eruit moet zien. In een aantal dataspecificaties worden ook geometrieën beschreven die buiten de simple features vallen (zoals 3D-objecten).
