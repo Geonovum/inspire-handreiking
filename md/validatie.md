@@ -24,7 +24,7 @@ Geonovum raadt u aan deze tools (en eventuele steekproefsgewijs handmatige contr
 
 **Voor WFS werkt de EU-validatietooling met bepaalde implementaties niet. Gebruik in dat geval nog de [Nederlandse INSPIRE-validatietooling voor WFS](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE).**
 
-*Validatietools zijn nooit feilloos. Er kunnen bugs in zitten en de tools kunnen achterlopen op de ontwikkeling van Technical Guidelines. Ook kunnen twee tools (bijvoorbeeld die van Geonovum en de Europese validator) op hetzelfde onderdeel testen en toch een andere uitkomst geven. Dat kan bijvoorbeeld komen doordat bij de ontwikkeling van validatietools bepaalde afwegingen gemaakt worden, bijvoorbeeld hoe er getest wordt, of door interpretatieverschillen. Het is belangrijk te realiseren dat validatietools voornamelijk technisch valideren (bijvoorbeeld, controleren of er een identifier is). Of iets fout is ingevuld (bijvoorbeeld, de identifier verwijst niet naar de juiste dataset) kan niet altijd ondervangen worden. Daarnaast zijn niet alle vereisten door middel van geautomatiseerde processen te testen. Vanzelfsprekend doen wij ons best om de tooling zo snel mogelijk in lijn te krijgen met de laatste inzichten rond het implementeren van de INSPIRE-regelgeving en zo veel mogelijk vereisten geautomatiseerd te testen. Toch raden we u aan om ook zelf kritisch naar uw gepubliceerde data en services te kijken, bijvoorbeeld door te controleren of deze goed vindbaar en te bekijken en te downloaden zijn in de [Thematic Viewer](https://inspire-geoportal.ec.europa.eu/).*
+Validatietools zijn nooit feilloos. Er kunnen bugs in zitten en de tools kunnen achterlopen op de ontwikkeling van Technical Guidelines. Ook kunnen twee tools  op hetzelfde onderdeel testen en toch een andere uitkomst geven. Dat kan bijvoorbeeld komen doordat bij de ontwikkeling van validatietools bepaalde afwegingen gemaakt worden, bijvoorbeeld hoe er getest wordt. Geonovum adviseert de Europese validatietools te gebruiken. Het is belangrijk te realiseren dat validatietools voornamelijk technisch valideren (bijvoorbeeld, er is een identifier). Of iets fout is ingevuld (bijvoorbeeld, de identifier verwijst niet naar de juiste dataset) kan niet altijd ondervangen worden. Daarnaast zijn niet alle vereisten door middel van geautomatiseerde processen te testen. Toch is het aan te raden om zelf kritisch naar uw gepubliceerde data en services te kijken, bijvoorbeeld door te controleren of deze goed vindbaar, te bekijken en te downloaden zijn in de [INSPIRE geoportal](https://inspire-geoportal.ec.europa.eu/).
 
 In de tabel hieronder staan welke tests beschikbaar zijn en aangeraden worden om data, metadata en services te valideren. De tests die genoemd worden in de kolom 'validatietooling EU' zijn allemaal op dezelfde hoofdpagina van de EU-validator te vinden.
 
@@ -49,6 +49,22 @@ In de tabel hieronder staan welke tests beschikbaar zijn en aangeraden worden om
 | SOS | | [Validator: Download service – Pre-defined SOS](http://inspire.ec.europa.eu/validator/) |
 
 \* *zie de roadmap op de Geonovum-website om na te gaan vanaf welk moment uw dataset aan deze eis dient te voldoen.*
+
+### Europese INSPIRE-validator
+Op 25 juli 2017 is de Europese INSPIRE-validator gelanceerd. Daarmee is er nu voor alle lidstaten één tool waarmee je kunt testen in hoeverre je voldoet aan de INSPIRE-vereisten. De Europese validator is nog steeds in ontwikkeling. Dat wil zeggen: alle INSPIRE-GML-data kan gevalideerd worden, maar nog niet alle thema's kunnen tegen het applicatieschema gevalideerd worden. De voortgang hierin is [hier](https://github.com/INSPIRE-MIF/helpdesk-validator/) te vinden.
+
+Nederland heeft via de INSPIRE Maintenance and Implementation Group een actieve bijdrage geleverd aan de ontwikkeling van deze validator. De lancering van deze Europese validator vermindert de kans op interpretatieverschillen door lidstaten van de technische richtlijnen. De validator wordt nu op Europees niveau onderhouden en doorontwikkeld.
+
+Met de Europese validator, kunnen testen worden uitgevoerd voor de volgende onderdelen:
+- INSPIRE-themaspecifieke vereisten
+- Generieke vereisten voor INSPIRE-datasets
+- Applicatieschema
+- GML
+
+De Europese INSPIRE-validator is [hier te vinden](https://inspire.ec.europa.eu/validator/).
+
+### Nederlandse INSPIRE-validator
+Voordat de Europese validator beschikbaar was kon Nederlandse INSPIRE-data gevalideerd worden via de [Nederlandse INSPIRE-validator](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE). Vanaf 1 september 2020 is het advies echter om voor het controleren van de toepassing van de INSPIRE-standaard alleen nog de Europese validator te gebruiken. Op die datum is in Nederland overgestapt op metadataprofiel 2.1.0. In de Nederlandse validatietools hiervoor worden de INSPIRE-regels niet meer geüpdatet.
 
 ## Conformance classes
 
