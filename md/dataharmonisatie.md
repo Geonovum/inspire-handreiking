@@ -148,11 +148,24 @@ Also, If all data are harmonised/compliant, then of course, the non-interoperabl
 Er doen zich nu een drietal scenario’s voor, waarbij de volgende assumptie geldt: de datasets ‘as is’ zijn rijker gevuld dan de INSPIRE-datamodellen (meer feature types, meer attributen en associaties). Andersom, indien het INSPIRE-datamodel ‘rijker gevuld is’ dan de dataset ‘as is’, dan betekent dat dat de gevraagde data niet in de dataset aanwezig is en dus niet geleverd hoeft te worden.
 1. Het “ARM”-scenario van de “arme geharmoniseerde dataset”. In dit scenario volgt de dataprovider zeer strict de harmonisatie-eisen van INSPIRE. De rijkere dataset ‘as is’ wordt niet (meer) aangeboden, want er zijn geen relevante gebruikerswensen en use cases.
 2. Het “RIJK en ARM”-scenario van de “arme geharmoniseerde dataset”. In dit scenario volgt de dataprovider de harmonisatie-eisen van INSPIRE en wordt de rijkere dataset tevens ‘as is’ ook aangeboden conform de INSPIRE-eisen voor netwerkdiensten, omdat relevante gebruikerswensen en use cases dit vereisen.
-3. In het “RIJK”-scenario is de data set ‘as is’ volledig geharmoniseerd beschikbaar. Dit kan bereikt worden door een extensie te maken van het door INSPIRE voorgedragen geharmoniseerde model. De rijke gegevens worden dan toegevoegd aan het INSPIRE-model zodanig dat nog steeds wordt voldaan aan het INSPIRE-model. In dit geval zal de dataprovider slechts 1 geharmoniseerde, rijke dataset beschikbaar stellen, omdat relevante gebruikerswensen en use cases dit vereisen.
+3. In het “RIJK”-scenario is de data set ‘as is’ volledig geharmoniseerd beschikbaar. Dit kan bereikt worden door een [extensie](#extensies) te maken van het door INSPIRE voorgedragen geharmoniseerde model. De rijke gegevens worden dan toegevoegd aan het INSPIRE-model zodanig dat nog steeds wordt voldaan aan het INSPIRE-model. In dit geval zal de dataprovider slechts 1 geharmoniseerde, rijke dataset beschikbaar stellen, omdat relevante gebruikerswensen en use cases dit vereisen.
 
 In onderstaande figuur zijn de 3 scenario’s bezien in het licht van de INSPIRE-richtlijn en de keuze mogelijkheden voor de dataproviders.
 
 ![rijkarmplaatje](media/rijk_arm_scenario.png "De verschillende mogelijkheden voor het aanbieden van as-is data ná harmonisatie en voor het aanbieden van geharmoniseerde data")
+
+### Extensies
+De INSPIRE-dataspecificaties zijn zo ontworpen dat ze eenvoudig [uitbreidbaar](https://inspire.ec.europa.eu/portfolio/inspire-extensions) zijn. Dit uitbreiden van modellen en specificiaties wordt 'extending' genoemd en de uitbreidingen zijn 'extensions'.
+
+In opdracht van (en in samenwerking met) Geonovum heeft het bedrijf WeTransform onderzoek verricht naar INSPIRE-extensies. De resultaten hiervan zijn op [een website](https://inspire-extensions.wetransform.to/) verzameld waarop veel informatie te vinden is over het uitbreiden van INSPIRE-dataspecificiaties.
+
+Op deze site vindt u onder meer:
+
+- De resultaten van een onderzoek naar bestaande INSPIRE-extensies en een [overzicht van bestaande extensies](https://inspire-extensions.wetransform.to/models/index.html).
+- Een overzicht van [*extension patterns*](https://inspire-extensions.wetransform.to/patterns/index.html), waarin bepaalde ontwikkelpatronen beschreven worden.
+- Een [tutorial](https://inspire-extensions.wetransform.to/tutorial/tutorial.html) waarin stapsgewijs wordt beschreven hoe een extension ontwikkeld kan worden.
+
+Ook door het uitbreiden van [codelijsten](#codelijsten) kan het model rijker gemaakt worden.
 
 ## Prioritaire datasets (e-reporting)
 Sinds 2016 geeft de Europese Commissie prioriteit aan datasets die relevant zijn in het kader van de verplichte Europese rapporteringen m.b.t. het milieu, de zogenoemde “Priority list of datasets for e-Reporting”. Dit is een dynamische lijst. Naast de ontsluiting en het opmaken van metadata, hebben deze datasets ook wat betreft de dataharmonisatie prioriteit in harmonisatie. Uiteraard is dit binnen het INSPIRE-tijdschema voor de desbetreffende annex en voor as-is versus nieuwe datasets. Meer info is te vinden op de website van [JRC](https://ies-svn.jrc.ec.europa.eu/projects/2016-5/wiki).
@@ -282,7 +295,7 @@ Lees meer over dit onderwerp in het hoofdstuk [Validatie](#validatie).
 Bij dataharmonisatie is het van belang op de volgende punten te letten:
 
 1. Registreer de namespaces via het [namespaceregister](http://inspirelab.geonovum.nl/namespaces/).
-2. Valideer de datasets tussentijds met de INSPIRE-validator, zodat vroegtijdig eventuele fouten opgelost kunnen worden. Informatie over datasetvalidatie is [hier](#datavalidatie) op deze pagina te vinden.
+2. Valideer de datasets tussentijds met de INSPIRE-validator, zodat vroegtijdig eventuele fouten opgelost kunnen worden. Informatie over datasetvalidatie is [hier](#validatie) te vinden.
 3. Werk de datasetmetadata van de betreffende dataset bij en voer de conformiteit op in de metadata. Voor geharmoniseerde data zijn er drie extra metadata-elementen die ingevuld dienen te worden; zie de [invulinstructies voor de metadata](#invulinstructie-voor-datasets). [Valideer daarna de datasetmetadata](#metadata-validatie).
 4. Zorg dat de view service, die de geharmoniseerde dataset ontsluit, voldoet aan de eisen die INSPIRE stelt voor geharmoniseerde data. Zie in de betreffende dataspecificatie het hoofdstuk Portrayal. Daar staan eisen in voor laagnamen en visualisatie. Let ook op de eisen voor geharmoniseerde data om te valideren. [Hier kan meer informatie over servicevalidatie gevonden worden](#valideren-services).
 5. Zorg dat de download service, die de geharmoniseerde dataset ontsluit, voldoet aan de eisen die INSPIRE stelt voor geharmoniseerde data. Bijvoorbeeld, voor een WFS: controleer of de WFS de featureTypes aanbiedt zoals die in de INSPIRE-GML-schemas van de dataspecificaties staan.
@@ -290,19 +303,6 @@ Bij dataharmonisatie is het van belang op de volgende punten te letten:
 7. Contoleer in het NGR of de categorie `inspire` voor de datasetmetadata en de servicemetadata is geactiveerd, anders verschijnt de metadata niet in de INSPIRE Discovery Service.
 8. Voer de verwijzing naar de metadata (de UUID) van de geharmoniseerde dataset op in [het INSPIRE aanmerkingsregister](https://inspireaanmerking.nl/), zodat bekend is voor welke aangemerkte dataset daadwerkelijk data gepubliceerd is conform de eisen van INSPIRE.
 9. Check in de [Thematic Viewer](https://inspire-geoportal.ec.europa.eu/tv_home.html) of de data daadwerkelijk te bekijken en te downloaden is en onder het correcte thema te vinden is.
-
-## Extensies
-De INSPIRE-dataspecificaties zijn zo ontworpen dat ze eenvoudig [uitbreidbaar](https://inspire.ec.europa.eu/portfolio/inspire-extensions) zijn. Dit uitbreiden van modellen en specificiaties wordt 'extending' genoemd en de uitbreidingen zijn 'extensions'.
-
-In opdracht van (en in samenwerking met) Geonovum heeft het bedrijf WeTransform onderzoek verricht naar INSPIRE-extensies. De resultaten hiervan zijn op [een website](http://inspire-extensions.wetransform.to/) verzameld waarop veel informatie te vinden is over het uitbreiden van INSPIRE-dataspecificiaties.
-
-Op deze site vindt u onder meer:
-
-- De resultaten van een onderzoek naar bestaande INSPIRE-extensies en een [overzicht van bestaande extensies](http://inspire-extensions.wetransform.to/models/index.html).
-- Een overzicht van [*extension patterns*](http://inspire-extensions.wetransform.to/patterns/index.html), waarin bepaalde ontwikkelpatronen beschreven worden.
-- Een [tutorial](http://inspire-extensions.wetransform.to/tutorial/tutorial.html) waarin stapsgewijs wordt beschreven hoe een extension ontwikkeld kan worden.
-
-Er is tevens een [nuttige pagina op het INSPIRE community forum over het uitbreiden van codelijsten](https://inspire.ec.europa.eu/forum/pages/view/162571/how-to-extend-inspire-code-lists).
 
 ## FAQ dataharmonisatie
 Hieronder worden een aantal veelgestelde vragen rondom dataharmonisatie behandeld.
