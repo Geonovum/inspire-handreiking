@@ -276,7 +276,7 @@ Het verbeteren van grensoverstijgende onregelmatigheden kan alleen op basis van 
 
 ## Datavalidatie
 Dataalidatie is een mechanisme om te controleren of een bepaalde dataset aan de INSPIRE specificaties voldoet en is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Het is daarmee een onmisbare toets op de vraag of de dataharmonisatie goed is uitgevoerd.
-Leer meer over dit onderwerp in het hoofdstuk [Validatie](#validatie).
+Lees meer over dit onderwerp in het hoofdstuk [Validatie](#validatie).
 
 ## Checklist dataharmonisatie
 Bij dataharmonisatie is het van belang op de volgende punten te letten:
@@ -303,30 +303,6 @@ Op deze site vindt u onder meer:
 - Een [tutorial](http://inspire-extensions.wetransform.to/tutorial/tutorial.html) waarin stapsgewijs wordt beschreven hoe een extension ontwikkeld kan worden.
 
 Er is tevens een [nuttige pagina op het INSPIRE community forum over het uitbreiden van codelijsten](https://inspire.ec.europa.eu/forum/pages/view/162571/how-to-extend-inspire-code-lists).
-
-## INSPIRE helpdesk
-
-Het *INSPIRE community forum* is per januari 2021 opgeheven en vervangen door de [INSPIRE helpdesk](https://inspire.ec.europa.eu/inspire-helpdesk). Het oude platform is gearchiveerd en kan nog [hier](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/) gevonden worden. Voorheen heette dit oude forum *Thematic Clusters*. Het was een online platform waarop ervaringen en best practices gedeeld konden worden, maar waar ook vragen en issues aangemeld konden worden. Het forum was opgedeeld in elf clusters, waarvan negen *thematic domains*.
-
-### Thematic domains
-Elk Thematic Cluster omvatte meerdere INSPIRE thema's en werd beheerd door een *facilitator*. Om deel te nemen aan discussies, diende je je eenmalig te registreren. De volgende thematic clusters waren actief:
-
-| Clusternaam 				| INSPIRE-thema's		|
-|------------				|-------------				|
-| [Statistics & Health](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/45/statistics-health) 			| Statistical Units, Population Distribution, Human Health and Safety 	|
-| [Marine and Atmosphere](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/213/marine-atmosphere)		| Oceanographic Geographical Features, Sea Regions, Atmospheric Conditions and Meteorological Geographical Features	|
-| [Earth Science](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/131/earth-science) 			| Geology, Soil, Natural Risk Zones, Mineral resources, Energy resources	|
-| [Land Cover and Use](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/205/land-cover-use)	| Land Use, Land Cover				|
-| [Elevation, Ortho & Grids](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/206/elevation-ortho-grids)	|Elevation, Orthoimagery, Coordinate Reference Systems, Geographical Grid 	|
-| [Environmental Monitoring & Observations](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/207/environmental-monitoring-observations)	| Environmental Monitoring Facilities, Observations and Measurements	|
-| [Biodiversity and Area Management](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/214/biodiversity-area-management)	| Protected Sites, Area Management/Restriction/Regulation Zones and Reporting Units, Habitats and Biotopes, Species Distribution, Bio-geographical Regions	|
-| [Facilities, Utilities and Public Services](https://inspire.ec.europa.eu/forum/groups/profile/208/facilities-utilities-public-services)			| Facilities, Utilities and Public Services|
-| [Topo & Cadastral, Reference Data](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/209/topo-cadastre-reference-data)	| Hydrography, Geographical Names, Administrative Units, Cadastral Parcels, Addresses, Buildings, Transport Networks	|
-
-### Cross-domain clusters
-Daarnaast waren er op het community forum nog twee cross-domain clusters:
-- [INSPIRE & Environmental Policy](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/215871/inspire-environmental-policy)
-- [Software & Tools](https://wayback.archive-it.org/12090/20210119102755/https://inspire.ec.europa.eu/forum/groups/profile/215867/software-tools)
 
 ## FAQ dataharmonisatie
 Hieronder worden een aantal veelgestelde vragen rondom dataharmonisatie behandeld.
