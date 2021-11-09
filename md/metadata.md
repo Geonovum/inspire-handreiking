@@ -1,11 +1,11 @@
 # Metadata
 
-Datasets die voor INSPIRE zijn aangemerkt, worden van een beschrijving (metadata) voorzien, zodat zij door anderen te vinden en te gebruiken is. Deze metadata moet voldoen aan de INSPIRE vereisten, zodat daarmee alle data in Europa op dezelfde manier beschreven is. Dit maakt het onder andere mogelijk om de data op bepaalde trefwoorden te doorzoeken. In volgende paragrafen wordt aangegeven hoe er aan deze vereisten kan worden voldaan.
+Datasets die voor INSPIRE zijn aangemerkt, worden van een beschrijving (metadata) voorzien, zodat zij door anderen te vinden en te gebruiken is. Deze metadata moet voldoen aan de INSPIRE vereisten, zodat daarmee alle data in Europa op dezelfde manier beschreven is, bijvoorbeeld door eenduidige gebruiksvoorwaarden. Dit maakt het onder andere mogelijk om de metadata op bepaalde trefwoorden te doorzoeken en te gebruiken. In volgende paragrafen wordt aangegeven hoe er aan deze vereisten kan worden voldaan.
 
 ## INSPIRE-metadata in het Nationaal Georegister
-Metadata van INSPIRE datasets, wordt gepubliseerd in hetNationaal Georegister (NGR). In het figuur hieronder zie je een screenshot van het Nationaal Georegister (NGR), dat voor INSPIRE-metadata dienst doet als *discovery service*. Het NGR wordt echter niet alleen met INSPIRE-conforme metadata gevuld; ook andere metadata kan toegevoegd worden. INSPIRE-metadata kan gevonden worden door in het tabblad 'Zoeken' te filteren op de Categorie 'Inspire'.
+Metadata van INSPIRE datasets, wordt gepubliseerd in het Nationaal Georegister ([NGR](https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home)). In het figuur hieronder zie je een screenshot van het Nationaal Georegister (NGR), dat voor INSPIRE-metadata dienst doet als *discovery service*. Het NGR wordt echter niet alleen met INSPIRE-conforme metadata gevuld; ook andere metadata kan toegevoegd worden. INSPIRE-metadata kan gevonden worden door in het tabblad 'Zoeken' te filteren op de Categorie 'Inspire'.
 
-![NGRinspire](media/NGR-FilterINSPIRE.png "Gebruik in het NGR het filter 'Inspire' om alle beschikbare INSPIRE-compliant datasets te vinden.")
+![NGRinspire](media/NGR-categorie-INSPIRE.png "Gebruik in het NGR het filter 'Inspire' om alle beschikbare INSPIRE-compliant datasets te vinden.")
 
 ## Metadata aanmaken
 Metadata dient ter beschikking worden gesteld voor:
@@ -17,14 +17,14 @@ In de meeste gevallen zal de dataprovider metadata aanmaken als onderdeel van be
 Het aanmaken en publiceren van metadata kan ook rechtstreeks via het Nationaal Georegister. Binnen het NGR is hiervoor een metadata-editor beschikbaar.
 
 ## Eisen metadata
-De metadata-elementen die voor INSPIRE, vanuit verschillende richtlijnen, beschreven moeten worden zijn opgenomen in de Nederlandse profielen. Deze profielen zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen. Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen voor INSPIRE ook worden beschreven en aan de condities voor INSPIRE voldoen. [Nederlands metadata profiel op ISO 19115] (https://docs.geostandaarden.nl/md/mdprofiel-iso19115/) [Nederlands metadata profiel op ISO 19119] (https://docs.geostandaarden.nl/md/mdprofiel-iso19119/)
+De metadata-elementen die voor INSPIRE, vanuit verschillende richtlijnen, beschreven moeten worden zijn opgenomen in de Nederlandse profielen. Deze profielen zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen. Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen voor INSPIRE ook worden beschreven en aan de condities voor INSPIRE voldoen. [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/) [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/)
 
 Zie voor meer informatie het [dossier metadata op de Geonovum-website](https://www.geonovum.nl/geo-standaarden/metadata).
 
 ## Metadata en taal
-In de invoeringsregels voor metadata is niets vastgelegd over de taal waarin metadata beschikbaar moet worden gesteld. Wél worden de in de bron (dataset en service) gebruikte taal en de metadata-taal vastgelegd. In de [*Technical Guidance*](https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139) staat beschreven hoe vrije tekstvelden in meerdere talen kunnen worden opgenomen.
+In de invoeringsregels voor metadata is niet vastgelegd in welke taal metadata (en data) beschikbaar moet worden gesteld, wel dat het een van de officiele talen van de Europese unie moet zijn. Deze in de bron (dataset en service) gebruikte taal en de metadata-taal worden in de metadata vastgelegd. 
+Nederland heeft ervoor gekozen om de metadata in het Nederlands op te voeren. Als er aanvullend voor een extra taal wordt gekozen, dient deze consequent gehanteerd te worden. Stelt u bijvoorbeeld de metadata ook in het Engels beschikbaar, dan dienen alle vrije tekstvelden in de metadata vertaald te worden. Denk daarbij ook aan de licentie. In het [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#meertaligheid-metadata) staat beschreven hoe vrije tekstvelden in meerdere talen kunnen worden opgenomen.
 
-INSPIRE laat open in welke taal de metadata wordt ingevoerd. Nederland hefet ervoor gekozen om de metadata in het Nederlands op te voeren, waarbij 'dut' de waarde van de metadata-taal is. Als er aanvullend voor een extra taal wordt gekozen, dient deze consequent gehanteerd te worden. Stelt u bijvoorbeeld de metadata ook in het Engels beschikbaar, dan dienen alle vrije tekstvelden in de metadata vertaald te worden. Denk daarbij ook aan de licentie zelf.
 
 De *Get Network Service Metadata*-respons van de netwerkdienst (de view- en downloadservice) moet alle metadata-elementen bevatten die zijn opgenomen in de ISO 19139-metadata in alle ondersteunde talen in die service.
 
