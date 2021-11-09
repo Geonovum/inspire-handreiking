@@ -230,7 +230,7 @@ De handleiding voor dit register is [hier](https://github.com/ec-jrc/re3gistry/b
 ## Portrayal
 Het *portrayal*-hoofdstuk van een dataspecificatie (meestal in hoofdstuk 11) betreft voornamelijk de grafische weergave van de data in een viewservice, maar kan ook in GIS-applicaties gebruikt worden. Deze weergave is gedefinieerd op  basis van de dataspecificatie en kan dus pas ingesteld worden conform de dataspecificatie nadat er geharmoniseerd is.
 
-De layer definition bestaat uit de volgende onderdelen:
+Het *portrayal*-hoofdstuk bestaat uit de volgende onderdelen:
 
 - **Layer types**: De INSPIRE *view services* kennen een specifieke, thema-afhankelijke opbouw. Soms wordt een thema in één layer getoond, maar dat is niet altijd het geval. De paragraaf layer types geeft de definitie van de layeropbouw voor de viewservice van het betreffende thema. In deze paragraaf wordt hetvolgende van de viewservice bepaald:
 	- Layer name
