@@ -62,7 +62,7 @@ De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-met
 |------------										|-------------	|-------------		|------------	|-------|
 | **URL**  											| MD_Metadata.distributionInfo> MD_Distribution.transferOptions> MD_DigitalTransferOptions.onLine> CI_OnlineResource.linkage | Ja | Voor INSPIRE wordt hier ten minste de URL van de view- en de downloadservice opgenomen naar het accesspoint (voor WMS en WFS is dat de capabilities). Als er meerdere datasets in één service worden ontsloten wordt hier ook het endpoint van elke dataset (zowel view als download) opgenomen. | http://inspirelab.geonovum.nl/test/rws/wms?request=GetCapabilities |
 | **Protocol**  									| MD_Metadata.distributionInfo> MD_Distribution.transferOptions> MD_DigitalTransferOptions.onLine> CI_OnlineResource.protocol| Ja | Verplicht als er een URL is opgegeven. | xlink:href="http://www.opengis.net/def/serviceType/ogc/wms" OGC:WMS |
-| **Applicatieprofiel**  							| MD_Metadata.distributionInfo> MD_Distribution.transferOptions> MD_DigitalTransferOptions.onLine> CI_OnlineResource.applicationProfile | Ja | Aanbevolen voor eenvoudigere dataservice-koppeling INSPIRE, hiermee wordt aangegeven dat aan betreffende technische specificatie wordt voldaan. Dit alleen opnemen voor het accesspoint (voor WMS en WFS is dat de capabilities). Kies een waarde uit http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType en neem dit op in een Anchor. | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download Downloaddienst|
+| **Applicatieprofiel**  							| MD_Metadata.distributionInfo> MD_Distribution.transferOptions> MD_DigitalTransferOptions.onLine> CI_OnlineResource.applicationProfile | Ja | Aanbevolen voor eenvoudigere dataservice-koppeling INSPIRE, hiermee wordt aangegeven dat aan betreffende technische specificatie wordt voldaan. Dit alleen opnemen voor het accesspoint (voor WMS en WFS is dat de capabilities). Kies een waarde uit http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType in een Anchor. | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download Downloaddienst|
 | **Naam**  										| MD_Metadata.distributionInfo> MD_Distribution.transferOptions> MD_DigitalTransferOptions.onLine> CI_OnlineResource.name| Ja | Het is verplicht als het protocol één van de volgende waardes heeft: OGC:WMS, OGC:WFS, OGC:WMTS, OGC:WCS en INSPIRE:Atom.| Gemeentegrenzen |
 | **Omschrijving**  								| MD_Metadata.distributionInfo> MD_Distribution.transferOptions> MD_DigitalTransferOptions.onLine> CI_OnlineResource.description | | Aanbevolen dit zowel voor endPoints als ook voor accessPoints op te nemen. Kies een waarde uit http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/| xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint accessPoint|
 | **Trefwoord** 									| MD_Metadata.identificationInfo> MD_DataIdentification.descriptiveKeywords> MD_Keywords.keyword| Ja | INSPIRE vereist dat de naam van het thema als trefwoord wordt opgenomen uit de GEMET INSPIRE themes thesaurus | Hydrografie |
@@ -73,12 +73,12 @@ De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-met
 | **Naam van Thesaurus**  							| MD_Metadata.identificationInfo> MD_DataIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.title| Ja | Verplichte thesaurus voor ruimtelijke dekking van datasets INSPIRE. | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope Ruimtelijke dekking |
 | **Thesaurusdatum**  								| MD_Metadata.identificationInfo> MD_DataIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.date| Ja | De datum van publicatie van de codelijst.| 2019-05-22 |
 | **Thesaurus-datumtype** 							| MD_Metadata.identificationInfo> MD_DataIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.dateType| Ja | Het datumtype | publicatie |
-| **Trefwoord** 									| MD_Metadata.identificationInfo> MD_DataIdentification.descriptiveKeywords> MD_Keywords.keyword| Ja | INSPIRE vereist voor prioritaire datasets dat een trefwoord wordt opgenomen uit de de codelijst http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/AirQualityMonitoringStationsData-dir-2008-50 Monitoring stations (Richtlijn Luchtkwaliteit)|
+| **Trefwoord** 									| MD_Metadata.identificationInfo> MD_DataIdentification.descriptiveKeywords> MD_Keywords.keyword| Ja | INSPIRE vereist voor prioritaire datasets dat een trefwoord wordt opgenomen uit de de codelijst http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset in een Anchor | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/AirQualityMonitoringStationsData-dir-2008-50 Monitoring stations (Richtlijn Luchtkwaliteit)|
 | **Naam van Thesaurus**  							| MD_Metadata.identificationInfo> MD_DataIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.title| Ja | Verplichte thesaurus voor prioritaire datasets INSPIRE.| xlink:href="http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset INSPIRE prioritaire dataset|
 | **Thesaurusdatum**  								| MD_Metadata.identificationInfo> MD_DataIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.date| Ja | De datum van publicatie van de codelijst.| 2018-04-04 |
 | **Thesaurus-datumtype** 							| MD_Metadata.identificationInfo> MD_DataIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.dateType| Ja | Het datumtype | publicatie |
-| **Overige beperkingen**  							| MD_Metadata.identificationInfo[1]/\*/resourceConstraints/\*/otherConstraint | Ja | Voor INSPIRE moet een waarde uit codelijst [ConditionsApplyingToAccessAndUse](http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/) worden opgegeven | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply Geen beperkingen|
-| **Overige beperkingen**  							| MD_Metadata.identificationInfo[1]/\*/resourceConstraints/\*/otherConstraint | Ja | Voor INSPIRE moet ook een waarde uit codelijst [LimitationsOnPublicAccess](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/) worden opgegeven | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations Geen beperkingen|
+| **Overige beperkingen**  							| MD_Metadata.identificationInfo[1]/\*/resourceConstraints/\*/otherConstraint | Ja | Voor INSPIRE moet een waarde uit codelijst [ConditionsApplyingToAccessAndUse](http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/) worden opgegeven in een Anchor | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply Geen beperkingen|
+| **Overige beperkingen**  							| MD_Metadata.identificationInfo[1]/\*/resourceConstraints/\*/otherConstraint | Ja | Voor INSPIRE moet ook een waarde uit codelijst [LimitationsOnPublicAccess](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/) worden opgegeven in een Anchor | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations Geen beperkingen|
 | **Ruimtelijk schema** 							| MD_Metadata.identificationInfo[1]/*/spatialRepresentationType | Ja | Voor INSPIRE moet dit element opgenomen worden. | vector |
 | **Naam distributieformaat**  						| MD_Metadata.distributionInfo> MD_Distribution.distributionFormat> MD_Format.name| C | Het element invullen is verplicht als de dataset een geharmoniseerde INSPIRE dataset is. | xlink:href="http://inspire.ec.europa.eu/schemas/hy/4.0/HydroBase.xsd Hydrography GML application schema|
 | **Versie distributieformaat**  					| MD_Metadata.distributionInfo> MD_Distribution.distributionFormat> MD_Format.version| C | Het element invullen is verplicht als de dataset een geharmoniseerde INSPIRE dataset is. | version 3.0; GML, version 3.2. |
@@ -98,57 +98,18 @@ De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-met
 | **Rol organisatie metadata** 						| MD_Metadata.contact> CI_ResponsibleParty.role| Ja | Het betreft de rol van de organisatie. Inspire verplicht hier om *contactpunt* in te vullen. | contactpunt |
 
 ### Aandachtspunten
-De elementen van Specificatie en trefwoorden worden meerdere keren opgenomen. Voor alle thema's is het opgeven van de conformiteit met de verordening verplicht. Daarnaast zijn er INSPIRE-conformiteit-vereisten opgenomen in Annex A van de dataspecificaties voor de Annex II- en III-thema's. Daarbij is uitgegaan van het opgeven van de conformiteit van (delen van) de technische specificatie.
+Voor INSPIRE is het gebruik van een Anchor in plaats van vrije tekst in een characterstring in een aantal metadata elementen verplicht. In een Anchor wordt een URI en een label opgenomen. De URI is machine leesbaar, het label is voor mensen leesbaar en wordt in de taal waarin de metadata is beschreven opgenomen. Voordeel van URI's is dat deze hetzelfde zijn onafhankelijk van de gehanteerde taal. Dat maakt het dat op EU nivo bijvoorbeeld de trefwoorden voor prioriaire datasets doorzoekbaar zijn. Als ieder het trefwoord alleen in zijn eigen taal opneemt, is dat een stuk lastiger.
+
+De elementen van Specificatie en trefwoorden worden meerdere keren opgenomen. 
+
+Voor alle thema's is het opgeven van de conformiteit met de verordening verplicht. 
 
 ## Prioritaire datasets
 Voor de prioritaire datasets zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de bij het JRC beheerde INSPIRE-registry.
 
-De trefwoorden kunnen volgens twee scenario's worden toegevoegd:
+De trefwoorden en thesaurus worden toegevoegd met URI's en gebruiken daarvoor een Anchor in plaats van een string element.
 
-- **Scenario 1**: trefwoord en thesaurus worden toegevoegd zonder URI's. Hiervoor zijn geen handmatige aanpassingen in XML nodig.
-- **Scenario 2**: trefwoord en thesaurus worden toegevoegd met URI's. Deze manier wordt aanbevolen en sluit al aan op methodes in het NL-metadataprofiel versie 2.0 en de recentste INSPIRE technical guidelines van metadata. Hiervoor is tijdelijk, tot overgang naar NL profiel versie 2.0 eenmalig een handmatige aanpassing in XML nodig.
-
-### Scenario zonder URI's
-De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd zonder URI's:
-1. Ga naar de INSPIRE Registry (http://inspire.ec.europa.eu/registry).
-2. Ga naar de prioritaire-dataset-metadata-codelijst (http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset).
-3. Ga naar de betreffende prioritaire dataset.
-4. Kopieer het NL-label.
-5. Voeg deze als trefwoord toe aan de metadata samen met de verwijzing naar de thesaurus met *titel*, *datum* en *type datum*.
-6. Als de dataset voor meerdere rapportage verplichtingen wordt gebruikt, voor elke verplichting de juiste trefwoorden zoeken en toevoegen.
-7. Bewaar de aanpassingen en valideer je metadata. Er is (nog) geen test op deze extra trefwoorden.
-
-**Voorbeeld voor dit scenario**
-<pre class="xml">
-&lt;!-- Trefwoord voor reporting verplichting voor INSPIRE --&gt;
-&lt;gmd:descriptiveKeywords&gt;
-&lt;gmd:MD_Keywords&gt;
-    &lt;gmd:keyword&gt;
-      &lt;gco:CharacterString&gt;Monitoring stations (Richtlijn Luchtkwaliteit)&lt;/gco:CharacterString&gt;
-    &lt;/gmd:keyword&gt;
-&lt;!-- Eventueel hier een tweede trefwoord voor tweede reporting verplichting voor INSPIRE --&gt;
-    &lt;gmd:thesaurusName&gt;
-      &lt;gmd:CI_Citation&gt;
-        &lt;gmd:title&gt;
-          &lt;gco:CharacterString&gt;INSPIRE prioritaire dataset&lt;/gco:CharacterString&gt;
-        &lt;/gmd:title&gt;
-        &lt;gmd:date&gt;
-          &lt;gmd:CI_Date&gt;
-            &lt;gmd:date&gt;
-              &lt;gco:Date&gt;2018-04-04&lt;/gco:Date&gt;
-            &lt;/gmd:date&gt;
-            &lt;gmd:dateType&gt;
-              &lt;gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/&gt;
-            &lt;/gmd:dateType&gt;
-          &lt;/gmd:CI_Date&gt;
-        &lt;/gmd:date&gt;
-      &lt;/gmd:CI_Citation&gt;
-    &lt;/gmd:thesaurusName&gt; 
-  &lt;/gmd:MD_Keywords&gt;
-&lt;/gmd:descriptiveKeywords&gt;
-</pre>
-
-### Scenario met URI's
+### Het toevoegen van trefwoorden met URI's
 De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd mét URI's:
 1. Ga naar de INSPIRE Registry (http://inspire.ec.europa.eu/registry).
 2. Ga naar de prioritaire-dataset-metadata-codelijst (http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset).
@@ -156,22 +117,9 @@ De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd m
 4. Kopieer de URI en het NL-label.
 5. Voeg deze als trefwoord toe aan de metadata samen met de verwijzing naar de thesaurus met *titel*, *datum* en *type datum*. Hiervoor kan onderstaande XML-voorbeeld in de XML worden gekopieerd.
 6. Als de dataset voor meerdere rapportageverplichtingen wordt gebruikt, voor elke verplichting de juiste trefwoorden zoeken en toevoegen.
-7. Neem bovenin de XML de namespace en schemalocatie van GMX op als volgt:
-<pre class="xml">
-&lt;gmd:MD_Metadata
-  xmlns:gml="http://www.opengis.net/gml"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:gmd="http://www.isotc211.org/2005/gmd"
-  xmlns:gmx="http://www.isotc211.org/2005/gmx"
-  xmlns:gts="http://www.isotc211.org/2005/gts"
-  xmlns:gco="http://www.isotc211.org/2005/gco"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd
-  http://www.isotc211.org/2005/gmx http://schemas.opengis.net/iso/19139/20060504/gmx/gmx.xsd"&gt;
-</pre>
-8. Bewaar de aanpassingen en valideer je metadata. Er is (nog) geen test op deze extra trefwoorden.
+7. Bewaar de aanpassingen en valideer je metadata. Er is (nog) geen test op deze extra trefwoorden.
 
-**Voorbeeld voor dit scenario**
+**Voorbeeld**
 
 <pre class="xml">
 &lt;!-- Trefwoord voor reporting verplichting voor INSPIRE --&gt;
@@ -300,7 +248,7 @@ Een voorbeeld:
 
 **Vraag: Is de metadata-taal een verplicht element?**
 
-Ja, het metadata-taalelement is verplicht. In dit element wordt vastgelegd in welke taal de metadata is beschreven. Gebruik hiervoor alleen de drie-letter codes van 639-2/B (bibliographic codes), zoals gedefinieerd op http://www.loc.gov/standards/iso639-2/. Voor Nederlands is de code dut.
+Ja, het metadata-taalelement is verplicht. In dit element wordt vastgelegd in welke taal de metadata is beschreven. Gebruik hiervoor alleen de drie-letter codes van 639-2/B (bibliographic codes), zoals gedefinieerd op http://www.loc.gov/standards/iso639-2/. Het is ook noodzakelijk de URL van de codelijst in de metadata op te nemen (zoals in het voorbeeld hieronder). Voor Nederlands is de code dut.
 
 Een voorbeeld:
 
