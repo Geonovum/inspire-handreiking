@@ -147,7 +147,7 @@ Also, If all data are harmonised/compliant, then of course, the non-interoperabl
 
 Er doen zich nu een drietal scenario’s voor, waarbij de volgende assumptie geldt: de datasets ‘as is’ zijn rijker gevuld dan de INSPIRE-datamodellen (meer feature types, meer attributen en associaties). Andersom, indien het INSPIRE-datamodel ‘rijker gevuld is’ dan de dataset ‘as is’, dan betekent dat dat de gevraagde data niet in de dataset aanwezig is en dus niet geleverd hoeft te worden.
 1. Het “ARM”-scenario van de “arme geharmoniseerde dataset”. In dit scenario volgt de dataprovider zeer strict de harmonisatie-eisen van INSPIRE. De rijkere dataset ‘as is’ wordt niet (meer) aangeboden, want er zijn geen relevante gebruikerswensen en use cases.
-2. Het “RIJK en ARM”-scenario van de “arme geharmoniseerde dataset”. In dit scenario volgt de dataprovider de harmonisatie-eisen van INSPIRE en wordt de rijkere dataset tevens ‘as is’ ook aangeboden conform de INSPIRE-eisen voor netwerkdiensten, omdat relevante gebruikerswensen en use cases dit vereisen.
+2. Het “RIJK en ARM”-scenario van de “arme geharmoniseerde dataset”. In dit scenario volgt de dataprovider de harmonisatie-eisen van INSPIRE en wordt de rijkere dataset tevens ‘as is’ ook aangeboden conform de INSPIRE-eisen voor netwerkdiensten, omdat relevante gebruikerswensen en use cases dit vereisen. Kort gezegd komt het erop neer dat wanneer de as-is dataset meer attributen heeft dan de INSPIRE-dataset, de as-is dataset nog steeds wordt aangeboden als view- en downloadservice met het vinkje 'INSPIRE' aangevinkt in het NGR. Het is dan weliswaar geen INSPIRE-geharmoniseerde dataset maar biedt nog wel steeds meerwaarde voor de INSPIRE-community. Meer info is te vinden in [het in december 2013 in de Klankbordgroep besproken stuk](https://wiki.geonovum.nl/images/Bijlage_4.1_Memo_INSPIRE_Datasets_%27as_is%27_4DEC2013_v2.pdf).
 3. In het “RIJK”-scenario is de data set ‘as is’ volledig geharmoniseerd beschikbaar. Dit kan bereikt worden door een [extensie](#extensies) te maken van het door INSPIRE voorgedragen geharmoniseerde model. De rijke gegevens worden dan toegevoegd aan het INSPIRE-model zodanig dat nog steeds wordt voldaan aan het INSPIRE-model. In dit geval zal de dataprovider slechts 1 geharmoniseerde, rijke dataset beschikbaar stellen, omdat relevante gebruikerswensen en use cases dit vereisen.
 
 In onderstaande figuur zijn de 3 scenario’s bezien in het licht van de INSPIRE-richtlijn en de keuze mogelijkheden voor de dataproviders.
@@ -306,29 +306,3 @@ Bij dataharmonisatie is het van belang op de volgende punten te letten:
 11. Voer de verwijzing naar de metadata (de UUID) van de geharmoniseerde dataset op in [het INSPIRE aanmerkingsregister](https://inspireaanmerking.nl/), zodat bekend is voor welke aangemerkte dataset daadwerkelijk data gepubliceerd is conform de eisen van INSPIRE.
 12. Check of er in de metadata van de data en services goed naar elkaar is verwezen middels de juiste [links](https://inspire-geoportal.ec.europa.eu/linkagechecker.html).
 13. Check in het [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/tv_home.html) of de data daadwerkelijk te bekijken en te downloaden is en onder het correcte thema te vinden is.
-
-## FAQ dataharmonisatie
-Hieronder worden een aantal veelgestelde vragen rondom dataharmonisatie behandeld.
-
-**Vraag: Als ik niet langer optreed als dataprovider voor een INSPIRE-thema, wat betekent dit dan voor mijn aanmerking?**
-
-In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. In het [processchema wijziging aanmerking dataproviders](https://www.geonovum.nl/uploads/documents/proces%20wijziging%20aanmerking%20data%20provider%20v3.0.pdf) staat welke stappen er doorlopen moeten worden om de aanmerking te wijzigen.
-
-![processtappenaanmerking](media/Processtappen_wijzigingsverzoek.png "De stappen die genomen moeten worden om een aanmerking te wijzigen.")
-
-**Vraag: Wat doe ik met mijn *as-is* datasets nadat ik mijn data geharmoniseerd heb naar INSPIRE-dataspecificaties?**
-
-In het licht van de INSPIRE-directive is het de bedoeling dat de aanwezige rijke “as-is” data beschikbaar wordt gesteld. Over het algemeen zijn de as-is data 'rijker' gevuld dan die geharmoniseerd zijn voor INSPIRE. Er zijn twee opties om deze data dan beschikbaar te stellen:
-- zowel de 'rijke' as-is datasets én de 'arme' INSPIRE-datasets worden aangeboden via de gestandaardiseerde INSPIRE-netwerkdiensten, of
-- de 'arme' INSPIRE-geharmoniseerde dataset wordt middels een extensie op het bestaande INSPIRE-schema verrijkt met alle data uit de as-is dataset en wordt aangeboden via de gestandaardiseerde INSPIRE-netwerkdiensten.
-
-Kort gezegd komt het erop neer dat wanneer de as-is dataset meer attributen heeft dan de INSPIRE-dataset, de as-is dataset nog steeds wordt aangeboden als view- en downloadservice met het vinkje 'INSPIRE' aangevinkt in het NGR. Het is dan weliswaar geen INSPIRE-geharmoniseerde dataset maar biedt nog wel steeds meerwaarde voor de INSPIRE-community.
-Meer info is te vinden in [het in december 2013 in de Klankbordgroep besproken stuk](https://wiki.geonovum.nl/images/Bijlage_4.1_Memo_INSPIRE_Datasets_%27as_is%27_4DEC2013_v2.pdf). Zie ook [deze paragraaf](#as-is-versus-geharmoniseerd).
-
-**Vraag: Waar kan ik terecht met vragen, opmerkingen en verbetervoorstellen over de dataspecificaties van mijn thema?**
-
-Meld je vragen, opmerkingen en verbetervoorstellen aan bij de [INSPIRE helpdesk issues](https://github.com/INSPIRE-MIF/helpdesk/issues). Op deze wijze wordt je vraag gedeeld met, en wellicht beantwoord door, de INSPIRE-community. 
-
-**Vraag: Hoe maak ik extensies?**
-
-Op de [extensions-website](http://inspire-extensions.wetransform.to/index.html) vindt u allerlei praktische tips en trucs voor het maken van extensies. Zie ook [deze paragraaf](#extensies).
