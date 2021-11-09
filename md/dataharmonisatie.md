@@ -121,9 +121,9 @@ Dit hangt van een aantal organisatie-gebonden factoren af:
 - Aanwezige software
 - Beschikbare tijd
 
-De belangrijkste factor is de kennis die binnen een organisatie aanwezig is. Zijn er binnen de organisatie database-specialisten aanwezig, die verstand hebben van ruimtelijke databases? Zijn er GIS-operators die al vaker met ETL tools werken? Dit betekent dus ook dat er wellicht gekozen moet worden voor uitbesteding.
+De belangrijkste factor is de kennis die binnen een organisatie aanwezig is. Zijn er binnen de organisatie database-specialisten aanwezig, die verstand hebben van ruimtelijke databases? Zijn er GIS-expers die al vaker met ETL tools werken? Dit betekent dus ook dat er wellicht gekozen moet worden voor uitbesteding.
 
-De ‘spin-off’ is een zijdelingse overweging die bij de keuze van harmonisatie-principe van belang kan zijn. Voor INSPIRE-gerichte harmonisaties is veel kennis nodig. Deze kennis kan voor andere GEO-ICT projecten ook van praktisch belang zijn, bijvoorbeeld omdat het de kennis van een tool verhoogt. Dit kan een overweging zijn om een kennis-domein te versterken en hierin te investeren.
+De ‘spin-off’ van het zelf opdoen van kennis is een zijdelingse overweging die bij de keuze van harmonisatie-principe van belang kan zijn. Voor INSPIRE-gerichte harmonisaties is veel kennis nodig. Deze kennis kan voor andere GEO-ICT projecten ook van praktisch belang zijn, bijvoorbeeld omdat het de kennis van een tool verhoogt. Dit kan een overweging zijn om een kennis-domein te versterken en hierin te investeren.
 
 ## As-is versus geharmoniseerd
 Deze vraag is voorgelegd aan de EU commissie:
@@ -155,6 +155,7 @@ In onderstaande figuur zijn de 3 scenario’s bezien in het licht van de INSPIRE
 ![rijkarmplaatje](media/rijk_arm_scenario.png "De verschillende mogelijkheden voor het aanbieden van as-is data ná harmonisatie en voor het aanbieden van geharmoniseerde data")
 
 ### Extensies
+Het gebruik van extensies wordt gezien als de meest efficiënte scenario voor harmonisatie, wanneer de AS-is dataset rijker is dan de dataspecifiactie van het INSPIRE thema.
 De INSPIRE-dataspecificaties zijn zo ontworpen dat ze eenvoudig [uitbreidbaar](https://inspire.ec.europa.eu/portfolio/inspire-extensions) zijn. Dit uitbreiden van modellen en specificiaties wordt 'extending' genoemd en de uitbreidingen zijn 'extensions'.
 
 In opdracht van (en in samenwerking met) Geonovum heeft het bedrijf WeTransform onderzoek verricht naar INSPIRE-extensies. De resultaten hiervan zijn op [een website](https://inspire-extensions.wetransform.to/) verzameld waarop veel informatie te vinden is over het uitbreiden van INSPIRE-dataspecificiaties.
