@@ -299,13 +299,12 @@ Bij dataharmonisatie is het van belang op de volgende punten te letten:
 3. Registreer de namespaces via het [namespaceregister](http://inspirelab.geonovum.nl/namespaces/).
 4. Registreer [codelijsten] als er codes gebruikt worden naast die al in bestaande INSPIRE codelijsten voorkomen.
 5. Valideer de datasets tussentijds met de INSPIRE-validator, zodat vroegtijdig eventuele fouten opgelost kunnen worden. Informatie over datasetvalidatie is [hier](#conformance-classes-datavalidatie) te vinden.
-6. Publiceer datasetmetadata van de geharmoniseerde dataset. Voor geharmoniseerde data zijn er drie extra metadata-elementen die ingevuld dienen te worden; zie de [invulinstructies voor de metadata](#invulinstructie-voor-datasets). [Valideer daarna de datasetmetadata](#metadata-validatie).
+6. Publiceer datasetmetadata van de geharmoniseerde dataset. Voor geharmoniseerde data zijn er drie extra metadata-elementen die ingevuld dienen te worden; zie de [invulinstructies voor de metadata](#invulinstructie-voor-datasets). [Valideer daarna de datasetmetadata](#metadata-validatie). Contoleer in het NGR of de categorie `inspire` is geactiveerd.
 7. Zorg dat de view service van de geharmoniseerde dataset voldoet aan de eisen die INSPIRE stelt voor geharmoniseerde data. Zie in de betreffende dataspecificatie het hoofdstuk [Portrayal](#portrayal). 
 8. Valideer de [services](#valideren-services) van de geharmoniseerde dataset. Let er daarbij op dat de output van de downloadservices ook conform de dataspecificaties is net als dat met de input is gedaan in stap 4.
-9. Valideer ook de metadata van de services,[zie hier](#valideren-metadata-services).
-10. Contoleer in het NGR of de categorie `inspire` voor de datasetmetadata en de servicemetadata is geactiveerd, anders verschijnt de metadata niet in de INSPIRE Discovery Service.
+9. Valideer ook de metadata van de services,[zie hier](#valideren-metadata-services). Contoleer in het NGR of de categorie `inspire` is geactiveerd, anders verschijnt de metadata niet in de INSPIRE Discovery Service.
 11. Voer de verwijzing naar de metadata (de UUID) van de geharmoniseerde dataset op in [het INSPIRE aanmerkingsregister](https://inspireaanmerking.nl/), zodat bekend is voor welke aangemerkte dataset daadwerkelijk data gepubliceerd is conform de eisen van INSPIRE.
-12. Check of er in de metadata van de data en services goed naar elkaar is verwezen middels de juiste [links](https://inspire-geoportal.ec.europa.eu/linkagechecker.html)
+12. Check of er in de metadata van de data en services goed naar elkaar is verwezen middels de juiste [links](https://inspire-geoportal.ec.europa.eu/linkagechecker.html).
 13. Check in het [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/tv_home.html) of de data daadwerkelijk te bekijken en te downloaden is en onder het correcte thema te vinden is.
 
 ## FAQ dataharmonisatie
