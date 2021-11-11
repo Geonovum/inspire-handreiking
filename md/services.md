@@ -1,6 +1,7 @@
 # Services
 
 In dit deel van de WIKI worden de verschillende elctronische diensten (services) behandeld die INSPIRE vraagt aan de INSPIRE plichtige dataproviders. Deze worden ook wel Network services genoemd. Algemene aspecten daaraan worden in het volgende hoofstuk behandeld. Er zijn verschillende soorten services die ieder afzonderlijk in hoofdstukken daarna behandeld worden.
+
 Al deze services zijn technische componenten (entiteiten) die ook een onderlinge relatie hebben. Hun relaties, hun context en een use cases zijn beschreven in het [INSPIRE-Domain Model](https://inspire.jrc.ec.europa.eu/documents/Network_Services/INSPIRE%20Domain%20Model%20v0.9.1.pdf).
 
 ![Simple_INSPIRE_Domain_Model](media/DM_simple.png "Eenvoudig Domein model")
@@ -41,14 +42,8 @@ Het bovenstaande figuur valt uiteen in een aantal services:
 - Nog geen IR- of Technical-Guidance-document.
 
 **Registerdiensten**
-- Worden (nog) niet formeel door INSPIRE beschreven.
-- Vormen een beheerde repository voor toegansrechten en huidige en oude applicatie-schema’s en registers voor codelijsten, namespaces etc.
-- [INSPIRE Registry](https://inspire.ec.europa.eu/registry/) (EU) biedt nu alleen een Glossary en Feature Catalogue aan, wordt uitgebreid.
-- Nog geen IR- of Technical-Guidance-document (mei/juni 2010).
-
-**Externe (register-)diensten**
-- Worden nog niet door INSPIRE beschreven.
-- Nog geen IR- of Technical-Guidance-document.
+- De INSPIRE infrastructuur behelst een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). Het [INSPIRE register](https://inspire.ec.europa.eu/registry/) biedt een centraal toegangspunt voor een aantal centraal beheerde INSPIRE registers. De inhoud van deze registers is gebaseerd op de INSPIRE richtlijn, de uitvoerings regels en de technische handleidingen.
+- Voor Nederland is er een aanvullend register voor [codelijsten](#codelijsten) en [namespaces](#namespaces)
 
 ### Overige architectuuronderdelen
 Buiten de services, zijn er ook een aantal andere delen in de architectuur te onderscheiden.
