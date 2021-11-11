@@ -1,6 +1,9 @@
 # Services
 
-Introductie services
+In dit deel van de WIKI worden de verschillende elctronische diensten (services) behandeld die INSPIRE vraagt aan de INSPIRE plichtige dataproviders. Deze worden ook wel Network services genoemd. Algemene aspecten daaraan worden in het volgende hoofstuk behandeld. Er zijn verschillende soorten services die ieder afzonderlijk in hoofdstukken daarna behandeld worden.
+Al deze services zijn technische componenten (entiteiten) die ook een onderlinge relatie hebben. Hun relaties, hun context en een use cases zijn beschreven in het [INSPIRE-Domain Model](https://inspire.jrc.ec.europa.eu/documents/Network_Services/INSPIRE%20Domain%20Model%20v0.9.1.pdf).
+
+![Simple_INSPIRE_Domain_Model](media/DM_simple.png "Eenvoudig Domein model")
 
 ## Network services
 INSPIRE wordt gebaseerd op een geo-informatie infrastructuur (GII; in het Engels SDI: *spatial data infrastructure*) die deels door de individuele lidstaten gebouwd en beheerd worden, en deels door de dataproviders gebouwd moet worden. De figuur hieronder geeft de services-archtectuur schematisch weer. Transformatie, Invoke, Register en Externe Diensten worden vooralsnog buiten beschouwing gelaten. Spatial Data Services worden [elders beschreven](#spatial-data-services).
