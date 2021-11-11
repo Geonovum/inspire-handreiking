@@ -153,7 +153,7 @@ De richtlijn schrijft voor dat de i.h.k.v. INSPIRE aangeboden diensten in princi
 
 De RM architectuur-laag wordt in [deze afbeelding](#network-services) weergegeven met de term ‘toegangsrechten’ en wordt tussen de servicebus en de netwerkdiensten gepositioneerd. De RM-layer is geïntroduceerd om juridische rechten tussen INSPIRE en andere applicaties te kunnen ‘begeleiden’ en controleren en beperken. In feite houdt dit in dat er mogelijke restricties komen tussen enerzijds de dataprovider met haar data en services, en anderzijds de gebruiker.
 
-Er is geen Implementing Rule voor deze RM-layer dienst beschikbaar en deze wordt ook niet verwacht. Algemene houding ten opzichte van RM is dat het op dit moment, juni 2010, (te) vroeg is om hier definitieve beslissingen over te maken. Er wordt in de INSPIRE-documentatie verwezen naar GeoDRM (ISO 19153) als een kandidaat-standaard voor de RM-layer. ISO 19153 is een *working draft* die naar verwachting in 2011 gepubliceerd zal worden.
+Er is geen Implementing Rule voor deze RM-layer dienst beschikbaar en deze wordt ook niet verwacht. Er wordt in de INSPIRE-documentatie verwezen naar GeoDRM (ISO 19153) als een kandidaat-standaard voor de RM-layer. [ISO 19153](https://www.iso.org/standard/32571.html) is in 2014 gepubliceerd.
 
 #### Typen restricties
 - Private Access Terms: INSPIRE-service is toegankelijk maar de ruimtelijke data kan niet ge-redistribueerd worden.
