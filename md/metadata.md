@@ -19,7 +19,9 @@ In de meeste gevallen zal de dataprovider metadata aanmaken als onderdeel van be
 
 ## Eisen metadata
 De metadata-elementen die voor INSPIRE, vanuit verschillende richtlijnen, beschreven moeten worden zijn opgenomen in de Nederlandse profielen. Deze profielen, één voor datasets en dataset series en één voor services, zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen. Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen voor INSPIRE ook worden beschreven om aan de vereisten voor INSPIRE voldoen. 
+
 Voor datasets en dataset series geldt het [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/) 
+
 Voor services geldt het [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/)
 
 INSPIRE specifiek zijn de aanvullende [Invulinstructies voor datasets](#invulinstructies-voor-datasets) 
@@ -98,11 +100,11 @@ De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-met
 | **Rol organisatie metadata** 						| MD_Metadata.contact> CI_ResponsibleParty.role| Ja | Het betreft de rol van de organisatie. Inspire verplicht hier om *contactpunt* in te vullen. | contactpunt |
 
 ### Aandachtspunten
-Voor INSPIRE is het gebruik van een Anchor in plaats van vrije tekst in een characterstring in een aantal metadata elementen verplicht. In een Anchor wordt een URI en een label opgenomen. De URI is machine leesbaar, het label is voor mensen leesbaar en wordt in de taal waarin de metadata is beschreven opgenomen. Voordeel van URI's is dat deze hetzelfde zijn onafhankelijk van de gehanteerde taal. Dat maakt het dat op EU nivo bijvoorbeeld de trefwoorden voor prioriaire datasets doorzoekbaar zijn. Als ieder het trefwoord alleen in zijn eigen taal opneemt, is dat een stuk lastiger.
+Voor INSPIRE is het gebruik van een Anchor in plaats van vrije tekst in een characterstring in een aantal metadata elementen verplicht. In een Anchor wordt een URI en een label opgenomen. De URI is machine leesbaar, het label is voor mensen leesbaar en wordt in de taal waarin de metadata is beschreven opgenomen. Voordeel van URI's is dat deze hetzelfde zijn onafhankelijk van de gehanteerde taal. Dat maakt het dat op EU nivo bijvoorbeeld de trefwoorden voor prioriaire datasets doorzoekbaar zijn. Als ieder het trefwoord alleen in zijn eigen taal opneemt, is dat een stuk lastiger. Maak waar mogelijk gebruik van een Anchor, ook waar het niet verplicht is, bijvoorbeeld ook bij het opgeven van de specificatie (Verordening en INSPIRE TG) bij de conformiteit. Als dit in een string element wordt opgegeven, moet de titel exact worden overgenomen.
 
 De elementen van Specificatie en trefwoorden worden meerdere keren opgenomen. 
 
-Voor alle thema's is het opgeven van de conformiteit met de verordening verplicht. 
+Ook voor "as-is" data is het opgeven van de conformiteit met de verordening verplicht. 
 
 ## Prioritaire datasets
 Voor de prioritaire datasets zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de bij het JRC beheerde INSPIRE-registry.
