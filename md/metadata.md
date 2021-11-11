@@ -18,7 +18,7 @@ In de meeste gevallen zal de dataprovider metadata aanmaken als onderdeel van be
 - Het aanmaken en publiceren van metadata rechtstreeks in het Nationaal Georegister. Binnen het NGR is hiervoor een metadata-editor beschikbaar.
 
 ## Eisen metadata
-De metadata-elementen die voor INSPIRE, vanuit verschillende richtlijnen, beschreven moeten worden zijn opgenomen in de Nederlandse profielen. Deze profielen, één voor datasets en dataset series en één voor services, zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen. Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen voor INSPIRE ook worden beschreven om aan de vereisten voor INSPIRE voldoen. 
+De metadata-elementen die voor INSPIRE, vanuit verschillende richtlijnen, beschreven moeten worden zijn opgenomen in de Nederlandse profielen. Deze profielen, één voor datasets en dataset series en één voor services, zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen; Als er aan de conditie wordt voldaan, is dat element verplicht. Voor een aantal door conditie verplichte elementen, heeft de conditie te maken met INSPIRE; Als de te beschrijven bron een aangemerkte INSPIRE dataset of bijbehorende service is, dan worden er meer metadata elementen vereist om in te vullen. Het komt ook voor dat er alleen specifieke waardes voor INSPIRE zijn toegestaan, terwijl voor niet INSPIRE data meer waardes toegestaan zijn.  Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen en aanvullende vereisten voor INSPIRE uit de NL profielen worden gevolgd. 
 
 Voor datasets en dataset series geldt het [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/) 
 
@@ -106,8 +106,8 @@ De elementen van Specificatie en trefwoorden worden meerdere keren opgenomen.
 
 Ook voor "as-is" data is het opgeven van de conformiteit met de verordening verplicht. 
 
-## Prioritaire datasets
-Voor de prioritaire datasets zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de bij het JRC beheerde INSPIRE-registry.
+### Prioritaire datasets
+Voor de prioritaire datasets zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de bij het JRC beheerde [INSPIRE-registry](http://inspire.ec.europa.eu/registry).
 
 De trefwoorden en thesaurus worden toegevoegd met URI's en gebruiken daarvoor een Anchor in plaats van een string element.
 
@@ -155,7 +155,7 @@ De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd m
 ### Voorbeeldbestand prioritaire datasets
 [Hier is een voorbeeldbestand waarin beide scenario's zijn uitgewerkt](https://wiki.geonovum.nl/images/Voorbeeld_XML_prioritaire_dataset.xml).
 
-## Voorbeeldbestand XML voor INSPIRE dataset-metadata
+### Voorbeeldbestand XML voor INSPIRE dataset-metadata
 
 Hier is een [voorbeeld-metadatabestand](https://wiki.geonovum.nl/images/Voorbeeld_Metadata_Dataset_2019.zip) te vinden voor een fictive dataset.
 
