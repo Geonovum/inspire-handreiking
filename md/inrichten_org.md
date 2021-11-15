@@ -29,9 +29,10 @@ Het doel van het INSPIRE aanmerkingsregister is meervoudig:
 - Via het aanmerkingsregister kan iedereen de voortgang van de INSPIRE implementatie volgen. 
 - Vanuit het aanmerkingsregister is er ook een directe link naar de publicatie van de metadata van betreffende dataset in het [Nationaal Georegister](https://www.nationaalgeoregister.nl/). De dataset is daar dan ook te raadplegen.
 
-Het aanmerkingregister heeft naast een open gedeelte ook een gesloten gedeelte voor de INSPIRE dataproviders. Deze omgeving voorziet in extra functionaliteit om het aanmerkings- en implementatieproces te ondersteunen. Binnen deze omgeving kunnen dataproviders per dataset de gegevens bewerken of een wijzigingsverzoek indienen. Ook is het mogelijk om overzichten te generen van de gegevens in het aanmerkingsregister.
+Het aanmerkingregister heeft naast een open gedeelte ook een gesloten gedeelte voor de INSPIRE dataproviders. Deze omgeving voorziet in extra functionaliteit om het aanmerkings- en implementatieproces te ondersteunen. Binnen deze omgeving kunnen dataproviders per dataset de implementatie status of een [wijzigingsverzoek](#wijziging-aanmerking) indienen. Ook is het mogelijk om overzichten te generen van de gegevens in het aanmerkingsregister.
 
-In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. In het [processchema wijziging aanmerking dataproviders](https://www.geonovum.nl/uploads/documents/proces%20wijziging%20aanmerking%20data%20provider%20v3.0.pdf) staat welke stappen er doorlopen moeten worden om de aanmerking te wijzigen.
+### Wijziging van de aanmerking
+In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. In het [processchema wijziging aanmerking dataproviders](https://www.geonovum.nl/uploads/documents/proces%20wijziging%20aanmerking%20data%20provider%20v3.0.pdf) staat welke stappen doorlopen moeten worden om de aanmerking te wijzigen. Via het gesloten gedeelte kan de dataprovider een wijzigingsverzoek indienen.
 
 ![processtappenaanmerking](media/Processtappen_wijzigingsverzoek.png "De stappen die genomen moeten worden om een aanmerking te wijzigen.")
 
