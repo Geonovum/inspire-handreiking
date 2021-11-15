@@ -32,7 +32,7 @@ Het doel van het INSPIRE aanmerkingsregister is meervoudig:
 Het aanmerkingregister heeft naast een open gedeelte ook een gesloten gedeelte voor de INSPIRE dataproviders. Deze omgeving voorziet in extra functionaliteit om het aanmerkings- en implementatieproces te ondersteunen. Binnen deze omgeving kunnen dataproviders per dataset de implementatie status of een [wijzigingsverzoek](#wijziging-aanmerking) indienen. Ook is het mogelijk om overzichten te generen van de gegevens in het aanmerkingsregister.
 
 ### Wijziging van de aanmerking
-In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. In het [processchema wijziging aanmerking dataproviders](https://www.geonovum.nl/uploads/documents/proces%20wijziging%20aanmerking%20data%20provider%20v3.0.pdf) staat welke stappen doorlopen moeten worden om de aanmerking te wijzigen. Via het gesloten gedeelte kan de dataprovider een wijzigingsverzoek indienen.
+In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. In het [processchema wijziging aanmerking dataproviders](https://www.geonovum.nl/uploads/documents/proces%20wijziging%20aanmerking%20data%20provider%20v3.0.pdf) staat welke stappen doorlopen moeten worden om de aanmerking te wijzigen. Via het gesloten gedeelte van het INSPIRE aanmerkingsregister kan de dataprovider een wijzigingsverzoek indienen.
 
 ![processtappenaanmerking](media/Processtappen_wijzigingsverzoek.png "De stappen die genomen moeten worden om een aanmerking te wijzigen.")
 
