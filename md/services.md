@@ -796,7 +796,16 @@ Hier zijn twee voorbeeldbestanden te vinden voor de Capibilities-documenten, vol
 
 ## Download service
 
-Een introductie
+De downloadservice (of downloaddienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen downloaden om ze daarna te kunnen analyseren en te gebruiken voor de gewenst toepassing. Hiertoe dient de dataprovider de INSPIRE-thema’s met een downloadservice te ontsluiten. Dat kan op verschillende manieren
+- AtomFeed
+- Web Feature Services (WFS)
+    -  predefined
+    -  Direct access
+- Web Coverage Service (WCS)
+- Sensor Observation Services (SOS)
+- OGC API Features (OAF)
+
+In de volgende hoofdstukken worden eerst verschillende downloadservice implementaties kort beschreven en later nog weer apart in detail per paragraaf. 
 
 ### Downloadservice implementaties
 De [Technical Guidances](#technische-richtlijnen) en de [Commission Regulation amending Regulation (EC) No 976/2009 as regards download services and transformation service](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02009R0976-20101228) zijn de huidig geldige documenten die downloadservices en de eisen eraan beschrijven. De Commission Regulation is de wettekst die aangeeft welke downloadservices moeten en mogen worden aangeboden binnen INSPIRE. De Technical Guidance geeft richtlijnen hoe deze services conform de Implementing Rule moeten worden toegepast.
