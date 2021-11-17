@@ -623,6 +623,8 @@ Dit is de geharmoniseerde naam voor INSPIRE-thema's die wordt gebruikt voor comm
 | Hydrografie | HY.Network |
 | Beschermde Gebieden | PS.ProtectedSite |
 
+Layer names en layer titles zijn verplicht voor de viewservices van geharmoniseerde datasets zoals ze in de dataspecificaties gedefinieerd zijn.
+
 **Coordinate Reference Systems (CRS)**
 
 Minimaal moeten de geografische Coordinaat Referentie Systemen (WGS84 en ETRS89) worden opgegeven. Voor ieder CRS wordt een `wms:CRS` element gebruikt. 
@@ -659,6 +661,10 @@ Voor de Style moet ook een URL worden opgenomen die verwijst naar een legenda in
 &lt;/Style&gt;
 </pre>
 
+Default styling is gedefinieerd in de viewservices TG (zie TG View service v3.0 paragraaf 4.2.3.3.4.8, eis 43 en 44). Dit is dus altijd verplicht voor viewservices, ook al is het nog niet vereist aan de dataspecificaties te voldoen. Zolang de portrayal zoals vastgelegd in de dataspecificaties (nog) niet verplicht is, moeten serviceproviders tenminste de default styling uit viewservices toepassen (requirement in de Technical Guidance voor View services).
+
+"inspire_common:DEFAULT" is een placeholder voor een Style Unique Identifier van de INSPIRE default style, maar je kan ook een andere naam kiezen voor de (default) stijl. De naam van de Style hoeft dus niet per se "inspire_common:DEFAULT" te zijn.
+
 **Dimension Pairs**
 
 Dit element wordt alleen gebruikt als de Layer afhankelijk is van tijd of hoogte. In dat geval wordt het element `wms:Dimension` gebruikt. Als een laag volledig is gedefinieerd door de beide assen van het CRS, dan wordt dit element niet ingevuld.
@@ -683,7 +689,7 @@ Coupled Resource geeft een verwijzing die toegang biedt tot de dataset die in de
 </pre>
 
 ### Category layers
-Als een Layer meerdere regionale datasets visualiseert, of meerdere featuretypes (bijvoorbeeld lijnen en vlakken in 1 laag), dan beveelt de technical guidance viewservices aan om gebruik te maken van Category Layers. Een Category Layer is een Layer die zelf weer uit meerdere Layers is opgebouwd die ieder een eigen dataset visualiseren. Als een viewservice gebruik maakt van Category Layers dan wordt het element `wms:Layer`/`wms:Name` gebruikt om de INSPIRE-geharmoniseerde naam voor het thema weer te geven. Als er een metadatadoucment beschikbaar is dan wordt het element `wms:Layer`/`wms:MetadataURL` gebruikt om een verwijzing naar dat metadata document op te nemen.
+Als een Layer meerdere regionale datasets visualiseert, of meerdere featuretypes (bijvoorbeeld lijnen en vlakken in 1 laag), dan beveelt de technical guidance viewservices aan om gebruik te maken van Category Layers. Een Category Layer is een Layer die zelf weer uit meerdere Layers is opgebouwd die ieder een eigen dataset visualiseren. Als een viewservice gebruik maakt van Category Layers dan wordt het element `wms:Layer`/`wms:Name` gebruikt om de INSPIRE-geharmoniseerde naam voor het thema weer te geven. Als er een metadatadocument beschikbaar is dan wordt het element `wms:Layer`/`wms:MetadataURL` gebruikt om een verwijzing naar dat metadata document op te nemen.
 
 <pre class="xml">
 &lt;Layer&gt;
@@ -715,6 +721,9 @@ Als een Layer meerdere regionale datasets visualiseert, of meerdere featuretypes
     ....
 &lt;/Layer&gt;
 </pre>
+
+Volgens de TG 3.0 voor viewservices, moet een Category Layer een naam hebben (eis 49). Daarnaast gelden de algemene eisen van WMS, die INSPIRE overneemt. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden.
+INSPIRE volgt de WMS 1.3.0 specificatie voor overerving van de layer elementen. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden.
 
 ### Meertaligheid in een capabilities-document
 Een Capabilities-document kan maar in één taal worden opgesteld. Om meertaligheid te ondersteunen is het dus noodzakelijk om voor iedere ondersteunde taal één Capabilities-document aan te maken. In ieder Capabilities-document moeten de ondersteunde talen worden opgenomen in de `inspire_vs:ExtendedCapabilities`.
@@ -783,37 +792,7 @@ http://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.
 </pre>
 
 ### Voorbeeldbestand XML voor Capabilities
-Hier zijn twee voorbeeldbestanden te vinden voor de Capibilities-documenten, volgens [scenario 1](https://wiki.geonovum.nl/index.php?title=File:WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](https://wiki.geonovum.nl/images/WMSCapabilities_Voorbeeld_Scenario2.zip).
-
-### FAQ viewservices
-
-**Vraag: Moeten voor een zogenaamde Category Layer de verplichte Layer metadata elementen (eg. Resource Abstract, Resource KeywordList, Unique Resource Identifier) ook aanwezig zijn?**
-
-Volgens de TG 3.0 voor viewservices, moet een Category Layer een naam hebben (eis 49). Daarnaast gelden de algemene eisen van WMS, die INSPIRE overneemt. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden. De ETF-tool voor het testen zal dit gaan volgen (controle en eventuele uitbreiding hierop in najaar 2013).
-
-**Vraag: Kunnen Layer elementen die kinderen van een Category Layer zijn, de verplichten Layer metadata elementen vanuit de parent Category Layer overerven? Of moeten alle Layer metadata (verplichte) elementen herhaald worden voor elke Layer kind van de parent Category Layer?**
-
-INSPIRE volgt de WMS 1.3.0 specificatie voor overerving van deze elementen. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden. Zie ook het antwoord bij de vraag hierboven.
-
-**Vraag: Is default styling verplicht voor de viewservice-deadline?**
-
-Default styling is gedefinieerd in de viewservices TG (zie TG View service v3.0 paragraaf 4.2.3.3.4.8, eis 43 en 44). Dit is dus altijd verplicht voor viewservices, ook al is het nog niet vereist aan de dataspecificaties te voldoen. Zolang de portrayal zoals vastgelegd in de dataspecificaties (nog) niet verplicht is, moeten serviceproviders tenminste de default styling uit viewservices toepassen (requirement in de Technical Guidance voor View services).
-
-**Vraag: Moet elke Layer een Style met naam (Style Unique Identifier) "inspire_common:DEFAULT" hebben of is "inspire_common:DEFAULT" alleen een placeholder voor een Style Unique Identifier van de INSPIRE default style en kan je ook een andere naam kiezen voor de (default) stijl?**
-
-Navraag bij het JRC/INSPIRE levert het volgende antwoord op: het betreft inderdaad een placeholder, de naam van de Style hoeft dus niet per se "inspire_common:DEFAULT" te zijn.
-
-**Vraag: Moeten service providers ook de in dataspecificaties gedefinieerde layer names en layer titles in de services opnemen?**
-
-Layer names en layer titles zijn NIET verplicht voor de deadline van viewservices, omdat ze in de dataspecificaties gedefinieerd zijn. Zodra aan de dataspecificaties voldaan moet worden, zijn de layer names en layer titles wel verplicht conform de dataspecificaties. Zie de [INSPIRE Roadmap](https://inspire.ec.europa.eu/road-map-graphic/32443) voor de deadlines voor view/download services en dataharmonisatie per Annex.
-
-**Vraag: Is de portrayal-specificatie uit de dataspecificaties verplicht als alleen een viewservice nog vereist is?**
-
-Portrayal is onderdeel van de dataspecificaties en verplicht vanaf de deadline voor dataspecificaties. Als (alleen) een viewservice geleverd moet worden, is de portrayal-specificatie nog niet verplicht. Zie de [INSPIRE Roadmap](https://inspire.ec.europa.eu/road-map-graphic/32443) voor de deadlines per Annex, en het hoofdstuk [portrayal](#portrayal) in dit document.
-
-**Vraag: Hoe ga ik om met wijzigingen in INSPIRE-netwerkdiensten die ik al aanbied?**
-
-Wanneer u een wijziging doorvoert in uw dataset of service, kan dit gevolgen hebben voor bijvoorbeeld de metadata, atomfeeds en conformiteit van uw data en services. In het document [wijzigingen en INSPIRE](https://www.geonovum.nl/uploads/documents/inspire-en-wat-te-doen-bij-wijzigingen.pdf) vindt u een praktische handreiking van de punten die u kunt controleren na een wijziging van uw INSPIRE-datasets en -services.
+Hier zijn twee voorbeeldbestanden te vinden voor de Capibilities-documenten, volgens [scenario 1](https://github.com/Geonovum/inspire-wiki/blob/main/docs/WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](https://github.com/Geonovum/inspire-wiki/blob/main/docs/WMSCapabilities_Voorbeeld_Scenario2.zip).
 
 ## Download service
 
@@ -1146,7 +1125,6 @@ Merk op: GML is voor Nederland als uitwisselingsformaat reeds verplicht voorgesc
 
 INSPIRE heeft een lijst van te gebruiken [media-types](https://inspire.ec.europa.eu/media-types/) gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
 
-**Vraag: Hoe ga ik om met wijzigingen in INSPIRE-netwerkdiensten die ik al aanbiedt?**
+## Wijzigingen doorvoeren
 
-Wanneer u een wijziging doorvoert in uw dataset of service, kan dit gevolgen hebben voor bijvoorbeeld de metadata, atomfeeds en conformiteit van uw data en services. In het document [wijzigingen en INSPIRE](https://www.geonovum.nl/uploads/documents/inspire-en-wat-te-doen-bij-wijzigingen.pdf) vindt u een praktische handreiking van de punten die u kunt controleren na een wijziging van uw INSPIRE-datasets en services.
-
+Wanneer u een wijziging doorvoert in uw dataset of service, kan dit gevolgen hebben voor bijvoorbeeld de metadata, atomfeeds en conformiteit van uw data en services. In het document [wijzigingen en INSPIRE](https://www.geonovum.nl/uploads/documents/inspire-en-wat-te-doen-bij-wijzigingen.pdf) vindt u een praktische handreiking van de punten die u kunt controleren na een wijziging van uw INSPIRE-datasets en -services.
