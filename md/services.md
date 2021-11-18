@@ -797,13 +797,13 @@ Hier zijn twee voorbeeldbestanden te vinden voor de Capibilities-documenten, vol
 ## Download service
 
 De downloadservice (of downloaddienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen downloaden om ze daarna te kunnen analyseren en te gebruiken voor de gewenst toepassing. Hiertoe dient de dataprovider de INSPIRE-thema’s met een downloadservice te ontsluiten. Dat kan op verschillende manieren
-- AtomFeed
-- Web Feature Services (WFS)
-    -  predefined
-    -  Direct access
-- Web Coverage Service (WCS)
-- Sensor Observation Services (SOS)
-- OGC API Features (OAF)
+1. AtomFeed
+2. Web Feature Services (WFS)
+	-  predefined
+	-  Direct access
+3. Web Coverage Service (WCS)
+4. Sensor Observation Services (SOS)
+5. OGC API Features (OAF)
 
 In de volgende hoofdstukken worden eerst verschillende downloadservice implementaties kort beschreven en later nog weer apart in detail per paragraaf. 
 
@@ -898,7 +898,7 @@ De Technical Guidance voor Download Services beschrijft hoe pre-defined datasets
 2. algemene gegevens over de downloadservice, zoals een id, locatie en de datum van laatste wijzigingen en copyrights en verwijzingen naar de Atom Dataset Feeds. Ook deze gegevens staan in de Atom Service feed.
 3. per dataset, of deel van een dataset: beschrijvende gegevens, zoals een titel, beknopte samenvatting, copyrights en andere rechten, het CRS, het geografisch gebied van de data en verwijzingen (URL) naar de data zelf. Deze gegevens staan in de *Atom Dataset feed(s)*;
 4. indien van toepassing: verwijzingen naar feeds in een andere taal (meertaligheid INSPIRE).
-5. verwijzingen naar [OpenSearch-functionaliteit](http://www.opensearch.org/Specifications/OpenSearch/1.1) om de feeds te kunnen doorzoeken. Deze gegevens staan in de Atom Service feed;
+5. verwijzingen naar [OpenSearch-functionaliteit](http://www.opensearch.org/) om de feeds te kunnen doorzoeken. Deze gegevens staan in de Atom Service feed;
 
 De afbeelding hieronder geeft de samenhang van de feeds weer voor pre-defined datasets, die als (statisch) bestand te downloaden zijn van een standaard webserver.
 
@@ -995,11 +995,11 @@ Om gebruik te maken van een OpenSearch Description, dienen de feeds en metadata 
 3. **datasetmetadata**: het protocol van de URL dient in het XML-bestand op "INSPIRE Atom" staan. In het NGR is dit eenvoudig te kiezen in de metadata-editor. Kies dan uit de keuzelijst Protocol de optie "Atom Service Feed". Dit moet voor alle dataset metadata waar de Atom feeds en de service naar verwijzen gedaan worden.
 4. **in de Atom service-feed**: de URL van de OpenSearchDescription moet toegevoegd worden aan de service-feed. Het NGR gaat de OpenSearch Description genereren (let op: zie opmerking hieronder) op basis van de metadata-identifier (fileIdentifier) van de metadata van de service. Het format van de URL van de OpenSearch Description die het NGR gaat genereren is:
 
-http://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/{metadataidentifier_service}/OpenSearchDescription.xml
-
 Bijvoorbeeld:
 
-http://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/ef2a7962-8bb4-483f-ac78-851b619f357f/OpenSearchDescription.xml
+https://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/ef2a7962-8bb4-483f-ac78-851b619f357f/OpenSearchDescription.xml
+
+Hierbij is **ef2a7962-8bb4-483f-ac78-851b619f357f** de metadataidentifier van de ATOM Download service
 
 De samenhang van de onderdelen van een ATOM Download Service is weergegeven in onderstaande afbeelding:
 
@@ -1015,6 +1015,7 @@ De samenhang van de onderdelen van een ATOM Download Service is weergegeven in o
 ### WFS pre-defined
 
 De Technical Guidance beschrijft in hoofdstuk 6 hoe een Download service voor Pre-defined datasets geïmplementeerd kan worden met een Web Feature Service en Filter Encoding.
+Het GetCapabilities request geeft een vergelijkbare Capabilities file op als bij de WMS, op enkele specifieke WMS onderdelen na. Het wordt daarom in deze paragraaf niet zo uitgebreid beschreven als in dat van de WMS.
 
 #### WFS 2.0
 
@@ -1054,11 +1055,11 @@ INSPIRE stelt via de Implementing Rules aan Netwerk Services, zoals View Service
 2. de Capabilities elementen Title en Abstract dienen in de gevraagde taal teruggegeven worden of in de standaard taal als de gevraagde taal niet ondersteund wordt.
 3. De Capabilities bevatten een lijst van ondersteunde talen in de Extended Capabilities. Dit mechanisme is hetzelfde als bij View Services.
 
-Handig om te weten is dat een WFS, als die maar één taal ondersteunt, de parameter LANGUAGE kan negeren als een client die verstuurt. Dit omdat een WFS de standaard taal mag teruggeven als de gevraagde taal niet ondersteund wordt. Dit betekent als een WFS maar één taal ondersteunt dat altijd die Capabilities teruggegeven hoeven te worden.
+Handig om te weten is dat een WFS, als die maar één taal ondersteunt, de parameter LANGUAGE kan negeren als een client die verstuurt. Dit omdat een WFS de standaard taal mag teruggeven als de gevraagde taal niet ondersteund wordt. Dit betekent als een WFS maar één taal ondersteunt dat altijd de Capabilities in die taal teruggegeven zullen worden.
 
 De andere operaties hoeven geen extra zaken te ondersteunen voor meertaligheid, omdat:
 1. DescribeFeatureType een technische beschrijving teruggeeft, een schema, waarop een natuurlijke taal niet van toepassing is;
-2. de GetFeature operation geeft data terug, op den duur conform de INSPIRE-applicatieschema's. Deze schema's bevatten al een mechanisme om waardes in meerdere talen op te geven. De Technical Guidance stelt daarom dat het niet van toepassing is om hier een aparte parameter voor op te geven.
+2. de GetFeature operation data teruggeeft conform de INSPIRE-applicatieschema's mits het een geharmoniseerde dataset betreft. Deze schema's bevatten al een mechanisme om waardes in meerdere talen op te geven. De Technical Guidance stelt daarom dat het niet van toepassing is om hier een aparte parameter voor op te geven.
 
 Naast de eisen doet de Technical Guidance de volgende aanbevelingen, voor het geval een service provider meerdere talen wil aanbieden:
 1. Gebruik aparte URLs voor verschillende talen, dus voor requests op Engelstalige data een andere URL dan voor requests op Nederlandstalige data. Dit houdt het overzichtelijk.
