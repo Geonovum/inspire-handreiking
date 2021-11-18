@@ -1110,6 +1110,14 @@ Vanaf 16 december 2016 is er ook een [Technical Guidance](http://inspire.ec.euro
 - gebruik van de GetObservationByID operatie om Direct Access in te vullen
 - Quality of Service voor de verschillende operaties.
 
+### OGC API Features
+
+OGC API features (OAPIF of OAF) is een vorm van een download service op basis van een API (Application Program Interface) gebaseerd op OGC standaarden. Het wordt beschouwd als opvolger van de OGC WFS standaard, maar dat betekent niet dat het de WFS in de nabije toekomst volledig gaat vervangen, ook al zou dat in de verre toekomst wel het geval kunnen zijn. Voorlopig zijn ze nog complementair aan elkaar. De WFS wordt vooral in de GIS wereld gebruikt terwijl de OAPIF meer bedoeld is voor andere gebruikers, zoals web-applicatie bouwers. De OAPIF is eenvoudiger in het gebruik en vergt minder geo-kennis, maar is bv op 2 punten na nog niet echt geschikt voor INSPIRE.
+1. Het werkt nu alleen nog op basis van simpele datamodellen en uitwisselformaten en is dus moeilijk te implementeren op complexe INSPIRE datamodellen waarbij het complexere GML nog de default is. Mapping naar eenvoudigere modellen en uitwisselformaten is mogelijk maar moet dan voor INSPIRE wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
+2. Voorlopig is de tooling nog niet geschikt om met andere coördinaatsystemen te werken dan WGS84. INSPIRE vereist ETRS89. De standaarden zijn er al wel op aangepast, maar de tooling nog niet.
+
+Er is een [handreiking](https://geonovum.github.io/OAPIF-PDOK-INSPIRE/) geschreven waarin de eerste bevindingen voor het maken van een OAPIF zijn vastgelegd.
+
 ### FAQ downloadservices
 
 **Vraag: Is WFS verplicht voor INSPIRE Download Services?**
