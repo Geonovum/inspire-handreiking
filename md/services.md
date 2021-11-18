@@ -812,6 +812,19 @@ De [Technical Guidances](#technische-richtlijnen) en de [Commission Regulation a
 
 Op 9 augustus 2013 is versie 3.1 van de Technical Guidance definitief gepubliceerd met de specificaties voor WFS- en ATOM-implementaties van een downloadservice. Op 16 december 2016 zijn specificaties gepubliceerd voor implementatie van een downloadservice via WCS (voor coverage-data) of via SOS (voor sensordata). Dit hoofdstuk geeft een korte toelichting per servicetype over de eisen.
 
+Bij de implementatie van een Download Service beschrijven de Technical Guidances verschillende opties waaruit de dataprovider kan kiezen, als er maar minimaal één van deze implemetaties is geïmplementeerd:
+- Pre-defined dataset download services kunnen worden aangeboden als:
+	- tom (Atom Syndication Format) óf als:
+	- ISO DIS 19142 – Web Feature Service, met beperkte filter mogelijkheid óf als:
+	- Web Coverage Service óf als:
+	- Sensor Observation Service
+- Direct access download services mogen worden aangeboden als:
+	- ISO DIS 19142 – Web Feature Service met ISO DIS 19143 – Filter Encoding voor aanvullende filtermogelijkheden.
+	- Web Coverage Service met processing mogelijkheid óf
+	- Sensor Observation Service met extra bevragingsmogelijkheden.
+
+In de toekomst zal hier de OGC API Feture service nog aan toegevoegd worden
+
 #### Pre-defined en direct access
 INSPIRE verlangt onder andere dat datasets te downloaden moeten zijn via een downloadservice. Indien relevant, moeten ook *delen* van datasets te downloaden zijn. Volgens de Implementing Rules bestaan er twee soorten downloadservices die mogen worden geïmplementeerd:
 
@@ -1112,36 +1125,20 @@ Vanaf 16 december 2016 is er ook een [Technical Guidance](http://inspire.ec.euro
 
 ### OGC API Features
 
-OGC API features (OAPIF of OAF) is een vorm van een download service op basis van een API (Application Program Interface) gebaseerd op OGC standaarden. Het wordt beschouwd als opvolger van de OGC WFS standaard, maar dat betekent niet dat het de WFS in de nabije toekomst volledig gaat vervangen, ook al zou dat in de verre toekomst wel het geval kunnen zijn. Voorlopig zijn ze nog complementair aan elkaar. De WFS wordt vooral in de GIS wereld gebruikt terwijl de OAPIF meer bedoeld is voor andere gebruikers, zoals web-applicatie bouwers. De OAPIF is eenvoudiger in het gebruik en vergt minder geo-kennis, maar is bv op 2 punten na nog niet echt geschikt voor INSPIRE.
+[OGC API features](https://docs.opengeospatial.org/is/17-069r3/17-069r3.html) (OAPIF of OAF) is een vorm van een download service op basis van een API (Application Program Interface) gebaseerd op OGC standaarden. Het wordt beschouwd als opvolger van de OGC WFS standaard, maar dat betekent niet dat het de WFS in de nabije toekomst volledig gaat vervangen, ook al zou dat in de verre toekomst wel het geval kunnen zijn. Voorlopig zijn ze nog complementair aan elkaar. De WFS wordt vooral in de GIS wereld gebruikt terwijl de OAPIF meer bedoeld is voor andere gebruikers, zoals web-applicatie bouwers. De OAPIF is eenvoudiger in het gebruik en vergt minder geo-kennis, maar is bv op 2 punten na nog niet echt geschikt voor INSPIRE.
 1. Het werkt nu alleen nog op basis van simpele datamodellen en uitwisselformaten en is dus moeilijk te implementeren op complexe INSPIRE datamodellen waarbij het complexere GML nog de default is. Mapping naar eenvoudigere modellen en uitwisselformaten is mogelijk maar moet dan voor INSPIRE wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
-2. Voorlopig is de tooling nog niet geschikt om met andere coördinaatsystemen te werken dan WGS84. INSPIRE vereist ETRS89. De standaarden zijn er al wel op aangepast, maar de tooling nog niet.
+2. Voorlopig is de tooling nog niet geschikt om met andere coördinaatsystemen te werken dan WGS84. INSPIRE vereist ETRS89. De [standaarden](http://docs.opengeospatial.org/is/18-058/18-058.html) zijn er al wel op aangepast, maar de tooling nog niet.
 
 Er is een [handreiking](https://geonovum.github.io/OAPIF-PDOK-INSPIRE/) geschreven waarin de eerste bevindingen voor het maken van een OAPIF zijn vastgelegd.
 
-### FAQ downloadservices
+### Bestandsformaten
 
-**Vraag: Is WFS verplicht voor INSPIRE Download Services?**
+GML als bestandsformaat voor INSPIRE is in alle dataspecificaties de default zoals beschreven staat in paragraaf 9.3.1 van de dataspecificaties. INSPIRE heeft een lijst van te gebruiken [media-types](https://inspire.ec.europa.eu/media-types/) gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP-betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
 
-Nee, WFS is niet verplicht. Bij de implementatie van een Download Service beschrijfven de Technical Guidances verschillende opties waaruit de dataprovider kan kiezen:
-- Pre-defined dataset download services kunnen worden aangeboden als:
-	- Atom (Atom Syndication Format) óf als:
-	- ISO DIS 19142 – Web Feature Service, met beperkte filter mogelijkheid óf als:
-	- Web Coverage Service óf als:
-	- Sensor Observation Service
-- Direct access download services mogen worden aangeboden als:
-	- ISO DIS 19142 – Web Feature Service met ISO DIS 19143 – Filter Encoding voor aanvullende filtermogelijkheden.
-	- Web Coverage Service met processing mogelijkheid óf
-	- Sensor Observation Service met extra bevragingsmogelijkheden.
+Merk op: GML is voor Nederland als uitwisselingsformaat verplicht voorgeschreven, zie de zogenaamde [Pas-toe-of-Leg-Uit-lijst van geo-standaarden](https://www.forumstandaardisatie.nl/open-standaarden). Bij een implementatie via WFS wordt standaard GML geboden.
 
-**Vraag: Is het nu al verplicht GML te leveren als (bestands)formaat voor (vector)gegevens via ATOM Download Services?**
-
-Strikt genomen is GML pas verplicht voor INSPIRE zodra de dataspecificaties, inclusief de encodingregels per thema, verplicht zijn. Zie de [INSPIRE Roadmap](https://inspire.ec.europa.eu/road-map-graphic/32443) voor de deadlines per thema. INSPIRE heeft een lijst van te gebruiken [media-types](https://inspire.ec.europa.eu/media-types/) gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP-betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
-
-Merk op: GML is voor Nederland als uitwisselingsformaat reeds verplicht voorgeschreven, zie de zogenaamde [Pas-toe-of-Leg-Uit-lijst van geo-standaarden](https://www.forumstandaardisatie.nl/open-standaarden). Bij een implementatie via WFS wordt standaard GML geboden.
-
-**Vraag: Welke bestandsformaten zijn toegestaan bij Download Services?**
-
-INSPIRE heeft een lijst van te gebruiken [media-types](https://inspire.ec.europa.eu/media-types/) gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
+Andere formaten zoals beschreven in paragraaf 9.3.2 van de dataspecificaties zijn ook toegestaan, maar dan moet de mapping naar het INSPIRE-model wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
+Er is een speciale [Europese werkgroep](https://github.com/INSPIRE-MIF/2017.2/) bezig met het bestuderen van het gebruik van eenvoudigere bestandsformaten dan GML zoals GeoJSON.
 
 ## Wijzigingen doorvoeren
 
