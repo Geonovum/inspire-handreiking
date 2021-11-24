@@ -56,20 +56,20 @@ Op de website van INSPIRE is de wetgeving met betrekking tot network services te
 
 |Type wetgeving | Site | Titel |
 |-----------------|-------------|-------------|
-| Regulation | [eur-lex](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32008R1205) | [Regulation on INSPIRE Network Services](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ%3AL%3A2009%3A274%3ATOC) |
-| Amendement voor download services en transformation services | [comitology](https://ec.europa.eu/transparency/comitology-register/screen/home) | [COMMISSION REGULATION (EU) No 1088/2010 of 23 November 2010 amending Regulation (EC) No 976/2009 as regards download services and transformation services](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02009R0976-20101228) |
+| Regulation | [eur-lex](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32007L0002) | [Regulation on INSPIRE Network Services](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02009R0976-20141231) |
+| Amendement voor download services en transformation services | [comitology](https://ec.europa.eu/transparency/comitology-register/screen/home) | [COMMISSION REGULATION (EU) No 1088/2010 of 23 November 2010 amending Regulation (EC) No 976/2009 as regards download services and transformation services](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32010R1088) |
 
 ### Technische richtlijnen
 In de Technical Guidances (of Guidance Documents) zijn de technische specificaties opgesteld voor network services, als uitwerking van de wettelijke eisen. De Technical Guidances definiëren hiermee waar een network service aan zal moeten voldoen. De huidig geldende versies van de guidance documents van de network services zijn te vinden op de [website van INSPIRE](https://inspire.ec.europa.eu/Technical-Guidelines2/Network-Services/41). De tabel hieronder biedt directe links naar de documenten.
 
-| Titel | Versie | Datum | Opmerking |
+| Titel | Opmerking |
 |-----------------|-------------|-------------|-------------|
-| [Technical Guidance for the implementation of INSPIRE Download Services (3.1) - WFS en ATOM](https://inspire.ec.europa.eu/documents/Network_Services/Technical_Guidance_Download_Services_v3.1.pdf) | 3.1 | 09-08-2013 |
-| [Technical Guidance for the implementation of INSPIRE Download Services - Web Coverage Service](https://inspire.ec.europa.eu/file/1635/download?token=7m3PXp4a) | 1.0 | 16-12-2016 | 
-| [Technical Guidance for the implementation of INSPIRE Download Services - Sensor Observation Service](https://inspire.ec.europa.eu/file/1639/download?token=To5FISaB) | 1.0 | 16-12-2016 |
-| [Technical Guidance for the implementation of INSPIRE View Services (3.11)](http://inspire.jrc.ec.europa.eu/documents/Network_Services/TechnicalGuidance_ViewServices_v3.11.pdf) | 3.11 | 04-04-2013 |
-| [Technical Guidance for the implementation of INSPIRE Discovery Services (3.1)](http://inspire.jrc.ec.europa.eu/documents/Network_Services/TechnicalGuidance_DiscoveryServices_v3.1.pdf) | 3.1 | 07-11-2011 |
-| [Technical Guidance for the INSPIRE Schema Transformation Network Service](http://inspire.jrc.ec.europa.eu/documents/Network_Services/JRC_INSPIRE-TransformService_TG_v3-0.pdf) | 3.0 | 15-12-2010 | Niet op wiki uitgewerkt |
+| [Technical Guidance for the implementation of INSPIRE Download Services (3.1) - WFS en ATOM](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services) | |
+| [Technical Guidance for the implementation of INSPIRE Download Services - Web Coverage Service](https://inspire.ec.europa.eu/id/document/tg/download-wcs)|| 
+| [Technical Guidance for the implementation of INSPIRE Download Services - Sensor Observation Service](https://inspire.ec.europa.eu/id/document/tg/download-sos) ||
+| [Technical Guidance for the implementation of INSPIRE View Services (3.11)](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1) ||
+| [Technical Guidance for the implementation of INSPIRE Discovery Services (3.1)](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0) ||
+| [Technical Guidance for the INSPIRE Schema Transformation Network Service](https://inspire.ec.europa.eu/documents/technical-guidance-inspire-schema-transformation-network-service) || Niet op wiki uitgewerkt |
 
 Voor spatial data services, zie [verderop in dit document](#spatial-data-services).
 
@@ -144,7 +144,7 @@ INSPIRE definieert *Quality of services* (QoS), de eisen omtrent het kwaliteitsb
 
 | Titel | Versie | Datum |
 |-----------------|-------------|-------------|
-| [Regulation on INSPIRE Network Services](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ%3AL%3A2009%3A274%3ATOC) | adopted | 19-10-2009 |
+| [Regulation on INSPIRE Network Services](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02009R0976-20141231) | adopted | 32-12-2014 |
 | [Network Services Architecture (Version 3.0)](https://inspire.ec.europa.eu/reports/ImplementingRules/network/D3_5_INSPIRE_NS_Architecture_v3-0.pdf) | 3.0 | 30-09-2008 |
 | [Implementing Rules en Technical Guidances van de network services](#wetgeving) | | verschillende |
 
