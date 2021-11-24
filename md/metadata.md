@@ -191,7 +191,7 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 
 ### Voorbeeldbestand XML voor INSPIRE service-metadata
 
-[Hier is een voorbeeld XML-bestand te vinden voor service-metadata](https://wiki.geonovum.nl/images/Voorbeeld_Metadata_Service_2019.zip).
+[Hier is een voorbeeld XML-bestand te vinden voor service-metadata](docs/Voorbeeld_Metadata_Service_2019.zip).
 
 ## Spatial data services
 
@@ -279,9 +279,9 @@ The INSPIRE data specifications Technical Guidelines contain default encoding ru
 
 Voor het aanmaken voor metadata voor de verschillende Spatial Data Service categorieën zijn templates beschikbaar, waarin de benodigde metadata-elementen zijn opgenomen en informatie deels is ingevuld.
 
-- [Template NL profiel op ISO19119 v12 SDS invocable](https://wiki.geonovum.nl/images/Template_NL_profiel_op_ISO19119_v12_SDS_invocable.xml)
-- [Template NL profiel op ISO19119 v12 SDS interoperable](https://wiki.geonovum.nl/images/Template_NL_profiel_op_ISO19119_v12_SDS_interoperable.xml)
-- [Template NL profiel op ISO19119 v12 SDS harmonised](https://wiki.geonovum.nl/images/Template_NL_profiel_op_ISO19119_v12_SDS_harmonised.xml)
+- [Template NL profiel op ISO19119 v12 SDS invocable](https://github.com/Geonovum/inspire-wiki/tree/main/docs/Template_NL_profiel_op_ISO19119_v12_SDS_invocable.xml)
+- [Template NL profiel op ISO19119 v12 SDS interoperable](https://github.com/Geonovum/inspire-wiki/tree/main/docs/Template_NL_profiel_op_ISO19119_v12_SDS_interoperable.xml)
+- [Template NL profiel op ISO19119 v12 SDS harmonised](https://github.com/Geonovum/inspire-wiki/tree/main/docs/Template_NL_profiel_op_ISO19119_v12_SDS_harmonised.xml)
 
 
 
