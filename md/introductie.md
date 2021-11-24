@@ -25,13 +25,13 @@ Het INSPIRE-implementatieproces is, na het [aanmerken](#aanmerken) van de datapr
 
 Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende documentatie wordt geen rekening gehouden met processtappen die een technisch data-beheerder of GIS-operator moet ondernemen om de data conform INSPIRE te ontsluiten. Deze wiki helpt de dataproviders om het werkproces inzichtelijk te maken. Dit werkproces bestaat, naast het aanmerken en inrichten van de organisatie uit de onderstaande vijf stappen: 
 
-1. [Dataharmonisatie](#dataharmonisatie)
-2. [Metadata](#metadata)
-3. [Services](#services)
-	1. [Network services](#network-services)
-	2. [Spatial data services](#spatial-data-services)
-4. [Publiceren van de metadata in het Nationale Georegister](#publiceren)
-5. [Validatie](#validatie)
+- [Data (as-is en geharmoniseerd)](#data)
+- [Metadata](#metadata)
+- [Services](#services)
+	- [Network services](#network-services)
+	- [Spatial data services](#spatial-data-services)
+- [Publiceren van de metadata in het Nationale Georegister](#publiceren)
+- [Validatie](#validatie) (deze processtap wordt als aparte processtap beschreven, maar deze stap is eigenlijk onderdeel van de hierboven beschreven processtappen)
 
 De informatie op deze wiki volgt deze structuur (zie ook onderstaande figuur). De groene pijlen in de figuur tonen de opeenvolgende processtappen die doorlopen moeten worden om aan de *INSPIRE richtlijn* te voldoen.
 
