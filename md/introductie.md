@@ -31,8 +31,7 @@ Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende docu
 	- [Network services](#network-services)
 	- [Spatial data services](#spatial-data-services)
 - [Publiceren van de metadata in het Nationale Georegister](#publiceren)
-- [Validatie](#validatie) 
-  (deze processtap wordt als aparte processtap beschreven, maar deze stap is eigenlijk onderdeel van de hierboven beschreven processtappen)
+- [Validatie](#validatie) (als aparte processtap beschreven, maar deze stap is eigenlijk onderdeel van de hierboven beschreven processtappen)
 
 De informatie op deze wiki volgt deze structuur (zie ook onderstaande figuur). De groene pijlen in de figuur tonen de opeenvolgende processtappen die doorlopen moeten worden om aan de *INSPIRE richtlijn* te voldoen.
 
