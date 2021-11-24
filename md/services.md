@@ -808,7 +808,7 @@ De downloadservice (of downloaddienst) heeft als functie de gegevens die via de 
 In de volgende hoofdstukken worden eerst verschillende downloadservice implementaties kort beschreven en later nog weer apart in detail per paragraaf. 
 
 ### Downloadservice implementaties
-De [Technical Guidances](#technische-richtlijnen) en de [Commission Regulation amending Regulation (EC) No 976/2009 as regards download services and transformation service](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02009R0976-20101228) zijn de huidig geldige documenten die downloadservices en de eisen eraan beschrijven. De Commission Regulation is de wettekst die aangeeft welke downloadservices moeten en mogen worden aangeboden binnen INSPIRE. De Technical Guidance geeft richtlijnen hoe deze services conform de Implementing Rule moeten worden toegepast.
+De [Technical Guidances](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services) en de [Commission Regulation amending Regulation (EC) No 976/2009 as regards download services and transformation service](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02009R0976-20101228) zijn de huidig geldige documenten die downloadservices en de eisen eraan beschrijven. De Commission Regulation is de wettekst die aangeeft welke downloadservices moeten en mogen worden aangeboden binnen INSPIRE. De Technical Guidance geeft richtlijnen hoe deze services conform de Implementing Rule moeten worden toegepast.
 
 Op 9 augustus 2013 is versie 3.1 van de Technical Guidance definitief gepubliceerd met de specificaties voor WFS- en ATOM-implementaties van een downloadservice. Op 16 december 2016 zijn specificaties gepubliceerd voor implementatie van een downloadservice via WCS (voor coverage-data) of via SOS (voor sensordata). Dit hoofdstuk geeft een korte toelichting per servicetype over de eisen.
 
@@ -1103,7 +1103,7 @@ De eisen voor meertaligeheid zijn dezelfde als voor WFS pre-defined.
 
 #### Verhouding tot Nederlands profiel
 
-Het Nederlands profiel op ISO 19142 WFS 2.0 versie 1.1 stelt eisen aan Nederlandse WFS-implementaties. Het Nederlands profiel is afgestemd op de INSPIRE-specificaties. Per eis staat in het Nederlands profiel aangegeven of die van INSPIRE komt of dat het een specifieke aanvulling voor Nederland is. Een voorbeeld van dat laatste is ondersteuning voor het Rijksdriehoekstelsel.
+Het [Nederlands profiel](https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20) op ISO 19142 WFS 2.0 versie 1.1 stelt eisen aan Nederlandse WFS-implementaties. Het Nederlands profiel is afgestemd op de INSPIRE-specificaties. Per eis staat in het Nederlands profiel aangegeven of die van INSPIRE komt of dat het een specifieke aanvulling voor Nederland is. Een voorbeeld van dat laatste is ondersteuning voor het Rijksdriehoekstelsel.
 
 Het profiel bevat ook een aparte bijlage met de zaken die INSPIRE nog extra vereist ten opzichte van het Nederlands profiel.
 
