@@ -39,4 +39,4 @@ In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dat
 ## Inrichten organisatie
 Het inrichten van de organisatie en het exacte werkproces zal per organisatie en per dataset verschillen. Aandachtspunt is dat INSPIRE niet een eenmalig is, maar juist een doorlopend proces. Wanneer de processtappen doorlopen zijn en de dataprovider ‘conform INSPIRE’ opereert, is het zaak dat de ‘processtappen in de lijn worden opgenomen en dat de activiteiten van alle processtappen bij het dagelijkse beheer worden opgenomen.
 
-INSPIRE is namelijk geen project, maar ongoing concern!
+INSPIRE is namelijk geen project, maar onderdeel van het dagelijkse werkproces!
