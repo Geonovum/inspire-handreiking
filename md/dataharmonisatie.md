@@ -1,12 +1,14 @@
 # Data
 De aangemerkte INSPIRE datasets worden conform de INSPIRE uitvoeringsbepalingen ontsloten. Datasets en -services die onder één van de 34 INSPIRE-thema's vallen, moeten te vinden, raadplegen en downloaden zijn. De datasets komen vaak in twee varianten voor, namelijk:
 - de niet-geharmoniseerde dataset, de zogenaamde as-is dataset, zoals die in de lidstaat aanwezig is;
-- en/of de geharmoniseerde dataset, de dataset conform de INSPIRE-datamodellen in de INSPIRE-dataspecificaties. 
+- en/of de geharmoniseerde dataset, de dataset conform de INSPIRE-datamodellen in de INSPIRE-dataspecificaties.
 
-In dit hoofdstuk wordt allereerst ingegaan op het onderscheid as-is versus geharmoniseerd. Vervolgens komt de dataharmonisatie en alle processtappen die daarbij aan bod komen aan de orde.
+Naast dit onderscheid geeft de Europese Commissie ook prioriteit aan bepaalde datasets, de zogenaamde prioritaire datasets.  
+
+In dit hoofdstuk wordt allereerst ingegaan op het onderscheid as-is versus geharmoniseerd. Vervolgens komen de prioritaire datasets aan de orde. En tot slot komt de dataharmonisatie en alle processtappen die daarbij horen aan bod.
 
 ## As-is versus geharmoniseerd
-Deze vraag is voorgelegd aan de EU commissie:
+Aan de EU commissie is de onderstaande vraag m.b.t. as-is versus geharmoniseerd voorgelegd:
 
 *What is the position of INSPIRE regarding the status of the view and download services serving the INSPIRE data ‘as is’ at the moment the harmonized data shall to be served? Are the data providers in the member states allowed to ‘pull out the plug’ after the view and download service offer harmonized data. Or are the view and download services serving the INSPIRE data ‘as is’ considered as SDSs? Or both? The data providers can decide themselves how to deal with this? Keep the service up or pull out the plug. Are you able to give us the reference to the Directive with respect to this issue?*
 
@@ -48,19 +50,22 @@ Op deze site vindt u onder meer:
 
 Ook door het uitbreiden van [codelijsten](#codelijsten) kan het model rijker gemaakt worden.
 
+## Prioritaire datasets
+Sinds 2016 geeft de Europese Commissie prioriteit aan datasets die relevant zijn in het kader van de verplichte Europese rapporteringen m.b.t. het milieu, de zogenoemde “Priority list of datasets for e-Reporting”. Dit is een dynamische lijst. Naast de ontsluiting en het opmaken van metadata, hebben deze datasets ook wat betreft de dataharmonisatie prioriteit in harmonisatie. Uiteraard is dit binnen het INSPIRE-tijdschema voor de desbetreffende annex en voor as-is versus nieuwe datasets. Meer info is te vinden op de website van [JRC](https://ies-svn.jrc.ec.europa.eu/projects/2016-5/wiki).
+
 ## Dataharmonisatie
 De dataharmonisatie INSPIRE beoogt het ontsluiten van de aangemerkte datasets conform de INSPIRE-dataspecificaties. Letterlijk betekent harmoniseren “op elkaar afstemmen”. Dataharmonisatie wordt in de context van INSPIRE gedefinieerd als het vertalen (mappen) van de data zoals ze opgeslagen zijn bij de dataprovider (‘as-is’) naar een INSPIRE-conforme structuur. Sommige partijen definiëren dataharmonisatie ruimer. In dat geval heeft dataharmonisatie ook een beleidskundige dimensie. Dit is bijvoorbeeld het geval bij de provincies. Zij bieden de gegevens over het Natuurnetwerk Nederland niet twaalf keer afzonderlijk aan, maar slechts één keer landsdekkend. Voordat de data "gemapt" kon worden, bleek interne beleidskundige harmonisatie nodig.
 
 Op deze wiki gaat het over dataharmonisatie in technisch-inhoudelijke zin; het beleidskundige perspectief blijft buiten beschouwing.
 
 ### Documentatie dataharmonisatie
-Voor ieder INSPIRE-thema is door de EU een dataspecificatie vastgelegd die beschrijft welke gegevens en op welke manier deze gegevens moeten worden geleverd. Dit is vastgelegd in een Dataspecificatie. Deze dataspecificaties worden gepubliceerd op het [officiële INSPIRE-portaal](https://inspire.ec.europa.eu/). Op dit portaal vind je de meest actuele dataspecificaties van INSPIRE: [data-specifications](https://inspire.ec.europa.eu/data-specifications/2892).
+Voor ieder INSPIRE-thema is door de EU een dataspecificatie vastgelegd die beschrijft welke gegevens en op welke manier deze gegevens moeten worden geleverd. Deze [dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892) worden gepubliceerd op de [Europese INSPIRE website](https://inspire.ec.europa.eu/).
 
-Met ingang van 10 December 2013 zijn er van alle thema's stabiele versies van de dataspecificaties beschikbaar. Deze zijn te vinden via onderstaande links.
+In de onderstaande tabel staan de belangrijkste INSPIRE-documenten voor de dataharmonisatie:
 
 |Titel | Versie | Datum | Opmerking |
 |-----------------|-------------|-------------|-------------|
-| [Dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892)  | 4.0  | 2017-04-01   | Data specificaties voor alle themas in UML,GML,Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
+| [Dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892)  | 4.0  | 2017-04-01   | Data specificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
 | [Definition of Annex Themes and Scope](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.3_Definition_of_Annex_Themes_and_scope_v3.0.pdf) (D2.3)  | 3.0  | 2008-10-03   | -   |
 | [INSPIRE Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) (D2.5)  | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
 | [Methodology for the development of data specifications: baseline version](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.6_v3.0.pdf) (D2.6)  | 3.0   | 2008-06-20	   | -   |
@@ -175,10 +180,6 @@ De belangrijkste factor is de kennis die binnen een organisatie aanwezig is. Zij
 
 De ‘spin-off’ van het zelf opdoen van kennis is een zijdelingse overweging die bij de keuze van harmonisatie-principe van belang kan zijn. Voor INSPIRE-gerichte harmonisaties is veel kennis nodig. Deze kennis kan voor andere GEO-ICT projecten ook van praktisch belang zijn, bijvoorbeeld omdat het de kennis van een tool verhoogt. Dit kan een overweging zijn om een kennis-domein te versterken en hierin te investeren.
 
-
-
-## Prioritaire datasets (e-reporting)
-Sinds 2016 geeft de Europese Commissie prioriteit aan datasets die relevant zijn in het kader van de verplichte Europese rapporteringen m.b.t. het milieu, de zogenoemde “Priority list of datasets for e-Reporting”. Dit is een dynamische lijst. Naast de ontsluiting en het opmaken van metadata, hebben deze datasets ook wat betreft de dataharmonisatie prioriteit in harmonisatie. Uiteraard is dit binnen het INSPIRE-tijdschema voor de desbetreffende annex en voor as-is versus nieuwe datasets. Meer info is te vinden op de website van [JRC](https://ies-svn.jrc.ec.europa.eu/projects/2016-5/wiki).
 
 ## INSPIRE-ID
 Volgens de richtlijnen van INSPIRE moet elk object (feature) voorzien worden van een unieke identificatie: het InspireId. Zo kunnen derden ondubbelzinnig aan het object refereren. Dataproviders dienen dus – buiten eventuele eigen ID’s die de organisatie gebruikt – de ruimtelijke objecten van een unieke INSPIRE identificatie te voorzien. Belangrijk hierbij is, dat de identifier **uniek** en **persistent** moet zijn. Persistent betekent dat de identifier gedurende de levensduur van het object ongewijzigd moet blijven. Een InspireId bestaat uit de volgende onderdelen:
