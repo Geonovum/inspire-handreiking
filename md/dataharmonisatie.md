@@ -1,9 +1,59 @@
-# Dataharmonisatie
+# Data
+De aangemerkte INSPIRE datasets worden conform de INSPIRE uitvoeringsbepalingen ontsloten. Datasets en -services die onder één van de 34 INSPIRE-thema's vallen, moeten te vinden, raadplegen en downloaden zijn. De datasets komen vaak in twee varianten voor, namelijk:
+- de niet-geharmoniseerde dataset, de zogenaamde as-is dataset, zoals die in de lidstaat aanwezig is;
+- en/of de geharmoniseerde dataset, de dataset conform de INSPIRE-datamodellen in de INSPIRE-dataspecificaties. 
+
+In dit hoofdstuk wordt allereerst ingegaan op het onderscheid as-is versus geharmoniseerd. Vervolgens komt de dataharmonisatie en alle processtappen die daarbij aan bod komen aan de orde.
+
+## As-is versus geharmoniseerd
+Deze vraag is voorgelegd aan de EU commissie:
+
+*What is the position of INSPIRE regarding the status of the view and download services serving the INSPIRE data ‘as is’ at the moment the harmonized data shall to be served? Are the data providers in the member states allowed to ‘pull out the plug’ after the view and download service offer harmonized data. Or are the view and download services serving the INSPIRE data ‘as is’ considered as SDSs? Or both? The data providers can decide themselves how to deal with this? Keep the service up or pull out the plug. Are you able to give us the reference to the Directive with respect to this issue?*
+
+Het antwoord luidde als volgt:
+
+*There is no specific reference in the INSPIRE Directive mandating one or the other scenarios.*
+
+*Even so, the Directive and the NS regulation requires Member States to establish and operate view and download services for the spatial data sets for which metadata have been created in accordance with the INSPIRE Directive, and the Directive and Interoperability regulation requires spatial data sets to be made available in conformity at a specific date.*
+
+*In the spirit of the legislator, the view and download services specified in article 11 (b) and (c) have to be put in place for data in whatever format - “as it is”. The transformation Service (article 11 (d)) is then meant to help ‘achieving’ interoperability in the long run.*
+
+*Article 11.3 is therefore important, as it makes clear that all Network Services must operate in conformity with the implementing rules provided for in Article 7(1).*
+
+*Yet, again, as was pointed out on several occasions, the data “models”, specified in the annexes of the interoperability regulation, cannot be used to redefine the scope of the directive (e.g. narrowing the definition of spatial data) – and as such limiting access only to the data specified by the regulated data “models”.*
+
+*However, Once the spatial data sets have been harmonised and if there are no relevant user requirements (Article 11, last paragraph) anymore for the download services acting on ‘non-interoperable’ data, then there is no reason to keep the “original” spatial data sets on-line.
+Also, If all data are harmonised/compliant, then of course, the non-interoperable versions shouldn’t be kept on-line.*
+
+Er doen zich nu een drietal scenario’s voor, waarbij de volgende assumptie geldt: de ‘as-is’ datasets zijn rijker gevuld dan de INSPIRE-datamodellen (meer feature types, meer attributen en associaties). Andersom, indien het INSPIRE-datamodel ‘rijker gevuld is’ dan de ‘as-is’ dataset, dan betekent dat dat de gevraagde data niet in de dataset aanwezig is en dus niet geleverd hoeft te worden.
+1. Het “ARM”-scenario van de “arme geharmoniseerde dataset”. In dit scenario volgt de dataprovider zeer strict de harmonisatie-eisen van INSPIRE. De rijkere ‘as-is’ dataset wordt niet (meer) aangeboden, want er zijn geen relevante gebruikerswensen en use cases.
+2. Het “RIJK en ARM”-scenario van de “arme geharmoniseerde dataset”. In dit scenario volgt de dataprovider de harmonisatie-eisen van INSPIRE en wordt de rijkere dataset tevens ‘as-is’ ook aangeboden conform de INSPIRE-eisen voor netwerkdiensten, omdat relevante gebruikerswensen en use cases dit vereisen. Kort gezegd komt het erop neer dat wanneer de as-is dataset meer attributen heeft dan de INSPIRE-dataset, de as-is dataset nog steeds wordt aangeboden als view- en downloadservice met het vinkje 'INSPIRE' aangevinkt in het NGR. Het is dan weliswaar geen INSPIRE-geharmoniseerde dataset maar biedt nog wel steeds meerwaarde voor de INSPIRE-community. Meer info is te vinden in [het in december 2013 in de Klankbordgroep besproken stuk](docs/Bijlage_4.1_Memo_INSPIRE_Datasets_%27as_is%27_4DEC2013_v2.pdf).
+3. In het “RIJK”-scenario is de ‘as-is’ data set volledig geharmoniseerd beschikbaar. Dit kan bereikt worden door een [extensie](#extensies) te maken van het door INSPIRE voorgedragen geharmoniseerde model. De rijke gegevens worden dan toegevoegd aan het INSPIRE-model zodanig dat nog steeds wordt voldaan aan het INSPIRE-model. In dit geval zal de dataprovider slechts 1 geharmoniseerde, rijke dataset beschikbaar stellen, omdat relevante gebruikerswensen en use cases dit vereisen.
+
+In onderstaande figuur zijn de 3 scenario’s bezien in het licht van de INSPIRE-richtlijn en de keuze mogelijkheden voor de dataproviders.
+
+![rijkarmplaatje](media/rijk_arm_scenario.png "De verschillende mogelijkheden voor het aanbieden van as-is data ná harmonisatie en voor het aanbieden van geharmoniseerde data")
+
+### Extensies
+Het gebruik van extensies wordt gezien als de meest efficiënte scenario voor harmonisatie, wanneer de 'as-is' dataset rijker is dan de dataspecifiactie van het INSPIRE thema.
+De INSPIRE-dataspecificaties zijn zo ontworpen dat ze eenvoudig [uitbreidbaar](https://inspire.ec.europa.eu/portfolio/inspire-extensions) zijn. Dit uitbreiden van modellen en specificiaties wordt 'extending' genoemd en de uitbreidingen zijn 'extensions'.
+
+In opdracht van (en in samenwerking met) Geonovum heeft het bedrijf WeTransform onderzoek verricht naar INSPIRE-extensies. De resultaten hiervan zijn op [een website](https://inspire-extensions.wetransform.to/) verzameld waarop veel informatie te vinden is over het uitbreiden van INSPIRE-dataspecificiaties.
+
+Op deze site vindt u onder meer:
+
+- De resultaten van een onderzoek naar bestaande INSPIRE-extensies en een [overzicht van bestaande extensies](https://inspire-extensions.wetransform.to/models/index.html).
+- Een overzicht van [*extension patterns*](https://inspire-extensions.wetransform.to/patterns/index.html), waarin bepaalde ontwikkelpatronen beschreven worden.
+- Een [tutorial](https://inspire-extensions.wetransform.to/tutorial/tutorial.html) waarin stapsgewijs wordt beschreven hoe een extension ontwikkeld kan worden.
+
+Ook door het uitbreiden van [codelijsten](#codelijsten) kan het model rijker gemaakt worden.
+
+## Dataharmonisatie
 De dataharmonisatie INSPIRE beoogt het ontsluiten van de aangemerkte datasets conform de INSPIRE-dataspecificaties. Letterlijk betekent harmoniseren “op elkaar afstemmen”. Dataharmonisatie wordt in de context van INSPIRE gedefinieerd als het vertalen (mappen) van de data zoals ze opgeslagen zijn bij de dataprovider (‘as-is’) naar een INSPIRE-conforme structuur. Sommige partijen definiëren dataharmonisatie ruimer. In dat geval heeft dataharmonisatie ook een beleidskundige dimensie. Dit is bijvoorbeeld het geval bij de provincies. Zij bieden de gegevens over het Natuurnetwerk Nederland niet twaalf keer afzonderlijk aan, maar slechts één keer landsdekkend. Voordat de data "gemapt" kon worden, bleek interne beleidskundige harmonisatie nodig.
 
 Op deze wiki gaat het over dataharmonisatie in technisch-inhoudelijke zin; het beleidskundige perspectief blijft buiten beschouwing.
 
-## Documentatie dataharmonisatie
+### Documentatie dataharmonisatie
 Voor ieder INSPIRE-thema is door de EU een dataspecificatie vastgelegd die beschrijft welke gegevens en op welke manier deze gegevens moeten worden geleverd. Dit is vastgelegd in een Dataspecificatie. Deze dataspecificaties worden gepubliceerd op het [officiële INSPIRE-portaal](https://inspire.ec.europa.eu/). Op dit portaal vind je de meest actuele dataspecificaties van INSPIRE: [data-specifications](https://inspire.ec.europa.eu/data-specifications/2892).
 
 Met ingang van 10 December 2013 zijn er van alle thema's stabiele versies van de dataspecificaties beschikbaar. Deze zijn te vinden via onderstaande links.
@@ -125,48 +175,7 @@ De belangrijkste factor is de kennis die binnen een organisatie aanwezig is. Zij
 
 De ‘spin-off’ van het zelf opdoen van kennis is een zijdelingse overweging die bij de keuze van harmonisatie-principe van belang kan zijn. Voor INSPIRE-gerichte harmonisaties is veel kennis nodig. Deze kennis kan voor andere GEO-ICT projecten ook van praktisch belang zijn, bijvoorbeeld omdat het de kennis van een tool verhoogt. Dit kan een overweging zijn om een kennis-domein te versterken en hierin te investeren.
 
-## As-is versus geharmoniseerd
-Deze vraag is voorgelegd aan de EU commissie:
 
-*What is the position of INSPIRE regarding the status of the view and download services serving the INSPIRE data ‘as is’ at the moment the harmonized data shall to be served? Are the data providers in the member states allowed to ‘pull out the plug’ after the view and download service offer harmonized data. Or are the view and download services serving the INSPIRE data ‘as is’ considered as SDSs? Or both? The data providers can decide themselves how to deal with this? Keep the service up or pull out the plug. Are you able to give us the reference to the Directive with respect to this issue?*
-
-Het antwoord luidde als volgt:
-
-*There is no specific reference in the INSPIRE Directive mandating one or the other scenarios.*
-
-*Even so, the Directive and the NS regulation requires Member States to establish and operate view and download services for the spatial data sets for which metadata have been created in accordance with the INSPIRE Directive, and the Directive and Interoperability regulation requires spatial data sets to be made available in conformity at a specific date.*
-
-*In the spirit of the legislator, the view and download services specified in article 11 (b) and (c) have to be put in place for data in whatever format - “as it is”. The transformation Service (article 11 (d)) is then meant to help ‘achieving’ interoperability in the long run.*
-
-*Article 11.3 is therefore important, as it makes clear that all Network Services must operate in conformity with the implementing rules provided for in Article 7(1).*
-
-*Yet, again, as was pointed out on several occasions, the data “models”, specified in the annexes of the interoperability regulation, cannot be used to redefine the scope of the directive (e.g. narrowing the definition of spatial data) – and as such limiting access only to the data specified by the regulated data “models”.*
-
-*However, Once the spatial data sets have been harmonised and if there are no relevant user requirements (Article 11, last paragraph) anymore for the download services acting on ‘non-interoperable’ data, then there is no reason to keep the “original” spatial data sets on-line.
-Also, If all data are harmonised/compliant, then of course, the non-interoperable versions shouldn’t be kept on-line.*
-
-Er doen zich nu een drietal scenario’s voor, waarbij de volgende assumptie geldt: de datasets ‘as is’ zijn rijker gevuld dan de INSPIRE-datamodellen (meer feature types, meer attributen en associaties). Andersom, indien het INSPIRE-datamodel ‘rijker gevuld is’ dan de dataset ‘as is’, dan betekent dat dat de gevraagde data niet in de dataset aanwezig is en dus niet geleverd hoeft te worden.
-1. Het “ARM”-scenario van de “arme geharmoniseerde dataset”. In dit scenario volgt de dataprovider zeer strict de harmonisatie-eisen van INSPIRE. De rijkere dataset ‘as is’ wordt niet (meer) aangeboden, want er zijn geen relevante gebruikerswensen en use cases.
-2. Het “RIJK en ARM”-scenario van de “arme geharmoniseerde dataset”. In dit scenario volgt de dataprovider de harmonisatie-eisen van INSPIRE en wordt de rijkere dataset tevens ‘as is’ ook aangeboden conform de INSPIRE-eisen voor netwerkdiensten, omdat relevante gebruikerswensen en use cases dit vereisen. Kort gezegd komt het erop neer dat wanneer de as-is dataset meer attributen heeft dan de INSPIRE-dataset, de as-is dataset nog steeds wordt aangeboden als view- en downloadservice met het vinkje 'INSPIRE' aangevinkt in het NGR. Het is dan weliswaar geen INSPIRE-geharmoniseerde dataset maar biedt nog wel steeds meerwaarde voor de INSPIRE-community. Meer info is te vinden in [het in december 2013 in de Klankbordgroep besproken stuk](https://wiki.geonovum.nl/images/Bijlage_4.1_Memo_INSPIRE_Datasets_%27as_is%27_4DEC2013_v2.pdf).
-3. In het “RIJK”-scenario is de data set ‘as is’ volledig geharmoniseerd beschikbaar. Dit kan bereikt worden door een [extensie](#extensies) te maken van het door INSPIRE voorgedragen geharmoniseerde model. De rijke gegevens worden dan toegevoegd aan het INSPIRE-model zodanig dat nog steeds wordt voldaan aan het INSPIRE-model. In dit geval zal de dataprovider slechts 1 geharmoniseerde, rijke dataset beschikbaar stellen, omdat relevante gebruikerswensen en use cases dit vereisen.
-
-In onderstaande figuur zijn de 3 scenario’s bezien in het licht van de INSPIRE-richtlijn en de keuze mogelijkheden voor de dataproviders.
-
-![rijkarmplaatje](media/rijk_arm_scenario.png "De verschillende mogelijkheden voor het aanbieden van as-is data ná harmonisatie en voor het aanbieden van geharmoniseerde data")
-
-### Extensies
-Het gebruik van extensies wordt gezien als de meest efficiënte scenario voor harmonisatie, wanneer de AS-is dataset rijker is dan de dataspecifiactie van het INSPIRE thema.
-De INSPIRE-dataspecificaties zijn zo ontworpen dat ze eenvoudig [uitbreidbaar](https://inspire.ec.europa.eu/portfolio/inspire-extensions) zijn. Dit uitbreiden van modellen en specificiaties wordt 'extending' genoemd en de uitbreidingen zijn 'extensions'.
-
-In opdracht van (en in samenwerking met) Geonovum heeft het bedrijf WeTransform onderzoek verricht naar INSPIRE-extensies. De resultaten hiervan zijn op [een website](https://inspire-extensions.wetransform.to/) verzameld waarop veel informatie te vinden is over het uitbreiden van INSPIRE-dataspecificiaties.
-
-Op deze site vindt u onder meer:
-
-- De resultaten van een onderzoek naar bestaande INSPIRE-extensies en een [overzicht van bestaande extensies](https://inspire-extensions.wetransform.to/models/index.html).
-- Een overzicht van [*extension patterns*](https://inspire-extensions.wetransform.to/patterns/index.html), waarin bepaalde ontwikkelpatronen beschreven worden.
-- Een [tutorial](https://inspire-extensions.wetransform.to/tutorial/tutorial.html) waarin stapsgewijs wordt beschreven hoe een extension ontwikkeld kan worden.
-
-Ook door het uitbreiden van [codelijsten](#codelijsten) kan het model rijker gemaakt worden.
 
 ## Prioritaire datasets (e-reporting)
 Sinds 2016 geeft de Europese Commissie prioriteit aan datasets die relevant zijn in het kader van de verplichte Europese rapporteringen m.b.t. het milieu, de zogenoemde “Priority list of datasets for e-Reporting”. Dit is een dynamische lijst. Naast de ontsluiting en het opmaken van metadata, hebben deze datasets ook wat betreft de dataharmonisatie prioriteit in harmonisatie. Uiteraard is dit binnen het INSPIRE-tijdschema voor de desbetreffende annex en voor as-is versus nieuwe datasets. Meer info is te vinden op de website van [JRC](https://ies-svn.jrc.ec.europa.eu/projects/2016-5/wiki).
@@ -180,9 +189,10 @@ Volgens de richtlijnen van INSPIRE moet elk object (feature) voorzien worden van
 ### Namespaces
 Een namespace heeft als belangrijkste doel dat het de ruimte definieert waarbinnen de localId uniek is. Om te voorkomen dat verschillende dataproviders dezelfde namespace gebruiken, en om consistentie te verkrijgen, is er in Nederland (en Europa) een zogenaamd Namespaceregister opgezet. Namespaces in Nederland moeten worden geregistreerd in het [nationale namespaceregister](http://inspirelab.geonovum.nl/namespaces/). Let op: omdat dit nog een http i.p.v. een https adres is, kan het zijn dat deze link niet werkt in elke browser. In Chrome helpt het om de geschiedenis te verwijderen.
 
+### Namespaceregister
 Het namespaceregister bevat een lijst van reeds geregistreerde namespaces door Nederlandse INSPIRE dataproviders.
 
-Voor het registreren van namespaces is een account nodig. Geonovum verstrekt deze accounts. Voor registratie, neem contact op met Geonovum via INSPIRE@geonovum.nl.
+Voor het registreren van namespaces is een account nodig. Geonovum verstrekt deze accounts. Voor registratie, neem contact op met Geonovum via inspire@geonovum.nl.
 
 Na het [inloggen](http://inspirelab.geonovum.nl/namespaces/login.php) kunt u voor uw gegevensbron een nieuwe namespace registreren.
 
