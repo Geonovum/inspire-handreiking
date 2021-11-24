@@ -64,14 +64,14 @@ In de Technical Guidances (of Guidance Documents) zijn de technische specificati
 
 | Titel | Opmerking |
 |-----------------|-------------|-------------|-------------|
-| [Technical Guidance for the implementation of INSPIRE Download Services (3.1) - WFS en ATOM](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services) | |
+| [Technical Guidance for the implementation of INSPIRE Download Services - WFS en ATOM](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services) | |
 | [Technical Guidance for the implementation of INSPIRE Download Services - Web Coverage Service](https://inspire.ec.europa.eu/id/document/tg/download-wcs)|| 
 | [Technical Guidance for the implementation of INSPIRE Download Services - Sensor Observation Service](https://inspire.ec.europa.eu/id/document/tg/download-sos) ||
-| [Technical Guidance for the implementation of INSPIRE View Services (3.11)](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1) ||
-| [Technical Guidance for the implementation of INSPIRE Discovery Services (3.1)](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0) ||
+| [Technical Guidance for the implementation of INSPIRE View Services)](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1) ||
+| [Technical Guidance for the implementation of INSPIRE Discovery Services](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0) ||
 | [Technical Guidance for the INSPIRE Schema Transformation Network Service](https://inspire.ec.europa.eu/documents/technical-guidance-inspire-schema-transformation-network-service) || Niet op wiki uitgewerkt |
 
-Voor spatial data services, zie [verderop in dit document](#spatial-data-services).
+Voor spatial data services, zie [elders in dit document](#spatial-data-services).
 
 Er is geen definitieve beslissing i.v.m. de **Rights Management layer** die binnen INSPIRE gebruikt zal gaan worden voor het toepassen van toegangsrestricties. Er is dus nog geen Implementing Rule die deze layer beschrijft – die wordt ook niet verwacht.
 
@@ -151,7 +151,7 @@ INSPIRE definieert *Quality of services* (QoS), de eisen omtrent het kwaliteitsb
 ### Rights management layer
 De richtlijn schrijft voor dat de i.h.k.v. INSPIRE aangeboden diensten in principe gratis moeten zijn. Echter geeft de richtlijn ook aan dat er (publieke) instellingen zijn die – vanwege de hoge datavolumes en update-frequenties – kosten in rekening mogen brengen om de service te kunnen waarborgen. Dat houdt in dat er een mogelijkheid moet zijn om de toegang tot services en data te beperken – de Rights Management (RM)-layer.
 
-De RM architectuur-laag wordt in [deze afbeelding](#network-services) weergegeven met de term ‘toegangsrechten’ en wordt tussen de servicebus en de netwerkdiensten gepositioneerd. De RM-layer is geïntroduceerd om juridische rechten tussen INSPIRE en andere applicaties te kunnen ‘begeleiden’ en controleren en beperken. In feite houdt dit in dat er mogelijke restricties komen tussen enerzijds de dataprovider met haar data en services, en anderzijds de gebruiker.
+De RM architectuur-laag wordt in [deze afbeelding](#network-services) weergegeven met de term ‘toegangsrechten’ en wordt tussen de servicebus en de netwerkdiensten gepositioneerd. De RM-layer is geïntroduceerd om juridische rechten tussen INSPIRE en andere applicaties te kunnen begeleiden, controleren en beperken. In feite houdt dit in dat er mogelijke restricties komen tussen enerzijds de dataprovider met haar data en services, en anderzijds de gebruiker.
 
 Er is geen Implementing Rule voor deze RM-layer dienst beschikbaar en deze wordt ook niet verwacht. Er wordt in de INSPIRE-documentatie verwezen naar GeoDRM (ISO 19153) als een kandidaat-standaard voor de RM-layer. [ISO 19153](https://www.iso.org/standard/32571.html) is in 2014 gepubliceerd.
 
@@ -200,7 +200,7 @@ De onderstaande figuur geeft schematisch de operaties van de OGC WMS 1.3.0 weer.
 
 ![wms](media/Wms.png "Schematische weergave van INSPIRE-viewservice.")
 
-In de onderstaande tabel is de mapping weergegeven van de verplichte INSPIRE-viewservice-operaties op de ISO 19128 operaties. De INSPIRE Link View Service operatie heeft geen equivalente operatie in de ISO 19128 standaard en wordt geïmplementeerd op basis van de Discover Metadata operatie van een INSPIRE-discovery-service. De ISO 19128 operatie GetFeatureInfo is niet verplicht voor een INSPIRE-viewservice.
+In de onderstaande tabel is de mapping weergegeven van de verplichte INSPIRE-viewservice-operaties op de ISO 19128 operaties. De INSPIRE Link View Service operatie maakt het mogelijk viewservices van op te nemen in andere viewservices. Deze operatie heeft geen equivalente operatie in de ISO 19128 standaard en wordt geïmplementeerd op basis van de Discover Metadata operatie van een INSPIRE-discovery-service. De ISO 19128 operatie GetFeatureInfo is niet verplicht voor een INSPIRE-viewservice.
 
 | INSPIRE-viewservice-operatie | Verplicht | ISO 19128 WMS-operatie |
 |-----------------|-------------|-------------|
@@ -215,8 +215,7 @@ In de onderstaande tabel is de mapping weergegeven van de verplichte INSPIRE-vie
 - Servicemetadata moet beschikbaar worden gesteld via een Discovery Service;
 - De viewservice moet de volgende geografische coördinaat-referentiesystemen ondersteunen:
 	- EPSG:4258 (ETRS89)
-	- EPSG:4326
-	- CRS:84
+	- EPSG:4326 (WGS84)
 - Minimaal één taal moet worden ondersteund en kenbaar worden gemaakt in de respons op de GetViewServiceMetadata-operatie.
 
 ### INSPIRE-vereisten in een Capabilities-document
@@ -248,8 +247,8 @@ Dit element wordt opgenomen als `inspire_vs:MetadataURL` element in de extendedC
 
 <pre class="xml">
 &lt;inspire_common:MetadataUrl&gt;     
-    &lt;inspire_common:URL&gt;"http://www.nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&Request=GetRecordById&Version=2.0.2&id=C2DFBDBC-5092-11E0-BA8E-B62DE0D72085&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full"&lt;/inspire_common:URL&gt;
-    &lt;inspire_common:MediaType&gt;application/vnd.iso.19139+xml&lt;/inspire_common:MediaType&gt;
+    &lt;inspire_common:URL&gt;"https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=cea38797-ea4b-4969-b979-8d25eb543a6c"&lt;/inspire_common:URL&gt;
+    &lt;inspire_common:MediaType&gt;application/vnd.ogc.csw.GetRecordByIdResponse_xml&lt;/inspire_common:MediaType&gt;
 &lt;/inspire_common:MetadataUrl&gt;
 </pre>
 
@@ -876,7 +875,7 @@ Kenmerken zijn:
 - De functionaliteit van een Pre-defined dataset Download Service via WFS (zie hierboven), uitgebreid met ondersteuning voor:
 	- "Ad Hoc Query" op basis van Filter encoding (ISO 19143, Filter encoding 2.0).
 	- Standaard, ruimtelijke en temporele filters.
-	- XPath.
+	- XPath (voor opvragen geneste attributen zoals adres.plaats.straat.nummer)
 	- Enkele Stored Queries, bijvoorbeeld om datasets in een ander Coördinaat Referentie Stelsel (CRS) op te vragen.
 
 Een nadere toelichting op deze methode is [hier te vinden](#wfs-direct-access).
