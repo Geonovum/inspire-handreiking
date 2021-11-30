@@ -1,7 +1,7 @@
 # Introductie
 In het kader van INSPIRE realiseren de Europese lidstaten een digitaal netwerk voor het uitwisselen van gegevens over de leefomgeving. Geonovum ondersteunt het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties en de Nederlandse dataproviders bij de invoering van INSPIRE in Nederland. 
 
-De wiki "Aan de slag met INSPIRE" is een handreiking met informatie om te voldoen aan de (technische) INSPIRE-verplichtingen. Deze INSPIRE-wiki is bedoeld voor de INSPIRE-dataproviders, die datasets voor INSPIRE ontsluiten. Voor meer algemene informatie over INSPIRE verwijzen we graag naar het INSPIRE dossier op de [Geonovum website](https://www.geonovum.nl/geo-standaarden/inspire-europese-leefomgeving).
+De wiki "Aan de slag met INSPIRE" is een handreiking met informatie om te voldoen aan de (technische) INSPIRE-verplichtingen. Deze INSPIRE-wiki is bedoeld voor de INSPIRE-dataproviders, die datasets voor INSPIRE ontsluiten. Voor meer algemene informatie over INSPIRE verwijzen we graag naar het INSPIRE dossier op de <a href="https://www.geonovum.nl/geo-standaarden/inspire-europese-leefomgeving" target="_blank">Geonovum website</a>.
 
 De opbouw van de INSPIRE-wiki is gebaseerd op de verschillende [processtappen](#processtappen) die de dataproviders doorlopen. Per (deel)processtap is aangegeven:
 - welke Nederlandse standaard erop van toepassing is;
