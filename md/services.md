@@ -1139,6 +1139,26 @@ Merk op: GML is voor Nederland als uitwisselingsformaat verplicht voorgeschreven
 Andere formaten zoals beschreven in paragraaf 9.3.2 van de dataspecificaties zijn ook toegestaan, maar dan moet de mapping naar het INSPIRE-model wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
 Er is een speciale [Europese werkgroep](https://github.com/INSPIRE-MIF/2017.2/) bezig met het bestuderen van het gebruik van eenvoudigere bestandsformaten dan GML zoals GeoJSON.
 
+## Spatial Data Services
+
+Spatial Data Services (SDS) worden ook wel Ruimtelijke datadiensten, of “diensten met betrekking tot ruimtelijke gegevens” genoemd. Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. Er kan ook andere data in de service zijn ontsloten. Alle Spatial Data Services, moeten van [metadata](#metadata-spatial-data-services) worden voorzien. 
+
+Met behulp van onderstaand stroomschema kan worden bepaald wat voor soort SDS een service is.
+
+![sds_schema](media/SDS_schema.png "Stroomdiagram om service-type te bepalen.")
+
+### SDS-categorieën
+
+Spatial Data Services die onder de verordening SDS vallen zijn, afhankelijk van het niveau van interoperabiliteit, verder onder te verdelen in drie categorieën: Invocable SDS, Interoperable SDS and Harmonised SDS. Spatial Data Services die onder de verordening *netwerkverordening* vallen bestaan uit vier verschillende service types: discovery services, view services, download services and transformation services.
+
+Onderstaande figuur geeft een overzicht van de verschillende types Spatial Data Services
+
+![sds_schema2](media/SDS_en_network_services.png "SDS-types.")
+
+Spatial Data Services kunnen heel verschillende services zijn, waardoor er geen specificaties in technische richtlijnen voor mogelijk is. Om te bepalen in wat voor categorie een Spatial Data Service valt, kan onderstaande stroomschema worden gebruikt.
+
+![sds_cat](media/SDS_cat.png "Stroomdiagram om SDS-categorie te bepalen.")
+
 ## Wijzigingen doorvoeren
 
 Wanneer u een wijziging doorvoert in uw dataset of service, kan dit gevolgen hebben voor bijvoorbeeld de metadata, atomfeeds en conformiteit van uw data en services. In het document [wijzigingen en INSPIRE](https://www.geonovum.nl/uploads/documents/inspire-en-wat-te-doen-bij-wijzigingen.pdf) vindt u een praktische handreiking van de punten die u kunt controleren na een wijziging van uw INSPIRE-datasets en -services.
