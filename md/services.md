@@ -1122,13 +1122,30 @@ Vanaf 16 december 2016 is er ook een [Technical Guidance](http://inspire.ec.euro
 - gebruik van de GetObservationByID operatie om Direct Access in te vullen
 - Quality of Service voor de verschillende operaties.
 
-### OGC API Features
+### OGC API's
+
+De [OGC API's](https://ogcapi.ogc.org/) vormen een familie van standaarden die ontwikkeld is/wordt om het voor iedereen gemakkelijk te maken om geospatiale gegevens aan het web te verstrekken. Deze standaarden bouwen voort op de erfenis van de OGC Web Service-standaarden (WMS, WFS, WCS, WPS, enz.), maar definiëren API's die profiteren van moderne webontwikkelingspraktijken. 
+
+#### OGC API Features
 
 [OGC API features](https://docs.opengeospatial.org/is/17-069r3/17-069r3.html) (OAPIF of OAF) is een vorm van een download service op basis van een API (Application Program Interface) gebaseerd op OGC standaarden. Het wordt beschouwd als opvolger van de OGC WFS standaard, maar dat betekent niet dat het de WFS in de nabije toekomst volledig gaat vervangen, ook al zou dat in de verre toekomst wel het geval kunnen zijn. Voorlopig zijn ze nog complementair aan elkaar. De WFS wordt vooral in de GIS wereld gebruikt terwijl de OAPIF meer bedoeld is voor andere gebruikers, zoals web-applicatie bouwers. De OAPIF is eenvoudiger in het gebruik en vergt minder geo-kennis, maar is bv op 2 punten na nog niet echt geschikt voor INSPIRE.
 1. Het werkt nu alleen nog op basis van simpele datamodellen en uitwisselformaten en is dus moeilijk te implementeren op complexe INSPIRE datamodellen waarbij het complexere GML nog de default is. Mapping naar eenvoudigere modellen en uitwisselformaten is mogelijk maar moet dan voor INSPIRE wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
 2. Voorlopig is de tooling nog niet geschikt om met andere coördinaatsystemen te werken dan WGS84. INSPIRE vereist ETRS89. De [standaarden](http://docs.opengeospatial.org/is/18-058/18-058.html) zijn er al wel op aangepast, maar de tooling nog niet.
 
 Er is een [handreiking](https://geonovum.github.io/OAPIF-PDOK-INSPIRE/) geschreven waarin de eerste bevindingen voor het maken van een OAPIF zijn vastgelegd.
+
+#### OGC SensorThings API
+
+De standaard voor [OGC SensorThings API](https://docs.ogc.org/is/18-088/18-088.html) biedt een open, geospatiale en uniforme manier om de Internet of Things (IoT)-apparaten, gegevens en applicaties via het web met elkaar te verbinden. Op een hoog niveau biedt de OGC SensorThings API twee hoofdfunctionaliteiten en elke functie wordt afgehandeld door een onderdeel. De twee delen zijn het Sensing-gedeelte en het Tasking-gedeelte. Het Sensing-gedeelte biedt een standaard manier om observaties en metadata van heterogene IoT-sensorsystemen te beheren en op te halen. Het Tasking-gedeelte is gepland als een toekomstige werkactiviteit en zal in een apart document worden gedefinieerd als [Part II van de SensorThings API](http://docs.opengeospatial.org/is/17-079r1/17-079r1.html).
+
+#### Andere OGC API's
+
+De hierboven genoemde OGC API's zijn van belang als service voor INSPIRE en ook al vastgesteld. Andere OGC-API's die nog niet vastgesteld zijn maar die van belang kunnen worden voor INSPIRE zijn:
+- [OGC API Maps](https://ogcapi.ogc.org/maps/) (opvolger WMS)
+- [OGC API tiles](https://ogcapi.ogc.org/tiles/) (opvolger WMTS)
+- [OGC API Styles](https://ogcapi.ogc.org/styles/) 
+- [OGC API coverages](https://ogcapi.ogc.org/coverages/) (opvolger WCS)
+- [OGC API Records](https://ogcapi.ogc.org/records/) (opvolger CSW) 
 
 ### Bestandsformaten
 
