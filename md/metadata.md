@@ -193,27 +193,14 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 
 [Hier is een voorbeeld XML-bestand te vinden voor service-metadata](docs/Voorbeeld_Metadata_Service_2019.zip).
 
-## Spatial data services
+## Metadata Spatial data services
 
 Spatial Data Services (SDS) worden ook wel Ruimtelijke datadiensten, of “diensten met betrekking tot ruimtelijke gegevens” genoemd. Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. Er kan ook andere data in de service zijn ontsloten. Alle Spatial Data Services, moeten van metadata worden voorzien. Deze metadata moet vervolgens ontsloten worden in het NGR.
 
-Met behulp van onderstaand stroomschema kan worden bepaald wat voor soort SDS een service is.
+In het hoofdtuk over [Services](#services) staat onder de paragraaf [Spatial Data Services](#spatial-data-services) beschreven welke soorten SDS-sen er zijn.
+Per soort staat in de volgende paragraven beschreven wat de metadata eisen zijn.
 
-![sds_schema](media/SDS_schema.png "Stroomdiagram om service-type te bepalen.")
-
-### SDS-categorieën
-
-Spatial Data Services die onder de verordening SDS vallen zijn, afhankelijk van het niveau van interoperabiliteit, verder onder te verdelen in drie categorieën: Invocable SDS, Interoperable SDS and Harmonised SDS. Spatial Data Services die onder de verordening *netwerkverordening* vallen bestaan uit vier verschillende service types: discovery services, view services, download services and transformation services.
-
-Onderstaande figuur geeft een overzicht van de verschillende types Spatial Data Services
-
-![sds_schema2](media/SDS_en_network_services.png "SDS-types.")
-
-Spatial Data Services kunnen heel verschillende services zijn, waardoor er geen specificaties in technische richtlijnen voor mogelijk is. Om te bepalen in wat voor categorie een Spatial Data Service valt, kan onderstaande stroomschema worden gebruikt.
-
-![sds_cat](media/SDS_cat.png "Stroomdiagram om SDS-categorie te bepalen.")
-
-#### Invocable SDS
+### Invocable SDS
 
 Spatial Data Services van de categorie *invocable* moeten naast servicemetadata voorzien worden van metadata over **Category conformance** en **Technische specificatie conformance**. Dit kan in de metadata-elementen die ook voor de conformance met de verordening worden gebruikt. In onderstaande tabel zijn de invulinstructies opgenomen.
 
@@ -227,7 +214,7 @@ De **Resource Locator** voor een SDS moet een access point zijn. Een access poin
 
 ![accesspoint](media/Resourceloc_invul.png "Resource locator description heeft waarde accessPoint.")
 
-#### Interoperable SDS
+### Interoperable SDS
 
 Spatial Data Services van de categorie interoperable moeten, naast de vereiste elementen voor invocable services, worden voorzien van metadata over verschillende extra elementen:
 1. **Coördinaat referentie systeem**: alle CRS waarin een service beschikbaar is moeten worden opgegeven middels een URI. Gebruik voor elke URI een apart metadata element. Bijvoorbeeld:
@@ -251,7 +238,7 @@ In onderstaande tabel zijn de invulinstructies voor de kwaliteit van service opg
 4. Er zijn aanvullende vereisten voor **restricties voor toegang en gebruik**. Hier moeten ook de "technische restricties" worden aangegeven, in één instantie van accessConstraints of useConstraints. Dit komt grotendeels overeen met de huidige invulling van toegangsrestricties, URL naar de creative commons licenties worden als technische restricties gezien.
 5. De categorie die in de **specification title** is opgenomen, moet van invocable naar interoperable worden aangepast!
 
-#### Harmonised SDS
+### Harmonised SDS
 
 Spatial Data Services van de categorie harmonised moeten, naast de vereiste elementen voor interoperable services, worden voorzien van metadata over invocation.
 
@@ -282,8 +269,6 @@ Voor het aanmaken voor metadata voor de verschillende Spatial Data Service categ
 - [Template NL profiel op ISO19119 v12 SDS invocable](docs/Template_NL_profiel_op_ISO19119_v12_SDS_invocable.xml)
 - [Template NL profiel op ISO19119 v12 SDS interoperable](docs/Template_NL_profiel_op_ISO19119_v12_SDS_interoperable.xml)
 - [Template NL profiel op ISO19119 v12 SDS harmonised](docs/Template_NL_profiel_op_ISO19119_v12_SDS_harmonised.xml)
-
-
 
 ## Metadata-validatie
 Validatie is een mechanisme om te controleren of een bepaalde metadatabeschrijving aan de specificaties voldoet. Het is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Er zijn verschillende validatietools beschikbaar om (verschillende onderdelen van) INSPIRE-metadata te valideren. Zie hiervoor [het hoofdstuk validatie](#validatie).
