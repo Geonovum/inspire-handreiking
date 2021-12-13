@@ -1,7 +1,7 @@
 # Aanmerken en inrichten organisatie
 
 ## Nederlandse lijn INSPIRE
-De INSPIRE richtlijn biedt ruimte voor de lidstaten om met haar eigen wettelijk kader aan de richtlijn te gaan voldoen. In de [Nederlandse implementatie wet](https://wetten.overheid.nl/BWBR0026158/2009-09-01) is geregeld dat:
+De INSPIRE richtlijn biedt ruimte voor de lidstaten om met haar eigen wettelijk kader aan de richtlijn te gaan voldoen. In de <a href="https://wetten.overheid.nl/BWBR0026158/2009-09-01" target="_blank">Nederlandse implementatie wet</a> is geregeld dat:
 
 - INSPIRE is voor een gemeente of een waterschap uitsluitend van toepassing op gegevens die worden verzameld dan wel verspreid op grond van een bij of krachtens een wet gegeven regel.
 - Indien een verzameling ruimtelijke gegevens die door of namens een bestuursorgaan wordt bewaard, onderdeel is van een verzameling ruimtelijke gegevens die is opgenomen in een door de minister aangewezen voorziening, is deze wet uitsluitend van toepassing op laatstgenoemde verzameling.
@@ -17,22 +17,22 @@ In Nederland is het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties (BZ
 Per INSPIRE thema is bepaald welke partijen (*dataproviders*) in Nederland de relevante geo-informatie leveren. Deze partijen zijn **aangemerkt** als INSPIRE dataprovider. De dataproviders zorgen ervoor dat gegevens conform de eisen van INSPIRE vindbaar, toegankelijk en beschikbaar worden gesteld.
 
 De aanmerking van de INSPIRE datasets heeft per annex plaats gevonden. Hieronder vind je de links naar de verschillende aanmerkingsrapporten die toendertijd zijn opgesteld:
-- Annex I: [Rapport Nederlandse INSPIRE-data Annex I (2009)](https://www.geonovum.nl/uploads/documents/20091201_Rapport_Nederlandse_INSPIRE-data_-_dataspecs_v1.0.pdf)
-- Annex II: [Rapport Nederlandse INSPIRE-data Annex II (2011)](https://www.geonovum.nl/uploads/documents/rapportage_annexiiv1.1.pdf)
-- Annex III: [Rapport Definitieve aanmerking INSPIRE Annex III (2013)](https://www.geonovum.nl/uploads/documents/Rapport%20Definitieve%20aanmerking%20INSPIRE%20Annex%20III%20v3.0.pdf)
+- Annex I: <a href="https://www.geonovum.nl/uploads/documents/20091201_Rapport_Nederlandse_INSPIRE-data_-_dataspecs_v1.0.pdf" target="_blank">Rapport Nederlandse INSPIRE-data Annex I (2009)</a>
+- Annex II: <a href="https://www.geonovum.nl/uploads/documents/rapportage_annexiiv1.1.pdf" target="_blank">Rapport Nederlandse INSPIRE-data Annex II (2011)</a>
+- Annex III: <a href="https://www.geonovum.nl/uploads/documents/Rapport%20Definitieve%20aanmerking%20INSPIRE%20Annex%20III%20v3.0.pdf" target="_blank">Rapport Definitieve aanmerking INSPIRE Annex III (2013)</a>
 
 ### Aanmerkingsregister
-Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt, heeft het Ministerie van BZK het [INSPIRE aanmerkingsregister](https://inspireaanmerking.nl/) ontwikkeld. Het register is openbaar en online toegankelijk.
+Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt, heeft het Ministerie van BZK het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a> ontwikkeld. Het register is openbaar en online toegankelijk.
 
 Het doel van het INSPIRE aanmerkingsregister is meervoudig:
 - In het aanmerkingsregister worden de aanmerkingen en wijzigingen op de aanmerkingen bijgehouden door het ministerie van BZK.
 - Via het aanmerkingsregister kan iedereen de voortgang van de INSPIRE implementatie volgen. 
-- Vanuit het aanmerkingsregister is er ook een directe link naar de publicatie van de metadata van betreffende dataset in het [Nationaal Georegister](https://www.nationaalgeoregister.nl/). De dataset is daar dan ook te raadplegen.
+- Vanuit het aanmerkingsregister is er ook een directe link naar de publicatie van de metadata van betreffende dataset in het <a href="http://www.nationaalgeoregister.nl/" target="_blank">Nationaal GeoRegister (NGR)</a>. De dataset is daar dan ook te raadplegen.
 
 Het aanmerkingregister heeft naast een open gedeelte ook een gesloten gedeelte voor de INSPIRE dataproviders. Deze omgeving voorziet in extra functionaliteit om het aanmerkings- en implementatieproces te ondersteunen. Binnen deze omgeving kunnen dataproviders per dataset de implementatie status of een [wijzigingsverzoek](#wijziging-aanmerking) indienen. Ook is het mogelijk om overzichten te generen van de gegevens in het aanmerkingsregister.
 
 ### Wijziging van de aanmerking
-In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. In het [processchema wijziging aanmerking dataproviders](https://www.geonovum.nl/uploads/documents/proces%20wijziging%20aanmerking%20data%20provider%20v3.0.pdf) staat welke stappen doorlopen moeten worden om de aanmerking te wijzigen. Via het gesloten gedeelte van het INSPIRE aanmerkingsregister kan de dataprovider een wijzigingsverzoek indienen.
+In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. In het <a href="https://www.geonovum.nl/uploads/documents/proces%20wijziging%20aanmerking%20data%20provider%20v3.0.pdf" target="_blank">processchema wijziging aanmerking dataproviders</a> staat welke stappen doorlopen moeten worden om de aanmerking te wijzigen. Via het gesloten gedeelte van het INSPIRE aanmerkingsregister kan de dataprovider een wijzigingsverzoek indienen.
 
 ![processtappenaanmerking](media/Processtappen_wijzigingsverzoek.png "De stappen die genomen moeten worden om een aanmerking te wijzigen.")
 
