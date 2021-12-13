@@ -64,7 +64,7 @@ Meer informatie over Action 2.1 is te vinden op de <a href="https://github.com/I
 ### Hoe zijn de prioritaire datasets te vinden?
 Alle Nederlandse prioritaire datasets voor e-reporting zijn vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>. 
 
-In het Europese Geoportal zijn de datasets te vinden via de<a href="https://inspire-geoportal.ec.europa.eu/pdv_home.html" target="_blank">*Priority Data Sets Viewer*</a>. De dataproviders moeten hiervoor voor elke prioritaire dataset een extra trefwoord(en) opnemen in de [metadata van de dataset](#prioritaire-datasets-0). Via de viewer kun je per milieudomein of via de verschillende milieurichtlijnen de datasets vinden.
+In het Europese Geoportal zijn de datasets te vinden via de <a href="https://inspire-geoportal.ec.europa.eu/pdv_home.html" target="_blank">*Priority Data Sets Viewer*</a>. De dataproviders moeten hiervoor een extra trefwoord(en) opnemen in de [metadata van de dataset](#prioritaire-datasets-0) van de prioritaire datasets. Via de viewer kun je per lidstaat, milieudomein of via de verschillende milieurichtlijnen de datasets vinden.
 
 
 ## Dataharmonisatie
