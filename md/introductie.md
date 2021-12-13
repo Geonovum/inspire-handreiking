@@ -35,18 +35,18 @@ Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende docu
 
 De informatie op deze wiki volgt deze structuur (zie ook onderstaande figuur). De groene pijlen in de figuur tonen de opeenvolgende processtappen die doorlopen moeten worden om aan de *INSPIRE richtlijn* te voldoen.
 
-![Processtappen5.png](media/Processtappen5.png)
+![Processtappen5.png](media/Processtappen5.png "Processtappen INSPIRE")
 
 Per processtap wordt de bijbehorende documentatie weergegeven:
 - de Europese technische guidelines, dataspecificaties en andere documenten (in oranje);
 - de Nederlandse standaarden die INSPIRE ondersteunen (in blauw);
 Om het figuur zo overzichtelijk mogelijk te houden, is er voor gekozen om de wetteksten (IR’s - *decisions en regulations*) hier niet in op te nemen. 
 
-De Europese documenten zijn te vinden via de [Europese INSPIRE website](https://inspire.ec.europa.eu/). In het onderdeel [bronnen](#bronnen) op deze wiki worden deze documenten ook nog nader toegelicht.
-De Nederlandse standaarden zijn te vinden via de Geo-standaarden op de [Geonovum website](https://www.geonovum.nl/geo-standaarden).
+De Europese documenten zijn te vinden via de <a href="https://inspire.ec.europa.eu/" target="_blank">Europese INSPIRE website</a>. In het onderdeel [bronnen](#bronnen) op deze wiki worden deze documenten ook nog nader toegelicht.
+De Nederlandse standaarden zijn te vinden via de Geo-standaarden op de <a href="https://www.geonovum.nl/geo-standaarden" target="_blank">Geonovum website</a>.
 
 ## Deadlines
-Alle INSPIRE deadlines om datasets beschikbaar te maken zijn reeds verstreken. De oorspronkelijke INSPIRE roadmap met alle verschillende deadlines is [hier](https://inspire.ec.europa.eu/road-map-graphic/32443) te vinden.
+Alle INSPIRE deadlines om datasets beschikbaar te maken zijn reeds verstreken. De oorspronkelijke INSPIRE roadmap met alle verschillende deadlines is <a href="https://inspire.ec.europa.eu/road-map-graphic/32443" target="_blank">hier</a> te vinden.
 
 Alleen de deadline rondom het actualiseren van de gegevens is nog steeds van kracht. Deze actualisatie deadline is in de paragraaf hieronder beschreven.
 
