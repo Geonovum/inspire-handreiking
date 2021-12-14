@@ -35,7 +35,8 @@ Naast een openbare gedeelte heeft het aanmerkingregister ook een gesloten gedeel
 - de directe link naar de publicatie van de metadata van betreffende dataset in het NGR opnemen voor zowel de as-is als de geharmoniseerde dataset;
 - de implementatie status voor zowel de as-is als de geharmoniseede dataset beschrijven;
 - of een [wijzigingsverzoek](#wijziging-aanmerking) indienen. 
-Daarnaast kan de dataprovider alle eigen datasets te exporteren naar een Excel-bestand. 
+
+Daarnaast kan de dataprovider alle eigen datasets exporteren naar een Excel-bestand. 
 
 Tot slot zijn in het Aanmerkingsregister een drietal <a href="https://inspireaanmerking.nl/kwaliteitscontrole/" target="_blank">kwaliteitscontroletools</a> opgenomen. Twee tools richten zich op de metadata in het Aanmerkingregister en het NGR: metadata in het Aanmerkingsregister die ontbreekt in het Nationaal Georegister of andersom. De derde kwaliteitscontrole toont de harvestresultaten uit het Europese INSPIRE geoportal. Het overzicht toont waar nog problemen zijn met het downloadbaar of viewbaar beschikbaar maken van de dataset in het Europese INSPIRE geoportal.
 
