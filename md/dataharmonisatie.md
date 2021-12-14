@@ -90,6 +90,9 @@ In de onderstaande tabel staan de belangrijkste INSPIRE-documenten voor de datah
 | [INSPIRE Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) (D2.5)  | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
 
 Daarnaast zijn de onderstaande documenten ook handig bij dataharmonisatie:
+
+|Titel | Versie | Datum | Opmerking |
+|-----------------|-------------|-------------|-------------|
 | [INSPIRE datamodellen (UML)](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?) | 	r 4618   | 	2011-02-06  |Hier staan alle datamodellen uit de INSPIRE dataspecificaties overzichtelijk bij elkaar. De modellen die hier genoemd worden in IR's zijn definitief (*approved*). Dit geldt niet voor de *extended* delen (die zijn geen onderdeel van de IR's, maar wel van dataspecificaties) (*draft*)   |
 |[INSPIRE Base model - Generic Network Model](https://inspire.ec.europa.eu/documents/inspire-data-specifications-%E2%80%93-base-models-%E2%80%93-generic-network-model)|1.0rc3|2013-04-05|Algemeen basismodel voor netwerken zoals bijvoorbeeld vervoersnetwerken|
 |[Guidelines for the Encoding of Spatial Data](https://inspire.ec.europa.eu/documents/guidelines-encoding-spatial-data) (D2.7)  | 	3.3   | 2014-04-08   | -   |
