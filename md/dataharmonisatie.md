@@ -38,7 +38,7 @@ In onderstaande figuur zijn de 3 scenario’s bezien in het licht van de INSPIRE
 
 ![rijkarmplaatje](media/rijk_arm_scenario.png "De verschillende mogelijkheden voor het aanbieden van as-is data ná harmonisatie en voor het aanbieden van geharmoniseerde data")
 
-### Extensies
+#### Extensies
 Het gebruik van extensies wordt gezien als de meest efficiënte scenario voor harmonisatie, wanneer de 'as-is' dataset rijker is dan de dataspecifiactie van het INSPIRE thema.
 De INSPIRE-dataspecificaties zijn zo ontworpen dat ze eenvoudig <a href="https://inspire.ec.europa.eu/portfolio/inspire-extensions" target="_blank">uitbreidbaar</a>. Dit uitbreiden van modellen en specificiaties wordt 'extending' genoemd en de uitbreidingen zijn 'extensions'.
 
@@ -80,72 +80,63 @@ De dataharmonisatie INSPIRE beoogt het ontsluiten van de aangemerkte datasets co
 Op deze wiki gaat het over dataharmonisatie in technisch-inhoudelijke zin; het beleidskundige perspectief blijft buiten beschouwing.
 
 ### Documentatie dataharmonisatie
-Voor ieder INSPIRE-thema is door de EU een dataspecificatie vastgelegd die beschrijft welke gegevens en op welke manier deze gegevens moeten worden geleverd. Deze [dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892) worden gepubliceerd op de [Europese INSPIRE website](https://inspire.ec.europa.eu/).
-
 In de onderstaande tabel staan de belangrijkste INSPIRE-documenten voor de dataharmonisatie:
 
 |Titel | Versie | Datum | Opmerking |
 |-----------------|-------------|-------------|-------------|
-| [Dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892)  | 4.0  | 2017-04-01   | Data specificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
-| [Definition of Annex Themes and Scope](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.3_Definition_of_Annex_Themes_and_scope_v3.0.pdf) (D2.3)  | 3.0  | 2008-10-03   | -   |
+| [Dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892)  | 4.0  | 2017-04-01   | Dataspecificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
+| [GML Application schemas](https://inspire.ec.europa.eu/schemas/)  | 4.0  |    | GML applicatie schema's voor alle themas   |
+| [Codelijstregister](https://inspire.ec.europa.eu/data-specifications/2892)  |  |    | Bevat de codelijsten en hun waarden  |
 | [INSPIRE Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) (D2.5)  | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
-| [Methodology for the development of data specifications: baseline version](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.6_v3.0.pdf) (D2.6)  | 3.0   | 2008-06-20	   | -   |
-| [Guidelines for the Encoding of Spatial Data](https://inspire.ec.europa.eu/file/1412/download?token=lHYwKEk5) (D2.7)  | 	3.3   | 2014-04-08   | -   |
-| [Datamodellen (UML)](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?) | 	r 4618   | 	2011-02-06  |De modellen die hier genoemd worden in IR's zijn definitief (*approved*). Dit geldt niet voor de *extended* delen (die zijn geen onderdeel van de IR's, maar wel van dataspecificaties) (*draft*)   |
-|[handleiding voor het gebruik van "Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE"](https://inspire.ec.europa.eu/id/document/tg/d2.9-o%26m-swe)|3.0|2016-12-16|-|
-|[INSPIRE Data Specifications – Base Models – Generic Network Model](https://inspire.ec.europa.eu/documents/inspire-data-specifications-%E2%80%93-base-models-%E2%80%93-generic-network-model)|1.0rc3|2013-04-05|Algemeen basismodel voor netwerken zoals bijvoorbeeld vervoersnetwerken|
+
+Daarnaast zijn de onderstaande documenten ook handig bij dataharmonisatie:
+| [INSPIRE datamodellen (UML)](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?) | 	r 4618   | 	2011-02-06  |Hier staan alle datamodellen uit de INSPIRE dataspecificaties overzichtelijk bij elkaar. De modellen die hier genoemd worden in IR's zijn definitief (*approved*). Dit geldt niet voor de *extended* delen (die zijn geen onderdeel van de IR's, maar wel van dataspecificaties) (*draft*)   |
+|[INSPIRE Base model - Generic Network Model](https://inspire.ec.europa.eu/documents/inspire-data-specifications-%E2%80%93-base-models-%E2%80%93-generic-network-model)|1.0rc3|2013-04-05|Algemeen basismodel voor netwerken zoals bijvoorbeeld vervoersnetwerken|
+|[Guidelines for the Encoding of Spatial Data](https://inspire.ec.europa.eu/documents/guidelines-encoding-spatial-data) (D2.7)  | 	3.3   | 2014-04-08   | -   |
+|[Richtlijnen voor het gebruik van "Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE"](https://inspire.ec.europa.eu/id/document/tg/d2.9-o%26m-swe)|3.0|2016-12-16|-|
+| [Definition of Annex Themes and Scope](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.3_Definition_of_Annex_Themes_and_scope_v3.0.pdf) (D2.3)  | 3.0  | 2008-10-03   | -   |
 |[Good Practices](https://inspire.ec.europa.eu/portfolio/good-practice-library)|||Hier worden voorbeelden uit de praktijk genoemd|
 
 ### Generic Conceptual Model
-Om data consistent te kunnen uitwisselen beschrijft INSPIRE voor elk thema een datamodel van de gegevens die uitgewisseld moeten worden. Daarnaast beschrijft het ook een bestandsformaat waarin de gegevens moeten worden uitgewisseld. Algemene specificaties (die voor alle thema's hetzelfde zijn) worden beschreven in het [Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) (GCM). Een dataspecificatie moet dus altijd gelezen worden in de context van dit generieke model.
+Om data consistent te kunnen uitwisselen beschrijft INSPIRE in de INSPIRE dataspecificaties voor elk thema een datamodel van de gegevens die uitgewisseld moeten worden. Daarnaast beschrijft het ook een bestandsformaat waarin de gegevens moeten worden uitgewisseld. Algemene specificaties (die voor alle thema's hetzelfde zijn) worden beschreven in het <a href="https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model" target="_blank">Generic Conceptual Model (GCM)</a>. Een INSPIRE dataspecificatie moet dus altijd gelezen worden in de context van dit generieke conceptuele model.
 
-### Overzicht dataspecificaties
-Op [deze locatie](https://inspire.ec.europa.eu/Themes/Data%20Specifications/2892) zijn de data specificaties per thema te vinden. Globaal bevatten de dataspecificaties per thema een overzicht van de technische richtlijnen om een INSPIRE-dataset te maken. Op [deze locatie](https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeTheme.action) kun je interactief door de data specificaties bladeren.
+### INSPIRE dataspecificaties
+Voor alle 34 INSPIRE-thema's is door de EU een INSPIRE dataspecificatie vastgelegd die beschrijft welke gegevens en op welke manier deze gegevens moeten worden geleverd. Zoals in de tabel met belangrijke documenten is aangegeven, zijn de INSPIRE dataspecificaties <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">hier</a>
+hier te vinden. De INSPIRE dataspecificaties zijn per annex gegroepeerd. 
 
-Hieronder volgt een opsomming van thema-specifieke dataspecificaties per annex.
+|Annex I |  |
+|-----------------|-------------|
+|Coordinate Reference Systems | Geographical Grid Systems|
+| Geographical Names | Administrative Units |
+|Addresses| Cadastral Parcels|
+|Transport Networks|Hydrography|
+|Protected Sites||
 
-**Annex I data specifications**
-- D2.8.I.1 Data Specification on Coordinate Reference Systems – Technical Guidelines
-- D2.8.I.2 Data Specification on Geographical Grid Systems – Technical Guidelines
-- D2.8.I.3 Data Specification on Geographical Names – Technical Guidelines
-- D2.8.I.4 Data Specification on Administrative Units – Technical Guidelines
-- D2.8.I.5 Data Specification on Addresses – Technical Guidelines
-- D2.8.I.6 Data Specification on Cadastral Parcels – Technical Guidelines
-- D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines
-- D2.8.I.8 Data Specification on Hydrography – Technical Guidelines
-- D2.8.I.9 Data Specifications on Protected Sites - Technical Guidelines
+|Annex II |  |
+|-----------------|-------------|
+|Elevation|Land Cover|
+|Orthoimagery|Geology|
 
-**Annex II data specifications**
-- D2.8.II.1 Data Specification on Elevation – Technical Guidelines
-- D2.8.II.2 Data Specification on Land Cover – Technical Guidelines
-- D2.8.II.3 Data Specification on Orthoimagery – Technical Guidelines
-- D2.8.II.4 Data Specification on Geology – Technical Guidelines
+|Annex III |  |
+|-----------------|-------------|
+|Statistical Units|Buildings|
+|Soil|Land Use|
+|Human Health and Safety|Utility and Government Services|
+|Environmental Monitoring Facilities|Production and Industrial Facilities|
+|Agricultural and Aquaculture Facilities|Population Distribution|
+|Area Management/Restriction/Regulation Zones and Reporting Units|Natural Risk Zones|
+|Atmospheric Conditions|Meteorological Geographical Features|
+|Oceanographic geographical features|Sea Regions|
+|Bio-geographical Regions|Habitats and Biotopes|
+|Species Distribution|Energy Resources |
+|Mineral Resources||
 
-**Annex III data specifications**
-- D2.8.III.1 Data Specification on Statistical Units – Technical Guidelines
-- D2.8.III.2 Data Specification on Buildings – Technical Guidelines
-- D2.8.III.3 Data Specification on Soil – Technical Guidelines
-- D2.8.III.4 Data Specification on Land Use – Technical Guidelines
-- D2.8.III.5 Data Specification on Human Health and Safety – Technical Guidelines
-- D2.8.III.6 Data Specification on Utility and Government Services – Technical Guidelines
-- D2.8.II/III.7 Data Specification on Environmental Monitoring Facilities – Technical Guidelines
-- D2.8.III.8 Data Specification on Production and Industrial Facilities – Technical Guidelines
-- D2.8.III.9 Data Specification on Agricultural and Aquaculture Facilities – Technical Guidelines
-- D2.8.III.10 Data Specification on Population Distribution – Technical Guidelines
-- D2.8.III.11 Data Specification on Area Management/Restriction/Regulation Zones and Reporting Units – Technical Guidelines
-- D2.8.III.12 Data Specification on Natural Risk Zones – Technical Guidelines
-- D2.8.III.13-14 Data Specification on Atmospheric Conditions and Meteorological Geographical Features – Technical Guidelines
-- D2.8.III.15 Data Specification on Oceanographic geographical features – Technical Guidelines
-- D2.8.III.16 Data Specification on Sea Regions – Technical Guidelines
-- D2.8.III.17 Data Specification on Bio-geographical Regions – Technical Guidelines
-- D2.8.III.18 Data Specification on Habitats and Biotopes – Technical Guidelines
-- D2.8.III.19 Data Specification on Species Distribution – Technical Guidelines
-- D2.8.III.20 Data Specification on Energy Resources – Technical Guidelines
-- D2.8.III.21 Data Specification on Mineral Resources – Technical Guidelines
-
-Wanneer je niet zeker bent onder welk INSPIRE-thema een bepaalde dataset valt, is de tool [find your scope](https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/FindYourScope.action) erg nuttig. Naast de mogelijkheid om het juiste INSPIRE-thema te vinden, biedt deze tool ook een overzicht van alle objecten die binnen INSPIRE zijn gedefinieerd.
+In de figuur hieronder staan alle 34 thema's in het INSPIRE landschap beschreven. 
 
 ![INSPIRElandschap](media/inspire_wereld_gegevens.png "INSPIRE-landschap")
+
+Wanneer je niet zeker bent onder welk INSPIRE-thema een bepaalde dataset valt, is de tool <a href="https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/FindYourScope.action" target="_blank">Find your scope</a> erg nuttig. Naast de mogelijkheid om het juiste INSPIRE-thema te vinden, biedt deze tool ook een overzicht van alle objecten die binnen INSPIRE zijn gedefinieerd.
+
 
 ## Principes dataharmonisatie
 Een van de voorwaarden voor het kunnen uitwisselen van ruimtelijke data is dat alle datasets bepaalde kenmerken delen. Zo moeten de opbouw van ruimtelijke objecten, definities van objecten en verplichte attributen over alle lidstaten uniform zijn om via services uitgewisseld te kunnen worden en onderling vergeleken te kunnen worden. Dit wordt ‘interoperabiliteit’ genoemd en de handelingen die ondernomen worden om interoperabiliteit te bereiken ‘dataharmonisatie’. INSPIRE zorgt voor een hoge mate van interoperabiliteit door per thema een standaard dataspecificatie te beschrijven die door alle lidstaten geïmplementeerd moet worden. Dit betekent dat een dataprovider zijn gegevens moet vertalen naar de INSPIRE-dataspecificatie. Het harmoniseren is grotendeels afhankelijk van de structuur van de brondata, zoals deze door de dataprovider beheerd wordt. Wordt deze file-based beheerd, of in een ruimtelijke database? Hoe ziet de structuur van de data eruit? Deze vragen kunnen alleen door de dataprovider zelf beantwoord worden.
