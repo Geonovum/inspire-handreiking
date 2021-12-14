@@ -57,6 +57,11 @@ Ook door het uitbreiden van [codelijsten](#codelijsten) kan een model rijker gem
 #### Prioritaire datasets voor e-reporting
 In 2017 heeft de Europese Commissie een fitness check afgerond over Environmental Monitoring en Reporting. Daarbij is de INSPIRE richtlijn aangewezen als instrument met een groot potentieel om het rapportageproces over milieurichtlijnen te stroomlijnen. Vanuit INSPIRE is vervolgens aan de lidstaten gevraagd om ervoor te zorgen dat voor e-reporting relevante datasets via INSPIRE beschikbaar komen. Samen met het European Environmental Agency (EEA) is per milieurichtlijn een lijst opgesteld van te leveren datasets, de zogenoemde <a href="https://github.com/INSPIRE-MIF/need-driven-data-prioritisation/tree/main/documents#rolling-priority-list-of-data-sets" target="_blank">“Priority list of datasets for e-Reporting”</a>. Dit is een dynamische lijst.
 
+**Hoe zijn de prioritaire datasets te vinden?**
+Alle Nederlandse prioritaire datasets voor e-reporting zijn vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>. 
+
+In het Europese Geoportal zijn de datasets te vinden via de <a href="https://inspire-geoportal.ec.europa.eu/pdv_home.html" target="_blank">*Priority Data Sets Viewer*</a>. De dataproviders moeten hiervoor een extra trefwoord(en) opnemen in de [metadata van de dataset](#prioritaire-datasets-0) van de prioritaire datasets. Via de viewer kun je per lidstaat, milieudomein of via de verschillende milieurichtlijnen de datasets vinden.
+
 #### Uitbreiding prioritaire datasets
 In het <a href="https://wikis.ec.europa.eu/display/InspireMIG/INSPIRE+work+programme+2021-24" target="_blank">Europese INSPIRE werkprogramma 2021-2024</a> worden de INSPIRE prioritaire datasets verder uitgebreid. Action 2.1 '*Need-driven data prioritisation*' is gedefinieerd met als doel de verdere implementatie (beschikbaarheid van gegevens en diensten, toegankelijkheid en interoperabiliteit) van de richtlijn te stimuleren door een reële vraag en tastbare use-cases. De methode voor het prioriteren van gegevens zou bestaan uit het selecteren van die datasets die voldoen aan de concrete behoeften van de stakeholders (lokale, regionale, nationale en Europese overheden) en waarvoor interoperabiliteit moet worden nagestreefd. 
 Er zijn momenteel verschillende lopende initiatieven en projecten die de mogelijkheid onderzoeken om de INSPIRE-infrastructuur rechtstreeks te gebruiken voor het creëren van pan-Europese datasets en toepassingen (bijv. Eurostat-projecten, Copernicus in-situ-activiteiten, IACS-gegevensuitwisseling). Bovendien moet bij het prioriteren van de datasets ook rekening worden gehouden met de <a href="https://geonovum.github.io/eu_regelingen_datastrategie/" target="_blank">nieuwe politieke agenda en opkomende wettelijke kaders</a>, zoals de Europese dataspaces met de Green Deal dataspace en de *High value datasets* onder de Open Data Richtlijn.
@@ -67,11 +72,6 @@ De prioritaire datasetlijsten voor deze nieuwe ontwikkelingen zijn op dit moment
 - IACS datasets (van DG AGRI). De technische specificatie voor het ontsluiten van deze datasets via de INSPIRE infrastructuur, is <a href="https://marswiki.jrc.ec.europa.eu/wikicap/images/f/f8/DS-CDP-2019-04_REV2_TechnicalGuideline_IacsSpatialDataSharing_Part1_Final.pdf" target="_blank"> hier</a> beschikbaar.
 
 Meer informatie over Action 2.1 is te vinden op de <a href="https://github.com/INSPIRE-MIF/need-driven-data-prioritisation" target="_blank">Github Repository for INSPIRE MIWP Action 2.1 'Need-driven data prioritisation'</a>.
-
-#### Hoe zijn de prioritaire datasets te vinden?
-Alle Nederlandse prioritaire datasets voor e-reporting zijn vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>. 
-
-In het Europese Geoportal zijn de datasets te vinden via de <a href="https://inspire-geoportal.ec.europa.eu/pdv_home.html" target="_blank">*Priority Data Sets Viewer*</a>. De dataproviders moeten hiervoor een extra trefwoord(en) opnemen in de [metadata van de dataset](#prioritaire-datasets-0) van de prioritaire datasets. Via de viewer kun je per lidstaat, milieudomein of via de verschillende milieurichtlijnen de datasets vinden.
 
 
 ## Dataharmonisatie
