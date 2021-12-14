@@ -29,7 +29,15 @@ Het doel van het INSPIRE aanmerkingsregister is meervoudig:
 - Via het aanmerkingsregister kan iedereen de voortgang van de INSPIRE implementatie volgen. 
 - Vanuit het aanmerkingsregister is er ook een directe link naar de publicatie van de metadata van betreffende dataset in het <a href="http://www.nationaalgeoregister.nl/" target="_blank">Nationaal GeoRegister (NGR)</a>. De dataset is daar dan ook te raadplegen.
 
-Het aanmerkingregister heeft naast een open gedeelte ook een gesloten gedeelte voor de INSPIRE dataproviders. Deze omgeving voorziet in extra functionaliteit om het aanmerkings- en implementatieproces te ondersteunen. Binnen deze omgeving kunnen dataproviders per dataset de implementatie status of een [wijzigingsverzoek](#wijziging-aanmerking) indienen. Ook is het mogelijk om overzichten te generen van de gegevens in het aanmerkingsregister.
+In het openbare gedeelte kan de bezoeker de <a href="https://inspireaanmerking.nl/aanmerkingsregister" target="_blank">aanmerkingen</a> bekijken en selecties maken op bijvoorbeeld dataprovider, thema en prioriteit. Ook kan de bezoeker een dataset <a href="https://inspireaanmerking.nl/aanmelden-dataset" target="_blank">aanmelden</a> als de bezoker een datasets mist in het overzicht of denkt dat een bepaalde dataset wel in aanmerking komt voor INSPIRE.
+
+Naast een openbare gedeelte heeft het aanmerkingregister ook een gesloten gedeelte voor de INSPIRE dataproviders. De gesloten omgeving voorziet in extra functionaliteit om het aanmerkings- en implementatieproces te ondersteunen. Binnen deze omgeving kunnen dataproviders per dataset:
+- de directe link naar de publicatie van de metadata van betreffende dataset in het NGR opnemen voor zowel de as-is als de geharmoniseerde dataset;
+- de implementatie status voor zowel de as-is als de geharmoniseede dataset beschrijven;
+- of een [wijzigingsverzoek](#wijziging-aanmerking) indienen. 
+Daarnaast kan de dataprovider alle eigen datasets te exporteren naar een Excel-bestand. 
+
+Tot slot zijn in het Aanmerkingsregister een drietal <a href="https://inspireaanmerking.nl/kwaliteitscontrole/" target="_blank">kwaliteitscontroletools</a> opgenomen. Twee tools richten zich op de metadata in het Aanmerkingregister en het NGR: metadata in het Aanmerkingsregister die ontbreekt in het Nationaal Georegister of andersom. De derde kwaliteitscontrole toont de harvestresultaten uit het Europese INSPIRE geoportal. Het overzicht toont waar nog problemen zijn met het downloadbaar of viewbaar beschikbaar maken van de dataset in het Europese INSPIRE geoportal.
 
 ### Wijziging van de aanmerking
 In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. In het <a href="https://www.geonovum.nl/uploads/documents/proces%20wijziging%20aanmerking%20data%20provider%20v3.0.pdf" target="_blank">processchema wijziging aanmerking dataproviders</a> staat welke stappen doorlopen moeten worden om de aanmerking te wijzigen. Via het gesloten gedeelte van het INSPIRE aanmerkingsregister kan de dataprovider een wijzigingsverzoek indienen.
