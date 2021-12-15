@@ -58,9 +58,8 @@ Ook door het uitbreiden van [codelijsten](#codelijsten) kan een model rijker gem
 In 2017 heeft de Europese Commissie een fitness check afgerond over Environmental Monitoring en Reporting. Daarbij is de INSPIRE richtlijn aangewezen als instrument met een groot potentieel om het rapportageproces over milieurichtlijnen te stroomlijnen. Vanuit INSPIRE is vervolgens aan de lidstaten gevraagd om ervoor te zorgen dat voor e-reporting relevante datasets via INSPIRE beschikbaar komen. Samen met het European Environmental Agency (EEA) is per milieurichtlijn een lijst opgesteld van te leveren datasets, de zogenoemde <a href="https://github.com/INSPIRE-MIF/need-driven-data-prioritisation/tree/main/documents#rolling-priority-list-of-data-sets" target="_blank">“Priority list of datasets for e-Reporting”</a>. Dit is een dynamische lijst.
 
 **Hoe zijn de prioritaire datasets te vinden?**
-Alle Nederlandse prioritaire datasets voor e-reporting zijn vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>. 
 
-In het Europese Geoportal zijn de datasets te vinden via de <a href="https://inspire-geoportal.ec.europa.eu/pdv_home.html" target="_blank">*Priority Data Sets Viewer*</a>. De dataproviders moeten hiervoor een extra trefwoord(en) opnemen in de [metadata van de dataset](#prioritaire-datasets-0) van de prioritaire datasets. Via de viewer kun je per lidstaat, milieudomein of via de verschillende milieurichtlijnen de datasets vinden.
+Alle Nederlandse prioritaire datasets voor e-reporting zijn vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>. In het Europese Geoportal zijn de datasets te vinden via de <a href="https://inspire-geoportal.ec.europa.eu/pdv_home.html" target="_blank">*Priority Data Sets Viewer*</a>. De dataproviders moeten hiervoor een extra trefwoord(en) opnemen in de [metadata van de dataset](#prioritaire-datasets-0) van de prioritaire datasets. Via de viewer kun je per lidstaat, milieudomein of via de verschillende milieurichtlijnen de datasets vinden.
 
 #### Uitbreiding prioritaire datasets
 In het <a href="https://wikis.ec.europa.eu/display/InspireMIG/INSPIRE+work+programme+2021-24" target="_blank">Europese INSPIRE werkprogramma 2021-2024</a> worden de INSPIRE prioritaire datasets verder uitgebreid. Action 2.1 '*Need-driven data prioritisation*' is gedefinieerd met als doel de verdere implementatie (beschikbaarheid van gegevens en diensten, toegankelijkheid en interoperabiliteit) van de richtlijn te stimuleren door een reële vraag en tastbare use-cases. De methode voor het prioriteren van gegevens zou bestaan uit het selecteren van die datasets die voldoen aan de concrete behoeften van de stakeholders (lokale, regionale, nationale en Europese overheden) en waarvoor interoperabiliteit moet worden nagestreefd. 
@@ -104,8 +103,9 @@ Daarnaast zijn de onderstaande documenten ook handig bij dataharmonisatie:
 Om data consistent te kunnen uitwisselen beschrijft INSPIRE in de INSPIRE dataspecificaties voor elk thema een datamodel van de gegevens die uitgewisseld moeten worden. Daarnaast beschrijft het ook een bestandsformaat waarin de gegevens moeten worden uitgewisseld. Algemene specificaties (die voor alle thema's hetzelfde zijn) worden beschreven in het <a href="https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model" target="_blank">Generic Conceptual Model (GCM)</a>. Een INSPIRE dataspecificatie moet dus altijd gelezen worden in de context van dit generieke conceptuele model.
 
 ### INSPIRE dataspecificaties
-Voor alle 34 INSPIRE-thema's is door de EU een INSPIRE dataspecificatie vastgelegd die beschrijft welke gegevens en op welke manier deze gegevens moeten worden geleverd. Zoals in de tabel met belangrijke documenten is aangegeven, zijn de INSPIRE dataspecificaties <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">hier</a>
-hier te vinden. De INSPIRE dataspecificaties zijn per annex gegroepeerd. 
+Voor alle 34 INSPIRE-thema's is door de EU een INSPIRE dataspecificatie vastgelegd die beschrijft welke gegevens en op welke manier deze gegevens moeten worden geleverd. Zoals in de tabel met belangrijke documenten is aangegeven, zijn de INSPIRE dataspecificaties <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">hier</a> te vinden. 
+
+De INSPIRE dataspecificaties zijn per annex gegroepeerd:
 
 |Annex I |  |
 |-----------------|-------------|
@@ -115,10 +115,12 @@ hier te vinden. De INSPIRE dataspecificaties zijn per annex gegroepeerd.
 |Transport Networks|Hydrography|
 |Protected Sites||
 
+
 |Annex II |  |
 |-----------------|-------------|
 |Elevation|Land Cover|
 |Orthoimagery|Geology|
+
 
 |Annex III |  |
 |-----------------|-------------|
@@ -134,6 +136,7 @@ hier te vinden. De INSPIRE dataspecificaties zijn per annex gegroepeerd.
 |Species Distribution|Energy Resources |
 |Mineral Resources||
 
+
 In de figuur hieronder staan alle 34 thema's in het INSPIRE landschap beschreven. 
 
 ![INSPIRElandschap](media/inspire_wereld_gegevens.png "INSPIRE-landschap")
@@ -142,14 +145,14 @@ Wanneer je niet zeker bent onder welk INSPIRE-thema een bepaalde dataset valt, i
 
 
 ## Principes dataharmonisatie
-Een van de voorwaarden voor het kunnen uitwisselen van ruimtelijke data is dat alle datasets bepaalde kenmerken delen. Zo moeten de opbouw van ruimtelijke objecten, definities van objecten en verplichte attributen over alle lidstaten uniform zijn om via services uitgewisseld te kunnen worden en onderling vergeleken te kunnen worden. Dit wordt ‘interoperabiliteit’ genoemd en de handelingen die ondernomen worden om interoperabiliteit te bereiken ‘dataharmonisatie’. INSPIRE zorgt voor een hoge mate van interoperabiliteit door per thema een standaard dataspecificatie te beschrijven die door alle lidstaten geïmplementeerd moet worden. Dit betekent dat een dataprovider zijn gegevens moet vertalen naar de INSPIRE-dataspecificatie. Het harmoniseren is grotendeels afhankelijk van de structuur van de brondata, zoals deze door de dataprovider beheerd wordt. Wordt deze file-based beheerd, of in een ruimtelijke database? Hoe ziet de structuur van de data eruit? Deze vragen kunnen alleen door de dataprovider zelf beantwoord worden.
+Een van de voorwaarden voor het kunnen uitwisselen van ruimtelijke data is dat alle datasets bepaalde kenmerken delen. Zo moeten de opbouw van ruimtelijke objecten, definities van objecten en verplichte attributen over alle lidstaten uniform zijn om via services uitgewisseld te kunnen worden en onderling vergeleken te kunnen worden. Dit wordt ‘interoperabiliteit’ genoemd en de handelingen die ondernomen worden om interoperabiliteit te bereiken ‘dataharmonisatie’. INSPIRE zorgt voor een hoge mate van interoperabiliteit door per thema een standaard dataspecificatie te beschrijven die door alle lidstaten geïmplementeerd moet worden. Dit betekent dat een dataprovider zijn gegevens moet vertalen naar de INSPIRE dataspecificatie. Het harmoniseren is grotendeels afhankelijk van de structuur van de brondata, zoals deze door de dataprovider beheerd wordt. Wordt deze file-based beheerd, of in een ruimtelijke database? Hoe ziet de structuur van de data eruit? Deze vragen kunnen alleen door de dataprovider zelf beantwoord worden.
 
 ## Fasen
-Het harmoniseren naar INSPIRE-dataspecificaties, kent grofweg twee fasen:
-1. **Semantisch harmoniseren**: hoe vallen de begrippen en concepten in het informatiemodel van de dataprovider te vertalen naar de klasses en definities zoals beschreven in de INSPIRE-dataspecificatie.
-2. **Technisch harmoniseren**:  het converteren van het bestaande dataformaat, naar het uitwisselformaat GML.
+Het harmoniseren naar INSPIRE dataspecificaties, kent grofweg twee fasen:
+1. **Semantisch harmoniseren**: hoe vallen de begrippen en concepten in het informatiemodel van de dataprovider te vertalen naar de klasses en definities zoals beschreven in de INSPIRE dataspecificatie.
+2. **Technisch harmoniseren**: het converteren van het bestaande dataformaat naar het uitwisselformaat GML.
 
-Dit is vooral een schematische indeling. In het werkproces zullen (1) en (2) bij veel dataproviders in één slag plaatsvinden. Onder het harmoniseren vallen ook aspecten als het zorg dragen voor valide geometrieën en *cross-boundary harmonisation*. Meer informatie over deze aspecten vind je op [deze wikipagina](#geometrie).
+Dit is vooral een schematische indeling. In het werkproces zullen (1) en (2) bij veel dataproviders in één slag plaatsvinden. Onder het harmoniseren vallen ook aspecten als het zorg dragen voor valide geometrieën en *cross-boundary harmonisation*. Meer informatie over deze aspecten vind je op de wikipagina [geometrie](#geometrie).
 
 ### Semantisch harmoniseren
 Het semantisch harmoniseren is vooral een kwestie van het vertalen van definities van de dataprovider naar de definities van INSPIRE. Dit is typisch werk voor een domeinexpert van de dataprovider die de definities in de betreffende dataspecificaties interpreteert en bedenkt hoe de eigen gegevens in dit model in te passen zijn. In veel gevallen zal het lastig zijn voor een domeinexpert om de technische INSPIRE-documentatie te doorgronden.
@@ -161,7 +164,7 @@ Voor het technisch harmoniseren zijn er verschillende mogelijkheden:
 3. ‘On the fly’ harmoniseren en converteren.
 
 #### Ruimtelijke database
-Eén manier om data te harmoniseren is om op database-niveau scripts te ontwikkelen, die de datastructuur van de voor INSPIRE opgevoerde data, converteren naar de vorm en inhoud die conform het INSPIRE-applicatieschema is. Dit kan met behulp van SQL, en de procedurele taal die de database hanteert. De procedurele taal is afhankelijk van de database; elke fabrikant kent zijn eigen variant. Hiervoor is specialistische kennis van een database-specialist nodig, die (a) met ruimtelijke databases overweg kan, en (b) *Data Definition Language* (DDL)-scripts kan ontwikkelen.
+Eén manier om data te harmoniseren is om op database-niveau scripts te ontwikkelen, die de datastructuur van de voor INSPIRE opgevoerde data, converteren naar de vorm en inhoud die conform het INSPIRE-applicatieschema is. Dit kan met behulp van SQL en de procedurele taal die de database hanteert. De procedurele taal is afhankelijk van de database; elke fabrikant kent zijn eigen variant. Hiervoor is specialistische kennis van een database-specialist nodig, die (a) met ruimtelijke databases overweg kan, en (b) *Data Definition Language* (DDL)-scripts kan ontwikkelen.
 
 #### Spatial ETL
 Ruimtelijke ETL-processen met behulp van specifieke ETL-software, ook vaak *Spatial ETL* of *spatial data exchange* genoemd. ETL staat voor Extract, Transform en Load. Hiermee worden technieken bedoeld die ruimtelijke data kunnen converteren.
