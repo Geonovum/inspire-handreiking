@@ -1156,6 +1156,12 @@ Merk op: GML is voor Nederland als uitwisselingsformaat verplicht voorgeschreven
 Andere formaten zoals beschreven in paragraaf 9.3.2 van de dataspecificaties zijn ook toegestaan, maar dan moet de mapping naar het INSPIRE-model wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
 Er is een speciale [Europese werkgroep](https://github.com/INSPIRE-MIF/2017.2/) bezig met het bestuderen van het gebruik van eenvoudigere bestandsformaten dan GML zoals GeoJSON.
 
+#### Geopackages
+
+Geopackage (gpkg) wordt veel genoemd als goede optie om data aan te bieden in een Atom feed voor een INSPIRE Downloadservice.
+Er is ook een <a href="https://https://github.com/INSPIRE-MIF/gp-geopackage-encodings" target="_blank">github repository</a> waarin goede  praktijkvoorbeelden worden verzameld voor het publiceren in geopackage als bestandsformaat in een download service voor INSPIRE.
+Ook is in Nederland is hier onderzoek naar gedaan voor TNO samen met Geonovum.
+
 ## Spatial Data Services
 
 Spatial Data Services (SDS) worden ook wel Ruimtelijke datadiensten, of “diensten met betrekking tot ruimtelijke gegevens” genoemd. Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. Er kan ook andere data in de service zijn ontsloten. Alle Spatial Data Services, moeten van [metadata](#metadata-spatial-data-services) worden voorzien. 
