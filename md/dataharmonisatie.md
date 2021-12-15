@@ -107,24 +107,18 @@ Voor alle 34 INSPIRE-thema's is door de EU een INSPIRE dataspecificatie vastgele
 
 De INSPIRE dataspecificaties zijn per annex gegroepeerd:
 
-|Annex I| |
+|INSPIRE thema per annex| |
 | ----------- | ----------- |
+|**Annex I** ||
 |Coordinate Reference Systems | Geographical Grid Systems|
 | Geographical Names | Administrative Units |
 |Addresses| Cadastral Parcels|
 |Transport Networks|Hydrography|
 |Protected Sites||
-
-
-
-|Annex II| |
-| ----------- | ----------- |
+|**Annex II**| |
 |Elevation|Land Cover|
 |Orthoimagery|Geology|
-
-
-|Annex III| |
-| ----------- | ----------- |
+|**Annex III**| |
 |Statistical Units|Buildings|
 |Soil|Land Use|
 |Human Health and Safety|Utility and Government Services|
