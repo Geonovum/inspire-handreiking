@@ -2,7 +2,7 @@
 
 In dit deel van de WIKI worden de verschillende elctronische diensten (services) behandeld die INSPIRE vraagt aan de INSPIRE plichtige dataproviders. Deze worden ook wel Network services genoemd. Algemene aspecten daaraan worden in het volgende hoofstuk behandeld. Er zijn verschillende soorten services die ieder afzonderlijk in hoofdstukken daarna behandeld worden.
 
-Al deze services zijn technische componenten (entiteiten) die ook een onderlinge relatie hebben. Hun relaties, hun context en een use cases zijn beschreven in het [INSPIRE-Domain Model](https://inspire.jrc.ec.europa.eu/documents/Network_Services/INSPIRE%20Domain%20Model%20v0.9.1.pdf).
+Al deze services zijn technische componenten (entiteiten) die ook een onderlinge relatie hebben. Hun relaties, hun context en een use cases zijn beschreven in het <a href="https://inspire.jrc.ec.europa.eu/documents/Network_Services/INSPIRE%20Domain%20Model%20v0.9.1.pdf" target="_blank">INSPIRE-Domain Model</a>.
 
 ![Simple_INSPIRE_Domain_Model](media/DM_simple.png "Eenvoudig Domein model")
 
@@ -1160,8 +1160,8 @@ Er is een speciale [Europese werkgroep](https://github.com/INSPIRE-MIF/2017.2/) 
 
 Geopackage (gpkg) wordt veel genoemd als goede optie om data aan te bieden in een Atom feed voor een INSPIRE Downloadservice.
 Er is ook een <a href="https://https://github.com/INSPIRE-MIF/gp-geopackage-encodings" target="_blank">github repository</a> waarin goede  praktijkvoorbeelden worden verzameld voor het publiceren in geopackage als bestandsformaat in een download service voor INSPIRE.
-Ook in Nederland is hier onderzoek naar gedaan voor TNO samen met Geonovum met een [rapport](docs/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf) als eindresultaat.
-Daarnaast is het bij het Forum voor standaardisatie opgenomen in de pas toe en leguit lijst voor <a href="https://www.forumstandaardisatie.nl/open-standaarden/geo-standaarden" target="_blank">geo-standaarden</a>.
+Ook in Nederland is hier onderzoek naar gedaan voor de Basisregistratie Ondergrond (BRO) van TNO  met een [rapport](docs/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf) als eindresultaat.
+Daarnaast is het bij het Forum Standaardisatie opgenomen in de pas toe en leguit lijst voor <a href="https://www.forumstandaardisatie.nl/open-standaarden/geo-standaarden" target="_blank">geo-standaarden</a>.
 
 ## Spatial Data Services
 
@@ -1185,4 +1185,4 @@ Spatial Data Services kunnen heel verschillende services zijn, waardoor er geen 
 
 ## Wijzigingen doorvoeren
 
-Wanneer u een wijziging doorvoert in uw dataset of service, kan dit gevolgen hebben voor bijvoorbeeld de metadata, atomfeeds en conformiteit van uw data en services. In het document [wijzigingen en INSPIRE](https://www.geonovum.nl/uploads/documents/inspire-en-wat-te-doen-bij-wijzigingen.pdf) vindt u een praktische handreiking van de punten die u kunt controleren na een wijziging van uw INSPIRE-datasets en -services.
+Wanneer u een wijziging doorvoert in uw dataset of service, kan dit gevolgen hebben voor bijvoorbeeld de metadata, atomfeeds en conformiteit van uw data en services. In het document <a href="https://www.geonovum.nl/uploads/documents/inspire-en-wat-te-doen-bij-wijzigingen.pdf" target="_blank">wijzigingen en INSPIRE</a> vindt u een praktische handreiking van de punten die u kunt controleren na een wijziging van uw INSPIRE-datasets en -services.
