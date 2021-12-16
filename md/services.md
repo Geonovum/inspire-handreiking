@@ -790,7 +790,7 @@ De INSPIRE Network Services Regulation en de INSPIRE Regulation voor de interope
 </pre>
 
 ### Voorbeeldbestand XML voor Capabilities
-Hier zijn twee voorbeeldbestanden te vinden voor de Capibilities-documenten, volgens [scenario 1](#docs/WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](#docs/WMSCapabilities_Voorbeeld_Scenario2.zip).
+Hier zijn twee voorbeeldbestanden te vinden voor de Capibilities-documenten, volgens [scenario 1](docs/WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](docs/WMSCapabilities_Voorbeeld_Scenario2.zip).
 
 ## Download service
 
@@ -1031,7 +1031,6 @@ De Technical Guidance beschrijft in hoofdstuk 6 hoe een Download service voor Pr
 Het GetCapabilities request geeft een vergelijkbare Capabilities file op als bij de WMS, op enkele specifieke WMS onderdelen na. Het wordt daarom in deze paragraaf niet zo uitgebreid beschreven als in dat van de WMS.
 
 #### WFS 2.0
-<a href="PAD" target="_blank">hier</a>
 
 De OGC standaard voor <a href="https://www.ogc.org/standards/wfs" target="_blank">Web Feature Service 2.0 (WFS 2.0)</a> is in samenwerking met ISO opgesteld. Bij ISO heet deze standaard formeel ISO 19142. WFS 2.0 specificeert een webservice-interface om geografische gegevens te bevragen. Een WFS geeft standaard GML terug (3.2 voor WFS 2.0). Voor het bevragen maakt WFS gebruik van filters. Voorbeelden van filters zijn: gegevens selecteren op basis van een bepaald gebied en/of bepaalde attribuutwaarden. Deze filters dienen conform de <a href="https://www.ogc.org/standards/filter" target="_blank">Filter Encoding 2.0 (FE 2.0)</a> gecodeerd te zijn. Deze standaard is ook in samenwerking met ISO opgesteld en heet daar ISO 19143.
 
@@ -1098,19 +1097,19 @@ De Technical Guidance bevat de eisen die INSPIRE stelt aan een dergelijke WFS:
 5. voldoen aan de conformance class Minimum Standard Filter uit FE 2.0. Dit is met de filter operatoren PropertyIsEqualTo, PropertyIsNotEqualTo, PropertyIsLessThan, PropertyIsGreaterThan, PropertyIsLessThanOrEqualTo, PropertyIsGreaterThanOrEqualTo en alle logische operatoren (And, Or, Not).
 6. voldoen aan de conformance class Minimum Spatial Filter uit FE 2.0. Dit betekent dat de filter operator BBOX ondersteund moet worden.
 7. voldoen aan de conformance class Minimum Temporal Filter uit FE 2.0. Dit betekent dat de filter operator During ondersteund moet worden. Hiermee kunnen 8. objecten opgevraagd worden die wat betreft tijd (of tijsperiode) vallen in een bepaalde periode;
-voldoen aan de conformance class Minimum XPath uit FE 2.0. Hiermee kunnen via XPath opgegeven waardes gebruikt worden in een filter. Er wordt een subset van XPath ondersteuning vereist. Deze is beschreven in paragraaf 7.4.4 van de [Filter Encoding standaard 2.0](https://www.ogc.org/standards/filter).
+voldoen aan de conformance class Minimum XPath uit FE 2.0. Hiermee kunnen via XPath opgegeven waardes gebruikt worden in een filter. Er wordt een subset van XPath ondersteuning vereist. Deze is beschreven in paragraaf 7.4.4 van de <a href="https://www.ogc.org/standards/filter" target="_blank">Filter Encoding standaard 2.0</a>.
 
 De eisen voor meertaligeheid zijn dezelfde als voor WFS pre-defined.
 
 #### Verhouding tot Nederlands profiel
 
-Het [Nederlands profiel](https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20) op ISO 19142 WFS 2.0 versie 1.1 stelt eisen aan Nederlandse WFS-implementaties. Het Nederlands profiel is afgestemd op de INSPIRE-specificaties. Per eis staat in het Nederlands profiel aangegeven of die van INSPIRE komt of dat het een specifieke aanvulling voor Nederland is. Een voorbeeld van dat laatste is ondersteuning voor het Rijksdriehoekstelsel.
+Het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel</a> op ISO 19142 WFS 2.0 versie 1.1 stelt eisen aan Nederlandse WFS-implementaties. Het Nederlands profiel is afgestemd op de INSPIRE-specificaties. Per eis staat in het Nederlands profiel aangegeven of die van INSPIRE komt of dat het een specifieke aanvulling voor Nederland is. Een voorbeeld van dat laatste is ondersteuning voor het Rijksdriehoekstelsel.
 
 Het profiel bevat ook een aparte bijlage met de zaken die INSPIRE nog extra vereist ten opzichte van het Nederlands profiel.
 
 ### WCS
 
-Vanaf 16 december 2016 is er een [Technical Guidance](https://inspire.ec.europa.eu/id/document/tg/download-wcs) om coverage data via Web Coverage Services te publiceren. Deze Technical Guidance neemt als basis voor een Download service de OGC WCS 2.0 specificatie. De INSPIRE-operaties worden gemapped op de WCS-operaties. Daarnaast worden aanvullende eisen gesteld, over onder andere:
+Vanaf 16 december 2016 is er een <a href="https://inspire.ec.europa.eu/id/document/tg/download-wcs" target="_blank">Technical Guidance WCS</a> om coverage data via Web Coverage Services te publiceren. Deze Technical Guidance neemt als basis voor een Download service de OGC WCS 2.0 specificatie. De INSPIRE-operaties worden gemapped op de WCS-operaties. Daarnaast worden aanvullende eisen gesteld, over onder andere:
 - de te gebruiken (metadata)-elementen in het Capabilities-document
 - ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities
 - hoe Direct Access in te vullen via de processing extension van WCS
@@ -1118,7 +1117,7 @@ Vanaf 16 december 2016 is er een [Technical Guidance](https://inspire.ec.europa.
 
 ### SOS
 
-Vanaf 16 december 2016 is er ook een [Technical Guidance](http://inspire.ec.europa.eu/id/document/tg/download-sos) om sensor data via Sensor Observation Services te publiceren. Deze Technical Guidance neemt als basis voor een Download service de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding. De INSPIRE operaties worden gemapped op de SOS operaties en de Filter encoding classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
+Vanaf 16 december 2016 is er ook een <a href="http://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance SOS</a> om sensor data via Sensor Observation Services te publiceren. Deze Technical Guidance neemt als basis voor een Download service de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding. De INSPIRE operaties worden gemapped op de SOS operaties en de Filter encoding classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
 - de te gebruiken (metadata) elementen in het Capabilitiesdocument
 - ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities
 - gebruik van de GetObservationByID operatie om Direct Access in te vullen
@@ -1126,42 +1125,42 @@ Vanaf 16 december 2016 is er ook een [Technical Guidance](http://inspire.ec.euro
 
 ### OGC API's
 
-De [OGC API's](https://ogcapi.ogc.org/) vormen een familie van standaarden die ontwikkeld is/wordt om het voor iedereen gemakkelijk te maken om geospatiale gegevens aan het web te verstrekken. Deze standaarden bouwen voort op de erfenis van de OGC Web Service-standaarden (WMS, WFS, WCS, WPS, enz.), maar definiëren API's die profiteren van moderne webontwikkelingspraktijken. 
+De <a href="https://ogcapi.ogc.org/" target="_blank">OGC API's</a> vormen een familie van standaarden die ontwikkeld is/wordt om het voor iedereen gemakkelijk te maken om geospatiale gegevens aan het web te verstrekken. Deze standaarden bouwen voort op de erfenis van de OGC Web Service-standaarden (WMS, WFS, WCS, WPS, enz.), maar definiëren API's die profiteren van moderne webontwikkelingspraktijken. 
 
 #### OGC API Features
 
-[OGC API features](https://docs.opengeospatial.org/is/17-069r3/17-069r3.html) (OAPIF of OAF) is een vorm van een download service op basis van een API (Application Program Interface) gebaseerd op OGC standaarden. Het wordt beschouwd als opvolger van de OGC WFS standaard, maar dat betekent niet dat het de WFS in de nabije toekomst volledig gaat vervangen, ook al zou dat in de verre toekomst wel het geval kunnen zijn. Voorlopig zijn ze nog complementair aan elkaar. De WFS wordt vooral in de GIS wereld gebruikt terwijl de OAPIF meer bedoeld is voor andere gebruikers, zoals web-applicatie bouwers. De OAPIF is eenvoudiger in het gebruik en vergt minder geo-kennis, maar is bv op 2 punten na nog niet echt geschikt voor INSPIRE.
+<a href="(https://docs.opengeospatial.org/is/17-069r3/17-069r3.html" target="_blank">OGC API features</a> (OAPIF of OAF) is een vorm van een download service op basis van een API (Application Program Interface) gebaseerd op OGC standaarden. Het wordt beschouwd als opvolger van de OGC WFS standaard, maar dat betekent niet dat het de WFS in de nabije toekomst volledig gaat vervangen, ook al zou dat in de verre toekomst wel het geval kunnen zijn. Voorlopig zijn ze nog complementair aan elkaar. De WFS wordt vooral in de GIS wereld gebruikt terwijl de OAPIF meer bedoeld is voor andere gebruikers, zoals web-applicatie bouwers. De OAPIF is eenvoudiger in het gebruik en vergt minder geo-kennis, maar is bv op 2 punten na nog niet echt geschikt voor INSPIRE.
 1. Het werkt nu alleen nog op basis van simpele datamodellen en uitwisselformaten en is dus moeilijk te implementeren op complexe INSPIRE datamodellen waarbij het complexere GML nog de default is. Mapping naar eenvoudigere modellen en uitwisselformaten is mogelijk maar moet dan voor INSPIRE wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
-2. Voorlopig is de tooling nog niet geschikt om met andere coördinaatsystemen te werken dan WGS84. INSPIRE vereist ETRS89. De [standaarden](http://docs.opengeospatial.org/is/18-058/18-058.html) zijn er al wel op aangepast, maar de tooling nog niet.
+2. Voorlopig is de tooling nog niet geschikt om met andere coördinaatsystemen te werken dan WGS84. INSPIRE vereist ETRS89. De <a href="https://docs.opengeospatial.org/is/18-058/18-058.html" target="_blank">standaarden]</a> zijn er al wel op aangepast, maar de tooling nog niet.
 
-Er is een [handreiking](https://geonovum.github.io/OAPIF-PDOK-INSPIRE/) geschreven waarin de eerste bevindingen voor het maken van een OAPIF zijn vastgelegd.
+Er is een <a href="https://geonovum.github.io/OAPIF-PDOK-INSPIRE/" target="_blank">handreiking</a> geschreven waarin de eerste bevindingen voor het maken van een OAPIF zijn vastgelegd.
 
 #### OGC SensorThings API
 
-De standaard voor [OGC SensorThings API](https://docs.ogc.org/is/18-088/18-088.html) biedt een open, geospatiale en uniforme manier om de Internet of Things (IoT)-apparaten, gegevens en applicaties via het web met elkaar te verbinden. Op een hoog niveau biedt de OGC SensorThings API twee hoofdfunctionaliteiten en elke functie wordt afgehandeld door een onderdeel. De twee delen zijn het Sensing-gedeelte en het Tasking-gedeelte. Het Sensing-gedeelte biedt een standaard manier om observaties en metadata van heterogene IoT-sensorsystemen te beheren en op te halen. Het Tasking-gedeelte is gepland als een toekomstige werkactiviteit en zal in een apart document worden gedefinieerd als [Part II van de SensorThings API](http://docs.opengeospatial.org/is/17-079r1/17-079r1.html).
+De standaard voor <a href="https://docs.ogc.org/is/18-088/18-088.html" target="_blank">OGC SensorThings API</a> biedt een open, geospatiale en uniforme manier om de Internet of Things (IoT)-apparaten, gegevens en applicaties via het web met elkaar te verbinden. Op een hoog niveau biedt de OGC SensorThings API twee hoofdfunctionaliteiten en elke functie wordt afgehandeld door een onderdeel. De twee delen zijn het Sensing-gedeelte en het Tasking-gedeelte. Het Sensing-gedeelte biedt een standaard manier om observaties en metadata van heterogene IoT-sensorsystemen te beheren en op te halen. Het Tasking-gedeelte is gepland als een toekomstige werkactiviteit en zal in een apart document worden gedefinieerd als <a href="https://docs.opengeospatial.org/is/17-079r1/17-079r1.html" target="_blank">Part II van de SensorThings API</a>.
 
 #### Andere OGC API's
 
 De hierboven genoemde OGC API's zijn van belang als service voor INSPIRE en ook al vastgesteld. Andere OGC-API's die nog niet vastgesteld zijn maar die van belang kunnen worden voor INSPIRE zijn:
-- [OGC API Maps](https://ogcapi.ogc.org/maps/) (opvolger WMS)
-- [OGC API tiles](https://ogcapi.ogc.org/tiles/) (opvolger WMTS)
-- [OGC API Styles](https://ogcapi.ogc.org/styles/) 
-- [OGC API coverages](https://ogcapi.ogc.org/coverages/) (opvolger WCS)
-- [OGC API Records](https://ogcapi.ogc.org/records/) (opvolger CSW) 
+- <a href="https://ogcapi.ogc.org/maps/" target="_blank">OGC API Maps</a> (opvolger WMS)
+- <a href="https://ogcapi.ogc.org/tiles/" target="_blank">OGC API tiles</a> (opvolger WMTS)
+- <a href="https://ogcapi.ogc.org/styles/" target="_blank">OGC API Styles</a> (opvolger SLD)
+- <a href="https://ogcapi.ogc.org/coverages/" target="_blank">OGC API coverages</a> (opvolger WCS)
+- <a href="https://ogcapi.ogc.org/records/" target="_blank">OGC API Records</a> (opvolger CSW) 
 
 ### Bestandsformaten
 
-GML als bestandsformaat voor INSPIRE is in alle dataspecificaties de default zoals beschreven staat in paragraaf 9.3.1 van de dataspecificaties. INSPIRE heeft een lijst van te gebruiken [media-types](https://inspire.ec.europa.eu/media-types/) gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP-betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
+GML als bestandsformaat voor INSPIRE is in alle dataspecificaties de default zoals beschreven staat in paragraaf 9.3.1 van de dataspecificaties. INSPIRE heeft een lijst van te gebruiken <a href="https://inspire.ec.europa.eu/media-types/" target="_blank">media-types</a> gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP-betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
 
-Merk op: GML is voor Nederland als uitwisselingsformaat verplicht voorgeschreven, zie de zogenaamde [Pas-toe-of-Leg-Uit-lijst van geo-standaarden](https://www.forumstandaardisatie.nl/open-standaarden). Bij een implementatie via WFS wordt standaard GML geboden.
+Merk op: GML is voor Nederland als uitwisselingsformaat verplicht voorgeschreven, zie de zogenaamde <a href="https://www.forumstandaardisatie.nl/open-standaarden" target="_blank">Pas-toe-of-Leg-Uit-lijst van geo-standaarden</a>. Bij een implementatie via WFS wordt standaard GML geboden.
 
 Andere formaten zoals beschreven in paragraaf 9.3.2 van de dataspecificaties zijn ook toegestaan, maar dan moet de mapping naar het INSPIRE-model wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
-Er is een speciale [Europese werkgroep](https://github.com/INSPIRE-MIF/2017.2/) bezig met het bestuderen van het gebruik van eenvoudigere bestandsformaten dan GML zoals GeoJSON.
+Er is een speciale <a href="https://github.com/INSPIRE-MIF/2017.2/" target="_blank">Europese werkgroep</a> bezig met het bestuderen van het gebruik van eenvoudigere bestandsformaten dan GML zoals GeoJSON.
 
 #### Geopackages
 
 Geopackage (gpkg) wordt veel genoemd als goede optie om data aan te bieden in een Atom feed voor een INSPIRE Downloadservice.
-Er is ook een <a href="https://https://github.com/INSPIRE-MIF/gp-geopackage-encodings" target="_blank">github repository</a> waarin goede  praktijkvoorbeelden worden verzameld voor het publiceren in geopackage als bestandsformaat in een download service voor INSPIRE.
+Er is ook een <a href="https://github.com/INSPIRE-MIF/gp-geopackage-encodings" target="_blank">github repository</a> waarin goede  praktijkvoorbeelden worden verzameld voor het publiceren in geopackage als bestandsformaat in een download service voor INSPIRE.
 Ook in Nederland is hier onderzoek naar gedaan voor de Basisregistratie Ondergrond (BRO) van TNO  met een [rapport](docs/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf) als eindresultaat.
 Daarnaast is het bij het Forum Standaardisatie opgenomen in de pas toe en leguit lijst voor <a href="https://www.forumstandaardisatie.nl/open-standaarden/geo-standaarden" target="_blank">geo-standaarden</a>.
 
