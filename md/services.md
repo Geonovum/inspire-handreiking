@@ -1160,7 +1160,8 @@ Er is een speciale [Europese werkgroep](https://github.com/INSPIRE-MIF/2017.2/) 
 
 Geopackage (gpkg) wordt veel genoemd als goede optie om data aan te bieden in een Atom feed voor een INSPIRE Downloadservice.
 Er is ook een <a href="https://https://github.com/INSPIRE-MIF/gp-geopackage-encodings" target="_blank">github repository</a> waarin goede  praktijkvoorbeelden worden verzameld voor het publiceren in geopackage als bestandsformaat in een download service voor INSPIRE.
-Ook is in Nederland is hier onderzoek naar gedaan voor TNO samen met Geonovum.
+Ook in Nederland is hier onderzoek naar gedaan voor TNO samen met Geonovum met een [rapport](docs/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf) als eindresultaat.
+Daarnaast is het bij het Forum voor standaardisatie opgenomen in de pas toe en leguit lijst voor <a href="https://www.forumstandaardisatie.nl/open-standaarden/geo-standaarden" target="_blank">geo-standaarden</a>.
 
 ## Spatial Data Services
 
