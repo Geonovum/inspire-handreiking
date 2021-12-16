@@ -17,7 +17,7 @@ Het bovenstaande figuur valt uiteen in een aantal services:
 - De discovery service is bedoeld om het zoeken, beoordelen (evalueren) en vinden van ruimtelijke data die via het netwerk van webservices worden aangeboden te ondersteunen.
 - Het zoeken van data vindt plaats op basis van metadata van INSPIRE-data en metadata van INSPIRE-services.
 - Ook het beschikbaar maken van ruimtelijke data en het linken van de data & diensten.
-- Voor INSPIRE wordt dit op lidstaat-niveau uitgevoerd; voor Nederland is dit het [Nationaal Georegister](https://www.nationaalgeoregister.nl/).
+- Voor INSPIRE wordt dit op lidstaat-niveau uitgevoerd; voor Nederland is dit het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister</a>.
 
 **View services / Raadpleegdienst**
 - Weergeven van ruimtelijke data met pan-, overlay- en zoomfunctionaliteit.
@@ -42,7 +42,7 @@ Het bovenstaande figuur valt uiteen in een aantal services:
 - Nog geen IR- of Technical-Guidance-document.
 
 **Registerdiensten**
-- De INSPIRE infrastructuur behelst een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). Het [INSPIRE register](https://inspire.ec.europa.eu/registry/) biedt een centraal toegangspunt voor een aantal centraal beheerde INSPIRE registers. De inhoud van deze registers is gebaseerd op de INSPIRE richtlijn, de uitvoerings regels en de technische handleidingen.
+- De INSPIRE infrastructuur behelst een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). Het <a href="https://inspire.ec.europa.eu/registry/" target="_blank">INSPIRE register</a> biedt een centraal toegangspunt voor een aantal centraal beheerde INSPIRE registers. De inhoud van deze registers is gebaseerd op de INSPIRE richtlijn, de uitvoerings regels en de technische handleidingen.
 - Voor Nederland is er een aanvullend register voor [codelijsten](#codelijsten) en [namespaces](#namespaces)
 
 ### Overige architectuuronderdelen
@@ -56,20 +56,20 @@ Op de website van INSPIRE is de wetgeving met betrekking tot network services te
 
 |Type wetgeving | Site | Titel |
 |-----------------|-------------|-------------|
-| Regulation | [eur-lex](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32007L0002) | [Regulation on INSPIRE Network Services](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02009R0976-20141231) |
-| Amendement voor download services en transformation services | [comitology](https://ec.europa.eu/transparency/comitology-register/screen/home) | [COMMISSION REGULATION (EU) No 1088/2010 of 23 November 2010 amending Regulation (EC) No 976/2009 as regards download services and transformation services](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32010R1088) |
+| Regulation | <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32007L0002" target="_blank">eur-lex</a> | <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02009R0976-20141231" target="_blank">Regulation on INSPIRE Network Services</a> |
+| Amendement voor download services en transformation services | <a href="https://ec.europa.eu/transparency/comitology-register/screen/home" target="_blank">comitology</a> | <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32010R1088" target="_blank">COMMISSION REGULATION (EU) No 1088/2010 of 23 November 2010 amending Regulation (EC) No 976/2009 as regards download services and transformation services</a> |
 
 ### Technische richtlijnen
-In de Technical Guidances (of Guidance Documents) zijn de technische specificaties opgesteld voor network services, als uitwerking van de wettelijke eisen. De Technical Guidances definiëren hiermee waar een network service aan zal moeten voldoen. De huidig geldende versies van de guidance documents van de network services zijn te vinden op de [website van INSPIRE](https://inspire.ec.europa.eu/Technical-Guidelines2/Network-Services/41). De tabel hieronder biedt directe links naar de documenten.
+In de Technical Guidances (of Guidance Documents) zijn de technische specificaties opgesteld voor network services, als uitwerking van de wettelijke eisen. De Technical Guidances definiëren hiermee waar een network service aan zal moeten voldoen. De huidig geldende versies van de guidance documents van de network services zijn te vinden op de <a href="https://inspire.ec.europa.eu/Technical-Guidelines2/Network-Services/41" target="_blank">website van INSPIRE</a>. De tabel hieronder biedt directe links naar de documenten.
 
 | Titel | Opmerking |
-|-----------------|-------------|-------------|-------------|
-| [Technical Guidance for the implementation of INSPIRE Download Services - WFS en ATOM](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services) | |
-| [Technical Guidance for the implementation of INSPIRE Download Services - Web Coverage Service](https://inspire.ec.europa.eu/id/document/tg/download-wcs)|| 
-| [Technical Guidance for the implementation of INSPIRE Download Services - Sensor Observation Service](https://inspire.ec.europa.eu/id/document/tg/download-sos) ||
-| [Technical Guidance for the implementation of INSPIRE View Services)](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1) ||
-| [Technical Guidance for the implementation of INSPIRE Discovery Services](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0) ||
-| [Technical Guidance for the INSPIRE Schema Transformation Network Service](https://inspire.ec.europa.eu/documents/technical-guidance-inspire-schema-transformation-network-service) || Niet op wiki uitgewerkt |
+|-----------------|-------------|
+| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - WFS en ATOM</a> ||
+| <a href="https://inspire.ec.europa.eu/id/document/tg/download-wcs" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - Web Coverage Service</a>|| 
+| <a href="https://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - Sensor Observation Service</a> ||
+| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance for the implementation of INSPIRE View Services</a> ||
+| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0" target="_blank">Technical Guidance for the implementation of INSPIRE Discovery Services</a> ||
+| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-inspire-schema-transformation-network-service" target="_blank">Technical Guidance for the INSPIRE Schema Transformation Network Service</a> |Niet op Wiki uitgewerkt| 
 
 Voor spatial data services, zie [elders in dit document](#spatial-data-services).
 
@@ -78,26 +78,28 @@ Er is geen definitieve beslissing i.v.m. de **Rights Management layer** die binn
 ### Nederlandse profielen voor WMS en WFS
 Buiten de INSPIRE Implementing Rules en Guidances zijn er ook Nederlandse profielen van toepassing op de Network Services. De volgende tabel geeft een overzicht van deze profielen, hun versie en status.
 
-
 | Profielen | Versie | Datum |
 |-----------------|-------------|-------------|
-| [Nederlands profiel Web Map Service op ISO 19128 versie 1.1](https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11) | 1.1 | 1-5-2015| 
-| [Nederlands WFS profiel 1.1 op ISO 19142 voor Web Feature Services 2.0](https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20) | 1.1 | 1-5-2015 |
+| <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11" target="_blank">Nederlands profiel Web Map Service op ISO 19128 versie 1.1</a> | 1.1 | 1-5-2015| 
+| <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands WFS profiel 1.1 op ISO 19142 voor Web Feature Services 2.0</a> | 1.1 | 1-5-2015 |
 | *Informatieve documenten* | | |
-| [Raamwerk GeoStandaarden](https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf) | 3.0 | 31-03-2015 |
+| <a href="https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf" target="_blank">Raamwerk GeoStandaarden</a> | 3.0 | 31-03-2015 |
 
 ### Verschillende soorten implementatie
 INSPIRE kent per type network service één of meerdere opties om die network service te implementeren. Een viewservice kan bijvoorbeeld met WMS of met WMTS geïmplmenteerd worden. Een downloadservice kan, afhankelijk van het type gegevens of de voorkeuren van een dataprovider, worden aangeboden via WFS, ATOM, WCS of SOS. Een dataprovider kan dus zelf het type service bepalen.
 
 In de tabel hieronder wordt een overzicht gegeven van de INSPIRE-services en de verschillende (OGC)-protocollen die hiermee samenhangen. Ook de Nederlandse profielen voor webservices zijn opgenomen.
 
+
+<a href="https://PAD" target="_blank">TXT</a>
+
 | Servicetype | Interface-protocollen | Kort | Nederlands profiel |
 |-----------------|-------------|-------------|-------------|
-| **View** | ISO 19128: OGC WebMap Service 1.3.0 of OGC Web Map Tile Service 1.0.0 | WMS 1.3 of WMTS 1.0.0 | [Nederlands profiel op ISO 19128 WMS 1.3, versie 1.0](https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11) |
+| **View** | ISO 19128: OGC WebMap Service 1.3.0 of OGC Web Map Tile Service 1.0.0 | WMS 1.3 of WMTS 1.0.0 | <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11" target="_blank">Nederlands profiel op ISO 19128 WMS 1.3, versie 1.0</a> |
 | **Discovery** | OGC Catalogue Service for the web2.0.2 AP ISO 1.0 | OGC CSW ISO AP | |
 | **Downloaddiensten** | | | |
 | *- Pre-defined* | ATOM feeds of OGC Web Feature Service 2.0 met beperkte filter mogelijkheden of WCS Coverage Service (raster) of Sensor Observation Services | WFS 2.0; OGC of OGC WCS of SOS | |
-| *- Direct Access* | OGC Web Feature Service 2.0 met meer filter mogelijkheden, Filter Encoding of WCS Coverage Service (raster) met processing of Sensor Observation Services met meer filter mogelijkheden | WFS 2.0; OGC FE of OGC WCS of SOS | [Nederlands profiel op ISO 19142 WFS 2.0, versie 1.0](https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20) | 
+| *- Direct Access* | OGC Web Feature Service 2.0 met meer filter mogelijkheden, Filter Encoding of WCS Coverage Service (raster) met processing of Sensor Observation Services met meer filter mogelijkheden | WFS 2.0; OGC FE of OGC WCS of SOS | <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.0</a> | 
 | **Transformatiedienst** | | | |
 | *- schema* | Niet beschikbaar | | |
 | *- coöordinaat* | OGC Web Coordinate Transformation Service, OGC Web Processing Service | WCTS; OGC WPS| |
