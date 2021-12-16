@@ -90,9 +90,6 @@ INSPIRE kent per type network service één of meerdere opties om die network se
 
 In de tabel hieronder wordt een overzicht gegeven van de INSPIRE-services en de verschillende (OGC)-protocollen die hiermee samenhangen. Ook de Nederlandse profielen voor webservices zijn opgenomen.
 
-
-<a href="https://PAD" target="_blank">TXT</a>
-
 | Servicetype | Interface-protocollen | Kort | Nederlands profiel |
 |-----------------|-------------|-------------|-------------|
 | **View** | ISO 19128: OGC WebMap Service 1.3.0 of OGC Web Map Tile Service 1.0.0 | WMS 1.3 of WMTS 1.0.0 | <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11" target="_blank">Nederlands profiel op ISO 19128 WMS 1.3, versie 1.0</a> |
@@ -146,8 +143,8 @@ INSPIRE definieert *Quality of services* (QoS), de eisen omtrent het kwaliteitsb
 
 | Titel | Versie | Datum |
 |-----------------|-------------|-------------|
-| [Regulation on INSPIRE Network Services](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02009R0976-20141231) | adopted | 32-12-2014 |
-| [Network Services Architecture (Version 3.0)](https://inspire.ec.europa.eu/reports/ImplementingRules/network/D3_5_INSPIRE_NS_Architecture_v3-0.pdf) | 3.0 | 30-09-2008 |
+| <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02009R0976-20141231" target="_blank">Regulation on INSPIRE Network Services</a> | adopted | 32-12-2014 |
+| <a href="https://inspire.ec.europa.eu/reports/ImplementingRules/network/D3_5_INSPIRE_NS_Architecture_v3-0.pdf" target="_blank">Network Services Architecture (Version 3.0)</a> | 3.0 | 30-09-2008 |
 | [Implementing Rules en Technical Guidances van de network services](#wetgeving) | | verschillende |
 
 ### Rights management layer
@@ -155,7 +152,7 @@ De richtlijn schrijft voor dat de i.h.k.v. INSPIRE aangeboden diensten in princi
 
 De RM architectuur-laag wordt in [deze afbeelding](#network-services) weergegeven met de term ‘toegangsrechten’ en wordt tussen de servicebus en de netwerkdiensten gepositioneerd. De RM-layer is geïntroduceerd om juridische rechten tussen INSPIRE en andere applicaties te kunnen begeleiden, controleren en beperken. In feite houdt dit in dat er mogelijke restricties komen tussen enerzijds de dataprovider met haar data en services, en anderzijds de gebruiker.
 
-Er is geen Implementing Rule voor deze RM-layer dienst beschikbaar en deze wordt ook niet verwacht. Er wordt in de INSPIRE-documentatie verwezen naar GeoDRM (ISO 19153) als een kandidaat-standaard voor de RM-layer. [ISO 19153](https://www.iso.org/standard/32571.html) is in 2014 gepubliceerd.
+Er is geen Implementing Rule voor deze RM-layer dienst beschikbaar en deze wordt ook niet verwacht. Er wordt in de INSPIRE-documentatie verwezen naar GeoDRM (ISO 19153) als een kandidaat-standaard voor de RM-layer <a href="https://www.iso.org/standard/32571.html" target="_blank">ISO 19153</a> is in 2014 gepubliceerd.
 
 #### Typen restricties
 - Private Access Terms: INSPIRE-service is toegankelijk maar de ruimtelijke data kan niet ge-redistribueerd worden.
@@ -221,7 +218,7 @@ In de onderstaande tabel is de mapping weergegeven van de verplichte INSPIRE-vie
 - Minimaal één taal moet worden ondersteund en kenbaar worden gemaakt in de respons op de GetViewServiceMetadata-operatie.
 
 ### INSPIRE-vereisten in een Capabilities-document
-De Technical Guidance beschrijft hoe een lidstaat de Implementing Rules zou kunnen implementeren. Voor de viewservices beschrijft het document [Technical Guidance View Services](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1) de (niet bindende) technische eisen waaraan een service moet voldoen. De beschrijving van de Implementation Requirements en Implementation Recommendations is gebaseerd op de ISO 19128 (WMS 1.3.0) standaard.
+De Technical Guidance beschrijft hoe een lidstaat de Implementing Rules zou kunnen implementeren. Voor de viewservices beschrijft het document <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance View Services</a> de (niet bindende) technische eisen waaraan een service moet voldoen. De beschrijving van de Implementation Requirements en Implementation Recommendations is gebaseerd op de ISO 19128 (WMS 1.3.0) standaard.
 
 De Technical Guidance beschrijft 2 scenario's om de verplichte INSPIRE-elementen op te nemen in een ISO 19128 (WMS 1.3.0) Capabilities document:
 1. Verplichte WMS-elementen opnemen met een minimale uitbreiding voor INSPIRE-elementen als ExtendedCapabilities.
@@ -750,9 +747,9 @@ Als een client een getCapabilities-verzoek doet met een taal als parameter die d
 
 De INSPIRE Network Services Regulation en de INSPIRE Regulation voor de interoperability van datasets en services stellen geen verplichtingen om meertaligheid te ondersteunen voor teksten die op een kaart worden getekend als respons op een GetMap-request. Wel geeft de technical guidance een aanbeveling voor de ondersteuning van meertaligheid in Capabilities:
 
-1. De client doet een initieel GetCapabilities request: 
+1. De client doet een initieel GetCapabilities request:
 
-http://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0.
+<a href="https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0." target="_blank">https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0.</a>
 
 2. De service antwoordt met een Capabilities-document waarin de ondersteunde talen zijn weergegeven in de Extended Capabilities:
 
@@ -770,7 +767,7 @@ http://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.
 
 3. De client doet vervolgens een GetCapabilities-request met een specifieke taal, bijvoorbeeld Engels (eng) opgegeven als language parameter:
 
-http://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0&language=eng.
+<a href="https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0&language=eng" target="_blank">https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0&language=eng</a>.
 
 4. De service antwoordt door een Capabilities-document te sturen in de gevraagde (ondersteunde) taal, waarbij de Title en Abstract elementen zijn weergegeven in de gevraagde taal. Voor de operaties wordt verwezen naar een voor die taal specifieke URL. Een client gebruikt vervolgens die taalspecifieke URL, hieronder bijvoorbeeld een URL voor een taalspecifiek GetMap-request:
 
@@ -793,7 +790,7 @@ http://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.
 </pre>
 
 ### Voorbeeldbestand XML voor Capabilities
-Hier zijn twee voorbeeldbestanden te vinden voor de Capibilities-documenten, volgens [scenario 1](https://github.com/Geonovum/inspire-wiki/blob/main/docs/WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](https://github.com/Geonovum/inspire-wiki/blob/main/docs/WMSCapabilities_Voorbeeld_Scenario2.zip).
+Hier zijn twee voorbeeldbestanden te vinden voor de Capibilities-documenten, volgens [scenario 1](#docs/WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](#docs/WMSCapabilities_Voorbeeld_Scenario2.zip).
 
 ## Download service
 
@@ -809,7 +806,7 @@ De downloadservice (of downloaddienst) heeft als functie de gegevens die via de 
 In de volgende hoofdstukken worden eerst verschillende downloadservice implementaties kort beschreven en later nog weer apart in detail per paragraaf. 
 
 ### Downloadservice implementaties
-De [Technical Guidances](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services) en de [Commission Regulation amending Regulation (EC) No 976/2009 as regards download services and transformation service](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02009R0976-20101228) zijn de huidig geldige documenten die downloadservices en de eisen eraan beschrijven. De Commission Regulation is de wettekst die aangeeft welke downloadservices moeten en mogen worden aangeboden binnen INSPIRE. De Technical Guidance geeft richtlijnen hoe deze services conform de Implementing Rule moeten worden toegepast.
+De <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">Technical Guidances</a> en de <a href="https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02009R0976-20101228" target="_blank">Commission Regulation amending Regulation (EC) No 976/2009 as regards download services and transformation service</a> zijn de huidig geldige documenten die downloadservices en de eisen eraan beschrijven. De Commission Regulation is de wettekst die aangeeft welke downloadservices moeten en mogen worden aangeboden binnen INSPIRE. De Technical Guidance geeft richtlijnen hoe deze services conform de Implementing Rule moeten worden toegepast.
 
 Op 9 augustus 2013 is versie 3.1 van de Technical Guidance definitief gepubliceerd met de specificaties voor WFS- en ATOM-implementaties van een downloadservice. Op 16 december 2016 zijn specificaties gepubliceerd voor implementatie van een downloadservice via WCS (voor coverage-data) of via SOS (voor sensordata). Dit hoofdstuk geeft een korte toelichting per servicetype over de eisen.
 
@@ -892,7 +889,7 @@ Vanaf 16 december 2016 is er een [Technical Guidance](https://inspire.ec.europa.
 Een nadere toelichting op deze methode is [hier te vinden](#wcs).
 
 ##### Sensordata
-Vanaf 16 december 2016 is er ook een [Technical Guidance](https://inspire.ec.europa.eu/id/document/tg/download-sos) om sensordata via Sensor Observation Services te publiceren. Deze Technical Guidance neemt de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding als basis voor een downloadservice. De INSPIR- operaties worden gemapped op de SOS-operaties en de Filter encoding-classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
+Vanaf 16 december 2016 is er ook een <a href="https://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance</a> om sensordata via Sensor Observation Services te publiceren. Deze Technical Guidance neemt de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding als basis voor een downloadservice. De INSPIR- operaties worden gemapped op de SOS-operaties en de Filter encoding-classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
 - de te gebruiken (metadata) elementen in het Capabilitiesdocument;
 - ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities;
 - gebruik van de GetObservationByID opeartie om Direct Access in te vullen;
@@ -901,9 +898,9 @@ Vanaf 16 december 2016 is er ook een [Technical Guidance](https://inspire.ec.eur
 Een nadere toelichting op deze methode is [hier te vinden](#sos).
 
 ### Atom feed
-De [Atom-standaard](https://tools.ietf.org/html/rfc4287) is een (voorgestelde) standaard van IETF, the [Internet Engineering Task Force](https://www.ietf.org/). Atom is een XML-formaat om (op internet beschikbare) informatie te publiceren in feeds. Deze feeds bevatten vaak een algemeen deel en verscheidene items. Zo'n item (entry) bestaat uit elementen die de informatie beschrijven en ernaar verwijzen. Items kunnen bijvoorbeeld nieuwsberichten zijn, weblog-posts of gepubliceerde video's.
+De <a href="https://tools.ietf.org/html/rfc4287" target="_blank">Atom-standaard</a> is een (voorgestelde) standaard van IETF, the <a href="https://www.ietf.org/" target="_blank">Internet Engineering Task Force</a>. Atom is een XML-formaat om (op internet beschikbare) informatie te publiceren in feeds. Deze feeds bevatten vaak een algemeen deel en verscheidene items. Zo'n item (entry) bestaat uit elementen die de informatie beschrijven en ernaar verwijzen. Items kunnen bijvoorbeeld nieuwsberichten zijn, weblog-posts of gepubliceerde video's.
 
-De [GeoRSS-specificatie](https://www.ogc.org/standards/georss) breidt feeds uit met elementen om de geografische eigenschappen van gegevens te publiceren. Dit is bijvoorbeeld een puntlocatie of bounding box van het gebied waar de gegevens betrekking op hebben.
+De <a href="https://www.ogc.org/standards/georss" target="_blank">GeoRSS-specificatie</a> breidt feeds uit met elementen om de geografische eigenschappen van gegevens te publiceren. Dit is bijvoorbeeld een puntlocatie of bounding box van het gebied waar de gegevens betrekking op hebben.
 
 Deze pagina beschrijft de eisen van INSPIRE aan Atom feeds en geeft enkele voorbeelden.
 
@@ -912,7 +909,7 @@ De Technical Guidance voor Download Services beschrijft hoe pre-defined datasets
 2. algemene gegevens over de downloadservice, zoals een id, locatie en de datum van laatste wijzigingen en copyrights en verwijzingen naar de Atom Dataset Feeds. Ook deze gegevens staan in de Atom Service feed.
 3. per dataset, of deel van een dataset: beschrijvende gegevens, zoals een titel, beknopte samenvatting, copyrights en andere rechten, het CRS, het geografisch gebied van de data en verwijzingen (URL) naar de data zelf. Deze gegevens staan in de *Atom Dataset feed(s)*;
 4. indien van toepassing: verwijzingen naar feeds in een andere taal (meertaligheid INSPIRE).
-5. verwijzingen naar [OpenSearch-functionaliteit](http://www.opensearch.org/) om de feeds te kunnen doorzoeken. Deze gegevens staan in de Atom Service feed;
+5. verwijzingen naar <a href="https://www.opensearch.org/" target="_blank">OpenSearch-functionaliteit</a> om de feeds te kunnen doorzoeken. Deze gegevens staan in de Atom Service feed;
 
 De afbeelding hieronder geeft de samenhang van de feeds weer voor pre-defined datasets, die als (statisch) bestand te downloaden zijn van een standaard webserver.
 
@@ -982,7 +979,7 @@ Dataset feeds bevatten de informatie om de bestanden daadwerkelijk te kunnen dow
 | rights | | | Nee | Informatie over de rechten en restricties die gelden voor de dataset feed. |
 | updated | | | Ja | Datum en tijd van de laatste wijzgingen van de feed |
 | author | | Contactinformatie over de dataset feed, met naam en emailadres | Ja | Gegevens voor contact over de datasets. Naam en emailadres zijn, op basis van de INSPIRE Metadata IR, minimaal vereist. Indien dit niet opgegeven is, geldt de informatie zoals opgegeven bij de rights van de gehele feed. |
-| link | | Spatial Object description, via een link met rel="describedby" en type="text/html", vindt verwijzing naar een (INSPIRE) Registry en/of een ander registry plaats | Ja | Een of meerdere elementen die aangeven welke Spatial Object Types die in de dataset zitten. De waardes hiervan komen uit de INSPIRE Registry in geval de data aan een Data specifictie voldoet, zie https://inspire.ec.europa.eu/featureconcept voor waardes (spatial object types). |
+| link | | Spatial Object description, via een link met rel="describedby" en type="text/html", vindt verwijzing naar een (INSPIRE) Registry en/of een ander registry plaats | Ja | Een of meerdere elementen die aangeven welke Spatial Object Types die in de dataset zitten. De waardes hiervan komen uit de INSPIRE Registry in geval de data aan een Data specifictie voldoet, zie <a href="https://inspire.ec.europa.eu/featureconcept" target="_blank">hier</a> voor waardes (spatial object types). |
 | link | Service feed | Soort link (rel="up"), Type link (type="application/atom+xml") | Nee | Link naar de Atom service feed ("omhoog" / terug verwijzing naar de service feed) |
 
 #### Elementen entry dataset feed
@@ -1011,7 +1008,9 @@ Om gebruik te maken van een OpenSearch Description, dienen de feeds en metadata 
 
 Bijvoorbeeld:
 
-https://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/ef2a7962-8bb4-483f-ac78-851b619f357f/OpenSearchDescription.xml
+
+<a href="https://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/ef2a7962-8bb4-483f-ac78-851b619f357f/OpenSearchDescription.xml" target="_blank">https://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/ef2a7962-8bb4-483f-ac78-851b619f357f/OpenSearchDescription.xml</a>
+
 
 Hierbij is **ef2a7962-8bb4-483f-ac78-851b619f357f** de metadataidentifier van de ATOM Download service
 
@@ -1032,8 +1031,9 @@ De Technical Guidance beschrijft in hoofdstuk 6 hoe een Download service voor Pr
 Het GetCapabilities request geeft een vergelijkbare Capabilities file op als bij de WMS, op enkele specifieke WMS onderdelen na. Het wordt daarom in deze paragraaf niet zo uitgebreid beschreven als in dat van de WMS.
 
 #### WFS 2.0
+<a href="PAD" target="_blank">hier</a>
 
-De OGC standaard voor [Web Feature Service 2.0 (WFS 2.0)](https://www.ogc.org/standards/wfs) is in samenwerking met ISO opgesteld. Bij ISO heet deze standaard formeel ISO 19142. WFS 2.0 specificeert een webservice-interface om geografische gegevens te bevragen. Een WFS geeft standaard GML terug (3.2 voor WFS 2.0). Voor het bevragen maakt WFS gebruik van filters. Voorbeelden van filters zijn: gegevens selecteren op basis van een bepaald gebied en/of bepaalde attribuutwaarden. Deze filters dienen conform de [Filter Encoding 2.0 (FE 2.0)](https://www.ogc.org/standards/filter) gecodeerd te zijn. Deze standaard is ook in samenwerking met ISO opgesteld en heet daar ISO 19143.
+De OGC standaard voor <a href="https://www.ogc.org/standards/wfs" target="_blank">Web Feature Service 2.0 (WFS 2.0)</a> is in samenwerking met ISO opgesteld. Bij ISO heet deze standaard formeel ISO 19142. WFS 2.0 specificeert een webservice-interface om geografische gegevens te bevragen. Een WFS geeft standaard GML terug (3.2 voor WFS 2.0). Voor het bevragen maakt WFS gebruik van filters. Voorbeelden van filters zijn: gegevens selecteren op basis van een bepaald gebied en/of bepaalde attribuutwaarden. Deze filters dienen conform de <a href="https://www.ogc.org/standards/filter" target="_blank">Filter Encoding 2.0 (FE 2.0)</a> gecodeerd te zijn. Deze standaard is ook in samenwerking met ISO opgesteld en heet daar ISO 19143.
 
 #### Conformance classes
 
