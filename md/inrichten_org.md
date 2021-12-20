@@ -29,7 +29,7 @@ Het doel van het INSPIRE aanmerkingsregister is meervoudig:
 - Via het aanmerkingsregister kan iedereen de voortgang van de INSPIRE implementatie volgen. 
 - Vanuit het aanmerkingsregister is er ook een directe link naar de publicatie van de metadata van betreffende dataset in het <a href="http://www.nationaalgeoregister.nl/" target="_blank">Nationaal GeoRegister (NGR)</a>. De dataset is daar dan ook te raadplegen.
 
-In het openbare gedeelte kan de bezoeker de <a href="https://inspireaanmerking.nl/aanmerkingsregister" target="_blank">aanmerkingen</a> bekijken en selecties maken op bijvoorbeeld dataprovider, thema en prioriteit. Ook kan de bezoeker een dataset <a href="https://inspireaanmerking.nl/aanmelden-dataset" target="_blank">aanmelden</a> als de bezoker een datasets mist in het overzicht of denkt dat een bepaalde dataset wel in aanmerking komt voor INSPIRE.
+In het openbare gedeelte kan de bezoeker de <a href="https://inspireaanmerking.nl/aanmerkingsregister" target="_blank">aanmerkingen</a> bekijken en selecties maken op bijvoorbeeld dataprovider, thema en prioriteit. Ook kan de bezoeker een dataset <a href="https://inspireaanmerking.nl/aanmelden-dataset" target="_blank">aanmelden</a> als de bezoeker een datasets mist in het overzicht of denkt dat een bepaalde dataset wel in aanmerking komt voor INSPIRE.
 
 Naast een openbare gedeelte heeft het aanmerkingregister ook een gesloten gedeelte voor de INSPIRE dataproviders. De gesloten omgeving voorziet in extra functionaliteit om het aanmerkings- en implementatieproces te ondersteunen. Binnen deze omgeving kunnen dataproviders per dataset:
 - de directe link naar de publicatie van de metadata van betreffende dataset in het NGR opnemen voor zowel de as-is als de geharmoniseerde dataset;
