@@ -83,21 +83,21 @@ In de onderstaande tabel staan de belangrijkste INSPIRE-documenten voor de datah
 
 |Titel | Versie | Datum | Opmerking |
 |-----------------|-------------|-------------|-------------|
-| [Dataspecificaties](https://inspire.ec.europa.eu/data-specifications/2892)  | 4.0  | 2017-04-01   | Dataspecificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
-| [GML Application schemas](https://inspire.ec.europa.eu/schemas/)  | 4.0  |    | GML applicatie schema's voor alle themas   |
-| [Codelijstregister](https://inspire.ec.europa.eu/data-specifications/2892)  |  |    | Bevat de codelijsten en hun waarden  |
-| [INSPIRE Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) (D2.5)  | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
+| <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">Dataspecificaties</a> | 4.0  | 2017-04-01   | Dataspecificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
+| <a href="https://inspire.ec.europa.eu/schemas/" target="_blank">GML Application schemas</a> | 4.0  |    | GML applicatie schema's voor alle themas   |
+| <a href="https://inspire.ec.europa.eu/codelist" target="_blank">Codelijstregister</a>  |  |    | Bevat de codelijsten en hun waarden  |
+| <a href="https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model" target="_blank">INSPIRE Generic Conceptual Model (D2.5)</a> | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
 
 Daarnaast zijn de onderstaande documenten ook handig bij dataharmonisatie:
 
 |Titel | Versie | Datum | Opmerking |
 |-----------------|-------------|-------------|-------------|
-| [INSPIRE datamodellen (UML)](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?) | 	r 4618   | 	2011-02-06  |Hier staan alle datamodellen uit de INSPIRE dataspecificaties overzichtelijk bij elkaar. De modellen die hier genoemd worden in IR's zijn definitief (*approved*). Dit geldt niet voor de *extended* delen (die zijn geen onderdeel van de IR's, maar wel van dataspecificaties) (*draft*)   |
-|[INSPIRE Base model - Generic Network Model](https://inspire.ec.europa.eu/documents/inspire-data-specifications-%E2%80%93-base-models-%E2%80%93-generic-network-model)|1.0rc3|2013-04-05|Algemeen basismodel voor netwerken zoals bijvoorbeeld vervoersnetwerken|
-|[Guidelines for the Encoding of Spatial Data](https://inspire.ec.europa.eu/documents/guidelines-encoding-spatial-data) (D2.7)  | 	3.3   | 2014-04-08   | -   |
-|[Richtlijnen voor het gebruik van "Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE"](https://inspire.ec.europa.eu/id/document/tg/d2.9-o%26m-swe)|3.0|2016-12-16|-|
-| [Definition of Annex Themes and Scope](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.3_Definition_of_Annex_Themes_and_scope_v3.0.pdf) (D2.3)  | 3.0  | 2008-10-03   | -   |
-|[Good Practices](https://inspire.ec.europa.eu/portfolio/good-practice-library)|||Hier worden voorbeelden uit de praktijk genoemd|
+| <a href="https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?" target="_blank">INSPIRE datamodellen (UML)</a> | r 4618  | 2011-02-06  |Hier staan alle datamodellen uit de INSPIRE dataspecificaties overzichtelijk bij elkaar. De modellen die hier genoemd worden in IR's zijn definitief (*approved*). Dit geldt niet voor de *extended* delen (die zijn geen onderdeel van de IR's, maar wel van dataspecificaties) (*draft*)   |
+|<a href="https://inspire.ec.europa.eu/documents/inspire-data-specifications-%E2%80%93-base-models-%E2%80%93-generic-network-model" target="_blank">INSPIRE Base model - Generic Network Model</a> |1.0rc3|2013-04-05|Algemeen basismodel voor netwerken zoals bijvoorbeeld vervoersnetwerken|
+|<a href="https://inspire.ec.europa.eu/documents/guidelines-encoding-spatial-data" target="_blank">Guidelines for the Encoding of Spatial Data (D2.7)</a>  | 3.3  | 2014-04-08   | Het document beschrijft de algemene encoding richtlijnen voor INSPIRE  |
+<a href="https://inspire.ec.europa.eu/id/document/tg/d2.9-o%26m-swe" target="_blank">Guidelines for the use of Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE</a>| 3.0|2016-12-16|Richtlijnen voor het gebruik van "Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE"|
+| <a href="https://inspire.ec.europa.eu/theme" target="_blank">Definition of Annex Themes and Scope</a>  |   |    | In het INSPIRE thema register staan per INSPIRE thema de definitie (in Nederlands) en een uitgebreidere beschrijving  |
+|<a href="https://inspire.ec.europa.eu/portfolio/good-practice-library" target="_blank">Good Practice Library</a>|||Hier worden good practises beschreven m.b.t. de implementatie van INSPIRE, m.b.t. tools en technieken die nuttig zijn voor de implementatie van INSPIRE of m.b.t. technologieën die voortbouwen op INSPIRE|
 
 ### Generic Conceptual Model
 Om data consistent te kunnen uitwisselen beschrijft INSPIRE in de INSPIRE dataspecificaties voor elk thema een datamodel van de gegevens die uitgewisseld moeten worden. Daarnaast beschrijft het ook een bestandsformaat waarin de gegevens moeten worden uitgewisseld. Algemene specificaties (die voor alle thema's hetzelfde zijn) worden beschreven in het <a href="https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model" target="_blank">Generic Conceptual Model (GCM)</a>. Een INSPIRE dataspecificatie moet dus altijd gelezen worden in de context van dit generieke conceptuele model.
@@ -107,7 +107,7 @@ Voor alle 34 INSPIRE-thema's is door de EU een INSPIRE dataspecificatie vastgele
 
 De INSPIRE dataspecificaties zijn per annex gegroepeerd:
 
-|INSPIRE thema per annex| |
+|INSPIRE thema's per annex| |
 | ----------- | ----------- |
 |**Annex I** ||
 |Coordinate Reference Systems | Geographical Grid Systems|
@@ -147,7 +147,7 @@ Het harmoniseren naar INSPIRE dataspecificaties, kent grofweg twee fasen:
 1. **Semantisch harmoniseren**: hoe vallen de begrippen en concepten in het informatiemodel van de dataprovider te vertalen naar de klasses en definities zoals beschreven in de INSPIRE dataspecificatie.
 2. **Technisch harmoniseren**: het converteren van het bestaande dataformaat naar het uitwisselformaat GML.
 
-Dit is vooral een schematische indeling. In het werkproces zullen (1) en (2) bij veel dataproviders in één slag plaatsvinden. Onder het harmoniseren vallen ook aspecten als het zorg dragen voor valide geometrieën en *cross-boundary harmonisation*. Meer informatie over deze aspecten vind je op de wikipagina [geometrie](#geometrie).
+Dit is vooral een schematische indeling. In het werkproces zullen (1) en (2) bij veel dataproviders in één slag plaatsvinden. Onder het harmoniseren vallen ook aspecten als het zorg dragen voor valide geometrieën en *cross-boundary harmonisation*. Meer informatie over deze aspecten staat beschreven bij het onderdeel [geometrie](#geometrie).
 
 ### Semantisch harmoniseren
 Het semantisch harmoniseren is vooral een kwestie van het vertalen van definities van de dataprovider naar de definities van INSPIRE. Dit is typisch werk voor een domeinexpert van de dataprovider die de definities in de betreffende dataspecificaties interpreteert en bedenkt hoe de eigen gegevens in dit model in te passen zijn. In veel gevallen zal het lastig zijn voor een domeinexpert om de technische INSPIRE-documentatie te doorgronden.
@@ -155,32 +155,34 @@ Het semantisch harmoniseren is vooral een kwestie van het vertalen van definitie
 ### Technisch harmoniseren
 Voor het technisch harmoniseren zijn er verschillende mogelijkheden:
 1. Harmonisatie op niveau van ruimtelijke databases.
-2. Ruimtelijke ETL-processen met behulp van specifieke ETL-software (die met ruimtelijke data overweg kan).
+2. Ruimtelijke ETL-processen (*Spatial ETL*) met behulp van specifieke ETL-software (die met ruimtelijke data overweg kan).
 3. ‘On the fly’ harmoniseren en converteren.
 
 #### Ruimtelijke database
-Eén manier om data te harmoniseren is om op database-niveau scripts te ontwikkelen, die de datastructuur van de voor INSPIRE opgevoerde data, converteren naar de vorm en inhoud die conform het INSPIRE-applicatieschema is. Dit kan met behulp van SQL en de procedurele taal die de database hanteert. De procedurele taal is afhankelijk van de database; elke fabrikant kent zijn eigen variant. Hiervoor is specialistische kennis van een database-specialist nodig, die (a) met ruimtelijke databases overweg kan, en (b) *Data Definition Language* (DDL)-scripts kan ontwikkelen.
+Eén manier om data te harmoniseren is om op database-niveau scripts te ontwikkelen, die de datastructuur van de voor INSPIRE aangemerkte data, converteren naar de vorm en inhoud die conform het INSPIRE-applicatieschema is. Dit kan met behulp van SQL en de procedurele taal die de database hanteert. De procedurele taal is afhankelijk van de database; elke fabrikant kent zijn eigen variant. Hiervoor is specialistische kennis van een database-specialist nodig, die (a) met ruimtelijke databases overweg kan, en (b) *Data Definition Language* (DDL)-scripts kan ontwikkelen.
 
-#### Spatial ETL
-Ruimtelijke ETL-processen met behulp van specifieke ETL-software, ook vaak *Spatial ETL* of *spatial data exchange* genoemd. ETL staat voor Extract, Transform en Load. Hiermee worden technieken bedoeld die ruimtelijke data kunnen converteren.
-- **Extract** inlezen van het bronformaat.
-- **Transform** het aanpassen van de datastructuur.
-- **Load** het wegschrijven (wellicht naar een ander formaat).
+#### Ruimtelijke ETL-processen
+Ruimtelijke ETL-processen met behulp van specifieke ETL-software wordt ook vaak *Spatial ETL* of *spatial data exchange* genoemd. ETL staat voor Extract, Transform en Load. Hiermee worden technieken bedoeld, die ruimtelijke data kunnen converteren.
+- **Extract**: inlezen van het bronformaat;
+- **Transform**: het aanpassen van de datastructuur;
+- **Load**: het wegschrijven (en wellicht naar een ander formaat).
 
-Bij het harmoniseren van de data in het kader van INSPIRE is het vooral de ‘T’ (Transform) die van belang is. In dit proces vinden wijzigingen plaats in de data-structuur: het wijzigen van attribuutnamen, weghalen van attributen, wijzigen van datatypen, gebruik van domeinwaarden (codelijsten), geometrie-validaties, etc.
+Bij het harmoniseren van de data in het kader van INSPIRE is het vooral de ‘T’ (van Transform) die van belang is. In dit proces vinden wijzigingen plaats in de data-structuur zoals het wijzigen van attribuutnamen, weghalen van attributen, wijzigen van datatypen, gebruik van domeinwaarden (codelijsten) of geometrie-validaties.
 
-Het is ook nuttig te wijzen op de markt die de INSPIRE-richtlijn indirect creëert. Er zijn verschillende bedrijven die software bouwen die specifiek gericht is op dataproviders die data leveren voor INSPIRE-thema’s. Op deze manier voldoen zij aan een groeiende behoefte die ontstaat uit nieuwe wetgeving en standaarden. Een aantal populaire ETL software tools zijn:
-- [FME](https://www.safe.com/);
-- [HALE](https://www.wetransform.to/products/halestudio/); Een beknopte handleiding, gemaakt door RVO, is [hier te vinden](https://github.com/Geonovum/inspire-wiki/blob/main/docs/Handleiding_Gebruik_HALE_voor_INSPIRE_dataharmonisatie_120618.pdf).
-- [Talend](https://www.talend.com/resources/what-is-etl/);
-- [MapForce](https://www.altova.com/mapforce);
-- [GO Publisher](https://snowflakesoftware.com/geospatial-products/);
-- [ArcGIS Pro](https://desktop.arcgis.com/en/arcmap/latest/extensions/data-interoperability/spatial-etl-tools.htm);
 
 ![etlplaatje](media/Etl.gif "ETL-stappen te nemen voor INSPIRE")
 
-#### On the fly converteren
-Bovenstaande principes zijn gericht op het klaarzetten van data alvorens ze te ontsluiten (ook wel *pre-defined*). Dat hoeft niet in alle gevallen. Het is ook mogelijk om data *on the fly* te converteren. Let er echter op dat dit voor grote datasets geen bruikbare toepassing is omdat de performance van de service teveel te wensen over zal laten. Waar deze grens ligt en bij welke dataset-grootte het breekpunt tussen ‘on the fly’ en ‘pre-defined’ ligt, is alleen op basis van testresultaten vast te stellen. Houd hierbij rekening met de gestelde eisen aan de [kwaliteit van de performance](#quality-of-services).
+Er zijn verschillende bedrijven die ETL software bouwen die specifiek gericht is op de INSPIRE dataproviders. Een aantal populaire ETL software tools zijn:
+- <a href="https://www.safe.com/" target="_blank">FME</a>;
+- <a href="https://www.wetransform.to/products/halestudio/" target="_blank">HALE</a>; RVO heeft voor het gebruik van HALE een beknopte <a href="https://github.com/Geonovum/inspire-wiki/blob/main/docs/Handleiding_Gebruik_HALE_voor_INSPIRE_dataharmonisatie_120618.pdf" target="_blank">handleiding</a> geschreven;
+- <a href="https://www.talend.com/resources/what-is-etl/" target="_blank">Talend</a>;
+- <a href="https://www.altova.com/mapforce" target="_blank">MapForce</a>;
+- <a href="https://snowflakesoftware.com/geospatial-products/" target="_blank">GO Publisher</a>;
+- <a href="https://desktop.arcgis.com/en/arcmap/latest/extensions/data-interoperability/spatial-etl-tools.htm" target="_blank">ArcGIS Pro</a>.
+
+
+#### On the fly harmoniseren en converteren
+Bovenstaande principes zijn gericht op het klaarzetten van data alvorens ze te ontsluiten (ook wel *pre-defined*). Dat hoeft niet in alle gevallen. Het is ook mogelijk om data *on the fly* te harmoniseren en converteren. Voor grote datasets is dit echter geen bruikbare toepassing, omdat de performance van de service niet geheel zal voldoen. Waar deze grens ligt en bij welke dataset-grootte het breekpunt tussen ‘on the fly’ en ‘pre-defined’ ligt, is alleen op basis van testresultaten vast te stellen. Houd bij het maken van deze keuze ook rekening met de gestelde eisen aan de kwaliteit van de performance, de zogenaamde [*quality of service*](#quality-of-services).
 
 ### Welke optie toepassen?
 Dit hangt van een aantal organisatie-gebonden factoren af:
@@ -189,94 +191,92 @@ Dit hangt van een aantal organisatie-gebonden factoren af:
 - Aanwezige software
 - Beschikbare tijd
 
-De belangrijkste factor is de kennis die binnen een organisatie aanwezig is. Zijn er binnen de organisatie database-specialisten aanwezig, die verstand hebben van ruimtelijke databases? Zijn er GIS-expers die al vaker met ETL tools werken? Dit betekent dus ook dat er wellicht gekozen moet worden voor uitbesteding.
-
-De ‘spin-off’ van het zelf opdoen van kennis is een zijdelingse overweging die bij de keuze van harmonisatie-principe van belang kan zijn. Voor INSPIRE-gerichte harmonisaties is veel kennis nodig. Deze kennis kan voor andere GEO-ICT projecten ook van praktisch belang zijn, bijvoorbeeld omdat het de kennis van een tool verhoogt. Dit kan een overweging zijn om een kennis-domein te versterken en hierin te investeren.
+De belangrijkste factor is de kennis die binnen een organisatie aanwezig is. Zijn er binnen de organisatie database-specialisten aanwezig, die verstand hebben van ruimtelijke databases? Of zijn er GIS-expers die al vaker met ETL software tools hebben gewerkt? Dit kan ook betekenen dat er wellicht gekozen moet worden voor uitbesteding. De ‘spin-off’ van het zelf opdoen van kennis is een zijdelingse overweging die bij de keuze van harmonisatie-principe van belang kan zijn. Voor INSPIRE-gerichte harmonisaties is veel kennis nodig. Deze kennis kan voor andere GEO-ICT projecten ook van praktisch belang zijn, bijvoorbeeld omdat het de kennis van een tool verhoogt. Dit kan een overweging zijn om een kennis-domein te versterken en hierin te investeren.
 
 
-## INSPIRE-ID
-Volgens de richtlijnen van INSPIRE moet elk object (feature) voorzien worden van een unieke identificatie: het InspireId. Zo kunnen derden ondubbelzinnig aan het object refereren. Dataproviders dienen dus – buiten eventuele eigen ID’s die de organisatie gebruikt – de ruimtelijke objecten van een unieke INSPIRE identificatie te voorzien. Belangrijk hierbij is, dat de identifier **uniek** en **persistent** moet zijn. Persistent betekent dat de identifier gedurende de levensduur van het object ongewijzigd moet blijven. Een InspireId bestaat uit de volgende onderdelen:
-- Namespace (verplicht)
-- LocalId (verplicht)
-- VersionId (optioneel)
+## Het InspireId
+Volgens de richtlijnen van INSPIRE moet elk object (*feature*) voorzien worden van een unieke identificatie: het InspireId. Zo kunnen derden ondubbelzinnig aan het object refereren. Dataproviders dienen dus – buiten eventuele eigen Id’s (die in de eigen organisatie wordt gebruikt) – de ruimtelijke objecten van een unieke INSPIRE identificatie te voorzien. Belangrijk hierbij is, dat de identifier **uniek** en **persistent** moet zijn. Persistent betekent dat de identifier gedurende de levensduur van het object ongewijzigd moet blijven. 
 
-### Namespaces
-Een namespace heeft als belangrijkste doel dat het de ruimte definieert waarbinnen de localId uniek is. Om te voorkomen dat verschillende dataproviders dezelfde namespace gebruiken, en om consistentie te verkrijgen, is er in Nederland (en Europa) een zogenaamd Namespaceregister opgezet. Namespaces in Nederland moeten worden geregistreerd in het [nationale namespaceregister](http://inspirelab.geonovum.nl/namespaces/). Let op: omdat dit nog een http i.p.v. een https adres is, kan het zijn dat deze link niet werkt in elke browser. In Chrome helpt het om de geschiedenis te verwijderen.
+Een InspireId bestaat uit de volgende onderdelen:
+- Namespace (verplicht);
+- LocalId (verplicht);
+- VersionId (optioneel).
 
-### Namespaceregister
-Het namespaceregister bevat een lijst van reeds geregistreerde namespaces door Nederlandse INSPIRE dataproviders.
+### Namespace
+Een namespace heeft als belangrijkste doel dat het de ruimte definieert waarbinnen de [localId](#LocalId) uniek is. Om te voorkomen dat verschillende dataproviders dezelfde namespace gebruiken, en om consistentie te verkrijgen, is er in Nederland (en Europa) een zogenaamd Namespaceregister opgezet. De namespace wordt per **dataset** ingericht. De namespace is onderdeel van het InspireId en moet derhalve ook in de data voorkomen.
 
-Voor het registreren van namespaces is een account nodig. Geonovum verstrekt deze accounts. Voor registratie, neem contact op met Geonovum via inspire@geonovum.nl.
+De Nederlandse namespaces worden geregistreerd in het Nederlandse INSPIRE Namespaceregister.
 
-Na het [inloggen](http://inspirelab.geonovum.nl/namespaces/login.php) kunt u voor uw gegevensbron een nieuwe namespace registreren.
+#### INSPIRE Namespaceregister
+Het INSPIRE Namespaceregister is <a href="http://inspirelab.geonovum.nl/namespaces/" target="_blank">hier</a> te vinden. 
 
-Kijk hier voor een overzicht van de [huidige geregistreerde namespaces](http://inspirelab.geonovum.nl/namespaces/listnamespaces.php).
+Let op! Het betreft een http-adres (i.p.v. een https-adres). Soms kan het zo zijn dat de browser niet goed het http-adres verwerkt en het register daardoor niet opent. Het kan soms helpen om de browsegegevens te wissen.
 
-De namespace wordt per **dataset** ingericht. De namespace is onderdeel van het INSPIRE ID en moet derhalve ook in de data voorkomen.
+Het INSPIRE Namespaceregister bevat het <a href="http://inspirelab.geonovum.nl/namespaces/listnamespaces.php" target="_blank">overzicht</a> van reeds geregistreerde namespaces door Nederlandse INSPIRE dataproviders. 
+
+Voor het registreren van namespaces is een account nodig. Deze accounts zijn aan te vragen via de [INSPIRE Helpdesk](#inspire-helpdesk) door een e-mail te sturen naar inspire@geonovum.nl. Na <a href="http://inspirelab.geonovum.nl/namespaces/login.php" target="_blank">inloggen</a> kunt u voor uw gegevensbron een nieuwe namespace registreren.
+
 
 #### Richtlijnen voor namespaces
-De volgende lexicografische spelregels (restricties) gelden voor de INSPIRE namespace:
-<aside class="note">
-	
-- Gebruik alleen de volgende karakters in de namespace code: {"a"-"z","0"-"9", "-"}.
-- Gebruik alleen lowercase letters in de namespace code.
-- Gebruik geen diacrieten in de namespace code, dus geen umlaut bijvoorbeeld.
-- Begin namespace code met een letter.
+voor de INSPIRE namespaces gelden de volgende lexicografische spelregels (restricties):
+- Gebruik alleen de volgende karakters in de namespace code: {"a"-"z","0"-"9", "-"};
+- Gebruik alleen lowercase letters in de namespace code;
+- Gebruik geen diacrieten in de namespace code, dus geen umlaut bijvoorbeeld;
+- Begin namespace code met een letter;
 - Gebruik minimaal 3 karakters. Lange namespace codes zijn niet wenselijk.
-</aside>
+
 
 ### LocalId
-De LocalId is de unieke identifier voor een object (binnen een namespace). De dataprovider is verantwoordelijk voor het uitdelen van unieke identifiers (de localId). In hoofdstuk 14 ('Identifier management') van het [Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model) wordt algemene uitleg gegeven over het gebruik van unieke identifiers. Per thema kunnen er nog specifieke uitbreidingen staan in de dataspecificatie van dat thema.
+De LocalId is de unieke identifier voor een object (binnen een namespace). De dataprovider is verantwoordelijk voor het uitdelen van deze unieke identifiers (de localId). In het [Generic Conceptual Model](#generic-conceptual-model) staat in hoofdstuk 14 'Identifier management'een algemene uitleg beschreven over het gebruik van unieke identifiers. Per INSPIRE thema kunnen er nog specifieke uitbreidingen staan in de [INSPIRE dataspecificatie](#inspire-dataspecificaties) van het betreffende thema.
 
-#### Uniform Resource Identifiers
-Uniform Resource Identifiers (URI's) zijn de gestandaardiseerde manier om op het internet objecten (bv. pagina's met informatie, datasets of afbeeldingen) uniek te identificeren. Dit kan door middel van een Uniform Resource Name (URN) of met een Uniform Resource Locator (URL). Bij een URN krijgt een object een unieke naam toebedeeld. Bij een URL krijgt een object een adres waarmee het op internet kan worden gevonden (de ons welbekende website-adressen). Door URI's te gebruiken, kun je op een unieke manier naar een object verwijzen en ze daardoor uniek onderscheiden. Het advies met de huidige stand van zaken is om stabiele HTTPS URI’s te gebruiken voor geo-objecten en datasets. Binnen INSPIRE en NEN3610 is afgesproken om elk object op basis van de bestaande interne identifier een URI te geven, waarmee binnen de INSPIRE en NEN3610 context het object uniek te identificeren én op te vragen is. [Lees hier ook de aanzet tot een nationale URI-strategie](https://www.geonovum.nl/themas/uri-strategie).
+#### Uniform Resource Identifiers (URI's)
+Uniform Resource Identifiers (URI's) zijn de gestandaardiseerde manier om op het internet objecten (bv. pagina's met informatie, datasets of afbeeldingen) uniek te identificeren. Dit kan door middel van een *Uniform Resource Name* (URN) of met een *Uniform Resource Locator* (URL). Bij een *Uniform Resource Name* (URN) krijgt een object een unieke naam toebedeeld. Bij een *Uniform Resource Locator* (URL) krijgt een object een adres waarmee het op internet kan worden gevonden (de ons welbekende website-adressen). 
+
+Door URI's te gebruiken, kun je op een unieke manier naar een object verwijzen en ze daardoor uniek onderscheiden. Het advies met de huidige stand van zaken is om stabiele versleutelde HTTPS URI’s te gebruiken voor geo-objecten en datasets. Binnen INSPIRE en <a href="https://www.geonovum.nl/geo-standaarden/nen-3610-basismodel-voor-informatiemodellen" target="_blank">NEN3610 (Basismodel Geo-informatie)</a> is afgesproken om elk object op basis van de bestaande interne identifier een URI te geven, waarmee binnen de INSPIRE en NEN3610 context het object uniek te identificeren én op te vragen is. Lees voor meer informatie hierover de <a href="https://www.geonovum.nl/themas/uri-strategie" target="_blank">nationale URI-strategie</a>.
 
 ### VersionId
 Een InspireId kan ook een (optioneel) versionId hebben. Dit versienummer kan gebruikt worden als er van hetzelfde object op verschillende tijdstippen verschillende versies in omloop zijn die van elkaar onderscheiden moeten worden.
 
 ## Codelijsten
-INSPIRE-data wordt mede aan de hand van codelijsten en opsommingen (*enumerations*) geharmoniseerd. Beide worden gebruik om een lijstje toegestane waarden voor een attribuut te bepalen. In het geval van een enumeration zijn de toegestane waarden bekend vanaf het moment dat het model gemaakt is; de waarden maken deel uit van het model. Meestal gaat het om kleine lijstjes waar geen discussie over mogelijk is. Bij codelijsten zijn de toegestane waarden nog niet (allemaal) bekend op het moment dat het model gemaakt wordt; de toegestane waarden worden op een andere manier bepaald. Er zijn een verschillende regimes waarmee de waarden van een codelijst beheerd kunnen worden. Een uitgebreide beschrijving hiervaan staat in paragraaf 9.5.2.2 (*The code list classifiers*) van het [Generic Conceptual Model](https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model). Codelijsten voor specifieke thema's staan in Annex C van de betreffende dataspecificatie. Voor sommige thema's is het verplicht om gebruik te maken van deze codelijsten. De codelijsten staan ook in het Europese of Nederlandse [codelijstregister](#Codelijstregister).
+INSPIRE-data wordt mede aan de hand van codelijsten en opsommingen (*enumerations*) geharmoniseerd. Beide worden gebruik om een lijstje toegestane waarden voor een attribuut te bepalen. In het geval van een enumeration zijn de toegestane waarden bekend vanaf het moment dat het model gemaakt is; de waarden maken deel uit van het model. Meestal gaat het om kleine lijstjes waar geen discussie over mogelijk is. Bij codelijsten zijn de toegestane waarden nog niet (allemaal) bekend op het moment dat het model gemaakt wordt; de toegestane waarden worden op een andere manier bepaald. Er zijn een verschillende regimes waarmee de waarden van een codelijst beheerd kunnen worden. Een uitgebreide beschrijving hiervan staat in paragraaf 9.5.2.2 *The code list classifiers* van het [Generic Conceptual Model](#generic-conceptual-model). Codelijsten voor de INSPIRE thema's staan in het Europese of Nederlandse [codelijstregister](#Codelijstregister) en in Annex C van de betreffende [INSPIRE dataspecificatie](#inspire-dataspecificaties). Voor sommige thema's is het verplicht om gebruik te maken van deze codelijsten. 
 
 ### Uitbreidbaarheid van codelijsten
 Iedere INSPIRE-codelijst valt onder een van de volgende uitbreidingsregimes:
-- **none**: deze codelijsten zijn niet uitbreidbaar. Alleen waarden zoals beschreven in de Implementing Rule kunnen worden gebruikt.
-- **narrower**: bij deze codelijsten mogen de data providers zelf nieuwe waarden toevoegen, zolang de nieuwe waarden maar meer specifiek zijn dan de waarden die in de IR worden gegeven.
+- **none**: deze codelijsten zijn niet uitbreidbaar. Alleen waarden zoals beschreven in de *Implementing Rule* (IR) kunnen worden gebruikt.
+- **narrower**: bij deze codelijsten mogen de dataproviders zelf nieuwe waarden toevoegen, zolang de nieuwe waarden maar meer specifiek zijn dan de waarden die in de IR worden gegeven.
 - **open**: een dataprovider mag waarden uit de centrale codelist gebruiken, maar mag zelf ook eigen waarden bedenken.
 - **any**: in dit geval zijn geen waarden bekend in de centrale codelijst en moet de data provider zijn eigen codelijst publiceren.
 
 ### Codelijstregister
-Er is een centraal Europees codelijstregister waarin de waarden van de door de EU beheerde codelijsten gepubliceerd worden. Bij een codelijst is altijd een verwijzing opgenomen naar dit [*codelist register*](http://inspire.ec.europa.eu/codelist/). Wanneer een dataprovider zijn eigen uitbreiding op een codelist definieert, moeten deze in een lokaal codelist register beheerd worden.
-Daarnaast is er een [Nederlands codelijstregister](http://inspireregister.nl/codelijst).
-Voor het registreren van codelijsten op het nederlandse codelijstregister is een account nodig. Geonovum verstrekt deze accounts. Voor registratie, neem contact op met Geonovum via INSPIRE@geonovum.nl.
-Na het [inloggen](http://inspireregister.nl:8080/re3gistry2/login) met dit account kunt u voor uw gegevensbron een nieuwe codelijst registreren en vullen.
-De handleiding voor dit register is [hier](https://github.com/ec-jrc/re3gistry/blob/master/documentation/user-manual.md) te vinden.
+In het  <a href="http://inspire.ec.europa.eu/codelist/" target="_blank">Europese INSPIRE codelijstregister</a> worden de waarden van de door de EU beheerde codelijsten gepubliceerd. Bij een codelijst is altijd een verwijzing opgenomen naar dit Europese INSPIRE codelijstregister. 
+
+Wanneer een dataprovider zijn eigen uitbreiding op een codelist definieert, moeten deze in een lokaal codelijstregister beheerd worden. Hiervoor kan het <a href="http://inspireregister.nl/codelijst" target="_blank">INSPIRE codelijstregister voor Nederland</a> worden gebruikt. Voor het registreren van codelijsten op het Nederlandse codelijstregister is een account nodig. Deze accounts zijn aan te vragen via de [INSPIRE Helpdesk](#inspire-helpdesk) door een e-mail te sturen naar inspire@geonovum.nl. Na <a href="http://inspireregister.nl:8080/re3gistry2/login" target="_blank">inloggen</a> kunt u voor uw gegevensbron een nieuwe codelijst registreren en vullen. Een Engelstalige handleiding voor het gebruik van het codelijstregister is <a href="https://github.com/ec-jrc/re3gistry/blob/master/documentation/user-manual.md" target="_blank">hier</a> te vinden.
 
 ## Portrayal
-Het *portrayal*-hoofdstuk van een dataspecificatie (meestal in hoofdstuk 11) betreft voornamelijk de grafische weergave van de data in een viewservice, maar kan ook in GIS-applicaties gebruikt worden. Deze weergave is gedefinieerd op  basis van de dataspecificatie en kan dus pas ingesteld worden conform de dataspecificatie nadat er geharmoniseerd is.
+*Portrayal* betreft voornamelijk de grafische weergave van de data in een [viewservice](#view-service), maar kan ook in GIS-applicaties gebruikt worden. De portayal wordt beschreven in de [INSPIRE dataspecificatie](#inspire-dataspecificaties), meestal, in hoofdstuk 11 en is dus per INSPIRE thema verschillend. De portrayal conform de INSPIRE dataspecificatie kan dus pas ingesteld worden in een viewservice nadat er geharmoniseerd is. Deze portrayal-richtlijnen in de INSPIRE dataspecificaties zijn opgesteld om  consistentie in de INSPIRE datasets te brengen en ze over de verschillende lidstaten ‘leesbaar’ te houden in de viewservice; het gaat niet om het maken van ‘mooie kaarten’ maar om het leesbaar houden van de data.
 
-Het *portrayal*-hoofdstuk bestaat uit de volgende onderdelen:
-
-- **Layer types**: De INSPIRE *view services* kennen een specifieke, thema-afhankelijke opbouw. Soms wordt een thema in één layer getoond, maar dat is niet altijd het geval. De paragraaf layer types geeft de definitie van de layeropbouw voor de viewservice van het betreffende thema. In deze paragraaf wordt hetvolgende van de viewservice bepaald:
+Portrayal beschreven in INSPIRE dataspecificatie bestaat uit de volgende onderdelen:
+- **Layer types**: De INSPIRE *view services* kennen een specifieke, thema-afhankelijke opbouw. Soms wordt een INSPIRE thema in één layer getoond, maar dat is niet altijd het geval. De paragraaf *Layers to be provided by INSPIRE view services* geeft de definitie van de layer-opbouw voor de viewservice van het betreffende INSPIRE thema. In deze paragraaf wordt het volgende van de viewservice bepaald:
 	- Layer name
 	- Layer title
-	- Spatial Object Type
+	- Spatial Object Type(s)
 	- Keywords
-- **Layer Styles**: presentatie van de view layers. Kleuren, lijndikte, symbolen, presentatie-regels m.b.t. tot bepaalde groepen objecten, etc. De dataspecificaties van INSPIRE leveren voor default styles ook met SLD-code. Dat geldt ook voor de Other styles, maar deze worden niet bij elk thema geimplementeerd.
-- **Layer organisation**: layer aggregation binnen een thema door groepering van layers (layergroups)
-- **Symbols**: Beschrijving van de te gebuiken symbolen.
+- **Layer organisation**: In de subparagraaf *Layers organisation* kan een bepaalde layer aggregation binnen een INSPIRE thema worden aangegeven door een groepering van bepaalde layers (*layergroups*).
+- **Layer Styles**: De paragraaf *Styles required to be supported by INSPIRE view services* beschrijft de presentatie van de view layers. Kleuren, lijndikte, symbolen, presentatie-regels m.b.t. tot bepaalde groepen objecten worden in deze parafraaf beschreven. De INSPIRE dataspecificaties beschrijven in de paragraaaf voor de *default style(s)* ook de SLD-code. Dat geldt ook voor de *Other styles*, maar deze worden niet bij elk INSPIRE thema geimplementeerd.
+- **Symbology**: Beschrijft de te gebuiken symbolen.
 
-De INSPIRE-richtlijn zelf dicteert niets over de presentatie van de ruimtelijke data. Om toch consistentie in de datasets te brengen en ze over de verschillende lidstaten ‘leesbaar’ te houden in de viewservice, worden er basale regels in de dataspecificaties gegeven. De portrayal-richtlijnen gaan uit van een enkel thema tegelijk; het gaat dus niet om het maken van ‘mooie kaarten’ maar om het leesbaar houden van de data.
-
-De standaarden voor de presentatie van data:
-- [standaard] - [namespace prefix]
-- OGC Styled-Layer Descriptor - sld="http://www.opengis.net/sld" (WMS/SLD 1.1)
-- OGC Symbology Standards - se="http://www.opengis.net/se" (SE 1.1)
-- OGC Filter Encoding Standards - ogc="http://www.opengis.net/ogc" (FE 1.1)
-
-Indien de dataspecificatie geen default style aanbiedt, definieert het Generic Conceptual Model de style:
+Indien de [INSPIRE dataspecificatie](#inspire-dataspecificaties) geen default style aanbiedt, definieert het [Generic Conceptual Model](#generic-conceptual-model) de style in de viewservice:
 - Punt: grey square, 6 px;
-- Lijn/Arc: zwarte solid lijn, 1 px;
+- Lijn: zwarte solid lijn, 1 px;
 - Vlak: zwarte solid lijn, 1px, grijs gevuld.
+
+De standaarden voor de presentatie van data zijn:
+- [standaard] - [namespace prefix]
+- OGC Styled-Layer Descriptor - <a href="http://www.opengis.net/sld" target="_blank">sld</a> (WMS/SLD 1.1)
+- OGC Symbology Standards - <a href="http://www.opengis.net/se" target="_blank">se</a> (SE 1.1)
+- OGC Filter Encoding Standards - <a href="http://www.opengis.net/ogc" target="_blank">ogc</a> (FE 1.1)
+
+
 
 ## Data capture
 Met *data capture rules* worden INSPIRE-afspraken/regels omtrent de toepassingsschaal bedoeld. Voor sommige datasets is het nodig om resoluties te specificeren, met  gevolgen voor het detailniveau van de digitale kaart. Een dataset van een schaal van 1:1000.000 kent andere details dan dezelfde dataset met een schaal van 1:10.000. De capturing rules worden per thema gedefinieerd. Sommige thema’s hebben geen specifieke regels, terwijl anderen zeer specifiek zijn. Voor de specifieke afspraken wordt naar de data specificatie van het betreffende thema verwezen (meestal hoofdstuk 10).
