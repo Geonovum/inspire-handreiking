@@ -2,22 +2,23 @@
 
 Datasets die voor INSPIRE zijn aangemerkt, worden van een beschrijving (metadata) voorzien, zodat zij door anderen te vinden en te gebruiken is. Deze metadata moet voldoen aan de INSPIRE vereisten, zodat daarmee alle data in Europa op dezelfde manier beschreven is, bijvoorbeeld door eenduidige gebruiksvoorwaarden. Dit maakt het onder andere mogelijk om de metadata op bepaalde trefwoorden te doorzoeken en te gebruiken. In volgende paragrafen wordt aangegeven hoe er aan deze vereisten kan worden voldaan.
 
-## INSPIRE-metadata in het Nationaal Georegister
-Metadata van INSPIRE datasets, wordt gepubliseerd in het Nationaal Georegister ([NGR](https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home)). In het figuur hieronder zie je een screenshot van het Nationaal Georegister (NGR), dat voor INSPIRE-metadata dienst doet als *discovery service*. Het NGR wordt echter niet alleen met INSPIRE-conforme metadata gevuld; ook andere metadata kan toegevoegd worden. INSPIRE-metadata kan gevonden worden door in het tabblad 'Zoeken' te filteren op de Categorie 'Inspire'.
-
-![NGR met categorie INSPIRE ](media/NGR-categorie-INSPIRE.png "Gebruik in het NGR het filter 'Inspire' om alle beschikbare INSPIRE-compliant datasets te vinden.")
-
-## Metadata aanmaken
+## Metadata aanmaken en publiceren
 Metadata dient ter beschikking worden gesteld voor:
 - Datasets en dataset series
 - Services (o.a. View en Download Services).
 
-In de meeste gevallen zal de dataprovider metadata aanmaken als onderdeel van beheer en publicatie van data en services. De dataprovider heeft daarbij ook de verantwoordelijkheid dat deze metadatabestanden (XML-bestanden) voldoen aan de INSPIRE-richtlijnen. De metadata wordt vervolgens in het Nationaal Georegister (NGR) gepubliceerd door; 
+In de meeste gevallen zal de dataprovider metadata aanmaken als onderdeel van beheer van data en services. De dataprovider heeft daarbij ook de verantwoordelijkheid dat deze metadatabestanden (XML-bestanden) voldoen aan de INSPIRE-richtlijnen. 
+De metadata wordt vervolgens in het Nationaal Georegister ([NGR](https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home)) gepubliceerd door; 
 - Het uploaden van XML-metadatabestanden
 - Harvesting vanuit een eigen metadatacatalogus
 - Het aanmaken en publiceren van metadata rechtstreeks in het Nationaal Georegister. Binnen het NGR is hiervoor een metadata-editor beschikbaar.
 
-## Eisen metadata
+In het figuur hieronder zie je een screenshot van het Nationaal Georegister (NGR), dat voor INSPIRE-metadata dienst doet als *discovery service*. Het NGR wordt echter niet alleen met INSPIRE-conforme metadata gevuld; ook andere metadata kan toegevoegd worden. INSPIRE-metadata kan gevonden worden door in het tabblad 'Zoeken' te filteren op de Categorie 'Inspire'.
+
+![NGR met categorie INSPIRE ](media/NGR-categorie-INSPIRE.png "Gebruik in het NGR het filter 'Inspire' om alle beschikbare INSPIRE-compliant datasets te vinden.")
+
+
+### Eisen metadata
 De metadata-elementen die voor INSPIRE, vanuit verschillende richtlijnen, beschreven moeten worden zijn opgenomen in de Nederlandse profielen. Deze profielen, één voor datasets en dataset series en één voor services, zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen; Als er aan de conditie wordt voldaan, is dat element verplicht. Voor een aantal door conditie verplichte elementen, heeft de conditie te maken met INSPIRE; Als de te beschrijven bron een aangemerkte INSPIRE dataset of bijbehorende service is, dan worden er meer metadata elementen vereist om in te vullen. Het komt ook voor dat er alleen specifieke waardes voor INSPIRE zijn toegestaan, terwijl voor niet INSPIRE data meer waardes toegestaan zijn.  Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen en aanvullende vereisten voor INSPIRE uit de NL profielen worden gevolgd. 
 
 Voor datasets en dataset series geldt het [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/) 
@@ -28,7 +29,12 @@ INSPIRE specifiek zijn de aanvullende [Invulinstructies voor datasets](#invulins
 
 Zie voor meer informatie over metadata in het algemeen, het [dossier metadata op de Geonovum-website](https://www.geonovum.nl/geo-standaarden/metadata).
 
-## Metadata en taal
+### Metadata van prioritaire datasets
+Voor de prioritaire datasets zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de bij het JRC beheerde [INSPIRE-registry](http://inspire.ec.europa.eu/registry).
+
+De trefwoorden en thesaurus worden toegevoegd met URI's.
+
+### Metadata en taal
 In de invoeringsregels van INSPIRE voor metadata, is niet vastgelegd in welke taal metadata (en data) beschikbaar moet worden gesteld, wel dat het één van de officiele talen van de Europese unie moet zijn. Deze in de bron (dataset en service) gebruikte taal en de metadata-taal worden in de metadata vastgelegd. 
 Nederland heeft ervoor gekozen om de metadata in het Nederlands op te voeren. Als er aanvullend voor een extra taal wordt gekozen, dient deze consequent gehanteerd te worden. Stelt u bijvoorbeeld de metadata ook in het Engels beschikbaar, dan dienen alle vrije tekstvelden in de metadata vertaald te worden. Denk daarbij ook aan de licentie. In het [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#meertaligheid-metadata) staat in een apart hoofdstuk beschreven hoe vrije tekstvelden in meerdere talen kunnen worden opgenomen.
 
@@ -40,23 +46,25 @@ Als er met meertaligheid wordt gewerkt, hou dan rekening met het volgende:
 - Voor elke ondersteunde taal in de service, moet ook een vertaling in de metadata aanwezig zijn.
 - Voor elke ondersteunde taal in de service, zijn aparte capabilities-, legenda- en foutmeldingsdocumenten nodig.
 
-## Geharmoniseerde gebruiksvoorwaarden
+### Geharmoniseerde gebruiksvoorwaarden
 De gebruiksvoorwaarden worden opgenomen in de metadata. Wie geo-informatie van een ander gebruikt, moet weten of daarvoor voorwaarden gelden en zo ja, welke voorwaarden dat zijn. De Nederlandse overheid wil overheidsinformatie zoveel mogelijk gratis en zonder gebruiksvoorwaarden beschikbaar stellen. Dat kan met behulp van de **Public Domain Mark** of met de **Creative Commons Zero (CC0)**-verklaring. Met beide gebruiksvoorwaarden zijn de gegevens door iedereen voor ieder doeleind te gebruiken. Het verschil is dat op gegevens met een CC0-verklaring een auteurs-, databank- of ander recht van kracht is. Met de CC0-verklaring wordt afstand gedaan van deze rechten. Het ministerie van BZK hanteert Creative Commons Zero als de voorkeurslicentie voor data van haar ministerie.
 
-### Public Domain Mark
+Public Domain Mark
 Gegevens die met de Public Domain Mark beschikbaar zijn gesteld, kunnen door iedereen voor alle doeleinden worden gebruikt. Ook naamsvermelding kan niet geëist worden. U vindt de tekst die bij de Public Domain Mark hoort op de [site van Creative Commons](https://creativecommons.org/publicdomain/mark/1.0/deed.nl).
 
-### Creative Commons Zero
+Creative Commons Zero
 Als er auteursrecht en/of databankenrecht rust op gegevens, of als bij wet, besluit of verordening het openbaarmaken van gegevens uitdrukkelijk is voorbehouden, is de Public Domain Mark niet mogelijk. Om ook in dit geval gegevens zonder verdere vereisten beschikbaar te stellen, kan de Creative Commons Zero-verklaring worden gebruikt. Met deze verklaring geeft de eigenaar aan de geldende rechten niet te zullen uitoefenen. U vindt de tekst die bij de Creative Commons Zero-verklaring hoort op de [site van Creative Commons](https://creativecommons.org/publicdomain/zero/1.0/deed.nl).
 
-### Gebruiksvoorwaarden in Nederland
+Gebruiksvoorwaarden in Nederland
 In Nederland is afgesproken om voor geo-informatie gebruik te maken van de gebruiksvoorwaarden van Creative Commons, tenzij dat niet mogelijk is. Dit “Creative Commons, tenzij”-beleid is in 2014 vastgesteld door het GI-beraad. [Deze tool](https://creativecommons.org/choose/?lang=nl) kan gebruikt worden om een CC-licentie samen te stellen.
 
 In sommige gevallen is het toch noodzakelijk om gebruiksvoorwaarden te handhaven, bijvoorbeeld door wetgeving. 
 
 De gebruiksvoorwaarden, ook als daarvan wordt afgezien in Public Domain Mark of Creative Commons Zero-verklaring, worden opgenomen in de metadata. De instructie hiervoor is te vinden in de paragraaf [Invulinstructies voor datasets](#invulinstructies-voor-datasets).
 
-## Invulinstructies voor datasets
+## Dataset metadata
+
+### Invulinstructies voor datasets
 De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen. Let erop, dat er zowel verplichte ('Ja') als conditionele ('C') elementen in voorkomen. Zo kan bijvoorbeeld een aantal elementen pas worden ingevuld wanneer de dataharmonisatie is voltooid. Voor prioritaire datasets is de [aanvullende instructie](#prioritaire-datasets) over het opnemen van de trefwoorden in de metadata  ook in de invulinstructies meegenomen.
 
 
@@ -106,10 +114,6 @@ De elementen van Specificatie en trefwoorden worden meerdere keren opgenomen.
 
 Ook voor "as-is" data is het opgeven van de conformiteit met de verordening verplicht. 
 
-### Prioritaire datasets
-Voor de prioritaire datasets zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de bij het JRC beheerde [INSPIRE-registry](http://inspire.ec.europa.eu/registry).
-
-De trefwoorden en thesaurus worden toegevoegd met URI's en gebruiken daarvoor een Anchor in plaats van een string element.
 
 ### Het toevoegen van trefwoorden met URI's
 De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd mét URI's:
