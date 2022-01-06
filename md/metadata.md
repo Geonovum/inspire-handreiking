@@ -166,13 +166,18 @@ TO DO check XML !!! Hier is een [voorbeeld-metadatabestand](https://wiki.geonovu
 
 ## Service-metadata
 
-De meeste OGC-services, zoals WMS en WFS hebben een capabilities-document dat tijdens het ontwikkelen van de service aangemaakt wordt. Het is een beschrijving van de informatie-inhoud van de dienst. Buiten de informatie over de service zelf bijvoorbeeld de mogelijke request parameters, bevatten de capabilities ook metadata zoals trefwoorden en verantwoordelijke organisatie. Het is dit XML-document dat als antwoord op het GetCapabilities-request door de server terug aan de client gegeven wordt. In dit capabilities-document worden automatisch enkele, en niet alle voor INSPIRE verplichte, metadata elementen toegevoegd. Het automatisch gegenereerde document is dus niet volledig en dient aangevuld te worden met de voor INSPIRE verplichte en conditionele velden, alvorens het ‘gepubliceerd’ wordt. Het aanvullen kan door de capabilities uit te breiden met de verplichtte elementen, of door te verwijzen naar het XML-bestand waar alle metadata-elementen in beschreven zijn. 
+De meeste OGC-services, zoals WMS en WFS hebben een capabilities-document dat tijdens het ontwikkelen van de service aangemaakt wordt. Het is een beschrijving van de informatie-inhoud van de dienst. Buiten de informatie over de service zelf bijvoorbeeld de mogelijke request parameters, bevatten de capabilities ook metadata zoals trefwoorden en verantwoordelijke organisatie. Het is dit XML-document dat als antwoord op het GetCapabilities-request door de server terug aan de client gegeven wordt. In dit capabilities-document worden automatisch enkele, maar niet alle voor INSPIRE verplichte, metadata elementen toegevoegd. Het automatisch gegenereerde document is dus niet volledig en dient aangevuld te worden met de voor INSPIRE verplichte en conditionele velden, alvorens het ‘gepubliceerd’ wordt. Het aanvullen kan door de capabilities uit te breiden met de verplichtte elementen, of door te verwijzen naar het XML-bestand waar alle metadata-elementen in beschreven zijn. Daarbij is het van belang dat de metadata beschrijvingen die in de capabilities zijn opgenomen, inhoudelijk overeenkomen met het corresponderende metadata in de volledige metadata in het XML bestand.
 
-### Invulinstructie
+Er zijn verschillende soorten services, naast de netwerk services, zoals de view en download services, zijn er ook de invocable, interoperable en harmonised spatial data services. In het hoofdtuk over [Services](#services) staat onder de paragraaf [Spatial Data Services](#spatial-data-services) beschreven welke soorten SDS-sen er zijn. Aan de hand van een stroomschema kan bepaald worden tot welke categorie een service behoord. Alle services dienen in ieder geval van service metadata te worden voorzien. Voor de invocable, interoperable en harmonised spatial data services gelden aanvullende vereisten. 
 
-De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen voor netwerkservices. Voor Spatial Data Services gelden andere instructies.
+Per soort staat in de volgende paragraven beschreven wat de metadata eisen zijn.
 
-De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Verklaring en Indicatie van conformiteit worden meerdere keren opgenomen. Voor alle netwerk services is het opgeven van de conformiteit met de verordening netwerkdiensten verplicht. Aanbevolen wordt om de conformiteit met de technische specificaties,voor view en download etc. op te nemen.
+
+### Invulinstructie service metadata
+
+De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen voor netwerkservices. Voor de Spatial Data Services geldt onderstaande ook behalve de instructies voor de conformiteit. De aanvullende instructies daarvoor staan in de volgende paragrafen.
+
+De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Verklaring en Indicatie van conformiteit worden meerdere keren opgenomen. Voor alle netwerk services is het opgeven van de conformiteit met de verordening netwerkdiensten verplicht. Aanbevolen wordt om ook de conformiteit met de technische specificaties,voor view en download etc. op te nemen.
 
 | Metadata-element | Longname | INSPIRE-verplicht | Omschrijving | Voorbeeldwaarde |
 | ---------------- | -------- | ----------------- | ------------ | --------------- |
@@ -199,14 +204,11 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 
 ## Metadata Spatial data services
 
-Spatial Data Services (SDS) worden ook wel Ruimtelijke datadiensten, of “diensten met betrekking tot ruimtelijke gegevens” genoemd. Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. Er kan ook andere data in de service zijn ontsloten. Alle Spatial Data Services, moeten van metadata worden voorzien. Deze metadata moet vervolgens ontsloten worden in het NGR.
-
-In het hoofdtuk over [Services](#services) staat onder de paragraaf [Spatial Data Services](#spatial-data-services) beschreven welke soorten SDS-sen er zijn.
-Per soort staat in de volgende paragraven beschreven wat de metadata eisen zijn.
-
 ### Invocable SDS
 
-Spatial Data Services van de categorie *invocable* moeten naast servicemetadata voorzien worden van metadata over **Category conformance** en **Technische specificatie conformance**. Dit kan in de metadata-elementen die ook voor de conformance met de verordening worden gebruikt. In onderstaande tabel zijn de invulinstructies opgenomen.
+Spatial Data Services van de categorie *invocable* worden naast de INSPIRE service metadata, voorzien van metadata over de conformiteit met verschillende documenten.  In plaats van de conformiteit met de netwerk verordening (VERORDENING (EG) Nr. 976/2009 VAN DE COMMISSIE van 19 oktober 2009 tot uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad wat betreft de netwerkdiensten), wordt de conformiteit met de VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens opgenomen. Deze verordening bevat naast de specificaties voor geharmoniseerde datasets, ook een deel over de diensten (services) daarop. Daarnaast wordt ook middels de conformiteit opgegeven, tot welke categorie de Spatial Data Service behoord en volgens welke technische specificatie de service is gemaakt.
+
+ In onderstaande tabel zijn de invulinstructies opgenomen.
 
 ![conformance_invoke](media/Conformance_invoke.png "Tabel metadata-element invocable SDS.")
 
@@ -214,13 +216,13 @@ Er zijn aanvullende vereisten voor het metadata-element **servicetype**. Dit kan
 
 ![servicetype](media/Servicetype_invul.png "Servicetype heeft waarde other.")
 
-De **Resource Locator** voor een SDS moet een access point zijn. Een access point is gedefinieerd als “An internet address containing a detailed description of a spatial data service, including a list of endpoints to allow its execution.” In geval van een OGC-service is dat de URL naar de capabilities. In het bijbehorende metadata-element **Resource locator description**, dat nu geen onderdeel uitmaakt van het NL-profiel, maar wel een ISO-element is, moet specifiek worden opgenomen dat het een access point is.
+De **Resource Locator** voor een SDS moet een access point zijn. Een access point is gedefinieerd als “An internet address containing a detailed description of a spatial data service, including a list of endpoints to allow its execution.” In geval van een OGC-service is dat de URL naar de capabilities. In het bijbehorende metadata-element **Resource locator description**, moet specifiek worden opgenomen dat het een access point is.
 
 ![accesspoint](media/Resourceloc_invul.png "Resource locator description heeft waarde accessPoint.")
 
 ### Interoperable SDS
 
-Spatial Data Services van de categorie interoperable moeten, naast de vereiste elementen voor invocable services, worden voorzien van metadata over verschillende extra elementen:
+Spatial Data Services van de categorie interoperable moeten, naast de instructies voor invocable services, worden voorzien van metadata over verschillende extra elementen:
 1. **Coördinaat referentie systeem**: alle CRS waarin een service beschikbaar is moeten worden opgegeven middels een URI. Gebruik voor elke URI een apart metadata element. Bijvoorbeeld:
 
 http://www.opengis.net/def/crs/EPSG/0/4937 (ETRS 89) http://www.opengis.net/def/crs/EPSG/0/4326 (WGS84) http://www.opengis.net/def/crs/EPSG/0/28992 (RD)
@@ -238,9 +240,9 @@ In onderstaande tabel zijn de invulinstructies voor de kwaliteit van service opg
 
 ![QoS_invul](media/QoS_invul.png "Invulinstructie voor servicekwaliteit.")
 
-3. Er aanvullende vereisten voor **verantwoordelijke organisatie**, deze zal in ieder geval de beschrijving bevatten van de organisatie die de verantwoordelijkheid heeft geaccepteerd en de zorg draagt voor het beheer van de service. De rol van de organisatie is beheerder.
-4. Er zijn aanvullende vereisten voor **restricties voor toegang en gebruik**. Hier moeten ook de "technische restricties" worden aangegeven, in één instantie van accessConstraints of useConstraints. Dit komt grotendeels overeen met de huidige invulling van toegangsrestricties, URL naar de creative commons licenties worden als technische restricties gezien.
-5. De categorie die in de **specification title** is opgenomen, moet van invocable naar interoperable worden aangepast!
+3. Er zijn aanvullende vereisten voor **verantwoordelijke organisatie**, deze zal in ieder geval de beschrijving bevatten van de organisatie die de verantwoordelijkheid heeft geaccepteerd en de zorg draagt voor het beheer van de service. De rol van de organisatie is beheerder.
+4. Er zijn aanvullende vereisten voor **restricties voor toegang en gebruik**. Hier moeten ook de "technische restricties" worden aangegeven, in één instantie van accessConstraints of useConstraints. Dit komt grotendeels overeen met de huidige invulling van toegangsrestricties, de URL naar de creative commons licenties worden als technische restricties gezien.
+5. De categorie die middels de conformiteit  is opgenomen, hoort nu interoperable te zijn.
 
 ### Harmonised SDS
 
@@ -248,8 +250,8 @@ Spatial Data Services van de categorie harmonised moeten, naast de vereiste elem
 
 Invocation-metadata is informatie over de operaties die een service kan uitvoeren. Deze informatie kan op twee verschillende manieren beschikbaar worden gesteld.
 
-- *Optie 1*: Alle operaties en de lijst van connect punten voor hen, samen met de informatie over de vereiste en optionele parameters voor elke operatie wordt geleverd door het access point van de dienst. Dit accespoint wordt ook in de SV_OperationMetadata opgenomen. de operaties die mogelijk zijn worden dan niet apart in de metadata beschreven.
-- *Optie 2*: Alle operaties en de lijst van connect punten voor hen, samen met de informatie over de vereiste en optionele parameters voor elke operatie wordt in de metadata beschreven via een SV_OperationMetadata element voor elke operatie.
+- *Optie 1*: Alle operaties en de lijst van connectpunten voor hen, samen met de informatie over de vereiste en optionele parameters voor elke operatie wordt geleverd door het access point van de dienst. Dit accespoint wordt ook in de SV_OperationMetadata opgenomen. de operaties die mogelijk zijn worden dan niet apart in de metadata beschreven.
+- *Optie 2*: Alle operaties en de lijst van connectpunten voor hen, samen met de informatie over de vereiste en optionele parameters voor elke operatie wordt in de metadata beschreven via een SV_OperationMetadata element voor elke operatie.
 
 In onderstaande tabel de invulinstrucies voor optie 1.
 
@@ -259,12 +261,6 @@ In onderstaande tabel de invul instrucies voor optie 2.
 
 ![Invoke2](media/Invoke_invul2.png "Invulinstructie voor optie 2.")
 
-Voor de categorie harmonised zijn er vereisten op de service zelf:
-- **kwaliteit** "a harmonised spatial data service shall be available 98 % of the time."
-- **operaties** "a harmonised spatial data service shall include a Get Harmonised Spatial Data Service Metadata operation, similar to the Get Discovery/View/Download/Transformation Service Metadata Operations."
-- **output encoding** "If a request to the spatial data service returns spatial objects in the scope of the [INS DIR], the returned data shall meet the requirements for encoding specified for these spatial objects in Art. 7 and the relevant annexes of [INS ISDSS]."
-
-The INSPIRE data specifications Technical Guidelines contain default encoding rules for all spatial data themes meet the requirements of [INS ISDSS].
 
 ### Metadata-templates SDS
 
@@ -280,7 +276,7 @@ Validatie is een mechanisme om te controleren of een bepaalde metadatabeschrijvi
 ## FAQ metadata
 **Vraag: Is mijn metadata conform INSPIRE als mijn metadata ISO 19115 volgt?**
 
-INSPIRE volgt bestaande internationale standaarden, maar metadata die volledig conform ISO 19115 is voldoet niet aan de INSPIRE Implementing Rule Metadata. Op een aantal elementen is INSPIRE strikter dan de ISO: het zijn delen waarin de wetgeving bepaalde metadata-informatie verplicht stelt.
+INSPIRE volgt bestaande internationale standaarden, maar metadata die volledig conform ISO 19115 is voldoet niet persee aan de INSPIRE Implementing Rule Metadata. Op een aantal elementen is INSPIRE strikter dan de ISO.
 
 **Vraag: Welke validator moet gebruikt worden voor de INSPIRE-conformiteitstoetsen?**
 
