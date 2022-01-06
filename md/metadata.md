@@ -8,7 +8,7 @@ Metadata dient ter beschikking worden gesteld voor:
 - Services (o.a. View en Download Services).
 
 In de meeste gevallen zal de dataprovider metadata aanmaken als onderdeel van beheer van data en services. De dataprovider heeft daarbij ook de verantwoordelijkheid dat deze metadatabestanden (XML-bestanden) voldoen aan de INSPIRE-richtlijnen. 
-De metadata wordt vervolgens in het Nationaal Georegister ([NGR](https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home)) gepubliceerd door; 
+De metadata wordt vervolgens in het Nationaal Georegister <a href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home" target="_blank">NGR</a> gepubliceerd door; 
 - Het uploaden van XML-metadatabestanden
 - Harvesting vanuit een eigen metadatacatalogus
 - Het aanmaken en publiceren van metadata rechtstreeks in het Nationaal Georegister. Binnen het NGR is hiervoor een metadata-editor beschikbaar.
