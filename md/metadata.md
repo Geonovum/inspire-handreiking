@@ -123,7 +123,7 @@ De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd m
 4. Kopieer de URI en het NL-label.
 5. Voeg deze als trefwoord toe aan de metadata samen met de verwijzing naar de thesaurus met *titel*, *datum* en *type datum*. Hiervoor kan onderstaande XML-voorbeeld in de XML worden gekopieerd.
 6. Als de dataset voor meerdere rapportageverplichtingen wordt gebruikt, voor elke verplichting de juiste trefwoorden zoeken en toevoegen.
-7. Bewaar de aanpassingen en valideer je metadata. Er is (nog) geen test op deze extra trefwoorden.
+7. Bewaar de aanpassingen en valideer je metadata.
 
 **Voorbeeld**
 
@@ -157,16 +157,16 @@ De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd m
 </pre>
 
 ### Voorbeeldbestand prioritaire datasets
-[Hier is een voorbeeldbestand waarin beide scenario's zijn uitgewerkt](https://wiki.geonovum.nl/images/Voorbeeld_XML_prioritaire_dataset.xml).
+TO DO check XML !!! [Hier is een voorbeeldbestand waarin beide scenario's zijn uitgewerkt](https://wiki.geonovum.nl/images/Voorbeeld_XML_prioritaire_dataset.xml).
 
 ### Voorbeeldbestand XML voor INSPIRE dataset-metadata
 
-Hier is een [voorbeeld-metadatabestand](https://wiki.geonovum.nl/images/Voorbeeld_Metadata_Dataset_2019.zip) te vinden voor een fictive dataset.
+TO DO check XML !!! Hier is een [voorbeeld-metadatabestand](https://wiki.geonovum.nl/images/Voorbeeld_Metadata_Dataset_2019.zip) te vinden voor een fictive dataset.
 
 
 ## Service-metadata
 
-Elke OGC-service heeft een capabilities-document dat tijdens het ontwikkelen van de service aangemaakt wordt. Het is een beschrijving van de informatie-inhoud van de dienst. Buiten de informatie van de service zelf (bv request parameters), bevat de capabilities ook metadata over de geserveerde kaarten (waaronder Layer en Style definities). Het is dit XML-document dat als antwoord op het GetCapabilities-request door de server terug aan de client gegeven wordt. In dit capabilities-document worden automatisch enkele, en niet alle voor INSPIRE verplichte, metadata elementen toegevoegd. Het automatisch gegenereerde document is dus niet volledig en dient aangevuld te worden met de voor INSPIRE verplichte en conditionele velden, alvorens het ‘gepubliceerd’ wordt. Het aanvullen kan door de capabilities uit te breiden met de verplichtte elementen, of door te verwijzen naar het XML-bestand waar alle metadata-elementen in beschreven zijn. Met ‘metadata publiceren’ worden de acties bedoeld die dit document als XML-bestand aan de repository van het nationale register (het NGT) toevoegt.
+De meeste OGC-services, zoals WMS en WFS hebben een capabilities-document dat tijdens het ontwikkelen van de service aangemaakt wordt. Het is een beschrijving van de informatie-inhoud van de dienst. Buiten de informatie over de service zelf bijvoorbeeld de mogelijke request parameters, bevatten de capabilities ook metadata zoals trefwoorden en verantwoordelijke organisatie. Het is dit XML-document dat als antwoord op het GetCapabilities-request door de server terug aan de client gegeven wordt. In dit capabilities-document worden automatisch enkele, en niet alle voor INSPIRE verplichte, metadata elementen toegevoegd. Het automatisch gegenereerde document is dus niet volledig en dient aangevuld te worden met de voor INSPIRE verplichte en conditionele velden, alvorens het ‘gepubliceerd’ wordt. Het aanvullen kan door de capabilities uit te breiden met de verplichtte elementen, of door te verwijzen naar het XML-bestand waar alle metadata-elementen in beschreven zijn. 
 
 ### Invulinstructie
 
