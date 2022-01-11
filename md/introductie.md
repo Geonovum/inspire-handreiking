@@ -45,6 +45,10 @@ Om het figuur zo overzichtelijk mogelijk te houden, is er voor gekozen om de wet
 De Europese documenten zijn te vinden via de <a href="https://inspire.ec.europa.eu/" target="_blank">Europese INSPIRE website</a>. In het onderdeel [bronnen](#bronnen) op deze wiki worden deze documenten ook nog nader toegelicht.
 De Nederlandse standaarden zijn te vinden via de Geo-standaarden op de <a href="https://www.geonovum.nl/geo-standaarden" target="_blank">Geonovum website</a>.
 
+Al deze technische componenten (Nationaal Georegister, data, metadata en services) hebben ook een onderlinge relatie die in volgende afbeelding is getoond. 
+
+![Simple_INSPIRE_Domain_Model](media/DM_simple.png "Eenvoudig Domein model")
+
 ## Deadlines
 Alle INSPIRE deadlines om datasets beschikbaar te maken zijn reeds verstreken. De oorspronkelijke INSPIRE roadmap met alle verschillende deadlines is <a href="https://inspire.ec.europa.eu/road-map-graphic/32443" target="_blank">hier</a> te vinden.
 
