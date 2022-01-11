@@ -1,10 +1,14 @@
 # Services
 
-In dit deel van de WIKI worden de verschillende elctronische diensten (services) behandeld die INSPIRE vraagt aan de INSPIRE plichtige dataproviders. Deze worden ook wel Network services genoemd. Algemene aspecten daaraan worden in het volgende hoofstuk behandeld. Er zijn verschillende soorten services die ieder afzonderlijk in hoofdstukken daarna behandeld worden.
+In dit deel van de WIKI worden de verschillende electronische diensten (services) behandeld die INSPIRE vraagt aan de INSPIRE plichtige dataproviders. Omdat het binnen INSPIRE om ruimtelijke data gaat worden ze ook wel Spatial Data Services genoemd. Algemene aspecten daaraan worden in het volgende hoofstuk behandeld. Er zijn verschillende soorten services die ieder afzonderlijk in hoofdstukken daarna behandeld worden.
 
-Al deze services zijn technische componenten (entiteiten) die ook een onderlinge relatie hebben. Hun relaties, hun context en een use cases zijn beschreven in het <a href="https://inspire.jrc.ec.europa.eu/documents/Network_Services/INSPIRE%20Domain%20Model%20v0.9.1.pdf" target="_blank">INSPIRE-Domain Model</a>.
+## Spatial Data Services
 
-![Simple_INSPIRE_Domain_Model](media/DM_simple.png "Eenvoudig Domein model")
+Spatial Data Services (SDS) worden ook wel Ruimtelijke datadiensten, of “diensten met betrekking tot ruimtelijke gegevens” genoemd. Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. Er kan ook andere data in de service zijn ontsloten. Alle Spatial Data Services, moeten van [metadata](#metadata-spatial-data-services) worden voorzien. 
+
+Onderstaande figuur geeft een overzicht van de verschillende types Spatial Data Services
+
+![sds_schema2](media/SDS_en_network_services.png "SDS-types.")
 
 ## Network services
 INSPIRE wordt gebaseerd op een geo-informatie infrastructuur (GII; in het Engels SDI: *spatial data infrastructure*) die deels door de individuele lidstaten gebouwd en beheerd worden, en deels door de dataproviders gebouwd moet worden. De figuur hieronder geeft de services-archtectuur schematisch weer. Transformatie, Invoke, Register en Externe Diensten worden vooralsnog buiten beschouwing gelaten. Spatial Data Services worden [elders beschreven](#spatial-data-services).
@@ -1164,21 +1168,13 @@ Er is ook een <a href="https://github.com/INSPIRE-MIF/gp-geopackage-encodings" t
 Ook in Nederland is hier onderzoek naar gedaan voor de Basisregistratie Ondergrond (BRO) van TNO  met een [rapport](docs/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf) als eindresultaat.
 Daarnaast is het bij het Forum Standaardisatie opgenomen in de pas toe en leguit lijst voor <a href="https://www.forumstandaardisatie.nl/open-standaarden/geo-standaarden" target="_blank">geo-standaarden</a>.
 
-## Spatial Data Services
+## SDS-categorieën
 
-Spatial Data Services (SDS) worden ook wel Ruimtelijke datadiensten, of “diensten met betrekking tot ruimtelijke gegevens” genoemd. Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. Er kan ook andere data in de service zijn ontsloten. Alle Spatial Data Services, moeten van [metadata](#metadata-spatial-data-services) worden voorzien. 
+Spatial Data Services die onder de verordening SDS vallen zijn, afhankelijk van het niveau van interoperabiliteit, verder onder te verdelen in drie categorieën: Invocable SDS, Interoperable SDS and Harmonised SDS. Spatial Data Services die onder de verordening *netwerkverordening* vallen bestaan uit vier verschillende service types: discovery services, view services, download services and transformation services.
 
 Met behulp van onderstaand stroomschema kan worden bepaald wat voor soort SDS een service is.
 
 ![sds_schema](media/SDS_schema.png "Stroomdiagram om service-type te bepalen.")
-
-### SDS-categorieën
-
-Spatial Data Services die onder de verordening SDS vallen zijn, afhankelijk van het niveau van interoperabiliteit, verder onder te verdelen in drie categorieën: Invocable SDS, Interoperable SDS and Harmonised SDS. Spatial Data Services die onder de verordening *netwerkverordening* vallen bestaan uit vier verschillende service types: discovery services, view services, download services and transformation services.
-
-Onderstaande figuur geeft een overzicht van de verschillende types Spatial Data Services
-
-![sds_schema2](media/SDS_en_network_services.png "SDS-types.")
 
 Spatial Data Services kunnen heel verschillende services zijn, waardoor er geen specificaties in technische richtlijnen voor mogelijk is. Om te bepalen in wat voor categorie een Spatial Data Service valt, kan onderstaande stroomschema worden gebruikt.
 
