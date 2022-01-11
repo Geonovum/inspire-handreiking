@@ -1170,13 +1170,13 @@ Daarnaast is het bij het Forum Standaardisatie opgenomen in de pas toe en leguit
 
 ## SDS-categorieën
 
-Spatial Data Services die onder de verordening SDS vallen zijn, afhankelijk van het niveau van interoperabiliteit, verder onder te verdelen in drie categorieën: Invocable SDS, Interoperable SDS and Harmonised SDS. Spatial Data Services die onder de verordening *netwerkverordening* vallen bestaan uit vier verschillende service types: discovery services, view services, download services and transformation services.
+Spatial Data Services die geen network service zijn en wel onder de verordening SDS vallen zijn, afhankelijk van het niveau van interoperabiliteit, verder onder te verdelen in drie categorieën: Invocable SDS, Interoperable SDS and Harmonised SDS. Spatial Data Services die onder de verordening *netwerkverordening* vallen bestaan uit vier verschillende service types: discovery services, view services, download services and transformation services.
 
 Met behulp van onderstaand stroomschema kan worden bepaald wat voor soort SDS een service is.
 
 ![sds_schema](media/SDS_schema.png "Stroomdiagram om service-type te bepalen.")
 
-Spatial Data Services kunnen heel verschillende services zijn, waardoor er geen specificaties in technische richtlijnen voor mogelijk is. Om te bepalen in wat voor categorie een Spatial Data Service valt, kan onderstaande stroomschema worden gebruikt.
+Spatial Data Services die geen network service zijn, kunnen heel verschillende services zijn, waardoor er geen specificaties in technische richtlijnen voor mogelijk is. Om te bepalen in wat voor categorie een Spatial Data Service valt, kan onderstaande stroomschema worden gebruikt.
 
 ![sds_cat](media/SDS_cat.png "Stroomdiagram om SDS-categorie te bepalen.")
 
