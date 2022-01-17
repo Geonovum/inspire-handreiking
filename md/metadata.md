@@ -249,6 +249,14 @@ http://www.opengis.net/def/crs/EPSG/0/28992 (RD)
 
 In onderstaande tabel zijn de invulinstructies voor de kwaliteit van service opgenomen.
 
+ | Metadata-element | Longname | Inhoud over | Omschrijving | Waarde |
+| ---------------- | -------- | ----------------- | ------------ | --------------- |
+| **Name of measure** 							|dataQualityInfo/*/report/DQ_ConceptualConsistency/nameOfMeasure| Performance | Hiermee word aangegeven dat |  |
+| **Code**  							| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[1]> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date| Performance |  | |
+| **Measure description**  						| dataQualityInfo/*/report/DQ_ConceptualConsistency/measureDescription| Performance | |  |
+| **Eenheid**  									| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/valueUnit| Performance | ||
+| **Waarde**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/value| Performance | zie  | |
+
 ![QoS_invul](media/QoS_invul.png "Invulinstructie voor servicekwaliteit.")
 
 3. Er zijn aanvullende vereisten voor **verantwoordelijke organisatie**, deze zal in ieder geval de beschrijving bevatten van de organisatie die de verantwoordelijkheid heeft geaccepteerd en de zorg draagt voor het beheer van de service. De rol van de organisatie is beheerder.
