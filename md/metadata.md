@@ -217,40 +217,30 @@ Spatial Data Services van de categorie *invocable* worden naast de INSPIRE servi
 | **Specificatie titel** 							| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[1]> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title| VERORDENING | Hiermee word aangegeven dat het een spatial data servive volgens de INSPIRE-verordening is.| VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens |
 | **Specificatie datum**  							| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[1]> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date| VERORDENING | Publicatiedatum van de Inspire-verordening | 2010-12-08 |
 | **Specificatie datumtype**  						| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[*]> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType| VERORDENING | | publicatie |
-| **Verklaring**  									| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[*]> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation| VERORDENING | | |
-| **Indicatie van conformiteit met de specificatie**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[*]> DQ_DomainConsistency.result> DQ_ConformanceResult.pass| VERORDENING | zie stroomschema | vinkje true / false |
+| **Verklaring**  									| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[*]> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation| VERORDENING | |Deze service voldoet aan de vereisten voor invocable sdaptial data services |
+| **Indicatie van conformiteit met de specificatie**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[*]> DQ_DomainConsistency.result> DQ_ConformanceResult.pass| VERORDENING | zie stroomschema | vinkje true |
 | **Specificatie titel** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | Technische specificatie | Voor INSPIRE spatial data services dient de conformiteit met de technische specificatie waaraan de service voldoet opgenomen te worden |bijvoorbeeld OpenGIS Web Feature Service 2.0 Interface Standard|
 | **Specificatie Datum** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | Technische specificatie | Publicatiedatum van de Inspire verordening | 2010-11-02 |
 |**SpecificatieDatum Type** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | Technische specificatie | | Publication |
-| **Verklaring**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | Technische specificatie | | |
+| **Verklaring**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | Technische specificatie | | is conform OGC WFS 2.0 specificatie|
 | Indicatie van conformiteit met de specificatie | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | Technische specificatie | | true |
 |**Specificatie Titel** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | Categorie SDS | Voor INSPIRE spatial data services dient de conformiteit met de categorie  opgenomen te worden | http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable met label invocable |
 | **Specificatie Datum** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | Categorie SDS | Publicatiedatum van de Inspire technische specificatie | 2014-11-12 |
 | **SpecificatieDatum Type** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | Categorie SDS | | Publication |
-| **Verklaring** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | Categorie SDS | | |
+| **Verklaring** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | Categorie SDS | | invocable service |
 | **Indicatie van conformiteit met de specificatie** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | Categorie SDS | | true |
-| **servicetype** | MD_Metadata.identificationInfo[1]/*/serviceType |  | Het betreft de het servicetype | other |
+| **servicetype** | MD_Metadata.identificationInfo[1]/*/serviceType |  | Het betreft het servicetype | other |
 
-![conformance_invoke](media/Conformance_invoke.png "Tabel metadata-element invocable SDS.")
-
-Er is een aanvullende vereiste voor het metadata-element **servicetype**. Dit kan in het geval van een invocable SDS alleen de waarde *other* hebben.
-
-![servicetype](media/Servicetype_invul.png "Servicetype heeft waarde other.")
-
-De **Resource Locator** voor een SDS moet een access point zijn. Een access point is gedefinieerd als “An internet address containing a detailed description of a spatial data service, including a list of endpoints to allow its execution.” In geval van een OGC-service is dat de URL naar de capabilities. In het bijbehorende metadata-element **Resource locator description**, moet specifiek worden opgenomen dat het een access point is.
-
-![accesspoint](media/Resourceloc_invul.png "Resource locator description heeft waarde accessPoint.")
 
 ### Interoperable SDS
 
 Spatial Data Services van de categorie interoperable moeten, naast de instructies voor invocable services, worden voorzien van metadata over verschillende extra elementen:
 1. **Coördinaat referentie systeem**: alle CRS waarin een service beschikbaar is moeten worden opgegeven middels een URI. Gebruik voor elke URI een apart metadata element. Bijvoorbeeld:
 
-http://www.opengis.net/def/crs/EPSG/0/4937 (ETRS 89) http://www.opengis.net/def/crs/EPSG/0/4326 (WGS84) http://www.opengis.net/def/crs/EPSG/0/28992 (RD)
+http://www.opengis.net/def/crs/EPSG/0/4937 (ETRS 89) 
+http://www.opengis.net/def/crs/EPSG/0/4326 (WGS84) 
+http://www.opengis.net/def/crs/EPSG/0/28992 (RD)
 
-In onderstaande tabel is de invulinstructie opgenomen.
-
-![CRS_invul](media/CRS_invul.png "Invulinstructie voor CRS.")
 
 2. **Kwaliteit van de service**. Dit is de minimum kwaliteit van de service die word bepaald door de verantwoordelijke partij voor die service met een verwachtte geldigheid gedurende een langere periode. De kwaliteit van de service moet voor drie criteria worden opgenomen:
 	- *Beschikbaarheid*. Ondergrens van het geraamde percentage van de tijd die de dienst beschikbaar is op jaarbasis.
