@@ -110,12 +110,14 @@ De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-met
 ### Aandachtspunten
 Voor INSPIRE is het gebruik van een Anchor in plaats van vrije tekst in een characterstring in een aantal metadata elementen verplicht. In een Anchor wordt een URI en een label opgenomen. De URI is machine leesbaar, het label is voor mensen leesbaar en wordt in de taal waarin de metadata is beschreven opgenomen. Voordeel van URI's is dat deze hetzelfde zijn onafhankelijk van de gehanteerde taal. Dat maakt het dat op EU nivo bijvoorbeeld de trefwoorden voor prioriaire datasets doorzoekbaar zijn. Als ieder het trefwoord alleen in zijn eigen taal opneemt, is dat een stuk lastiger. Maak waar mogelijk gebruik van een Anchor, ook waar het niet verplicht is, bijvoorbeeld ook bij het opgeven van de specificatie (Verordening en INSPIRE TG) bij de conformiteit. Als dit in een string element wordt opgegeven, moet de titel exact worden overgenomen.
 
-De elementen van Specificatie en trefwoorden worden meerdere keren opgenomen. 
+De elementengroep Specificatie(titel, datum, verklarin en conformiteit) waar de conformiteit wordt opgegegeven komt meerdere voor, telkens met een andere specificatie.  
+
+Het element trefwoord, in combinatie met de thesaurus waaruit het trefwoord komt, wordt ook meerdere keren opgenomen. 
 
 Ook voor "as-is" data is het opgeven van de conformiteit met de verordening verplicht. 
 
+**Het toevoegen van trefwoorden met URI's in een Anchor**
 
-### Het toevoegen van trefwoorden met URI's
 De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd mét URI's:
 1. Ga naar de INSPIRE Registry (http://inspire.ec.europa.eu/registry).
 2. Ga naar de prioritaire-dataset-metadata-codelijst (http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset).
@@ -209,6 +211,25 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 Spatial Data Services van de categorie *invocable* worden naast de INSPIRE service metadata, voorzien van metadata over de conformiteit met verschillende documenten.  In plaats van de conformiteit met de netwerk verordening (VERORDENING (EG) Nr. 976/2009 VAN DE COMMISSIE van 19 oktober 2009 tot uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad wat betreft de netwerkdiensten), wordt de conformiteit met de VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens opgenomen. Deze verordening bevat naast de specificaties voor geharmoniseerde datasets, ook een deel over de diensten (services) daarop. Daarnaast wordt ook middels de conformiteit opgegeven, tot welke categorie de Spatial Data Service behoord en volgens welke technische specificatie de service is gemaakt.
 
  In onderstaande tabel zijn de aanvullende instructies voor conformiteit van de invocable spatial data services opgenomen.
+ 
+ | Metadata-element | Longname | Inhoud over | Omschrijving | Waarde |
+| ---------------- | -------- | ----------------- | ------------ | --------------- |
+| **Specificatie titel** 							| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[1]> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title| VERORDENING | Hiermee word aangegeven dat het een spatial data servive volgens de INSPIRE-verordening is.| VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens |
+| **Specificatie datum**  							| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[1]> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date| VERORDENING | Publicatiedatum van de Inspire-verordening | 2010-12-08 |
+| **Specificatie datumtype**  						| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[*]> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType| VERORDENING | | publicatie |
+| **Verklaring**  									| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[*]> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation| VERORDENING | | |
+| **Indicatie van conformiteit met de specificatie**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[*]> DQ_DomainConsistency.result> DQ_ConformanceResult.pass| VERORDENING | zie stroomschema | vinkje true / false |
+| **Specificatie titel** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | Technische specificatie | Voor INSPIRE spatial data services dient de conformiteit met de technische specificatie waaraan de service voldoet opgenomen te worden |bijvoorbeeld OpenGIS Web Feature Service 2.0 Interface Standard|
+| **Specificatie Datum** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | Technische specificatie | Publicatiedatum van de Inspire verordening | 2010-11-02 |
+|**SpecificatieDatum Type** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | Technische specificatie | | Publication |
+| **Verklaring**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | Technische specificatie | | |
+| Indicatie van conformiteit met de specificatie | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | Technische specificatie | | true |
+|**Specificatie Titel** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | Categorie SDS | Voor INSPIRE spatial data services dient de conformiteit met de categorie  opgenomen te worden | http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable met label invocable |
+| **Specificatie Datum** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | Categorie SDS | Publicatiedatum van de Inspire technische specificatie | 2014-11-12 |
+| **SpecificatieDatum Type** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | Categorie SDS | | Publication |
+| **Verklaring** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | Categorie SDS | | |
+| **Indicatie van conformiteit met de specificatie** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | Categorie SDS | | true |
+| **servicetype** | MD_Metadata.identificationInfo[1]/*/serviceType |  | Het betreft de het servicetype | other |
 
 ![conformance_invoke](media/Conformance_invoke.png "Tabel metadata-element invocable SDS.")
 
