@@ -183,22 +183,24 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 
 | Metadata-element | Longname | INSPIRE-verplicht | Omschrijving | Voorbeeldwaarde |
 | ---------------- | -------- | ----------------- | ------------ | --------------- |
-| Trefwoord	| MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.keyword | Ja | Voor INSPIRE-services dient er op z’n minst één keyword de categorie of subcategorie te bevatten uit deel D.4 van de commissie regulation 1205/2008 | infoMapAccessService |
-| Trefwoord	| MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.keyword | Ja | Voor INSPIRE-services wordt ook het thema als trefwoord opgenomen uit de GEMET INSPIRE themes thesaurus | Hydrografie |
-| Naam van Thesaurus | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.title | C | Verplichte thesaurus voor INSPIRE. | GEMET - INSPIRE themes, version 1.0 |
-| Thesaurus Datum | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.date | C | De datum van publicatie | 2008-06-01 |
-| Thesaurus Datum Type | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.dateType | C | Het datumtype | publicatie |
-| Specificatie Titel | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | ja | Voor INSPIRE netwerk services dient de conformiteit met de verordening  netwerk diensten opgenomen te worden | VERORDENING (EG) Nr. 976/2009 VAN DE COMMISSIE van 19 oktober 2009 tot uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad wat betreft de netwerkdiensten |
-| Specificatie Datum | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | ja | Publicatiedatum van de Inspire verordening | 2009-10-19 |
-| SpecificatieDatum Type | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | ja | | Publication |
-| Verklaring | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | ja | | |
-| Indicatie van conformiteit met de specificatie | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | ja | | true |
-| Specificatie Titel | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | ja | Voor INSPIRE netwerk services dient de conformiteit met de technische specificaties  (view, download etc) opgenomen te worden | Technical Guidance for the implementation of INSPIRE View Services |
-| Specificatie Datum | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | ja | Publicatiedatum van de Inspire technische specificatie | 2013-04-04 |
-| SpecificatieDatum Type | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | ja | | Publication |
-| Verklaring | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | ja | | |
-| Indicatie van conformiteit met de specificatie | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | ja | | true |
-| Rol organisatie metadata | MD_Metadata.contact> CI_ResponsibleParty.role | Ja | Het betreft de rol van de organisatie. Inspire verplicht hier om contactpunt in te vullen. | pointOfContact |
+| **Trefwoord**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.keyword | Ja | Voor INSPIRE-services dient er op z’n minst één keyword de categorie of subcategorie te bevatten uit deel D.4 van de commissie regulation 1205/2008 | infoMapAccessService |
+| **Trefwoord**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.keyword | Ja | Voor INSPIRE-services wordt ook het thema als trefwoord opgenomen uit de GEMET INSPIRE themes thesaurus | Hydrografie |
+| **Naam van Thesaurus** | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.title | C | Verplichte thesaurus voor INSPIRE. | GEMET - INSPIRE themes, version 1.0 |
+| **Thesaurus Datum** | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.date | C | De datum van publicatie | 2008-06-01 |
+| **Thesaurus Datum Type** | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.dateType | C | Het datumtype | publicatie |
+| **Overige beperkingen**  							| MD_Metadata.identificationInfo[1]/\*/resourceConstraints/\*/otherConstraint | Ja | Voor INSPIRE moet een waarde uit codelijst [ConditionsApplyingToAccessAndUse](http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/) worden opgegeven in een Anchor | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply Geen beperkingen|
+| **Overige beperkingen**  							| MD_Metadata.identificationInfo[1]/\*/resourceConstraints/\*/otherConstraint | Ja | Voor INSPIRE moet ook een waarde uit codelijst [LimitationsOnPublicAccess](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/) worden opgegeven in een Anchor | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations Geen beperkingen|
+| **Specificatie Titel** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | ja | Voor INSPIRE netwerk services dient de conformiteit met de verordening  netwerk diensten opgenomen te worden | VERORDENING (EG) Nr. 976/2009 VAN DE COMMISSIE van 19 oktober 2009 tot uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad wat betreft de netwerkdiensten |
+| **Specificatie Datum** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | ja | Publicatiedatum van de Inspire verordening | 2009-10-19 |
+| **SpecificatieDatum Type** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | ja | | Publication |
+| **Verklaring** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | ja | | |
+| **Indicatie van conformiteit met de specificatie** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | ja | | true |
+| **Specificatie Titel** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | ja | Voor INSPIRE netwerk services dient de conformiteit met de technische specificaties  (view, download etc) opgenomen te worden | Technical Guidance for the implementation of INSPIRE View Services |
+| **Specificatie Datum** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | ja | Publicatiedatum van de Inspire technische specificatie | 2013-04-04 |
+| **SpecificatieDatum Type** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | ja | | Publication |
+| **Verklaring** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | ja | | |
+| **Indicatie van conformiteit met de specificatie** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | ja | | true |
+| **Rol organisatie metadata** | MD_Metadata.contact> CI_ResponsibleParty.role | Ja | Het betreft de rol van de organisatie. Inspire verplicht hier om contactpunt in te vullen. | pointOfContact |
 
 ### Voorbeeldbestand XML voor INSPIRE service-metadata
 
@@ -224,7 +226,7 @@ Spatial Data Services van de categorie *invocable* worden naast de INSPIRE servi
 |**SpecificatieDatum Type** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | Technische specificatie | | Publication |
 | **Verklaring**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | Technische specificatie | | is conform OGC WFS 2.0 specificatie|
 | Indicatie van conformiteit met de specificatie | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | Technische specificatie | | true |
-|**Specificatie Titel** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | Categorie SDS | Voor INSPIRE spatial data services dient de conformiteit met de categorie  opgenomen te worden | http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable met label invocable |
+|**Specificatie Titel** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | Categorie SDS | Voor INSPIRE spatial data services dient de conformiteit met de categorie  opgenomen te worden in een Anchor | http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable met label invocable |
 | **Specificatie Datum** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | Categorie SDS | Publicatiedatum van de Inspire technische specificatie | 2014-11-12 |
 | **SpecificatieDatum Type** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | Categorie SDS | | Publication |
 | **Verklaring** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | Categorie SDS | | invocable service |
@@ -251,17 +253,37 @@ In onderstaande tabel zijn de invulinstructies voor de kwaliteit van service opg
 
  | Metadata-element | Longname | Inhoud over | Omschrijving | Waarde |
 | ---------------- | -------- | ----------------- | ------------ | --------------- |
-| **Name of measure** 							|dataQualityInfo/*/report/DQ_ConceptualConsistency/nameOfMeasure| Performance | Hiermee word aangegeven dat |  |
-| **Code**  							| MD_Metadata.dataQualityInfo> DQ_DataQuality.report[1]> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date| Performance |  | |
-| **Measure description**  						| dataQualityInfo/*/report/DQ_ConceptualConsistency/measureDescription| Performance | |  |
-| **Eenheid**  									| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/valueUnit| Performance | ||
-| **Waarde**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/value| Performance | zie  | |
+| **Name of measure**|dataQualityInfo/*/report/DQ_ConceptualConsistency/nameOfMeasure| Performance | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/performance |
+| **Measure description**| dataQualityInfo/*/report/DQ_ConceptualConsistency/measureDescription| Performance | | De tijd waarbinnen een verzoek aan de service kan worden uitgevoerd, uitgedrukt in seconden |
+| **Eenheid**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/valueUnit| Performance | |http://www.opengis.net/def/uom/SI/second|
+| **Waarde**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/value| Performance |  | 2|
 
-![QoS_invul](media/QoS_invul.png "Invulinstructie voor servicekwaliteit.")
+| **Name of measure**|dataQualityInfo/*/report/DQ_ConceptualConsistency/nameOfMeasure| Availability | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/availability |
+| **Measure description**| dataQualityInfo/*/report/DQ_ConceptualConsistency/measureDescription| Availability | | Het percentage van de tijd dat de dienst beschikbaar is op jaarbasis|
+| **Eenheid**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/valueUnit| Availability | |urn:ogc:def:uom:OGC::percent|
+| **Waarde**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/value| Availability | waarde tussen 0 en 100 | 80|
 
-3. Er zijn aanvullende vereisten voor **verantwoordelijke organisatie**, deze zal in ieder geval de beschrijving bevatten van de organisatie die de verantwoordelijkheid heeft geaccepteerd en de zorg draagt voor het beheer van de service. De rol van de organisatie is beheerder.
-4. Er zijn aanvullende vereisten voor **restricties voor toegang en gebruik**. Hier moeten ook de "technische restricties" worden aangegeven, in één instantie van accessConstraints of useConstraints. Dit komt grotendeels overeen met de huidige invulling van toegangsrestricties, de URL naar de creative commons licenties worden als technische restricties gezien.
-5. De Spatial Data Service categorie die middels de conformiteit  wordt opgenomen, is interoperable .
+| **Name of measure**|dataQualityInfo/*/report/DQ_ConceptualConsistency/nameOfMeasure| Capacity | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/capacity |
+| **Measure description**| dataQualityInfo/*/report/DQ_ConceptualConsistency/measureDescription| Capacity | | Het maximum aantal gelijktijdige verzoeken dat kan worden voltooid met de vermelde performance |
+| **Eenheid**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/valueUnit| Capacity | |http://www.opengis.net/def/uom/OGC/1.0/unity|
+| **Waarde**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/value| Capacity | integer | 2|
+
+3. **Categorie van de Spatial dat service**
+Daarnaast wordt ook middels de conformiteit opgegeven, tot welke categorie de Spatial Data Service behoord 
+
+ | Metadata-element | Longname | Inhoud over | Omschrijving | Waarde |
+| ---------------- | -------- | ----------------- | ------------ | --------------- |
+|**Specificatie Titel** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | Categorie SDS | Voor INSPIRE spatial data services dient de conformiteit met de categorie  opgenomen te worden in een Anchor | http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable met label interoperable |
+| **Specificatie Datum** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | Categorie SDS | Publicatiedatum van de Inspire technische specificatie | 2014-11-12 |
+| **SpecificatieDatum Type** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | Categorie SDS | | Publication |
+| **Verklaring** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.explanation | Categorie SDS | | interoperablee service |
+| **Indicatie van conformiteit met de specificatie** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.pass | Categorie SDS | | true |
+
+
+4. Er zijn aanvullende vereisten voor **verantwoordelijke organisatie**, deze zal in ieder geval de beschrijving bevatten van de organisatie die de verantwoordelijkheid heeft geaccepteerd en de zorg draagt voor het beheer van de service. De rol van de organisatie is beheerder.
+
+5. Er zijn aanvullende vereisten voor **restricties voor toegang en gebruik**. Hier moeten ook de "technische restricties" worden aangegeven, in één instantie van accessConstraints of useConstraints. Dit komt grotendeels overeen met de huidige invulling van toegangsrestricties, de URL naar de creative commons licenties worden als technische restricties gezien.
+
 
 ### Harmonised SDS
 
