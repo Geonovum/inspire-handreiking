@@ -253,18 +253,18 @@ In onderstaande tabel zijn de invulinstructies voor de kwaliteit van service opg
 
  | Metadata-element | Longname | Inhoud over | Omschrijving | Waarde |
 | ---------------- | -------- | ----------------- | ------------ | --------------- |
-| **Name of measure**|dataQualityInfo/*/report/DQ_ConceptualConsistency/nameOfMeasure| Performance | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/performance |
-| **Measure description**| dataQualityInfo/*/report/DQ_ConceptualConsistency/measureDescription| Performance | | De tijd waarbinnen een verzoek aan de service kan worden uitgevoerd, uitgedrukt in seconden |
-| **Eenheid**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/valueUnit| Performance | |http://www.opengis.net/def/uom/SI/second|
-| **Waarde**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/value| Performance |  | 2|
-| **Name of measure**|dataQualityInfo/*/report/DQ_ConceptualConsistency/nameOfMeasure| Availability | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/availability |
-| **Measure description**| dataQualityInfo/*/report/DQ_ConceptualConsistency/measureDescription| Availability | | Het percentage van de tijd dat de dienst beschikbaar is op jaarbasis|
-| **Eenheid**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/valueUnit| Availability | |urn:ogc:def:uom:OGC::percent|
-| **Waarde**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/value| Availability | waarde tussen 0 en 100 | 80|
-| **Name of measure**|dataQualityInfo/*/report/DQ_ConceptualConsistency/nameOfMeasure| Capacity | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/capacity |
-| **Measure description**| dataQualityInfo/*/report/DQ_ConceptualConsistency/measureDescription| Capacity | | Het maximum aantal gelijktijdige verzoeken dat kan worden voltooid met de vermelde performance |
-| **Eenheid**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/valueUnit| Capacity | |http://www.opengis.net/def/uom/OGC/1.0/unity|
-| **Waarde**| dataQualityInfo/*/report/DQ_ConceptualConsistency/result/DQ_QuantitativeResult/value| Capacity | integer | 2|
+| **Name of measure**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.nameOfMeasure| Performance | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/performance |
+| **Measure description**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.measureDescription| Performance | | De tijd waarbinnen een verzoek aan de service kan worden uitgevoerd, uitgedrukt in seconden |
+| **Eenheid**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.valueUnit| Performance | |http://www.opengis.net/def/uom/SI/second|
+| **Waarde**| DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.value| Performance |  | 2|
+| **Name of measure**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.nameOfMeasure| Availability | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/availability |
+| **Measure description**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.measureDescription| Availability | | Het percentage van de tijd dat de dienst beschikbaar is op jaarbasis|
+| **Eenheid**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.valueUnit| Availability | |urn:ogc:def:uom:OGC::percent|
+| **Waarde**| DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.value| Availability | waarde tussen 0 en 100 | 80|
+| **Name of measure**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.nameOfMeasure| Capacity | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/capacity |
+| **Measure description**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.measureDescription| Capacity | | Het maximum aantal gelijktijdige verzoeken dat kan worden voltooid met de vermelde performance |
+| **Eenheid**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.valueUnit| Capacity | |http://www.opengis.net/def/uom/OGC/1.0/unity|
+| **Waarde**| DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.value| Capacity | integer | 2|
 
 3. **Categorie van de Spatial dat service**
 Daarnaast wordt ook middels de conformiteit opgegeven, tot welke categorie de Spatial Data Service behoord 
