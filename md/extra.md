@@ -2,13 +2,13 @@
 
 ## Good Practices
 
-Naast de wetgevende Implementing Rules (IRs) en de richting gevende Technical Guidelines (TGs) zijn er door verscshillende werkgroepen goede implementatievoorbeelden ontwikkeld en gepubliceerd: de zogenaamde Good Practices. Deze kunnen datapriders helpen bij de implementatie van INSPIRE.
-Op deze [webpagina](https://inspire.ec.europa.eu/portfolio/good-practice-library) worden twee typen onderscheiden: de endorsed en de candidate practices.
+Naast de wetgevende Implementing Rules (IRs) en de richting gevende Technical Guidelines (TGs) zijn er door verschillende werkgroepen goede implementatievoorbeelden ontwikkeld en gepubliceerd: de zogenaamde Good Practices. Deze kunnen datapriders helpen bij de implementatie van INSPIRE.
+Op de <a href="https://inspire.ec.europa.eu/portfolio/good-practice-library" target="_blank">Good Practice Library</a> worden twee typen onderscheiden: de endorsed en de candidate practices.
 Ook is er een template te vinden voor het beschrijven van een good practice en procedure om hem in te dienen en de status "endorsed" te krijgen.
 
 ## Terminologie
 
-Om interpretatieverschillen te voorkomen worden de termen die in verband met INSPIRE gebruikt worden geformaliseerd en gestandaardiseerd. Een volledig overzicht van deze termen vind je in het [INSPIRE Register](https://inspire.ec.europa.eu/registry). Hierin staat ook de [INSPIRE Feature Concept Dictionary (FCD)](https://inspire.ec.europa.eu/featureconcept) met termen die van belang zijn bij de voor de INSPIR- dataspecificaties en -harmonisatie en de [INSPIRE Glossary](https://inspire.ec.europa.eu/glossary/) met hierin algemene terminologie. De laatste is van belang voor alle INSPIRE-documenten.
+Om interpretatieverschillen te voorkomen worden de termen die in verband met INSPIRE gebruikt worden geformaliseerd en gestandaardiseerd. Een volledig overzicht van deze termen vind je in het [INSPIRE Register](https://inspire.ec.europa.eu/registry). Hierin staat ook de [INSPIRE Feature Concept Dictionary (FCD)](https://inspire.ec.europa.eu/featureconcept) met termen die van belang zijn bij de voor de INSPIRE- dataspecificaties en -harmonisatie en de [INSPIRE Glossary](https://inspire.ec.europa.eu/glossary/) met hierin algemene terminologie. De laatste is van belang voor alle INSPIRE-documenten.
 
 Hieronder staat de korte uitleg van de in deze wiki gebruikte afkortingen en termen:
 - [**SDIC (Spatial Data Interest Communities)**](https://inspire.ec.europa.eu/sdics) - Een community rondom een interessegebied, zoals thematisch of technisch. Enkele Nederlandse voorbeelden: TU Delft, Kadaster, Dienst der Hydrografie (Ministerie van Defensie) en Grontmij.
