@@ -86,14 +86,14 @@ In de onderstaande tabel staan de belangrijkste INSPIRE-documenten voor de datah
 | <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">Dataspecificaties</a> | 4.0  | 2017-04-01   | Dataspecificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
 | <a href="https://inspire.ec.europa.eu/schemas/" target="_blank">GML Application schemas</a> | 4.0  |    | GML applicatie schema's voor alle themas   |
 | <a href="https://inspire.ec.europa.eu/codelist" target="_blank">Codelijstregister</a>  |  |    | Bevat de codelijsten en hun waarden  |
-| <a href="https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model" target="_blank">INSPIRE Generic Conceptual Model (D2.5)</a> | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
+| <a href="https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model" target="_blank">INSPIRE Generic Conceptual Model (GCM; D2.5)</a> | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
 
 Daarnaast zijn de onderstaande documenten ook handig bij dataharmonisatie:
 
 |Titel | Versie | Datum | Opmerking |
 |-----------------|-------------|-------------|-------------|
 | <a href="https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?" target="_blank">INSPIRE datamodellen (UML)</a> | r 4618  | 2011-02-06  |Hier staan alle datamodellen uit de INSPIRE dataspecificaties overzichtelijk bij elkaar. De modellen die hier genoemd worden in IR's zijn definitief (*approved*). Dit geldt niet voor de *extended* delen (die zijn geen onderdeel van de IR's, maar wel van dataspecificaties) (*draft*)   |
-|<a href="https://inspire.ec.europa.eu/documents/inspire-data-specifications-%E2%80%93-base-models-%E2%80%93-generic-network-model" target="_blank">INSPIRE Base model - Generic Network Model</a> |1.0rc3|2013-04-05|Algemeen basismodel voor netwerken zoals bijvoorbeeld vervoersnetwerken|
+|<a href="https://inspire.ec.europa.eu/documents/inspire-data-specifications-%E2%80%93-base-models-%E2%80%93-generic-network-model" target="_blank">INSPIRE Base model - Generic Network Model (GNM)</a> |1.0rc3|2013-04-05|Algemeen basismodel voor netwerken zoals bijvoorbeeld vervoersnetwerken|
 |<a href="https://inspire.ec.europa.eu/documents/guidelines-encoding-spatial-data" target="_blank">Guidelines for the Encoding of Spatial Data (D2.7)</a>  | 3.3  | 2014-04-08   | Het document beschrijft de algemene encoding richtlijnen voor INSPIRE  |
 <a href="https://inspire.ec.europa.eu/id/document/tg/d2.9-o%26m-swe" target="_blank">Guidelines for the use of Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE</a>| 3.0|2016-12-16|Richtlijnen voor het gebruik van "Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE"|
 | <a href="https://inspire.ec.europa.eu/theme" target="_blank">Definition of Annex Themes and Scope</a>  |   |    | In het INSPIRE thema register staan per INSPIRE thema de definitie (in Nederlands) en een uitgebreidere beschrijving  |
@@ -279,57 +279,64 @@ De standaarden voor de presentatie van data zijn:
 - OGC Filter Encoding Standards - <a href="http://www.opengis.net/ogc" target="_blank">ogc</a> (FE 1.1)
 
 
-
 ## Data capture
-Met *data capture rules* worden INSPIRE-afspraken/regels omtrent de toepassingsschaal bedoeld. Voor sommige datasets is het nodig om resoluties te specificeren, met  gevolgen voor het detailniveau van de digitale kaart. Een dataset van een schaal van 1:1000.000 kent andere details dan dezelfde dataset met een schaal van 1:10.000. De capturing rules worden per thema gedefinieerd. Sommige thema’s hebben geen specifieke regels, terwijl anderen zeer specifiek zijn. Voor de specifieke afspraken wordt naar de data specificatie van het betreffende thema verwezen (meestal hoofdstuk 10).
+Met *data capture rules* worden INSPIRE-afspraken/regels omtrent de toepassingsschaal bedoeld. Voor sommige datasets is het nodig om resoluties te specificeren, met  gevolgen voor het detailniveau van de digitale kaart. Een dataset van een schaal van 1:100.000 kent andere details dan dezelfde dataset met een schaal van 1:10.000. De data capturing rules worden per INSPIRE thema gedefinieerd. Sommige INSPIRE thema’s hebben geen specifieke regels, terwijl anderen zeer specifiek zijn. 
+
+Voor de specifieke afspraken wordt naar het hoofdstuk 'Data Capture' in de [INSPIRE dataspecificatie](#inspire-dataspecificaties) van het betreffende thema verwezen (meestal hoofdstuk 10).
+
 
 ## Geometrie
-In het [Generic Conceptual Model](#generic-conceptual-model) en de dataspecificaties wordt aangegeven welke geometrietypen zijn toegestaan. In de meeste dataspecificaties wordt verwezen naar de *simple feature* specificatie van OGC, waarin exact beschreven staat hoe een valide geometrie eruit moet zien. In een aantal dataspecificaties worden ook geometrieën beschreven die buiten de simple features vallen (zoals 3D-objecten).
+In de [INSPIRE dataspecificaties](#inspire-dataspecificaties) en het [Generic Conceptual Model](#generic-conceptual-model) wordt aangegeven welke geometrietypen zijn toegestaan. In de meeste INSPIRE dataspecificaties wordt verwezen naar de *simple feature* specificatie van OGC, waarin exact beschreven staat hoe een valide geometrie eruit moet zien. In een aantal INSPIRE dataspecificaties worden ook geometrieën beschreven, die buiten de simple features vallen (zoals 3D-objecten).
 
-Geometrische objecten moeten voldoen aan de regels zoals deze door het OGC worden gesteld. De [Europese INSPIRE-validatieservice](#validatie) kan helpen bij het detecteren van invalide geometrieën. Via deze validatiedienst kan, vergelijkbaar met de metadata-validatiediensten, een dataset van een dataprovider getest worden op haar ‘INSPIRE-conformiteit’. Deze validatie test niet alleen de geometrie, maar ook op het applicatieschema (.xsd) van het betreffende thema.
+Geometrische objecten moeten voldoen aan de regels zoals deze door het OGC worden gesteld. De [Europese INSPIRE validator](#validatie) kan helpen bij het detecteren van invalide geometrieën. Via deze Europese INSPIRE validator kan een dataset van een dataprovider getest worden op de ‘INSPIRE-conformiteit’. Deze validatie test niet alleen de geometrie, maar test ook op het applicatieschema (.xsd) van het betreffende INSPIRE thema.
 
-Wanneer je alleen de geometrie wilt valideren, zijn er verschillende opties die conform de OGC-regels testen: zowel open-source (bv. JavaTopologySuite ([JTS](https://github.com/locationtech/jts))) als closed-source tools zijn hiervoor geschikt.
+Wanneer je alleen de geometrie wilt valideren, zijn er verschillende opties die conform de OGC-regels testen, zowel open-source tools (bijvoorbeeld <a href="https://github.com/locationtech/jts" target="_blank">JavaTopologySuite (JTS)</a>) als closed-source tools.
 
-Naast de geometrische benadering van 'valide objecten' zijn er ook specifieke regels voor bepaalde thema's zoals in de volgende subparagraven benoemd.
+
+Naast de geometrische benadering van 'valide objecten' zijn er ook specifieke regels voor bepaalde INSPIRE thema's zoals in de volgende twee subparagrafen staat beschreven.
 
 ### Aansluitende netwerken
-Binnen de thema's **hydrografie** en **vervoersnetwerken** zijn er aanvullende eisen gedefinieerd over het op elkaar aansluiten van deze netwerken (voorbeeld: wegen op waterwegen op spoor). Hiervoor is een mechanisme uitgewerkt waarin aangegeven moet worden welke knooppunten op elkaar horen aan te sluiten. Hiermee is het mogelijk de verschillende netwerken te koppelen zonder dat deze fysiek al op elkaar liggen. Dit moet op datasetniveau worden opgepakt.
+Binnen de INSPIRE thema's **Hydrografie** en **Vervoersnetwerken** zijn er aanvullende eisen gedefinieerd over het op elkaar aansluiten van deze netwerken (voorbeeld: wegen op waterwegen op spoor). Hiervoor is een mechanisme uitgewerkt waarin aangegeven moet worden welke knooppunten op elkaar horen aan te sluiten. Hiermee is het mogelijk de verschillende netwerken te koppelen zonder dat deze fysiek al op elkaar liggen. Dit moet op datasetniveau worden opgepakt.
 
-De onderliggende documentatie hiervoor staat in de dataspecificaties voor [vervoersnetwerken](https://inspire.ec.europa.eu/id/document/tg/tn) in paragraaf 7.1.6 Logical Consistency – Topological consistency en [hydrografie](https://inspire.ec.europa.eu/id/document/tg/hy) in paragraaf 7.1.5.
+De aanvullende eisen hiervoor staan in de subparagraaf 'Logical Consistency – Topological consistency' van de INSPIRE dataspecificaties: 
+- voor het INSPIRE thema **Hydrografie** is dit in paragraaf 7.1.5 van de betreffende <a href="https://inspire.ec.europa.eu/id/document/tg/hy" target="_blank">dataspecificatie</a>;
+- voor het INSPIRE thema **Vervoersnetwerken** is dit in paragraaf 7.1.6 van de betreffende <a href="https://inspire.ec.europa.eu/id/document/tg/tn" target="_blank">dataspecificatie</a>. 
 
 ### Cross-boundary harmonisatie
-Bij het gebruik van geodata over lands-, regio- en administratieve grenzen heen kunnen verschillende typen fouten optreden, o.a. door
+Bij het gebruik van geodata over lands-, regio- en administratieve grenzen heen kunnen verschillende soorten fouten optreden, o.a. door:
 - Het hanteren van verschillende classificaties aan beide kanten van de grens;
-- Het gebruik van een verschillend Level of Detail (LoD) bij dezelfde thematiek;
+- Het gebruik van een verschillend *Level of Detail (LoD)* bij dezelfde thematiek;
 - Verschillende interpretatie van de grens;
 - Overlappende objecten en geometrische verschuivingen.
 
-Het onderstaande figuur geeft dit grafisch weer.
+Onderstaande figuur geeft dit grafisch weer:
 
 ![grensproblemen](media/grensproblemen.png "Gebruik van geodata over grenzen heen kan leiden tot verschillende soorten fouten")
 
-Het verbeteren van grensoverstijgende onregelmatigheden kan alleen op basis van wederzijdse afstemming en goedkeuring plaatsvinden. Het is de verantwoordelijkheid van de aangemerkte organisaties om dit af te stemmen met de buurlanden. INSPIRE geeft op verschillende plaatsen aan welke zogenaamde *edge matching*-technieken er gebruikt kunnen worden om met deze situaties om te gaan.
-- Annex B van D2.6 [Methodology for the development of data specifications](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.6_v3.0.pdf) kent een uitvoerige uitleg over verschillende situaties en welke oplossingen INSPIRE adviseert.
-- De dataspecificatie van **Hydrografie** (paragraaf 10.2.7) kent ook specifieke aandacht voor grensoverschrijdende dataharmonisatiesituaties. 
-- De dataspecificaties van de andere thema's kennen geen specifieke aandacht voor dit onderwerp. Dat wil overigens niet zeggen dat de problematiek van cross-boundary harmonisation daar niet zal voorkomen.
-- Ook bij het thema Vervoersnetwerken speelt het probleem van de edge-matching.
+Het verbeteren van grensoverstijgende onregelmatigheden kan alleen op basis van wederzijdse afstemming en goedkeuring plaatsvinden. Het is de verantwoordelijkheid van de aangemerkte organisaties om dit af te stemmen met de buurlanden. 
+
+INSPIRE geeft op verschillende plaatsen aan welke zogenaamde *edge matching*-technieken gebruikt kunnen worden om met deze situaties om te gaan:
+- Annex B 'Management of connections at international boundaries' van <a href="https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.6_v3.0.pdf" target="_blank">Methodology for the development of data specifications (D2.6)</a> beschrijft verschillende situaties en welke oplossingen INSPIRE adviseert.
+- De <a href="https://inspire.ec.europa.eu/id/document/tg/hy" target="_blank">dataspecificatie</a> van **Hydrografie** beschrijft in paragraaf 10.2.7 de grensoverschrijdende dataharmonisatie situaties.
+- Ook bij het thema **Vervoersnetwerken** speelt het probleem van de edge-matching. Voor de grensoverschrijdende connectiviteit (verbindingen tussen netwerken over lands- en regiogrenzen heen) wordt hier gebruik van een mechanisme dat wordt geleverd door het [INSPIRE Base model - Generic Network Model (GNM)](#documentatie-dataharmonisatie).
+- De INSPIRE dataspecificaties van de andere thema's kennen geen specifieke aandacht voor dit onderwerp. Dat wil overigens niet zeggen dat de problematiek van cross-boundary harmonisation daar niet zal voorkomen.
 
 ## Datavalidatie
 Datavalidatie is een mechanisme om te controleren of een bepaalde dataset aan de INSPIRE specificaties voldoet en is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Het is daarmee een onmisbare toets op de vraag of de dataharmonisatie goed is uitgevoerd.
-Lees meer over dit onderwerp in het hoofdstuk [Validatie](#conformance-classes-datavalidatie).
+Datavalidatie wordt uitgevoerd met de Europese INSPIRE-validator. Lees meer over dit onderwerp in het hoofdstuk [Validatie](#validatie) en voor datavalidatie ook specifiek de paragraaf [Conformance classes datavalidatie](#conformance-classes-datavalidatie).
 
 ## Checklist dataharmonisatie
 Bij dataharmonisatie is het van belang op de volgende punten te letten:
 
-1. Onwerp je [transformatie](#fasen) van As-is naar de INSPIRE dataspecificaties.
+1. Onwerp je [transformatie](#fasen) van as-is datamodel naar de INSPIRE dataspecificaties.
 2. Beslis of er een [extensie](#extensies) gemaakt moet worden.
-3. Registreer de namespaces via het [namespaceregister](http://inspirelab.geonovum.nl/namespaces/).
+3. Registreer de [namespaces](#namespace) via het [INSPIRE namespaceregister](#inspire-namespaceregister).
 4. Registreer [codelijsten](#codelijsten) als er codes gebruikt worden naast die al in bestaande INSPIRE codelijsten voorkomen.
-5. Valideer de datasets tussentijds met de INSPIRE-validator, zodat vroegtijdig eventuele fouten opgelost kunnen worden. Informatie over datasetvalidatie is [hier](#conformance-classes-datavalidatie) te vinden.
-6. Publiceer datasetmetadata van de geharmoniseerde dataset. Voor geharmoniseerde data zijn er drie extra metadata-elementen die ingevuld dienen te worden; zie de [invulinstructies voor de metadata](#invulinstructie-voor-datasets). [Valideer daarna de datasetmetadata](#metadata-validatie). Contoleer in het NGR of de categorie `inspire` is geactiveerd.
+5. Valideer de datasets tussentijds met de [INSPIRE-validators](#te-gebruiken-validators), zodat vroegtijdig eventuele fouten opgelost kunnen worden. Informatie over datavalidatie is [hier](#conformance-classes-datavalidatie) te vinden.
+6. Publiceer dataset metadata van de geharmoniseerde dataset in het NGR. Voor geharmoniseerde data zijn er drie extra metadata-elementen die ingevuld dienen te worden; zie de [invulinstructies voor de metadata](#invulinstructie-voor-datasets). Contoleer in het NGR of de categorie `inspire` is geactiveerd, anders verschijnt de metadata niet in de INSPIRE Discovery Service. [Valideer daarna de dataset metadata](#metadata-validatie). 
 7. Zorg dat de view service van de geharmoniseerde dataset voldoet aan de eisen die INSPIRE stelt voor geharmoniseerde data. Zie in de betreffende dataspecificatie het hoofdstuk [Portrayal](#portrayal). 
 8. [Valideer de services](#valideren-services) van de geharmoniseerde dataset. Let er daarbij op dat de output van de downloadservices ook conform de dataspecificaties is net als dat met de input is gedaan in stap 5.
-9. [Valideer de metadata van de services](#valideren-metadata-services). Contoleer in het NGR of de categorie `inspire` is geactiveerd, anders verschijnt de metadata niet in de INSPIRE Discovery Service.
-11. Voer de verwijzing naar de metadata (de UUID) van de geharmoniseerde dataset op in [het INSPIRE aanmerkingsregister](https://inspireaanmerking.nl/), zodat bekend is voor welke aangemerkte dataset daadwerkelijk data gepubliceerd is conform de eisen van INSPIRE.
-12. Check of er in de metadata van de data en services goed naar elkaar is verwezen middels de [juiste links](https://inspire-geoportal.ec.europa.eu/linkagechecker.html).
-13. Check in het [INSPIRE Geoportal](https://inspire-geoportal.ec.europa.eu/tv_home.html) of de data daadwerkelijk te bekijken en te downloaden is en onder het correcte thema te vinden is.
+9. Publiceer metadata van de services van de geharmoniseerde dataset in het NGR. Contoleer in het NGR of de categorie `inspire` is geactiveerd, anders verschijnt de metadata niet in de INSPIRE Discovery Service. [Valideer daarna de metadata van de services](#valideren-metadata-services). 
+10. Check of er in de metadata van de data en services goed naar elkaar is verwezen middels de [juiste links](https://inspire-geoportal.ec.europa.eu/linkagechecker.html).
+13. Check in het [INSPIRE Geoportal](#europese-inspire-geoportal) of de data daadwerkelijk te bekijken en te downloaden is en onder het correcte thema te vinden is. N.B. Elke eerste maandag van de maand wordt er geharvest naar het INSPIRE geoportal.
+11. Tot slot voer de verwijzing naar de metadata (de UUID) van de geharmoniseerde dataset op in [het INSPIRE aanmerkingsregister](#aanmerkingsregister), zodat bekend is voor welke aangemerkte dataset daadwerkelijk data gepubliceerd is conform de eisen van INSPIRE.
