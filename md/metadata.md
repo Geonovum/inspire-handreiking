@@ -180,7 +180,7 @@ Per soort spatial data service, staat in de volgende paragraven beschreven wat d
 
 ### Invulinstructie service metadata
 
-De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen voor netwerkservices. Voor de Spatial Data Services geldt onderstaande ook behalve de instructies voor de conformiteit. De aanvullende instructies daarvoor staan in de volgende paragrafen.
+De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen voor alle INSPIRE services. Hiermee kan aan de metadata vereisten voor netwerkservices, zoals de view en download services, worden voldaan. Voor de overige INSPIRE Spatial Data Services geldt onderstaande ook behalve de instructies voor de conformiteit. De aanvullende instructies daarvoor staan in de volgende paragrafen.
 
 De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Verklaring en Indicatie van conformiteit worden meerdere keren opgenomen. Voor alle netwerk services is het opgeven van de conformiteit met de verordening netwerkdiensten verplicht. Aanbevolen wordt om ook de conformiteit met de technische specificaties,voor view en download etc. op te nemen.
 
