@@ -195,9 +195,11 @@ De belangrijkste factor is de kennis die binnen een organisatie aanwezig is. Zij
 
 
 ## Het InspireId
-Volgens de richtlijnen van INSPIRE moet elk object (*feature*) voorzien worden van een unieke identificatie: het InspireId. Zo kunnen derden ondubbelzinnig aan het object refereren. Dataproviders dienen dus – buiten eventuele eigen Id’s (die in de eigen organisatie wordt gebruikt) – de ruimtelijke objecten van een unieke INSPIRE identificatie te voorzien. Belangrijk hierbij is, dat de identifier **uniek** en **persistent** moet zijn. Persistent betekent dat de identifier gedurende de levensduur van het object ongewijzigd moet blijven. 
+Volgens de richtlijnen van INSPIRE moet elk object (*feature*) voorzien worden van een unieke identificatie: het InspireId. Zo kunnen derden ondubbelzinnig aan het object refereren. Dataproviders dienen dus – buiten eventuele eigen Id’s (die in de eigen organisatie wordt gebruikt) – de ruimtelijke objecten van een unieke INSPIRE identificatie te voorzien. 
 
-Een InspireId bestaat uit de volgende onderdelen:
+De unieke INSPIRE identifier heet het InspireId. Belangrijk is, dat de identifier **uniek** en **persistent** moet zijn. Persistent betekent dat de identifier gedurende de levensduur van het object ongewijzigd moet blijven. 
+
+Een InspireId bestaat uit de volgende drie onderdelen:
 - Namespace (verplicht);
 - LocalId (verplicht);
 - VersionId (optioneel).
@@ -205,7 +207,7 @@ Een InspireId bestaat uit de volgende onderdelen:
 ### Namespace
 Een namespace heeft als belangrijkste doel dat het de ruimte definieert waarbinnen de [localId](#LocalId) uniek is. Om te voorkomen dat verschillende dataproviders dezelfde namespace gebruiken, en om consistentie te verkrijgen, is er in Nederland (en Europa) een zogenaamd Namespaceregister opgezet. De namespace wordt per **dataset** ingericht. De namespace is onderdeel van het InspireId en moet derhalve ook in de data voorkomen.
 
-De Nederlandse namespaces worden geregistreerd in het Nederlandse INSPIRE Namespaceregister.
+De Nederlandse namespaces worden geregistreerd in het Nederlandse INSPIRE Namespaceregister. 
 
 #### INSPIRE Namespaceregister
 Het INSPIRE Namespaceregister is <a href="http://inspirelab.geonovum.nl/namespaces/" target="_blank">hier</a> te vinden. 
