@@ -25,7 +25,8 @@ Voor datasets en dataset series geldt het [Nederlands metadata profiel op ISO 19
 
 Voor services geldt het [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/)
 
-INSPIRE specifiek zijn de aanvullende [Invulinstructies voor datasets](#invulinstructies-voor-datasets) 
+INSPIRE specifiek zijn de aanvullende [Invulinstructies voor datasets](#invulinstructies-voor-datasets) en [Invulinstructie service metadata](#Invulinstructie service metadata) 
+
 
 Zie voor meer informatie over metadata in het algemeen, het [dossier metadata op de Geonovum-website](https://www.geonovum.nl/geo-standaarden/metadata).
 
@@ -63,6 +64,8 @@ In sommige gevallen is het toch noodzakelijk om gebruiksvoorwaarden te handhaven
 De gebruiksvoorwaarden, ook als daarvan wordt afgezien in Public Domain Mark of Creative Commons Zero-verklaring, worden opgenomen in de metadata. De instructie hiervoor is te vinden in de paragraaf [Invulinstructies voor datasets](#invulinstructies-voor-datasets).
 
 ## Dataset metadata
+
+In de [Invulinstructies voor dataset](# Invulinstructies voor dataset) zijn de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/).
 
 ### Invulinstructies voor datasets
 De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen. Let erop, dat er zowel verplichte ('Ja') als conditionele ('C') elementen in voorkomen. Zo kan bijvoorbeeld een aantal elementen pas worden ingevuld wanneer de dataharmonisatie is voltooid. Voor prioritaire datasets is de [aanvullende instructie](#prioritaire-datasets) over het opnemen van de trefwoorden in de metadata  ook in de invulinstructies meegenomen.
@@ -170,9 +173,9 @@ TO DO check XML !!! Hier is een [voorbeeld-metadatabestand](https://wiki.geonovu
 
 De meeste OGC-services, zoals WMS en WFS hebben een capabilities-document dat tijdens het ontwikkelen van de service aangemaakt wordt. Het is een beschrijving van de informatie-inhoud van de dienst. Buiten de informatie over de service zelf bijvoorbeeld de mogelijke request parameters, bevatten de capabilities ook metadata zoals trefwoorden en verantwoordelijke organisatie. Het is dit XML-document dat als antwoord op het GetCapabilities-request door de server terug aan de client gegeven wordt. In dit capabilities-document worden automatisch enkele, maar niet alle voor INSPIRE verplichte, metadata elementen toegevoegd. Het automatisch gegenereerde document is dus niet volledig en dient aangevuld te worden met de voor INSPIRE verplichte en conditionele velden, alvorens het ‘gepubliceerd’ wordt. Het aanvullen kan door de capabilities uit te breiden met de verplichtte elementen, of door te verwijzen naar het ISO 19115 conforme XML-bestand waar alle metadata-elementen in beschreven zijn. Daarbij is het van belang dat de metadata beschrijvingen die in de capabilities zijn opgenomen, inhoudelijk overeenkomen met het corresponderende metadata in de volledige metadata in het ISO 19115 conforme XML bestand.
 
-Er zijn verschillende soorten services, naast de netwerk services, zoals de view en download services, zijn er ook de invocable, interoperable en harmonised spatial data services. In het hoofdstuk over [Services](#services) staat onder de paragraaf [Spatial Data Services](#spatial-data-services) beschreven welke soorten SDS-sen er zijn. Aan de hand van een stroomschema kan bepaald worden tot welke categorie een service behoord. Alle services dienen in ieder geval van service metadata te worden voorzien. Voor de invocable, interoperable en harmonised spatial data services gelden aanvullende vereisten. 
+Er zijn verschillende soorten spatial data services, naast de netwerk services, zoals de view en download services, zijn er ook de invocable, interoperable en harmonised spatial data services. In het hoofdstuk over [Services](#services) staat onder de paragraaf [Spatial Data Services](#spatial-data-services) (SDS) beschreven welke soorten SDS-sen er zijn. Aan de hand van een stroomschema kan bepaald worden tot welke categorie een service behoord. Alle services dienen in ieder geval van service metadata te worden voorzien. In de [Invulinstructie service metadata](#Invulinstructie service metadata) zijn daarvoor de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/). Voor de invocable, interoperable en harmonised spatial data services gelden aanvullende vereisten. 
 
-Per soort staat in de volgende paragraven beschreven wat de metadata eisen zijn.
+Per soort spatial data service, staat in de volgende paragraven beschreven wat de metadata eisen zijn.
 
 
 ### Invulinstructie service metadata
@@ -188,8 +191,8 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 | **Naam van Thesaurus** | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.title | C | Verplichte thesaurus voor INSPIRE. | GEMET - INSPIRE themes, version 1.0 |
 | **Thesaurus Datum** | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.date | C | De datum van publicatie | 2008-06-01 |
 | **Thesaurus Datum Type** | MD_Metadata.identificationInfo> SV_ServiceIdentification.descriptiveKeywords> MD_Keywords.thesaurusName> CI_Citation.date> CI_Date.dateType | C | Het datumtype | publicatie |
-| **Overige beperkingen** | MD_Metadata.identificationInfo> SV_ServiceIdentification.resourceConstraints>MD_LegalConstraints.otherConstraint | Ja | Voor INSPIRE moet een waarde uit codelijst [ConditionsApplyingToAccessAndUse](http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/) worden opgegeven in een Anchor | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply Geen beperkingen|
-| **Overige beperkingen**| MD_Metadata.identificationInfo> SV_ServiceIdentification.resourceConstraints>MD_LegalConstraints.otherConstraint | Ja | Voor INSPIRE moet ook een waarde uit codelijst [LimitationsOnPublicAccess](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/) worden opgegeven in een Anchor | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations Geen beperkingen|
+| **Overige beperkingen** | MD_Metadata.identificationInfo> SV_ServiceIdentification.resourceConstraints> MD_LegalConstraints.otherConstraint | Ja | Voor INSPIRE moet een waarde uit codelijst [ConditionsApplyingToAccessAndUse](http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/) worden opgegeven in een Anchor | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply Geen beperkingen|
+| **Overige beperkingen**| MD_Metadata.identificationInfo> SV_ServiceIdentification.resourceConstraints> MD_LegalConstraints.otherConstraint | Ja | Voor INSPIRE moet ook een waarde uit codelijst [LimitationsOnPublicAccess](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/) worden opgegeven in een Anchor | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations Geen beperkingen|
 | **Specificatie Titel** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.title | ja | Voor INSPIRE netwerk services dient de conformiteit met de verordening  netwerk diensten opgenomen te worden | VERORDENING (EG) Nr. 976/2009 VAN DE COMMISSIE van 19 oktober 2009 tot uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad wat betreft de netwerkdiensten |
 | **Specificatie Datum** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.date | ja | Publicatiedatum van de Inspire verordening | 2009-10-19 |
 | **SpecificatieDatum Type** | MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_DomainConsistency.result> DQ_ConformanceResult.specification> CI_Citation.date> CI_Date.dateType | ja | | Publication |
@@ -206,11 +209,14 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 
 [Hier is een voorbeeld XML-bestand te vinden voor service-metadata](docs/Voorbeeld_Metadata_Service_2019.zip).
 
-## Metadata Spatial data services
+## Spatial data services metadata
 
 ### Invocable SDS
 
-Spatial Data Services van de categorie *invocable* worden naast de INSPIRE service metadata, voorzien van metadata over de conformiteit met verschillende documenten.  In plaats van de conformiteit met de netwerk verordening (VERORDENING (EG) Nr. 976/2009 VAN DE COMMISSIE van 19 oktober 2009 tot uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad wat betreft de netwerkdiensten), wordt de conformiteit met de VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens opgenomen. Deze verordening bevat naast de specificaties voor geharmoniseerde datasets, ook een deel over de diensten (services) daarop. Daarnaast wordt ook middels de conformiteit opgegeven, tot welke categorie de Spatial Data Service behoord en volgens welke technische specificatie de service is gemaakt.
+Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#Invulinstructie service metadata) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/).
+
+Spatial Data Services van de categorie *invocable* wordt aanvullend voorzien van metadata over de conformiteit met verschillende specificaties.  
+In plaats van de conformiteit met de netwerk verordening (VERORDENING (EG) Nr. 976/2009 VAN DE COMMISSIE van 19 oktober 2009 tot uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad wat betreft de netwerkdiensten), wordt de conformiteit met de VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens opgenomen. Deze verordening bevat naast de specificaties voor geharmoniseerde datasets, ook een deel over de diensten (services) daarop. Daarnaast wordt ook middels de conformiteit opgegeven, tot welke categorie de Spatial Data Service behoord en volgens welke technische specificatie de service is gemaakt.
 
  In onderstaande tabel zijn de aanvullende instructies voor conformiteit van de invocable spatial data services opgenomen.
  
@@ -236,7 +242,9 @@ Spatial Data Services van de categorie *invocable* worden naast de INSPIRE servi
 
 ### Interoperable SDS
 
-Spatial Data Services van de categorie interoperable moeten, naast de instructies voor invocable services, worden voorzien van metadata over verschillende extra elementen:
+Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#Invulinstructie service metadata) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/).
+
+Spatial Data Services van de categorie interoperable moeten, naast de de [Invocable SDS](#Invocable SDS) instructies, worden voorzien van metadata over verschillende extra elementen:
 1. **Coördinaat referentie systeem**: alle CRS waarin een service beschikbaar is moeten worden opgegeven middels een URI. Gebruik voor elke URI een apart metadata element. Bijvoorbeeld:
 
 http://www.opengis.net/def/crs/EPSG/0/4937 (ETRS 89) 
@@ -253,18 +261,18 @@ In onderstaande tabel zijn de invulinstructies voor de kwaliteit van service opg
 
  | Metadata-element | Longname | Inhoud over | Omschrijving | Waarde |
 | ---------------- | -------- | ----------------- | ------------ | --------------- |
-| **Name of measure**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.nameOfMeasure| Performance | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/performance |
-| **Measure description**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.measureDescription| Performance | | De tijd waarbinnen een verzoek aan de service kan worden uitgevoerd, uitgedrukt in seconden |
-| **Eenheid**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.valueUnit| Performance | |http://www.opengis.net/def/uom/SI/second|
-| **Waarde**| DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.value| Performance |  | 2|
-| **Name of measure**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.nameOfMeasure| Availability | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/availability |
-| **Measure description**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.measureDescription| Availability | | Het percentage van de tijd dat de dienst beschikbaar is op jaarbasis|
-| **Eenheid**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.valueUnit| Availability | |urn:ogc:def:uom:OGC::percent|
-| **Waarde**| DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.value| Availability | waarde tussen 0 en 100 | 80|
-| **Name of measure**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.nameOfMeasure| Capacity | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/capacity |
-| **Measure description**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.measureDescription| Capacity | | Het maximum aantal gelijktijdige verzoeken dat kan worden voltooid met de vermelde performance |
-| **Eenheid**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.valueUnit| Capacity | |http://www.opengis.net/def/uom/OGC/1.0/unity|
-| **Waarde**| DQ_DataQuality.report>DQ_ConceptualConsistency.result>DQ_QuantitativeResult.value| Capacity | integer | 2|
+| **Name of measure**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_ConceptualConsistency.nameOfMeasure| Performance | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/performance |
+| **Measure description**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_ConceptualConsistency.measureDescription| Performance | | De tijd waarbinnen een verzoek aan de service kan worden uitgevoerd, uitgedrukt in seconden |
+| **Eenheid**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_ConceptualConsistency.result> DQ_QuantitativeResult.valueUnit| Performance | |http://www.opengis.net/def/uom/SI/second|
+| **Waarde**| DQ_DataQuality.report> DQ_ConceptualConsistency.result> DQ_QuantitativeResult.value| Performance |  | 2|
+| **Name of measure**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_ConceptualConsistency.nameOfMeasure| Availability | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/availability |
+| **Measure description**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_ConceptualConsistency.measureDescription| Availability | | Het percentage van de tijd dat de dienst beschikbaar is op jaarbasis|
+| **Eenheid**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_ConceptualConsistency.result> DQ_QuantitativeResult.valueUnit| Availability | |urn:ogc:def:uom:OGC::percent|
+| **Waarde**| DQ_DataQuality.report> DQ_ConceptualConsistency.result> DQ_QuantitativeResult.value| Availability | waarde tussen 0 en 100 | 80|
+| **Name of measure**|MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_ConceptualConsistency.nameOfMeasure| Capacity | Hiermee word aangegeven welk criterium hier beschreven wordt, de waarde wordt opgenomen in en  Anchor | http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria/capacity |
+| **Measure description**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_ConceptualConsistency.measureDescription| Capacity | | Het maximum aantal gelijktijdige verzoeken dat kan worden voltooid met de vermelde performance |
+| **Eenheid**| MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_ConceptualConsistency.result> DQ_QuantitativeResult.valueUnit| Capacity | |http://www.opengis.net/def/uom/OGC/1.0/unity|
+| **Waarde**| DQ_DataQuality.report> DQ_ConceptualConsistency.result> DQ_QuantitativeResult.value| Capacity | integer | 2|
 
 3. **Categorie van de Spatial dat service**
 Daarnaast wordt ook middels de conformiteit opgegeven, tot welke categorie de Spatial Data Service behoord 
@@ -285,7 +293,9 @@ Daarnaast wordt ook middels de conformiteit opgegeven, tot welke categorie de Sp
 
 ### Harmonised SDS
 
-Spatial Data Services van de categorie harmonised moeten, naast de vereiste elementen voor interoperable services, worden voorzien van metadata over invocation.
+Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#Invulinstructie service metadata) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/).
+
+Spatial Data Services van de categorie harmonised moeten, naast de de [Interoperable SDS](#Interoperable SDS) instructies, worden voorzien van metadata over invocation.
 
 Invocation-metadata is informatie over de operaties die een service kan uitvoeren. Deze informatie kan op twee verschillende manieren beschikbaar worden gesteld.
 
