@@ -2,8 +2,8 @@
 
 ## Good Practices
 
-Naast de wetgevende Implementing Rules (IRs) en de richting gevende Technical Guidelines (TGs) zijn er door verschillende werkgroepen goede implementatievoorbeelden ontwikkeld en gepubliceerd: de zogenaamde Good Practices. Deze kunnen datapriders helpen bij de implementatie van INSPIRE.
-Op de <a href="https://inspire.ec.europa.eu/portfolio/good-practice-library" target="_blank">Good Practice Library</a> worden twee typen onderscheiden: de endorsed en de candidate practices.
+Naast de wetgevende Implementing Rules (IRs) en de richting gevende Technical Guidelines (TGs) zijn er door verschillende werkgroepen goede implementatievoorbeelden ontwikkeld en gepubliceerd: de zogenaamde Good Practices. Deze kunnen dataproviders helpen bij de implementatie van INSPIRE.
+Op de <a href="https://inspire.ec.europa.eu/portfolio/good-practice-library" target="_blank">Good Practice Library</a> staan de Good Practices beschreven. Hier worden twee typen onderscheiden: de endorsed en de candidate practices.
 Ook is er een template te vinden voor het beschrijven van een good practice en procedure om hem in te dienen en de status "endorsed" te krijgen.
 
 ## Terminologie
