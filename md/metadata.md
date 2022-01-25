@@ -218,13 +218,13 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 
 ### Voorbeeldbestand XML voor INSPIRE service-metadata
 
-[Hier is een voorbeeld XML-bestand te vinden voor service-metadata](docs/Voorbeeld_Metadata_Service_2019.zip).
+TO DO check XML !!! [Hier is een voorbeeld XML-bestand te vinden voor service-metadata](docs/Voorbeeld_Metadata_Service_2019.zip).
 
 ## Spatial data services metadata
 
 ### Invocable SDS
 
-Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#Invulinstructie-service-metadata)) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/).
+Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#Invulinstructie-service-metadata) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/).
 
 Spatial Data Services van de categorie *invocable* wordt aanvullend voorzien van metadata over de conformiteit met verschillende specificaties.  
 In plaats van de conformiteit met de netwerk verordening (VERORDENING (EG) Nr. 976/2009 VAN DE COMMISSIE van 19 oktober 2009 tot uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad wat betreft de netwerkdiensten), wordt de conformiteit met de VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens opgenomen. Deze verordening bevat naast de specificaties voor geharmoniseerde datasets, ook een deel over de diensten (services) daarop. Daarnaast wordt ook middels de conformiteit opgegeven, tot welke categorie de Spatial Data Service behoord en volgens welke technische specificatie de service is gemaakt.
@@ -341,6 +341,7 @@ In onderstaande tabel de invul instrucies voor optie 2.
 
 Voor het aanmaken voor metadata voor de verschillende Spatial Data Service categorieën zijn templates beschikbaar, waarin de benodigde metadata-elementen zijn opgenomen en informatie deels is ingevuld.
 
+TO DO check XML !!!
 - [Template NL profiel op ISO19119 v12 SDS invocable](docs/Template_NL_profiel_op_ISO19119_v12_SDS_invocable.xml)
 - [Template NL profiel op ISO19119 v12 SDS interoperable](docs/Template_NL_profiel_op_ISO19119_v12_SDS_interoperable.xml)
 - [Template NL profiel op ISO19119 v12 SDS harmonised](docs/Template_NL_profiel_op_ISO19119_v12_SDS_harmonised.xml)
@@ -359,9 +360,9 @@ Voor de INSPIRE-conformiteittoetsen voor metadata kan men gebruik maken van de E
 
 **Vraag: Waarom kan ik mijn metadata niet in het EU INSPIRE portaal terugvinden?**
 
-Alleen metadata met de aanduiding 'categorie INSPIRE' wordt doorgeleverd aan de EU voor INSPIRE. In het hoofstuk [Publiceren](#publiceren) is beschreven hoe dat uitgevoerd kan worden.
+Alleen metadata met de aanduiding 'categorie INSPIRE' wordt doorgeleverd aan de EU voor INSPIRE. In het hoofstuk [Publiceren](#publiceren) is beschreven hoe deze categorie toegevoegd kan worden. Als de categorie wel is toegevoegd, kan het probleem ook zitten in het niet aanwezig zijn van een trefwoord uit de GEMET INSPIRE thema thesaurus.
 
-**Vraag: Trefwoord uit GEMET INSPIRE thema. Is een trefwoord verplicht in het metadatadocument?**
+**Vraag: Trefwoord uit GEMET INSPIRE thema thesaurus. Is een trefwoord verplicht in de metadata?**
 
 Voor datasets en dataset-series die onder INSPIRE vallen, dient men de thema’s waar de data onder valt op te nemen. Deze INSPIRE-thema’s zijn te vinden in de [thesaurus GEMET](http://www.eionet.europa.eu/gemet/inspire_themes). Voor INSPIRE moet tenminste één trefwoord uit deze thesaurus over worden genomen. Het is ook mogelijk daarnaast zelfgedefinieerde trefwoorden, of trefwoorden uit een andere thesaurus in te vullen.
 
@@ -378,12 +379,12 @@ Een voorbeeld:
 &lt;gmd:descriptiveKeywords&gt;
    &lt;gmd:MD_Keywords&gt;
        &lt;gmd:keyword&gt;
-          &lt;gco:CharacterString&gt;Beschermde gebieden&lt;/gco:CharacterString&gt;
+          &lt;gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-theme/ps"&gt;Beschermde gebieden&lt;/gmx:Anchor&gt;
        &lt;/gmd:keyword&gt;
        &lt;gmd:thesaurusName&gt;
            &lt;gmd:CI_Citation&gt;
                 &lt;gmd:title&gt;
-                     &lt;gco:CharacterString&gt;GEMET - INSPIRE themes, version 1.0&lt;/gco:CharacterString&gt;
+                     &lt;gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-themes/"&gt;GEMET - INSPIRE themes, version 1.0 &lt;/gmx:Anchor>&gt;
                 &lt;/gmd:title&gt;
        .......
    &lt;/gmd:MD_Keywords&gt;
@@ -400,7 +401,7 @@ Een voorbeeld:
 &lt;gmd:thesaurusName&gt;
    &lt;gmd:CI_Citation&gt;
       &lt;gmd:title&gt;
-        &lt;gco:CharacterString&gt;GEMET - INSPIRE themes, version 1.0&lt;/gco:CharacterString&gt;
+         &lt;gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-themes/"&gt;GEMET - INSPIRE themes, version 1.0 &lt;/gmx:Anchor>&gt;
       &lt;/gmd:title&gt;
       &lt;gmd:date&gt;
          &lt;gmd:CI_Date&gt;
