@@ -324,6 +324,7 @@ In onderstaande tabel de invulinstrucies voor optie 1.
 
 
 In onderstaande tabel de invul instrucies voor optie 2.
+
  | Metadata-element | Longname | Omschrijving | Waarde |
 | ---------------- | -------- |  ------------ | --------------- |
 | **Operatie naam**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.operationName | Naam van de operatie die toegang geeft tot de beschrijving van operaties en endpoints | getCapabilities |
