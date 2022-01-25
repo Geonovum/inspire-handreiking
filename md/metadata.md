@@ -330,7 +330,7 @@ In onderstaande tabel de invul instrucies voor optie 2.
 | **Operatie naam**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.operationName | Naam van de operatie die toegang geeft tot de beschrijving van operaties en endpoints | getCapabilities |
 | **DCP**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.DCP | Dit element bevat het Distributed Computing Platforms waarop de operatie is geïmplementeerd. INSPIRE gaat van de default waarde WebServices uit. | WebServices |
 | **Parameter naam**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.parameters> SV_Parameter.name | naam van de parameter zoals in de service voorkomt | Borehole |
-| **Parameter optionaliteit**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.parameters> SV_Parameter.optionality |aangeven of dit optioneel of verplicht is  | Verplicht |
+| **Parameter optionaliteit**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.parameters> SV_Parameter.optionality | geeft aan of de parameter optioneel of verplicht is  | Verplicht |
 | **Parameter herhaalbaarheid**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.parameters> SV_Parameter.repeatability | geeft aan of de parameter meerdere keren kan voorkomen | true |
 | **Connectie URL**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.connectPoint> CI_OnlineResource.linkage | netwerkadres van de service | http://www.url_naar_de_capabilities_van_de_service |
 
