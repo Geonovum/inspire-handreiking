@@ -44,7 +44,7 @@ De INSPIRE-dataspecificaties zijn zo ontworpen dat ze eenvoudig <a href="https:/
 
 In opdracht van (en in samenwerking met) Geonovum heeft het bedrijf WeTransform onderzoek verricht naar INSPIRE-extensies. De resultaten hiervan zijn op <a href="https://inspire-extensions.wetransform.to/" target="_blank">een website</a> verzameld waarop veel informatie te vinden is over het uitbreiden van INSPIRE-dataspecificiaties.
 
-Op deze site vindt u onder meer:
+Op deze site vindt je onder meer:
 
 - De resultaten van een onderzoek naar bestaande INSPIRE-extensies en een <a href="https://inspire-extensions.wetransform.to/models/index.html" target="_blank">overzicht van bestaande extensies</a>.
 - Een overzicht van <a href="https://inspire-extensions.wetransform.to/patterns/index.html" target="_blank">*extension patterns*</a>, waarin bepaalde ontwikkelpatronen beschreven worden.
@@ -76,7 +76,7 @@ Meer informatie over Action 2.1 is te vinden op de <a href="https://github.com/I
 ## Dataharmonisatie
 De dataharmonisatie INSPIRE beoogt het ontsluiten van de aangemerkte datasets conform de INSPIRE-dataspecificaties. Letterlijk betekent harmoniseren “op elkaar afstemmen”. Dataharmonisatie wordt in de context van INSPIRE gedefinieerd als het vertalen (mappen) van de data zoals ze opgeslagen zijn bij de dataprovider (‘as-is’) naar een INSPIRE-conforme structuur. Sommige partijen definiëren dataharmonisatie ruimer. In dat geval heeft dataharmonisatie ook een beleidskundige dimensie. Dit is bijvoorbeeld het geval bij de provincies. Zij bieden de gegevens over het Natuurnetwerk Nederland niet twaalf keer afzonderlijk aan, maar slechts één keer landsdekkend. Voordat de data "gemapt" kon worden, bleek interne beleidskundige harmonisatie nodig.
 
-Op deze wiki gaat het over dataharmonisatie in technisch-inhoudelijke zin; het beleidskundige perspectief blijft buiten beschouwing.
+Op deze handreiking gaat het over dataharmonisatie in technisch-inhoudelijke zin; het beleidskundige perspectief blijft buiten beschouwing.
 
 ### Documentatie dataharmonisatie
 In de onderstaande tabel staan de belangrijkste INSPIRE-documenten voor de dataharmonisatie:
@@ -216,7 +216,7 @@ Let op! Het betreft een http-adres (i.p.v. een https-adres). Soms kan het zo zij
 
 Het INSPIRE Namespaceregister bevat het <a href="http://inspirelab.geonovum.nl/namespaces/listnamespaces.php" target="_blank">overzicht</a> van reeds geregistreerde namespaces door Nederlandse INSPIRE dataproviders. 
 
-Voor het registreren van namespaces is een account nodig. Deze accounts zijn aan te vragen via de [INSPIRE Helpdesk](#inspire-helpdesk) door een e-mail te sturen naar inspire@geonovum.nl. Na <a href="http://inspirelab.geonovum.nl/namespaces/login.php" target="_blank">inloggen</a> kunt u voor uw gegevensbron een nieuwe namespace registreren.
+Voor het registreren van namespaces is een account nodig. Deze accounts zijn aan te vragen via de [INSPIRE Helpdesk](#inspire-helpdesk) door een e-mail te sturen naar inspire@geonovum.nl. Na <a href="http://inspirelab.geonovum.nl/namespaces/login.php" target="_blank">inloggen</a> kunt je voor uw gegevensbron een nieuwe namespace registreren.
 
 
 #### Richtlijnen voor namespaces
@@ -252,7 +252,7 @@ Iedere INSPIRE-codelijst valt onder een van de volgende uitbreidingsregimes:
 ### Codelijstregister
 In het  <a href="http://inspire.ec.europa.eu/codelist/" target="_blank">Europese INSPIRE codelijstregister</a> worden de waarden van de door de EU beheerde codelijsten gepubliceerd. Bij een codelijst is altijd een verwijzing opgenomen naar dit Europese INSPIRE codelijstregister. 
 
-Wanneer een dataprovider zijn eigen uitbreiding op een codelist definieert, moeten deze in een lokaal codelijstregister beheerd worden. Hiervoor kan het <a href="http://inspireregister.nl/codelijst" target="_blank">INSPIRE codelijstregister voor Nederland</a> worden gebruikt. Voor het registreren van codelijsten op het Nederlandse codelijstregister is een account nodig. Deze accounts zijn aan te vragen via de [INSPIRE Helpdesk](#inspire-helpdesk) door een e-mail te sturen naar inspire@geonovum.nl. Na <a href="http://inspireregister.nl:8080/re3gistry2/login" target="_blank">inloggen</a> kunt u voor uw gegevensbron een nieuwe codelijst registreren en vullen. Een Engelstalige handleiding voor het gebruik van het codelijstregister is <a href="https://github.com/ec-jrc/re3gistry/blob/master/documentation/user-manual.md" target="_blank">hier</a> te vinden.
+Wanneer een dataprovider zijn eigen uitbreiding op een codelist definieert, moeten deze in een lokaal codelijstregister beheerd worden. Hiervoor kan het <a href="http://inspireregister.nl/codelijst" target="_blank">INSPIRE codelijstregister voor Nederland</a> worden gebruikt. Voor het registreren van codelijsten op het Nederlandse codelijstregister is een account nodig. Deze accounts zijn aan te vragen via de [INSPIRE Helpdesk](#inspire-helpdesk) door een e-mail te sturen naar inspire@geonovum.nl. Na <a href="http://inspireregister.nl:8080/re3gistry2/login" target="_blank">inloggen</a> kunt je voor uw gegevensbron een nieuwe codelijst registreren en vullen. Een Engelstalige handleiding voor het gebruik van het codelijstregister is <a href="https://github.com/ec-jrc/re3gistry/blob/master/documentation/user-manual.md" target="_blank">hier</a> te vinden.
 
 ## Portrayal
 *Portrayal* betreft voornamelijk de grafische weergave van de data in een [viewservice](#view-service), maar kan ook in GIS-applicaties gebruikt worden. De portayal wordt beschreven in de [INSPIRE dataspecificatie](#inspire-dataspecificaties), meestal, in hoofdstuk 11 en is dus per INSPIRE thema verschillend. De portrayal conform de INSPIRE dataspecificatie kan dus pas ingesteld worden in een viewservice nadat er geharmoniseerd is. Deze portrayal-richtlijnen in de INSPIRE dataspecificaties zijn opgesteld om  consistentie in de INSPIRE datasets te brengen en ze over de verschillende lidstaten ‘leesbaar’ te houden in de viewservice; het gaat niet om het maken van ‘mooie kaarten’ maar om het leesbaar houden van de data.
