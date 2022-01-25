@@ -67,7 +67,7 @@ De gebruiksvoorwaarden, ook als daarvan wordt afgezien in Public Domain Mark of 
 
 ## Dataset metadata
 
-In de [Invulinstructies voor dataset](#Invulinstructies-voor-dataset) zijn de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/). Daarnaast zijn twee voorbeeldbestanden beschikbaar, een [algemeen voorbeeldbestand](#voorbeeldbestand-xml-voor-inspire-dataset-metadata) en een [voorbeeldbestand voor de prioritaire datasets](#voorbeeldbestand-prioritaire-datasets).
+In de [Invulinstructies voor dataset](#Invulinstructies-voor-dataset) zijn de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/). Daarnaast zijn twee voorbeeld metadatabestanden beschikbaar, een [algemeen voorbeeldbestand](#voorbeeld-metadatabestand-xml-voor-inspire-dataset) en een [voorbeeldbestand voor de prioritaire datasets](#voorbeeld-metadatabestand-xml-voor-inspire-prioritaire-dataset).
 
 ### Invulinstructies voor datasets
 De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen. Let erop, dat er zowel verplichte ('Ja') als conditionele ('C') elementen in voorkomen. Zo kan bijvoorbeeld een aantal elementen pas worden ingevuld wanneer de dataharmonisatie is voltooid. Voor [prioritaire datasets](#prioritaire-datasets) is de aanvullende instructie over het gebruik van [anchors](#hoe-om-te-gaan-met-anchor-en-uri) bij het opnemen van de trefwoorden in de metadata ook in de invulinstructies meegenomen.
@@ -113,7 +113,8 @@ De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-met
 | **Rol organisatie metadata** 						| MD_Metadata.contact> CI_ResponsibleParty.role| Ja | Het betreft de rol van de organisatie. Inspire verplicht hier om *contactpunt* in te vullen. | contactpunt |
 
 
-**Aandachtspunten invulinstructie**
+**Aandachtspunten**
+
 De elementengroep Specificatie(titel, datum, verklaring en conformiteit) waar de conformiteit wordt opgegegeven komt meerdere keren voor, telkens met een andere specificatie.  
 
 Het element trefwoord, in combinatie met de thesaurus waaruit het trefwoord komt, wordt ook meerdere keren opgenomen. 
