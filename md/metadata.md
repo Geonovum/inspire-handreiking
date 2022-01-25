@@ -306,18 +306,32 @@ Middels de conformiteit wordt opgegeven, tot welke categorie de Spatial Data Ser
 
 Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#Invulinstructie-service-metadata) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/).
 
-Spatial Data Services van de categorie harmonised moeten, naast de de [Interoperable SDS](#Interoperable-SDS) instructies, worden voorzien van metadata over invocation.
+Spatial Data Services van de categorie harmonised moeten daarnaast zowel voldoen aan de de [Interoperable SDS](#Interoperable-SDS) instructies, en onderstaande instructies:
 
-Invocation-metadata is informatie over de operaties die een service kan uitvoeren. Deze informatie kan op twee verschillende manieren beschikbaar worden gesteld.
+In de harmonised service metadata wordt informatie over de operaties die een service kan uitvoeren opgenomen. Deze informatie kan op twee verschillende manieren beschikbaar worden gesteld.
 
-- *Optie 1*: Alle operaties en de lijst van connectpunten voor hen, samen met de informatie over de vereiste en optionele parameters voor elke operatie wordt geleverd door het access point van de dienst. Dit accespoint wordt ook in de SV_OperationMetadata opgenomen. de operaties die mogelijk zijn worden dan niet apart in de metadata beschreven.
-- *Optie 2*: Alle operaties en de lijst van connectpunten voor hen, samen met de informatie over de vereiste en optionele parameters voor elke operatie wordt in de metadata beschreven via een SV_OperationMetadata element voor elke operatie.
+- *Optie 1*: Alle operaties en de lijst van connectpunten voor die operaties, samen met de informatie over de vereiste en optionele parameters voor elke operatie wordt geleverd door het access point van de dienst. Dit accespoint wordt ook in de SV_OperationMetadata opgenomen. de operaties die mogelijk zijn worden dan niet apart in de metadata beschreven.
+- *Optie 2*: Alle operaties en de lijst van connectpunten voor die operaties, samen met de informatie over de vereiste en optionele parameters voor elke operatie wordt in de metadata beschreven via een SV_OperationMetadata element voor elke operatie.
 
 In onderstaande tabel de invulinstrucies voor optie 1.
+
+ | Metadata-element | Longname | Omschrijving | Waarde |
+| ---------------- | -------- |  ------------ | --------------- |
+| **Operatie naam**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.operationName | Naam van de operatie die toegang geeft tot de beschrijving van operaties en endpoints | getCapabilities |
+| **DCP**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.DCP | Dit element bevat het Distributed Computing Platforms waarop de operatie is geïmplementeerd. INSPIRE gaat van de default waarde WebServices uit. | WebServices |
+| **Connectie URL**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.connectPoint> CI_OnlineResource.linkage | netwerkadres van de service | http://www.url_naar_de_capabilities_van_de_service |
 
 ![Invoke1](media/Invoke_invul1.png "Invulinstructie voor optie 1.")
 
 In onderstaande tabel de invul instrucies voor optie 2.
+ | Metadata-element | Longname | Omschrijving | Waarde |
+| ---------------- | -------- |  ------------ | --------------- |
+| **Operatie naam**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.operationName | Naam van de operatie die toegang geeft tot de beschrijving van operaties en endpoints | getCapabilities |
+| **DCP**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.DCP | Dit element bevat het Distributed Computing Platforms waarop de operatie is geïmplementeerd. INSPIRE gaat van de default waarde WebServices uit. | WebServices |
+| **Parameter naam**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.parameters> SV_Parameter.name | naam van de parameter zoals in de service voorkomt | Borehole |
+| **Parameter optionaliteit**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.parameters> SV_Parameter.optionality |aangeven of dit optioneel of verplicht is  | Verplicht |
+| **Parameter herhaalbaarheid**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.parameters> SV_Parameter.repeatability | geeft aan of de parameter meerdere keren kan voorkomen | true |
+| **Connectie URL**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.connectPoint> CI_OnlineResource.linkage | netwerkadres van de service | http://www.url_naar_de_capabilities_van_de_service |
 
 ![Invoke2](media/Invoke_invul2.png "Invulinstructie voor optie 2.")
 
