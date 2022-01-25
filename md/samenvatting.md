@@ -1,9 +1,9 @@
-Welkom bij de wiki "Aan de slag met INSPIRE".
-Deze wiki is bedoeld voor de INSPIRE-dataproviders en geeft informatie om te voldoen aan de (technische) INSPIRE-verplichtingen.
+Welkom bij de handreiking "Aan de slag met INSPIRE".
+Deze handreiking is bedoeld voor de INSPIRE-dataproviders en geeft informatie om te voldoen aan de (technische) INSPIRE-verplichtingen.
 
-De opbouw van de INSPIRE-wiki is gebaseerd op de verschillende [processtappen](https://geonovum.github.io/inspire-wiki/#processtappen) die dataproviders doorlopen en enkele meer algemene hoofdstukken.
+De opbouw van de INSPIRE-handreiking is gebaseerd op de verschillende [processtappen](https://geonovum.github.io/inspire-wiki/#processtappen) die dataproviders doorlopen en enkele meer algemene hoofdstukken.
 
-De INSPIRE-wiki is als volgt opgebouwd:
+De INSPIRE-handreiking is als volgt opgebouwd:
 1. [Introductie](https://geonovum.github.io/inspire-wiki/#introductie)
 2. [Aanmerken en inrichten organisatie](https://geonovum.github.io/inspire-wiki/#inrichten-organisatie)
 3. [Data harmonisatie](https://geonovum.github.io/inspire-wiki/#dataharmonisatie)
@@ -14,4 +14,4 @@ De INSPIRE-wiki is als volgt opgebouwd:
 8. [Monitoring en rapportage](https://geonovum.github.io/inspire-wiki/#monitoring-en-rapportage)
 9. [Extra informatie](https://geonovum.github.io/inspire-wiki/#extra-informatie)
 
-Via de inhoudsopgave aan de linkerzijde kunt u gemakkelijk navigeren tussen de verschillende hoofdstukken. 
+Via de inhoudsopgave aan de linkerzijde kun je gemakkelijk navigeren tussen de verschillende hoofdstukken. 
