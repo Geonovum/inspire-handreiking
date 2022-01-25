@@ -255,7 +255,8 @@ In plaats van de conformiteit met de netwerk verordening (VERORDENING (EG) Nr. 9
 
 Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#Invulinstructie-service-metadata) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/).
 
-Spatial Data Services van de categorie interoperable moeten, naast de de [Invocable SDS](#Invocable-SDS) instructies, worden voorzien van metadata over verschillende extra elementen:
+Spatial Data Services van de categorie interoperable moeten daarnaast zowel voldoen aan de [Invocable SDS](#Invocable-SDS) instructies en onderstaande instructies:
+
 1. **Coördinaat referentie systeem**: alle CRS waarin een service beschikbaar is moeten worden opgegeven middels een URI. Gebruik voor elke URI een apart metadata element. Bijvoorbeeld:
 
 http://www.opengis.net/def/crs/EPSG/0/4937 (ETRS 89) 
@@ -321,7 +322,6 @@ In onderstaande tabel de invulinstrucies voor optie 1.
 | **DCP**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.DCP | Dit element bevat het Distributed Computing Platforms waarop de operatie is geïmplementeerd. INSPIRE gaat van de default waarde WebServices uit. | WebServices |
 | **Connectie URL**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.connectPoint> CI_OnlineResource.linkage | netwerkadres van de service | http://www.url_naar_de_capabilities_van_de_service |
 
-![Invoke1](media/Invoke_invul1.png "Invulinstructie voor optie 1.")
 
 In onderstaande tabel de invul instrucies voor optie 2.
  | Metadata-element | Longname | Omschrijving | Waarde |
@@ -333,7 +333,7 @@ In onderstaande tabel de invul instrucies voor optie 2.
 | **Parameter herhaalbaarheid**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.parameters> SV_Parameter.repeatability | geeft aan of de parameter meerdere keren kan voorkomen | true |
 | **Connectie URL**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.connectPoint> CI_OnlineResource.linkage | netwerkadres van de service | http://www.url_naar_de_capabilities_van_de_service |
 
-![Invoke2](media/Invoke_invul2.png "Invulinstructie voor optie 2.")
+
 
 
 ### Metadata-templates SDS
