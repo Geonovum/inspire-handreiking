@@ -32,7 +32,7 @@ Zie voor meer informatie over metadata in het algemeen, het  <a href="https://ww
 ### Metadata van prioritaire datasets
 Voor de prioritaire datasets zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de Europese [INSPIRE registry](#inspire-registry)</a> en staan daar beschreven in het <a href="https://inspire.ec.europa.eu/metadata-codelist" target="_blank">INSPIRE metadata codelijstregister</a>. Op dit moment dienen voor twee soorten [prioritaire datasets](#prioritaire-datasets) deze trefwoorden worden opgenomen, namelijk voor de prioritaire datasets voor eReporting en voor de IACS-datasets.
 
-De trefwoorden en thesaurus worden toegevoegd met *Anchors* en *URI's*. Hoe dit moet worden opgenomen in de metadata staat [hier](#hoe-om-te-gaan-met-Anchors-en-URI's).
+De trefwoorden en thesaurus worden toegevoegd met *Anchors* en *URI's*. Hoe dit moet worden opgenomen in de metadata staat [hier](#hoe-om-te-gaan-met-Anchor-en-URI).
 
 ### Metadata en taal
 In de invoeringsregels van INSPIRE voor metadata, is niet vastgelegd in welke taal metadata (en data) beschikbaar moet worden gesteld, wel dat het één van de officiele talen van de Europese Unie moet zijn. Deze in de bron (dataset en service) gebruikte taal en de metadata-taal worden in de metadata vastgelegd. 
@@ -67,10 +67,10 @@ De gebruiksvoorwaarden, ook als daarvan wordt afgezien in Public Domain Mark of 
 
 ## Dataset metadata
 
-In de [Invulinstructies voor dataset](#Invulinstructies-voor-dataset) zijn de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/).
+In de [Invulinstructies voor dataset](#Invulinstructies-voor-dataset) zijn de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/). Daarnaast zijn twee voorbeeldbestanden beschikbaar, een [algemeen voorbeeldbestand](#voorbeeldbestand-xml-voor-inspire-dataset-metadata) en een [voorbeeldbestand voor de prioritaire datasets](#voorbeeldbestand-prioritaire-datasets).
 
 ### Invulinstructies voor datasets
-De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen. Let erop, dat er zowel verplichte ('Ja') als conditionele ('C') elementen in voorkomen. Zo kan bijvoorbeeld een aantal elementen pas worden ingevuld wanneer de dataharmonisatie is voltooid. Voor prioritaire datasets is de [aanvullende instructie](#prioritaire-datasets) over het opnemen van de trefwoorden in de metadata  ook in de invulinstructies meegenomen.
+De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen. Let erop, dat er zowel verplichte ('Ja') als conditionele ('C') elementen in voorkomen. Zo kan bijvoorbeeld een aantal elementen pas worden ingevuld wanneer de dataharmonisatie is voltooid. Voor [prioritaire datasets](#prioritaire-datasets) is de aanvullende instructie over het gebruik van [anchors](#hoe-om-te-gaan-met-anchor-en-uri) bij het opnemen van de trefwoorden in de metadata ook in de invulinstructies meegenomen.
 
 
 | Metadata-element 									| Longname 		| INSPIRE-verplicht | Omschrijving 	| Voorbeeldwaarde |
@@ -112,25 +112,31 @@ De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-met
 | **Topologische samenhang**  						| MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_TopologicalConsistency.result> DQ_QuantitativeResult.value| C | Verplicht voor INSPIRE-datasets als voor netwerken de aansluiting van hartlijnen niet is verzekerd.| 3 |
 | **Rol organisatie metadata** 						| MD_Metadata.contact> CI_ResponsibleParty.role| Ja | Het betreft de rol van de organisatie. Inspire verplicht hier om *contactpunt* in te vullen. | contactpunt |
 
-### Hoe om te gaan met Anchors en URI's
-Voor INSPIRE is het gebruik van een *Anchor* in plaats van vrije tekst in een characterstring in een aantal metadata elementen verplicht. In een Anchor wordt een URI en een label opgenomen. De URI is machine leesbaar, het label is voor mensen leesbaar en wordt in de taal waarin de metadata is beschreven opgenomen. Voordeel van URI's is dat deze hetzelfde zijn onafhankelijk van de gehanteerde taal. Dat maakt het dat op EU nivo bijvoorbeeld de trefwoorden voor prioriaire datasets doorzoekbaar zijn. Als ieder het trefwoord alleen in zijn eigen taal opneemt, is dat een stuk lastiger. Maak waar mogelijk gebruik van een Anchor, ook waar het niet verplicht is, bijvoorbeeld ook bij het opgeven van de specificatie (Verordening en INSPIRE TG) bij de conformiteit. Als dit in een string element wordt opgegeven, moet de titel exact worden overgenomen.
 
-De elementengroep Specificatie(titel, datum, verklarin en conformiteit) waar de conformiteit wordt opgegegeven komt meerdere voor, telkens met een andere specificatie.  
+**Aandachtspunten invulinstructie**
+De elementengroep Specificatie(titel, datum, verklaring en conformiteit) waar de conformiteit wordt opgegegeven komt meerdere keren voor, telkens met een andere specificatie.  
 
 Het element trefwoord, in combinatie met de thesaurus waaruit het trefwoord komt, wordt ook meerdere keren opgenomen. 
 
 Ook voor "as-is" data is het opgeven van de conformiteit met de verordening verplicht. 
 
+
+### Hoe om te gaan met Anchor en URI
+Voor INSPIRE is het gebruik van een *Anchor* in plaats van vrije tekst in een characterstring in een aantal metadata elementen verplicht. In een Anchor wordt een URI en een label opgenomen. De URI is machine leesbaar; het label is voor mensen leesbaar en wordt in de taal waarin de metadata is beschreven opgenomen. Voordeel van URI's is dat deze altijd hetzelfde zijn onafhankelijk van de gehanteerde taal. Dat maakt het dat op Europees niveau bijvoorbeeld de trefwoorden voor prioriaire datasets doorzoekbaar zijn. Als ieder het trefwoord alleen in zijn eigen taal opneemt, is dat een stuk lastiger. 
+
+Maak waar mogelijk gebruik van een Anchor, ook waar het niet verplicht is, bijvoorbeeld ook bij het opgeven van de specificatie (Verordening en INSPIRE TG) bij de conformiteit. Als dit in een string element wordt opgegeven, moet de titel exact worden overgenomen.
+
+
 **Het toevoegen van trefwoorden met URI's in een Anchor**
 
-De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd mét URI's:
+De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd met een Anchor en URI (uitgewerkt voor een prioritaire dataset):
 1. Ga naar de INSPIRE Registry (http://inspire.ec.europa.eu/registry).
 2. Ga naar de prioritaire-dataset-metadata-codelijst (http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset).
 3. Ga naar de betreffende prioritaire dataset.
-4. Kopieer de URI en het NL-label.
+4. Kopieer de URI en het Nederlands label.
 5. Voeg deze als trefwoord toe aan de metadata samen met de verwijzing naar de thesaurus met *titel*, *datum* en *type datum*. Hiervoor kan onderstaande XML-voorbeeld in de XML worden gekopieerd.
 6. Als de dataset voor meerdere rapportageverplichtingen wordt gebruikt, voor elke verplichting de juiste trefwoorden zoeken en toevoegen.
-7. Bewaar de aanpassingen en valideer je metadata.
+7. Bewaar de aanpassingen en [valideer je metadata](#validatie).
 
 **Voorbeeld**
 
@@ -163,12 +169,14 @@ De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd m
 &lt;/gmd:descriptiveKeywords&gt;
 </pre>
 
-### Voorbeeldbestand prioritaire datasets
-TO DO check XML !!! [Hier is een voorbeeldbestand waarin beide scenario's zijn uitgewerkt](https://wiki.geonovum.nl/images/Voorbeeld_XML_prioritaire_dataset.xml).
-
-### Voorbeeldbestand XML voor INSPIRE dataset-metadata
+### Voorbeeld metadatabestand (XML) voor INSPIRE dataset
 
 TO DO check XML !!! Hier is een [voorbeeld-metadatabestand](https://wiki.geonovum.nl/images/Voorbeeld_Metadata_Dataset_2019.zip) te vinden voor een fictive dataset.
+
+
+### Voorbeeld metadatabestand (XML) voor INSPIRE prioritaire dataset
+TO DO check XML !!! [Hier is een voorbeeldbestand waarin beide scenario's zijn uitgewerkt](https://wiki.geonovum.nl/images/Voorbeeld_XML_prioritaire_dataset.xml).
+
 
 
 ## Service metadata
