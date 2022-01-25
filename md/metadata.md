@@ -5,30 +5,29 @@ Datasets die voor INSPIRE zijn aangemerkt, worden van een beschrijving (metadata
 ## Metadata aanmaken en publiceren
 Metadata dient ter beschikking worden gesteld voor:
 - Datasets en dataset series
-- Services (o.a. View en Download Services).
+- Services (o.a. view en download services).
 
-In de meeste gevallen zal de dataprovider metadata aanmaken als onderdeel van beheer van data en services. De dataprovider heeft daarbij ook de verantwoordelijkheid dat deze metadatabestanden (XML-bestanden) voldoen aan de INSPIRE-richtlijnen. 
-De metadata wordt vervolgens in het Nationaal Georegister <a href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home" target="_blank">NGR</a> gepubliceerd door; 
-- Het uploaden van XML-metadatabestanden
-- Harvesting vanuit een eigen metadatacatalogus
-- Het aanmaken en publiceren van metadata rechtstreeks in het Nationaal Georegister. Binnen het NGR is hiervoor een metadata-editor beschikbaar.
+In de meeste gevallen zal de dataprovider metadata aanmaken als onderdeel van het beheer van de data en services. De dataprovider heeft daarbij ook de verantwoordelijkheid dat deze metadatabestanden (XML-bestanden) voldoen aan de INSPIRE-richtlijnen. 
+De metadata wordt vervolgens in het <a href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home" target="_blank"> Nationaal Georegister (NGR)</a> [gepubliceerd](#publiceren) door:
+- Het uploaden van XML-metadatabestanden;
+- Harvesting vanuit een eigen metadatacatalogus;
+- Het aanmaken en publiceren van metadata rechtstreeks in het Nationaal Georegister (NGR). Binnen het NGR is hiervoor een metadata-editor beschikbaar.
 
-In het figuur hieronder zie je een screenshot van het Nationaal Georegister (NGR), dat voor INSPIRE-metadata dienst doet als *discovery service*. Het NGR wordt echter niet alleen met INSPIRE-conforme metadata gevuld; ook andere metadata kan toegevoegd worden. INSPIRE-metadata kan gevonden worden door in het tabblad 'Zoeken' te filteren op de Categorie 'Inspire'.
+In het figuur hieronder zie je een screenshot van het Nationaal Georegister (NGR), dat voor INSPIRE-metadata dienst doet als *discovery service*. Het NGR wordt echter niet alleen met INSPIRE-conforme metadata gevuld; ook andere metadata kan toegevoegd worden. INSPIRE-metadata kan gevonden worden door in het tabblad 'Zoeken' te filteren op de categorie 'Inspire'.
 
 ![NGR met categorie INSPIRE ](media/NGR-categorie-INSPIRE.png "Gebruik in het NGR het filter 'Inspire' om alle beschikbare INSPIRE-compliant datasets te vinden.")
 
 
 ### Eisen metadata
-De metadata-elementen die voor INSPIRE, vanuit verschillende richtlijnen, beschreven moeten worden zijn opgenomen in de Nederlandse profielen. Deze profielen, één voor datasets en dataset series en één voor services, zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen; Als er aan de conditie wordt voldaan, is dat element verplicht. Voor een aantal door conditie verplichte elementen, heeft de conditie te maken met INSPIRE; Als de te beschrijven bron een aangemerkte INSPIRE dataset of bijbehorende service is, dan worden er meer metadata elementen vereist om in te vullen. Het komt ook voor dat er alleen specifieke waardes voor INSPIRE zijn toegestaan, terwijl voor niet INSPIRE data meer waardes toegestaan zijn.  Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen en aanvullende vereisten voor INSPIRE uit de NL profielen worden gevolgd. 
+De metadata-elementen die voor INSPIRE, vanuit verschillende richtlijnen, beschreven moeten worden, zijn opgenomen in de Nederlandse profielen. Deze Nederlandse profielen, één voor datasets en dataset series en één voor services, zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen. Als er aan de conditie wordt voldaan, is dat element verplicht. Voor een aantal door conditie verplichte elementen, heeft de conditie te maken met INSPIRE. Als de te beschrijven bron een aangemerkte INSPIRE dataset of bijbehorende service is, dan worden er meer metadata-elementen vereist om in te vullen. Het komt ook voor dat er alleen specifieke waardes voor INSPIRE zijn toegestaan, terwijl voor niet INSPIRE-data meer waardes toegestaan zijn.  Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen en aanvullende vereisten voor INSPIRE uit de Nederlandse profielen worden gevolgd. 
 
-Voor datasets en dataset series geldt het [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/) 
+Voor datasets en dataset series geldt het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/" target="_blank">Nederlands metadata profiel op ISO 19115</a>.
 
-Voor services geldt het [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/)
+Voor services geldt het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19119/" target="_blank">Nederlands metadata profiel op ISO 19119</a>.
 
-INSPIRE specifiek zijn de aanvullende [Invulinstructies voor datasets](#invulinstructies-voor-datasets) en [Invulinstructie service metadata](#Invulinstructie-service-metadata) 
+INSPIRE specifiek zijn de aanvullende [Invulinstructies voor datasets](#invulinstructies-voor-datasets) en [Invulinstructie service metadata](#Invulinstructie-service-metadata) beschikbaar. Deze invulinstructies staan verderop in de handreiking beschreven.
 
-
-Zie voor meer informatie over metadata in het algemeen, het [dossier metadata op de Geonovum-website](https://www.geonovum.nl/geo-standaarden/metadata).
+Zie voor meer informatie over metadata in het algemeen, het dossier <a href="https://www.geonovum.nl/geo-standaarden/metadata" target="_blank">metadata op de Geonovum-website</a>.
 
 ### Metadata van prioritaire datasets
 Voor de prioritaire datasets zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de bij het JRC beheerde [INSPIRE-registry](http://inspire.ec.europa.eu/registry).
