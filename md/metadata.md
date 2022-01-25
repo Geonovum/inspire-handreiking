@@ -19,7 +19,7 @@ In het figuur hieronder zie je een screenshot van het Nationaal Georegister (NGR
 
 
 ### Eisen metadata
-De metadata-elementen die voor INSPIRE, vanuit verschillende richtlijnen, beschreven moeten worden, zijn opgenomen in de Nederlandse profielen. Deze Nederlandse profielen, één voor datasets en dataset series en één voor services, zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen. Als er aan de conditie wordt voldaan, is dat element verplicht. Voor een aantal door conditie verplichte elementen, heeft de conditie te maken met INSPIRE. Als de te beschrijven bron een aangemerkte INSPIRE dataset of bijbehorende service is, dan worden er meer metadata-elementen vereist om in te vullen. Het komt ook voor dat er alleen specifieke waardes voor INSPIRE zijn toegestaan, terwijl voor niet INSPIRE-data meer waardes toegestaan zijn.  Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen en aanvullende vereisten voor INSPIRE uit de Nederlandse profielen worden gevolgd. 
+De metadata-elementen die voor INSPIRE, vanuit verschillende implementing rules (IR), beschreven moeten worden, zijn opgenomen in de Nederlandse profielen. Deze Nederlandse profielen, één voor datasets en dataset series en één voor services, zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen. Als er aan de conditie wordt voldaan, is dat element verplicht. Voor een aantal door conditie verplichte elementen, heeft de conditie te maken met INSPIRE. Als de te beschrijven bron een aangemerkte INSPIRE dataset of bijbehorende service is, dan worden er meer metadata-elementen vereist om in te vullen. Het komt ook voor dat er alleen specifieke waardes voor INSPIRE zijn toegestaan, terwijl voor niet INSPIRE-data meer waardes toegestaan zijn.  Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen en aanvullende vereisten voor INSPIRE uit de Nederlandse profielen worden gevolgd. 
 
 Voor datasets en dataset series geldt het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/" target="_blank">Nederlands metadata profiel op ISO 19115</a>.
 
@@ -27,40 +27,43 @@ Voor services geldt het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso
 
 INSPIRE specifiek zijn de aanvullende [Invulinstructies voor datasets](#invulinstructies-voor-datasets) en [Invulinstructie service metadata](#Invulinstructie-service-metadata) beschikbaar. Deze invulinstructies staan verderop in de handreiking beschreven.
 
-Zie voor meer informatie over metadata in het algemeen, het dossier <a href="https://www.geonovum.nl/geo-standaarden/metadata" target="_blank">metadata op de Geonovum-website</a>.
+Zie voor meer informatie over metadata in het algemeen, het  <a href="https://www.geonovum.nl/geo-standaarden/metadata" target="_blank">dossier Metadata</a> op de Geonovum-website.
 
 ### Metadata van prioritaire datasets
-Voor de prioritaire datasets zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de bij het JRC beheerde [INSPIRE-registry](http://inspire.ec.europa.eu/registry).
+Voor de prioritaire datasets zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de Europese [INSPIRE registry](#inspire-registry)</a> en staan daar beschreven in het <a href="https://inspire.ec.europa.eu/metadata-codelist" target="_blank">INSPIRE metadata codelijstregister</a>. Op dit moment dienen voor twee soorten [prioritaire datasets](#prioritaire-datasets) deze trefwoorden worden opgenomen, namelijk voor de prioritaire datasets voor eReporting en voor de IACS-datasets.
 
-De trefwoorden en thesaurus worden toegevoegd met URI's.
+De trefwoorden en thesaurus worden toegevoegd met *Anchors* en *URI's*. Hoe dit moet worden opgenomen in de metadata staat [hier](#hoe-om-te-gaan-met-Anchors-en-URI's).
 
 ### Metadata en taal
-In de invoeringsregels van INSPIRE voor metadata, is niet vastgelegd in welke taal metadata (en data) beschikbaar moet worden gesteld, wel dat het één van de officiele talen van de Europese unie moet zijn. Deze in de bron (dataset en service) gebruikte taal en de metadata-taal worden in de metadata vastgelegd. 
-Nederland heeft ervoor gekozen om de metadata in het Nederlands op te voeren. Als er aanvullend voor een extra taal wordt gekozen, dient deze consequent gehanteerd te worden. Stelt u bijvoorbeeld de metadata ook in het Engels beschikbaar, dan dienen alle vrije tekstvelden in de metadata vertaald te worden. Denk daarbij ook aan de licentie. In het [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#meertaligheid-metadata) staat in een apart hoofdstuk beschreven hoe vrije tekstvelden in meerdere talen kunnen worden opgenomen.
+In de invoeringsregels van INSPIRE voor metadata, is niet vastgelegd in welke taal metadata (en data) beschikbaar moet worden gesteld, wel dat het één van de officiele talen van de Europese Unie moet zijn. Deze in de bron (dataset en service) gebruikte taal en de metadata-taal worden in de metadata vastgelegd. 
+Nederland heeft ervoor gekozen om de metadata in het Nederlands op te voeren. Als er aanvullend voor een extra taal wordt gekozen, dient deze consequent gehanteerd te worden. Stel je bijvoorbeeld de metadata ook in het Engels beschikbaar, dan dienen alle vrije tekstvelden in de metadata vertaald te worden. Denk daarbij ook aan de licentie. In het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#meertaligheid-metadata" target="_blank">Nederlands metadata profiel op ISO 19115</a> staat in een apart hoofdstuk beschreven hoe vrije tekstvelden in meerdere talen kunnen worden opgenomen.
 
 De taalkeuze werkt ook door naar de services, daar wordt ook een deel van de metadata vastgelegd, bijvoorbeeld in de capabilities van een WMS. De services zijn echter in tegenstelling tot de metadata, mono-linguïstisch, voor elke ondersteunde taal zal er een ander document moeten zijn. Alle gerelateerde INSPIRE-servicesdocumenten, zoals  de legendatekst, de capability-documenten en de foutmeldingen, zullen eveneens in het Engels beschikbaar moeten zijn.
 
 Als er met meertaligheid wordt gewerkt, hou dan rekening met het volgende:
 - De metadata-taal is dezelfde als de default-taal van de services, in ons geval Nederlands.
-- Als je de metadata gaat vertalen zal dat voor alle vrijetekst-elementen moeten gebeuren. Denk daarbij ook aan de licenties van toegangsrestricties etc.
+- Als je de metadata gaat vertalen, zal dat voor alle vrijetekst-elementen moeten gebeuren. Denk daarbij ook aan de licenties van toegangsrestricties, etc.
 - Voor elke ondersteunde taal in de service, moet ook een vertaling in de metadata aanwezig zijn.
 - Voor elke ondersteunde taal in de service, zijn aparte capabilities-, legenda- en foutmeldingsdocumenten nodig.
 
-### Geharmoniseerde gebruiksvoorwaarden
-De gebruiksvoorwaarden worden opgenomen in de metadata. Wie geo-informatie van een ander gebruikt, moet weten of daarvoor voorwaarden gelden en zo ja, welke voorwaarden dat zijn. De Nederlandse overheid wil overheidsinformatie zoveel mogelijk gratis en zonder gebruiksvoorwaarden beschikbaar stellen. Dat kan met behulp van de **Public Domain Mark** of met de **Creative Commons Zero (CC0)**-verklaring. Met beide gebruiksvoorwaarden zijn de gegevens door iedereen voor ieder doeleind te gebruiken. Het verschil is dat op gegevens met een CC0-verklaring een auteurs-, databank- of ander recht van kracht is. Met de CC0-verklaring wordt afstand gedaan van deze rechten. Het ministerie van BZK hanteert Creative Commons Zero als de voorkeurslicentie voor data van haar ministerie.
+### Gebruiksvoorwaarden
+De gebruiksvoorwaarden worden opgenomen in de metadata. Wie geo-informatie van een ander gebruikt, moet weten of daarvoor voorwaarden gelden en zo ja, welke voorwaarden dat zijn. De Nederlandse overheid wil overheidsinformatie zoveel mogelijk gratis en zonder gebruiksvoorwaarden beschikbaar stellen. Dat kan met behulp van de ***Public Domain Mark*** of met de ***Creative Commons Zero (CC0)***-verklaring. Met beide gebruiksvoorwaarden zijn de gegevens door iedereen voor ieder doeleind te gebruiken. Het verschil is dat op gegevens met een Creative Commons-verklaring een auteurs-, databank- of ander recht van kracht is. Met de Creative Commons Zero (CC0) verklaring wordt afstand gedaan van deze rechten. Het ministerie van BZK hanteert Creative Commons Zero (CC0) als de voorkeurslicentie voor data van haar ministerie.
 
-Public Domain Mark
-Gegevens die met de Public Domain Mark beschikbaar zijn gesteld, kunnen door iedereen voor alle doeleinden worden gebruikt. Ook naamsvermelding kan niet geëist worden. U vindt de tekst die bij de Public Domain Mark hoort op de [site van Creative Commons](https://creativecommons.org/publicdomain/mark/1.0/deed.nl).
+**Public Domain Mark**
 
-Creative Commons Zero
-Als er auteursrecht en/of databankenrecht rust op gegevens, of als bij wet, besluit of verordening het openbaarmaken van gegevens uitdrukkelijk is voorbehouden, is de Public Domain Mark niet mogelijk. Om ook in dit geval gegevens zonder verdere vereisten beschikbaar te stellen, kan de Creative Commons Zero-verklaring worden gebruikt. Met deze verklaring geeft de eigenaar aan de geldende rechten niet te zullen uitoefenen. U vindt de tekst die bij de Creative Commons Zero-verklaring hoort op de [site van Creative Commons](https://creativecommons.org/publicdomain/zero/1.0/deed.nl).
+Gegevens die met de Public Domain Mark beschikbaar zijn gesteld, kunnen door iedereen voor alle doeleinden worden gebruikt. Ook naamsvermelding kan niet geëist worden. Je vindt de tekst die bij de Public Domain Mark hoort op de <a href="https://creativecommons.org/publicdomain/mark/1.0/deed.nl" target="_blank">website van Creative Commons</a>.
 
-Gebruiksvoorwaarden in Nederland
-In Nederland is afgesproken om voor geo-informatie gebruik te maken van de gebruiksvoorwaarden van Creative Commons, tenzij dat niet mogelijk is. Dit “Creative Commons, tenzij”-beleid is in 2014 vastgesteld door het GI-beraad. [Deze tool](https://creativecommons.org/choose/?lang=nl) kan gebruikt worden om een CC-licentie samen te stellen.
+**Creative Commons Zero**
+
+Als er auteursrecht en/of databankenrecht rust op gegevens, of als bij wet, besluit of verordening het openbaarmaken van gegevens uitdrukkelijk is voorbehouden, is de Public Domain Mark niet mogelijk. Om ook in dit geval gegevens zonder verdere vereisten beschikbaar te stellen, kan de Creative Commons Zero (CC0) verklaring worden gebruikt. Met deze verklaring geeft de eigenaar aan de geldende rechten niet te zullen uitoefenen. Je vindt de tekst die bij de CC0-verklaring hoort op de <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.nl" target="_blank">website van Creative Commons</a>.
+
+**Gebruiksvoorwaarden in Nederland**
+
+In Nederland is afgesproken om voor geo-informatie gebruik te maken van de gebruiksvoorwaarden van Creative Commons, tenzij dat niet mogelijk is. Dit “Creative Commons, tenzij”-beleid is in 2014 vastgesteld door het GI-beraad. <a href="https://creativecommons.org/choose/?lang=nl" target="_blank">Deze tool</a> kan gebruikt worden om een CC-licentie samen te stellen.
 
 In sommige gevallen is het toch noodzakelijk om gebruiksvoorwaarden te handhaven, bijvoorbeeld door wetgeving. 
 
-De gebruiksvoorwaarden, ook als daarvan wordt afgezien in Public Domain Mark of Creative Commons Zero-verklaring, worden opgenomen in de metadata. De instructie hiervoor is te vinden in de paragraaf [Invulinstructies voor datasets](#invulinstructies-voor-datasets).
+De gebruiksvoorwaarden, ook als daarvan wordt afgezien in Public Domain Mark of CC0-verklaring, worden opgenomen in de metadata. De instructie hiervoor is te vinden in de paragraaf [Invulinstructies voor datasets](#invulinstructies-voor-datasets).
 
 ## Dataset metadata
 
@@ -109,8 +112,8 @@ De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-met
 | **Topologische samenhang**  						| MD_Metadata.dataQualityInfo> DQ_DataQuality.report> DQ_TopologicalConsistency.result> DQ_QuantitativeResult.value| C | Verplicht voor INSPIRE-datasets als voor netwerken de aansluiting van hartlijnen niet is verzekerd.| 3 |
 | **Rol organisatie metadata** 						| MD_Metadata.contact> CI_ResponsibleParty.role| Ja | Het betreft de rol van de organisatie. Inspire verplicht hier om *contactpunt* in te vullen. | contactpunt |
 
-### Aandachtspunten
-Voor INSPIRE is het gebruik van een Anchor in plaats van vrije tekst in een characterstring in een aantal metadata elementen verplicht. In een Anchor wordt een URI en een label opgenomen. De URI is machine leesbaar, het label is voor mensen leesbaar en wordt in de taal waarin de metadata is beschreven opgenomen. Voordeel van URI's is dat deze hetzelfde zijn onafhankelijk van de gehanteerde taal. Dat maakt het dat op EU nivo bijvoorbeeld de trefwoorden voor prioriaire datasets doorzoekbaar zijn. Als ieder het trefwoord alleen in zijn eigen taal opneemt, is dat een stuk lastiger. Maak waar mogelijk gebruik van een Anchor, ook waar het niet verplicht is, bijvoorbeeld ook bij het opgeven van de specificatie (Verordening en INSPIRE TG) bij de conformiteit. Als dit in een string element wordt opgegeven, moet de titel exact worden overgenomen.
+### Hoe om te gaan met Anchors en URI's
+Voor INSPIRE is het gebruik van een *Anchor* in plaats van vrije tekst in een characterstring in een aantal metadata elementen verplicht. In een Anchor wordt een URI en een label opgenomen. De URI is machine leesbaar, het label is voor mensen leesbaar en wordt in de taal waarin de metadata is beschreven opgenomen. Voordeel van URI's is dat deze hetzelfde zijn onafhankelijk van de gehanteerde taal. Dat maakt het dat op EU nivo bijvoorbeeld de trefwoorden voor prioriaire datasets doorzoekbaar zijn. Als ieder het trefwoord alleen in zijn eigen taal opneemt, is dat een stuk lastiger. Maak waar mogelijk gebruik van een Anchor, ook waar het niet verplicht is, bijvoorbeeld ook bij het opgeven van de specificatie (Verordening en INSPIRE TG) bij de conformiteit. Als dit in een string element wordt opgegeven, moet de titel exact worden overgenomen.
 
 De elementengroep Specificatie(titel, datum, verklarin en conformiteit) waar de conformiteit wordt opgegegeven komt meerdere voor, telkens met een andere specificatie.  
 
