@@ -2,7 +2,7 @@
 
 Een belangrijk aspect van een implementatie is de mogelijkheid deze te valideren en monitoren. Bij voorkeur gebeurt dit met geautomatiseerde processen, dan wel beschreven procedures. Validatie helpt dataproviders hun (meta)data en services te laten voldoen aan de INSPIRE Technical Guidelines. Daarnaast genereert de Europese Unie jaarlijks een rapport van Nederland waar op basis van validatie de conformiteit aan de INSPIRE-regelgeving beschreven wordt voor de aangeboden (meta)dataset en services.
 
-Om u te helpen bij validatie en monitoring zijn er validatietools beschikbaar. De tools zijn bedoeld als hulpmiddel om fouten in de toepassing van standaarden te verminderen. Er zijn Nederlandse en Europese validatietools. Vanaf 1 september 2020 is het advies om voor het controleren van de toepassing van de INSPIRE-standaard alleen nog de Europese validator te gebruiken. Op die datum wordt in Nederland ook overgestapt op metadataprofiel 2.1.0. In de Nederlandse validatietools hiervoor worden de INSPIRE-regels niet meer geüpdatet.
+Om u te helpen bij validatie en monitoring zijn er validatietools beschikbaar. De tools zijn bedoeld als hulpmiddel om fouten in de toepassing van standaarden te verminderen. Er zijn Nederlandse en Europese validatietools. De Nederlandse validatietools testen op Nederlandse profielen en de Europese op de INSPIRE-standaard. Vanaf 1 september 2020 is het advies om voor het controleren van de toepassing van de INSPIRE-standaard alleen nog de Europese validator te gebruiken en voor het testen van de Nederlandse profielen de Nederlandse validatietools. Op die datum is in Nederland ook overgestapt op metadataprofiel 2.1.0. In de Nederlandse validatietools hiervoor worden de INSPIRE-regels niet meer geüpdatet en daarom kunnen die dus niet meer gebruikt worden voor het testen op de INSPIRE-standaard, maar juist wel voor het testen op het Nederlandse profiel. Beide validatietools moeten dus gebruikt worden om te testen of zowel aan de Nederlandse profielen als aan de Europese INSPIRE-standaarden voldaan wordt.
 
 ## Validatieregels
 
@@ -28,12 +28,10 @@ Validatietools zijn nooit feilloos. Er kunnen bugs in zitten en de tools kunnen 
 
 In de tabel hieronder staan welke tests beschikbaar zijn en aangeraden worden om data, metadata en services te valideren. De tests die genoemd worden in de kolom 'validatietooling EU' zijn allemaal op dezelfde hoofdpagina van de EU-validator te vinden.
 
-| INSPIRE-eis | Validatietooling NL | Validatietooling Europa |
-| ----------- | ------------------- | ----------------------- |
-|**Dataharmonisatie** * | | |
-| INSPIRE GML Annex I | | [Validator: Annex I Data theme conformance](http://inspire.ec.europa.eu/validator/) |
-| INSPIRE GML Annex II & III (mits beschikbaar) | | [Validator: Annex II/III Data theme conformance](http://inspire.ec.europa.eu/validator/) of [staging instance](http://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/etf-webapp/) |
-| INSPIRE GML general requirements (gebruiken wanneer Annex II/III-validator niet beschikbaar is) | | [Validator: INSPIRE GML application schemas, general requirements](http://inspire.ec.europa.eu/validator/) |
+| INSPIRE-eis | Validatietooling NL | Validatietooling EU |
+| ----------- | ------------------- | ------------------- |
+|**Dataharmonisatie** | | |
+| INSPIRE GML Annex I, II & III | | [Validator: Annex I Data theme conformance](http://inspire.ec.europa.eu/validator/) |
 | **Discovery service** | | |
 | Discovery service | | [Validator: Discovery Service - CSW Core](http://inspire.ec.europa.eu/validator/) |
 | **Metadata** | | |
@@ -47,11 +45,10 @@ In de tabel hieronder staan welke tests beschikbaar zijn en aangeraden worden om
 | ATOM | | [Validator: Download service – Pre-defined ATOM](http://inspire.ec.europa.eu/validator/) |
 | WCS | | [Validator: Download service – WCS core](http://inspire.ec.europa.eu/validator/) |
 | SOS | | [Validator: Download service – Pre-defined SOS](http://inspire.ec.europa.eu/validator/) |
-
-\* *zie de roadmap op de Geonovum-website om na te gaan vanaf welk moment uw dataset aan deze eis dient te voldoen.*
+| OGC API - Features | | [Validator: Download service – OGC API - Features](http://inspire.ec.europa.eu/validator/) |
 
 ### Europese INSPIRE-validator
-Op 25 juli 2017 is de Europese INSPIRE-validator gelanceerd. Daarmee is er nu voor alle lidstaten één tool waarmee je kunt testen in hoeverre je voldoet aan de INSPIRE-vereisten. De Europese validator is nog steeds in ontwikkeling. Dat wil zeggen: alle INSPIRE-GML-data kan gevalideerd worden, maar nog niet alle thema's kunnen tegen het applicatieschema gevalideerd worden. De voortgang hierin is [hier](https://github.com/INSPIRE-MIF/helpdesk-validator/) te vinden.
+Op 25 juli 2017 is de Europese INSPIRE-validator gelanceerd. Daarmee is er nu voor alle lidstaten één tool waarmee je kunt testen in hoeverre je voldoet aan de INSPIRE-vereisten. De Europese validator zal vermoedelijk nog af en toe bijgewerkt worden op basis van issues. De voortgang hierin is [hier](https://github.com/INSPIRE-MIF/helpdesk-validator/tree/master/release%20strategy) te vinden.
 
 Nederland heeft via de INSPIRE Maintenance and Implementation Group een actieve bijdrage geleverd aan de ontwikkeling van deze validator. De lancering van deze Europese validator vermindert de kans op interpretatieverschillen door lidstaten van de technische richtlijnen. De validator wordt nu op Europees niveau onderhouden en doorontwikkeld.
 
@@ -61,10 +58,11 @@ Met de Europese validator, kunnen testen worden uitgevoerd voor de volgende onde
 - Applicatieschema
 - GML
 
-De Europese INSPIRE-validator is [hier te vinden](https://inspire.ec.europa.eu/validator/).
+De officiële Europese INSPIRE-validator is [hier te vinden](https://inspire.ec.europa.eu/validator/).
+Daarnaast is er ook een testversie van de validator, de zogeheten [staging instance](http://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/etf-webapp/) waar de nieuwste functionaliteit in verwerkt is, maar die nog niet volledig getest is.
 
 ### Nederlandse INSPIRE-validator
-Voordat de Europese validator beschikbaar was kon Nederlandse INSPIRE-data gevalideerd worden via de [Nederlandse INSPIRE-validator](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE). Vanaf 1 september 2020 is het advies echter om voor het controleren van de toepassing van de INSPIRE-standaard alleen nog de Europese validator te gebruiken. Op die datum is in Nederland overgestapt op metadataprofiel 2.1.0. In de Nederlandse validatietools hiervoor worden de INSPIRE-regels niet meer geüpdatet.
+Voordat de Europese validator beschikbaar was kon Nederlandse INSPIRE-data gevalideerd worden via de [Nederlandse INSPIRE-validator](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE). Vanaf 1 september 2020 is het advies echter om voor het controleren van de toepassing van de INSPIRE-standaard alleen nog de Europese validator te gebruiken. Op die datum is in Nederland overgestapt op metadataprofiel 2.1.0. In de Nederlandse validatietools hiervoor worden de INSPIRE-regels niet meer geüpdatet. De Nederlandse validatietools zijn natuurlijk nog wel van belang voor het testen op de Nederlandse profielen voor metadata, WMS en WFS.
 
 ## Conformance classes
 
@@ -72,39 +70,19 @@ De INSPIRE Reference validators van Europa kennen zogenaamde conformance classes
 
 ### Conformance classes metadata
 
-Voor metadata zijn er meerdere conformance classes beschikbaar. De volgende conformance classes kunnen het beste gebruikt worden, omdat dan automatisch alle relevante andere conformance classes geselecteerd worden:
-
-| Te testen | Conformance class |
-| --------- | ----------------- |
-| Metadata (TG version 2.0) - dataset metadata | Conformance Class 2: 'INSPIRE data sets and data set series interoperability metadata |
-| Metadata (TG version 2.0) - service metadata | Conformance Class 4: 'INSPIRE Network Services metadata' |
-| Metadata (TG version 2.0) - SDS | Conformance Class 5, 6 of 7 overeenkomstig het type SDS |
+Voor metadata zijn er meerdere conformance classes beschikbaar. Wanneer de metadata getest wordt met de Europese validator, worden de relevante conformanceclasses automatisch op de achtergrond geselecteerd voor de gebruiker. 
 
 ### Conformance classes datavalidatie
 
-Om (geharmoniseerde) data te valideren zijn per thema validators beschikbaar. Op dit moment biedt de Europese validator voor alle Annex I thema-specifieke validators aan. Dat betekent dat er naast de GML-structuur, ook gevalideerd wordt tegen het XSD-bestand van het applicatieschema, en dus de thema-specifieke bestandsstructuur wordt gecontroleerd. Kies bij het valideren van een Annex I dataset de betreffende conformance classes van het thema. De algemene / generieke conformance classes worden dan automatisch geselecteerd, voor zo ver die relevant zijn. Algemeen advies is om alle conformance classes van een thema te selecteren bij het testen. Desgewenst kan echter ook een selectie gemaakt worden, als een bepaald onderdeel van de data harmonisatie getest moet worden.
-
-Op het moment wordt eraan gewerkt om ook voor Annex II en III thema-specifieke validatie te ontwikkelen. De voortgang daarvan is te vinden in dit [Github-issue](https://github.com/inspire-eu-validation/community/issues/336). Let op: soms zijn nieuw ontwikkelde thema-validaties alleen nog beschikbaar in de testversie van de validator, de zogeheten [staging instance](http://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/etf-webapp/). In dat geval kun je deze staging vast gebruiken om Annex II of III data te testen.
+Om (geharmoniseerde) data te valideren zijn per thema validators beschikbaar. Dat betekent dat er naast de GML-structuur, ook gevalideerd wordt tegen het XSD-bestand van het applicatieschema, en dus de thema-specifieke bestandsstructuur wordt gecontroleerd. Bij de keuze van het thema worden de relevante conformance classes automatisch geselecteerd. Algemeen advies is om alle conformance classes van een thema te selecteren bij het testen. Desgewenst kan echter ook een selectie gemaakt worden, als een bepaald onderdeel van de data harmonisatie getest moet worden.
 
 ### Conformance classes service-validators
 
-Voor de meeste service validators (WMS, WMTS, WFS pre-defined, WFS direct access en ATOM) is er maar 1 Conformance class beschikbaar die gebruikt kan worden.
+Voor de meeste service validators (WMS, WMTS, WFS pre-defined, WFS direct access, ATOM, SOS, WCS en OGC API Features) is er maar 1 Conformance class beschikbaar die gebruikt kan worden.
 
 ## Bekende problemen Europese validator
 
-De Europese validators werken over het algemeen goed. Er zijn echter nog een paar bekende problemen. **Voor WFS werkt de EU validatie met bepaalde implementaties niet, gebruik in dat geval nog de NL validatie voor WFS.** De overige belangrijkste issues staan hieronder, zie de [Github repository van INSPIRE-validatie](https://github.com/inspire-eu-validation/community/issues) voor alle openstaande issues.
-
-**WMS**
-1. Bij gebruik van WMS-extensies in de Capabilities, bijvoorbeeld voor de extensie voor SLD-operaties (o.a. als de WMS de operatie GetLegendGraphic ondersteunt), gaat de XML-schemavalidatie van de Capabilities niet goed. De validatie houdt geen rekening met extensies anders dan INSPIRE-extensies. Dit is te strikt, maar er is nog geen oplossing voor geïmplementeerd (https://github.com/inspire-eu-validation/community/issues/44). Als de XML-schemavalidatie fout gaat op dit punt, kan de foutmelding genegeerd worden. De Nederlandse validator controleert wel correct op het XML-schema.
-
-2. WMS Layer names: te strikte controle op geharmoniseerde Layer names. De validator geeft een foutmelding als er een Layer name niet een geharmoniseerde Layer name is. Maar een WMS mag ook niet-geharmoniseerde Layer names bevatten. Als deze foutmelding verschijnt, kan die voor nu genegeerd worden (Github: https://github.com/inspire-eu-validation/community/issues/39). **Dit issue wordt verholpen bij de validatorrelease gepland op 15 september 2020.**
-
-3. Foutmeldingen bij Service exceptions: strikt genomen moeten services bij het ontbreken van bepaalde parameters (zoals: service=WMS) van een operatie, een foutmelding geven. Sommige implementaties zijn echter wat “vergevingsgezind”, bijvoorbeeld door aannames te doen voor een standaardwaarde als de parameter ontbreekt. Dit laatste is conform de (WMS) specificaties niet toegestaan. De Europese validators valideren op dit punt strikter dan de Nederlandse.
-
-**WFS (predefined)**
-1. Bij sommige implementaties blijft de validatie hangen bij Initialization and basic checks > Autoconfigure WFS > Analyze WFS Capabilities. De oorzaak hiervan is nog onduidelijk. Als deze foutmelding voorkomt, rapporteer deze dan aan de Geonovum helpdesk, met opgave van de URL van de WFS die getest is. (Github: https://github.com/inspire-eu-validation/community/issues/38)
-
-2. Bij bepaalde WFS implementaties, waarschijnlijk als de Mapserver software in gebruik is, blijft de validatie hangen op Autoconfigure WFS > Analyze WFS Capabilities > Get Schema Definition. De oorzaak hiervan is nog onduidelijk. Als deze foutmelding voorkomt, rapporteer deze dan aan de Geonovum helpdesk, met opgave van de URL van de WFS die getest is. (Github: https://github.com/inspire-eu-validation/community/issues/29). **Dit issue wordt verholpen bij de validatorrelease gepland op 15 september 2020.**
+De Europese validators werken over het algemeen goed. Er zijn echter nog een paar bekende problemen. **Voor WFS werkt de EU validatie met bepaalde implementaties niet, gebruik in dat geval nog de NL validatie voor WFS.** De overige belangrijkste issues staan hieronder, zie de [Github repository van INSPIRE-validatie](https://github.com/INSPIRE-MIF/helpdesk-validator/issues) voor alle openstaande issues.
 
 Tip: de Europese validator kan ook middels een API aangeroepen worden. Bij het (semi) geautomatiseerd uitvoeren van tests kan het nuttig zijn dit te gebruiken.
 
