@@ -22,7 +22,7 @@ Geonovum raadt u aan deze tools (en eventuele steekproefsgewijs handmatige contr
 
 **Gebruik daarnaast, ook als het INSPIRE (meta)data of een service is, de [Nederlandse validator](http://validatie.geostandaarden.nl/) voor het checken van compliance aan de Nederlandse profielen voor [metadata](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Metadata), [WMS en WFS](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services).**
 
-**Voor WFS werkt de EU-validatietooling met bepaalde implementaties [niet](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/29). Gebruik in dat geval nog de [Nederlandse INSPIRE-validatietooling voor WFS](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE).**
+**Voor WFS werkt de EU-validatietooling met bepaalde implementaties [niet](https://github.com/INSPIRE-MIF/helpdesk-validator/issues?q=WFS+is%3Aopen). Gebruik in dat geval nog de [Nederlandse INSPIRE-validatietooling voor WFS](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE).**
 
 Validatietools zijn nooit feilloos. Er kunnen bugs in zitten en de tools kunnen achterlopen op de ontwikkeling van Technical Guidelines. Ook kunnen twee tools  op hetzelfde onderdeel testen en toch een andere uitkomst geven. Dat kan bijvoorbeeld komen doordat bij de ontwikkeling van validatietools bepaalde afwegingen gemaakt worden, bijvoorbeeld hoe er getest wordt. Geonovum adviseert de Europese validatietools te gebruiken. Het is belangrijk te realiseren dat validatietools voornamelijk technisch valideren (bijvoorbeeld, er is een identifier). Of iets fout is ingevuld (bijvoorbeeld, de identifier verwijst niet naar de juiste dataset) kan niet altijd ondervangen worden. Daarnaast zijn niet alle vereisten door middel van geautomatiseerde processen te testen. Toch is het aan te raden om zelf kritisch naar uw gepubliceerde data en services te kijken, bijvoorbeeld door te controleren of deze goed vindbaar, te bekijken en te downloaden zijn in de [INSPIRE geoportal](https://inspire-geoportal.ec.europa.eu/).
 
@@ -84,7 +84,7 @@ Voor de meeste service validators (WMS, WMTS, WFS pre-defined, WFS direct access
 
 ## Bekende problemen Europese validator
 
-De Europese validators werken over het algemeen goed. Er zijn echter nog een paar bekende problemen. **[Voor WFS werkt de EU validatie met bepaalde implementaties niet](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/29), gebruik in dat geval nog de NL validatie voor WFS.** Deze en overige issues zijn te vinden op [Github repository van INSPIRE-validatie](https://github.com/INSPIRE-MIF/helpdesk-validator/issues).
+De Europese validators werken over het algemeen goed. Er zijn echter nog een paar bekende problemen. **[Voor WFS werkt de EU validatie met bepaalde implementaties niet](https://github.com/INSPIRE-MIF/helpdesk-validator/issues?q=WFS+is%3Aopen), gebruik in dat geval nog de NL validatie voor WFS.** Deze en overige issues zijn te vinden op [Github repository van INSPIRE-validatie](https://github.com/INSPIRE-MIF/helpdesk-validator/issues).
 
 ## Link checker
 
