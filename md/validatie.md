@@ -22,7 +22,7 @@ Geonovum raadt u aan deze tools (en eventuele steekproefsgewijs handmatige contr
 
 **Gebruik daarnaast, ook als het INSPIRE (meta)data of een service is, de [Nederlandse validator](http://validatie.geostandaarden.nl/) voor het checken van compliance aan de Nederlandse profielen voor [metadata](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Metadata), [WMS en WFS](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services).**
 
-**Voor WFS werkt de EU-validatietooling met bepaalde implementaties niet. Gebruik in dat geval nog de [Nederlandse INSPIRE-validatietooling voor WFS](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE).**
+**Voor WFS werkt de EU-validatietooling met bepaalde implementaties [niet](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/29). Gebruik in dat geval nog de [Nederlandse INSPIRE-validatietooling voor WFS](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE).**
 
 Validatietools zijn nooit feilloos. Er kunnen bugs in zitten en de tools kunnen achterlopen op de ontwikkeling van Technical Guidelines. Ook kunnen twee tools  op hetzelfde onderdeel testen en toch een andere uitkomst geven. Dat kan bijvoorbeeld komen doordat bij de ontwikkeling van validatietools bepaalde afwegingen gemaakt worden, bijvoorbeeld hoe er getest wordt. Geonovum adviseert de Europese validatietools te gebruiken. Het is belangrijk te realiseren dat validatietools voornamelijk technisch valideren (bijvoorbeeld, er is een identifier). Of iets fout is ingevuld (bijvoorbeeld, de identifier verwijst niet naar de juiste dataset) kan niet altijd ondervangen worden. Daarnaast zijn niet alle vereisten door middel van geautomatiseerde processen te testen. Toch is het aan te raden om zelf kritisch naar uw gepubliceerde data en services te kijken, bijvoorbeeld door te controleren of deze goed vindbaar, te bekijken en te downloaden zijn in de [INSPIRE geoportal](https://inspire-geoportal.ec.europa.eu/).
 
@@ -31,21 +31,21 @@ In de tabel hieronder staan welke tests beschikbaar zijn en aangeraden worden om
 | INSPIRE-eis | Validatietooling NL | Validatietooling EU |
 | ----------- | ------------------- | ------------------- |
 |**Dataharmonisatie** | | |
-| INSPIRE GML Annex I, II & III | | [Validator: Annex I Data theme conformance](http://inspire.ec.europa.eu/validator/) |
+| INSPIRE GML Annex I, II & III | | [Validator: Annex I Data theme conformance](https://inspire.ec.europa.eu/validator/) |
 | **Discovery service** | | |
-| Discovery service | | [Validator: Discovery Service - CSW Core](http://inspire.ec.europa.eu/validator/) |
+| Discovery service | | [Validator: Discovery Service - CSW Core](https://inspire.ec.europa.eu/validator/) |
 | **Metadata** | | |
-| Metadata dataset | [Validator: Nederlands profiel op ISO 19115 v21 2020](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Metadata) | [Validator: INSPIRE Profile based on EN ISO 19115 and EN ISO 19119](http://inspire.ec.europa.eu/validator/) |
-| Metadata service | [Validator: Nederlands profiel op ISO 19119 v21 2020](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Metadata) | [Validator: INSPIRE Profile based on EN ISO 19115 and EN ISO 19119](http://inspire.ec.europa.eu/validator/) |
+| Metadata dataset | [Validator: Nederlands profiel op ISO 19115 v21 2020](https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Metadata) | [Validator: INSPIRE Profile based on EN ISO 19115 and EN ISO 19119](https://inspire.ec.europa.eu/validator/) |
+| Metadata service | [Validator: Nederlands profiel op ISO 19119 v21 2020](https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Metadata) | [Validator: INSPIRE Profile based on EN ISO 19115 and EN ISO 19119](https://inspire.ec.europa.eu/validator/) |
 | **View service**| | |
-| WMS | [Validator: Nederlands WMS profiel 1_3_0](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services) | [Validator: View Service WMS](http://inspire.ec.europa.eu/validator/) |
-| WMTS | | [Validator: View Service WMTS](http://inspire.ec.europa.eu/validator/) |
+| WMS | [Validator: Nederlands WMS profiel 1_3_0](https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services) | [Validator: View Service WMS](https://inspire.ec.europa.eu/validator/) |
+| WMTS | | [Validator: View Service WMTS](https://inspire.ec.europa.eu/validator/) |
 | **Download service** | | |
-| WFS | Validator: [Nederlands WFS profiel WFS 2_0_0 ISO 19142](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services) en [INSPIRE Download service WFS 2_0_0](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE) bij niet-werkende EU-implementatie. | [Validator: Download Service - Direct WFS en/of Download Service - Pre-defined WFS](http://inspire.ec.europa.eu/validator/) |
-| ATOM | | [Validator: Download service – Pre-defined ATOM](http://inspire.ec.europa.eu/validator/) |
-| WCS | | [Validator: Download service – WCS core](http://inspire.ec.europa.eu/validator/) |
-| SOS | | [Validator: Download service – Pre-defined SOS](http://inspire.ec.europa.eu/validator/) |
-| OGC API - Features | | [Validator: Download service – OGC API - Features](http://inspire.ec.europa.eu/validator/) |
+| WFS | Validator: [Nederlands WFS profiel WFS 2_0_0 ISO 19142](https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services) en [INSPIRE Download service WFS 2_0_0](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE) bij niet-werkende EU-implementatie. | [Validator: Download Service - Direct WFS en/of Download Service - Pre-defined WFS](https://inspire.ec.europa.eu/validator/) |
+| ATOM | | [Validator: Download service – Pre-defined ATOM](https://inspire.ec.europa.eu/validator/) |
+| WCS | | [Validator: Download service – WCS core](https://inspire.ec.europa.eu/validator/) |
+| SOS | | [Validator: Download service – Pre-defined SOS](https://inspire.ec.europa.eu/validator/) |
+| OGC API - Features | | [Validator: Download service – OGC API - Features](https://inspire.ec.europa.eu/validator/) |
 
 ### Europese INSPIRE-validator
 Op 25 juli 2017 is de Europese INSPIRE-validator gelanceerd. Daarmee is er nu voor alle lidstaten één tool waarmee je kunt testen in hoeverre je voldoet aan de INSPIRE-vereisten. De Europese validator zal vermoedelijk nog af en toe bijgewerkt worden op basis van issues. De voortgang hierin is [hier](https://github.com/INSPIRE-MIF/helpdesk-validator/tree/master/release%20strategy) te vinden.
@@ -58,11 +58,13 @@ Met de Europese validator, kunnen testen worden uitgevoerd voor de volgende onde
 - Applicatieschema
 - GML
 
-De officiële Europese INSPIRE-validator is [hier te vinden](https://inspire.ec.europa.eu/validator/).
-Daarnaast is er ook een testversie van de validator, de zogeheten [staging instance](http://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/etf-webapp/) waar de nieuwste functionaliteit in verwerkt is, maar die nog niet volledig getest is.
+De officiële Europese INSPIRE-validator is [hier](https://inspire.ec.europa.eu/validator/) te vinden.
+Daarnaast is er ook een testversie van de validator, de zogeheten [staging instance](https://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/etf-webapp/) waar de nieuwste functionaliteit in verwerkt is, maar die nog niet volledig getest is.
+
+Tip: de Europese validator kan ook middels een API aangeroepen worden. Bij het (semi) geautomatiseerd uitvoeren van tests kan het nuttig zijn dit te gebruiken.
 
 ### Nederlandse INSPIRE-validator
-Voordat de Europese validator beschikbaar was kon Nederlandse INSPIRE-data gevalideerd worden via de [Nederlandse INSPIRE-validator](http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE). Vanaf 1 september 2020 is het advies echter om voor het controleren van de toepassing van de INSPIRE-standaard alleen nog de Europese validator te gebruiken. Op die datum is in Nederland overgestapt op metadataprofiel 2.1.0. In de Nederlandse validatietools hiervoor worden de INSPIRE-regels niet meer geüpdatet. De Nederlandse validatietools zijn natuurlijk nog wel van belang voor het testen op de Nederlandse profielen voor metadata, WMS en WFS.
+Voordat de Europese validator beschikbaar was kon Nederlandse INSPIRE-data gevalideerd worden via de [Nederlandse INSPIRE-validator](https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE). Vanaf 1 september 2020 is het advies echter om voor het controleren van de toepassing van de INSPIRE-standaard alleen nog de Europese validator te gebruiken. Op die datum is in Nederland overgestapt op metadataprofiel 2.1.0. In de Nederlandse validatietools hiervoor worden de INSPIRE-regels niet meer geüpdatet. De Nederlandse validatietools zijn natuurlijk nog wel van belang voor het testen op de Nederlandse profielen voor metadata, WMS en WFS.
 
 ## Conformance classes
 
@@ -78,13 +80,11 @@ Om (geharmoniseerde) data te valideren zijn per thema validators beschikbaar. Da
 
 ### Conformance classes service-validators
 
-Voor de meeste service validators (WMS, WMTS, WFS pre-defined, WFS direct access, ATOM, SOS, WCS en OGC API Features) is er maar 1 Conformance class beschikbaar die gebruikt kan worden.
+Voor de meeste service validators (WMS, WMTS, WFS pre-defined, WFS direct access, ATOM, SOS, WCS en OGC API Features) is er maar 1 conformance class beschikbaar die gebruikt kan worden.
 
 ## Bekende problemen Europese validator
 
-De Europese validators werken over het algemeen goed. Er zijn echter nog een paar bekende problemen. **Voor WFS werkt de EU validatie met bepaalde implementaties niet, gebruik in dat geval nog de NL validatie voor WFS.** De overige belangrijkste issues staan hieronder, zie de [Github repository van INSPIRE-validatie](https://github.com/INSPIRE-MIF/helpdesk-validator/issues) voor alle openstaande issues.
-
-Tip: de Europese validator kan ook middels een API aangeroepen worden. Bij het (semi) geautomatiseerd uitvoeren van tests kan het nuttig zijn dit te gebruiken.
+De Europese validators werken over het algemeen goed. Er zijn echter nog een paar bekende problemen. **[Voor WFS werkt de EU validatie met bepaalde implementaties niet](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/29), gebruik in dat geval nog de NL validatie voor WFS.** Deze en overige issues zijn te vinden op [Github repository van INSPIRE-validatie](https://github.com/INSPIRE-MIF/helpdesk-validator/issues).
 
 ## Link checker
 
