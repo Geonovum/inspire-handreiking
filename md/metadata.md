@@ -360,18 +360,18 @@ Voor de INSPIRE-conformiteittoetsen voor metadata kan men gebruik maken van de E
 
 **Vraag: Waarom kan ik mijn metadata niet in het EU INSPIRE portaal terugvinden?**
 
-Alleen metadata met de aanduiding 'categorie INSPIRE' wordt doorgeleverd aan de EU voor INSPIRE. In het hoofstuk [Publiceren](#publiceren) is beschreven hoe deze categorie toegevoegd kan worden. Als de categorie wel is toegevoegd, kan het probleem ook zitten in het niet aanwezig zijn van een trefwoord uit de GEMET INSPIRE thema thesaurus.
+Alleen metadata die in het NGR zijn gepubliceerd met de aanduiding 'categorie INSPIRE' wordt doorgeleverd aan de EU voor INSPIRE. In het hoofstuk [Publiceren](#publiceren) is beschreven hoe deze categorie toegevoegd kan worden. Als de categorie wel is toegevoegd, kan het probleem ook zitten in het niet aanwezig zijn van een trefwoord uit de GEMET INSPIRE thema thesaurus.
 
-**Vraag: Trefwoord uit GEMET INSPIRE thema thesaurus. Is een trefwoord verplicht in de metadata?**
+**Vraag: Is een trefwoord uit GEMET INSPIRE thema thesaurus verplicht in de metadata?**
 
-Voor datasets en dataset-series die onder INSPIRE vallen, dient men de thema’s waar de data onder valt op te nemen. Deze INSPIRE-thema’s zijn te vinden in de [thesaurus GEMET](http://www.eionet.europa.eu/gemet/inspire_themes). Voor INSPIRE moet tenminste één trefwoord uit deze thesaurus over worden genomen. Het is ook mogelijk daarnaast zelfgedefinieerde trefwoorden, of trefwoorden uit een andere thesaurus in te vullen.
+Voor datasets en dataset-series die onder INSPIRE vallen, dient men de thema’s waar de data onder valt op te nemen als trefwoord. Deze INSPIRE-thema’s zijn te vinden in de [thesaurus GEMET](http://www.eionet.europa.eu/gemet/inspire_themes). Voor INSPIRE datasets moet tenminste één trefwoord uit deze thesaurus over worden genomen. Het is ook mogelijk daarnaast zelfgedefinieerde trefwoorden, of trefwoorden uit een andere thesaurus in te vullen.
 
 Een voorbeeld:
 <pre class="xml">
 &lt;gmd:descriptiveKeywords&gt;
    &lt;gmd:MD_Keywords&gt;
       &lt;gmd:keyword&gt;
-          &lt;gco:CharacterString&gt;infoMapAccessService&lt;/gco:CharacterString&gt;
+          &lt;gco:CharacterString&gt;Beschermd stads en dorpsgezicht&lt;/gco:CharacterString&gt;
      &lt;/gmd:keyword&gt;
    &lt;/gmd:MD_Keywords&gt;
 &lt;/gmd:descriptiveKeywords&gt;
@@ -391,9 +391,9 @@ Een voorbeeld:
 &lt;/gmd:descriptiveKeywords&gt;
 </pre>
 
-**Vraag: Is thesaurus titel, datum en datum type verplicht (thesaurusName element)?**
+**Vraag: Is thesaurus titel, datum en datum type verplicht?**
 
-Nee, het thesaurusName element is een conditioneel element. Het is verplicht als er een trefwoord wordt opgenomen afkomstig uit een thesaurus. Het bevat dan de naam van de thesaurus waar het trefwoord uit afkomstig is.
+Nee, de  thesaurus elementen zijn conditionele elementen. Het is verplicht ze in te vullen, als er een trefwoord wordt opgenomen afkomstig uit een thesaurus, zoals bij het INSPIRE thema trefwoord uit de GEMET INSPIRE themes thesaurus. Bij zelf gedefinieerde trefwoorden is het niet mogelijk om deze informatie te geven.
 
 Een voorbeeld:
 
@@ -446,3 +446,7 @@ Een voorbeeld:
    &lt;gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut"&gt;Nederlands&lt;/gmd:LanguageCode&gt;
 &lt;/gmd:language>
 </pre>
+
+**Vraag: Kan de metadata ook conform DCAT aangemaakt worden?**
+
+Op dit moment is voor INSPIRE de metadata gebaseerd op ISO 19115 en ISO 19119 standaard. Het is wel mogelijk om de INSPIRE / ISO metadata te transformeneren naar DCAT-AP, zodat de metadata voor een bredere community beschikbaar is. Deze transformatie is uitgewerkt in de INSPIRE good practice: <a href=" https://inspire.ec.europa.eu/good-practice/geodcat-ap " target="_blank"> geoDCAT-AP</a> 
