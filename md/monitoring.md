@@ -1,57 +1,14 @@
 # Monitoring en rapportage
 
-De [Implementing Rule: Monitoring en Reporting](https://inspire.ec.europa.eu/monitoring-and-reporting/69) is niet opgenomen in de processtappen die eerder in de wiki een leidraad voor dataproviders vormen. De achterliggende reden is dat deze IR in feite niet bijdraagt aan het (technische) proces dat dataproviders moeten doorlopen om (meta)data en services met de INSPIRE richtlijnen te harmoniseren. Buiten dat is de IR wel degelijk van belang en zullen dataproviders gegevens moeten leveren zodat ‘lidstaat Nederland’ aan deze IR kan voldoen.
+De Implementing Rule: <a href="https://inspire.ec.europa.eu/monitoring-and-reporting/69" target="_blank">Monitoring en Reporting</a> is niet opgenomen in de processtappen die eerder in de wiki een leidraad voor dataproviders vormen. De achterliggende reden is dat deze IR in feite geen onderdeel is van het (technische) proces dat dataproviders moeten doorlopen om (meta)data en services met de INSPIRE richtlijnen te harmoniseren. Buiten dat is de IR wel degelijk van belang en leveren de dataproviders indirect gegevens zodat de voortgang van de implementatie in Nederland gemonitoord kan worden.
 
-De Implementing Rule: Monitoring en Reporting omvat twee aspecten van INSPIRE:
-- Rapportage van de verzameling ruimtelijke gegevens;
-- Monitoring van de services.
+De Implementing Rule Monitoring en Reporting omvat twee aspecten:
+- Rapportage over de coordinatie en infrastructuur;
+- Monitoring van de datasets en services.
 
-Ten behoeve van de monitoring van de voortgang van INSPIRE dient jaarlijks een rapportage verstrekt te worden aan de EU aan de hand van voorgeschreven indicatoren. Dit gebeurt op basis van informatie die aanwezig is in het INSPIRE-portaal in Nederland, het Nationaal Georegister en als INSPIRE data herkenbaar is gemaakt door het opnemen van de categorie INSPIRE. Op basis van de daarin opgenomen informatie worden de indicatoren voor de monitoring geautomatiseerd afgeleid en berekend. Metadata van alle aangemerkte datasets dient in het Nationaal Georegister gepubliceerd te zijn.
+Ten behoeve van de monitoring van de voortgang van de implementatie van INSPIRE dient jaarlijks informatie verstrekt te worden aan de EU aan de hand van voorgeschreven indicatoren. Daarvoor wordt gebruik gemaakt van de informatie die aanwezig is in het INSPIRE-portaal in Nederland, het Nationaal Georegister. Op basis van de daarin opgenomen informatie worden de indicatoren voor de monitoring geautomatiseerd afgeleid en berekend. Het is voor de monitoringvan van belang dat de metadata van alle aangemerkte datasets en bijbehorende services goed bijgehouden wordt en voldoet aan de INSPIRE vereisten. Alleen de metadata die in het Nationaal Georegister is gepubliceerd en als INSPIRE data herkenbaar is gemaakt door het opnemen van de categorie INSPIRE, wordt voor de monitoring gebruikt. 
 
-## Dataset
-
-Per Dataset worden de volgende gegevens verzameld:
-
-| Indicator | Voorwaarde |
-| --------- | ---------- |
-| Wat is de naam van de dataset? (naam) | |
-| Is de bijbehorende metadata beschikbaar? (j/n) | |
-| Is die metadata conform de INSPIRE-richtlijnen? (j/n) | v |
-| Is de structuur van de dataset conform de INSPIRE-richtlijnen? (j/n) | v* |
-| Wat is de geografische dekking van de dataset? (%) | dp |
-| Is de dataset en bijbehorende metadata benaderbaar door een zoekdienst? (j/n) | |
-| Is de dataset benaderbaar door een raadpleegdienst? (j/n) | |
-| Is de dataset benaderbaar door een downloaddienst? (j/n) | |
-| Hoeveel bijbehorende dataservices zijn er beschikbaar? (aantal) | |
-
-## Service
-
-Per Service worden de volgende gegevens verzameld:
-
-| Indicator | Voorwaarde |
-| --------- | ---------- |
-| Wat is de naam van de dataservice? (naam) | |
-| Is de bijbehorende metadata beschikbaar? (j/n) | |
-| Is die metadata conform de INSPIRE-richtlijnen? (j/n) | v |
-| Is de dataservice benaderbaar door een raadpleegdienst? (j/n) | |
-| Wat is het adres van de dataservice? (url) | |
-| Wat voor type netwerkdienst is de dataservice? (zoek/raadpleeg/download/transformatie/oproepdienst/overig) | |
-| Is de netwerkdienst conform de INSPIRE-richtlijnen (j/n) | v* |
-| Hoe vaak werd de netwerkdienst gebruikt in afgelopen jaar? (aantal) | dp |
-
-## Werkwijze
-
-- De **v** gegevens worden op basis van EU validator tooling automatisch gegenereerd.
-- De **v\*** gegevens worden als daarvoor EU validator tooling beschikbaar is automatisch gegenereerd.
-- Voor de v* gegevens dient de conformiteit in de metadata opgenomen te worden.
-- De **dp** gegevens dienen jaarlijks te worden ingevuld door de data provider. Voor datasets waarvan de geografische dekking niet volledig is, wordt het dekkingspercentage per dataset met de identifier van de metadata die die dataset beschrijft in het template ingevuld. Een voorbeeld van niet volledige dekking is een landsdekkende dataset van de waterschappen waarin de data van enkele waterschappen nog niet is opgenomen.
-- Voor services wordt het jaarlijkse aantal serviceverzoeken per service met de identifier van de metadata die die service beschrijft in het template ingevuld.
-- De EU monitoringsrapportage wordt op basis van de metadata in het nationaal georegister gegenereerd. Metadata van alle aangemerkte datasets dient daarin gepubliceerd te zijn.
-- Zorg dat de metadata in het NGR op orde is. Zie ook de aandachtspunten hieronder.
-- De conformiteit van datasets en services is in de metadata opgenomen. Gebruik voor het checken van de conformiteit de Inspire validatie tools.
-- Valideer de metadata met de Inspire validatie tools.
-
-De conformiteit van de metadata wordt gegenereerd als de monitoringsrapportage wordt gemaakt. Daarvoor wordt gebruik gemaakt van de Europese INSPIRE-validator
+De resultaten van de monitoring en de rapportage worden op <a href="https://inspire.ec.europa.eu/mr/NL/69" target="_blank">Monitoring en Reporting NL</a> onder het kopje country fiche gepubliceerd.
 
 ## Tijdlijn
 
