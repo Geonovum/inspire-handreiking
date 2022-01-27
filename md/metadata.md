@@ -67,10 +67,10 @@ De gebruiksvoorwaarden, ook als daarvan wordt afgezien in Public Domain Mark of 
 
 ## Dataset metadata
 
-In de [Invulinstructies voor dataset](#Invulinstructies-voor-dataset) zijn de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/). Daarnaast zijn twee voorbeeld metadatabestanden beschikbaar, een [algemeen voorbeeldbestand](#voorbeeld-metadatabestand-xml-voor-inspire-dataset) en een [voorbeeldbestand voor de prioritaire datasets](#voorbeeld-metadatabestand-xml-voor-inspire-prioritaire-dataset).
+In de [Invulinstructie dataset metadata](#Invulinstructie-dataset-metadata) zijn de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19115](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/). Daarnaast zijn twee voorbeeld metadatabestanden beschikbaar, een [algemeen voorbeeldbestand](#voorbeeld-metadatabestand-xml-voor-inspire-dataset) en een [voorbeeldbestand voor de prioritaire datasets](#voorbeeld-metadatabestand-xml-voor-inspire-prioritaire-dataset).
 
-### Invulinstructies voor datasets
-De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen. Let erop, dat er zowel verplichte ('Ja') als conditionele ('C') elementen in voorkomen. Zo kan bijvoorbeeld een aantal elementen pas worden ingevuld wanneer de dataharmonisatie is voltooid. Voor [prioritaire datasets](#prioritaire-datasets) is de aanvullende instructie over het gebruik van [anchors](#hoe-om-te-gaan-met-anchor-en-uri) bij het opnemen van de trefwoorden in de metadata ook in de invulinstructies meegenomen.
+### Invulinstructie dataset metadata
+De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen. Let erop, dat er zowel verplichte ('Ja') als conditionele ('C') elementen in voorkomen. Zo kan bijvoorbeeld een aantal elementen pas worden ingevuld wanneer de dataharmonisatie is voltooid. Voor [prioritaire datasets](#prioritaire-datasets) is de aanvullende instructie over het gebruik van *[anchors](#hoe-om-te-gaan-met-anchor-en-uri)* bij het opnemen van de trefwoorden in de metadata ook in de invulinstructies meegenomen.
 
 
 | Metadata-element 									| Longname 		| INSPIRE-verplicht | Omschrijving 	| Voorbeeldwaarde |
@@ -123,16 +123,16 @@ Ook voor "as-is" data is het opgeven van de conformiteit met de verordening verp
 
 
 ### Hoe om te gaan met Anchor en URI
-Voor INSPIRE is het gebruik van een *Anchor* in plaats van vrije tekst in een characterstring in een aantal metadata elementen verplicht. In een Anchor wordt een URI en een label opgenomen. De URI is machine leesbaar; het label is voor mensen leesbaar en wordt in de taal waarin de metadata is beschreven opgenomen. Voordeel van URI's is dat deze altijd hetzelfde zijn onafhankelijk van de gehanteerde taal. Dat maakt het dat op Europees niveau bijvoorbeeld de trefwoorden voor prioriaire datasets doorzoekbaar zijn. Als ieder het trefwoord alleen in zijn eigen taal opneemt, is dat een stuk lastiger. 
+Voor INSPIRE is het gebruik van een *anchor* in plaats van vrije tekst in een characterstring in een aantal metadata elementen verplicht. In een anchor wordt een URI en een label opgenomen. De URI is machine leesbaar; het label is voor mensen leesbaar en wordt in de taal waarin de metadata is beschreven opgenomen. Voordeel van URI's is dat deze altijd hetzelfde zijn onafhankelijk van de gehanteerde taal. Dat maakt het dat op Europees niveau bijvoorbeeld de trefwoorden voor prioriaire datasets doorzoekbaar zijn. Als ieder het trefwoord alleen in zijn eigen taal opneemt, is dat een stuk lastiger. 
 
-Maak waar mogelijk gebruik van een Anchor, ook waar het niet verplicht is, bijvoorbeeld ook bij het opgeven van de specificatie (Verordening en INSPIRE TG) bij de conformiteit. Als dit in een string element wordt opgegeven, moet de titel exact worden overgenomen.
+Maak waar mogelijk gebruik van een anchor, ook waar het niet verplicht is, bijvoorbeeld ook bij het opgeven van de specificatie (Verordening en INSPIRE TG) bij de conformiteit. Als dit in een string element wordt opgegeven, moet de titel exact worden overgenomen.
 
 
-**Het toevoegen van trefwoorden met URI's in een Anchor**
+**Het toevoegen van trefwoorden met URI's in een anchor**
 
-De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd met een Anchor en URI (uitgewerkt voor een prioritaire dataset):
-1. Ga naar de INSPIRE Registry (http://inspire.ec.europa.eu/registry).
-2. Ga naar de prioritaire-dataset-metadata-codelijst (http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset).
+De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd met een anchor en URI (uitgewerkt voor een prioritaire dataset):
+1. Ga naar de <a href="http://inspire.ec.europa.eu/registry" target="_blank">INSPIRE Registry</a> (http://inspire.ec.europa.eu/registry).
+2. Ga naar de <a href="http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset" target="_blank">INSPIRE prioritaire dataset metadata codelijst</a>  (http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset).
 3. Ga naar de betreffende prioritaire dataset.
 4. Kopieer de URI en het Nederlands label.
 5. Voeg deze als trefwoord toe aan de metadata samen met de verwijzing naar de thesaurus met *titel*, *datum* en *type datum*. Hiervoor kan onderstaande XML-voorbeeld in de XML worden gekopieerd.
@@ -172,19 +172,19 @@ De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd m
 
 ### Voorbeeld metadatabestand (XML) voor INSPIRE dataset
 
-TO DO check XML !!! Hier is een [voorbeeld-metadatabestand](https://wiki.geonovum.nl/images/Voorbeeld_Metadata_Dataset_2019.zip) te vinden voor een fictive dataset.
+TO DO check XML !!! Hier is een <a href="https://wiki.geonovum.nl/images/Voorbeeld_Metadata_Dataset_2019.zip" target="_blank">voorbeeld-metadatabestand</a> te vinden voor een fictieve dataset.
 
 
 ### Voorbeeld metadatabestand (XML) voor INSPIRE prioritaire dataset
-TO DO check XML !!! [Hier is een voorbeeldbestand waarin beide scenario's zijn uitgewerkt](https://wiki.geonovum.nl/images/Voorbeeld_XML_prioritaire_dataset.xml).
+TO DO check XML (scenario 1 zonder anchor er uit halen!)!!! Hier is een <a href="https://wiki.geonovum.nl/images/Voorbeeld_XML_prioritaire_dataset.xml" target="_blank">voorbeeld-metadatabestand</a> te vinden voor een fictieve prioritaire dataset.
 
 
 
 ## Service metadata
 
-De meeste OGC-services, zoals WMS en WFS hebben een capabilities-document dat tijdens het ontwikkelen van de service aangemaakt wordt. Het is een beschrijving van de informatie-inhoud van de dienst. Buiten de informatie over de service zelf bijvoorbeeld de mogelijke request parameters, bevatten de capabilities ook metadata zoals trefwoorden en verantwoordelijke organisatie. Het is dit XML-document dat als antwoord op het GetCapabilities-request door de server terug aan de client gegeven wordt. In dit capabilities-document worden automatisch enkele, maar niet alle voor INSPIRE verplichte, metadata elementen toegevoegd. Het automatisch gegenereerde document is dus niet volledig en dient aangevuld te worden met de voor INSPIRE verplichte en conditionele velden, alvorens het ‘gepubliceerd’ wordt. Het aanvullen kan door de capabilities uit te breiden met de verplichtte elementen, of door te verwijzen naar het ISO 19119 conforme XML-bestand waar alle metadata-elementen in beschreven zijn. Daarbij is het van belang dat de metadata beschrijvingen die in de capabilities zijn opgenomen, inhoudelijk overeenkomen met het corresponderende metadata in de volledige metadata in het ISO 19119 conforme XML bestand.
+De meeste OGC-services, zoals WMS en WFS hebben een capabilities-document dat tijdens het ontwikkelen van de service aangemaakt wordt. Het is een beschrijving van de informatie-inhoud van de dienst. Buiten de informatie over de service zelf, bijvoorbeeld de mogelijke request parameters, bevatten de capabilities ook metadata zoals trefwoorden en verantwoordelijke organisatie. Het is dit XML-document dat als antwoord op het GetCapabilities-request door de server terug aan de client gegeven wordt. In dit capabilities-document worden automatisch enkele, maar niet alle voor INSPIRE verplichte, metadata elementen toegevoegd. Het automatisch gegenereerde document is dus niet volledig en dient aangevuld te worden met de voor INSPIRE verplichte en conditionele velden, alvorens het ‘gepubliceerd’ wordt. Het aanvullen kan door de capabilities uit te breiden met de verplichtte elementen, of door te verwijzen naar het ISO 19119 conforme XML-bestand waar alle metadata-elementen in beschreven zijn. Daarbij is het van belang dat de metadata beschrijvingen die in de capabilities zijn opgenomen, inhoudelijk overeenkomen met de corresponderende metadata die beschreven is in het volledige metadata, ISO 19119 conforme XML, bestand.
 
-Er zijn verschillende soorten spatial data services, naast de netwerk services, zoals de view en download services, zijn er ook de invocable, interoperable en harmonised spatial data services. In het hoofdstuk over [Services](#services) staat onder de paragraaf [Spatial Data Services](#spatial-data-services) (SDS) beschreven welke soorten SDS-sen er zijn. Aan de hand van een stroomschema kan bepaald worden tot welke categorie een service behoord. Alle services dienen in ieder geval van service metadata te worden voorzien. In de [Invulinstructie service metadata](#Invulinstructie-service-metadata) zijn daarvoor de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op [Nederlands metadata profiel op ISO 19119](https://docs.geostandaarden.nl/md/mdprofiel-iso19119/). Voor de invocable, interoperable en harmonised spatial data services gelden aanvullende vereisten. 
+Er zijn verschillende soorten spatial data services, naast de netwerk services, zoals de view en download services, zijn er ook de invocable, interoperable en harmonised spatial data services. In het hoofdstuk over [Services](#services) staat in de paragraaf [Spatial Data Services (SDS)](#spatial-data-services) beschreven welke soorten SDS-sen er zijn. Aan de hand van het stroomschema in deze paragraaf kan bepaald worden tot welke categorie een service behoord. Alle services dienen in ieder geval van service metadata te worden voorzien. In de [Invulinstructie service metadata](#invulinstructie-service-metadata) zijn daarvoor de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19119/" target="_blank"> Nederlands metadata profiel op ISO 19119</a>. Voor de invocable, interoperable en harmonised spatial data services gelden aanvullende vereisten. 
 
 Per soort spatial data service, staat in de volgende paragraven beschreven wat de metadata eisen zijn.
 
