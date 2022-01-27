@@ -1,6 +1,6 @@
 # Services
 
-In dit deel van de WIKI worden de verschillende electronische diensten (services) behandeld die INSPIRE vraagt aan de INSPIRE plichtige dataproviders. Omdat het binnen INSPIRE om ruimtelijke data gaat worden ze ook wel Spatial Data Services genoemd. Algemene aspecten daaraan worden in het volgende hoofstuk behandeld. Er zijn verschillende soorten services die ieder afzonderlijk in hoofdstukken daarna behandeld worden.
+In dit deel van de handreiking worden de verschillende electronische diensten (services) behandeld die INSPIRE vraagt aan de INSPIRE plichtige dataproviders. Omdat het binnen INSPIRE om ruimtelijke data gaat worden ze ook wel Spatial Data Services genoemd. Algemene aspecten daaraan worden in het volgende hoofstuk behandeld. Er zijn verschillende soorten services die ieder afzonderlijk in hoofdstukken daarna behandeld worden.
 
 ## Spatial Data Services
 
@@ -73,7 +73,7 @@ In de Technical Guidances (of Guidance Documents) zijn de technische specificati
 | <a href="https://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - Sensor Observation Service</a> ||
 | <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance for the implementation of INSPIRE View Services</a> ||
 | <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0" target="_blank">Technical Guidance for the implementation of INSPIRE Discovery Services</a> ||
-| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-inspire-schema-transformation-network-service" target="_blank">Technical Guidance for the INSPIRE Schema Transformation Network Service</a> |Niet op Wiki uitgewerkt| 
+| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-inspire-schema-transformation-network-service" target="_blank">Technical Guidance for the INSPIRE Schema Transformation Network Service</a> |Dit onderdeel is niet in deze handreiking uitgewerkt| 
 
 Voor spatial data services, zie [elders in dit document](#spatial-data-services).
 
@@ -1182,4 +1182,4 @@ Spatial Data Services die geen network service zijn, kunnen heel verschillende s
 
 ## Wijzigingen doorvoeren
 
-Wanneer u een wijziging doorvoert in uw dataset of service, kan dit gevolgen hebben voor bijvoorbeeld de metadata, atomfeeds en conformiteit van uw data en services. In het document <a href="https://www.geonovum.nl/uploads/documents/inspire-en-wat-te-doen-bij-wijzigingen.pdf" target="_blank">wijzigingen en INSPIRE</a> vindt u een praktische handreiking van de punten die u kunt controleren na een wijziging van uw INSPIRE-datasets en -services.
+Wanneer je een wijziging doorvoert in uw dataset of service, kan dit gevolgen hebben voor bijvoorbeeld de metadata, atomfeeds en conformiteit van uw data en services. In het document <a href="https://www.geonovum.nl/uploads/documents/inspire-en-wat-te-doen-bij-wijzigingen.pdf" target="_blank">wijzigingen en INSPIRE</a> vindt je een praktische handreiking van de punten die je kunt controleren na een wijziging van uw INSPIRE-datasets en -services.
