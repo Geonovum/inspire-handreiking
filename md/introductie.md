@@ -83,7 +83,9 @@ De online tool <a href="https://inspire-regadmin.jrc.ec.europa.eu/dataspecificat
 
 ### Europese INSPIRE geoportal
 In het Europese <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE geoportal</a> kan je Europese milieu gegevens vinden die onder de INSPIRE-richtlijn vallen. Dit portaal biedt verschillende zoekingangen. Zo is er een ingang op thema en een op datasets die relevant zijn voor milieurapportage. 
-Het Europese geoportal harvest de metadata van 36 officieel geregistreerde nationale data calogi van Europese lidstaten en EFTA landen. Het INSPIRE Geoportal team wordt ontwikkeld door het Joint Research Centre (JRC).
+Het Europese geoportal harvest de metadata van 36 officieel geregistreerde nationale data catalogi van Europese lidstaten en EFTA landen. Het INSPIRE Geoportal team wordt ontwikkeld door het Joint Research Centre (JRC).
+
+Elke eerste maandag van de maand wordt de Nederlandse data catalogus, het [Nationaal Georegister](#nationaal-georegister), geharvest naar het Europese INSPIRE geoportal.
 
 ### INSPIRE registry
 De <a href="https://inspire.ec.europa.eu/registry" target="_blank">INSPIRE registry</a> omvat een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). 
