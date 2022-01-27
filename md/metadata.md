@@ -115,6 +115,8 @@ De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-met
 
 **Aandachtspunten**
 
+De conformiteit van datasets en services wordt in de metadata opgenomen. Gebruik voor het checken van de conformiteit de validators, zoals genoemd bij [validatie](#validatie). Op basis daarvan wordt het metadata element Indicatie van conformiteit met de specificatie in de metadata ingevuld.
+
 De elementengroep Specificatie (titel, datum, verklaring en conformiteit) waar de conformiteit wordt opgegegeven komt meerdere keren voor, telkens met een andere specificatie.  
 
 Het element trefwoord, in combinatie met de thesaurus waaruit het trefwoord komt, wordt ook meerdere keren opgenomen. 
