@@ -111,6 +111,8 @@ Het detail van de handreiking slaat het software-niveau over; het is geen *how t
 ### Taal en Terminologie
 INSPIRE-terminologie (Engels) wordt niet structureel vertaald naar het Nederlands. De belangrijkste reden hiervoor is dat niet van alle technische termen een eenduidige Nederlandse vertaling bestaat. Om verwarring te voorkomen hanteren we hier de Engelse termen. Engelse en INSPIRE-terminologie staan de eerste keer in *italics*. Veel juridische termen kennen wél een goede Nederlandse vertaling; die nemen we hier daarom over.
 
+Om interpretatieverschillen te voorkomen worden de termen die in verband met INSPIRE gebruikt worden geformaliseerd en gestandaardiseerd. Een volledig overzicht van deze termen vind je in het [INSPIRE Register](#inspire-registry). Hierin staat ook de <a href="https://inspire.ec.europa.eu/featureconcept" target="_blank">Feature Concept Dictionary (FCD)</a> met termen en definities van de thematische ruimtelijke objecttypes die van belang zijn bij de INSPIRE harmonisatie en de <a href="https://inspire.ec.europa.eu/glossary" target="_blank">Glossary</a> met hierin algemene terminologie. De laatste is van belang voor alle INSPIRE-documenten.
+
 ### INSPIRE Helpdesk
 We proberen via deze handreiking zoveel mogelijk informatie over INSPIRE te delen. Heb je toch nog een vraag over INSPIRE, stuur dan een e-mail naar inspire@geonovum.nl.
 
