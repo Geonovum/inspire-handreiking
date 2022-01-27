@@ -13,10 +13,10 @@ Momenteel zijn vijf endorsed practises beschikbaar om te implementeren:
 - OGC compliant INSPIRE Coverage data and service implementation
 
 
-Op de Good Practice Library is ook de template te vinden voor het beschrijven van een good practice en procedure om hem in te dienen en de status "endorsed" te krijgen.
+Op de <a href="https://inspire.ec.europa.eu/portfolio/good-practice-library" target="_blank">Good Practice Library</a> is ook de template te vinden voor het beschrijven van een good practice en procedure om hem in te dienen en de status "endorsed" te krijgen.
 
 
-## Normatief kader ISO- en OGC-standaarden
+## ISO- en OGC-standaarden
 
 
 **ISO-standaarden**
