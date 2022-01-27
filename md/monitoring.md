@@ -1,6 +1,6 @@
 # Monitoring en rapportage
 
-De Implementing Rule: <a href="https://inspire.ec.europa.eu/monitoring-and-reporting/69" target="_blank">Monitoring en Reporting</a> is niet opgenomen in de processtappen die eerder in de wiki een leidraad voor dataproviders vormen. De achterliggende reden is dat deze IR in feite geen onderdeel is van het (technische) proces dat dataproviders moeten doorlopen om (meta)data en services met de INSPIRE richtlijnen te harmoniseren. Buiten dat is de IR wel degelijk van belang en leveren de dataproviders indirect gegevens zodat de voortgang van de implementatie in Nederland gemonitoord kan worden.
+De Implementing Rule: <a href="https://inspire.ec.europa.eu/monitoring-and-reporting/69" target="_blank">Monitoring en Reporting</a> is niet opgenomen in de processtappen die eerder in de handreiking een leidraad voor dataproviders vormen. De achterliggende reden is dat deze IR in feite geen onderdeel is van het (technische) proces dat dataproviders moeten doorlopen om (meta)data en services met de INSPIRE richtlijnen te harmoniseren. Buiten dat is de IR wel degelijk van belang en leveren de dataproviders indirect gegevens zodat de voortgang van de implementatie in Nederland gemonitoord kan worden.
 
 De Implementing Rule Monitoring en Reporting omvat twee aspecten:
 - Rapportage over de coordinatie en infrastructuur;
@@ -29,7 +29,7 @@ Zorg dat de metadata in het NGR op orde is. De EU monitoringsrapportage wordt op
 - Voor **prioritaire datasets**: de Commissie let extra op de beschikbaarheid van de prioritaire datasets. 
 
 **Aanmerkingsregister**
-- Werk indien nodig de UUIDs / metadata file identifiers bij in het [INSPIRE Aanmerkingsregister](https://inspireaanmerking.nl/), zodat duidelijk is dat een aangemerkte dataset daadwerkelijk aangeboden wordt.
+- Werk indien nodig de UUIDs / metadata file identifiers bij in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE Aanmerkingsregister</a>, zodat duidelijk is dat een aangemerkte dataset daadwerkelijk aangeboden wordt.
 
 **Geharmoniseerde data**
 Zie de pagina [Checklist dataharmonisatie](#checklist-dataharmonisatie) voor specifieke punten die spelen rondom publiceren van geharmoniseerde datasets.
