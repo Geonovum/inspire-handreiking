@@ -459,4 +459,5 @@ Een voorbeeld:
 
 **Vraag: Kan de metadata ook conform DCAT aangemaakt worden?**
 
-Op dit moment is voor INSPIRE de metadata gebaseerd op ISO 19115 en ISO 19119 standaard. Het is wel mogelijk om de INSPIRE / ISO metadata te transformeneren naar DCAT-AP, zodat de metadata voor een bredere community beschikbaar is. Deze transformatie is uitgewerkt in de [INSPIRE good practice](https://geonovum.github.io/inspire-wiki/#good-practices): <a href=" https://inspire.ec.europa.eu/good-practice/geodcat-ap " target="_blank">GeoDCAT-AP</a> 
+Op dit moment is voor INSPIRE de metadata gebaseerd op ISO 19115 en ISO 19119 standaard. Het is wel mogelijk om de INSPIRE / ISO metadata te transformeneren naar DCAT-AP, zodat de metadata voor een bredere community beschikbaar is. Deze transformatie is uitgewerkt in de [INSPIRE good practice](#good-practices): 
+<a href="https://inspire.ec.europa.eu/good-practice/geodcat-ap" target="_blank">GeoDCAT-AP</a>.
