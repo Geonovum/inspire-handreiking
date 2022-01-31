@@ -2,10 +2,10 @@
 
 ## Soorten INSPIRE data: as-is en/of geharmoniseerd en wel of niet prioritair 
 De aangemerkte INSPIRE datasets worden conform de INSPIRE uitvoeringsbepalingen ontsloten. Datasets en -services die onder één van de 34 INSPIRE-thema's vallen, moeten te vinden, raadplegen en downloaden zijn. De datasets komen vaak in twee varianten voor, namelijk:
-- de niet-geharmoniseerde dataset, de zogenaamde as-is dataset, zoals die in de lidstaat aanwezig is;
-- en/of de geharmoniseerde dataset, de dataset conform de INSPIRE-datamodellen in de INSPIRE-dataspecificaties.
+- de niet-geharmoniseerde dataset, de zogenaamde **as-is dataset**, zoals die in de lidstaat aanwezig is;
+- en/of de **geharmoniseerde dataset**, de dataset conform de INSPIRE-datamodellen in de INSPIRE-dataspecificaties.
 
-Naast dit onderscheid geeft de Europese Commissie ook prioriteit aan bepaalde datasets, de zogenaamde prioritaire datasets. Deze prioritaire datasets komen ook zowel niet-harmoniseerd als geharmoniseerd voor.
+Naast dit onderscheid geeft de Europese Commissie ook prioriteit aan bepaalde datasets, de zogenaamde **prioritaire datasets**. Deze prioritaire datasets komen ook zowel niet-harmoniseerd als geharmoniseerd voor.
 
 In dit hoofdstuk wordt allereerst ingegaan op het onderscheid as-is versus geharmoniseerd. Vervolgens komen de prioritaire datasets aan de orde. En tot slot komt de dataharmonisatie en alle processtappen die daarbij horen aan bod.
 
@@ -73,7 +73,7 @@ De prioritaire datasetlijsten voor deze nieuwe ontwikkelingen zijn op dit moment
 Meer informatie over Action 2.1 is te vinden op de <a href="https://github.com/INSPIRE-MIF/need-driven-data-prioritisation" target="_blank">Github Repository for INSPIRE MIWP Action 2.1 'Need-driven data prioritisation'</a>.
 
 
-## Dataharmonisatie
+# Dataharmonisatie
 De dataharmonisatie INSPIRE beoogt het ontsluiten van de aangemerkte datasets conform de INSPIRE-dataspecificaties. Letterlijk betekent harmoniseren “op elkaar afstemmen”. Dataharmonisatie wordt in de context van INSPIRE gedefinieerd als het vertalen (mappen) van de data zoals ze opgeslagen zijn bij de dataprovider (‘as-is’) naar een INSPIRE-conforme structuur. Sommige partijen definiëren dataharmonisatie ruimer. In dat geval heeft dataharmonisatie ook een beleidskundige dimensie. Dit is bijvoorbeeld het geval bij de provincies. Zij bieden de gegevens over het Natuurnetwerk Nederland niet twaalf keer afzonderlijk aan, maar slechts één keer landsdekkend. Voordat de data "gemapt" kon worden, bleek interne beleidskundige harmonisatie nodig.
 
 Op deze handreiking gaat het over dataharmonisatie in technisch-inhoudelijke zin; het beleidskundige perspectief blijft buiten beschouwing.
