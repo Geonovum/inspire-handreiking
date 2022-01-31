@@ -324,19 +324,3 @@ INSPIRE geeft op verschillende plaatsen aan welke zogenaamde *edge matching*-tec
 ## Datavalidatie
 Datavalidatie is een mechanisme om te controleren of een bepaalde dataset aan de INSPIRE specificaties voldoet en is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Het is daarmee een onmisbare toets op de vraag of de dataharmonisatie goed is uitgevoerd.
 Datavalidatie wordt uitgevoerd met de Europese INSPIRE-validator. Lees meer over dit onderwerp in het hoofdstuk [Validatie](#validatie) en voor datavalidatie ook specifiek de paragraaf [Conformance classes datavalidatie](#conformance-classes-datavalidatie).
-
-## Checklist dataharmonisatie
-Bij dataharmonisatie is het van belang op de volgende punten te letten:
-
-1. Onwerp je [transformatie](#fasen) van as-is datamodel naar de INSPIRE dataspecificaties.
-2. Beslis of er een [extensie](#extensies) gemaakt moet worden.
-3. Registreer de [namespaces](#namespace) via het [INSPIRE namespaceregister](#inspire-namespaceregister).
-4. Registreer [codelijsten](#codelijsten) als er codes gebruikt worden naast die al in bestaande INSPIRE codelijsten voorkomen.
-5. Valideer de datasets tussentijds met de [INSPIRE-validators](#te-gebruiken-validators), zodat vroegtijdig eventuele fouten opgelost kunnen worden. Informatie over datavalidatie is [hier](#conformance-classes-datavalidatie) te vinden.
-6. Publiceer dataset metadata van de geharmoniseerde dataset in het NGR. Voor geharmoniseerde data zijn er drie extra metadata-elementen die ingevuld dienen te worden; zie de [invulinstructies voor de metadata](#invulinstructie-voor-datasets). Contoleer in het NGR of de categorie `inspire` is geactiveerd, anders verschijnt de metadata niet in de INSPIRE Discovery Service. [Valideer daarna de dataset metadata](#metadata-validatie). 
-7. Zorg dat de view service van de geharmoniseerde dataset voldoet aan de eisen die INSPIRE stelt voor geharmoniseerde data. Zie in de betreffende dataspecificatie het hoofdstuk [Portrayal](#portrayal). 
-8. [Valideer de services](#valideren-services) van de geharmoniseerde dataset. Let er daarbij op dat de output van de downloadservices ook conform de dataspecificaties is net als dat met de input is gedaan in stap 5.
-9. Publiceer metadata van de services van de geharmoniseerde dataset in het NGR. Contoleer in het NGR of de categorie `inspire` is geactiveerd, anders verschijnt de metadata niet in de INSPIRE Discovery Service. [Valideer daarna de metadata van de services](#valideren-metadata-services). 
-10. Check of er in de metadata van de data en services goed naar elkaar is verwezen middels de juiste links via de [link-checker](#link-checker).
-13. Check in het [INSPIRE Geoportal](#europese-inspire-geoportal) of de data daadwerkelijk te bekijken en te downloaden is en onder het correcte thema te vinden is. N.B. Elke eerste maandag van de maand wordt er geharvest naar het INSPIRE geoportal.
-11. Tot slot voer de verwijzing naar de metadata (de UUID) van de geharmoniseerde dataset op in [het INSPIRE aanmerkingsregister](#aanmerkingsregister), zodat bekend is voor welke aangemerkte dataset daadwerkelijk data gepubliceerd is conform de eisen van INSPIRE.
