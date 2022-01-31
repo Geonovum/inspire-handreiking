@@ -19,13 +19,15 @@ In het figuur hieronder zie je een screenshot van het Nationaal Georegister (NGR
 
 
 ### Eisen metadata
-De metadata-elementen die voor INSPIRE, vanuit verschillende implementing rules (IR), beschreven moeten worden, zijn opgenomen in de Nederlandse profielen. Deze Nederlandse profielen, één voor datasets en dataset series en één voor services, zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen. Als er aan de conditie wordt voldaan, is dat element verplicht. Voor een aantal door conditie verplichte elementen, heeft de conditie te maken met INSPIRE. Als de te beschrijven bron een aangemerkte INSPIRE dataset of bijbehorende service is, dan worden er meer metadata-elementen vereist om in te vullen. Het komt ook voor dat er alleen specifieke waardes voor INSPIRE zijn toegestaan, terwijl voor niet INSPIRE-data meer waardes toegestaan zijn.  Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen en aanvullende vereisten voor INSPIRE uit de Nederlandse profielen worden gevolgd. 
+De metadata-elementen die voor INSPIRE, vanuit verschillende implementing rules (IR), beschreven moeten worden, zijn opgenomen in de Nederlandse profielen. Deze Nederlandse profielen, één voor datasets en dataset series en één voor services, zijn conform de INSPIRE-richtlijn. In de profielen zijn verplichte en door conditie verplichte elementen opgenomen. Als er aan de conditie wordt voldaan, is dat element verplicht. Voor een aantal door conditie verplichte elementen, heeft de conditie te maken met INSPIRE. Als de te beschrijven bron een aangemerkte INSPIRE dataset of bijbehorende service is, dan worden er meer metadata-elementen vereist om in te vullen. Het komt ook voor dat er alleen specifieke waardes voor INSPIRE zijn toegestaan, terwijl voor niet INSPIRE-data meer waardes toegestaan zijn.  Om te voldoen aan de INSPIRE-vereisten, moeten de conditionele elementen en aanvullende vereisten voor INSPIRE uit de Nederlandse profielen worden gevolgd. Metadata die volledig conform ISO 19115 is voldoet dus niet persee aan de INSPIRE vereisten. 
 
 Voor datasets en dataset series geldt het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/" target="_blank">Nederlands metadata profiel op ISO 19115</a>.
 
 Voor services geldt het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19119/" target="_blank">Nederlands metadata profiel op ISO 19119</a>.
 
 INSPIRE specifiek zijn de aanvullende [invulinstructie dataset metadata](#invulinstructie-dataset-metadata) en [invulinstructie service metadata](#invulinstructie-service-metadata) beschikbaar. Deze invulinstructies staan verderop in de handreiking beschreven.
+
+Op dit moment is voor INSPIRE de metadata gebaseerd op ISO 19115 en ISO 19119 standaard. DCAT is een standaard in opkomst, die veel in open data portalen wordt gebruikt. Het is mogelijk om de INSPIRE / ISO metadata te transformeneren naar DCAT-AP, zodat de metadata voor een bredere community beschikbaar is. Deze transformatie is uitgewerkt in de [INSPIRE good practice](#good-practices): <a href="https://inspire.ec.europa.eu/good-practice/geodcat-ap" target="_blank">GeoDCAT-AP</a>.
 
 Zie voor meer informatie over metadata in het algemeen, het  <a href="https://www.geonovum.nl/geo-standaarden/metadata" target="_blank">dossier Metadata</a> op de Geonovum-website.
 
@@ -116,12 +118,14 @@ De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-met
 **Aandachtspunten**
 
 De conformiteit van datasets en services wordt in de metadata opgenomen. Gebruik voor het checken van de conformiteit de validators, zoals genoemd bij [validatie](#validatie). Op basis daarvan wordt het metadata element Indicatie van conformiteit met de specificatie in de metadata ingevuld.
-
-De elementengroep Specificatie (titel, datum, verklaring en conformiteit) waar de conformiteit wordt opgegegeven komt meerdere keren voor, telkens met een andere specificatie.  
-
-Het element trefwoord, in combinatie met de thesaurus waaruit het trefwoord komt, wordt ook meerdere keren opgenomen. 
-
+Conformiteit kan opgenomen worden voor meerdere specificaties. De elementengroep Specificatie (titel, datum, verklaring en conformiteit) waar de conformiteit wordt opgegegeven komt daardoor meerdere keren voor, telkens met een andere specificatie.  
 Ook voor "as-is" data is het opgeven van de conformiteit met de verordening verplicht. 
+
+
+Voor datasets en dataset-series die onder INSPIRE vallen, dient men de thema’s waar de data onder valt op te nemen als trefwoord. Deze INSPIRE-thema’s zijn te vinden in de <a href="http://www.eionet.europa.eu/gemet/inspire_themes" target="_blank">GEMET INSPIRE themes thesaurus</a>. Voor INSPIRE datasets moet tenminste één trefwoord uit deze thesaurus in de metadata worden opgenomen. Als een trefwoord uit de GEMET INSPIRE themes thesaurus ontbreekt, kan de metadata niet getoond worden in het Europese INSPIRE geoportal.
+Het is ook mogelijk daarnaast zelfgedefinieerde trefwoorden, of trefwoorden uit een andere thesaurus op te nemen. Het element trefwoord, in combinatie met de thesaurus komt dan meerdere keren voor in de metadata. 
+
+
 
 
 ### Hoe om te gaan met anchor en URI
@@ -171,6 +175,32 @@ De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd m
   &lt;/gmd:MD_Keywords&gt;
 &lt;/gmd:descriptiveKeywords&gt;
 </pre>
+
+**Voorbeeld INSPIRE thema uit thesaurus**
+<pre class="xml">
+&lt;gmd:MD_Keywords&gt;
+ &lt;gmd:keyword&gt;
+    &lt;gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-theme/ps"&gt;Beschermde gebieden&lt;/gmx:Anchor&gt;
+ &lt;/gmd:keyword&gt;
+ &lt;gmd:thesaurusName&gt;
+   &lt;gmd:CI_Citation&gt;
+      &lt;gmd:title&gt;
+         &lt;gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-themes/"&gt;GEMET - INSPIRE themes, version 1.0 &lt;/gmx:Anchor>&gt;
+      &lt;/gmd:title&gt;
+      &lt;gmd:date&gt;
+         &lt;gmd:CI_Date&gt;
+             &lt;gmd:date&gt;
+                  &lt;gco:Date&gt;2008-06-01&lt;/gco:Date&gt;
+             &lt;/gmd:date&gt;
+             &lt;gmd:dateType&gt;
+                 &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&gt;publication&lt;/gmd:CI_DateTypeCode&gt;
+             &lt;/gmd:dateType&gt;
+         &lt;/gmd:CI_Date&gt;
+      &lt;/gmd:date&gt;
+   &lt;/gmd:CI_Citation&gt;
+&lt;/gmd:thesaurusName&gt;
+</pre>
+
 
 ### Voorbeeld metadatabestand (XML) voor INSPIRE dataset
 
@@ -354,112 +384,3 @@ TO DO check XML !!!
 ## Metadata-validatie
 Validatie is een mechanisme om te controleren of een bepaalde metadatabeschrijving aan de specificaties voldoet. Het is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Er zijn verschillende validatietools beschikbaar om (verschillende onderdelen van) INSPIRE-metadata te valideren. Zie hiervoor [het hoofdstuk validatie](#validatie).
 
-## FAQ metadata
-**Vraag: Is mijn metadata conform INSPIRE als mijn metadata ISO 19115 volgt?**
-
-INSPIRE volgt bestaande internationale standaarden, maar metadata die volledig conform ISO 19115 is voldoet niet persee aan de INSPIRE Implementing Rule Metadata. Op een aantal elementen is INSPIRE strikter dan de ISO.
-
-
-**Vraag: Welke validator moet gebruikt worden voor de INSPIRE-conformiteitstoetsen?**
-
-Voor de INSPIRE-conformiteittoetsen voor metadata kan men gebruik maken van de [Europese INSPIRE-validators](https://inspire.ec.europa.eu/validator/), zie voor meer informatie het hoofdstuk [validatie](#validatie) en specifiek paragraaf [Conformance classes metadata](#conformance-classes-metadata).
-
-
-**Vraag: Waarom kan ik mijn metadata niet in het Europese INSPIRE geoportal terugvinden?**
-
-Alleen metadata die in het NGR zijn gepubliceerd met de aanduiding 'categorie INSPIRE' wordt doorgeleverd aan de EU voor INSPIRE. In het hoofdstuk [Publiceren](#publiceren) is beschreven hoe deze categorie toegevoegd kan worden. Als de categorie wel is toegevoegd, kan het probleem ook zitten in het niet aanwezig zijn van een trefwoord uit de GEMET INSPIRE themes thesaurus.
-
-
-**Vraag: Is een trefwoord uit GEMET INSPIRE themes thesaurus verplicht in de metadata?**
-
-Voor datasets en dataset-series die onder INSPIRE vallen, dient men de thema’s waar de data onder valt op te nemen als trefwoord. Deze INSPIRE-thema’s zijn te vinden in de <a href="http://www.eionet.europa.eu/gemet/inspire_themes" target="_blank">GEMET INSPIRE themes thesaurus</a>. Voor INSPIRE datasets moet tenminste één trefwoord uit deze thesaurus in de metadata worden opgenomen. Het is ook mogelijk daarnaast zelfgedefinieerde trefwoorden, of trefwoorden uit een andere thesaurus in te vullen.
-
-Een voorbeeld:
-<pre class="xml">
-&lt;gmd:descriptiveKeywords&gt;
-   &lt;gmd:MD_Keywords&gt;
-      &lt;gmd:keyword&gt;
-          &lt;gco:CharacterString&gt;Beschermd stads en dorpsgezicht&lt;/gco:CharacterString&gt;
-     &lt;/gmd:keyword&gt;
-   &lt;/gmd:MD_Keywords&gt;
-&lt;/gmd:descriptiveKeywords&gt;
-
-&lt;gmd:descriptiveKeywords&gt;
-   &lt;gmd:MD_Keywords&gt;
-       &lt;gmd:keyword&gt;
-          &lt;gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-theme/ps"&gt;Beschermde gebieden&lt;/gmx:Anchor&gt;
-       &lt;/gmd:keyword&gt;
-       &lt;gmd:thesaurusName&gt;
-           &lt;gmd:CI_Citation&gt;
-                &lt;gmd:title&gt;
-                     &lt;gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-themes/"&gt;GEMET - INSPIRE themes, version 1.0 &lt;/gmx:Anchor>&gt;
-                &lt;/gmd:title&gt;
-       .......
-   &lt;/gmd:MD_Keywords&gt;
-&lt;/gmd:descriptiveKeywords&gt;
-</pre>
-
-
-**Vraag: Is thesaurus titel, datum en datum type verplicht?**
-
-Nee, de  thesaurus elementen zijn conditionele elementen. Het is verplicht ze in te vullen, als er een trefwoord wordt opgenomen afkomstig uit een thesaurus, zoals bij het INSPIRE thema trefwoord uit de GEMET INSPIRE themes thesaurus. Bij zelfgedefinieerde trefwoorden is het niet mogelijk om deze informatie te geven.
-
-Een voorbeeld:
-
-<pre class="xml">
-&lt;gmd:thesaurusName&gt;
-   &lt;gmd:CI_Citation&gt;
-      &lt;gmd:title&gt;
-         &lt;gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-themes/"&gt;GEMET - INSPIRE themes, version 1.0 &lt;/gmx:Anchor>&gt;
-      &lt;/gmd:title&gt;
-      &lt;gmd:date&gt;
-         &lt;gmd:CI_Date&gt;
-             &lt;gmd:date&gt;
-                  &lt;gco:Date&gt;2008-06-01&lt;/gco:Date&gt;
-             &lt;/gmd:date&gt;
-             &lt;gmd:dateType&gt;
-                 &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&gt;publication&lt;/gmd:CI_DateTypeCode&gt;
-             &lt;/gmd:dateType&gt;
-         &lt;/gmd:CI_Date&gt;
-      &lt;/gmd:date&gt;
-   &lt;/gmd:CI_Citation&gt;
-&lt;/gmd:thesaurusName&gt;
-</pre>
-
-
-**Vraag: Is het mogelijk ook zelf gedefinieerde trefwoorden in te vullen?**
-
-Het is ook mogelijk zelfgedefinieerde trefwoorden, of trefwoorden uit een andere thesaurus in te vullen. Als de trefwoorden uit een thesaurus komen, dient thesaurus, datum en datum type gemeld te worden.
-
-Een voorbeeld:
-
-<pre class="xml">
-&lt;gmd:descriptiveKeywords&gt;
-    &lt;gmd:MD_Keywords&gt;
-      &lt;gmd:keyword&gt;
-         &lt;gco:CharacterString&gt;Ruimtegebruik&lt;/gco:CharacterString&gt;
-      &lt;/gmd:keyword&gt;
-      &lt;gmd:keyword&gt;
-         &lt;gco:CharacterString&gt;Planologie&lt;/gco:CharacterString&gt;
-      &lt;/gmd:keyword&gt;
-   &lt;/gmd:MD_Keywords&gt;
-</pre>
-
-
-**Vraag: Is de metadata-taal een verplicht element?**
-
-Ja, het metadata-taalelement is verplicht. In dit element wordt vastgelegd in welke taal de metadata is beschreven. Gebruik hiervoor alleen de drie-letter codes van 639-2/B (bibliographic codes), zoals gedefinieerd op <a href="http://www.loc.gov/standards/iso639-2/" target="_blank">http://www.loc.gov/standards/iso639-2/</a>. Voor Nederlands is de code dut. Het is daarnaast ook noodzakelijk de URL van de codelijst in de metadata op te nemen (zoals in het voorbeeld hieronder). 
-
-Een voorbeeld:
-
-<pre class="xml">
-&lt;gmd:language&gt;
-   &lt;gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut"&gt;Nederlands&lt;/gmd:LanguageCode&gt;
-&lt;/gmd:language>
-</pre>
-
-
-**Vraag: Kan de metadata ook conform DCAT aangemaakt worden?**
-
-Op dit moment is voor INSPIRE de metadata gebaseerd op ISO 19115 en ISO 19119 standaard. Het is wel mogelijk om de INSPIRE / ISO metadata te transformeneren naar DCAT-AP, zodat de metadata voor een bredere community beschikbaar is. Deze transformatie is uitgewerkt in de [INSPIRE good practice](#good-practices): 
-<a href="https://inspire.ec.europa.eu/good-practice/geodcat-ap" target="_blank">GeoDCAT-AP</a>.
