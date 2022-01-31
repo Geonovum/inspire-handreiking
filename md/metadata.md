@@ -225,7 +225,7 @@ TO DO check XML !!! Hier is een <a href="docs/Voorbeeld_Metadata_Service_2019.zi
 
 ## Spatial data services metadata
 
-### Invocable SDS
+### Invulinstructie invocable SDS metadata
 
 Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#invulinstructie-service-metadata) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19119/" target="_blank"> Nederlands metadata profiel op ISO 19119</a>.
 
@@ -254,7 +254,7 @@ In plaats van de conformiteit met de netwerk verordening (VERORDENING (EG) Nr. 9
 | **servicetype** | MD_Metadata.identificationInfo[1]/*/serviceType |  | Het betreft het servicetype | other |
 
 
-### Interoperable SDS
+### Invulinstructie interoperable SDS metadata
 
 Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#invulinstructie-service-metadata) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19119/" target="_blank"> Nederlands metadata profiel op ISO 19119</a>.
 
@@ -308,7 +308,7 @@ Middels de conformiteit wordt opgegeven tot welke categorie de Spatial Data Serv
 5. Er zijn aanvullende vereisten voor **restricties voor toegang en gebruik**. Hier moeten ook de "technische restricties" worden aangegeven, in één instantie van accessConstraints of useConstraints. Dit komt grotendeels overeen met de huidige invulling van [toegangsrestricties](#gebruiksvoorwaarden), de URL naar de Creative Commons licenties worden als technische restricties gezien.
 
 
-### Harmonised SDS
+### Invulinstructie harmonised SDS metadata
 
 Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#invulinstructie-service-metadata) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19119/" target="_blank"> Nederlands metadata profiel op ISO 19119</a>.
 
@@ -344,7 +344,7 @@ De invulinstrucies voor *optie 2* staan in onderstaande tabel.
 
 ### Metadata-templates SDS
 
-Voor het aanmaken voor metadata voor de verschillende Spatial Data Service categorieën zijn templates beschikbaar, waarin de benodigde metadata-elementen zijn opgenomen en informatie deels is ingevuld.
+Voor het aanmaken voor metadata voor de verschillende Spatial Data Service (SDS) categorieën zijn templates beschikbaar, waarin de benodigde metadata-elementen zijn opgenomen en informatie deels is ingevuld.
 
 TO DO check XML !!!
 - <a href="docs/Template_NL_profiel_op_ISO19119_v12_SDS_invocable.xml" target="_blank">Template NL profiel op ISO19119 v12 SDS invocable</a>
