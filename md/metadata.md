@@ -25,7 +25,7 @@ Voor datasets en dataset series geldt het <a href="https://docs.geostandaarden.n
 
 Voor services geldt het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19119/" target="_blank">Nederlands metadata profiel op ISO 19119</a>.
 
-INSPIRE specifiek zijn de aanvullende [Invulinstructies voor datasets](#invulinstructies-voor-datasets) en [Invulinstructie service metadata](#Invulinstructie-service-metadata) beschikbaar. Deze invulinstructies staan verderop in de handreiking beschreven.
+INSPIRE specifiek zijn de aanvullende [invulinstructie dataset metadata](#invulinstructie-dataset-metadata) en [invulinstructie service metadata](#invulinstructie-service-metadata) beschikbaar. Deze invulinstructies staan verderop in de handreiking beschreven.
 
 Zie voor meer informatie over metadata in het algemeen, het  <a href="https://www.geonovum.nl/geo-standaarden/metadata" target="_blank">dossier Metadata</a> op de Geonovum-website.
 
@@ -63,7 +63,7 @@ In Nederland is afgesproken om voor geo-informatie gebruik te maken van de gebru
 
 In sommige gevallen is het toch noodzakelijk om gebruiksvoorwaarden te handhaven, bijvoorbeeld door wetgeving. 
 
-De gebruiksvoorwaarden, ook als daarvan wordt afgezien in Public Domain Mark of CC0-verklaring, worden opgenomen in de metadata. De instructie hiervoor is te vinden in de paragraaf [Invulinstructies voor datasets](#invulinstructies-voor-datasets).
+De gebruiksvoorwaarden, ook als daarvan wordt afgezien in Public Domain Mark of CC0-verklaring, worden opgenomen in de metadata. De instructie hiervoor is te vinden in de paragraaf [Invulinstructie dataset metadata](#invulinstructie-dataset-metadata).
 
 ## Dataset metadata
 
@@ -188,7 +188,7 @@ De meeste OGC-services, zoals WMS en WFS hebben een capabilities-document dat ti
 
 Er zijn verschillende soorten spatial data services, naast de netwerk services, zoals de view en download services, zijn er ook de invocable, interoperable en harmonised spatial data services. In het hoofdstuk over [Services](#services) staat in de paragraaf [Spatial Data Services (SDS)](#spatial-data-services) beschreven welke soorten SDS-sen er zijn. Aan de hand van het stroomschema in deze paragraaf kan bepaald worden tot welke categorie een service behoord. Alle services dienen in ieder geval van service metadata te worden voorzien. In de [Invulinstructie service metadata](#invulinstructie-service-metadata) zijn daarvoor de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19119/" target="_blank"> Nederlands metadata profiel op ISO 19119</a>. Voor de invocable, interoperable en harmonised spatial data services gelden aanvullende vereisten. 
 
-Per soort spatial data service, staat in de volgende paragraven beschreven wat de metadata eisen zijn.
+Per soort spatial data service (SDS), staat in de volgende paragraven beschreven wat de metadata eisen zijn.
 
 
 ### Invulinstructie service metadata
@@ -223,7 +223,7 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 TO DO check XML !!! Hier is een <a href="docs/Voorbeeld_Metadata_Service_2019.zip" target="_blank">voorbeeld-metadatabestand voor een fictieve service</a> te vinden.
 
 
-## Spatial data services metadata
+## Spatial data services (SDS) metadata
 
 ### Invulinstructie invocable SDS metadata
 
@@ -258,7 +258,7 @@ In plaats van de conformiteit met de netwerk verordening (VERORDENING (EG) Nr. 9
 
 Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#invulinstructie-service-metadata) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19119/" target="_blank"> Nederlands metadata profiel op ISO 19119</a>.
 
-Spatial Data Services van de categorie interoperable moeten daarnaast zowel voldoen aan de [Invocable SDS](#Invocable-SDS) instructies en de onderstaande instructies:
+Spatial Data Services van de categorie interoperable moeten daarnaast zowel voldoen aan de [Invocable SDS](#invulinstructie-invocable-sds-metadata) instructies en de onderstaande instructies:
 
 1. **Coördinaat referentie systeem**: alle CRS waarin een service beschikbaar is moeten worden opgegeven middels een URI. Gebruik voor elke URI een apart metadata element. Bijvoorbeeld:
 
@@ -312,7 +312,7 @@ Middels de conformiteit wordt opgegeven tot welke categorie de Spatial Data Serv
 
 Alle services dienen van service metadata te worden voorzien. In de [Invulinstructie service metadata](#invulinstructie-service-metadata) zijn daarvoor de INSPIRE specifieke instructies voor alle SDS soorten opgenomen, die als aanvulling gelden op <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19119/" target="_blank"> Nederlands metadata profiel op ISO 19119</a>.
 
-Spatial Data Services van de categorie Harmonised moeten daarnaast zowel voldoen aan de de [Interoperable SDS](#Interoperable-SDS) instructies en de onderstaande instructies.
+Spatial Data Services van de categorie Harmonised moeten daarnaast zowel voldoen aan de de [Interoperable SDS](#invulinstructie-interoperable-sds-metadata) instructies en de onderstaande instructies.
 
 In de harmonised service metadata wordt informatie over de operaties die een service kan uitvoeren opgenomen. Deze informatie kan op twee verschillende manieren beschikbaar worden gesteld.
 
