@@ -4,7 +4,14 @@ INSPIRE verplicht het ontsluiten van de metadatabestanden in een Discovery Servi
 
 Het publiceren in het Nationaal Georegister is de laatste stap die een dataprovider moet doorlopen. In de praktijk houdt dit niets anders in dan de metadata van de dataprovider aanbieden aan het NGR, waardoor ze doorzoekbaar en vindbaar (en bindbaar) wordt. Je hebt hier als dataprovider een account voor nodig, die via het <a href="https://www.pdok.nl/contact" target="_blank"> PDOK Klantcontactcenter</a> aan te vragen is. Met het account krijg je gratis toegang tot het deel bestemd voor content-beheerders, het 'publiceer'-gedeelte van het NGR-portaal. Op het portaal zelf is documentatie te vinden die de dataprovider uitleggen hoe het publiceren in zijn werk gaat. Als men over een account beschikt kan men naar de beheeromgeving gaan door te navigeren naar inloggen (bovenaan de pagina). Vervolgens kan men naar beheer te gaan. In de beheeromgeving kan men nieuwe metadata aanmaken of metadata uploaden of harvesten. Het is ook mogelijk om bestaande metadata aan te passen of te verwijderen.
 
-Als een organisatie nog niet beschikt over metadata kan gebruik worden gemaakt van de metadata-editor, die is opgenomen in het NGR. Hiermee kan metadata volgens het Nederlands metadataprofiel op ISO 19115 versie 1.3 worden ingevuld, of metadata voor services volgens het Nederlandse metadata profiel op ISO 19119 voor services versie 1.2.
+Als een organisatie nog niet beschikt over metadata kan gebruik worden gemaakt van de metadata-editor, die is opgenomen in het NGR. Hiermee kan metadata volgens het Nederlands metadataprofiel op ISO 19115 worden ingevuld, of metadata voor services volgens het Nederlandse metadata profiel op ISO 19119 voor services.
+
+Voor datasets en dataset series geldt het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/" target="_blank">Nederlands metadata profiel op ISO 19115</a>.
+Voor services geldt het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19119/" target="_blank">Nederlands metadata profiel op ISO 19119</a>.
+
+INSPIRE specifiek zijn de aanvullende [invulinstructie dataset metadata](#invulinstructie-dataset-metadata) en [invulinstructie service metadata](#invulinstructie-service-metadata) beschikbaar. Deze invulinstructies staan in de handreiking beschreven.
+
+Zie voor meer informatie over metadata in het algemeen, het  <a href="https://www.geonovum.nl/geo-standaarden/metadata" target="_blank">dossier Metadata</a> op de Geonovum-website.
 
 Een meer geavanceerde manier om metadata op te nemen in het Nationaal Georegister is door het uploaden van een XML-bestand. Deze methode is vooral geschikt voor gebruikers die met behulp van een eigen tool metadata hebben aangemaakt en deze in XML-formaat kunnen wegschrijven.
 
