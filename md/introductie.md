@@ -25,12 +25,11 @@ Het INSPIRE-implementatieproces is, na het [aanmerken](#aanmerken) van de datapr
 
 Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende documentatie wordt geen rekening gehouden met processtappen die een technisch data-beheerder of GIS-operator moet ondernemen om de data conform INSPIRE te ontsluiten. Deze handreiking helpt de dataproviders om het werkproces inzichtelijk te maken. Dit werkproces bestaat, naast het aanmerken en inrichten van de organisatie uit de onderstaande vijf stappen: 
 
-- [Data (as-is en geharmoniseerd)](#data)
+- [Dataharmonisatie](#dataharmonisatie)
 - [Metadata](#metadata)
 - [Services](#services)
 	- [Network services](#network-services)
 	- [Spatial data services](#spatial-data-services)
-- [Publiceren van de metadata in het Nationaal Georegister](#publiceren)
 - [Validatie](#validatie) (als aparte processtap beschreven, maar deze stap is eigenlijk onderdeel van de hierboven beschreven processtappen)
 
 De informatie op deze handreiking volgt deze structuur (zie ook onderstaande figuur). De groene pijlen in de figuur tonen de opeenvolgende processtappen die doorlopen moeten worden om aan de *INSPIRE richtlijn* te voldoen.
@@ -42,7 +41,7 @@ Per processtap wordt de bijbehorende documentatie weergegeven:
 - de Nederlandse standaarden die INSPIRE ondersteunen (in blauw);
 Om het figuur zo overzichtelijk mogelijk te houden, is er voor gekozen om de wetteksten (IR’s - *decisions en regulations*) hier niet in op te nemen. 
 
-De Europese documenten zijn te vinden via de <a href="https://inspire.ec.europa.eu/" target="_blank">Europese INSPIRE website</a>. In het onderdeel [bronnen](#bronnen) op deze handreiking worden deze documenten ook nog nader toegelicht.
+De Europese documenten zijn te vinden via de <a href="https://inspire.ec.europa.eu/" target="_blank">Europese INSPIRE website</a>. In de paragraaf [bronnen](#bronnen) in deze handreiking worden deze documenten nader toegelicht.
 De Nederlandse standaarden zijn te vinden via de Geo-standaarden op de <a href="https://www.geonovum.nl/geo-standaarden" target="_blank">Geonovum website</a>.
 
 Al deze processtappen (Nationaal Georegister, metadata, services, data) hebben ook een onderlinge relatie die in volgende afbeelding is getoond. 
@@ -85,7 +84,6 @@ De online tool <a href="https://inspire-regadmin.jrc.ec.europa.eu/dataspecificat
 In het Europese <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE geoportal</a> kan je Europese milieu gegevens vinden die onder de INSPIRE-richtlijn vallen. Dit portaal biedt verschillende zoekingangen. Zo is er een ingang op thema en een op datasets die relevant zijn voor milieurapportage. 
 Het Europese geoportal harvest de metadata van 36 officieel geregistreerde nationale data catalogi van Europese lidstaten en EFTA landen. Het INSPIRE Geoportal team wordt ontwikkeld door het Joint Research Centre (JRC).
 
-Elke eerste maandag van de maand wordt de Nederlandse data catalogus, het [Nationaal Georegister](#nationaal-georegister), geharvest naar het Europese INSPIRE geoportal.
 
 ### INSPIRE registry
 De <a href="https://inspire.ec.europa.eu/registry" target="_blank">INSPIRE registry</a> omvat een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). 
@@ -97,7 +95,9 @@ De INSPIRE registry biedt een centraal toegangspunt voor een aantal centraal beh
 - De <a href="https://inspire.ec.europa.eu/glossary" target="_blank">Glossary</a> bevat generieke termen en definities van veelgebruikte INSPIRE terminologie.
 
 ### Nationaal Georegister
-De Nederlandse "tegenhanger" van het INSPIRE Geoportal op Europees niveau is het <a href="http://www.nationaalgeoregister.nl/" target="_blank">Nationaal GeoRegister (NGR)</a>. Het NGR doet dienst als de INSPIRE zoekdienst (Discovery Service), die de Nederlandse metadata over de INSPIRE datasets en services naar het Europese INSPIRE Geoportal ontsluit. Het NGR biedt voor Nederlandse dataproviders een metadata editor en validator functionaliteit aan.
+De Nederlandse "tegenhanger" van het INSPIRE Geoportal op Europees niveau is het <a href="http://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister (NGR)</a>. Het NGR doet dienst als de INSPIRE zoekdienst (Discovery Service), die de Nederlandse metadata over de INSPIRE datasets en services naar het [Europese INSPIRE Geoportal](#europese-inspire-geoportal) ontsluit. Elke eerste maandag van de maand wordt het NGR geharvest naar het Europese INSPIRE geoportal.
+
+Het NGR biedt voor Nederlandse dataproviders een metadata editor en validator functionaliteit aan.
 
 
 ## Over deze handreiking
