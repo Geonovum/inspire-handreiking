@@ -1,6 +1,6 @@
-# INSPIRE-wiki
-Welkom op de INSPIRE-wiki.
+# INSPIRE-handreiking
+Welkom op de INSPIRE-handreiking.
 
 
-De wiki kan benaderd worden via: https://geonovum.github.io/inspire-wiki/
+De wiki kan benaderd worden via: https://geonovum.github.io/inspire-handreiking/
 
