@@ -83,10 +83,14 @@ Voor het technisch harmoniseren zijn er verschillende mogelijkheden:
 2. Ruimtelijke ETL-processen (*Spatial ETL*) met behulp van specifieke ETL-software (die met ruimtelijke data overweg kan).
 3. ‘On the fly’ harmoniseren en converteren.
 
-#### Ruimtelijke database
+
+**Ruimtelijke database**
+
 Eén manier om data te harmoniseren is om op database-niveau scripts te ontwikkelen, die de datastructuur van de voor INSPIRE aangemerkte data, converteren naar de vorm en inhoud die conform het INSPIRE-applicatieschema is. Dit kan met behulp van SQL en de procedurele taal die de database hanteert. De procedurele taal is afhankelijk van de database; elke fabrikant kent zijn eigen variant. Hiervoor is specialistische kennis van een database-specialist nodig, die (a) met ruimtelijke databases overweg kan, en (b) *Data Definition Language* (DDL)-scripts kan ontwikkelen.
 
-#### Ruimtelijke ETL-processen
+
+**Ruimtelijke ETL-processen**
+
 Ruimtelijke ETL-processen met behulp van specifieke ETL-software wordt ook vaak *Spatial ETL* of *spatial data exchange* genoemd. ETL staat voor Extract, Transform en Load. Hiermee worden technieken bedoeld, die ruimtelijke data kunnen converteren.
 - **Extract**: inlezen van het bronformaat;
 - **Transform**: het aanpassen van de datastructuur;
@@ -106,10 +110,13 @@ Er zijn verschillende bedrijven die ETL software bouwen die specifiek gericht is
 - <a href="https://desktop.arcgis.com/en/arcmap/latest/extensions/data-interoperability/spatial-etl-tools.htm" target="_blank">ArcGIS Pro</a>.
 
 
-#### On the fly harmoniseren en converteren
+**On the fly harmoniseren en converteren**
+
 Bovenstaande principes zijn gericht op het klaarzetten van data alvorens ze te ontsluiten (ook wel *pre-defined*). Dat hoeft niet in alle gevallen. Het is ook mogelijk om data *on the fly* te harmoniseren en converteren. Voor grote datasets is dit echter geen bruikbare toepassing, omdat de performance van de service niet geheel zal voldoen. Waar deze grens ligt en bij welke dataset-grootte het breekpunt tussen ‘on the fly’ en ‘pre-defined’ ligt, is alleen op basis van testresultaten vast te stellen. Houd bij het maken van deze keuze ook rekening met de gestelde eisen aan de kwaliteit van de performance, de zogenaamde [*quality of service*](#quality-of-services).
 
-### Welke optie toepassen?
+
+**Welke optie toepassen?**
+
 Dit hangt van een aantal organisatie-gebonden factoren af:
 
 - Aanwezige kennis
@@ -117,6 +124,27 @@ Dit hangt van een aantal organisatie-gebonden factoren af:
 - Beschikbare tijd
 
 De belangrijkste factor is de kennis die binnen een organisatie aanwezig is. Zijn er binnen de organisatie database-specialisten aanwezig, die verstand hebben van ruimtelijke databases? Of zijn er GIS-expers die al vaker met ETL software tools hebben gewerkt? Dit kan ook betekenen dat er wellicht gekozen moet worden voor uitbesteding. De ‘spin-off’ van het zelf opdoen van kennis is een zijdelingse overweging die bij de keuze van harmonisatie-principe van belang kan zijn. Voor INSPIRE-gerichte harmonisaties is veel kennis nodig. Deze kennis kan voor andere GEO-ICT projecten ook van praktisch belang zijn, bijvoorbeeld omdat het de kennis van een tool verhoogt. Dit kan een overweging zijn om een kennis-domein te versterken en hierin te investeren.
+
+## Encodings (bestandsformaten)
+*Encodings* of te wel bestandsformaten zijn beschreven in de [INSPIRE dataspecificatie](#inspire-dataspecificaties) en wel in paragraaf 9.3. De default encoding voor INSPIRE is [GML](#gml). Daarnaast zijn ook [andere encodings](#andere-encoding) toegestaan, zoals bijvoorbeeld GeoJSON of Geopackage. 
+
+### GML
+GML is de default encoding voor INSPIRE, zoals beschreven staat in paragraaf 9.3.1 van de [INSPIRE dataspecificatie](#inspire-dataspecificaties). INSPIRE heeft een lijst van te gebruiken <a href="https://inspire.ec.europa.eu/media-types/" target="_blank">media-types</a> gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP-betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
+
+Merk op: GML is voor Nederland als uitwisselingsformaat verplicht voorgeschreven, zie de zogenaamde <a href="https://www.forumstandaardisatie.nl/open-standaarden" target="_blank">Pas-toe-of-Leg-Uit-lijst van geo-standaarden</a>. Bij een implementatie via WFS wordt standaard GML geboden.
+
+### Andere encodings
+Andere encodings zoals beschreven in paragraaf 9.3.2 van de [INSPIRE dataspecificatie](#inspire-dataspecificaties) zijn ook toegestaan, maar dan moet de mapping naar het INSPIRE-model wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
+
+In 2017 heeft een <a href="https://github.com/INSPIRE-MIF/2017.2/" target="_blank">Europese INSPIRE subwerkgroep 2017.2</a> het gebruik van andere alternatieve encodings onderzocht. In de werkgroep is een template voor alternatieve encodings opgesteld en een encoding voor GeoJSON. GeoJSON kan dienen als alternatieve of aanvullende encoding voor eenvoudige datasets voor het INSPIRE thema Adressen en voor het INSPIRE thema Milieubewakingsfaciliteiten. De template en GeoJSON encoding zijn beschikbaar via <a href="https://github.com/INSPIRE-MIF/2017.2/" target="_blank">github</a>.  
+
+
+#### Geopackage
+*Geopackage (gpkg)* wordt veel genoemd als goede optie om data aan te bieden in een Atom feed voor een INSPIRE Downloadservice.
+Er is ook een <a href="https://github.com/INSPIRE-MIF/gp-geopackage-encodings" target="_blank">github repository</a> waarin goede  praktijkvoorbeelden worden verzameld voor het publiceren in geopackage als bestandsformaat in een download service voor INSPIRE. Als er genoeg goede praktijkvoorbeelden zijn, zal waarschijnlijk Geopackage als [good practise](#good-practices) voorgedragen worden.
+
+Ook in Nederland is onderzoek naar gedaan voor de Basisregistratie Ondergrond (BRO) van TNO  met een [rapport](docs/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf) als eindresultaat.
+Daarnaast is het bij het Forum Standaardisatie opgenomen in de pas toe en leguit lijst voor <a href="https://www.forumstandaardisatie.nl/open-standaarden/geo-standaarden" target="_blank">geo-standaarden</a>.
 
 
 ## Het InspireId
