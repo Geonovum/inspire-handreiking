@@ -6,7 +6,7 @@ De opbouw van de INSPIRE-handreiking is gebaseerd op de verschillende [processta
 De INSPIRE-handreiking is als volgt opgebouwd:
 1. [Introductie](#introductie)
 2. [Nederlandse INSPIRE data](#nederlandse-inspire-data)
-3. [Data harmonisatie](#dataharmonisatie)
+3. [Dataharmonisatie](#dataharmonisatie)
 4. [Metadata](#metadata)
 5. [Services](#services)
 6. [Validatie](#validatie)
