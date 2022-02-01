@@ -52,7 +52,7 @@ Het inrichten van de organisatie en het exacte werkproces zal per organisatie en
 
 INSPIRE is namelijk geen project, maar onderdeel van het dagelijkse werkproces!
 
-## Soorten INSPIRE data: as-is en/of geharmoniseerd en wel of niet prioritair 
+## Soorten INSPIRE data: as-is, geharmoniseerd, prioritair 
 De aangemerkte INSPIRE datasets worden conform de INSPIRE uitvoeringsbepalingen ontsloten. Datasets en -services die onder één van de 34 INSPIRE-thema's vallen, moeten te vinden, raadplegen en downloaden zijn. De datasets komen vaak in twee varianten voor, namelijk:
 - de niet-geharmoniseerde dataset, de zogenaamde **as-is dataset**, zoals die in de lidstaat aanwezig is;
 - en/of de **geharmoniseerde dataset**, de dataset conform de INSPIRE-datamodellen in de INSPIRE-dataspecificaties.
