@@ -1,37 +1,35 @@
 # Services
 
-In dit deel van de handreiking worden de verschillende electronische diensten (services) behandeld die INSPIRE vraagt aan de INSPIRE plichtige dataproviders. Omdat het binnen INSPIRE om ruimtelijke data gaat worden ze ook wel Spatial Data Services genoemd. Algemene aspecten daaraan worden in het volgende hoofstuk behandeld. Er zijn verschillende soorten services die ieder afzonderlijk in hoofdstukken daarna behandeld worden.
+In dit deel van de handreiking worden de verschillende electronische diensten (services) behandeld, waarmee de INSPIRE plichtige dataproviders hun data kunnen ontsluiten. Omdat  deze services ruimtelijke data ontsluiten, worden ze ook wel Spatial Data Services genoemd en vertaald als “diensten met betrekking tot ruimtelijke gegevens”. Er zijn verschillende soorten Spatial Data Services, die ieder afzonderlijk behandeld worden.
 
-## Spatial Data Services
+## Soorten Spatial Data Services
 
-Spatial Data Services (SDS) worden ook wel Ruimtelijke datadiensten, of “diensten met betrekking tot ruimtelijke gegevens” genoemd. Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. Er kan ook andere data in de service zijn ontsloten. Alle Spatial Data Services, moeten van [metadata](#metadata-spatial-data-services) worden voorzien. 
+Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. De INSPIRE network services, zijn ook Spatial Data Services, waarvoor verdere specificaties van de service zijn opgesteld.
 
-Onderstaande figuur geeft een overzicht van de verschillende types Spatial Data Services
+Onderstaande figuur geeft een overzicht van de verschillende types Spatial Data Services.
 
 ![sds_schema2](media/SDS_en_network_services.png "SDS-types.")
 
 ## Network services
-INSPIRE wordt gebaseerd op een geo-informatie infrastructuur (GII; in het Engels SDI: *spatial data infrastructure*) die deels door de individuele lidstaten gebouwd en beheerd worden, en deels door de dataproviders gebouwd moet worden. De figuur hieronder geeft de services-archtectuur schematisch weer. Transformatie, Invoke, Register en Externe Diensten worden vooralsnog buiten beschouwing gelaten. Spatial Data Services worden [elders beschreven](#spatial-data-services).
+INSPIRE is gebaseerd op een geo-informatie infrastructuur (GII; in het Engels SDI: *spatial data infrastructure*) die deels door de individuele lidstaten gebouwd en beheerd worden, en deels door de dataproviders gebouwd moet worden. De figuur hieronder geeft de services-archtectuur schematisch weer. 
 
-![inspire_sdi](media/Inspire_sdi.png "NGII-architectuur")
+![INSPIRE_services](media/INSPRE services.png "INSPIRE services")
 
 Het bovenstaande figuur valt uiteen in een aantal services:
 
 **Discovery services / Zoekdienst**
 - De discovery service is bedoeld om het zoeken, beoordelen (evalueren) en vinden van ruimtelijke data die via het netwerk van webservices worden aangeboden te ondersteunen.
 - Het zoeken van data vindt plaats op basis van metadata van INSPIRE-data en metadata van INSPIRE-services.
-- Ook het beschikbaar maken van ruimtelijke data en het linken van de data & diensten.
 - Voor INSPIRE wordt dit op lidstaat-niveau uitgevoerd; voor Nederland is dit het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister</a>.
 
 **View services / Raadpleegdienst**
-- Weergeven van ruimtelijke data met pan-, overlay- en zoomfunctionaliteit.
+- De viewservice (of raadpleegdienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen bekijken en beoordelen
 - Regels over weergave en presentatie worden in de dataspecificaties meegeleverd om over alle lidstaten heen dezelfde presentatie te kunnen houden. Deze regels zijn hiervoor juist basaal gehouden.
-- Legenda en relevante metadata moet zichtbaar zijn.
 - Uitvoer op niveau van dataprovider.
 
-**Download services**
-- Downloaden van een compleet INSPIRE-thema, of deel ervan.
-- Let op: de oorspronkelijke nationale dataset verschilt van de geharmoniseerde INSPIRE-conforme variant.
+**Download services / Downloaddienst**
+- De downloadservice (of downloaddienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen downloaden om ze daarna te kunnen analyseren en te gebruiken voor de gewenst toepassing.
+- De hele dataset kan als geheel worden gedownload. Waar mogelijk ook het bevragen en downloaden van enkele objecten.
 - Uitvoer op niveau van dataprovider.
 
 **Transformation services / Verwerkingsdienst**
@@ -40,20 +38,14 @@ Het bovenstaande figuur valt uiteen in een aantal services:
 - Kan zowel op niveau data provider (schema transformatie dienst) als op lidstaten niveau (coordinate transformation dienst) een rol spelen
 - Alleen van coordinate translation is een IR en Technical Guidance document beschikbaar.
 
-**Invoke services / aanroep diensten**
-- Ook wel *orchestration* genoemd.
-- Het kunnen aanroepen van andere webservices, waarbij volgordelijkheid van belang is.
-- Nog geen IR- of Technical-Guidance-document.
+**Other services / overige diensten**
+- De overige diensten ontlsuiten ten minste één INSPIRE dataset, maar kunnen hele andere specificaties hebben.
+- De specificatie van de service moet wel zijn vastgelgd en in de metadata beschreven.
+- Uitvoer op niveau van dataprovider.
 
 **Registerdiensten**
-- De INSPIRE infrastructuur behelst een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). Het <a href="https://inspire.ec.europa.eu/registry/" target="_blank">INSPIRE register</a> biedt een centraal toegangspunt voor een aantal centraal beheerde INSPIRE registers. De inhoud van deze registers is gebaseerd op de INSPIRE richtlijn, de uitvoerings regels en de technische handleidingen.
+- De INSPIRE infrastructuur bevat een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). Het <a href="https://inspire.ec.europa.eu/registry/" target="_blank">INSPIRE register</a> biedt een centraal toegangspunt voor een aantal centraal beheerde INSPIRE registers. De inhoud van deze registers is gebaseerd op de INSPIRE richtlijn, de uitvoerings regels en de technische handleidingen.
 - Voor Nederland is er een aanvullend register voor [codelijsten](#codelijsten) en [namespaces](#namespaces)
-
-### Overige architectuuronderdelen
-Buiten de services, zijn er ook een aantal andere delen in de architectuur te onderscheiden.
-- **INSPIRE NGII-servicebus**: de ‘bemiddelings’-laag. Doordat de INSPIRE-standaarden voor services de interoperabiliteit waarborgen kunnen in de servicebus aanvrager en aanbieder (van webservices) in deze interface communiceren. Het is in feite de koppeling tussen aanbieder en aanvrager, waarbij de aanvrager met de servicebus communiceert.
-- **Toepassingen en portalen**: de architectuur-laag waarin viewers, catalogus, geoportals en andere applicaties (bv. applicaties van de dataprovider zelf) vorm in kunnen krijgen. Deze verbinden op hun beurt weer naar de servicebus: de viewer met de raadpleegdienst, de ‘voorkant’ van het NGR (discovery) weer met de zoekdienst.
-- **Rights-Managementlayer**: Tussen servicebus en netwerkdiensten loopt een laag die middels toegangsrechten dirigeert of een gebruiker op bepaalde diensten rechten heeft, zie [deze paragraaf](#rights-management-layer).
 
 ### Wetgeving
 Op de website van INSPIRE is de wetgeving met betrekking tot network services te vinden.
@@ -1152,7 +1144,21 @@ De hierboven genoemde OGC API's zijn van belang als service voor INSPIRE en ook 
 - <a href="https://ogcapi.ogc.org/coverages/" target="_blank">OGC API coverages</a> (opvolger WCS)
 - <a href="https://ogcapi.ogc.org/records/" target="_blank">OGC API Records</a> (opvolger CSW) 
 
+### Bestandsformaten
 
+GML als bestandsformaat voor INSPIRE is in alle dataspecificaties de default zoals beschreven staat in paragraaf 9.3.1 van de dataspecificaties. INSPIRE heeft een lijst van te gebruiken <a href="https://inspire.ec.europa.eu/media-types/" target="_blank">media-types</a> gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP-betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
+
+Merk op: GML is voor Nederland als uitwisselingsformaat verplicht voorgeschreven, zie de zogenaamde <a href="https://www.forumstandaardisatie.nl/open-standaarden" target="_blank">Pas-toe-of-Leg-Uit-lijst van geo-standaarden</a>. Bij een implementatie via WFS wordt standaard GML geboden.
+
+Andere formaten zoals beschreven in paragraaf 9.3.2 van de dataspecificaties zijn ook toegestaan, maar dan moet de mapping naar het INSPIRE-model wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
+Er is een speciale <a href="https://github.com/INSPIRE-MIF/2017.2/" target="_blank">Europese werkgroep</a> bezig met het bestuderen van het gebruik van eenvoudigere bestandsformaten dan GML zoals GeoJSON.
+
+#### Geopackages
+
+Geopackage (gpkg) wordt veel genoemd als goede optie om data aan te bieden in een Atom feed voor een INSPIRE Downloadservice.
+Er is ook een <a href="https://github.com/INSPIRE-MIF/gp-geopackage-encodings" target="_blank">github repository</a> waarin goede  praktijkvoorbeelden worden verzameld voor het publiceren in geopackage als bestandsformaat in een download service voor INSPIRE.
+Ook in Nederland is hier onderzoek naar gedaan voor de Basisregistratie Ondergrond (BRO) van TNO  met een [rapport](docs/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf) als eindresultaat.
+Daarnaast is het bij het Forum Standaardisatie opgenomen in de pas toe en leguit lijst voor <a href="https://www.forumstandaardisatie.nl/open-standaarden/geo-standaarden" target="_blank">geo-standaarden</a>.
 
 ## SDS-categorieën
 
