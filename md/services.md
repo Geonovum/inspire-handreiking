@@ -13,7 +13,7 @@ Onderstaande figuur geeft een overzicht van de verschillende types Spatial Data 
 ## Network services
 INSPIRE is gebaseerd op een geo-informatie infrastructuur (GII; in het Engels SDI: *spatial data infrastructure*) die deels door de individuele lidstaten gebouwd en beheerd worden, en deels door de dataproviders gebouwd moet worden. De figuur hieronder geeft de services-archtectuur schematisch weer. 
 
-![INSPIRE_services](media/INSPIRE services.png "INSPIRE services")
+![INSPIRE_services](media/INSPIRE_services.png "INSPIRE services")
 
 Het bovenstaande figuur valt uiteen in een aantal services:
 
