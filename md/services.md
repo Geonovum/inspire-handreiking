@@ -1152,21 +1152,7 @@ De hierboven genoemde OGC API's zijn van belang als service voor INSPIRE en ook 
 - <a href="https://ogcapi.ogc.org/coverages/" target="_blank">OGC API coverages</a> (opvolger WCS)
 - <a href="https://ogcapi.ogc.org/records/" target="_blank">OGC API Records</a> (opvolger CSW) 
 
-### Bestandsformaten
 
-GML als bestandsformaat voor INSPIRE is in alle dataspecificaties de default zoals beschreven staat in paragraaf 9.3.1 van de dataspecificaties. INSPIRE heeft een lijst van te gebruiken <a href="https://inspire.ec.europa.eu/media-types/" target="_blank">media-types</a> gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP-betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
-
-Merk op: GML is voor Nederland als uitwisselingsformaat verplicht voorgeschreven, zie de zogenaamde <a href="https://www.forumstandaardisatie.nl/open-standaarden" target="_blank">Pas-toe-of-Leg-Uit-lijst van geo-standaarden</a>. Bij een implementatie via WFS wordt standaard GML geboden.
-
-Andere formaten zoals beschreven in paragraaf 9.3.2 van de dataspecificaties zijn ook toegestaan, maar dan moet de mapping naar het INSPIRE-model wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
-Er is een speciale <a href="https://github.com/INSPIRE-MIF/2017.2/" target="_blank">Europese werkgroep</a> bezig met het bestuderen van het gebruik van eenvoudigere bestandsformaten dan GML zoals GeoJSON.
-
-#### Geopackages
-
-Geopackage (gpkg) wordt veel genoemd als goede optie om data aan te bieden in een Atom feed voor een INSPIRE Downloadservice.
-Er is ook een <a href="https://github.com/INSPIRE-MIF/gp-geopackage-encodings" target="_blank">github repository</a> waarin goede  praktijkvoorbeelden worden verzameld voor het publiceren in geopackage als bestandsformaat in een download service voor INSPIRE.
-Ook in Nederland is hier onderzoek naar gedaan voor de Basisregistratie Ondergrond (BRO) van TNO  met een [rapport](docs/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf) als eindresultaat.
-Daarnaast is het bij het Forum Standaardisatie opgenomen in de pas toe en leguit lijst voor <a href="https://www.forumstandaardisatie.nl/open-standaarden/geo-standaarden" target="_blank">geo-standaarden</a>.
 
 ## SDS-categorieën
 
