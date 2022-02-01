@@ -2,7 +2,7 @@
 
 In dit deel van de handreiking worden de verschillende electronische diensten (services) behandeld, waarmee de INSPIRE plichtige dataproviders hun data kunnen ontsluiten. Omdat  deze services ruimtelijke data ontsluiten, worden ze ook wel Spatial Data Services genoemd en vertaald als “diensten met betrekking tot ruimtelijke gegevens”. Er zijn verschillende soorten Spatial Data Services, die ieder afzonderlijk behandeld worden.
 
-## Soorten Spatial Data Services
+## Spatial Data Services
 
 Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. De INSPIRE network services, zijn ook Spatial Data Services, waarvoor verdere specificaties van de service zijn opgesteld.
 
@@ -10,8 +10,7 @@ Onderstaande figuur geeft een overzicht van de verschillende types Spatial Data 
 
 ![sds_schema2](media/SDS_en_network_services.png "SDS-types.")
 
-## Network services
-INSPIRE is gebaseerd op een geo-informatie infrastructuur (GII; in het Engels SDI: *spatial data infrastructure*) die deels door de individuele lidstaten gebouwd en beheerd worden, en deels door de dataproviders gebouwd moet worden. De figuur hieronder geeft de services-archtectuur schematisch weer. 
+of
 
 ![INSPIRE_services](media/INSPIRE_services.png "INSPIRE services")
 
@@ -25,28 +24,20 @@ Het bovenstaande figuur valt uiteen in een aantal services:
 **View services / Raadpleegdienst**
 - De viewservice (of raadpleegdienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen bekijken en beoordelen
 - Regels over weergave en presentatie worden in de dataspecificaties meegeleverd om over alle lidstaten heen dezelfde presentatie te kunnen houden. Deze regels zijn hiervoor juist basaal gehouden.
-- Uitvoer op niveau van dataprovider.
 
 **Download services / Downloaddienst**
 - De downloadservice (of downloaddienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen downloaden om ze daarna te kunnen analyseren en te gebruiken voor de gewenst toepassing.
-- De hele dataset kan als geheel worden gedownload. Waar mogelijk ook het bevragen en downloaden van enkele objecten.
-- Uitvoer op niveau van dataprovider.
+- De dataset kan als geheel worden gedownload. Waar mogelijk ook het bevragen en downloaden van enkele objecten.
 
 **Transformation services / Verwerkingsdienst**
-- Ondersteunende service die de andere services helpt met het bereiken van de beoogde consistentie en conformiteit van INSPIRE.
-- Valt uiteen in (a) schema translatie (b) coördinaten translatie
-- Kan zowel op niveau data provider (schema transformatie dienst) als op lidstaten niveau (coordinate transformation dienst) een rol spelen
-- Alleen van coordinate translation is een IR en Technical Guidance document beschikbaar.
+- Dit is een ondersteunende service die de andere services helpt met het bereiken van de beoogde consistentie en conformiteit van INSPIRE, bijvoorbeeld door schema translatie of coördinaten translatie
 
 **Other services / overige diensten**
-- De overige diensten ontlsuiten ten minste één INSPIRE dataset, maar kunnen hele andere specificaties hebben.
+- De overige diensten ontlsuiten ten minste één INSPIRE dataset, maar kunnen hele andere specificaties hebben, die buiten de INSPIRE community tot stand zijn gekomen.
 - De specificatie van de service moet wel zijn vastgelgd en in de metadata beschreven.
-- Uitvoer op niveau van dataprovider.
+- deze diensten zijn verder in te delen als invocable, interoperable en harmonised.
 
-**Registerdiensten**
-- De INSPIRE infrastructuur bevat een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). Het <a href="https://inspire.ec.europa.eu/registry/" target="_blank">INSPIRE register</a> biedt een centraal toegangspunt voor een aantal centraal beheerde INSPIRE registers. De inhoud van deze registers is gebaseerd op de INSPIRE richtlijn, de uitvoerings regels en de technische handleidingen.
-- Voor Nederland is er een aanvullend register voor [codelijsten](#codelijsten) en [namespaces](#namespaces)
-
+## Network services
 ### Wetgeving
 Op de website van INSPIRE is de wetgeving met betrekking tot network services te vinden.
 
