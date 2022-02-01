@@ -16,26 +16,29 @@ of
 
 Het bovenstaande figuur valt uiteen in een aantal services:
 
-**Discovery services / Zoekdienst**
+**Discovery services / Zoekdienst** network service
 - De discovery service is bedoeld om het zoeken, beoordelen (evalueren) en vinden van ruimtelijke data die via het netwerk van webservices worden aangeboden te ondersteunen.
 - Het zoeken van data vindt plaats op basis van metadata van INSPIRE-data en metadata van INSPIRE-services.
 - Voor INSPIRE wordt dit op lidstaat-niveau uitgevoerd; voor Nederland is dit het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister</a>.
 
-**View services / Raadpleegdienst**
+**View services / Raadpleegdienst** network service
 - De viewservice (of raadpleegdienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen bekijken en beoordelen
 - Regels over weergave en presentatie worden in de dataspecificaties meegeleverd om over alle lidstaten heen dezelfde presentatie te kunnen houden. Deze regels zijn hiervoor juist basaal gehouden.
 
-**Download services / Downloaddienst**
+**Download services / Downloaddienst** network service
 - De downloadservice (of downloaddienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen downloaden om ze daarna te kunnen analyseren en te gebruiken voor de gewenst toepassing.
 - De dataset kan als geheel worden gedownload. Waar mogelijk ook het bevragen en downloaden van enkele objecten.
 
-**Transformation services / Verwerkingsdienst**
+**Transformation services / Verwerkingsdienst** network service
 - Dit is een ondersteunende service die de andere services helpt met het bereiken van de beoogde consistentie en conformiteit van INSPIRE, bijvoorbeeld door schema translatie of coördinaten translatie
 
-**Other services / overige diensten**
-- De overige diensten ontlsuiten ten minste één INSPIRE dataset, maar kunnen hele andere specificaties hebben, die buiten de INSPIRE community tot stand zijn gekomen.
-- De specificatie van de service moet wel zijn vastgelgd en in de metadata beschreven.
-- deze diensten zijn verder in te delen als invocable, interoperable en harmonised.
+**Spatial Data Services **
+- De Spatial Data Servies  ontlsuiten ten minste één INSPIRE dataset, maar kunnen hele andere specificaties hebben, die buiten de INSPIRE community tot stand zijn gekomen.
+- De specificatie van de service moet wel zijn vastgelgd en in de metadata beschreven. 
+- Deze diensten zijn verder in te delen als invocable, interoperable en harmonised.
+
+**Other services **
+- De Spatial Data Servies ontlsuiten wel ruimteliijke data, maar geen INSPIRE data, of ze voldoen niet aan de vereiste dat er een specificatie van de service is.
 
 ## Network services
 ### Wetgeving
