@@ -88,7 +88,7 @@ De Europese validator werkt over het algemeen goed. Er zijn echter nog een paar 
 
 ## Link checker
 
-Om direct inzicht te hebben in de relaties tussen datasets, metadata en services is het niet nodig te wachten op de harvesting van het INSPIRE-geoportal. Met de <a href="[linkchecker](https://inspire-geoportal.ec.europa.eu/linkagechecker.html) van het INSPIRE Geoportal kan deze check op elk willekeurig moment worden uitgevoerd.
+Om direct inzicht te hebben in de relaties tussen datasets, metadata en services is het niet nodig te wachten op de harvesting van het INSPIRE-geoportal. Met de <a href="https://inspire-geoportal.ec.europa.eu/linkagechecker.html" target="_blank">linkchecker</a> van het INSPIRE Geoportal kan deze check op elk willekeurig moment worden uitgevoerd.
 
 Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> toont in welke mate een dataset ook daadwerkelijk raadpleegbaar (via een viewservice) en downloadbaar (via een downloadservice) is. Hiervoor moeten diverse verwijzingen (via links en identifiers) tussen metadata en services goed opgegeven zijn. Dit is essentieel voor een werkende infrastructuur: als een dataset niet raadpleegbaar of niet downloadbaar is, is deze niet goed aangeboden aan INSPIRE en niet goed of zelfs helemaal niet bruikbaar.
 
