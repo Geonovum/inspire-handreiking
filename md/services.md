@@ -2,7 +2,7 @@
 
 In dit deel van de handreiking worden de verschillende electronische diensten (services) behandeld, waarmee de INSPIRE plichtige dataproviders hun data kunnen ontsluiten. Omdat  deze services ruimtelijke data ontsluiten, worden ze ook wel Spatial Data Services genoemd en vertaald als “diensten met betrekking tot ruimtelijke gegevens”. Er zijn verschillende soorten Spatial Data Services, die ieder afzonderlijk behandeld worden.
 
-## Soorten patial Data Services
+## Soorten Spatial Data Services
 
 Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. De INSPIRE network services, zijn ook Spatial Data Services, waarvoor verdere specificaties van de service zijn opgesteld.
 
@@ -57,29 +57,9 @@ In de Technical Guidances (of Guidance Documents) zijn de technische specificati
 | <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - WFS en ATOM</a> ||
 | <a href="https://inspire.ec.europa.eu/id/document/tg/download-wcs" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - Web Coverage Service</a>|| 
 | <a href="https://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - Sensor Observation Service</a> ||
-| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance for the implementation of INSPIRE View Services</a> ||
+| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance for the implementation of INSPIRE View Services</a> |WMS en WMTS implementatie|
 | <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0" target="_blank">Technical Guidance for the implementation of INSPIRE Discovery Services</a> ||
 | <a href="https://inspire.ec.europa.eu/documents/technical-guidance-inspire-schema-transformation-network-service" target="_blank">Technical Guidance for the INSPIRE Schema Transformation Network Service</a> |Dit onderdeel is niet in deze handreiking uitgewerkt| 
-
-### Verschillende soorten implementatie
-INSPIRE kent per type network service één of meerdere opties om die network service te implementeren. Een viewservice kan bijvoorbeeld met WMS of met WMTS geïmplmenteerd worden. Een downloadservice kan, afhankelijk van het type gegevens of de voorkeuren van een dataprovider, worden aangeboden via WFS, ATOM, WCS of SOS. Een dataprovider kan dus zelf het type service bepalen.
-
-In de tabel hieronder wordt een overzicht gegeven van de INSPIRE-services en de verschillende (OGC)-protocollen die hiermee samenhangen. Ook de Nederlandse profielen voor webservices zijn opgenomen.
-
-| Servicetype | Standaarden | Kort | Nederlands profiel |
-|-----------------|-------------|-------------|-------------|
-| **View** | ISO 19128: OGC WebMap Service 1.3.0 of OGC Web Map Tile Service 1.0.0 | WMS 1.3 of WMTS 1.0.0 | <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11" target="_blank">Nederlands profiel op ISO 19128 WMS 1.3, versie 1.1</a> |
-| **Discovery** | OGC Catalogue Service for the web 2.0.2 AP ISO 1.0 | OGC CSW | |
-| **Downloaddiensten** | | | |
-| *- Pre-defined* | ATOM feeds of OGC Web Feature Service 2.0 met beperkte filter mogelijkheden of WCS Coverage Service (raster) of Sensor Observation Services | ATOM of WFS of WCS of SOS | |
-| *- Direct Access* | OGC Web Feature Service 2.0 met meer filter mogelijkheden, Filter Encoding of WCS Coverage Service (raster) met processing of Sensor Observation Services met meer filter mogelijkheden | WFS 2.0 met FE of WCS of SOS | <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.1</a> | 
-| **Transformatiedienst** | | | |
-| *- schema* | Niet beschikbaar | | |
-| *- coöordinaat* | OGC Web Coordinate Transformation Service, OGC Web Processing Service | WCTS; OGC WPS| |
-
-**Opmerkingen bij tabel**:
-- Met de ‘Pre-defined downloaddienst’ wordt de dienst gebruikt waarmee een INSPIRE-dataset in zijn geheeld gedownload kan worden. 
-- Met de ‘Direct access downloaddienst’ wordt toegang tot individuele features en de filter/selectiemogelijkheid op features aangeboden.
 
 In het <a href="https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf" target="_blank">Raamwerk GeoStandaarden</a> is meer informatie te vinden over de samenhang van verschillende standaarden.
 
@@ -179,32 +159,27 @@ De INSPIRE Network Services Regulation en de INSPIRE Regulation voor de interope
 De viewservice (of raadpleegdienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen bekijken en beoordelen. Hiertoe dient de dataprovider de INSPIRE-thema’s met een viewservice te ontsluiten. De viewservice heeft uitdrukkelijk niet de functie om ‘mooie kaartbeelden’ te maken. Het gaat om een rudimentaire inspectie en beoordeling van de INSPIRE-conforme datasets die via een de viewservice ontsloten worden. Dit omvat onder andere:
 - het weergeven van ruimtelijke data met pan, overlay, zoom functionaliteit;
 - de legenda en relevante metadata moet zichtbaar zijn;
-- de INSPIRE-viewservice is gebaseerd op ISO 19128:2005 Geographic Information-Web Map Server (WMS) interface. Deze standaard is door het OGC ontwikkeld als de WMS 1.3.0 standaard, en vervolgens door het ISO geadopteerd en gespecificeerd als ISO 19128.
 
 De onderstaande figuur geeft schematisch de operaties van de OGC WMS 1.3.0 weer.
 
 ![wms](media/Wms.png "Schematische weergave van INSPIRE-viewservice.")
 
-In de onderstaande tabel is de mapping weergegeven van de verplichte INSPIRE-viewservice-operaties op de ISO 19128 operaties. De INSPIRE Link View Service operatie maakt het mogelijk viewservices van op te nemen in andere viewservices. Deze operatie heeft geen equivalente operatie in de ISO 19128 standaard en wordt geïmplementeerd op basis van de Discover Metadata operatie van een INSPIRE-discovery-service. De ISO 19128 operatie GetFeatureInfo is niet verplicht voor een INSPIRE-viewservice.
-
-| INSPIRE-viewservice-operatie | Verplicht | ISO 19128 WMS-operatie |
-|-----------------|-------------|-------------|
-| Get View Service Metadata | J | GetCapabilities |
-| Get Map | J | GetMap |
-| Link View Service | J | - |
-
 ### Vereisten viewservice
-- Gebaseerd op de verplichte elementen van een ISO 19128 service aangevuld met extensies, die vereist zijn vanuit de INSPIRE-richtlijn en de Implementing Rule voor viewservices.
+
+De Technical Guidance beschrijft hoe een lidstaat de Implementing Rules kunnen implementeren. Voor de viewservices beschrijft het document <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance View Services</a> de technische eisen waaraan een service moet voldoen. Hiermee kan zowel ISO 19128: OGC Web Map Service 1.3.0 (WMS) of OGC Web Map Tile Service 1.0.0 (WMTS) worden geimplementeerd.  
+
+De INSPIRE view service implementeerd de verplichte elementen van een WMS of WMTS aangevuld met de volgende vereisten;
 - Ondersteuning van de HTTP GET-interface is verplicht.
 - De image/png of image/gif (zonder LZW-compressie) is verplicht als respons op een GetMap-request;
-- Servicemetadata moet beschikbaar worden gesteld via een Discovery Service;
+- Service metadata moet beschikbaar worden gesteld via een Discovery Service;
 - De viewservice moet de volgende geografische coördinaat-referentiesystemen ondersteunen:
 	- EPSG:4258 (ETRS89)
 	- EPSG:4326 (WGS84)
 - Minimaal één taal moet worden ondersteund en kenbaar worden gemaakt in de respons op de GetViewServiceMetadata-operatie.
 
-### INSPIRE-vereisten in een Capabilities-document
-De Technical Guidance beschrijft hoe een lidstaat de Implementing Rules zou kunnen implementeren. Voor de viewservices beschrijft het document <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance View Services</a> de (niet bindende) technische eisen waaraan een service moet voldoen. De beschrijving van de Implementation Requirements en Implementation Recommendations is gebaseerd op de ISO 19128 (WMS 1.3.0) standaard.
+Voor een WMS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11" target="_blank">Nederlands profiel op ISO 19128 WMS 1.3, versie 1.1</a> van toepassing.
+
+### INSPIRE scenario's voor metadata in Capabilities-document
 
 De Technical Guidance beschrijft 2 scenario's om de verplichte INSPIRE-elementen op te nemen in een ISO 19128 (WMS 1.3.0) Capabilities document:
 1. Verplichte WMS-elementen opnemen met een minimale uitbreiding voor INSPIRE-elementen als ExtendedCapabilities.
@@ -726,6 +701,27 @@ De downloadservice (of downloaddienst) heeft als functie de gegevens die via de 
 5. OGC API Features (OAF)
 
 In de volgende hoofdstukken worden eerst verschillende downloadservice implementaties kort beschreven en later nog weer apart in detail per paragraaf. 
+
+
+
+
+### Verschillende soorten implementatie
+INSPIRE kent per type network service één of meerdere opties om die network service te implementeren. Een viewservice kan bijvoorbeeld met WMS of met WMTS geïmplmenteerd worden. Een downloadservice kan, afhankelijk van het type gegevens of de voorkeuren van een dataprovider, worden aangeboden via WFS, ATOM, WCS of SOS. Een dataprovider kan dus zelf het type service bepalen.
+
+In de tabel hieronder wordt een overzicht gegeven van de INSPIRE-services en de verschillende (OGC)-protocollen die hiermee samenhangen. Ook de Nederlandse profielen voor webservices zijn opgenomen.
+
+| Servicetype | Standaarden | Kort | Nederlands profiel |
+|-----------------|-------------|-------------|-------------|
+| **Downloaddiensten** | | | |
+| *- Pre-defined* | ATOM feeds of OGC Web Feature Service 2.0 met beperkte filter mogelijkheden of WCS Coverage Service (raster) of Sensor Observation Services | ATOM of WFS of WCS of SOS | |
+| *- Direct Access* | OGC Web Feature Service 2.0 met meer filter mogelijkheden, Filter Encoding of WCS Coverage Service (raster) met processing of Sensor Observation Services met meer filter mogelijkheden | WFS 2.0 met FE of WCS of SOS | <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.1</a> | 
+
+
+**Opmerkingen bij tabel**:
+- Met de ‘Pre-defined downloaddienst’ wordt de dienst gebruikt waarmee een INSPIRE-dataset in zijn geheeld gedownload kan worden. 
+- Met de ‘Direct access downloaddienst’ wordt toegang tot individuele features en de filter/selectiemogelijkheid op features aangeboden.
+
+
 
 ### Downloadservice implementaties
 De <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">Technical Guidances</a> en de <a href="https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02009R0976-20101228" target="_blank">Commission Regulation amending Regulation (EC) No 976/2009 as regards download services and transformation service</a> zijn de huidig geldige documenten die downloadservices en de eisen eraan beschrijven. De Commission Regulation is de wettekst die aangeeft welke downloadservices moeten en mogen worden aangeboden binnen INSPIRE. De Technical Guidance geeft richtlijnen hoe deze services conform de Implementing Rule moeten worden toegepast.
