@@ -183,10 +183,12 @@ In het <a href="https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaa
 ### INSPIRE scenario's voor metadata in Capabilities-document
 
 De Technical Guidance beschrijft 2 scenario's om de verplichte INSPIRE-elementen op te nemen in een ISO 19128 (WMS 1.3.0) Capabilities document:
-1. Verplichte WMS-elementen opnemen met een minimale uitbreiding voor INSPIRE-elementen als ExtendedCapabilities.
-2. Verplichte WMS elementen opnemen aangevuld met alle INSPIRE verplichte elementen, deel via een mapping als ISO 19128 WMS-elementen en deels als ExtendedCapabilities-elementen.
+Scenario 1. Verplichte WMS-elementen opnemen met een minimale uitbreiding voor verplichte INSPIRE-elementen als ExtendedCapabilities.
+Scenario 2. Verplichte WMS elementen opnemen aangevuld met alle INSPIRE elementen, deel via een mapping als ISO 19128 WMS-elementen en deels als ExtendedCapabilities-elementen.
 
-**Scenario 1: Extended capabilities**
+Bij het kiezen van de scenario's moet in overweging worden genomen dat het gebruik van extended capabilities niet in alle tooling geimplementerd is. De beweging binnen de EU INSPIRE community is om te komen tot implementaties zonder INSPIRE specifieke extenties. Daarvoor wordt nu gewerkt aan een derde scenario, waarbij geen gebruik wordt gemaakt van extended capabilities.
+
+**Scenario 1: Minimale extended capabilities**
 De volledige INSPIRE-metadata wordt opgenomen in een apart metadata-voor-services-document, dat beschikbaar wordt gesteld via een Discovery Service.
 
 ![scenario1](media/Scenario1.png "Schematische weergave van het eerste scenario.")
@@ -222,7 +224,7 @@ Zie beschrijving onder scenario 2.
 
 Zie beschrijving onder scenario 2.
 
-**Scenario 2: INSPIRE-elementen in het capabilities-document**
+**Scenario 2: Volledige extended capabilities**
 Het Capabilities-document gaat hiermee fungeren als de bron om een metadata-voor-services-document te genereren. Het gegenereerde document wordt via een Discovery Service beschikbaar gesteld.
 
 ![scenario2](media/Scenario_2.png "Schematische weergave van het tweede scenario.")
