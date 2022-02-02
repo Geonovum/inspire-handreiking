@@ -713,7 +713,7 @@ Aandachtspunten
 - In INSPIRE komt het voor dat vanuit data verwezen wordt naar andere datasets, bijvoorbeeld om gebruik te maken van de geometrie van een andere dataset als de dat zelf geen geometrie bevat. Dit gebeurt bijvoorbeeld bij Human Health en Statistical Units of bij Transport Networks. Als een organisatie data aanbiedt waar een andere dataset naar verwijst, is het voor de technische werking van de links noodzakelijk dat de data per object te linken is. Bij datasets die alleen via Atom feeds als bestand worden aangeboden is dit technisch vaak lastig. Met WFS kan dit wel, door gebruik te maken van requests om 1 object op te halen. Het verdient daarom aanbeveling om data waar andere datasets naar (kunnen) verwijzen, aan te bieden via WFS.
 
 
-### Atom feed
+## Atom feed
 
 Dit betreft een dataset die in zijn geheel (als één bestand) gedownload kan worden, zonder dat er een selectie van de dataset gemaakt wordt door de client. Met andere woorden: de data is van te voren klaargezet. Het bestand mag gecomprimeerd worden. Met *predefined part* van een dataset wordt bedoeld dat er met deze download een geografisch deel van een INSPIRE-thema geleverd kan worden. Het hoeft dus niet altijd een download van de dataset voor heel Nederland te zijn, maar het kan bijvoorbeeld ook een download per provincie of ander deelgebied zijn. De aanbieder bepaalt hoe de dataset opgedeeld wordt; de client kan geen eigen selecties / filters toepassen.
 
@@ -850,7 +850,7 @@ Een dataset feed bevat tenminste een entry van een dataset om te downloaden. Elk
 
 
 
-### WFS
+## WFS
 
 Een dataset kan ook via Web Feature Services in zijn geheel gedownload worden. De gebruiker (client) kan via het WFS-protocol gegevens downloaden, maar kan nog niet uitgebreid filters / eigen selecties toepassen. Voor deze methode hoeft een Web Feature Service maar een beperkt deel van de volledige WFS-standaard te ondersteunen. Deze vorm is een opstap naar een volledige Direct Access implementatie met Web Feature Services.
 
@@ -941,59 +941,49 @@ voldoen aan de conformance class Minimum XPath uit FE 2.0. Hiermee kunnen via XP
 
 
 
-### WCS
+## WCS
 
-
-Vanaf 16 december 2016 is er een [Technical Guidance](https://inspire.ec.europa.eu/id/document/tg/download-wcs) om coverage-data via Web Coverage Services te publiceren. Deze Technical Guidance neemt de OGC WCS 2.0 specificatie als basis voor een downloadservice. De INSPIRE-operaties worden gemapped op de WCS-operaties. Daarnaast worden aanvullende eisen gesteld, over onder andere:
-- de te gebruiken (metadata) elementen in het Capabilities-document;
-- ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities;
-- hoe Direct Access in te vullen via de processing extension van WCS;
-- Quality of Service voor de verschillende operaties.
-
-
-
-Vanaf 16 december 2016 is er een <a href="https://inspire.ec.europa.eu/id/document/tg/download-wcs" target="_blank">Technical Guidance WCS</a> om coverage data via Web Coverage Services te publiceren. Deze Technical Guidance neemt als basis voor een Download service de OGC WCS 2.0 specificatie. De INSPIRE-operaties worden gemapped op de WCS-operaties. Daarnaast worden aanvullende eisen gesteld, over onder andere:
+De <a href="https://inspire.ec.europa.eu/id/document/tg/download-wcs" target="_blank">Technical Guidance WCS</a>  beschrijft de implementatie van coverage data via Web Coverage Services. Deze Technical Guidance neemt als basis voor een Download service de OGC WCS 2.0 specificatie. De INSPIRE-operaties worden gemapped op de WCS-operaties. Daarnaast worden aanvullende eisen gesteld, over onder andere:
 - de te gebruiken (metadata)-elementen in het Capabilities-document
 - ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities
 - hoe Direct Access in te vullen via de processing extension van WCS
 - Quality of Service voor de verschillende operaties.
 
-### SOS
+Voor het publiceren van raster data conform INSPIRE is <a href="https://inspire.ec.europa.eu/good-practice/ogc-compliant-inspire-coverage-data-and-service-implementation" target="_blank">OGC compliant INSPIRE Coverage data and service implementation</a> relevant.  
 
+## SOS
 
-
-##### Sensordata
-Vanaf 16 december 2016 is er ook een <a href="https://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance</a> om sensordata via Sensor Observation Services te publiceren. Deze Technical Guidance neemt de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding als basis voor een downloadservice. De INSPIR- operaties worden gemapped op de SOS-operaties en de Filter encoding-classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
-- de te gebruiken (metadata) elementen in het Capabilitiesdocument;
-- ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities;
-- gebruik van de GetObservationByID opeartie om Direct Access in te vullen;
-- Quality of Service voor de verschillende operaties.
-
-Een nadere toelichting op deze methode is [hier te vinden](#sos).
-
-Vanaf 16 december 2016 is er ook een <a href="http://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance SOS</a> om sensor data via Sensor Observation Services te publiceren. Deze Technical Guidance neemt als basis voor een Download service de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding. De INSPIRE operaties worden gemapped op de SOS operaties en de Filter encoding classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
+De <a href="http://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance SOS</a> beschrijft de implementatie van  sensor data via Sensor Observation Services. Deze Technical Guidance neemt als basis voor een Download service de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding. De INSPIRE operaties worden gemapped op de SOS operaties en de Filter encoding classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
 - de te gebruiken (metadata) elementen in het Capabilitiesdocument
 - ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities
 - gebruik van de GetObservationByID operatie om Direct Access in te vullen
 - Quality of Service voor de verschillende operaties.
 
-### OGC API's
+ 
+
+## OGC API's
 
 De <a href="https://ogcapi.ogc.org/" target="_blank">OGC API's</a> vormen een familie van standaarden die ontwikkeld is/wordt om het voor iedereen gemakkelijk te maken om geospatiale gegevens aan het web te verstrekken. Deze standaarden bouwen voort op de erfenis van de OGC Web Service-standaarden (WMS, WFS, WCS, WPS, enz.), maar definiëren API's die profiteren van moderne webontwikkelingspraktijken. 
 
-#### OGC API Features
+### OGC API Features
 
-<a href="(https://docs.opengeospatial.org/is/17-069r3/17-069r3.html" target="_blank">OGC API features</a> (OAPIF of OAF) is een vorm van een download service op basis van een API (Application Program Interface) gebaseerd op OGC standaarden. Het wordt beschouwd als opvolger van de OGC WFS standaard, maar dat betekent niet dat het de WFS in de nabije toekomst volledig gaat vervangen, ook al zou dat in de verre toekomst wel het geval kunnen zijn. Voorlopig zijn ze nog complementair aan elkaar. De WFS wordt vooral in de GIS wereld gebruikt terwijl de OAPIF meer bedoeld is voor andere gebruikers, zoals web-applicatie bouwers. De OAPIF is eenvoudiger in het gebruik en vergt minder geo-kennis, maar is bv op 2 punten na nog niet echt geschikt voor INSPIRE.
+<a href="(https://docs.opengeospatial.org/is/17-069r3/17-069r3.html" target="_blank">OGC API features</a> (OAPIF of OAF) is een vorm van een download service op basis van een API (Application Program Interface) gebaseerd op OGC standaarden. Het wordt beschouwd als opvolger van de OGC WFS standaard, maar dat betekent niet dat het de WFS in de nabije toekomst volledig gaat vervangen, ook al zou dat in de verre toekomst wel het geval kunnen zijn. Voorlopig zijn ze nog complementair aan elkaar. De WFS wordt vooral in de GIS wereld gebruikt terwijl de OAPIF meer bedoeld is voor andere gebruikers, zoals web-applicatie bouwers.
+
+Voor het publiceren van OGC API features is <a href="https://inspire.ec.europa.eu/good-practice/ogc-api-%E2%80%93-features-inspire-download-service" target="_blank">OGC API – Features as an INSPIRE download service</a> relevant.  
+
+De OAPIF is eenvoudiger in het gebruik en vergt minder geo-kennis, maar is bv op 2 punten na nog niet echt geschikt voor INSPIRE.
 1. Het werkt nu alleen nog op basis van simpele datamodellen en uitwisselformaten en is dus moeilijk te implementeren op complexe INSPIRE datamodellen waarbij het complexere GML nog de default is. Mapping naar eenvoudigere modellen en uitwisselformaten is mogelijk maar moet dan voor INSPIRE wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
 2. Voorlopig is de tooling nog niet geschikt om met andere coördinaatsystemen te werken dan WGS84. INSPIRE vereist ETRS89. De <a href="https://docs.opengeospatial.org/is/18-058/18-058.html" target="_blank">standaarden]</a> zijn er al wel op aangepast, maar de tooling nog niet.
 
 Er is een <a href="https://geonovum.github.io/OAPIF-PDOK-INSPIRE/" target="_blank">handreiking</a> geschreven waarin de eerste bevindingen voor het maken van een OAPIF zijn vastgelegd.
 
-#### OGC SensorThings API
+### OGC SensorThings API
 
 De standaard voor <a href="https://docs.ogc.org/is/18-088/18-088.html" target="_blank">OGC SensorThings API</a> biedt een open, geospatiale en uniforme manier om de Internet of Things (IoT)-apparaten, gegevens en applicaties via het web met elkaar te verbinden. Op een hoog niveau biedt de OGC SensorThings API twee hoofdfunctionaliteiten en elke functie wordt afgehandeld door een onderdeel. De twee delen zijn het Sensing-gedeelte en het Tasking-gedeelte. Het Sensing-gedeelte biedt een standaard manier om observaties en metadata van heterogene IoT-sensorsystemen te beheren en op te halen. Het Tasking-gedeelte is gepland als een toekomstige werkactiviteit en zal in een apart document worden gedefinieerd als <a href="https://docs.opengeospatial.org/is/17-079r1/17-079r1.html" target="_blank">Part II van de SensorThings API</a>.
 
-#### Andere OGC API's
+Voor het publiceren van sensor data conform INSPIRE is <a href="https://inspire.ec.europa.eu/good-practice/ogc-sensorthings-api-inspire-download-service" target="_blank">OGC SensorThings API as an INSPIRE download service</a> relevant. 
+
+### Andere OGC API's
 
 De hierboven genoemde OGC API's zijn van belang als service voor INSPIRE en ook al vastgesteld. Andere OGC-API's die nog niet vastgesteld zijn maar die van belang kunnen worden voor INSPIRE zijn:
 - <a href="https://ogcapi.ogc.org/maps/" target="_blank">OGC API Maps</a> (opvolger WMS)
