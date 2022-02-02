@@ -127,6 +127,54 @@ Bij het implementeren van het Rights Management is het van belang dat er door de
 
 De Rights management controleert toegang tot netwerkdiensten en wordt dus op een ander niveau toegepast.
 
+### Meertaligheid services
+Een Capabilities-document kan maar in één taal worden opgesteld. Om meertaligheid te ondersteunen is het dus noodzakelijk om voor iedere ondersteunde taal één Capabilities-document aan te maken. In ieder Capabilities-document moeten de ondersteunde talen worden opgenomen in de `inspire_vs:ExtendedCapabilities`.
+
+<pre class="xml">
+&lt;inspire_vs:ExtendedCapabilities&gt; 
+	....     
+	&lt;inspire_common:SupportedLanguages&gt;
+        &lt;inspire_common:DefaultLanguage&gt;
+        	&lt;inspire_common:Language&gt;dut&lt;/inspire_common:Language&gt;
+        &lt;/inspire_common:DefaultLanguage&gt;
+    &lt;/inspire_common:SupportedLanguages&gt;
+    &lt;inspire_common:ResponseLanguage&gt;
+        &lt;inspire_common:Language&gt;dut&lt;/inspire_common:Language&gt;
+    &lt;/inspire_common:ResponseLanguage&gt;
+	....
+&lt;/inspire_vs:ExtendedCapabilities&gt;
+</pre>
+
+Als een client een getCapabilities-verzoek doet met een taal als parameter die de service niet ondersteunt, dan heeft dat invloed op de volgende elementen:
+- Title elementen (WMS_Capabilities/Service/Title en ../Layer/Title)
+- Abstract elementen (WMS_Capabilities/Service/Abstract en ../Layer/Abstract)
+
+De INSPIRE Network Services Regulation en de INSPIRE Regulation voor de interoperability van datasets en services stellen geen verplichtingen om meertaligheid te ondersteunen voor teksten die op een kaart worden getekend als respons op een GetMap-request. Wel geeft de technical guidance een aanbeveling voor de ondersteuning van meertaligheid in Capabilities:
+
+1. De client doet een initieel GetCapabilities request:
+
+<a href="https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0." target="_blank">https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0.</a>
+
+2. De service antwoordt met een Capabilities-document waarin de ondersteunde talen zijn weergegeven in de Extended Capabilities:
+
+<pre class="xml">
+&lt;inspire_vs:ExtendedCapabilities&gt;
+…
+    &lt;inspire_common:SupportedLanguages&gt;
+        &lt;inspire_common:DefaultLanguage&gt;dut&lt;/inspire_common:DefaultLanguage&gt;
+        &lt;inspire_common:SupportedLanguage&gt;eng&lt;/inspire_common:SupportedLanguage&gt;
+    &lt;/inspire_common:SupportedLanguages&gt;
+    &lt;inspire_common:ResponseLanguage&gt;dut&lt;/inspire_common:ResponseLanguage&gt;
+…
+&lt;/inspire_vs:ExtendedCapabilities&gt;
+</pre>
+
+3. De client doet vervolgens een GetCapabilities-request met een specifieke taal, bijvoorbeeld Engels (eng) opgegeven als language parameter:
+
+<a href="https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0&language=eng" target="_blank">https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0&language=eng</a>.
+
+4. De service antwoordt door een Capabilities-document te sturen in de gevraagde (ondersteunde) taal, waarbij de Title en Abstract elementen zijn weergegeven in de gevraagde taal. Voor de operaties wordt verwezen naar een voor die taal specifieke URL. Een client gebruikt vervolgens die taalspecifieke URL.
+
 ## View service
 De viewservice (of raadpleegdienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen bekijken en beoordelen. Hiertoe dient de dataprovider de INSPIRE-thema’s met een viewservice te ontsluiten. De viewservice heeft uitdrukkelijk niet de functie om ‘mooie kaartbeelden’ te maken. Het gaat om een rudimentaire inspectie en beoordeling van de INSPIRE-conforme datasets die via een de viewservice ontsloten worden. Dit omvat onder andere:
 - het weergeven van ruimtelijke data met pan, overlay, zoom functionaliteit;
@@ -162,7 +210,7 @@ De Technical Guidance beschrijft 2 scenario's om de verplichte INSPIRE-elementen
 1. Verplichte WMS-elementen opnemen met een minimale uitbreiding voor INSPIRE-elementen als ExtendedCapabilities.
 2. Verplichte WMS elementen opnemen aangevuld met alle INSPIRE verplichte elementen, deel via een mapping als ISO 19128 WMS-elementen en deels als ExtendedCapabilities-elementen.
 
-#### Scenario 1: Extended capabilities
+**Scenario 1: Extended capabilities**
 De volledige INSPIRE-metadata wordt opgenomen in een apart metadata-voor-services-document, dat beschikbaar wordt gesteld via een Discovery Service.
 
 ![scenario1](media/Scenario1.png "Schematische weergave van het eerste scenario.")
@@ -198,7 +246,7 @@ Zie beschrijving onder scenario 2.
 
 Zie beschrijving onder scenario 2.
 
-#### Scenario 2: INSPIRE-elementen in het capabilities-document
+**Scenario 2: INSPIRE-elementen in het capabilities-document**
 Het Capabilities-document gaat hiermee fungeren als de bron om een metadata-voor-services-document te genereren. Het gegenereerde document wordt via een Discovery Service beschikbaar gesteld.
 
 ![scenario2](media/Scenario_2.png "Schematische weergave van het tweede scenario.")
@@ -661,71 +709,7 @@ Als een Layer meerdere regionale datasets visualiseert, of meerdere featuretypes
 Volgens de TG 3.0 voor viewservices, moet een Category Layer een naam hebben (eis 49). Daarnaast gelden de algemene eisen van WMS, die INSPIRE overneemt. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden.
 INSPIRE volgt de WMS 1.3.0 specificatie voor overerving van de layer elementen. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden.
 
-### Meertaligheid in een capabilities-document
-Een Capabilities-document kan maar in één taal worden opgesteld. Om meertaligheid te ondersteunen is het dus noodzakelijk om voor iedere ondersteunde taal één Capabilities-document aan te maken. In ieder Capabilities-document moeten de ondersteunde talen worden opgenomen in de `inspire_vs:ExtendedCapabilities`.
 
-<pre class="xml">
-&lt;inspire_vs:ExtendedCapabilities&gt; 
-	....     
-	&lt;inspire_common:SupportedLanguages&gt;
-        &lt;inspire_common:DefaultLanguage&gt;
-        	&lt;inspire_common:Language&gt;dut&lt;/inspire_common:Language&gt;
-        &lt;/inspire_common:DefaultLanguage&gt;
-    &lt;/inspire_common:SupportedLanguages&gt;
-    &lt;inspire_common:ResponseLanguage&gt;
-        &lt;inspire_common:Language&gt;dut&lt;/inspire_common:Language&gt;
-    &lt;/inspire_common:ResponseLanguage&gt;
-	....
-&lt;/inspire_vs:ExtendedCapabilities&gt;
-</pre>
-
-Als een client een getCapabilities-verzoek doet met een taal als parameter die de service niet ondersteunt, dan heeft dat invloed op de volgende elementen:
-- Title elementen (WMS_Capabilities/Service/Title en ../Layer/Title)
-- Abstract elementen (WMS_Capabilities/Service/Abstract en ../Layer/Abstract)
-
-De INSPIRE Network Services Regulation en de INSPIRE Regulation voor de interoperability van datasets en services stellen geen verplichtingen om meertaligheid te ondersteunen voor teksten die op een kaart worden getekend als respons op een GetMap-request. Wel geeft de technical guidance een aanbeveling voor de ondersteuning van meertaligheid in Capabilities:
-
-1. De client doet een initieel GetCapabilities request:
-
-<a href="https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0." target="_blank">https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0.</a>
-
-2. De service antwoordt met een Capabilities-document waarin de ondersteunde talen zijn weergegeven in de Extended Capabilities:
-
-<pre class="xml">
-&lt;inspire_vs:ExtendedCapabilities&gt;
-…
-    &lt;inspire_common:SupportedLanguages&gt;
-        &lt;inspire_common:DefaultLanguage&gt;dut&lt;/inspire_common:DefaultLanguage&gt;
-        &lt;inspire_common:SupportedLanguage&gt;eng&lt;/inspire_common:SupportedLanguage&gt;
-    &lt;/inspire_common:SupportedLanguages&gt;
-    &lt;inspire_common:ResponseLanguage&gt;dut&lt;/inspire_common:ResponseLanguage&gt;
-…
-&lt;/inspire_vs:ExtendedCapabilities&gt;
-</pre>
-
-3. De client doet vervolgens een GetCapabilities-request met een specifieke taal, bijvoorbeeld Engels (eng) opgegeven als language parameter:
-
-<a href="https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0&language=eng" target="_blank">https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0&language=eng</a>.
-
-4. De service antwoordt door een Capabilities-document te sturen in de gevraagde (ondersteunde) taal, waarbij de Title en Abstract elementen zijn weergegeven in de gevraagde taal. Voor de operaties wordt verwezen naar een voor die taal specifieke URL. Een client gebruikt vervolgens die taalspecifieke URL, hieronder bijvoorbeeld een URL voor een taalspecifiek GetMap-request:
-
-<pre class="xml">
-&lt;WMS_Capabilities&gt;[…]
-    &lt;Capability&gt;
-    &lt;Request&gt;[…]
-        &lt;GetMap&gt;[…]
-            &lt;DCPType&gt;
-               &lt;HTTP&gt;
-                   &lt;Get&gt;
-                       &lt;OnlineResource xlink:href="http://example.com/services/wms/eng/GetMap?" /&gt;
-                   &lt;/Get&gt;
-               &lt;/HTTP&gt;
-           &lt;/DCPType&gt;
-        &lt;/GetMap&gt;[…]
-     &lt;/Request&gt;[…]
-   &lt;Capability&gt;[…]
-&lt;/WMS_Capabilities&gt;
-</pre>
 
 ### Voorbeeldbestand XML voor Capabilities
 Hier zijn twee voorbeeldbestanden te vinden voor de Capibilities-documenten, volgens [scenario 1](docs/WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](docs/WMSCapabilities_Voorbeeld_Scenario2.zip).
