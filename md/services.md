@@ -106,6 +106,34 @@ Bij het implementeren van het Rights Management is het van belang dat er door de
 
 De Rights management controleert toegang tot netwerkdiensten en wordt dus op een ander niveau toegepast.
 
+
+
+## View service
+De viewservice (of raadpleegdienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen bekijken en beoordelen. Hiertoe dient de dataprovider de INSPIRE-thema’s met een viewservice te ontsluiten. De viewservice heeft uitdrukkelijk niet de functie om ‘mooie kaartbeelden’ te maken. Het gaat om een rudimentaire inspectie en beoordeling van de INSPIRE-conforme datasets die via een de viewservice ontsloten worden. Dit omvat onder andere:
+- het weergeven van ruimtelijke data met pan, overlay, zoom functionaliteit;
+- de legenda en relevante metadata moet zichtbaar zijn;
+
+De onderstaande figuur geeft schematisch de operaties van de OGC WMS 1.3.0 weer.
+
+![wms](media/Wms.png "Schematische weergave van INSPIRE-viewservice.")
+
+### Vereisten viewservice
+
+Voor de viewservices beschrijft het document <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance View Services</a> de technische eisen waaraan een service moet voldoen. Hiermee kan zowel ISO 19128: OGC Web Map Service 1.3.0 (WMS) of OGC Web Map Tile Service 1.0.0 (WMTS) worden geimplementeerd.  
+
+De INSPIRE view service implementeerd de verplichte elementen van een WMS of WMTS aangevuld met de volgende vereisten;
+- Ondersteuning van de HTTP GET-interface is verplicht.
+- De image/png of image/gif (zonder LZW-compressie) is verplicht als respons op een GetMap-request;
+- Service metadata moet beschikbaar worden gesteld via een Discovery Service;
+- De viewservice moet de volgende geografische coördinaat-referentiesystemen ondersteunen:
+	- EPSG:4258 (ETRS89)
+	- EPSG:4326 (WGS84)
+- Minimaal één taal moet worden ondersteund en kenbaar worden gemaakt in de respons op de GetViewServiceMetadata-operatie.
+
+Voor een WMS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11" target="_blank">Nederlands profiel op ISO 19128 WMS 1.3, versie 1.1</a> van toepassing. 
+
+In het <a href="https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf" target="_blank">Raamwerk GeoStandaarden</a> is meer informatie te vinden over de samenhang van verschillende standaarden.
+
 ### Meertaligheid services
 Een Capabilities-document kan maar in één taal worden opgesteld. Om meertaligheid te ondersteunen is het dus noodzakelijk om voor iedere ondersteunde taal één Capabilities-document aan te maken. In ieder Capabilities-document moeten de ondersteunde talen worden opgenomen in de `inspire_vs:ExtendedCapabilities`.
 
@@ -153,32 +181,6 @@ De INSPIRE Network Services Regulation en de INSPIRE Regulation voor de interope
 <a href="https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0&language=eng" target="_blank">https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0&language=eng</a>.
 
 4. De service antwoordt door een Capabilities-document te sturen in de gevraagde (ondersteunde) taal, waarbij de Title en Abstract elementen zijn weergegeven in de gevraagde taal. Voor de operaties wordt verwezen naar een voor die taal specifieke URL. Een client gebruikt vervolgens die taalspecifieke URL.
-
-## View service
-De viewservice (of raadpleegdienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen bekijken en beoordelen. Hiertoe dient de dataprovider de INSPIRE-thema’s met een viewservice te ontsluiten. De viewservice heeft uitdrukkelijk niet de functie om ‘mooie kaartbeelden’ te maken. Het gaat om een rudimentaire inspectie en beoordeling van de INSPIRE-conforme datasets die via een de viewservice ontsloten worden. Dit omvat onder andere:
-- het weergeven van ruimtelijke data met pan, overlay, zoom functionaliteit;
-- de legenda en relevante metadata moet zichtbaar zijn;
-
-De onderstaande figuur geeft schematisch de operaties van de OGC WMS 1.3.0 weer.
-
-![wms](media/Wms.png "Schematische weergave van INSPIRE-viewservice.")
-
-### Vereisten viewservice
-
-Voor de viewservices beschrijft het document <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance View Services</a> de technische eisen waaraan een service moet voldoen. Hiermee kan zowel ISO 19128: OGC Web Map Service 1.3.0 (WMS) of OGC Web Map Tile Service 1.0.0 (WMTS) worden geimplementeerd.  
-
-De INSPIRE view service implementeerd de verplichte elementen van een WMS of WMTS aangevuld met de volgende vereisten;
-- Ondersteuning van de HTTP GET-interface is verplicht.
-- De image/png of image/gif (zonder LZW-compressie) is verplicht als respons op een GetMap-request;
-- Service metadata moet beschikbaar worden gesteld via een Discovery Service;
-- De viewservice moet de volgende geografische coördinaat-referentiesystemen ondersteunen:
-	- EPSG:4258 (ETRS89)
-	- EPSG:4326 (WGS84)
-- Minimaal één taal moet worden ondersteund en kenbaar worden gemaakt in de respons op de GetViewServiceMetadata-operatie.
-
-Voor een WMS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11" target="_blank">Nederlands profiel op ISO 19128 WMS 1.3, versie 1.1</a> van toepassing. 
-
-In het <a href="https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf" target="_blank">Raamwerk GeoStandaarden</a> is meer informatie te vinden over de samenhang van verschillende standaarden.
 
 ### INSPIRE scenario's voor metadata in Capabilities-document
 
@@ -704,7 +706,11 @@ De downloadservice (of downloaddienst) heeft als functie de gegevens die via de 
 
 Afhankelijk van het type gegevens of de voorkeuren van een dataprovider, bepaald de dataprovider het type service. In de volgende paragrafen worden de verschillende download service implementaties behandeld. 
 
+Aandachtspunten
 
+- Als er nog geen webservices draaien om een dataset aan te bieden en de dataset is niet erg dynamisch, dan is vaak een Atom feed het snelste en meest eenvoudige om te maken. Bij grote datasets kan het dataverkeer (over de netwerkverbinding) ook te veel gaan vragen en kan opsplitsen van het bestand nodig zijn. Dit vraagt om extra handelingen bij het inrichten. Is de dataset dynamischer van aard of is het niet gewenst om de data in verschillende CRSen op te slaan, dan kan een Download Service op basis van WFS (implementaties ondersteunen vaak on-the-fly herprojectie) handiger zijn. Webservices bieden ook voordelen voor gebruik van de data in andere processen.
+
+- In INSPIRE komt het voor dat vanuit data verwezen wordt naar andere datasets, bijvoorbeeld om gebruik te maken van de geometrie van een andere dataset als de dat zelf geen geometrie bevat. Dit gebeurt bijvoorbeeld bij Human Health en Statistical Units of bij Transport Networks. Als een organisatie data aanbiedt waar een andere dataset naar verwijst, is het voor de technische werking van de links noodzakelijk dat de data per object te linken is. Bij datasets die alleen via Atom feeds als bestand worden aangeboden is dit technisch vaak lastig. Met WFS kan dit wel, door gebruik te maken van requests om 1 object op te halen. Het verdient daarom aanbeveling om data waar andere datasets naar (kunnen) verwijzen, aan te bieden via WFS.
 
 
 ### Atom feed
@@ -855,15 +861,9 @@ Kenmerken zijn:
 
 ![wfs](media/Wfs.png "Interactie tussen een client en een basic WFS.")
 
-De Technical Guidance beschrijft in hoofdstuk 6 hoe een Download service voor Pre-defined datasets geïmplementeerd kan worden met een Web Feature Service en Filter Encoding.
-Het GetCapabilities request geeft een vergelijkbare Capabilities file op als bij de WMS, op enkele specifieke WMS onderdelen na. Het wordt daarom in deze paragraaf niet zo uitgebreid beschreven als in dat van de WMS.
-
-#### WFS 2.0
-
 De OGC standaard voor <a href="https://www.ogc.org/standards/wfs" target="_blank">Web Feature Service 2.0 (WFS 2.0)</a> is in samenwerking met ISO opgesteld. Bij ISO heet deze standaard formeel ISO 19142. WFS 2.0 specificeert een webservice-interface om geografische gegevens te bevragen. Een WFS geeft standaard GML terug (3.2 voor WFS 2.0). Voor het bevragen maakt WFS gebruik van filters. Voorbeelden van filters zijn: gegevens selecteren op basis van een bepaald gebied en/of bepaalde attribuutwaarden. Deze filters dienen conform de <a href="https://www.ogc.org/standards/filter" target="_blank">Filter Encoding 2.0 (FE 2.0)</a> gecodeerd te zijn. Deze standaard is ook in samenwerking met ISO opgesteld en heet daar ISO 19143.
 
-#### Conformance classes
-
+**Conformance classes**
 Om aan te geven welke delen van de WFS 2.0 en FE 2.0 standaard ondersteund zijn in een implementatie, zijn in de standaarden zogenaamde conformance classes gedefinieerd. Een conformance class groepeert een deel van de eisen uit de standaard. Als een implementatie claimt aan een bepaalde conformance class te voldoen, dan is voor een gebruiker duidelijk welke functionaliteit ondersteund wordt.
 
 Voorbeelden van conformance classes uit WFS 2.0 en FE 2.0 zijn:
@@ -875,7 +875,7 @@ Voorbeelden van conformance classes uit WFS 2.0 en FE 2.0 zijn:
 
 Meestal zullen implementaties meerdere conformance classes ondersteunen.
 
-#### INSPIRE-eisen
+### Vereisten WFS
 
 Het aanbieden van Pre-defined datasets via een Web Feature Service is een methode om aan de eisen uit de Implementing Rule te kunnen voldoen. Een dergelijke WFS is in staat om van datasets een applicatie schema te geven en via GetFeature in zijn geheel op te halen of individuele objecten via hun identifier.
 
@@ -885,14 +885,15 @@ De Technical Guidance bevat de eisen die INSPIRE stelt aan een dergelijke WFS:
 - voldoen aan de conformance class Query uit FE 2.0. De WFS is in staat een query uit te voeren (zoals de stored query GetFeatureById).
 - ondersteuning van Stored Queries om de pre-defined datasets om alle mogelijke combinaties van het CRS, een dataset (via de dataset ID) en de taal terug te geven. De WFS moet hiervoor Stored Queries aanbieden.
 
+De Technical Guidance beschrijft in hoofdstuk 6 hoe een Download service voor Pre-defined datasets geïmplementeerd kan worden met een Web Feature Service en Filter Encoding.
+Het GetCapabilities request geeft een vergelijkbare Capabilities file op als bij de WMS, op enkele specifieke WMS onderdelen na. Het wordt daarom in deze paragraaf niet zo uitgebreid beschreven als in dat van de WMS.
 
 Voor een WFS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.1</a> van toepassing
 
-##### Stored queries
-
+**Stored queries**
 Stored Queries zijn een nieuw mechanisme in WFS 2.0. Hiermee worden een soort query-templates aangeboden, waarmee een client niet een geheel filter hoeft op te stellen, maar alleen enkele van te voren opgegeven parameters hoeft te specificeren. WFS-requests worden hier eenvoudiger van. Een service kan hiermee een soort FAQs aanbieden van WFS-requests, die voor een client makkelijk te gebruiken zijn. Bijvoorbeeld requests om op basis van een typering (categorie) een dataset te bevragen.
 
-##### Meertaligheid
+### Meertaligheid
 
 INSPIRE stelt via de Implementing Rules aan Netwerk Services, zoals View Services, Discovery Services en ook Download Services, eisen ten aanzien van ondersteuning van meerdere talen. WFS 2.0 biedt zelf geen mechanisme hiertoe. De Technical Guidance van Download Services stelt daarom de volgende aanvullende eisen aan een WFS-2.0-implementatie om meertaligheid te ondersteunen:
 1. voor het GetCapabilities request via HTTP GET dient de WFS een extra parameter te ondersteunen waarmee de client de taal van de Capabilities kan opvragen. De parameter naam is LANGUAGE, de waardes komen uit de ISO 839-2/B apha 3 lijst. Voorbeelden van waardes zijn: "dut" voor Nederlands, "eng" voor Engels.
@@ -909,10 +910,6 @@ Naast de eisen doet de Technical Guidance de volgende aanbevelingen, voor het ge
 1. Gebruik aparte URLs voor verschillende talen, dus voor requests op Engelstalige data een andere URL dan voor requests op Nederlandstalige data. Dit houdt het overzichtelijk.
 2. Geef foutmeldingen in de talen die de service aanbiedt.
 
-#### Aandachtspunten
-
-- Als er nog geen webservices draaien om een dataset aan te bieden en de dataset is niet erg dynamisch, dan is vaak een Atom feed het snelste en meest eenvoudige om te maken. Bij grote datasets kan het dataverkeer (over de netwerkverbinding) ook te veel gaan vragen en kan opsplitsen van het bestand nodig zijn. Dit vraagt om extra handelingen bij het inrichten. Is de dataset dynamischer van aard of is het niet gewenst om de data in verschillende CRSen op te slaan, dan kan een Download Service op basis van WFS (implementaties ondersteunen vaak on-the-fly herprojectie) handiger zijn. Webservices bieden ook voordelen voor gebruik van de data in andere processen.
-- In INSPIRE komt het voor dat vanuit data verwezen wordt naar andere datasets, bijvoorbeeld om gebruik te maken van de geometrie van een andere dataset als de dat zelf geen geometrie bevat. Dit gebeurt bijvoorbeeld bij Human Health en Statistical Units of bij Transport Networks. Als een organisatie data aanbiedt waar een andere dataset naar verwijst, is het voor de technische werking van de links noodzakelijk dat de data per object te linken is. Bij datasets die alleen via Atom feeds als bestand worden aangeboden is dit technisch vaak lastig. Met WFS kan dit wel, door gebruik te maken van requests om 1 object op te halen. Het verdient daarom aanbeveling om data waar andere datasets naar (kunnen) verwijzen, aan te bieden via WFS.
 
 ### WFS direct access
 
