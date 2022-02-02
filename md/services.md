@@ -66,13 +66,13 @@ INSPIRE kent per type network service één of meerdere opties om die network se
 
 In de tabel hieronder wordt een overzicht gegeven van de INSPIRE-services en de verschillende (OGC)-protocollen die hiermee samenhangen. Ook de Nederlandse profielen voor webservices zijn opgenomen.
 
-| Servicetype | Interface-protocollen | Kort | Nederlands profiel |
+| Servicetype | Standaarden | Kort | Nederlands profiel |
 |-----------------|-------------|-------------|-------------|
 | **View** | ISO 19128: OGC WebMap Service 1.3.0 of OGC Web Map Tile Service 1.0.0 | WMS 1.3 of WMTS 1.0.0 | <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11" target="_blank">Nederlands profiel op ISO 19128 WMS 1.3, versie 1.1</a> |
-| **Discovery** | OGC Catalogue Service for the web2.0.2 AP ISO 1.0 | OGC CSW ISO AP | |
+| **Discovery** | OGC Catalogue Service for the web 2.0.2 AP ISO 1.0 | OGC CSW | |
 | **Downloaddiensten** | | | |
-| *- Pre-defined* | ATOM feeds of OGC Web Feature Service 2.0 met beperkte filter mogelijkheden of WCS Coverage Service (raster) of Sensor Observation Services | WFS 2.0; OGC of OGC WCS of SOS | |
-| *- Direct Access* | OGC Web Feature Service 2.0 met meer filter mogelijkheden, Filter Encoding of WCS Coverage Service (raster) met processing of Sensor Observation Services met meer filter mogelijkheden | WFS 2.0; OGC FE of OGC WCS of SOS | <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.1</a> | 
+| *- Pre-defined* | ATOM feeds of OGC Web Feature Service 2.0 met beperkte filter mogelijkheden of WCS Coverage Service (raster) of Sensor Observation Services | ATOM of WFS of WCS of SOS | |
+| *- Direct Access* | OGC Web Feature Service 2.0 met meer filter mogelijkheden, Filter Encoding of WCS Coverage Service (raster) met processing of Sensor Observation Services met meer filter mogelijkheden | WFS 2.0 met FE of WCS of SOS | <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.1</a> | 
 | **Transformatiedienst** | | | |
 | *- schema* | Niet beschikbaar | | |
 | *- coöordinaat* | OGC Web Coordinate Transformation Service, OGC Web Processing Service | WCTS; OGC WPS| |
