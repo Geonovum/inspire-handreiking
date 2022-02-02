@@ -49,7 +49,7 @@ Op de website van INSPIRE is de wetgeving met betrekking tot network services te
 | Regulation | <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32007L0002" target="_blank">eur-lex</a> | <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02009R0976-20141231" target="_blank">Regulation on INSPIRE Network Services</a> |
 | Amendement voor download services en transformation services | <a href="https://ec.europa.eu/transparency/comitology-register/screen/home" target="_blank">comitology</a> | <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32010R1088" target="_blank">COMMISSION REGULATION (EU) No 1088/2010 of 23 November 2010 amending Regulation (EC) No 976/2009 as regards download services and transformation services</a> |
 
-### Technische richtlijnen
+### Technische INSPIRE richtlijnen
 In de Technical Guidances (of Guidance Documents) zijn de technische specificaties opgesteld voor network services, als uitwerking van de wettelijke eisen. De Technical Guidances definiëren hiermee waar een network service aan zal moeten voldoen. De huidig geldende versies van de guidance documents van de network services zijn te vinden op de <a href="https://inspire.ec.europa.eu/Technical-Guidelines2/Network-Services/41" target="_blank">website van INSPIRE</a>. De tabel hieronder biedt directe links naar de documenten.
 
 | Titel | Opmerking |
@@ -61,7 +61,6 @@ In de Technical Guidances (of Guidance Documents) zijn de technische specificati
 | <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0" target="_blank">Technical Guidance for the implementation of INSPIRE Discovery Services</a> ||
 | <a href="https://inspire.ec.europa.eu/documents/technical-guidance-inspire-schema-transformation-network-service" target="_blank">Technical Guidance for the INSPIRE Schema Transformation Network Service</a> |Dit onderdeel is niet in deze handreiking uitgewerkt| 
 
-In het <a href="https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf" target="_blank">Raamwerk GeoStandaarden</a> is meer informatie te vinden over de samenhang van verschillende standaarden.
 
 ### Quality of services
 INSPIRE definieert *Quality of services* (QoS), de eisen omtrent het kwaliteitsbeheer van netwerk services. Een aantal QoS-criteria verschillen per service; voor het overzicht zie tabel hieronder. Er zijn een aantal parameters van invloed op de door INSPIRE gedefinieerde QoS:
@@ -177,7 +176,9 @@ De INSPIRE view service implementeerd de verplichte elementen van een WMS of WMT
 	- EPSG:4326 (WGS84)
 - Minimaal één taal moet worden ondersteund en kenbaar worden gemaakt in de respons op de GetViewServiceMetadata-operatie.
 
-Voor een WMS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11" target="_blank">Nederlands profiel op ISO 19128 WMS 1.3, versie 1.1</a> van toepassing.
+Voor een WMS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-profiel-wms-op-iso-19128-versie-11" target="_blank">Nederlands profiel op ISO 19128 WMS 1.3, versie 1.1</a> van toepassing. 
+
+In het <a href="https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf" target="_blank">Raamwerk GeoStandaarden</a> is meer informatie te vinden over de samenhang van verschillende standaarden.
 
 ### INSPIRE scenario's voor metadata in Capabilities-document
 
