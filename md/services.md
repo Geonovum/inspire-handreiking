@@ -709,8 +709,6 @@ Afhankelijk van het type gegevens of de voorkeuren van een dataprovider, bepaald
 
 ### Atom feed
 
-**Atom-implementatie van een Pre-defined Dataset Download Service**
-
 Dit betreft een dataset die in zijn geheel (als één bestand) gedownload kan worden, zonder dat er een selectie van de dataset gemaakt wordt door de client. Met andere woorden: de data is van te voren klaargezet. Het bestand mag gecomprimeerd worden. Met *predefined part* van een dataset wordt bedoeld dat er met deze download een geografisch deel van een INSPIRE-thema geleverd kan worden. Het hoeft dus niet altijd een download van de dataset voor heel Nederland te zijn, maar het kan bijvoorbeeld ook een download per provincie of ander deelgebied zijn. De aanbieder bepaalt hoe de dataset opgedeeld wordt; de client kan geen eigen selecties / filters toepassen.
 
 Kenmerken zijn:
@@ -718,22 +716,22 @@ Kenmerken zijn:
 - De Atomfeed beschrijft waar de data te downloaden is, op welke datum die gepubliceerd is en legt relaties met metadata-records.
 - De pre-defined dataset kent een metadata-record dat via de discovery service gevonden kan worden.
 
-
-
 De <a href="https://tools.ietf.org/html/rfc4287" target="_blank">Atom-standaard</a> is een (voorgestelde) standaard van IETF, the <a href="https://www.ietf.org/" target="_blank">Internet Engineering Task Force</a>. Atom is een XML-formaat om (op internet beschikbare) informatie te publiceren in feeds. Deze feeds bevatten vaak een algemeen deel en verscheidene items. Zo'n item (entry) bestaat uit elementen die de informatie beschrijven en ernaar verwijzen. Items kunnen bijvoorbeeld nieuwsberichten zijn, weblog-posts of gepubliceerde video's.
 
 De <a href="https://www.ogc.org/standards/georss" target="_blank">GeoRSS-specificatie</a> breidt feeds uit met elementen om de geografische eigenschappen van gegevens te publiceren. Dit is bijvoorbeeld een puntlocatie of bounding box van het gebied waar de gegevens betrekking op hebben.
 
-Deze pagina beschrijft de eisen van INSPIRE aan Atom feeds en geeft enkele voorbeelden.
+### Vereisten Atom feeds
 
-De Technical Guidance voor Download Services beschrijft hoe pre-defined datasets via Atom gepubliceerd kunnen worden, om te voldoen aan de Implementing Rule voor Download Services. Globaal komt het erop neer dat de downloadservice via enkele Atom-feeds wordt beschreven en de downloadlocaties aanbiedt van de bestanden om gehele datasets of delen daarvan te downloaden. Atom feeds van een Pre-defined dataset bevat daarvoor (onder andere):
+De <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services</a>  beschrijft hoe datasets via Atom gepubliceerd kunnen worden, om te voldoen aan de Implementing Rule voor Download Services. Globaal komt het erop neer dat de downloadservice via enkele Atom-feeds wordt beschreven en de downloadlocaties aanbiedt van de bestanden om gehele datasets of delen daarvan te downloaden. Atom feeds van een  dataset bevat daarvoor (onder andere):
 1. gegevens over de aanbieder van de downloadservice. Deze gegevens staan in de *Atom Service feed*;
 2. algemene gegevens over de downloadservice, zoals een id, locatie en de datum van laatste wijzigingen en copyrights en verwijzingen naar de Atom Dataset Feeds. Ook deze gegevens staan in de Atom Service feed.
 3. per dataset, of deel van een dataset: beschrijvende gegevens, zoals een titel, beknopte samenvatting, copyrights en andere rechten, het CRS, het geografisch gebied van de data en verwijzingen (URL) naar de data zelf. Deze gegevens staan in de *Atom Dataset feed(s)*;
 4. indien van toepassing: verwijzingen naar feeds in een andere taal (meertaligheid INSPIRE).
 5. verwijzingen naar <a href="https://www.opensearch.org/" target="_blank">OpenSearch-functionaliteit</a> om de feeds te kunnen doorzoeken. Deze gegevens staan in de Atom Service feed;
 
-De afbeelding hieronder geeft de samenhang van de feeds weer voor pre-defined datasets, die als (statisch) bestand te downloaden zijn van een standaard webserver.
+Door gebruik te maken van de Atom-ondersteuning voor andere talen, wordt automatisch voldaan aan de eisen van INSPIRE voor meertaligheid van de service.
+
+De afbeelding hieronder geeft de samenhang van de feeds weer voor datasets, die als (statisch) bestand te downloaden zijn van een standaard webserver.
 
 ![atom](media/Atom_feeds_overview.png "Overview van atomfeeds.")
 
@@ -814,9 +812,6 @@ Een dataset feed bevat tenminste een entry van een dataset om te downloaden. Elk
 | georss | | | Nee | Het gebied waar de dataset betrekking op heeft, uitgedrukt met bijvoorbeeld een boundingbox. De geometrie wordt opgegeven conform GeoRSS(-Simple). De coordinaten staan in latitude/longitude conform WGS84. |
 | category | CRSen | Well-known definitie van het CRS (attribuut term) en eventueel het label voor de leesbare toelichting. | Ja | CRSen waarin de dataset feed de data aanbiedt. |
 
-#### Meertaligheid
-
-Door gebruik te maken van de Atom-ondersteuning voor andere talen, wordt automatisch voldaan aan de eisen van INSPIRE voor meertaligheid van de service.
 
 #### OpenSearch
 
@@ -840,17 +835,14 @@ De samenhang van de onderdelen van een ATOM Download Service is weergegeven in o
 
 ![atom_componenten](media/atom_componenten.png "Componenten van de ATOM downloadservice.")
 
-##### Aandachtspunten
+**Aandachtspunten**
 
 - **Let op met identifiers van de bron van de dataset**. Het NGR doet de aanname dat de identifier van de bron van de dataset uniek is in NGR voor de dataset-metadata-records (oftewel: beschreven is in één dataset-metadata-record). Dit heeft te maken met de interne werking en controles om tot een geldige OpenSearchDescription te komen. Als er meerdere dataset-metadata-records voorkomen in NGR met dezelfde dataset-identifier, dan kan het zijn dat de OpenSearchDescription niet volledig opgebouwd wordt. Een dataprovider dient dan zelf zorg te dragen voor de OpenSearchDescription.
 - **Volgende dag beschikbaar**. Punten 1 t/m 3 hierboven zijn nodig voor NGR om een OpenSearch Description te kunnen genereren. Het NGR moet daarvoor de feeds en metadata ophalen en analyseren. Dit gebeurt dagelijks. Een OpenSearch Description is dus niet gelijk beschikbaar, maar doorgaans wel de volgende dag.
 - **Hoofdlettergebruik**. Het is essentieel voor de werking dat links en identifiers exact kloppen en dat codes exact overeenkomen met codes uit de codelijsten. Dit is inclusief het gebruik van hoofdletters. Let daar dus op, vooral bij handmatige wijzigingen in XML bestanden.
 
 
-### WFS pre-defined
-
-
-**Web Feature Service en Filter Encoding implementatie van een Pre-defined Dataset Download Service**
+### WFS
 
 Een dataset kan ook via Web Feature Services in zijn geheel gedownload worden. De gebruiker (client) kan via het WFS-protocol gegevens downloaden, maar kan nog niet uitgebreid filters / eigen selecties toepassen. Voor deze methode hoeft een Web Feature Service maar een beperkt deel van de volledige WFS-standaard te ondersteunen. Deze vorm is een opstap naar een volledige Direct Access implementatie met Web Feature Services.
 
