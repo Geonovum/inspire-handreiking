@@ -702,15 +702,12 @@ De downloadservice (of downloaddienst) heeft als functie de gegevens die via de 
 
 Afhankelijk van het type gegevens of de voorkeuren van een dataprovider, bepaald de dataprovider het type service. In de volgende paragrafen worden de verschillende download service implementaties behandeld. 
 
-Voor een WFS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.1</a> van toepassing
-
-### Downloadservice implementaties
-De <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">Technical Guidances</a> en de <a href="https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02009R0976-20101228" target="_blank">Commission Regulation amending Regulation (EC) No 976/2009 as regards download services and transformation service</a> zijn de huidig geldige documenten die downloadservices en de eisen eraan beschrijven. De Commission Regulation is de wettekst die aangeeft welke downloadservices moeten en mogen worden aangeboden binnen INSPIRE. De Technical Guidance geeft richtlijnen hoe deze services conform de Implementing Rule moeten worden toegepast.
 
 
 
+### Atom feed
 
-1. **Atom-implementatie van een Pre-defined Dataset Download Service**
+**Atom-implementatie van een Pre-defined Dataset Download Service**
 
 Dit betreft een dataset die in zijn geheel (als één bestand) gedownload kan worden, zonder dat er een selectie van de dataset gemaakt wordt door de client. Met andere woorden: de data is van te voren klaargezet. Het bestand mag gecomprimeerd worden. Met *predefined part* van een dataset wordt bedoeld dat er met deze download een geografisch deel van een INSPIRE-thema geleverd kan worden. Het hoeft dus niet altijd een download van de dataset voor heel Nederland te zijn, maar het kan bijvoorbeeld ook een download per provincie of ander deelgebied zijn. De aanbieder bepaalt hoe de dataset opgedeeld wordt; de client kan geen eigen selecties / filters toepassen.
 
@@ -719,55 +716,8 @@ Kenmerken zijn:
 - De Atomfeed beschrijft waar de data te downloaden is, op welke datum die gepubliceerd is en legt relaties met metadata-records.
 - De pre-defined dataset kent een metadata-record dat via de discovery service gevonden kan worden.
 
-Een nadere toelichting op deze methode is [hier te vinden](#atom-feed).
 
-2. **Web Feature Service en Filter Encoding implementatie van een Pre-defined Dataset Download Service**
 
-Een dataset kan ook via Web Feature Services in zijn geheel gedownload worden. De gebruiker (client) kan via het WFS-protocol gegevens downloaden, maar kan nog niet uitgebreid filters / eigen selecties toepassen. Voor deze methode hoeft een Web Feature Service maar een beperkt deel van de volledige WFS-standaard te ondersteunen. Deze vorm is een opstap naar een volledige Direct Access implementatie met Web Feature Services.
-
-Kenmerken zijn:
-- Een Web Feature Service (WFS) op basis van ISO DIS 19142 Geographic Information – Web Feature Service, ook wel WFS 2.0.
-- Downloaden van gehele dataset of voorgedefinieerd deel ervan.
-- Beperkte query-mogelijkheid.
-- Requests via HTTP GET.
-
-Een nadere toelichting op deze methode is [hier te vinden](#wfs-pre-defined).
-
-![wfs](media/Wfs.png "Interactie tussen een client en een basic WFS.")
-
-3. **Web Feature Service en Filter Encoding implementatie van Direct Access Download Service**
-
-Met de direct access download is het mogelijk om meer controle over de download te krijgen, dan bij de pre-defined download het geval is. Zo kunnen er downloads samengesteld worden op basis van een ruimtelijke query, of op basis van een query naar attribuutinformatie.
-
-Kenmerken zijn:
-- Een Web Feature Service (WFS) op basis van ISO DIS 19142 Geographic Information – Web Feature Service, ook wel WFS 2.0.
-- De functionaliteit van een Pre-defined dataset Download Service via WFS (zie hierboven), uitgebreid met ondersteuning voor:
-	- "Ad Hoc Query" op basis van Filter encoding (ISO 19143, Filter encoding 2.0).
-	- Standaard, ruimtelijke en temporele filters.
-	- XPath (voor opvragen geneste attributen zoals adres.plaats.straat.nummer)
-	- Enkele Stored Queries, bijvoorbeeld om datasets in een ander Coördinaat Referentie Stelsel (CRS) op te vragen.
-
-Een nadere toelichting op deze methode is [hier te vinden](#wfs-direct-access).
-
-##### Rasterdata
-Vanaf 16 december 2016 is er een [Technical Guidance](https://inspire.ec.europa.eu/id/document/tg/download-wcs) om coverage-data via Web Coverage Services te publiceren. Deze Technical Guidance neemt de OGC WCS 2.0 specificatie als basis voor een downloadservice. De INSPIRE-operaties worden gemapped op de WCS-operaties. Daarnaast worden aanvullende eisen gesteld, over onder andere:
-- de te gebruiken (metadata) elementen in het Capabilities-document;
-- ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities;
-- hoe Direct Access in te vullen via de processing extension van WCS;
-- Quality of Service voor de verschillende operaties.
-
-Een nadere toelichting op deze methode is [hier te vinden](#wcs).
-
-##### Sensordata
-Vanaf 16 december 2016 is er ook een <a href="https://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance</a> om sensordata via Sensor Observation Services te publiceren. Deze Technical Guidance neemt de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding als basis voor een downloadservice. De INSPIR- operaties worden gemapped op de SOS-operaties en de Filter encoding-classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
-- de te gebruiken (metadata) elementen in het Capabilitiesdocument;
-- ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities;
-- gebruik van de GetObservationByID opeartie om Direct Access in te vullen;
-- Quality of Service voor de verschillende operaties.
-
-Een nadere toelichting op deze methode is [hier te vinden](#sos).
-
-### Atom feed
 De <a href="https://tools.ietf.org/html/rfc4287" target="_blank">Atom-standaard</a> is een (voorgestelde) standaard van IETF, the <a href="https://www.ietf.org/" target="_blank">Internet Engineering Task Force</a>. Atom is een XML-formaat om (op internet beschikbare) informatie te publiceren in feeds. Deze feeds bevatten vaak een algemeen deel en verscheidene items. Zo'n item (entry) bestaat uit elementen die de informatie beschrijven en ernaar verwijzen. Items kunnen bijvoorbeeld nieuwsberichten zijn, weblog-posts of gepubliceerde video's.
 
 De <a href="https://www.ogc.org/standards/georss" target="_blank">GeoRSS-specificatie</a> breidt feeds uit met elementen om de geografische eigenschappen van gegevens te publiceren. Dit is bijvoorbeeld een puntlocatie of bounding box van het gebied waar de gegevens betrekking op hebben.
@@ -897,6 +847,20 @@ De samenhang van de onderdelen van een ATOM Download Service is weergegeven in o
 
 ### WFS pre-defined
 
+
+**Web Feature Service en Filter Encoding implementatie van een Pre-defined Dataset Download Service**
+
+Een dataset kan ook via Web Feature Services in zijn geheel gedownload worden. De gebruiker (client) kan via het WFS-protocol gegevens downloaden, maar kan nog niet uitgebreid filters / eigen selecties toepassen. Voor deze methode hoeft een Web Feature Service maar een beperkt deel van de volledige WFS-standaard te ondersteunen. Deze vorm is een opstap naar een volledige Direct Access implementatie met Web Feature Services.
+
+Kenmerken zijn:
+- Een Web Feature Service (WFS) op basis van ISO DIS 19142 Geographic Information – Web Feature Service, ook wel WFS 2.0.
+- Downloaden van gehele dataset of voorgedefinieerd deel ervan.
+- Beperkte query-mogelijkheid.
+- Requests via HTTP GET.
+
+
+![wfs](media/Wfs.png "Interactie tussen een client en een basic WFS.")
+
 De Technical Guidance beschrijft in hoofdstuk 6 hoe een Download service voor Pre-defined datasets geïmplementeerd kan worden met een Web Feature Service en Filter Encoding.
 Het GetCapabilities request geeft een vergelijkbare Capabilities file op als bij de WMS, op enkele specifieke WMS onderdelen na. Het wordt daarom in deze paragraaf niet zo uitgebreid beschreven als in dat van de WMS.
 
@@ -927,6 +891,9 @@ De Technical Guidance bevat de eisen die INSPIRE stelt aan een dergelijke WFS:
 - voldoen aan de conformance class Query uit FE 2.0. De WFS is in staat een query uit te voeren (zoals de stored query GetFeatureById).
 - ondersteuning van Stored Queries om de pre-defined datasets om alle mogelijke combinaties van het CRS, een dataset (via de dataset ID) en de taal terug te geven. De WFS moet hiervoor Stored Queries aanbieden.
 
+
+Voor een WFS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.1</a> van toepassing
+
 ##### Stored queries
 
 Stored Queries zijn een nieuw mechanisme in WFS 2.0. Hiermee worden een soort query-templates aangeboden, waarmee een client niet een geheel filter hoeft op te stellen, maar alleen enkele van te voren opgegeven parameters hoeft te specificeren. WFS-requests worden hier eenvoudiger van. Een service kan hiermee een soort FAQs aanbieden van WFS-requests, die voor een client makkelijk te gebruiken zijn. Bijvoorbeeld requests om op basis van een typering (categorie) een dataset te bevragen.
@@ -955,6 +922,21 @@ Naast de eisen doet de Technical Guidance de volgende aanbevelingen, voor het ge
 
 ### WFS direct access
 
+
+**Web Feature Service en Filter Encoding implementatie van Direct Access Download Service**
+
+Met de direct access download is het mogelijk om meer controle over de download te krijgen, dan bij de pre-defined download het geval is. Zo kunnen er downloads samengesteld worden op basis van een ruimtelijke query, of op basis van een query naar attribuutinformatie.
+
+Kenmerken zijn:
+- Een Web Feature Service (WFS) op basis van ISO DIS 19142 Geographic Information – Web Feature Service, ook wel WFS 2.0.
+- De functionaliteit van een Pre-defined dataset Download Service via WFS (zie hierboven), uitgebreid met ondersteuning voor:
+	- "Ad Hoc Query" op basis van Filter encoding (ISO 19143, Filter encoding 2.0).
+	- Standaard, ruimtelijke en temporele filters.
+	- XPath (voor opvragen geneste attributen zoals adres.plaats.straat.nummer)
+	- Enkele Stored Queries, bijvoorbeeld om datasets in een ander Coördinaat Referentie Stelsel (CRS) op te vragen.
+
+
+
 De Technical Guidance beschrijft in hoofdstuk 7 hoe een Download service voor Direct Access geïmplementeerd kan worden met een Web Feature Service en Filter Encoding. Een dergelijke Web Feature Service biedt uitgebreide filtermogelijkheden op INSPIRE-datasets, zodat gebruikers de selecties kunnen maken en downloaden die ze zelf wensen.
 
 Het aanbieden van Direct Access Download Service via een Web Feature Service is een methode om aan de eisen uit de Implementing Rule te kunnen voldoen. Een dergelijke WFS stelt een gebruiker in staat om, in aanvulling op alles wat een [Pre-defined datasets Download Service via WFS](#wfs-pre-defined) biedt, eigen selecties te maken van de data en dat direct te gebruiken (of downloaden). Bijvoorbeeld door selecties te maken met ruimtelijke, temporele en administratieve filters. Een dergelijke Download service biedt de meeste funtionaliteit aan een gebruiker en maakt het mogelijk om alleen die data op te vragen (en versturen) die nodig is, in plaats van gehele datasets. Dit kan vooral bij grote datasets en/of dynamische datasets erg belangrijk zijn.
@@ -979,6 +961,15 @@ Het profiel bevat ook een aparte bijlage met de zaken die INSPIRE nog extra vere
 
 ### WCS
 
+
+Vanaf 16 december 2016 is er een [Technical Guidance](https://inspire.ec.europa.eu/id/document/tg/download-wcs) om coverage-data via Web Coverage Services te publiceren. Deze Technical Guidance neemt de OGC WCS 2.0 specificatie als basis voor een downloadservice. De INSPIRE-operaties worden gemapped op de WCS-operaties. Daarnaast worden aanvullende eisen gesteld, over onder andere:
+- de te gebruiken (metadata) elementen in het Capabilities-document;
+- ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities;
+- hoe Direct Access in te vullen via de processing extension van WCS;
+- Quality of Service voor de verschillende operaties.
+
+
+
 Vanaf 16 december 2016 is er een <a href="https://inspire.ec.europa.eu/id/document/tg/download-wcs" target="_blank">Technical Guidance WCS</a> om coverage data via Web Coverage Services te publiceren. Deze Technical Guidance neemt als basis voor een Download service de OGC WCS 2.0 specificatie. De INSPIRE-operaties worden gemapped op de WCS-operaties. Daarnaast worden aanvullende eisen gesteld, over onder andere:
 - de te gebruiken (metadata)-elementen in het Capabilities-document
 - ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities
@@ -986,6 +977,17 @@ Vanaf 16 december 2016 is er een <a href="https://inspire.ec.europa.eu/id/docume
 - Quality of Service voor de verschillende operaties.
 
 ### SOS
+
+
+
+##### Sensordata
+Vanaf 16 december 2016 is er ook een <a href="https://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance</a> om sensordata via Sensor Observation Services te publiceren. Deze Technical Guidance neemt de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding als basis voor een downloadservice. De INSPIR- operaties worden gemapped op de SOS-operaties en de Filter encoding-classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
+- de te gebruiken (metadata) elementen in het Capabilitiesdocument;
+- ondersteuning van de INSPIRE Extended Capabilities, o.a. voor talen in de Capabilities;
+- gebruik van de GetObservationByID opeartie om Direct Access in te vullen;
+- Quality of Service voor de verschillende operaties.
+
+Een nadere toelichting op deze methode is [hier te vinden](#sos).
 
 Vanaf 16 december 2016 is er ook een <a href="http://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance SOS</a> om sensor data via Sensor Observation Services te publiceren. Deze Technical Guidance neemt als basis voor een Download service de OGC specificaties voor Sensor Observation Service en ISO 19143 Filter Encoding. De INSPIRE operaties worden gemapped op de SOS operaties en de Filter encoding classes. Daarnaast worden aanvullende eisen gesteld, over onder andere:
 - de te gebruiken (metadata) elementen in het Capabilitiesdocument
