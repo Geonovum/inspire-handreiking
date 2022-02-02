@@ -2,7 +2,7 @@
 
 In dit deel van de handreiking worden de verschillende electronische diensten (services) behandeld, waarmee de INSPIRE plichtige dataproviders hun data kunnen ontsluiten. Omdat  deze services ruimtelijke data ontsluiten, worden ze ook wel Spatial Data Services genoemd en vertaald als “diensten met betrekking tot ruimtelijke gegevens”. Er zijn verschillende soorten Spatial Data Services, die ieder afzonderlijk behandeld worden.
 
-## Spatial Data Services
+## Soorten patial Data Services
 
 Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. De INSPIRE network services, zijn ook Spatial Data Services, waarvoor verdere specificaties van de service zijn opgesteld.
 
@@ -32,12 +32,12 @@ Het bovenstaande figuur valt uiteen in een aantal services:
 **Transformation services / Verwerkingsdienst** network service
 - Dit is een ondersteunende service die de andere services helpt met het bereiken van de beoogde consistentie en conformiteit van INSPIRE, bijvoorbeeld door schema translatie of coördinaten translatie
 
-**Spatial Data Services **
-- De Spatial Data Servies  ontlsuiten ten minste één INSPIRE dataset, maar kunnen hele andere specificaties hebben, die buiten de INSPIRE community tot stand zijn gekomen.
+**Spatial Data Services**
+- De Spatial Data Servies ontlsuiten ten minste één INSPIRE dataset, maar kunnen hele andere specificaties hebben, die buiten de INSPIRE community tot stand zijn gekomen.
 - De specificatie van de service moet wel zijn vastgelgd en in de metadata beschreven. 
 - Deze diensten zijn verder in te delen als invocable, interoperable en harmonised.
 
-**Other services **
+**Other Spatial Data Services**
 - De Spatial Data Servies ontlsuiten wel ruimteliijke data, maar geen INSPIRE data, of ze voldoen niet aan de vereiste dat er een specificatie van de service is.
 
 ## Network services
@@ -137,47 +137,15 @@ INSPIRE definieert *Quality of services* (QoS), de eisen omtrent het kwaliteitsb
 | <a href="https://inspire.ec.europa.eu/reports/ImplementingRules/network/D3_5_INSPIRE_NS_Architecture_v3-0.pdf" target="_blank">Network Services Architecture (Version 3.0)</a> | 3.0 | 30-09-2008 |
 | [Implementing Rules en Technical Guidances van de network services](#wetgeving) | | verschillende |
 
-### Rights management layer
-De richtlijn schrijft voor dat de i.h.k.v. INSPIRE aangeboden diensten in principe gratis moeten zijn. Echter geeft de richtlijn ook aan dat er (publieke) instellingen zijn die – vanwege de hoge datavolumes en update-frequenties – kosten in rekening mogen brengen om de service te kunnen waarborgen. Dat houdt in dat er een mogelijkheid moet zijn om de toegang tot services en data te beperken – de Rights Management (RM)-layer.
+### Rights management
+De richtlijn schrijft voor dat de INSPIRE diensten in principe gratis moeten zijn. Echter geeft de richtlijn ook aan dat er (publieke) instellingen zijn die – vanwege de hoge datavolumes en update-frequenties – kosten in rekening mogen brengen om de service te kunnen waarborgen. Dat houdt in dat er een mogelijkheid moet zijn om de toegang tot services en data te beperken.
 
-De RM architectuur-laag wordt in [deze afbeelding](#network-services) weergegeven met de term ‘toegangsrechten’ en wordt tussen de servicebus en de netwerkdiensten gepositioneerd. De RM-layer is geïntroduceerd om juridische rechten tussen INSPIRE en andere applicaties te kunnen begeleiden, controleren en beperken. In feite houdt dit in dat er mogelijke restricties komen tussen enerzijds de dataprovider met haar data en services, en anderzijds de gebruiker.
-
-Er is geen Implementing Rule voor deze RM-layer dienst beschikbaar en deze wordt ook niet verwacht. Er wordt in de INSPIRE-documentatie verwezen naar GeoDRM (ISO 19153) als een kandidaat-standaard voor de RM-layer <a href="https://www.iso.org/standard/32571.html" target="_blank">ISO 19153</a> is in 2014 gepubliceerd.
-
-#### Typen restricties
-- Private Access Terms: INSPIRE-service is toegankelijk maar de ruimtelijke data kan niet ge-redistribueerd worden.
-- Public Access Terms: INSPIRE-service is toegankelijk, en de ruimtelijke data mag voor niet-commerciele doeleinden ge-redistribueerd worden.
-- Commercial Access Terms: INSPIRE-service is toegankelijk onder commerciele voorwaarden; eCommerce.
-- Emergency Access Terms: INSPIRE-service is in noodgevallen toegankelijk; alleen het gebruik wordt gelogd.
-
-#### RM-implementatie
 Bij het implementeren van het Rights Management is het van belang dat er door de dataproviders rekening wordt gehouden met de metadata. Verschillende niveaus zijn van belang:
 - Provider moet per layer van een view-service het Rights Management vaststellen.
-- Metadata voor services moet altijd toegankelijk zijn; ook voor services met beperkte toegang. Op deze manier blijft de service wel vindbaar in het GeoPortaal NGR.
-- De metadata moet de toegangsbeperkingen en – in het geval van eCommerce – het honorarium bevatten.
-- De implementatie van het authenticeren varieert van (a) elke dataprovider gebruikt haar eigen mechanisme tot (b) alle INSPIRE-services gebruiken hetzelfde identificatie-mechanisme. In het laatste geval is er maar één login-credential nodig.
+- Metadata voor services moet altijd toegankelijk zijn; ook voor services met beperkte toegang. Op deze manier blijft de service wel vindbaar in het NGR.
+- De metadata moet voorwaarden voor toegang en gebruik en de voorwaarden voor beperkingen op publieke toegang  en – in het geval van eCommerce – het honorarium bevatten.
 
-#### Agree operation
-Met betrekking tot OGC-webservices zijn een aanatal specifieke operaties van toepassing. Er wordt meestal gesproken van het zogenaamde *publish-find-bind*-patroon. Dat is in verband met de RM-layer voor INSPIRE onvoldoende. Het publish-find-bind patroon wordt hierop aangevuld met een *agree*-stap. Onder worden alle stappen kort omschreven:
-- **Publish**: waarbij een dataprovider ruimtelijke data of een service ‘publiceert’ en zo via een register toegankelijk maakt voor een gebruiker.
-- **Find**: waarbij een gebruiker services zoekt / ontdekt; vaak via een portaal die het register van metadata doorzoekt. De NGR-catalogus is hier de voor de gebruiker relevante ‘voorkant’ van. De discovery service is de dienst die aan de achterkant het werk doet en met de resultaten komt.
-- **Agree**: In onderstaand figuur is te zien dat het normale publish-find-bind patroon vervangen wordt door een patroon met een extra stap. Vanwege het Right Management is het noodzakelijk om vόόr het binden een ‘Agree’-stap te hebben op basis waarvan al dan niet de toegang verschaft wordt.
-	- De *provider* publiceert bepaalde data met behulp van een webserice. De RM-layer is ook bij de provider geïmplementeerd.
-	- De *user* zoekt via een catalogue-service (hier niet afgebeeld) en vindt een of meerdere services. Wanneer de user naar deze service gaat, zorgt de RM-layer voor de verschaffing van toegang tot de service, waarna pas de *bind* plaatsvindt en de gevonden data bekeken kan worden. Wanneer de toegang niet verschaft wordt (bv, geen credits / niet geautoriseerd), stuurt de RM-layer de user weer terug naar de vorige stap.
-- **Bind**: wanneer een service aangeroepen wordt, bindt de client van de consument zich aan de betreffende dienst. Hierop volgen weer een aantal verplichte operations.
-
-![pfab](media/pfab.png "Publish, find, agree, bind.")
-
-De agree-stap zal ook met specifieke RM-services afgehandeld worden, zodat toegang tussen consumer en provider algemeen en op iedereen toepasbaar is. De service-laag bestaat op haar beurt ook uit verschillende onderdelen, waaronder authenticatie en authorisatie, het afhandelen van de toegangsvoorwaarden (licensing), en wellicht eCommerce van/voor externe diensten. Het afhandelen van de toegang gebeurt op basis van een INSPIRE-specifieke tag, de rightsManagementKey.
-
-#### RM en GeoGedeeld
-GeoGedeeld beschrijft de voorwaarden voor het kunnen (her)gebruiken van datasets. De RM-layer controleert toegang tot netwerkdiensten. RM en GG liggen in elkaars verlengde en worden dus op verschillend niveau toegepast.
-
-Het is denkbaar dat via een geoportaal (zoals het NGR) ruimtelijke data gevonden wordt die via een service wordt aangeboden waarvoor geen beperkingen gelden. Dat neemt niet weg dat de data die via netwerkdiensten bv. ter download aangeboden worden, zelf nog steeds gebonden kan zijn aan specifieke gebruikersvoorwaarden die middels GeoGedeeld gedefineerd zijn. Deze GeoGedeeld-keuzes zijn vervolgens in de metadata van de dataset terug te lezen.
-
-Onderstaand figuur geeft de 'evolutie' van het Rights Management aan. Het 'copyright' (auteursrecht) is in de Geo-ICT werled minder goed toepasbaar; het wordt van oudsher voor analoge werken gebruikt. Het is opgevolgd door Creative Commons (en, in het verlengde hiervan: GeoGedeeld). Dit was een van de eerste licentievormen die (ook) voor digitale werken gebruikt kan worden (minder 'static' content). Het RM gaat nog een stap verder en voorziet in licentievormen en techniek om ook de toegang tot het werk dynamisch in te richten.
-
-![RM-GG](media/Licence.png "Rights management.")
+De Rights management controleert toegang tot netwerkdiensten en wordt dus op een ander niveau toegepast.
 
 ## View service
 De viewservice (of raadpleegdienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen bekijken en beoordelen. Hiertoe dient de dataprovider de INSPIRE-thema’s met een viewservice te ontsluiten. De viewservice heeft uitdrukkelijk niet de functie om ‘mooie kaartbeelden’ te maken. Het gaat om een rudimentaire inspectie en beoordeling van de INSPIRE-conforme datasets die via een de viewservice ontsloten worden. Dit omvat onder andere:
