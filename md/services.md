@@ -117,14 +117,6 @@ INSPIRE definieert *Quality of services* (QoS), de eisen omtrent het kwaliteitsb
 - Voor performance wordt naar de Technical Guidances verwezen. Op moment van schrijven (juni 2010) is alleen de TG van Coordinate Transformations beschikbaar (in versie 2.1).
 - Voor capacity worden verschillende criteria gegeven. In de Guidance staat 5 requests per seconde, in de Implementing Rule wordt 10 requests per seconde gegeven. IR is normatief, dus wordt het 10/s .
 
-#### Documentatie QoS
-
-| Titel | Versie | Datum |
-|-----------------|-------------|-------------|
-| <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02009R0976-20141231" target="_blank">Regulation on INSPIRE Network Services</a> | adopted | 32-12-2014 |
-| <a href="https://inspire.ec.europa.eu/reports/ImplementingRules/network/D3_5_INSPIRE_NS_Architecture_v3-0.pdf" target="_blank">Network Services Architecture (Version 3.0)</a> | 3.0 | 30-09-2008 |
-| [Implementing Rules en Technical Guidances van de network services](#wetgeving) | | verschillende |
-
 ### Rights management
 De richtlijn schrijft voor dat de INSPIRE diensten in principe gratis moeten zijn. Echter geeft de richtlijn ook aan dat er (publieke) instellingen zijn die – vanwege de hoge datavolumes en update-frequenties – kosten in rekening mogen brengen om de service te kunnen waarborgen. Dat houdt in dat er een mogelijkheid moet zijn om de toegang tot services en data te beperken.
 
