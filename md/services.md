@@ -726,17 +726,6 @@ De <a href="https://tools.ietf.org/html/rfc4287" target="_blank">Atom-standaard<
 
 De <a href="https://www.ogc.org/standards/georss" target="_blank">GeoRSS-specificatie</a> breidt feeds uit met elementen om de geografische eigenschappen van gegevens te publiceren. Dit is bijvoorbeeld een puntlocatie of bounding box van het gebied waar de gegevens betrekking op hebben.
 
-### Vereisten Atom feeds
-
-De <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services</a>  beschrijft hoe datasets via Atom gepubliceerd kunnen worden, om te voldoen aan de Implementing Rule voor Download Services. Globaal komt het erop neer dat de downloadservice via enkele Atom-feeds wordt beschreven en de downloadlocaties aanbiedt van de bestanden om gehele datasets of delen daarvan te downloaden. Atom feeds van een  dataset bevat daarvoor (onder andere):
-1. gegevens over de aanbieder van de downloadservice. Deze gegevens staan in de *Atom Service feed*;
-2. algemene gegevens over de downloadservice, zoals een id, locatie en de datum van laatste wijzigingen en copyrights en verwijzingen naar de Atom Dataset Feeds. Ook deze gegevens staan in de Atom Service feed.
-3. per dataset, of deel van een dataset: beschrijvende gegevens, zoals een titel, beknopte samenvatting, copyrights en andere rechten, het CRS, het geografisch gebied van de data en verwijzingen (URL) naar de data zelf. Deze gegevens staan in de *Atom Dataset feed(s)*;
-4. indien van toepassing: verwijzingen naar feeds in een andere taal (meertaligheid INSPIRE).
-5. verwijzingen naar <a href="https://www.opensearch.org/" target="_blank">OpenSearch-functionaliteit</a> om de feeds te kunnen doorzoeken. Deze gegevens staan in de Atom Service feed;
-
-Door gebruik te maken van de Atom-ondersteuning voor andere talen, wordt automatisch voldaan aan de eisen van INSPIRE voor meertaligheid van de service.
-
 De afbeelding hieronder geeft de samenhang van de feeds weer voor datasets, die als (statisch) bestand te downloaden zijn van een standaard webserver.
 
 ![atom](media/Atom_feeds_overview.png "Overview van atomfeeds.")
@@ -744,6 +733,7 @@ De afbeelding hieronder geeft de samenhang van de feeds weer voor datasets, die 
 Een Atom service feed kan naar meerdere Atom Dataset feeds verwijzen. Een Dataset feed kan vervolgens per combinatie van CRS, taal en formaat naar meerdere bestanden wijzen. Zie de afbeeldingen hieronder.
 
 ![atom_structuur](media/Atom_feeds_structuur.png "Structuur van atomfeeds.")
+
 
 Enkele genoemde voor- en nadelen van Atom zijn:
 
@@ -754,72 +744,20 @@ Voordelen:
 
 Nadelen:
 - niet standaard ondersteuning voor in geo-software;
-- zoals nu gebruikt in de TG: veel overlap met ISO-metadata;
+- veel overlap met ISO-metadata;
 - zoals nu beschreven: mogelijkerwijs zijn veel feeds nodig om op te stellen.
 
-#### Elementen service feed
+### Vereisten Atom feeds
 
-De onderstaande tabel bevat een overzicht van de elementen van een Atom-feed, zoals de Technical Guidance die beschrijft en die van toepassing zijn op de gehele feed. Het betreft geen volledige opsomming van alle details, zie daarvoor de Technical Guidance zelf.
-
-| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
-| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
-| title | | Taal (xml:lang) | Ja | Een voor mensen leesbare titel van de feed als geheel, m.a.w. van de Download Service, inclusief opgave van de taal van dit element. |
-| subtitle | | Taal (xml:lang) | Nee | Een voor mensen leesbare subtitel, met extra toelichting over de feed als geheel, inclusief opgave van de taal van dit element. |
-| link | service metadata | Soort link (rel="describedby"), Type (type="application/xml") | Ja | Link naar de metadata record van deze download service in de discovery service. | 
-| link | zelf referentie | Soort link (rel="self"), Taal (hreflang="en"), Titel (title="Title of this document"), Type (type="application/atom+xml") | Ja | Verwijzing naar de URL van de feed zelf. Dit is een vereiste van Atom en is bijvoorbeeld handig als een feed lokaal wordt opgeslagen of gekopieerd, dan is de oorspronkelijke (online) locatie van de feed via deze link nog te achterhalen.
-| link | alternatieve talen | Soort link (rel="alternate"), Type (bijv. type="text/html"), Alternatieve taal (bijv. hreflang="de"), Titel (bijv. title="An HTML version of this document in German") | Verplicht als er meerdere talen van de Download Service zijn | Als een Download Service ook in andere talen beschikbaar is, dient deze link opgenomen te worden en te verwijzen naar de feed in de andere talen.
-| link | OpenSearch document | Soort link (rel="search"), Type (bijv. type="application/opensearchdescription+xml"), Taal (bijv. hreflang="en") | Verwijst naar een OpenSearch description van de Download Service. | |
-| link | alternatieve formaten | Soort link (rel="alternate"), Type (bijv. type="text/html"), Titel (bijv. title="An HTML version of this document") | Nee | Dit gaat om alternatieve formaten van de feed zelf, dus niet van de datasets. Bijvoorbeeld als er een website is over de Download Service. |
-| id | | | Ja | Dit is de identifier van de feed. De waarde dient een URI te zijn, aanbevolen is de URI van de feed te gebruiken. |
-| rights | | | Ja | Informatie over de rechten en restricties die gelden voor de feed. Vaak komt dit overeen met de waarde voor 'accessConstraints' in de overeenkomstige service metadata record. Individuele entries in de feed kunnen ook hun eigen rechten en restricties hebben. |
-| updated | | | Ja | Datum en tijd van de laatste wijzgingen van de feed. |
-| author | | Contactinformatie over de feed, Name en email | Ja | Het kan contactinformatie zijn van een individu of een organisatie die verantwoordelijke is voor de feed. Tenminste moet een naam en e-mailadres worden verstrekt. |
-
-#### Elementen entry service feed
-
-Voor elke Dataset feed, dient de Atom Service feed een entry-element te bevatten. Voor elk entry-element zijn de volgende subelementen beschikbaar:
-
-| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
-| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
-| INSPIRE dataset identifier | INSPIRE elementen | INSPIRE custom elementen, spatial_dataset_identifier_code, spatial_dataset_identifier_namespace | Ja | Verwijzingen naar de INSPIRE dataset identifier code en namespace. De XML elementen zijn door INSPIRE specifiek voor Download Services gedefinieerd. |
-| title | | Taal (xml:lang) | Ja | Een voor mensen leesbare titel van de entry, m.a.w. van de dataset (of deel daarvan), inclusief opgave van de taal van dit element |
-| link | Metadata | Soort link (rel="describedby" en type="application/xml") | Ja | Link naar het metadata record van de dataset |
-| link | Dataset feed | Soort link (rel="alternate" en type="application/atom+xml") | Ja | Link naar de Atom dataset feed horend bij de dataset van de entry. |
-| subtitle | | Taal (xml:lang) | Nee | Een voor mensen leesbare subtitel, met extra toelichting over de entry, inclusief opgave van de taal van dit element |
-| id | | | Ja | Dit is de identifier van de datasets. De waarde dient een URI te zijn, aanbevolen is de URL van de dataset te gebruiken, dus dezelfde URL als in het href-attribuut van de link van de dataset. |
-| rights | | | Nee | Informatie over de rechten en restricties die gelden voor de entry. Indien dit niet opgegeven is, geldt de informatie zoals opgegeven bij de rights van de gehele feed. |
-| updated | | | Ja | Datum en tijd van de laatste wijzgingen van de feed |
-| author | | Contactinformatie over de dataset, Name en email | Nee | Gegevens voor contact over de datasets. Naam en emailadres zijn, op basis van de INSPIRE Metadata IR, minimaal vereist. Indien dit niet opgegeven is, geldt de informatie zoals opgegeven bij de rights van de gehele feed. |
-| georss | | | Nee | Het gebied waar de dataset betrekking op heeft, uitgedrukt met bijvoorbeeld een boundingbox. De geometrie wordt opgegeven conform GeoRSS(-Simple). De coordinaten staan in latitude/longitude  conform WGS84. |
-| category | CRSen | Well-known definitie van het CRS (attribuut term) en eventueel het label voor de leesbare toelichting. | Ja | CRSen waarin de dataset feed de data aanbiedt. |
-
-#### Elementen dataset feed
-
-Dataset feeds bevatten de informatie om de bestanden daadwerkelijk te kunnen downloaden. Dataset feeds bevatten de onderstaande elementen.
-
-| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
-| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
-| title | | Taal (xml:lang) | Ja | Een voor mensen leesbare titel van de dataset feed, inclusief opgave van de taal van dit element |
-| subtitle | | Taal (xml:lang) | Nee | Een voor mensen leesbare subtitel, met extra toelichting over de dataset feed, inclusief opgave van de taal van dit element |
-| id | | | Ja | Dit is de identifier van de dataset feed. De waarde dient een URI te zijn, de URL van de dataset feed zelf. |
-| rights | | | Nee | Informatie over de rechten en restricties die gelden voor de dataset feed. |
-| updated | | | Ja | Datum en tijd van de laatste wijzgingen van de feed |
-| author | | Contactinformatie over de dataset feed, met naam en emailadres | Ja | Gegevens voor contact over de datasets. Naam en emailadres zijn, op basis van de INSPIRE Metadata IR, minimaal vereist. Indien dit niet opgegeven is, geldt de informatie zoals opgegeven bij de rights van de gehele feed. |
-| link | | Spatial Object description, via een link met rel="describedby" en type="text/html", vindt verwijzing naar een (INSPIRE) Registry en/of een ander registry plaats | Ja | Een of meerdere elementen die aangeven welke Spatial Object Types die in de dataset zitten. De waardes hiervan komen uit de INSPIRE Registry in geval de data aan een Data specifictie voldoet, zie <a href="https://inspire.ec.europa.eu/featureconcept" target="_blank">hier</a> voor waardes (spatial object types). |
-| link | Service feed | Soort link (rel="up"), Type link (type="application/atom+xml") | Nee | Link naar de Atom service feed ("omhoog" / terug verwijzing naar de service feed) |
-
-#### Elementen entry dataset feed
-
-Een dataset feed bevat tenminste een entry van een dataset om te downloaden. Elke entry in een Dataset feed beschrijft per combinatie van een formaat en CRS een te downloaden bestand. Per entry gelden de volgende regels.
-
-| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
-| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
-| link | Dataset | Soort link (rel="alternate"), Formaat / type (type), Groote in octetten  / bytes (length), Taal van het bestand  waarnaar verwezen is (hreflang), indien het een van de alternatieve talen betreft | Ja | Link naar de dataset of delen daarvan, bijvoorbeeld naar een GML document. Het type geeft het formaat aan, bijvoorbeeld "application/gml+xml;version=3.2" voor een ongecomprimeerd GML bestand. De dataset kan ook gecomprimeerd aangeboden worden of in een ander formaat. Dit is bijvoorbeeld bij rasterdata van Elevation te verwachten. *Voor datasets die in meerdere CRSen beschikbaar zijn, volgt nog een voorgestelde oplossing.* |
-| georss | | | Nee | Het gebied waar de dataset betrekking op heeft, uitgedrukt met bijvoorbeeld een boundingbox. De geometrie wordt opgegeven conform GeoRSS(-Simple). De coordinaten staan in latitude/longitude conform WGS84. |
-| category | CRSen | Well-known definitie van het CRS (attribuut term) en eventueel het label voor de leesbare toelichting. | Ja | CRSen waarin de dataset feed de data aanbiedt. |
+De <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services</a>  beschrijft hoe datasets via Atom gepubliceerd kunnen worden, om te voldoen aan de Implementing Rule voor Download Services. Globaal komt het erop neer dat de downloadservice via enkele Atom-feeds wordt beschreven en de downloadlocaties aanbiedt van de bestanden om gehele datasets of delen daarvan te downloaden. Atom feeds van een  dataset bevat daarvoor (onder andere):
+1. gegevens over de aanbieder van de downloadservice. Deze gegevens staan in de *Atom Service feed*;
+2. algemene gegevens over de downloadservice, zoals een id, locatie en de datum van laatste wijzigingen en copyrights en verwijzingen naar de Atom Dataset Feeds. Ook deze gegevens staan in de Atom Service feed.
+3. per dataset, of deel van een dataset: beschrijvende gegevens, zoals een titel, beknopte samenvatting, copyrights en andere rechten, het CRS, het geografisch gebied van de data en verwijzingen (URL) naar de data zelf. Deze gegevens staan in de *Atom Dataset feed(s)*;
+4. indien van toepassing: verwijzingen naar feeds in een andere taal (meertaligheid INSPIRE).
+5. verwijzingen naar <a href="https://www.opensearch.org/" target="_blank">OpenSearch-functionaliteit</a> om de feeds te kunnen doorzoeken. Deze gegevens staan in de Atom Service feed;
 
 
-#### OpenSearch
+### OpenSearch
 
 Een INSPIRE-downloadservice met Atom-feeds dient een OpenSearch Description en zoekfunctionaliteit aan te bieden. Voor dergelijke OpenSearch-functionaliteit biedt het Nationaal GeoRegister nu een eenvoudige manier aan voor dataproviders die niet zelf de functionaliteit willen of kunnen bieden. Dataproviders hoeven hiermee (in de meeste gevallen) dus zelf geen implementatie van OpenSearch meer te doen, maar hoeven alleen hun Atom feeds en de metadata op orde te hebben. Hieronder volgt een gedetailleerde beschrijving hoe dit te implementeren.
 
@@ -846,6 +784,70 @@ De samenhang van de onderdelen van een ATOM Download Service is weergegeven in o
 - **Let op met identifiers van de bron van de dataset**. Het NGR doet de aanname dat de identifier van de bron van de dataset uniek is in NGR voor de dataset-metadata-records (oftewel: beschreven is in één dataset-metadata-record). Dit heeft te maken met de interne werking en controles om tot een geldige OpenSearchDescription te komen. Als er meerdere dataset-metadata-records voorkomen in NGR met dezelfde dataset-identifier, dan kan het zijn dat de OpenSearchDescription niet volledig opgebouwd wordt. Een dataprovider dient dan zelf zorg te dragen voor de OpenSearchDescription.
 - **Volgende dag beschikbaar**. Punten 1 t/m 3 hierboven zijn nodig voor NGR om een OpenSearch Description te kunnen genereren. Het NGR moet daarvoor de feeds en metadata ophalen en analyseren. Dit gebeurt dagelijks. Een OpenSearch Description is dus niet gelijk beschikbaar, maar doorgaans wel de volgende dag.
 - **Hoofdlettergebruik**. Het is essentieel voor de werking dat links en identifiers exact kloppen en dat codes exact overeenkomen met codes uit de codelijsten. Dit is inclusief het gebruik van hoofdletters. Let daar dus op, vooral bij handmatige wijzigingen in XML bestanden.
+
+### Elementen van een Atom-feed
+
+**Elementen service feed**
+
+De onderstaande tabel bevat een overzicht van de elementen van een Atom-feed, zoals de Technical Guidance die beschrijft en die van toepassing zijn op de gehele feed. Het betreft geen volledige opsomming van alle details, zie daarvoor de Technical Guidance zelf.
+
+| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
+| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
+| title | | Taal (xml:lang) | Ja | Een voor mensen leesbare titel van de feed als geheel, m.a.w. van de Download Service, inclusief opgave van de taal van dit element. |
+| subtitle | | Taal (xml:lang) | Nee | Een voor mensen leesbare subtitel, met extra toelichting over de feed als geheel, inclusief opgave van de taal van dit element. |
+| link | service metadata | Soort link (rel="describedby"), Type (type="application/xml") | Ja | Link naar de metadata record van deze download service in de discovery service. | 
+| link | zelf referentie | Soort link (rel="self"), Taal (hreflang="en"), Titel (title="Title of this document"), Type (type="application/atom+xml") | Ja | Verwijzing naar de URL van de feed zelf. Dit is een vereiste van Atom en is bijvoorbeeld handig als een feed lokaal wordt opgeslagen of gekopieerd, dan is de oorspronkelijke (online) locatie van de feed via deze link nog te achterhalen.
+| link | alternatieve talen | Soort link (rel="alternate"), Type (bijv. type="text/html"), Alternatieve taal (bijv. hreflang="de"), Titel (bijv. title="An HTML version of this document in German") | Verplicht als er meerdere talen van de Download Service zijn | Als een Download Service ook in andere talen beschikbaar is, dient deze link opgenomen te worden en te verwijzen naar de feed in de andere talen.
+| link | OpenSearch document | Soort link (rel="search"), Type (bijv. type="application/opensearchdescription+xml"), Taal (bijv. hreflang="en") | Verwijst naar een OpenSearch description van de Download Service. | |
+| link | alternatieve formaten | Soort link (rel="alternate"), Type (bijv. type="text/html"), Titel (bijv. title="An HTML version of this document") | Nee | Dit gaat om alternatieve formaten van de feed zelf, dus niet van de datasets. Bijvoorbeeld als er een website is over de Download Service. |
+| id | | | Ja | Dit is de identifier van de feed. De waarde dient een URI te zijn, aanbevolen is de URI van de feed te gebruiken. |
+| rights | | | Ja | Informatie over de rechten en restricties die gelden voor de feed. Vaak komt dit overeen met de waarde voor 'accessConstraints' in de overeenkomstige service metadata record. Individuele entries in de feed kunnen ook hun eigen rechten en restricties hebben. |
+| updated | | | Ja | Datum en tijd van de laatste wijzgingen van de feed. |
+| author | | Contactinformatie over de feed, Name en email | Ja | Het kan contactinformatie zijn van een individu of een organisatie die verantwoordelijke is voor de feed. Tenminste moet een naam en e-mailadres worden verstrekt. |
+
+**Elementen entry service feed**
+
+Voor elke Dataset feed, dient de Atom Service feed een entry-element te bevatten. Voor elk entry-element zijn de volgende subelementen beschikbaar:
+
+| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
+| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
+| INSPIRE dataset identifier | INSPIRE elementen | INSPIRE custom elementen, spatial_dataset_identifier_code, spatial_dataset_identifier_namespace | Ja | Verwijzingen naar de INSPIRE dataset identifier code en namespace. De XML elementen zijn door INSPIRE specifiek voor Download Services gedefinieerd. |
+| title | | Taal (xml:lang) | Ja | Een voor mensen leesbare titel van de entry, m.a.w. van de dataset (of deel daarvan), inclusief opgave van de taal van dit element |
+| link | Metadata | Soort link (rel="describedby" en type="application/xml") | Ja | Link naar het metadata record van de dataset |
+| link | Dataset feed | Soort link (rel="alternate" en type="application/atom+xml") | Ja | Link naar de Atom dataset feed horend bij de dataset van de entry. |
+| subtitle | | Taal (xml:lang) | Nee | Een voor mensen leesbare subtitel, met extra toelichting over de entry, inclusief opgave van de taal van dit element |
+| id | | | Ja | Dit is de identifier van de datasets. De waarde dient een URI te zijn, aanbevolen is de URL van de dataset te gebruiken, dus dezelfde URL als in het href-attribuut van de link van de dataset. |
+| rights | | | Nee | Informatie over de rechten en restricties die gelden voor de entry. Indien dit niet opgegeven is, geldt de informatie zoals opgegeven bij de rights van de gehele feed. |
+| updated | | | Ja | Datum en tijd van de laatste wijzgingen van de feed |
+| author | | Contactinformatie over de dataset, Name en email | Nee | Gegevens voor contact over de datasets. Naam en emailadres zijn, op basis van de INSPIRE Metadata IR, minimaal vereist. Indien dit niet opgegeven is, geldt de informatie zoals opgegeven bij de rights van de gehele feed. |
+| georss | | | Nee | Het gebied waar de dataset betrekking op heeft, uitgedrukt met bijvoorbeeld een boundingbox. De geometrie wordt opgegeven conform GeoRSS(-Simple). De coordinaten staan in latitude/longitude  conform WGS84. |
+| category | CRSen | Well-known definitie van het CRS (attribuut term) en eventueel het label voor de leesbare toelichting. | Ja | CRSen waarin de dataset feed de data aanbiedt. |
+
+**Elementen dataset feed**
+
+Dataset feeds bevatten de informatie om de bestanden daadwerkelijk te kunnen downloaden. Dataset feeds bevatten de onderstaande elementen.
+
+| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
+| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
+| title | | Taal (xml:lang) | Ja | Een voor mensen leesbare titel van de dataset feed, inclusief opgave van de taal van dit element |
+| subtitle | | Taal (xml:lang) | Nee | Een voor mensen leesbare subtitel, met extra toelichting over de dataset feed, inclusief opgave van de taal van dit element |
+| id | | | Ja | Dit is de identifier van de dataset feed. De waarde dient een URI te zijn, de URL van de dataset feed zelf. |
+| rights | | | Nee | Informatie over de rechten en restricties die gelden voor de dataset feed. |
+| updated | | | Ja | Datum en tijd van de laatste wijzgingen van de feed |
+| author | | Contactinformatie over de dataset feed, met naam en emailadres | Ja | Gegevens voor contact over de datasets. Naam en emailadres zijn, op basis van de INSPIRE Metadata IR, minimaal vereist. Indien dit niet opgegeven is, geldt de informatie zoals opgegeven bij de rights van de gehele feed. |
+| link | | Spatial Object description, via een link met rel="describedby" en type="text/html", vindt verwijzing naar een (INSPIRE) Registry en/of een ander registry plaats | Ja | Een of meerdere elementen die aangeven welke Spatial Object Types die in de dataset zitten. De waardes hiervan komen uit de INSPIRE Registry in geval de data aan een Data specifictie voldoet, zie <a href="https://inspire.ec.europa.eu/featureconcept" target="_blank">hier</a> voor waardes (spatial object types). |
+| link | Service feed | Soort link (rel="up"), Type link (type="application/atom+xml") | Nee | Link naar de Atom service feed ("omhoog" / terug verwijzing naar de service feed) |
+
+**Elementen entry dataset feed**
+
+Een dataset feed bevat tenminste een entry van een dataset om te downloaden. Elke entry in een Dataset feed beschrijft per combinatie van een formaat en CRS een te downloaden bestand. Per entry gelden de volgende regels.
+
+| Element | Type | Belangrijkste extra attributen / elementen | Verplicht? | Omschrijving |
+| ------- | ---- | ------------------------------------------ | ---------- | ------------ |
+| link | Dataset | Soort link (rel="alternate"), Formaat / type (type), Groote in octetten  / bytes (length), Taal van het bestand  waarnaar verwezen is (hreflang), indien het een van de alternatieve talen betreft | Ja | Link naar de dataset of delen daarvan, bijvoorbeeld naar een GML document. Het type geeft het formaat aan, bijvoorbeeld "application/gml+xml;version=3.2" voor een ongecomprimeerd GML bestand. De dataset kan ook gecomprimeerd aangeboden worden of in een ander formaat. Dit is bijvoorbeeld bij rasterdata van Elevation te verwachten. *Voor datasets die in meerdere CRSen beschikbaar zijn, volgt nog een voorgestelde oplossing.* |
+| georss | | | Nee | Het gebied waar de dataset betrekking op heeft, uitgedrukt met bijvoorbeeld een boundingbox. De geometrie wordt opgegeven conform GeoRSS(-Simple). De coordinaten staan in latitude/longitude conform WGS84. |
+| category | CRSen | Well-known definitie van het CRS (attribuut term) en eventueel het label voor de leesbare toelichting. | Ja | CRSen waarin de dataset feed de data aanbiedt. |
+
 
 
 ### WFS
@@ -888,7 +890,9 @@ De Technical Guidance bevat de eisen die INSPIRE stelt aan een dergelijke WFS:
 De Technical Guidance beschrijft in hoofdstuk 6 hoe een Download service voor Pre-defined datasets geïmplementeerd kan worden met een Web Feature Service en Filter Encoding.
 Het GetCapabilities request geeft een vergelijkbare Capabilities file op als bij de WMS, op enkele specifieke WMS onderdelen na. Het wordt daarom in deze paragraaf niet zo uitgebreid beschreven als in dat van de WMS.
 
-Voor een WFS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.1</a> van toepassing
+Voor een WFS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.1</a> van toepassing. Het Nederlands profiel is afgestemd op de INSPIRE-specificaties. Per eis staat in het Nederlands profiel aangegeven of die van INSPIRE komt of dat het een specifieke aanvulling voor Nederland is. Een voorbeeld van dat laatste is ondersteuning voor het Rijksdriehoekstelsel.
+
+Het profiel bevat ook een aparte bijlage met de zaken die INSPIRE nog extra vereist ten opzichte van het Nederlands profiel.
 
 **Stored queries**
 Stored Queries zijn een nieuw mechanisme in WFS 2.0. Hiermee worden een soort query-templates aangeboden, waarmee een client niet een geheel filter hoeft op te stellen, maar alleen enkele van te voren opgegeven parameters hoeft te specificeren. WFS-requests worden hier eenvoudiger van. Een service kan hiermee een soort FAQs aanbieden van WFS-requests, die voor een client makkelijk te gebruiken zijn. Bijvoorbeeld requests om op basis van een typering (categorie) een dataset te bevragen.
@@ -913,9 +917,6 @@ Naast de eisen doet de Technical Guidance de volgende aanbevelingen, voor het ge
 
 ### WFS direct access
 
-
-**Web Feature Service en Filter Encoding implementatie van Direct Access Download Service**
-
 Met de direct access download is het mogelijk om meer controle over de download te krijgen, dan bij de pre-defined download het geval is. Zo kunnen er downloads samengesteld worden op basis van een ruimtelijke query, of op basis van een query naar attribuutinformatie.
 
 Kenmerken zijn:
@@ -925,10 +926,6 @@ Kenmerken zijn:
 	- Standaard, ruimtelijke en temporele filters.
 	- XPath (voor opvragen geneste attributen zoals adres.plaats.straat.nummer)
 	- Enkele Stored Queries, bijvoorbeeld om datasets in een ander Coördinaat Referentie Stelsel (CRS) op te vragen.
-
-
-
-De Technical Guidance beschrijft in hoofdstuk 7 hoe een Download service voor Direct Access geïmplementeerd kan worden met een Web Feature Service en Filter Encoding. Een dergelijke Web Feature Service biedt uitgebreide filtermogelijkheden op INSPIRE-datasets, zodat gebruikers de selecties kunnen maken en downloaden die ze zelf wensen.
 
 Het aanbieden van Direct Access Download Service via een Web Feature Service is een methode om aan de eisen uit de Implementing Rule te kunnen voldoen. Een dergelijke WFS stelt een gebruiker in staat om, in aanvulling op alles wat een [Pre-defined datasets Download Service via WFS](#wfs-pre-defined) biedt, eigen selecties te maken van de data en dat direct te gebruiken (of downloaden). Bijvoorbeeld door selecties te maken met ruimtelijke, temporele en administratieve filters. Een dergelijke Download service biedt de meeste funtionaliteit aan een gebruiker en maakt het mogelijk om alleen die data op te vragen (en versturen) die nodig is, in plaats van gehele datasets. Dit kan vooral bij grote datasets en/of dynamische datasets erg belangrijk zijn.
 
@@ -942,13 +939,7 @@ De Technical Guidance bevat de eisen die INSPIRE stelt aan een dergelijke WFS:
 7. voldoen aan de conformance class Minimum Temporal Filter uit FE 2.0. Dit betekent dat de filter operator During ondersteund moet worden. Hiermee kunnen 8. objecten opgevraagd worden die wat betreft tijd (of tijsperiode) vallen in een bepaalde periode;
 voldoen aan de conformance class Minimum XPath uit FE 2.0. Hiermee kunnen via XPath opgegeven waardes gebruikt worden in een filter. Er wordt een subset van XPath ondersteuning vereist. Deze is beschreven in paragraaf 7.4.4 van de <a href="https://www.ogc.org/standards/filter" target="_blank">Filter Encoding standaard 2.0</a>.
 
-De eisen voor meertaligeheid zijn dezelfde als voor WFS pre-defined.
 
-#### Verhouding tot Nederlands profiel
-
-Het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel</a> op ISO 19142 WFS 2.0 versie 1.1 stelt eisen aan Nederlandse WFS-implementaties. Het Nederlands profiel is afgestemd op de INSPIRE-specificaties. Per eis staat in het Nederlands profiel aangegeven of die van INSPIRE komt of dat het een specifieke aanvulling voor Nederland is. Een voorbeeld van dat laatste is ondersteuning voor het Rijksdriehoekstelsel.
-
-Het profiel bevat ook een aparte bijlage met de zaken die INSPIRE nog extra vereist ten opzichte van het Nederlands profiel.
 
 ### WCS
 
