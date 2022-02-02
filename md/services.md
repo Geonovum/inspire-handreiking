@@ -165,7 +165,7 @@ De onderstaande figuur geeft schematisch de operaties van de OGC WMS 1.3.0 weer.
 
 ### Vereisten viewservice
 
-De Technical Guidance beschrijft hoe een lidstaat de Implementing Rules kunnen implementeren. Voor de viewservices beschrijft het document <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance View Services</a> de technische eisen waaraan een service moet voldoen. Hiermee kan zowel ISO 19128: OGC Web Map Service 1.3.0 (WMS) of OGC Web Map Tile Service 1.0.0 (WMTS) worden geimplementeerd.  
+Voor de viewservices beschrijft het document <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance View Services</a> de technische eisen waaraan een service moet voldoen. Hiermee kan zowel ISO 19128: OGC Web Map Service 1.3.0 (WMS) of OGC Web Map Tile Service 1.0.0 (WMTS) worden geimplementeerd.  
 
 De INSPIRE view service implementeerd de verplichte elementen van een WMS of WMTS aangevuld met de volgende vereisten;
 - Ondersteuning van de HTTP GET-interface is verplicht.
@@ -690,74 +690,25 @@ INSPIRE volgt de WMS 1.3.0 specificatie voor overerving van de layer elementen. 
 ### Voorbeeldbestand XML voor Capabilities
 Hier zijn twee voorbeeldbestanden te vinden voor de Capibilities-documenten, volgens [scenario 1](docs/WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](docs/WMSCapabilities_Voorbeeld_Scenario2.zip).
 
-## Download service
+## Download services
 
-De downloadservice (of downloaddienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen downloaden om ze daarna te kunnen analyseren en te gebruiken voor de gewenst toepassing. Hiertoe dient de dataprovider de INSPIRE-thema’s met een downloadservice te ontsluiten. Dat kan op verschillende manieren
+De downloadservice (of downloaddienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen downloaden om ze daarna te kunnen analyseren en te gebruiken voor de gewenst toepassing. Hiertoe dient de dataprovider de INSPIRE-thema’s met een downloadservice te ontsluiten. INSPIRE kent   meerdere opties om de download service te implementeren;
+
 1. AtomFeed
 2. Web Feature Services (WFS)
-	-  predefined
-	-  Direct access
 3. Web Coverage Service (WCS)
 4. Sensor Observation Services (SOS)
 5. OGC API Features (OAF)
 
-In de volgende hoofdstukken worden eerst verschillende downloadservice implementaties kort beschreven en later nog weer apart in detail per paragraaf. 
+Afhankelijk van het type gegevens of de voorkeuren van een dataprovider, bepaald de dataprovider het type service. In de volgende paragrafen worden de verschillende download service implementaties behandeld. 
 
-
-
-
-### Verschillende soorten implementatie
-INSPIRE kent per type network service één of meerdere opties om die network service te implementeren. Een viewservice kan bijvoorbeeld met WMS of met WMTS geïmplmenteerd worden. Een downloadservice kan, afhankelijk van het type gegevens of de voorkeuren van een dataprovider, worden aangeboden via WFS, ATOM, WCS of SOS. Een dataprovider kan dus zelf het type service bepalen.
-
-In de tabel hieronder wordt een overzicht gegeven van de INSPIRE-services en de verschillende (OGC)-protocollen die hiermee samenhangen. Ook de Nederlandse profielen voor webservices zijn opgenomen.
-
-| Servicetype | Standaarden | Kort | Nederlands profiel |
-|-----------------|-------------|-------------|-------------|
-| **Downloaddiensten** | | | |
-| *- Pre-defined* | ATOM feeds of OGC Web Feature Service 2.0 met beperkte filter mogelijkheden of WCS Coverage Service (raster) of Sensor Observation Services | ATOM of WFS of WCS of SOS | |
-| *- Direct Access* | OGC Web Feature Service 2.0 met meer filter mogelijkheden, Filter Encoding of WCS Coverage Service (raster) met processing of Sensor Observation Services met meer filter mogelijkheden | WFS 2.0 met FE of WCS of SOS | <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.1</a> | 
-
-
-**Opmerkingen bij tabel**:
-- Met de ‘Pre-defined downloaddienst’ wordt de dienst gebruikt waarmee een INSPIRE-dataset in zijn geheeld gedownload kan worden. 
-- Met de ‘Direct access downloaddienst’ wordt toegang tot individuele features en de filter/selectiemogelijkheid op features aangeboden.
-
-
+Voor een WFS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20" target="_blank">Nederlands profiel op ISO 19142 WFS 2.0, versie 1.1</a> van toepassing
 
 ### Downloadservice implementaties
 De <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">Technical Guidances</a> en de <a href="https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02009R0976-20101228" target="_blank">Commission Regulation amending Regulation (EC) No 976/2009 as regards download services and transformation service</a> zijn de huidig geldige documenten die downloadservices en de eisen eraan beschrijven. De Commission Regulation is de wettekst die aangeeft welke downloadservices moeten en mogen worden aangeboden binnen INSPIRE. De Technical Guidance geeft richtlijnen hoe deze services conform de Implementing Rule moeten worden toegepast.
 
-Op 9 augustus 2013 is versie 3.1 van de Technical Guidance definitief gepubliceerd met de specificaties voor WFS- en ATOM-implementaties van een downloadservice. Op 16 december 2016 zijn specificaties gepubliceerd voor implementatie van een downloadservice via WCS (voor coverage-data) of via SOS (voor sensordata). Dit hoofdstuk geeft een korte toelichting per servicetype over de eisen.
 
-Bij de implementatie van een Download Service beschrijven de Technical Guidances verschillende opties waaruit de dataprovider kan kiezen, als er maar minimaal één van deze implemetaties is geïmplementeerd:
-- Pre-defined dataset download services kunnen worden aangeboden als:
-	- tom (Atom Syndication Format) óf als:
-	- ISO DIS 19142 – Web Feature Service, met beperkte filter mogelijkheid óf als:
-	- Web Coverage Service óf als:
-	- Sensor Observation Service
-- Direct access download services mogen worden aangeboden als:
-	- ISO DIS 19142 – Web Feature Service met ISO DIS 19143 – Filter Encoding voor aanvullende filtermogelijkheden.
-	- Web Coverage Service met processing mogelijkheid óf
-	- Sensor Observation Service met extra bevragingsmogelijkheden.
 
-In de toekomst zal hier de OGC API Feture service nog aan toegevoegd worden
-
-#### Pre-defined en direct access
-INSPIRE verlangt onder andere dat datasets te downloaden moeten zijn via een downloadservice. Indien relevant, moeten ook *delen* van datasets te downloaden zijn. Volgens de Implementing Rules bestaan er twee soorten downloadservices die mogen worden geïmplementeerd:
-
-**Pre-defined dataset download services**
-
-Dit is een volledige dataset of een deel van een volledige dataset, die als een enkele, vooraf gedefinieerde eenheid wordt aangeboden om te downloaden. Hierbij is het niet mogelijk om selecties te maken op basis van locatie of om inhoud te wijzigen, zoals bijvoorbeeld de codering of het coordinate reference system (CRS).
-
-**Direct Access download services**
-
-De direct access downloadservice kent een uitbreiding van de functionaliteit ten opzichte van de pre-defined dataset downloadservice. De direct access downloadservice geeft meer controle over de download door directe toegang te verlenen tot de inhoud van de dataset. Hierbij kan men denken aan het downloaden van selecties van de dataset door middel van een query. Zo'n query kan ruimtelijke criteria definiëren, maar kan ook een selectie doen op basis van bepaalde attributen van de ruimtelijke objecten in de dataset of waardes van een coverage.
-
-#### Methoden uit technical guidance
-Hieronder volgt voor verschillende soorten data een beknopte beschrijving van de Technical Guidances.
-
-##### Vectordata
-Versie 3.1 van de Technical Guidance voor Download Services onderscheidt drie methoden voor het implementeren van een Download Service voor vector data.
 
 1. **Atom-implementatie van een Pre-defined Dataset Download Service**
 
