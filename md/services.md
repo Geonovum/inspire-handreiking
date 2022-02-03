@@ -994,10 +994,15 @@ De hierboven genoemde OGC API's zijn van belang als service voor INSPIRE en ook 
 - <a href="https://ogcapi.ogc.org/records/" target="_blank">OGC API Records</a> (opvolger CSW) 
 
 
-## SDS-categorieën
+## Spatial Data Services 
+Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. De INSPIRE network services, waarvan de view en download services het meest toegepast zijn, zijn ook Spatial Data Services, waarvoor verdere specificaties van de service zijn opgesteld. 
+Voor de Spatial Data Services, die wel INSPIRE data ontsluiten, maar geen view of download service zijn, gelden ook INSPIRE vereisten. Deze vereisten zijn, beperkt voor de categorie invocable SDS en zijn uitgebreider voor de categorie harmonised SDS. De eisen zijn voornamelijk op het gebied van metadata, zie [Spatial Data Service (SDS) metadata](#spatial-data-services-sds-metadata). Alleen voor de harmonised services, worden er ook aan de service implementatie eisen gesteld. 
 
-Spatial Data Services die geen network service zijn en wel onder de verordening SDS vallen zijn, afhankelijk van het niveau van interoperabiliteit, verder onder te verdelen in drie categorieën: Invocable SDS, Interoperable SDS and Harmonised SDS. Spatial Data Services die onder de verordening *netwerkverordening* vallen bestaan uit vier verschillende service types: discovery services, view services, download services and transformation services.
+De SDS zijn middels een amendement opgenomen in <a href="https://inspire.ec.europa.eu/Legislation/Spatial-Data-Services/580" target="_blank">Implementing Rules for Spatial Data  Services</a>. In de <a href="https://inspire.ec.europa.eu/Technical-Guidelines2/Spatial-Data-Services/580" target="_blank">Technical Guidance for INSPIRE Spatial Data Services and services allowing spatial data services to be invoked</a> zijn de vereisten voor impklementatie opgenomen.
 
+**SDS-categorieën**
+
+Spatial Data Services die geen network service zijn en wel onder de Commission Regulation (EU) No 1312/2014 of 10 December 2014 amending Regulation (EU) No 1089/2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data services vallen, zijn afhankelijk van het niveau van interoperabiliteit, verder onder te verdelen in drie categorieën: Invocable SDS, Interoperable SDS and Harmonised SDS. 
 Met behulp van onderstaand stroomschema kan worden bepaald wat voor soort SDS een service is.
 
 ![sds_schema](media/SDS_schema.png "Stroomdiagram om service-type te bepalen.")
@@ -1005,6 +1010,16 @@ Met behulp van onderstaand stroomschema kan worden bepaald wat voor soort SDS ee
 Spatial Data Services die geen network service zijn, kunnen heel verschillende services zijn, waardoor er geen specificaties in technische richtlijnen voor mogelijk is. Om te bepalen in wat voor categorie een Spatial Data Service valt, kan onderstaande stroomschema worden gebruikt.
 
 ![sds_cat](media/SDS_cat.png "Stroomdiagram om SDS-categorie te bepalen.")
+
+### vereisten SDS
+De eisen voor invocable, interoperable en harmonised services zijn voornamelijk op het gebied van metadata, zie [Spatial Data Service (SDS) metadata](#spatial-data-services-sds-metadata). 
+Alleen voor de harmonised services, worden er ook aan de service implementatie eisen gesteld:
+
+- **kwaliteit** "a harmonised spatial data service shall be available 98 % of the time."
+- **operaties** "a harmonised spatial data service shall include a Get Harmonised Spatial Data Service Metadata operation, similar to the Get Discovery/View/Download/Transformation Service Metadata Operations."
+- **output encoding** "If a request to the spatial data service returns spatial objects in the scope of the [INS DIR], the returned data shall meet the requirements for encoding specified for these spatial objects in Art. 7 and the relevant annexes of [INS ISDSS]."
+The INSPIRE data specifications Technical Guidelines contain default encoding rules for all spatial data themes meet the requirements of [INS ISDSS].
+
 
 ## Wijzigingen doorvoeren
 
