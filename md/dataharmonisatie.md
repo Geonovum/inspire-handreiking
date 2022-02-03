@@ -229,9 +229,9 @@ Portrayal beschreven in INSPIRE dataspecificatie bestaat uit de volgende onderde
 - **Symbology**: Beschrijft de te gebuiken symbolen.
 
 Indien de [INSPIRE dataspecificatie](#inspire-dataspecificaties) geen default style aanbiedt, definieert het [Generic Conceptual Model](#generic-conceptual-model) de style in de viewservice:
-- Punt: grey square, 6 px;
-- Lijn: zwarte solid lijn, 1 px;
-- Vlak: zwarte solid lijn, 1px, grijs gevuld.
+- Punt: grijs vierkant, 6 pixels;
+- Lijn: zwarte doorgetrokken lijn, 1 pixel;
+- Vlak: zwarte doorgetrokken lijn, 1 pixel met een grijze vulling.
 
 De standaarden voor de presentatie van data zijn:
 - [standaard] - [namespace prefix]
