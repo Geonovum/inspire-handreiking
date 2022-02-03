@@ -1,44 +1,44 @@
 # Services
 
-In dit deel van de handreiking worden de verschillende electronische diensten (services) behandeld, waarmee de INSPIRE plichtige dataproviders hun data kunnen ontsluiten. Omdat  deze services ruimtelijke data ontsluiten, worden ze ook wel Spatial Data Services genoemd en vertaald als “diensten met betrekking tot ruimtelijke gegevens”. Er zijn verschillende soorten Spatial Data Services, die ieder afzonderlijk behandeld worden.
+In dit deel van de handreiking worden de verschillende electronische diensten (services) behandeld, waarmee de INSPIRE dataproviders hun data kunnen ontsluiten. Omdat deze services ruimtelijke data ontsluiten, worden ze ook wel *Spatial Data Services (SDS)* genoemd en vertaald als “diensten met betrekking tot ruimtelijke gegevens”. Er zijn verschillende soorten spatial data services, die ieder afzonderlijk behandeld worden.
 
 ## Soorten Spatial Data Services
 
 Spatial data services zijn INSPIRE-services, waarmee operaties kunnen worden uitgevoerd op ruimtelijke data van ten minste één van de INSPIRE-thema's. De INSPIRE network services, zijn ook Spatial Data Services, waarvoor verdere specificaties van de service zijn opgesteld.
 
-Onderstaande figuur geeft een overzicht van de verschillende types Spatial Data Services.
+Onderstaande figuur geeft een overzicht van de verschillende soorten spatial data services.
 
 ![sds_schema2](media/SDS_en_network_services.png "SDS-types.")
 
-Het bovenstaande figuur valt uiteen in een aantal services:
+Hieronder worden de verschillende soorten spatial data services nader toegelicht.
 
 **Discovery services / Zoekdienst** network service
-- De discovery service is bedoeld om het zoeken, beoordelen (evalueren) en vinden van ruimtelijke data die via het netwerk van webservices worden aangeboden te ondersteunen.
+- De discovery service (of zoekdienst) is bedoeld om het zoeken, beoordelen (evalueren) en vinden van ruimtelijke data die via het netwerk van webservices worden aangeboden te ondersteunen.
 - Het zoeken van data vindt plaats op basis van metadata van INSPIRE-data en metadata van INSPIRE-services.
-- Voor INSPIRE wordt dit op lidstaat-niveau uitgevoerd; voor Nederland is dit het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister</a>.
+- Voor INSPIRE wordt dit op lidstaat-niveau uitgevoerd; voor Nederland is dit het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister (NGR)</a>.
 
 **View services / Raadpleegdienst** network service
-- De viewservice (of raadpleegdienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen bekijken en beoordelen
-- Regels over weergave en presentatie worden in de dataspecificaties meegeleverd om over alle lidstaten heen dezelfde presentatie te kunnen houden. Deze regels zijn hiervoor juist basaal gehouden.
+- De viewservice (of raadpleegdienst) heeft als functie de gegevens die via de discovery service van het NGR gevonden worden, te kunnen bekijken en beoordelen.
+- Regels over weergave en presentatie worden in de [INSPIRE dataspecificaties](#inspire-dataspecificaties) meegeleverd om over alle lidstaten heen dezelfde presentatie te kunnen houden. Deze regels zijn hiervoor juist basaal gehouden.
 
 **Download services / Downloaddienst** network service
-- De downloadservice (of downloaddienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen downloaden om ze daarna te kunnen analyseren en te gebruiken voor de gewenst toepassing.
+- De downloadservice (of downloaddienst) heeft als functie de gegevens die via de discovery service van het NGR gevonden worden, te kunnen downloaden om ze daarna te kunnen analyseren en te gebruiken voor de gewenst toepassing.
 - De dataset kan als geheel worden gedownload. Waar mogelijk ook het bevragen en downloaden van enkele objecten.
 
 **Transformation services / Verwerkingsdienst** network service
-- Dit is een ondersteunende service die de andere services helpt met het bereiken van de conformiteit van INSPIRE, bijvoorbeeld door schema translatie of coördinaten translatie
+- Dit is een ondersteunende service die de andere services helpt met het bereiken van de conformiteit van INSPIRE, bijvoorbeeld door schema translatie of coördinaten translatie.
 
 **Spatial Data Services**
-- De Spatial Data Servies ontsluiten ten minste één INSPIRE dataset, maar kunnen hele andere specificaties hebben, die buiten de INSPIRE community tot stand zijn gekomen.
+- De spatial data servies ontsluiten ten minste één INSPIRE dataset, maar kunnen hele andere specificaties hebben, die buiten de INSPIRE community tot stand zijn gekomen.
 - De specificatie van de service moet wel zijn vastgelgd en in de metadata beschreven. 
 - Deze diensten zijn verder in te delen als invocable, interoperable en harmonised.
 
 **Other Spatial Data Services**
-- De Spatial Data Servies ontlsuiten wel ruimteliijke data, maar geen INSPIRE data, of ze voldoen niet aan de vereiste dat er een specificatie van de service is.
+- De other spatial data Servies ontsluiten wel ruimteliijke data, maar geen INSPIRE data, of ze voldoen niet aan de vereiste dat er een specificatie van de service is.
 
 ## Network services
 ### Wetgeving
-Op de website van INSPIRE is de wetgeving met betrekking tot network services te vinden.
+Op de Europese website van INSPIRE is de wetgeving met betrekking tot network services te vinden.
 
 |Type wetgeving | Site | Titel |
 |-----------------|-------------|-------------|
@@ -46,7 +46,7 @@ Op de website van INSPIRE is de wetgeving met betrekking tot network services te
 | Amendement voor download services en transformation services | <a href="https://ec.europa.eu/transparency/comitology-register/screen/home" target="_blank">comitology</a> | <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32010R1088" target="_blank">COMMISSION REGULATION (EU) No 1088/2010 of 23 November 2010 amending Regulation (EC) No 976/2009 as regards download services and transformation services</a> |
 
 ### Technische INSPIRE richtlijnen
-In de Technical Guidances (of Guidance Documents) zijn de technische specificaties opgesteld voor network services, als uitwerking van de wettelijke eisen. De Technical Guidances definiëren hiermee waar een network service aan zal moeten voldoen. De huidig geldende versies van de guidance documents van de network services zijn te vinden op de <a href="https://inspire.ec.europa.eu/Technical-Guidelines2/Network-Services/41" target="_blank">website van INSPIRE</a>. De tabel hieronder biedt directe links naar de documenten.
+In de Technical Guidances (of Guidance Documents) zijn de technische specificaties opgesteld voor network services, als uitwerking van de wettelijke eisen. De technical guidances definiëren hiermee waar een network service aan zal moeten voldoen. De huidig geldende versies van de technical guidances van de network services zijn te vinden op de <a href="https://inspire.ec.europa.eu/Technical-Guidelines2/Network-Services/41" target="_blank">Europese website van INSPIRE</a>. De tabel hieronder biedt de directe links naar de documenten.
 
 | Titel | Opmerking |
 |-----------------|-------------|
@@ -54,60 +54,61 @@ In de Technical Guidances (of Guidance Documents) zijn de technische specificati
 | <a href="https://inspire.ec.europa.eu/id/document/tg/download-wcs" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - Web Coverage Service</a>|| 
 | <a href="https://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - Sensor Observation Service</a> ||
 | <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance for the implementation of INSPIRE View Services</a> |WMS en WMTS implementatie|
-| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0" target="_blank">Technical Guidance for the implementation of INSPIRE Discovery Services</a> ||
+| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0" target="_blank">Technical Guidance for the implementation of INSPIRE Discovery Services</a> |Dit onderdeel is niet in deze handreiking uitgewerkt|
 | <a href="https://inspire.ec.europa.eu/documents/technical-guidance-inspire-schema-transformation-network-service" target="_blank">Technical Guidance for the INSPIRE Schema Transformation Network Service</a> |Dit onderdeel is niet in deze handreiking uitgewerkt| 
 
 
 ### Quality of services
-INSPIRE definieert *Quality of services* (QoS), de eisen omtrent het kwaliteitsbeheer van netwerk services. Een aantal QoS-criteria verschillen per service; voor het overzicht zie tabel hieronder. Er zijn een aantal parameters van invloed op de door INSPIRE gedefinieerde QoS:
-- *performance*: de performance van een INSPIRE-conforme netwerkdienst geeft de tijd weer die de netwerkdienst nodig heeft om aan een verzoek (request) een antwoord (response) te geven. Een verzoek is gelijk aan een functie of operatie. Als tijd wordt de tijd gezien die de netwerkdienst (serverside) nodig heeft om de eerste byte van het antwoord terug te geven.
+INSPIRE definieert *Quality of services* (QoS), de eisen omtrent het kwaliteitsbeheer van netwerk services. Een aantal QoS-criteria verschillen per service (zie voor de precieze criteria de tabel hieronder). 
+
+Er zijn een aantal parameters van invloed op de door INSPIRE gedefinieerde QoS:
+- *performance*: de performance van een INSPIRE-conforme netwerkdienst geeft de tijd weer die de netwerkdienst nodig heeft om aan een verzoek (*request*) een antwoord (*response*) te geven. Een verzoek is gelijk aan een functie of operatie. Als tijd wordt de tijd gezien die de netwerkdienst (serverside) nodig heeft om de eerste byte van het antwoord terug te geven.
 - *capacity*: de capaciteit van een netwerkdienst geeft de omvang van het maximum aantal simultane serviceverzoeken aan, dat met prestatiewaarborg (bijv. 10 parallelle verzoeken per seconde) wordt uitgevoerd.
-- *beschikbaarheid*: de beschikbaarheid is de kans dat de netwerkdienst beschikbaar is en op verzoeken een response geeft. Deze eis ligt voor alle services op 99% op jaarbasis (gedurende 24/7); dit komt overeen met 3.7 dagen ‘offline’ per jaar.
-- *betrouwbaarheid*: beschrijft de vaardigheden van de netwerkdienst om conform de afspraken (functies, eisen en tijd) de netwerkdienst te leveren. INSPIRE heeft i.r.t. betrouwbaarheid geen specifieke eis gedefinieerd.
-- *security en compliance* : deze twee eisen hebben een algemener toepassingsgebied en worden door INSPIRE niet specifiek gedefinieerd (zijn kwalitatief van aard). Ze zijn formeel wel van toepassing op de network services, maar niet op zozeer op de hardware-matige en infrastructurele aspecten zoals de criteria die boven gespecificeerd zijn.
+- *availability* (beschikbaarheid): de beschikbaarheid is de kans dat de netwerkdienst beschikbaar is en op verzoeken een response geeft. Deze eis ligt voor alle services op 99% op jaarbasis (gedurende 24/7); dit komt overeen met 3.7 dagen ‘offline’ per jaar.
+- *reliability* (betrouwbaarheid): beschrijft de vaardigheden van de netwerkdienst om conform de afspraken (functies, eisen en tijd) de netwerkdienst te leveren. INSPIRE heeft i.r.t. betrouwbaarheid geen specifieke eis gedefinieerd.
+- *security en compliance*: deze twee eisen hebben een algemener toepassingsgebied en worden door INSPIRE niet specifiek gedefinieerd (zijn kwalitatief van aard). Ze zijn formeel wel van toepassing op de network services, maar niet op zozeer op de hardware-matige en infrastructurele aspecten zoals de criteria die boven gespecificeerd zijn.
 
 | Criteria | Discovery | View | Download | Transformation |
 |-----------------|-------------|-------------|-------------|-------------|
-| Performance | 3 sec | 5 sec | Zie a, b, c | Zie TG's |
+| Performance | 3 sec | 5 sec | Zie a, b, c, d | Zie TG's |
 | Capacity | 30 / sec | 20  / sec | 10 / sec | 10 / sec |
 | Availability | 99% | 99% | 99% | 99% |
 | Reliability | - | - | - | - |
 | Security | - | - | - | - |
 | Compliance | - | - | - | - |
 
-*Opmerkingen bij performance van de View service:*
+*Opmerkingen bij performance van de view service:*
 - Deze tijd geldt voor een 8-bits image van 470 Kb (800\*600 px).
 - Het maximum aantal layers die per GetMap request opgehaald kan worden, is hier maximaal 1.
 
-*Opmerkingen bij performance van de Discovery Service:*
+*Opmerkingen bij performance van de discovery service:*
  - De tijd is inclusief het versturen van errors of exceptions. Binnen de drie seconden dient er ook één metadata record verstuurd te worden.
 
-*Opmerkingen bij performance van de Download Service:*
-- Get Download Service Metadata: max. 10 seconden.
-- Get Spatial Objects: 30 seconden voor de eerste response, daarna een ‘sustained response’ van > 0.5 MB/s.
-- Describe Spatial Object Types: 10 seconds initial reponse, daarna een ‘sustained response’ van > 0.5 MB/s.
-- Define Query: geen performance criteria gegeven.
+*Opmerkingen bij performance van de download service:*
+a) Get Download Service Metadata: max. 10 seconden.
+b) Get Spatial Objects: 30 seconden voor de eerste response, daarna een ‘sustained response’ van > 0.5 MB/s.
+c) Describe Spatial Object Types: 10 seconds initial reponse, daarna een ‘sustained response’ van > 0.5 MB/s.
+d) Define Query: geen performance criteria gegeven.
 
-*Opmerkingen bij Transformational Service:*
-- Voor performance wordt naar de Technical Guidances verwezen. Op moment van schrijven (juni 2010) is alleen de TG van Coordinate Transformations beschikbaar (in versie 2.1).
+*Opmerkingen bij transformation service:*
+- Voor performance wordt naar de Technical Guidances verwezen. Alleen is TG van Coordinate Transformations beschikbaar (in versie 2.1).
 - Voor capacity worden verschillende criteria gegeven. In de Guidance staat 5 requests per seconde, in de Implementing Rule wordt 10 requests per seconde gegeven. IR is normatief, dus wordt het 10/s .
 
 ### Rights management
-De richtlijn schrijft voor dat de INSPIRE diensten in principe gratis moeten zijn. Echter geeft de richtlijn ook aan dat er (publieke) instellingen zijn die – vanwege de hoge datavolumes en update-frequenties – kosten in rekening mogen brengen om de service te kunnen waarborgen. Dat houdt in dat er een mogelijkheid moet zijn om de toegang tot services en data te beperken.
+De INSPIRE richtlijn schrijft voor dat de INSPIRE diensten in principe gratis moeten zijn. Echter geeft de richtlijn ook aan dat er (publieke) instellingen zijn die – vanwege de hoge datavolumes en update-frequenties – kosten in rekening mogen brengen om de service te kunnen waarborgen. Dat houdt in dat er een mogelijkheid moet zijn om de toegang tot services en data te beperken.
 
-Bij het implementeren van het Rights Management is het van belang dat er door de dataproviders rekening wordt gehouden met de metadata. Verschillende niveaus zijn van belang:
-- Provider moet per layer van een view-service het Rights Management vaststellen.
+Bij het implementeren van *Rights management* is het van belang dat er door de dataproviders mee rekening wordt gehouden in de metadata. Verschillende niveaus zijn hierbij van belang:
+- Provider moet per layer van een view-service het rights management vaststellen.
 - Metadata voor services moet altijd toegankelijk zijn; ook voor services met beperkte toegang. Op deze manier blijft de service wel vindbaar in het NGR.
 - De metadata moet voorwaarden voor toegang en gebruik en de voorwaarden voor beperkingen op publieke toegang  en – in het geval van eCommerce – het honorarium bevatten.
 
 De Rights management controleert toegang tot netwerkdiensten en wordt dus op een ander niveau toegepast.
 
 
-
 ## View service
-De viewservice (of raadpleegdienst) heeft als functie de gegevens die via de Discovery Service van het Nationaal GeoRegister gevonden worden, te kunnen bekijken en beoordelen. Hiertoe dient de dataprovider de INSPIRE-thema’s met een viewservice te ontsluiten. De viewservice heeft uitdrukkelijk niet de functie om ‘mooie kaartbeelden’ te maken. Het gaat om een rudimentaire inspectie en beoordeling van de INSPIRE-conforme datasets die via een de viewservice ontsloten worden. Dit omvat onder andere:
+De view service (of raadpleegdienst) heeft als functie de gegevens die via de discovery service van het NGR gevonden worden, te kunnen bekijken en beoordelen. Hiertoe dient de dataprovider de INSPIRE-thema’s met een viewservice te ontsluiten. De viewservice heeft uitdrukkelijk niet de functie om ‘mooie kaartbeelden’ te maken. Het gaat om een rudimentaire inspectie en beoordeling van de INSPIRE-conforme datasets die via een de viewservice ontsloten worden. Dit omvat onder andere:
 - het weergeven van ruimtelijke data met pan, overlay, zoom functionaliteit;
-- de legenda en relevante metadata moet zichtbaar zijn;
+- de legenda en relevante metadata moet zichtbaar zijn.
 
 De onderstaande figuur geeft schematisch de operaties van de OGC WMS 1.3.0 weer.
 
@@ -115,12 +116,12 @@ De onderstaande figuur geeft schematisch de operaties van de OGC WMS 1.3.0 weer.
 
 ### Vereisten view service
 
-Voor de viewservices beschrijft het document <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance View Services</a> de technische eisen waaraan een service moet voldoen. Hiermee kan zowel ISO 19128: OGC Web Map Service 1.3.0 (WMS) of OGC Web Map Tile Service 1.0.0 (WMTS) worden geimplementeerd.  
+Voor de view services beschrijft het document <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance voor view services</a> de technische eisen waaraan een service moet voldoen. Hiermee kan zowel ISO 19128: OGC Web Map Service 1.3.0 (WMS) of OGC Web Map Tile Service 1.0.0 (WMTS) worden geimplementeerd.  
 
-De INSPIRE view service implementeerd de verplichte elementen van een WMS of WMTS aangevuld met de volgende vereisten;
-- Ondersteuning van de HTTP GET-interface is verplicht.
+De INSPIRE view service implementeert de verplichte elementen van een WMS of WMTS aangevuld met de volgende vereisten:
+- Ondersteuning van de HTTP GET-interface is verplicht;
 - De image/png of image/gif (zonder LZW-compressie) is verplicht als respons op een GetMap-request;
-- Service metadata moet beschikbaar worden gesteld via een Discovery Service;
+- Service metadata moet beschikbaar worden gesteld via een discovery service;
 - De viewservice moet de volgende geografische coördinaat-referentiesystemen ondersteunen:
 	- EPSG:4258 (ETRS89)
 	- EPSG:4326 (WGS84)
@@ -131,7 +132,7 @@ Voor een WMS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaard
 In het <a href="https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf" target="_blank">Raamwerk GeoStandaarden</a> is meer informatie te vinden over de samenhang van verschillende standaarden.
 
 ### Meertaligheid
-Een Capabilities-document kan maar in één taal worden opgesteld. Om meertaligheid te ondersteunen is het dus noodzakelijk om voor iedere ondersteunde taal één Capabilities-document aan te maken. In ieder Capabilities-document moeten de ondersteunde talen worden opgenomen in de `inspire_vs:ExtendedCapabilities`.
+Een capabilities-document kan maar in één taal worden opgesteld. Om meertaligheid te ondersteunen is het dus noodzakelijk om voor iedere ondersteunde taal één capabilities-document aan te maken. In ieder capabilities-document moeten de ondersteunde talen worden opgenomen in de `inspire_vs:ExtendedCapabilities`.
 
 <pre class="xml">
 &lt;inspire_vs:ExtendedCapabilities&gt; 
@@ -158,7 +159,7 @@ De INSPIRE Network Services Regulation en de INSPIRE Regulation voor de interope
 
 <a href="https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0." target="_blank">https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0.</a>
 
-2. De service antwoordt met een Capabilities-document waarin de ondersteunde talen zijn weergegeven in de Extended Capabilities:
+2. De service antwoordt met een capabilities-document waarin de ondersteunde talen zijn weergegeven in de Extended Capabilities:
 
 <pre class="xml">
 &lt;inspire_vs:ExtendedCapabilities&gt;
@@ -176,25 +177,27 @@ De INSPIRE Network Services Regulation en de INSPIRE Regulation voor de interope
 
 <a href="https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0&language=eng" target="_blank">https://example.com/services/wms?request=GetCapabilities&service=WMS&version=1.3.0&language=eng</a>.
 
-4. De service antwoordt door een Capabilities-document te sturen in de gevraagde (ondersteunde) taal, waarbij de Title en Abstract elementen zijn weergegeven in de gevraagde taal. Voor de operaties wordt verwezen naar een voor die taal specifieke URL. Een client gebruikt vervolgens die taalspecifieke URL.
+4. De service antwoordt door een capabilities-document te sturen in de gevraagde (ondersteunde) taal, waarbij de Title en Abstract elementen zijn weergegeven in de gevraagde taal. Voor de operaties wordt verwezen naar een voor die taal specifieke URL. Een client gebruikt vervolgens die taalspecifieke URL.
 
-### INSPIRE scenario's voor metadata in Capabilities-document
+### INSPIRE scenario's voor metadata in capabilities-document
 
 De Technical Guidance beschrijft 2 scenario's om de verplichte INSPIRE-elementen op te nemen in een ISO 19128 (WMS 1.3.0) Capabilities document:
-Scenario 1. Verplichte WMS-elementen opnemen met een minimale uitbreiding voor verplichte INSPIRE-elementen als ExtendedCapabilities.
-Scenario 2. Verplichte WMS elementen opnemen aangevuld met alle INSPIRE elementen, deel via een mapping als ISO 19128 WMS-elementen en deels als ExtendedCapabilities-elementen.
+- Scenario 1: Verplichte WMS-elementen opnemen met een minimale uitbreiding voor verplichte INSPIRE-elementen als ExtendedCapabilities.
+- Scenario 2: Verplichte WMS elementen opnemen aangevuld met alle INSPIRE elementen, deels via een mapping als ISO 19128 WMS-elementen en deels als ExtendedCapabilities-elementen.
 
-Bij het kiezen van de scenario's moet in overweging worden genomen dat het gebruik van extended capabilities niet in alle tooling geimplementerd is. De beweging binnen de EU INSPIRE community is om te komen tot implementaties zonder INSPIRE specifieke extenties. Daarvoor wordt nu gewerkt aan een derde scenario, waarbij geen gebruik wordt gemaakt van extended capabilities.
+Bij het kiezen van de scenario's moet in overweging worden genomen dat het gebruik van extended capabilities niet in alle tooling geimplementerd is. De beweging binnen de Europese INSPIRE community is om te komen tot implementaties zonder INSPIRE specifieke extenties. Daarvoor wordt nu gewerkt aan een derde scenario, waarbij geen gebruik wordt gemaakt van extended capabilities.
+
 
 **Scenario 1: Minimale extended capabilities**
-De volledige INSPIRE-metadata wordt opgenomen in een apart metadata-voor-services-document, dat beschikbaar wordt gesteld via een Discovery Service.
+
+De volledige INSPIRE-metadata wordt opgenomen in een apart metadata-voor-services-document, dat beschikbaar wordt gesteld via een discovery service.
 
 ![scenario1](media/Scenario1.png "Schematische weergave van het eerste scenario.")
 
-Het Capabilities-document bevat (naast de verplichte WMS-elementen) ook de volgende INSPIRE-elementen:
+Het capabilities-document bevat (naast de verplichte WMS-elementen) ook de volgende INSPIRE-elementen:
 1. Een verwijzing (MetadataURL) naar een INSPIRE-metadata-voor-services document;
 2. De ondersteunde defaulttaal (eventueel aangevuld met aanvullende ondersteunde talen);
-3. De default responstaal.
+3. De default respons-taal.
 
 | INSPIRE-metadata-elementen | Extended Capabilities |
 |-----------------|-------------|
@@ -202,9 +205,10 @@ Het Capabilities-document bevat (naast de verplichte WMS-elementen) ook de volge
 | SupportedLanguages | inspire_vs:SupportedLanguages |
 | ResponseLanguage | inspire_vs:ResponseLanguage |
 
+
 **MetadataURL (M)**
 
-Dit element wordt opgenomen als `inspire_vs:MetadataURL` element in de extendedCapabilities en bevat een verwijzing, het GetRecordById request met als argument het Id (element fileIdentifier van het metadata-voor-services document), naar het metadata-voor-services-document welke gepubliceerd is in een catalog service.
+Dit element wordt opgenomen als `inspire_vs:MetadataURL` element in de extendedCapabilities en bevat een verwijzing, het GetRecordById request met als argument het Id (element fileIdentifier van het metadata-voor-services document), naar het metadata-voor-services-document welke gepubliceerd is in een catalog-service.
 
 <pre class="xml">
 &lt;inspire_common:MetadataUrl&gt;     
@@ -222,12 +226,15 @@ Zie beschrijving onder scenario 2.
 
 Zie beschrijving onder scenario 2.
 
+
+
 **Scenario 2: Volledige extended capabilities**
-Het Capabilities-document gaat hiermee fungeren als de bron om een metadata-voor-services-document te genereren. Het gegenereerde document wordt via een Discovery Service beschikbaar gesteld.
+
+Het capabilities-document gaat hiermee fungeren als de bron om een metadata-voor-services-document te genereren. Het gegenereerde document wordt via een discovery service beschikbaar gesteld.
 
 ![scenario2](media/Scenario_2.png "Schematische weergave van het tweede scenario.")
 
-- Waar een mapping naar WMS-elementen mogelijk is, worden INSPIRE-elementen gemapped naar de WMS-elementen.
+- Waar een mapping naar WMS-elementen mogelijk is, worden INSPIRE-elementen gemapped naar de WMS-elementen;
 - Waar geen mapping naar WMS-elementen mogelijk is, worden de INSPIRE-elementen opgenomen als ExtendedCapabilities in het Capabilities-document.
 
 | INSPIRE-metadata-elementen | M/C | ISO 19128 WMS-elementen | Extended Capabilities |
@@ -250,13 +257,14 @@ Het Capabilities-document gaat hiermee fungeren als de bron om een metadata-voor
 | Metadata Date | M | | inspire_common:MetadataDate |
 | Metadata Language | M	| | inspire_common:SupportedLanguages |
 
+
 **Resource Title (M)**
 
-Dit element wordt opgenomen als `wms:Title` element en geeft een karakteristieke naam aan de Service.
+Dit element wordt opgenomen als `wms:Title` element en geeft een karakteristieke naam aan de service.
 
 **Resource Abstract (M)**
 
-Dit element wordt opgenomen als `wms:Abstract` element en geeft een korte beschrijving van de inhoud van de Service.
+Dit element wordt opgenomen als `wms:Abstract` element en geeft een korte beschrijving van de inhoud van de service.
 
 **Resource Type (M)**
 
@@ -270,15 +278,16 @@ Dit element heeft een vaste waarde 'service':
 &lt;/inspire_vs:ExtendedCapabilities&gt;
 </pre>
 
+
 **Resource Locator (C)**
 
-Definieert een link naar de viewservice. Dit kan zijn:
-- Een link naar het Capabilities document van de viewservice;
-- Een link naar een WSDL document dat de viewservice beschrijft (SOAP Binding);
-- Een link naar een web pagina met instructies om de service te benaderen;
-- Een link naar een toepassing waarmee de viewservice direct kan worden benaderd.
+Definieert een link naar de view service. Dit kan zijn:
+- Een link naar het capabilities-document van de view service;
+- Een link naar een WSDL-document dat de view service beschrijft (SOAP Binding);
+- Een link naar een webpagina met instructies om de service te benaderen;
+- Een link naar een toepassing waarmee de view service direct kan worden benaderd.
 
-Hieronder een voorbeeld van een link naar het Capabilities-document:
+Hieronder een voorbeeld van een link naar het capabilities-document:
 <pre class="xml">
 &lt;inspire_common:ResourceLocator&gt;
     &lt;inspire_common:URL&gt;http://www.provinciaalgeoregister.nl/pgr-wms/services?request=GetCapabilities&service=WMS&version=1.3.0&lt;/inspire_common:URL&gt;
@@ -286,11 +295,12 @@ Hieronder een voorbeeld van een link naar het Capabilities-document:
 &lt;/inspire_common:ResourceLocator&gt;
 </pre>
 
+
 **Coupled Resource (C)**
 
-Coupled Resource geeft informatie over de datasets waarop de viewservice werkt. Dit element wordt ingevuld als `wms:MetadataURL` (een link naar de metadata van de dataset waarop een Layer is gedefinieerd) voor iedere Layer in de viewservice. De MetadataURL kan op 2 manieren worden ingevuld:
-1. De MetadataURL bevat een link naar een metadatadocument dat beschikbaar is in een Discovery Service, waarbij gebruik wordt gemaakt van de GetRecordByID operatie van de Discovery Service om het document op te halen op basis van het `<fileIdentifier>` element (gevuld met een [UUID](#uuid)) van dat document.
-2. De MetadataURL bevat een directe link naar een ISO19115/19139 metadata document.
+Coupled Resource geeft informatie over de datasets waarop de view service werkt. Dit element wordt ingevuld als `wms:MetadataURL` (een link naar de metadata van de dataset waarop een Layer is gedefinieerd) voor iedere Layer in de view service. De MetadataURL kan op 2 manieren worden ingevuld:
+1. De MetadataURL bevat een link naar een metadatadocument dat beschikbaar is in een discovery service, waarbij gebruik wordt gemaakt van de GetRecordByID operatie van de discovery service om het document op te halen op basis van het `<fileIdentifier>` element (gevuld met een [UUID](#uuid)) van dat document.
+2. De MetadataURL bevat een directe link naar een ISO19115/19139 metadata-document.
 
 <pre class="xml">
 &lt;Layer&gt;
@@ -303,6 +313,7 @@ Coupled Resource geeft informatie over de datasets waarop de viewservice werkt. 
 &lt;/Layer&gt;
 </pre>
 
+
 **Spatial Data Service Type (M)**
 
 Dit element heeft een vaste waarde 'view' en wordt ingevuld als `inspire_common:SpatialDataServiceType` element onder `inspire_vs:ExtendedCapabilities`.
@@ -313,6 +324,7 @@ Dit element heeft een vaste waarde 'view' en wordt ingevuld als `inspire_common:
 &lt;/inspire_vs:ExtendedCapabilities&gt;
 </pre>
 
+
 **Keyword (M)**
 
 Er is één keyword verplicht. Dat is het keyword om de classificatie van de service te duiden (`classificationOfSpatialDataService`). Daarnaast kunnen nog andere keywords worden opgenomen. Keywords kunnen op meerdere manieren worden ingevuld:
@@ -320,7 +332,8 @@ Er is één keyword verplicht. Dat is het keyword om de classificatie van de ser
 2. in de `inspire_vs:ExtendedCapabilities` met de elementen `inspire_common:Keyword` en `inspire_common:MandatoryKeyword`. Het verplichte keyword voor de classificatie van de service is er een uit de lijst die in Part D.4 uit INS MD te vinden is. Voor een viewservice is dat in ieder geval "infoMapAccessService".
 
 *1. gebruik wms:keyword*
-Als een Keyword afkomstig is uit een Thesaurus kan het attribuut "vocabulary" worden gebruikt om aan te geven uit welke thesaurus dat keyword afkomstig is.
+
+Als een keyword afkomstig is uit een Thesaurus kan het attribuut "vocabulary" worden gebruikt om aan te geven uit welke thesaurus dat keyword afkomstig is.
 
 <pre class="xml">
 &lt;!-- Het verplichte keyword voor de classificatie van de service --&gt;
@@ -329,6 +342,7 @@ Als een Keyword afkomstig is uit een Thesaurus kan het attribuut "vocabulary" wo
 </pre>
 
 *2. gebruik inspire_vs:ExtendedCapabilities elementen*
+
 Voor het verplichte keyword voor de "Classification of Spatial Data Services" wordt het element `inspire_common:MandatoryKeyword` gebruikt. Dit is een element van het type classificationOfSpatialDataService.
 
 <pre class="xml">
@@ -353,6 +367,7 @@ Voor de overige keywords wordt het element `inspire_common:Keyword` gebruikt. Di
 &lt;/inspire_common:Keyword&gt;
 </pre>
 
+
 **GeographicBoundingBox (M)**
 
 Voor GeographicBoundingBox wordt het element `wms:EX_GeographicBoundingBox` gebruikt.
@@ -366,6 +381,7 @@ Voor GeographicBoundingBox wordt het element `wms:EX_GeographicBoundingBox` gebr
 &lt;/EX_GeographicBoundingBox&gt;
 </pre>
 
+
 **Temporal Reference (M)**
 
 Voor Temporal Reference wordt het element `inspire_common:TemporalReference` in `inspire_vs:ExtendedCapabilities` gebruikt. Binnen dit element moet minimaal één van de sub-elementen `inspire_common:DateOfCreation`, `inspire_common:DateOfLastRevision` of `inspire_common:DateOfPublication` worden ingevuld, waarbij de voorkeur uitgaat naar `inspire_common:DateOfLastRevision`.
@@ -378,9 +394,11 @@ Voor Temporal Reference wordt het element `inspire_common:TemporalReference` in 
 &lt;/inspire_common:TemporalReference&gt;
 </pre>
 
+
 **Spatial Resolution (C)**
 
-Dit element kan niet worden beschreven in ISO19119. Daarom worden restricties voor Spatial Resolution, als deze er zijn, kwalitatief beschreven in `wms:Abstract`.
+Dit element kan niet worden beschreven in ISO 19119. Daarom worden restricties voor Spatial Resolution, als deze er zijn, kwalitatief beschreven in `wms:Abstract`.
+
 
 **Conformity (M)**
 
@@ -402,13 +420,15 @@ Hiermee wordt aangegeven of een service conformant of notConformant is aan de im
 &lt;/inspire_common:Conformity&gt;
 </pre>
 
+
 **Conditions for Access and Use (M)**
 
-Voor het aangeven van beperkingen voor de toegang en gebruik wordt het element `wms:Fees` gebruikt. Dit is een vrijetekstveld. Als de service kosteloos is te gebruiken dan wordt hiervoor de tekst "Geen gebruiksbeperkingen" (no conditions apply) gebruikt. Als het onbekend is of er kosten zijn verbonden aan het gebruik van de service dan wordt de waarde "Onbekend" (conditions unknown) gebruikt.
+Voor het aangeven van beperkingen voor de toegang en gebruik wordt het element `wms:Fees` gebruikt. Dit is een vrij tekstveld. Als de service kosteloos is te gebruiken dan wordt hiervoor de tekst "Geen gebruiksbeperkingen" (no conditions apply) gebruikt. Als het onbekend is of er kosten zijn verbonden aan het gebruik van de service dan wordt de waarde "Onbekend" (conditions unknown) gebruikt.
 
 <pre class="xml">
 &lt;Fees&gt;Geen gebruiksbeperkingen&lt;/Fees&gt;
 </pre>
+
 
 **Limitations on Public Access (M)**
 
@@ -421,9 +441,10 @@ Om aan te geven of er restricties gelden voor het gebruik van de service wordt h
 &lt;AccessConstraints&gt;Geen beperkingen&lt;/AccessConstraints&gt;
 </pre>
 
+
 **Responsible Organisation (M)**
 
-Voor Responsible Organisation, de organisatie die verantwoordelijk is voor de viewservoce, wordt het element `wms:ContactInformation` gebruikt en daarbinnen het element `wms:ContactPersonPrimary`, waarbij een `wms:ContactPerson` en een `wms:ContactOrganization` worden ingevuld. De rol van de Responsible Organization wordt aangeven in het element `wms:ContactPosition` waarbij een code uit de codelijst CI_RoleCode wordt gebruikt. Voor het element `wms:ContactElectronicMailAddress` wordt bij voorkeur een functioneel email adres binnen de organisatie gebruikt.
+Voor Responsible Organisation, de organisatie die verantwoordelijk is voor de view service, wordt het element `wms:ContactInformation` gebruikt en daarbinnen het element `wms:ContactPersonPrimary`, waarbij een `wms:ContactPerson` en een `wms:ContactOrganization` worden ingevuld. De rol van de Responsible Organization wordt aangeven in het element `wms:ContactPosition` waarbij een code uit de codelijst CI_RoleCode wordt gebruikt. Voor het element `wms:ContactElectronicMailAddress` wordt bij voorkeur een functioneel emailadres binnen de organisatie gebruikt.
 
 <pre class="xml">
 &lt;ContactInformation&gt;
@@ -439,9 +460,10 @@ Voor Responsible Organisation, de organisatie die verantwoordelijk is voor de vi
 &lt;/ContactInformation&gt;
 </pre>
 
+
 **Metadata Point of Contact (M)**
 
-De INSPIRE Metadata implementing rule vereist dat ook de organisatie die verantwoordelijk is voor de metadata van de viewservice wordt geidentificeerd. Omdat in ISO19128 maar één organisatie kan worden opgegeven onder het element `wms:ContactInformation` wordt voor Metadata Point of Contact het element `inspire_common:MetadataPointOfContact` in de `inspire_vs:ExtendedCapabilities` gebruikt.
+De INSPIRE Metadata implementing rule vereist dat ook de organisatie die verantwoordelijk is voor de metadata van de view service wordt geidentificeerd. Omdat in ISO 19128 maar één organisatie kan worden opgegeven onder het element `wms:ContactInformation` wordt voor Metadata Point of Contact het element `inspire_common:MetadataPointOfContact` in de `inspire_vs:ExtendedCapabilities` gebruikt.
 
 <pre class="xml">
 &lt;inspire_common:MetadataPointOfContact&gt;
@@ -449,6 +471,7 @@ De INSPIRE Metadata implementing rule vereist dat ook de organisatie die verantw
     &lt;inspire_common:EmailAddress&gt;provinciaalgeoregister@gbo-provincies.nl&lt;/inspire_common:EmailAddress&gt;
 &lt;/inspire_common:MetadataPointOfContact&gt;
 </pre>
+
 
 **Metadata Date (M)**
 
@@ -458,9 +481,10 @@ De datum waarop de metadata is aangemaakt. Hiervoor wordt het element `inspire_c
 &lt;inspire_common:MetadataDate&gt;2011-05-01&lt;/inspire_common:MetadataDate&gt;
 </pre>
 
+
 **Metadata Language (M)**
 
-Voor Metadata Language wordt het element `inspire_common:SupportedLanguages` in `inspire_vs:ExtendedCapabilities` gebruikt. Binnen dit element moet exact één `inspire_common:DefaultLanguage` element worden opgenomen om de standaardtaal van de service weer te geven. Voor de aanduiding van de taal moet de drielettercode voor die taal worden gebruikt zoals gedefinieerd in de codelijst van [ISO 639-2/B (bibliographic codes)](http://www.loc.gov/standards/iso639-2/). Met het element `inspire_common:ResponseLanguage` wordt de taal van het Capabilitiesdocument aangeduid. Volgens het Technical Guidance document zou dit element moeten overeenkomen met de taal die als language parameter bij het GetCapabilities-request is gebruikt. Omdat een Capabilitiesdocument maar in één taal kan worden opgesteld (voor de ondersteuning van meerdere talen is per taal een Capabilities document nodig), komt de waarde van dit element in de praktijk dus overeen met de waarde van `inspire_common:DefaultLanguage`. 
+Voor Metadata Language wordt het element `inspire_common:SupportedLanguages` in `inspire_vs:ExtendedCapabilities` gebruikt. Binnen dit element moet exact één `inspire_common:DefaultLanguage` element worden opgenomen om de standaardtaal van de service weer te geven. Voor de aanduiding van de taal moet de drielettercode voor die taal worden gebruikt zoals gedefinieerd in de codelijst van <a href="http://www.loc.gov/standards/iso639-2/" target="_blank">ISO 639-2/B (bibliographic codes)</a>. Met het element `inspire_common:ResponseLanguage` wordt de taal van het capabilities-document aangeduid. Volgens het Technical Guidance document zou dit element moeten overeenkomen met de taal die als language parameter bij het GetCapabilities-request is gebruikt. Omdat een capabilities-document maar in één taal kan worden opgesteld (voor de ondersteuning van meerdere talen is per taal een capabilities-document nodig), komt de waarde van dit element in de praktijk dus overeen met de waarde van `inspire_common:DefaultLanguage`. 
 
 <pre class="xml">
 &lt;inspire_common:SupportedLanguages&gt;
@@ -473,11 +497,12 @@ Voor Metadata Language wordt het element `inspire_common:SupportedLanguages` in 
 &lt;/inspire_common:ResponseLanguage&gt;
 </pre>
 
-In de toekomst zal meertaligheid ook worden ondersteund in de OGC-standaarden. Daarin zal de codering van de taal plaatsvinden op basis van [IETF RFC 4646](https://www.ietf.org/rfc/rfc4646.txt) in plaats van ISO 639-2/B. Het Technical Guidance document bevat een tabel met daarin de vertaling van de ISO 639-2/B codes naar IETF RFC 4646 codes en voorziet in de toekomst ook een mogelijke wijziging van de huidige codes naar de IETRF RFC 4646 codes.
+In de toekomst zal meertaligheid ook worden ondersteund in de [OGC-standaarden](#iso-en-ogc-standaarden). Daarin zal de codering van de taal plaatsvinden op basis van <a href="https://www.ietf.org/rfc/rfc4646.txt" target="_blank">IETF RFC 4646</a> in plaats van ISO 639-2/B. Het Technical Guidance document bevat een tabel met daarin de vertaling van de ISO 639-2/B codes naar IETF RFC 4646 codes en voorziet in de toekomst ook een mogelijke wijziging van de huidige codes naar de IETRF RFC 4646 codes.
+
 
 **Metadata voor de Layers elementen in het Capabilities document**
 
-Een aantal parameters die in Annex III van de INSPIRE Network Services Regulation worden voorgeschreven voor een INSPIRE-viewservice zijn gemapped naar sub-elementen van `wms:Layer`. In de onderstaande tabel is die mapping weergegeven.
+Een aantal parameters die in Annex III van de [INSPIRE Network Services Regulation](#wetgeving) worden voorgeschreven voor een INSPIRE-viewservice zijn gemapped naar sub-elementen van `wms:Layer`. In de onderstaande tabel is die mapping weergegeven.
 
 | INSPIRE-metadata-elementen | ISO 19128 WMS-elementen van wms:Layer |
 | -------------------------- | ------------------------------------- |
@@ -494,6 +519,7 @@ Een aantal parameters die in Annex III van de INSPIRE Network Services Regulatio
 | Link to metadata of the corresponding spatial dataset | wms:MetadataURL |
 | Coupled Resource | wms:DataURL |
 
+
 **Resource Title**
 
 De Resource Title bevat de geharmoniseerde naam die is vastgelegd in de INSPIRE-richtlijn en wordt ingevuld in het element `wms:Layer`/`wms:Title` in de taal die is weergegeven als de `inspire_common:DefaultLanguage` in de `inspire_vs:ExtendedCapabilities`.
@@ -508,13 +534,15 @@ De Resource Title bevat de geharmoniseerde naam die is vastgelegd in de INSPIRE-
 &lt;/Layer&gt;
 </pre>
 
+
 **Resource Abstract**
 
 De Resource Abstract geeft een korte beschrijving van de laag en wordt ingevuld in het element `wms:Layer`/`wms:Abstract` in de taal die is weergegeven als de `inspire_common:DefaultLanguage` in de `inspire_vs:ExtendedCapabilities`.
 
+
 **Keyword**
 
-Keywords kunnen worden opgenomen in `wms:Keyword` elementen onder `wms:Layer`/`wms:KeywordList`. Voor de keywords die afkomstig zijn uit een thesaurus kan de naam van de thesaurus worden opgenomen in het attribuut vocabulary
+Keywords kunnen worden opgenomen in `wms:Keyword` elementen onder `wms:Layer`/`wms:KeywordList`. Voor de keywords die afkomstig zijn uit een thesaurus kan de naam van de thesaurus worden opgenomen in het attribuut vocabulary.
 
 <pre class="xml">
 &lt;KeywordList&gt;
@@ -527,9 +555,10 @@ Keywords kunnen worden opgenomen in `wms:Keyword` elementen onder `wms:Layer`/`w
 &lt;/KeywordList&gt;
 </pre>
 
+
 **Geographic Bounding Box**
 
-Voor GeographicBoundingBox wordt het element `wms:Layer`/`wms:BoundingBox` gebruikt. Hierin worden de coordinaten voor alle ondersteunde Coordinaat Referentie Systemen van de minimum bounding box beschreven.
+Voor GeographicBoundingBox wordt het element `wms:Layer`/`wms:BoundingBox` gebruikt. Hierin worden de coördinaten voor alle ondersteunde Coordinaat Referentie Systemen van de minimum bounding box beschreven.
 
 <pre class="xml">
 &lt;BoundingBox CRS="CRS:84" minx="2.99" miny="50.51" maxx="7.63" maxy="53.79"/&gt;
@@ -542,9 +571,10 @@ Voor GeographicBoundingBox wordt het element `wms:Layer`/`wms:BoundingBox` gebru
 &lt;BoundingBox CRS="EPSG:25832" minx="86512" miny="5606077" maxx="397932" maxy="5967089" /&gt;
 </pre>
 
+
 **Link to metadata on the spatial dataset**
 
-Het element `wms:Layer`/`wms:MetadataURL` wordt gebruikt om een verwijzing op te nemen naar het metadatadocument bij de dataset die via deze Layer wordt gevisualiseerd. Dit element wordt gevuld met een GetRecordById request naar een catalogservice waarmee dit metadatadocument kan worden opgehaald of een directe link naar een ISO19115/19139 metadatadocument.
+Het element `wms:Layer`/`wms:MetadataURL` wordt gebruikt om een verwijzing op te nemen naar het metadatadocument bij de dataset die via deze Layer wordt gevisualiseerd. Dit element wordt gevuld met een GetRecordById request naar een catalog service waarmee dit metadatadocument kan worden opgehaald of een directe link naar een ISO 19115/19139 metadatadocument.
 
 <pre class="xml">
 &lt;MetadataURL type="ISO19115:2003"&gt;
@@ -553,9 +583,14 @@ Het element `wms:Layer`/`wms:MetadataURL` wordt gebruikt om een verwijzing op te
 &lt;/MetadataURL&gt;
 </pre>
 
+
 **Unique Resource Identifier**
 
-De Unique Resource Identifier geeft de unieke identificatie weer van de bron (dataset) waarop de Layer is gebaseerd. Een Unique Resource Identifier wordt samengesteld door twee elementen te combineren, te weten `wms:AuthorityURL` en `wms:Identifier`. Het element `wms:AuthorityURL` kan op meerdere plekken worden gedefinieerd in het Capabilitiesdocument. Dat kan op het hoogste niveau onder `wms:Layer` of in een `wms:Layer` element daaronder (`wms:Layer`/`wms:Layer`). De eerste methode kan worden gebruikt om één keer voor alle Layers één AuthorityURL aan te geven. Alle onderliggende `wms:Layer` elementen worden dan verondersteld gebruikt te maken van deze AuthorityURL. De tweede methode kan worden gebruikt om per `wms:Layer` een unieke AuthorityURL op te nemen. Het laatste geval kan zich voordoen als een service is gemaakt die Layers bevat waarmee datasets van verschillende dataproviders worden gevisualiseerd. De technical guidance raadt aan om voor het element `wms:Identifier` een [UUID](#uuid) te gebruiken om de dataset mee te identificeren. .
+De Unique Resource Identifier  geeft de unieke identificatie weer van de bron (dataset) waarop de Layer is gebaseerd. Een Unique Resource Identifier wordt samengesteld door twee elementen te combineren, te weten `wms:AuthorityURL` en `wms:Identifier`. Het element `wms:AuthorityURL` kan op meerdere plekken worden gedefinieerd in het capabilities-document. 
+
+Dat kan op het hoogste niveau onder `wms:Layer` of in een `wms:Layer` element daaronder (`wms:Layer`/`wms:Layer`). De eerste methode kan worden gebruikt om één keer voor alle Layers één AuthorityURL aan te geven. Alle onderliggende `wms:Layer` elementen worden dan verondersteld gebruikt te maken van deze AuthorityURL. 
+
+De tweede methode kan worden gebruikt om per `wms:Layer` een unieke AuthorityURL op te nemen. Het laatste geval kan zich voordoen als een service is gemaakt die Layers bevat waarmee datasets van verschillende dataproviders worden gevisualiseerd. De technical guidance raadt aan om voor het element `wms:Identifier` een [UUID](#uuid) te gebruiken om de dataset mee te identificeren.
 
 <pre class="xml">
  &lt;!-- Codespace om de authority uniek mee te identificeren--&gt;
@@ -569,9 +604,10 @@ De Unique Resource Identifier geeft de unieke identificatie weer van de bron (da
 &lt;/Identifier&gt;
 </pre>
 
+
 **Name**
 
-Dit is de geharmoniseerde naam voor INSPIRE-thema's die wordt gebruikt voor communicatie tussen computers, in tegenstelling tot Title dat wordt gebruikt als 'naam' voor de Layer die voor mensen begrijpelijk is. Hiervoor wordt het element `wms:Name` gebruikt, waarbij de volgende conventie wordt aangehouden: THEME.LayerName, met het INSPIRE-thems in hoofdletters en LayerName in UpperCamelCase-schrijfwijze zonder spaties. Voor services waarin meerdere SubLayers zijn opgenomen, kan deze schrijfwijze worden uitgebreid tot THEME.LayerName.SubLayerName
+Dit is de geharmoniseerde naam voor INSPIRE-thema's die wordt gebruikt voor communicatie tussen computers, in tegenstelling tot Title dat wordt gebruikt als 'naam' voor de Layer die voor mensen begrijpelijk is. Hiervoor wordt het element `wms:Name` gebruikt, waarbij de volgende conventie wordt aangehouden: THEME.LayerName, met het INSPIRE-theme in hoofdletters en LayerName in UpperCamelCase-schrijfwijze zonder spaties. Voor services waarin meerdere SubLayers zijn opgenomen, kan deze schrijfwijze worden uitgebreid tot THEME.LayerName.SubLayerName
 
 | Thema | Voorbeeld |
 | ----- | --------- |
@@ -583,7 +619,8 @@ Dit is de geharmoniseerde naam voor INSPIRE-thema's die wordt gebruikt voor comm
 | Hydrografie | HY.Network |
 | Beschermde Gebieden | PS.ProtectedSite |
 
-Layer names en layer titles zijn verplicht voor de viewservices van geharmoniseerde datasets zoals ze in de dataspecificaties gedefinieerd zijn.
+Layer names en Layer titles zijn verplicht voor de view services van geharmoniseerde datasets zoals ze in de [INSPIRE dataspecificaties](#inspire-dataspecificaties) gedefinieerd zijn.
+
 
 **Coordinate Reference Systems (CRS)**
 
@@ -598,17 +635,18 @@ Minimaal moeten de geografische Coordinaat Referentie Systemen (WGS84 en ETRS89)
 &lt;CRS&gt;EPSG:4258&lt;/CRS&gt;
 </pre>
 
+
 **Styles**
 
-Hiervoor wordt het element `wms:Layer`/`wms:Style` gebruikt. Voor een Style moet in ieder geval een Title (`wms:Title`, hier wordt een voor mensen leesbare naam opgenomen) en een Unique Identifier (`wms:Name`) worden opgenomen. Voor ieder INSPIRE-thema moet in ieder geval een Style `inspire_common:DEFAULT` worden opgenomen. Deze default Style moet zijn gedefinieerd op basis van het hoofdstuk Portrayal uit de dataspecificaties voor dat thema. [Zie hier voor meer informatie](#portrayal). Als er geen opmaak is gedefinieerd in de dataspecificatie voor het betreffende thema dan wordt de volgende opmaak aangehouden voor de `inspire_common:Default` style:
+Hiervoor wordt het element `wms:Layer`/`wms:Style` gebruikt. Voor een style moet in ieder geval een Title (`wms:Title`, hier wordt een voor mensen leesbare naam opgenomen) en een Unique Identifier (`wms:Name`) worden opgenomen. Voor ieder INSPIRE-thema moet in ieder geval een style `inspire_common:DEFAULT` worden opgenomen. Deze default style moet zijn gedefinieerd op basis van het hoofdstuk [Portrayal](#portrayal) uit de INSPIRE dataspecificaties voor dat thema. Als er geen opmaak is gedefinieerd in de INSPIRE dataspecificatie voor het betreffende thema, dan wordt de volgende opmaak aangehouden voor de `inspire_common:Default` style:
 
-- Punten: grijs vierkant, 6 pixels.
-- Lijnen: zwarte doorgetrokken lijn, 1 pixel.
-- Vlakken: zwarte doorgetrokken lijn, 1 pixel met een grijze vulling.
+- Punt: grijs vierkant, 6 pixels.
+- Lijn: zwarte doorgetrokken lijn, 1 pixel.
+- Vlak: zwarte doorgetrokken lijn, 1 pixel met een grijze vulling.
 
 Naast de `inspire_common:Default` Style kunnen nog aanvullende Style-elementen worden opgenomen voor andere visualisaties.
 
-Voor de Style moet ook een URL worden opgenomen die verwijst naar een legenda in de taal die is gedefinieerd als `inspire_common:DefaultLanguage` voor de service in `inspire_vs:ExtendedCapabilities`. Hiervoor wordt het element `wms:LegendURL` gebruikt.
+Voor de style moet ook een URL worden opgenomen, die verwijst naar een legenda in de taal die is gedefinieerd als `inspire_common:DefaultLanguage` voor de service in `inspire_vs:ExtendedCapabilities`. Hiervoor wordt het element `wms:LegendURL` gebruikt.
 
 <pre class="xml">
 &lt;Style&gt;
@@ -621,17 +659,19 @@ Voor de Style moet ook een URL worden opgenomen die verwijst naar een legenda in
 &lt;/Style&gt;
 </pre>
 
-Default styling is gedefinieerd in de viewservices TG (zie TG View service v3.0 paragraaf 4.2.3.3.4.8, eis 43 en 44). Dit is dus altijd verplicht voor viewservices, ook al is het nog niet vereist aan de dataspecificaties te voldoen. Zolang de portrayal zoals vastgelegd in de dataspecificaties (nog) niet verplicht is, moeten serviceproviders tenminste de default styling uit viewservices toepassen (requirement in de Technical Guidance voor View services).
+Default styling is gedefinieerd in de [Technical Guidance voor view services](#technische-inspire-richtlijnen) (zie TG view service v3.0 paragraaf 4.2.3.3.4.8, eis 43 en 44). Dit is dus altijd verplicht voor view services, ook al is het nog niet vereist aan de INSPIRE dataspecificaties te voldoen. Zolang de [portrayal](#portrayal) zoals vastgelegd in de INSPIRE dataspecificaties (nog) niet verplicht is, moeten serviceproviders tenminste de default styling uit view services toepassen (requirement in de Technical Guidance voor view services).
 
 "inspire_common:DEFAULT" is een placeholder voor een Style Unique Identifier van de INSPIRE default style, maar je kan ook een andere naam kiezen voor de (default) stijl. De naam van de Style hoeft dus niet per se "inspire_common:DEFAULT" te zijn.
+
 
 **Dimension Pairs**
 
 Dit element wordt alleen gebruikt als de Layer afhankelijk is van tijd of hoogte. In dat geval wordt het element `wms:Dimension` gebruikt. Als een laag volledig is gedefinieerd door de beide assen van het CRS, dan wordt dit element niet ingevuld.
 
+
 **Coupled Resource**
 
-Coupled Resource geeft een verwijzing die toegang biedt tot de dataset die in deze Layer wordt gevisualiseerd. Dit kan een verwijzing zijn naar bijvoorbeeld een zip-bestand dat kan worden gedownload of naar een downloadservice waarmee toegang tot deze dataset wordt geboden. Hiervoor wordt het element `wms:Layer`/`wms:DataURL` gebruikt.
+Coupled Resource geeft een verwijzing die toegang biedt tot de dataset die in deze Layer wordt gevisualiseerd. Dit kan een verwijzing zijn naar bijvoorbeeld een zip-bestand dat kan worden gedownload of naar een download service waarmee toegang tot deze dataset wordt geboden. Hiervoor wordt het element `wms:Layer`/`wms:DataURL` gebruikt.
 
 <pre class="xml">
 &lt;!-- Voorbeeld van een verwijzing naar de onderliggende dataset (FeatureType) in de PGR download service--&gt;
@@ -648,8 +688,9 @@ Coupled Resource geeft een verwijzing die toegang biedt tot de dataset die in de
 &lt;/DataURL&gt;
 </pre>
 
+
 ### Category layers
-Als een Layer meerdere regionale datasets visualiseert, of meerdere featuretypes (bijvoorbeeld lijnen en vlakken in 1 laag), dan beveelt de technical guidance viewservices aan om gebruik te maken van Category Layers. Een Category Layer is een Layer die zelf weer uit meerdere Layers is opgebouwd die ieder een eigen dataset visualiseren. Als een viewservice gebruik maakt van Category Layers dan wordt het element `wms:Layer`/`wms:Name` gebruikt om de INSPIRE-geharmoniseerde naam voor het thema weer te geven. Als er een metadatadocument beschikbaar is dan wordt het element `wms:Layer`/`wms:MetadataURL` gebruikt om een verwijzing naar dat metadata document op te nemen.
+Als een Layer meerdere regionale datasets visualiseert, of meerdere featuretypes (bijvoorbeeld lijnen en vlakken in 1 laag), dan beveelt de Technical Guidance voor view services aan om gebruik te maken van Category Layers. Een Category Layer is een Layer die zelf weer uit meerdere Layers is opgebouwd die ieder een eigen dataset visualiseren. Als een viewservice gebruik maakt van Category Layers dan wordt het element `wms:Layer`/`wms:Name` gebruikt om de INSPIRE-geharmoniseerde naam voor het INsPIRE thema weer te geven. Als er een metadata-document beschikbaar is dan wordt het element `wms:Layer`/`wms:MetadataURL` gebruikt om een verwijzing naar dat metadata-document op te nemen.
 
 <pre class="xml">
 &lt;Layer&gt;
@@ -682,13 +723,15 @@ Als een Layer meerdere regionale datasets visualiseert, of meerdere featuretypes
 &lt;/Layer&gt;
 </pre>
 
-Volgens de TG 3.0 voor viewservices, moet een Category Layer een naam hebben (eis 49). Daarnaast gelden de algemene eisen van WMS, die INSPIRE overneemt. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden.
-INSPIRE volgt de WMS 1.3.0 specificatie voor overerving van de layer elementen. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden.
 
+Volgens de Technical Guidance voor view services, moet een Category Layer een naam hebben (eis 49). Daarnaast gelden de algemene eisen van WMS, die INSPIRE overneemt. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden.
+INSPIRE volgt de WMS 1.3.0 specificatie voor overerving van de Layer elementen. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden.
 
 
 ### Voorbeeldbestand XML voor Capabilities
-Hier zijn twee voorbeeldbestanden te vinden voor de Capibilities-documenten, volgens [scenario 1](docs/WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](docs/WMSCapabilities_Voorbeeld_Scenario2.zip).
+Hier zijn twee voorbeeldbestanden te vinden voor de capabilities-documenten, volgens [scenario 1](docs/WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](docs/WMSCapabilities_Voorbeeld_Scenario2.zip).
+
+
 
 ## Download services
 
