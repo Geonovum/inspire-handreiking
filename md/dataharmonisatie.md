@@ -126,15 +126,23 @@ Dit hangt van een aantal organisatie-gebonden factoren af:
 De belangrijkste factor is de kennis die binnen een organisatie aanwezig is. Zijn er binnen de organisatie database-specialisten aanwezig, die verstand hebben van ruimtelijke databases? Of zijn er GIS-expers die al vaker met ETL software tools hebben gewerkt? Dit kan ook betekenen dat er wellicht gekozen moet worden voor uitbesteding. De ‘spin-off’ van het zelf opdoen van kennis is een zijdelingse overweging die bij de keuze van harmonisatie-principe van belang kan zijn. Voor INSPIRE-gerichte harmonisaties is veel kennis nodig. Deze kennis kan voor andere GEO-ICT projecten ook van praktisch belang zijn, bijvoorbeeld omdat het de kennis van een tool verhoogt. Dit kan een overweging zijn om een kennis-domein te versterken en hierin te investeren.
 
 ## Encodings (bestandsformaten)
-*Encodings* of te wel bestandsformaten zijn beschreven in de [INSPIRE dataspecificatie](#inspire-dataspecificaties) en wel in paragraaf 9.3. De default encoding voor INSPIRE is [GML](#gml). Daarnaast zijn ook [andere encodings](#andere-encoding) toegestaan, zoals bijvoorbeeld GeoJSON of Geopackage. 
+*Encodings* of te wel bestandsformaten zijn beschreven in de [INSPIRE dataspecificatie](#inspire-dataspecificaties) en wel in paragraaf 9.3. De default encoding voor INSPIRE is [GML](#gml). Ook [andere encodings](#andere-encoding), zoals bijvoorbeeld GeoJSON of Geopackage, zijn onder voorwaarden mogelijk. 
 
 ### GML
-GML is de default encoding voor INSPIRE, zoals beschreven staat in paragraaf 9.3.1 van de [INSPIRE dataspecificatie](#inspire-dataspecificaties). INSPIRE heeft een lijst van te gebruiken <a href="https://inspire.ec.europa.eu/media-types/" target="_blank">media-types</a> gepubliceerd. Deze lijst bevat naast GML ook types voor gecomprimeerde bestanden, zoals Shapefiles of MapInfo TAB files in een ZIP-betand, en types voor rasters (TIFF en ECW bijvoorbeeld).
+GML is de default encoding voor INSPIRE, zoals beschreven staat in paragraaf 9.3.1 van de [INSPIRE dataspecificatie](#inspire-dataspecificaties). Daarvoor zijn de encoding rules in de dataspecificaties van de UML modellen naar <a href="https://inspire.ec.europa.eu/schemas/" target="_blank">GML Application schemas</a> beschikbaar.
 
 Merk op: GML is voor Nederland als uitwisselingsformaat verplicht voorgeschreven, zie de zogenaamde <a href="https://www.forumstandaardisatie.nl/open-standaarden" target="_blank">Pas-toe-of-Leg-Uit-lijst van geo-standaarden</a>. Bij een implementatie via WFS wordt standaard GML geboden.
 
 ### Andere encodings
-Andere encodings zoals beschreven in paragraaf 9.3.2 van de [INSPIRE dataspecificatie](#inspire-dataspecificaties) zijn ook toegestaan, maar dan moet de mapping naar het INSPIRE-model wel goed beschreven en gepubliceerd worden om te voldoen aan de INSPIRE vereisten.
+Andere encodings zoals beschreven in paragraaf 9.3.2 van de [INSPIRE dataspecificatie](#inspire-dataspecificaties) zijn ook toegestaan, maar dat moet wel volgens specifieke INSPIRE vereisten; 
+
+‒ Iedere encoding rule moet in overeenstemming met ISO19118 zijn.
+‒ Encoding rules moeten ter beschikking gesteld worden samen met de datasets.
+
+Daaruit kan afgeleid worden dat het formaat in principe vrij is zolang de encoding rule (hoe kom ik van uit een INSPIRE UML naar de juiste
+informatie in een aangeleverde dataset) aan een aantal eisen moeten voldoen, en ter beschikking gesteld moeten worden.
+
+Om te bepalen of geharmoniseerde data voldoet aan de INSPIRE-richtlijn ( en daarmee interoperable zijn ) wordt onder meer een validatie uitgevoerd. Deze validatie wordt uitgevoerd op basis van GML. Overige formaten kunnen niet worden gevalideerd. Als een ander formaat automatisch wordt gegenereerd uit een valide GML kan toch de interoperabiliteit worden gewaarborgd.
 
 In 2017 heeft een <a href="https://github.com/INSPIRE-MIF/2017.2/" target="_blank">Europese INSPIRE subwerkgroep 2017.2</a> het gebruik van andere alternatieve encodings onderzocht. In de werkgroep is een template voor alternatieve encodings opgesteld en een encoding voor GeoJSON. GeoJSON kan dienen als alternatieve of aanvullende encoding voor eenvoudige datasets voor het INSPIRE thema Adressen en voor het INSPIRE thema Milieubewakingsfaciliteiten. De template en GeoJSON encoding zijn beschikbaar via <a href="https://github.com/INSPIRE-MIF/2017.2/" target="_blank">github</a>.  
 
