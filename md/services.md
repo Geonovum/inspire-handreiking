@@ -640,8 +640,8 @@ Minimaal moeten de geografische Coordinaat Referentie Systemen (WGS84 en ETRS89)
 
 Hiervoor wordt het element `wms:Layer`/`wms:Style` gebruikt. Voor een style moet in ieder geval een Title (`wms:Title`, hier wordt een voor mensen leesbare naam opgenomen) en een Unique Identifier (`wms:Name`) worden opgenomen. Voor ieder INSPIRE-thema moet in ieder geval een style `inspire_common:DEFAULT` worden opgenomen. Deze default style moet zijn gedefinieerd op basis van het hoofdstuk [Portrayal](#portrayal) uit de INSPIRE dataspecificaties voor dat thema. Als er geen opmaak is gedefinieerd in de INSPIRE dataspecificatie voor het betreffende thema, dan wordt de volgende opmaak aangehouden voor de `inspire_common:Default` style:
 
-- Punt: grijs vierkant, 6 pixels.
-- Lijn: zwarte doorgetrokken lijn, 1 pixel.
+- Punt: grijs vierkant, 6 pixels;
+- Lijn: zwarte doorgetrokken lijn, 1 pixel;
 - Vlak: zwarte doorgetrokken lijn, 1 pixel met een grijze vulling.
 
 Naast de `inspire_common:Default` Style kunnen nog aanvullende Style-elementen worden opgenomen voor andere visualisaties.
