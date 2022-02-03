@@ -10,10 +10,6 @@ Onderstaande figuur geeft een overzicht van de verschillende types Spatial Data 
 
 ![sds_schema2](media/SDS_en_network_services.png "SDS-types.")
 
-of
-
-![INSPIRE_services](media/INSPIRE_services.png "INSPIRE services")
-
 Het bovenstaande figuur valt uiteen in een aantal services:
 
 **Discovery services / Zoekdienst** network service
@@ -30,10 +26,10 @@ Het bovenstaande figuur valt uiteen in een aantal services:
 - De dataset kan als geheel worden gedownload. Waar mogelijk ook het bevragen en downloaden van enkele objecten.
 
 **Transformation services / Verwerkingsdienst** network service
-- Dit is een ondersteunende service die de andere services helpt met het bereiken van de beoogde consistentie en conformiteit van INSPIRE, bijvoorbeeld door schema translatie of coördinaten translatie
+- Dit is een ondersteunende service die de andere services helpt met het bereiken van de conformiteit van INSPIRE, bijvoorbeeld door schema translatie of coördinaten translatie
 
 **Spatial Data Services**
-- De Spatial Data Servies ontlsuiten ten minste één INSPIRE dataset, maar kunnen hele andere specificaties hebben, die buiten de INSPIRE community tot stand zijn gekomen.
+- De Spatial Data Servies ontsluiten ten minste één INSPIRE dataset, maar kunnen hele andere specificaties hebben, die buiten de INSPIRE community tot stand zijn gekomen.
 - De specificatie van de service moet wel zijn vastgelgd en in de metadata beschreven. 
 - Deze diensten zijn verder in te delen als invocable, interoperable en harmonised.
 
@@ -54,7 +50,7 @@ In de Technical Guidances (of Guidance Documents) zijn de technische specificati
 
 | Titel | Opmerking |
 |-----------------|-------------|
-| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - WFS en ATOM</a> ||
+| <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services </a> |WFS en ATOM implementatie|
 | <a href="https://inspire.ec.europa.eu/id/document/tg/download-wcs" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - Web Coverage Service</a>|| 
 | <a href="https://inspire.ec.europa.eu/id/document/tg/download-sos" target="_blank">Technical Guidance for the implementation of INSPIRE Download Services - Sensor Observation Service</a> ||
 | <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance for the implementation of INSPIRE View Services</a> |WMS en WMTS implementatie|
@@ -117,7 +113,7 @@ De onderstaande figuur geeft schematisch de operaties van de OGC WMS 1.3.0 weer.
 
 ![wms](media/Wms.png "Schematische weergave van INSPIRE-viewservice.")
 
-### Vereisten viewservice
+### Vereisten view service
 
 Voor de viewservices beschrijft het document <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1" target="_blank">Technical Guidance View Services</a> de technische eisen waaraan een service moet voldoen. Hiermee kan zowel ISO 19128: OGC Web Map Service 1.3.0 (WMS) of OGC Web Map Tile Service 1.0.0 (WMTS) worden geimplementeerd.  
 
@@ -134,7 +130,7 @@ Voor een WMS is daarnaast ook het <a href="https://www.geonovum.nl/geo-standaard
 
 In het <a href="https://www.geonovum.nl/uploads/documents/Raamwerk%20Geo-Standaarden%20v3.0.pdf" target="_blank">Raamwerk GeoStandaarden</a> is meer informatie te vinden over de samenhang van verschillende standaarden.
 
-### Meertaligheid services
+### Meertaligheid
 Een Capabilities-document kan maar in één taal worden opgesteld. Om meertaligheid te ondersteunen is het dus noodzakelijk om voor iedere ondersteunde taal één Capabilities-document aan te maken. In ieder Capabilities-document moeten de ondersteunde talen worden opgenomen in de `inspire_vs:ExtendedCapabilities`.
 
 <pre class="xml">
