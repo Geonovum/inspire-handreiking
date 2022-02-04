@@ -371,16 +371,9 @@ De invulinstrucies voor *optie 2* staan in onderstaande tabel.
 
 ### Metadata-templates SDS
 
-Voor het aanmaken voor metadata voor de Spatial Data Service (SDS) is een voorbeeld beschikbaar 
+Voor het aanmaken voor metadata voor de Spatial Data Service (SDS) is een voorbeeld beschikbaar; 
 
-TO DO check XML !!!
-- <a href="media/Voorbeeld_Metadata_Services_2022_max.xml" target="_blank">voorbeeld</a>
-
-- <a href="docs/Template_NL_profiel_op_ISO19119_v12_SDS_harmonised.xml" target="_blank">Template NL profiel op ISO19119 v12 SDS harmonised</a>
-
-![Voorbeeld metadata van een harmonised SDS](media/Voorbeeld_Metadata_Services_2022_max.zip)
-
-
+- <a href="docs/Voorbeeld_Metadata_Services_2022_max.xml" target="_blank">Voorbeeld metadata van een harmonised SDS</a>
 
 
 ## Metadata-validatie
