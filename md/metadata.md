@@ -369,7 +369,7 @@ De invulinstrucies voor *optie 2* staan in onderstaande tabel.
 
 
 
-### Metadata-templates SDS
+### Voorbeeld metadatabestand (XML) voor INSPIRE Spatial Data Service (SDS)
 
 Voor het aanmaken voor metadata voor de Spatial Data Service (SDS) is een voorbeeld beschikbaar; 
 
