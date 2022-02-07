@@ -1,8 +1,8 @@
 # Checklist
 
-Hieronder staat een korte checklist van alle stappen die de dataprovider moet doorlopen om een INSPIRE conforme dataset inclusief services te publiceren:
+Hieronder staat een korte checklist van alle stappen die een dataprovider moet doorlopen om een INSPIRE conforme dataset inclusief services te publiceren:
 
-1. Onwerp je [transformatie](#fasen) van as-is datamodel naar de INSPIRE dataspecificaties.
+1. Ontwerp je [transformatie](#fasen) van as-is datamodel naar de INSPIRE dataspecificaties.
 2. Beslis of er een [extensie](#extensies) gemaakt moet worden.
 3. Registreer de [namespaces](#namespace) via het [INSPIRE namespaceregister](#inspire-namespaceregister).
 4. Registreer [codelijsten](#codelijsten) als er codes gebruikt worden naast die al in bestaande INSPIRE codelijsten voorkomen.
