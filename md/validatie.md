@@ -57,6 +57,8 @@ In de tabel hieronder staan welke tests beschikbaar zijn en aangeraden worden om
 | **Discovery service** | | |
 | Discovery service | | <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Validator: Discovery Service - CSW Core</a> |
 
+
+
 ### Europese INSPIRE validator
 Op 25 juli 2017 is de <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Europese INSPIRE validator</a> gelanceerd. Daarmee is er nu voor alle lidstaten één tool waarmee je kunt testen in hoeverre je voldoet aan de INSPIRE-vereisten. De Europese INSPIRE validator wordt op Europees niveau onderhouden en doorontwikkeld. Voor meer informatie zie de <a href="https://github.com/INSPIRE-MIF/helpdesk-validator/" target="_blank">github-pagina over de Europese INSPIRE validator</a>. Hier zijn bekende problemen beschreven als ook de link naar de changelog van de huidige en eerdere releases te vinden en de release strategie van toekomstige releases.
 
@@ -69,7 +71,10 @@ Met de Europese INSPIRE validator kunnen validatietesten worden uitgevoerd voor 
 De officiële Europese INSPIRE-validator is <a href="https://inspire.ec.europa.eu/validator/" target="_blank">hier</a> te vinden.
 Daarnaast is er ook een testversie van de validator, de zogeheten <a href="https://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/etf-webapp/" target="_blank">staging instance</a> waar de nieuwste functionaliteit in verwerkt is, maar die nog niet volledig getest is.
 
-Tip: De Europese INSPIRE validator kan ook middels een API aangeroepen worden. Bij het (semi) geautomatiseerd uitvoeren van tests kan het nuttig zijn de API te gebruiken. De API is te vinden via <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Europese INSPIRE validator</a>.
+
+**Gebruik middels API**
+
+De Europese INSPIRE validator kan ook middels een API aangeroepen worden. Bij het (semi) geautomatiseerd uitvoeren van tests kan het nuttig zijn de API te gebruiken. De API is te vinden via <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Europese INSPIRE validator</a>.
 
 
 **Bekende problemen**
