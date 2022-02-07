@@ -282,6 +282,6 @@ INSPIRE geeft op verschillende plaatsen aan welke zogenaamde *edge matching*-tec
 - Ook bij het thema **Vervoersnetwerken** speelt het probleem van de edge-matching. Voor de grensoverschrijdende connectiviteit (verbindingen tussen netwerken over lands- en regiogrenzen heen) wordt hier gebruik van een mechanisme dat wordt geleverd door het [INSPIRE Base model - Generic Network Model (GNM)](#documentatie-dataharmonisatie).
 - De INSPIRE dataspecificaties van de andere thema's kennen geen specifieke aandacht voor dit onderwerp. Dat wil overigens niet zeggen dat de problematiek van cross-boundary harmonisation daar niet zal voorkomen.
 
-## Datavalidatie
-Datavalidatie is een mechanisme om te controleren of een bepaalde dataset aan de INSPIRE specificaties voldoet en is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Het is daarmee een onmisbare toets op de vraag of de dataharmonisatie goed is uitgevoerd.
-Datavalidatie wordt uitgevoerd met de Europese INSPIRE-validator. Lees meer over dit onderwerp in het hoofdstuk [Validatie](#validatie) en voor datavalidatie ook specifiek de paragraaf [Conformance classes datavalidatie](#conformance-classes-datavalidatie).
+## Data validatie
+Data validatie is een mechanisme om te controleren of een bepaalde dataset aan de INSPIRE specificaties voldoet en is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Het is daarmee een onmisbare toets op de vraag of de dataharmonisatie goed is uitgevoerd.
+Data validatie wordt uitgevoerd met de Europese INSPIRE-validator. Lees meer over dit onderwerp in het hoofdstuk [Validatie](#validatie).
