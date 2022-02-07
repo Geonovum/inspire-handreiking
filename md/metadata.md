@@ -376,8 +376,8 @@ Voor het aanmaken voor metadata voor de Spatial Data Service (SDS) is een voorbe
 - <a href="docs/Voorbeeld_Metadata_Services_2022_max.xml" target="_blank">Voorbeeld metadata van een harmonised SDS</a>
 
 
-## Metadata-validatie
-Validatie is een mechanisme om te controleren of een bepaalde metadatabeschrijving aan de specificaties voldoet. Het is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Er zijn verschillende validatietools beschikbaar om (verschillende onderdelen van) INSPIRE-metadata te valideren. Zie hiervoor [het hoofdstuk validatie](#validatie).
+## Metadata validatie
+Validatie is een mechanisme om te controleren of een bepaalde metadatabeschrijving aan de INSPIRE specificaties voldoet. Het is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Er zijn verschillende validatietools beschikbaar om (verschillende onderdelen van) INSPIRE-metadata te valideren. Zie voor meerinformatie hierover het hoofdstuk [validatie](#validatie).
 
 
 ## Metadata publiceren
