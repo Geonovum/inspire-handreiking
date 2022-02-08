@@ -29,7 +29,7 @@ Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende docu
 - [Metadata](#metadata)
 - [Services](#services)
 	- [Network services](#network-services)
-	- [Spatial data services](#spatial-data-services)
+	- [Spatial data services](#spatial-data-services-sds)
 - [Validatie](#validatie) (als aparte processtap beschreven, maar deze stap is eigenlijk onderdeel van de hierboven beschreven processtappen)
 
 De informatie op deze handreiking volgt deze structuur (zie ook onderstaande figuur). De groene pijlen in de figuur tonen de opeenvolgende processtappen die doorlopen moeten worden om aan de *INSPIRE richtlijn* te voldoen.
@@ -62,7 +62,7 @@ Uiterlijk 6 maanden nadat de wijziging in de brongegevensverzameling was aangebr
 
 Dat betekent dat binnen 6 maanden nadat de brondata aangepast is:
 
-1. de metadata van de dataset conform INSPIRE specificaties moet worden aangeboden (zie [invulinstructie](#invulinstructie-voor-datasets))
+1. de metadata van de dataset conform INSPIRE specificaties moet worden aangeboden (zie [invulinstructie](#invulinstructie-dataset-metadata)
 2. de view en downloadservices conform INSPIRE specificaties moeten worden aangeboden
 3. de link naar de metadata in het aanmerkingsregister ingevuld moet worden
 
@@ -73,7 +73,7 @@ De <a href="https://inspire.ec.europa.eu/" target="_blank">Europese INSPIRE webs
 Hier is onder andere de volgende informatie te vinden:
 - <a href="https://inspire.ec.europa.eu/inspire-legislation/26" target="_blank">INSPIRE wetgeving</a>
 - <a href="https://inspire.ec.europa.eu/inspire-implementing-rules/51763" target="_blank">Implementing rules</a>
-- <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">Dataspecificaties</a>
+- <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">INSPIRE dataspecificaties</a>
 - <a href="https://inspire.ec.europa.eu/Technical-guidelines3" target="_blank">Technische guidelines</a>
 - <a href="https://inspire.ec.europa.eu/portfolio/inspire-your-country" target="_blank">Overzicht van de implementatie van INSPIRE in de verschillende lidstaten</a>
 
