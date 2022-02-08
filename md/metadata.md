@@ -242,7 +242,7 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 
 ### Voorbeeldbestand XML voor INSPIRE service-metadata
 
-Hier is een <a href="https:docs/Voorbeeld_Metadata_Services_2022.xml" target="_blank">voorbeeld-metadatabestand voor een fictieve service</a> te vinden.
+Hier is een <a href="https:docs/Voorbeeld_Metadata_Services_2022.xml" target="_blank">voorbeeld-metadatabestand voor een service</a> te vinden.
 
 
 ## Spatial data services (SDS) metadata
@@ -368,7 +368,7 @@ De invulinstrucies voor *optie 2* staan in onderstaande tabel.
 
 Voor het aanmaken voor metadata voor de Spatial Data Service (SDS) is een voorbeeld beschikbaar; 
 
-- <a href="docs/Voorbeeld_Metadata_Services_2022_max.xml" target="_blank">Voorbeeld metadata van een harmonised SDS</a>
+<a href="docs/Voorbeeld_Metadata_Services_2022_max.xml" target="_blank">Voorbeeld metadata van een harmonised SDS</a>
 
 
 ## Metadata validatie
