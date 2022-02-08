@@ -14,7 +14,7 @@ Beide validatietools (Nederlands als Europees) moeten dus gebruikt worden om te 
 
 ## Validatieregels
 
-In Annex A van alle INSPIRE technische specificaties is de *Abstract Test Suite (ATS)* opgenomen. Deze beschrijft tegen welke vereisten je een implementatie van die specificatie dient te toetsen. Een regel in de ATS beschrijft woordelijk aan welke eisen voldaan moet worden. Delen van de ATS kunnen geautomatiseerd worden getest en zijn/worden uitgewerkt in (de Europese) validator. Europa noemt deze Europese INSPIRE validator de **"INSPIRE reference validator”**. De daadwerkelijke regels die geautomatiseerd getest kunnen worden, vormen samen een *Executable Test Suite (ETS)*.
+In Annex A van alle INSPIRE technische specificaties is de *Abstract Test Suite (ATS)* opgenomen. Deze beschrijft tegen welke vereisten je een implementatie van die specificatie dient te toetsen. Een regel in de ATS beschrijft woordelijk aan welke eisen voldaan moet worden. Delen van de ATS kunnen geautomatiseerd worden getest en zijn/worden uitgewerkt in (de Europese) validator. Europa noemt deze Europese INSPIRE validator de *"INSPIRE reference validator”*. De daadwerkelijke regels die geautomatiseerd getest kunnen worden, vormen samen een *Executable Test Suite (ETS)*.
 
 ## Wanneer valideren
 
@@ -68,8 +68,7 @@ Met de Europese INSPIRE validator kunnen validatietesten worden uitgevoerd voor 
 - Applicatieschema;
 - GML.
 
-De officiële Europese INSPIRE-validator is <a href="https://inspire.ec.europa.eu/validator/" target="_blank">hier</a> te vinden.
-Daarnaast is er ook een testversie van de validator, de zogeheten <a href="https://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/etf-webapp/" target="_blank">staging instance</a> waar de nieuwste functionaliteit in verwerkt is, maar die nog niet volledig getest is.
+Naast de officiële <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Europese INSPIRE-validator</a> is er ook een testversie van de validator, de zogeheten <a href="https://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/etf-webapp/" target="_blank">staging instance</a> beschikbaar waar de nieuwste functionaliteit in verwerkt is, maar die nog niet volledig getest is.
 
 
 **Gebruik middels API**
@@ -111,8 +110,8 @@ Om direct inzicht te hebben in de relaties tussen datasets, metadata en services
 
 Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> toont in welke mate een dataset ook daadwerkelijk raadpleegbaar (via een viewservice) en downloadbaar (via een downloadservice) is. Hiervoor moeten diverse verwijzingen (via links en identifiers) tussen metadata en services goed opgegeven zijn. Dit is essentieel voor een werkende infrastructuur: als een dataset niet raadpleegbaar of niet downloadbaar is, is deze niet goed aangeboden aan INSPIRE en niet goed of zelfs helemaal niet bruikbaar.
 
-Om de verwijzingen te controleren op juistheid bevat het Europese INSPIRE Geoportal de Linkchecker: een tool om na te gaan of alle verwijzingen goed staan en waar eventuele correcties noodzakelijk zijn. De linkchecker voert geen validatie uit van de metadata, dataset en services. Deze onderdelen moeten apart gevalideerd worden, zie de [tabel](#te-gebruiken-validators) hierboven.
+Om de verwijzingen te controleren op juistheid bevat het Europese INSPIRE Geoportal de Linkchecker: een tool om na te gaan of alle verwijzingen goed staan en waar eventuele correcties noodzakelijk zijn. De linkchecker voert geen validatie uit van de metadata, dataset en services. Deze onderdelen moeten apart gevalideerd worden, zie hiervoor de paragraaf [Te gebruiken validators](#te-gebruiken-validators).
 
-De linkchecker kan gestart worden door bestaande of nieuwe metadata van een dataset en services op te geven. Advies is om altijd voor New metadata te kiezen, omdat dan ook wijzigingen gelijk getest kunnen worden. Een beschrijving van de linkchecker is <a href="https://inspire-geoportal.ec.europa.eu/files/INSPIRE_Geoportal_process_for_data-service_linking_v1.0.pdf" target="_blank">hier</a> te vinden.
+De linkchecker kan gestart worden door bestaande of nieuwe metadata van een dataset en services op te geven. Advies is om altijd voor New metadata te kiezen, omdat dan ook wijzigingen gelijk getest kunnen worden. Een Engelstalige beschrijving van de linkchecker is <a href="https://inspire-geoportal.ec.europa.eu/files/INSPIRE_Geoportal_process_for_data-service_linking_v1.0.pdf" target="_blank">hier</a> te vinden.
 
-In <a href="docs/GeoportalTips.pdf" target="_blank">GeoportalTips</a>  is aangegeven wat de oorzaak kan zijn als data niet in het Geoportal aanwezig isen waarom een download en view link kunnen ontbreken. Ook is hier te vinden via welke elementen de relatie tussen (metadata)data en service wordt gelegd. Loop deze stappen eerst door, voor verder in het diepe te duiken.
+In <a href="docs/GeoportalTips.pdf" target="_blank">Geoportal Tips</a> is aangegeven wat de oorzaak kan zijn als data niet in het Europese INSPIRE Geoportal aanwezig is en waarom een download en/of view link kunnen ontbreken. Ook is hier te vinden via welke elementen de relatie tussen (metadata)data en service wordt gelegd. Loop deze stappen eerst door, voor verder in het diepe te duiken.
