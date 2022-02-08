@@ -1045,7 +1045,8 @@ De OGC API features (OAPIF of OAF) is eenvoudiger in het gebruik en vergt minder
 1. Het werkt nu alleen nog op basis van simpele datamodellen en uitwisselformaten en is dus moeilijk te implementeren voor complexe INSPIRE datamodellen waarbij het complexere GML nog de default is. Mapping naar eenvoudigere modellen en uitwisselformaten is mogelijk, maar moet dan voor INSPIRE wel goed beschreven en gepubliceerd worden om aan de INSPIRE vereisten te voldoen.
 2. Nog niet alle tooling is in staat om met andere coördinaatsystemen te werken dan WGS84. INSPIRE vereist ETRS89. De uitbreiding op de OGC API features standaard, die dit mogelijk maakt <a href="https://docs.opengeospatial.org/is/18-058/18-058.html" target="_blank">OGC API - Features - Part 2: Coordinate Reference Systems by Reference</a> is er al wel.
 
-In het <a href="https://github.com/Geonovum/testbed-spatial-APIs" target="_blank">Geonovum Testbed Spatial data API's</a> is ervaring opgedaan met de verschillende aspecten van implementatie en gebruik van OGC API's. Daarnaast is in de <a href="https://geonovum.github.io/OAPIF-PDOK-INSPIRE/" target="_blank">Handreiking OGC API Features conform INSPIRE</a> de eerste bevindingen voor het maken van een OAPIF conform INSPIRE beschreven. 
+In het <a href="https://github.com/Geonovum/testbed-spatial-APIs" target="_blank">Geonovum Testbed Spatial data API's</a> is ervaring opgedaan met 5 verschillende aspecten van implementatie en gebruik van OGC API's. Daarnaast is in de <a href="https://geonovum.github.io/OAPIF-PDOK-INSPIRE/" target="_blank">Handreiking OGC API Features conform INSPIRE</a> de eerste bevindingen voor het maken van een OAPIF conform INSPIRE beschreven.
+Wanneer je zelf iets wil doen op het Geonovum testbed, dan kan <a href="https://github.com/Geonovum/ogc-api-testbed" target="_blank">deze link</a> je verder helpen. 
 
 
 ### OGC SensorThings API
