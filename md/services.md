@@ -58,8 +58,8 @@ In de Technical Guidances (of Guidance Documents) zijn de technische specificati
 | <a href="https://inspire.ec.europa.eu/documents/technical-guidance-inspire-schema-transformation-network-service" target="_blank">Technical Guidance for the INSPIRE Schema Transformation Network Service</a> |Dit onderdeel is niet in deze handreiking uitgewerkt| 
 
 
-### Quality of services
-INSPIRE definieert *Quality of services* (QoS), de eisen omtrent het kwaliteitsbeheer van netwerk services. Een aantal QoS-criteria verschillen per service (zie voor de precieze criteria de tabel hieronder). 
+### Quality of Services
+INSPIRE definieert *Quality of Services* (QoS), de eisen omtrent het kwaliteitsbeheer van netwerk services. Een aantal QoS-criteria verschillen per service (zie voor de precieze criteria de tabel hieronder). 
 
 Er zijn een aantal parameters van invloed op de door INSPIRE gedefinieerde QoS:
 - *performance*: de performance van een INSPIRE-conforme netwerkdienst geeft de tijd weer die de netwerkdienst nodig heeft om aan een verzoek (*request*) een antwoord (*response*) te geven. Een verzoek is gelijk aan een functie of operatie. Als tijd wordt de tijd gezien die de netwerkdienst (serverside) nodig heeft om de eerste byte van het antwoord terug te geven.
@@ -305,7 +305,7 @@ Hieronder een voorbeeld van een link naar het capabilities-document:
 **Coupled Resource (C)**
 
 Coupled Resource geeft informatie over de datasets waarop de view service werkt. Dit element wordt ingevuld als `wms:MetadataURL` (een link naar de metadata van de dataset waarop een Layer is gedefinieerd) voor iedere Layer in de view service. De MetadataURL kan op 2 manieren worden ingevuld:
-1. De MetadataURL bevat een link naar een metadatadocument dat beschikbaar is in een discovery service, waarbij gebruik wordt gemaakt van de GetRecordByID operatie van de discovery service om het document op te halen op basis van het `<fileIdentifier>` element (gevuld met een [UUID](#uuid)) van dat document.
+1. De MetadataURL bevat een link naar een metadatadocument dat beschikbaar is in een discovery service, waarbij gebruik wordt gemaakt van de GetRecordByID operatie van de discovery service om het document op te halen op basis van het `<fileIdentifier>` element (gevuld met een UUID) van dat document.
 2. De MetadataURL bevat een directe link naar een ISO19115/19139 metadata-document.
 
 <pre class="xml">
@@ -1037,7 +1037,7 @@ De <a href="https://ogcapi.ogc.org/" target="_blank">OGC API's</a> vormen een fa
 
 ### OGC API Features
 
-<a href="(https://docs.opengeospatial.org/is/17-069r3/17-069r3.html" target="_blank">*OGC API features*</a> (OAPIF of OAF) is een vorm van een download service op basis van een *Application Program Interface (API)*; gebaseerd op de OGC standaarden. Het wordt beschouwd als opvolger van de OGC WFS standaard. Dit betekent niet dat het de WFS standaard in de nabije toekomst volledig gaat vervangen; ook al zou dat in de verre toekomst wel het geval kunnen zijn. Voorlopig zijn ze nog complementair aan elkaar. De WFS zal vooral in de GIS wereld worden gebruikt terwijl de OAPIF meer bedoeld is voor andere gebruikers, zoals webapplicatie ontwikkelaars.
+<a href="https://docs.opengeospatial.org/is/17-069r3/17-069r3.html" target="_blank">*OGC API features*</a> (OAPIF of OAF) is een vorm van een download service op basis van een *Application Program Interface (API)*; gebaseerd op de OGC standaarden. Het wordt beschouwd als opvolger van de OGC WFS standaard. Dit betekent niet dat het de WFS standaard in de nabije toekomst volledig gaat vervangen; ook al zou dat in de verre toekomst wel het geval kunnen zijn. Voorlopig zijn ze nog complementair aan elkaar. De WFS zal vooral in de GIS wereld worden gebruikt terwijl de OAPIF meer bedoeld is voor andere gebruikers, zoals webapplicatie ontwikkelaars.
 
 Voor het publiceren van OGC API features (OAPIF of OAF) is de good practice <a href="https://inspire.ec.europa.eu/good-practice/ogc-api-%E2%80%93-features-inspire-download-service" target="_blank">OGC API – Features as an INSPIRE download service</a> relevant.  
 
