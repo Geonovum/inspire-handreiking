@@ -27,14 +27,14 @@ Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt,
 Het doel van het INSPIRE aanmerkingsregister is meervoudig:
 - In het aanmerkingsregister worden de aanmerkingen en wijzigingen op de aanmerkingen bijgehouden door het ministerie van BZK.
 - Via het aanmerkingsregister kan iedereen de voortgang van de INSPIRE implementatie volgen. 
-- Vanuit het aanmerkingsregister is er ook een directe link naar de publicatie van de metadata van betreffende dataset in het <a href="http://www.nationaalgeoregister.nl/" target="_blank">Nationaal GeoRegister (NGR)</a>. De dataset is daar dan ook te raadplegen.
+- Vanuit het aanmerkingsregister is er ook een directe link naar de publicatie van de metadata van betreffende dataset in het <a href="http://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister (NGR)</a>. De dataset is daar dan ook te raadplegen.
 
 In het openbare gedeelte kan de bezoeker de <a href="https://inspireaanmerking.nl/aanmerkingsregister" target="_blank">aanmerkingen</a> bekijken en selecties maken op bijvoorbeeld dataprovider, thema en prioriteit. Ook kan de bezoeker een dataset <a href="https://inspireaanmerking.nl/aanmelden-dataset" target="_blank">aanmelden</a> als de bezoeker een datasets mist in het overzicht of denkt dat een bepaalde dataset wel in aanmerking komt voor INSPIRE.
 
 Naast een openbare gedeelte heeft het aanmerkingregister ook een gesloten gedeelte voor de INSPIRE dataproviders. De gesloten omgeving voorziet in extra functionaliteit om het aanmerkings- en implementatieproces te ondersteunen. Binnen deze omgeving kunnen dataproviders per dataset:
 - de directe link naar de publicatie van de metadata van betreffende dataset in het NGR opnemen voor zowel de as-is als de geharmoniseerde dataset;
 - de implementatie status voor zowel de as-is als de geharmoniseede dataset beschrijven;
-- of een [wijzigingsverzoek](#wijziging-aanmerking) indienen. 
+- of een [wijzigingsverzoek](#wijziging-van-de-aanmerking) indienen. 
 
 Daarnaast kan de dataprovider alle eigen datasets exporteren naar een Excel-bestand. 
 
@@ -111,7 +111,7 @@ In 2017 heeft de Europese Commissie een fitness check afgerond over Environmenta
 
 **Hoe zijn de prioritaire datasets te vinden?**
 
-Alle Nederlandse prioritaire datasets voor e-reporting zijn vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>. In het Europese Geoportal zijn de datasets te vinden via de <a href="https://inspire-geoportal.ec.europa.eu/pdv_home.html" target="_blank">*Priority Data Sets Viewer*</a>. De dataproviders moeten hiervoor een extra trefwoord(en) opnemen in de [metadata van de dataset](#prioritaire-datasets-0) van de prioritaire datasets. Via de viewer kun je per lidstaat, milieudomein of via de verschillende milieurichtlijnen de datasets vinden.
+Alle Nederlandse prioritaire datasets voor e-reporting zijn vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>. In het Europese Geoportal zijn de datasets te vinden via de <a href="https://inspire-geoportal.ec.europa.eu/pdv_home.html" target="_blank">*Priority Data Sets Viewer*</a>. De dataproviders moeten hiervoor een extra trefwoord(en) opnemen in de [metadata van de dataset](#metadata-van-prioritaire-datasets) van de prioritaire datasets. Via de viewer kun je per lidstaat, milieudomein of via de verschillende milieurichtlijnen de datasets vinden.
 
 #### Uitbreiding prioritaire datasets
 In het <a href="https://wikis.ec.europa.eu/display/InspireMIG/INSPIRE+work+programme+2021-24" target="_blank">Europese INSPIRE werkprogramma 2021-2024</a> worden de INSPIRE prioritaire datasets verder uitgebreid. Action 2.1 '*Need-driven data prioritisation*' is gedefinieerd met als doel de verdere implementatie (beschikbaarheid van gegevens en diensten, toegankelijkheid en interoperabiliteit) van de richtlijn te stimuleren door een reële vraag en tastbare use-cases. De methode voor het prioriteren van gegevens zou bestaan uit het selecteren van die datasets die voldoen aan de concrete behoeften van de stakeholders (lokale, regionale, nationale en Europese overheden) en waarvoor interoperabiliteit moet worden nagestreefd. 
