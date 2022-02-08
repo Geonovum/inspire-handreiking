@@ -66,7 +66,7 @@ Voor het beschrijven van de verschillende INSPIRE datamodellen wordt gebruik gem
 ![UML](media/Uml_cheatsheet.png "Notatie van een UML-klassediagram.")
 
 Handige bronnen voor UML zijn:
-- <a href="www.uml.org" target="_blank">Officiele UML website</a> met links met de specificatie, aanvullende documentatie, tools;
+- <a href="https://www.uml.org/" target="_blank">Officiele UML website</a> met links met de specificatie, aanvullende documentatie, tools;
 
 
 en voor introductie in UML:
