@@ -201,12 +201,7 @@ De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd m
 
 ### Voorbeeld metadatabestand (XML) voor INSPIRE dataset
 
-TO DO check XML !!! Hier is een <a href="https://wiki.geonovum.nl/images/Voorbeeld_Metadata_Dataset_2019.zip" target="_blank">voorbeeld-metadatabestand voor een fictieve dataset</a> te vinden .
-
-
-### Voorbeeld metadatabestand (XML) voor INSPIRE prioritaire dataset
-TO DO check XML (scenario 1 zonder anchor er uit halen!)!!! Hier is een <a href="https://wiki.geonovum.nl/images/Voorbeeld_XML_prioritaire_dataset.xml" target="_blank">voorbeeld-metadatabestand voor een fictieve prioritaire dataset</a> te vinden.
-
+Hier is een <a href="https:/docs/Voorbeeld_Metadata_Dataset_2022.xml" target="_blank">voorbeeld-metadatabestand voor een dataset</a> met trefwoorden voor een prioritaire dataset te vinden.
 
 
 ## Service metadata
