@@ -34,7 +34,7 @@ Bij het publiceren van een INSPIRE *Implementing Rule* (IR) en begeleidende docu
 
 De informatie op deze handreiking volgt deze structuur (zie ook onderstaande figuur). De groene pijlen in de figuur tonen de opeenvolgende processtappen die doorlopen moeten worden om aan de *INSPIRE richtlijn* te voldoen.
 
-![Processtappen5.png](media/Processtappen5.png "Processtappen INSPIRE")
+![Processtappen.png](media/Processtappen.png "Processtappen INSPIRE")
 
 Per processtap wordt de bijbehorende documentatie weergegeven:
 - de Europese technische guidelines, dataspecificaties en andere documenten (in oranje);
