@@ -24,7 +24,7 @@ Voor de monitoring zijn de volgende acties van de dataproviders noodzakelijk:
 
 Zorg dat de metadata in het NGR op orde is. De Europese monitoringsrapportage wordt op basis van de metadata in het NGR gegenereerd. Let daarbij extra op de volgende punten:
 - Is voor alle INSPIRE data en service metadata de categorie INSPIRE aangegeven? Dit is te controleren door in het NGR te filteren op categorie INSPIRE en organisatie, of bij weinig metadata beschrijvingen, te zoeken op organisatienaam.
-- Is in de metadata de link tussen de services en de metadata van de data correct? Dit kan gecontroleerd worden met de [Linkchecker](#link-checker) zoals genoemd bij [validatie](#validatie).
+- Is in de metadata de link tussen de services en de metadata van de data correct? Dit kan gecontroleerd worden met de [Link checker](#link-checker) zoals genoemd bij [validatie](#validatie).
 - De conformiteit van datasets en services is in de metadata opgenomen. Gebruik voor het checken van de conformiteit de validators, zoals genoemd bij [validatie](#validatie). Op basis daarvan wordt de conformiteits indicator in de metadata ingevuld.
 - De conformiteit van de metadata wordt tijdens het monitoringsproces getoetst.
 - Voor **prioritaire datasets**: de Commissie let extra op de beschikbaarheid van de prioritaire datasets. Zorg dat de juiste [trefwoorden in de metadata](#metadata-van-prioritaire-datasets) zijn opgenomen.
@@ -36,4 +36,4 @@ Zorg dat de metadata in het NGR op orde is. De Europese monitoringsrapportage wo
 
 **Geharmoniseerde data**
 
-Zie de pagina [Checklist dataharmonisatie](#checklist-dataharmonisatie) voor specifieke punten die spelen rondom publiceren van geharmoniseerde datasets.
+Zie het hoofdstuk [Checklist](#checklist) voor specifieke punten die spelen rondom publiceren van geharmoniseerde datasets.
