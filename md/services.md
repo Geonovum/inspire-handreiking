@@ -665,7 +665,7 @@ Voor de style moet ook een URL worden opgenomen, die verwijst naar een legenda i
 &lt;/Style&gt;
 </pre>
 
-Default styling is gedefinieerd in de [Technical Guidance voor view services](#technische-inspire-richtlijnen) (zie TG view service v3.0 paragraaf 4.2.3.3.4.8, eis 43 en 44). Dit is dus altijd verplicht voor view services, ook al is het nog niet vereist aan de INSPIRE dataspecificaties te voldoen. Zolang de [portrayal](#portrayal) zoals vastgelegd in de INSPIRE dataspecificaties (nog) niet verplicht is, moeten serviceproviders tenminste de default styling uit view services toepassen (requirement in de Technical Guidance voor view services).
+Default styling is gedefinieerd in de [Technical Guidance voor view services](#technische-inspire-richtlijnen) (zie TG view service v3.11 paragraaf 4.2.3.3.4.8, eis 43 en 44). Dit is dus altijd verplicht voor view services, ook al is het nog niet vereist aan de INSPIRE dataspecificaties te voldoen. Zolang de [portrayal](#portrayal) zoals vastgelegd in de INSPIRE dataspecificaties (nog) niet verplicht is, moeten serviceproviders tenminste de default styling uit view services toepassen (requirement in de Technical Guidance voor view services).
 
 "inspire_common:DEFAULT" is een placeholder voor een Style Unique Identifier van de INSPIRE default style, maar je kan ook een andere naam kiezen voor de (default) stijl. De naam van de Style hoeft dus niet per se "inspire_common:DEFAULT" te zijn.
 
