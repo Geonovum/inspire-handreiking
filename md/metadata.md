@@ -201,7 +201,7 @@ De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd m
 
 ### Voorbeeld metadatabestand (XML) voor INSPIRE dataset
 
-Hier is een <a href="https:/docs/Voorbeeld_Metadata_Dataset_2022.xml" target="_blank">voorbeeld-metadatabestand voor een dataset</a> met trefwoorden voor een prioritaire dataset te vinden.
+Hier is een <a href="https:docs/Voorbeeld_Metadata_Dataset_2022.xml" target="_blank">voorbeeld-metadatabestand voor een dataset</a> met trefwoorden voor een prioritaire dataset te vinden.
 
 
 ## Service metadata
