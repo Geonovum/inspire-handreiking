@@ -8,7 +8,7 @@ In de onderstaande tabel staan de belangrijkste INSPIRE-documenten voor de datah
 
 |Titel | Versie | Datum | Opmerking |
 |-----------------|-------------|-------------|-------------|
-| <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">Dataspecificaties</a> | 4.0  | 2017-04-01   | Dataspecificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
+| <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">INSPIRE dataspecificaties</a> | 4.0  | 2017-04-01   | Dataspecificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
 | <a href="https://inspire.ec.europa.eu/schemas/" target="_blank">GML Application schemas</a> | 4.0  |    | GML applicatie schema's voor alle themas   |
 | <a href="https://inspire.ec.europa.eu/codelist" target="_blank">Codelijstregister</a>  |  |    | Bevat de codelijsten en hun waarden  |
 | <a href="https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model" target="_blank">INSPIRE Generic Conceptual Model (GCM; D2.5)</a> | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
@@ -126,7 +126,7 @@ Dit hangt van een aantal organisatie-gebonden factoren af:
 De belangrijkste factor is de kennis die binnen een organisatie aanwezig is. Zijn er binnen de organisatie database-specialisten aanwezig, die verstand hebben van ruimtelijke databases? Of zijn er GIS-expers die al vaker met ETL software tools hebben gewerkt? Dit kan ook betekenen dat er wellicht gekozen moet worden voor uitbesteding. De ‘spin-off’ van het zelf opdoen van kennis is een zijdelingse overweging die bij de keuze van harmonisatie-principe van belang kan zijn. Voor INSPIRE-gerichte harmonisaties is veel kennis nodig. Deze kennis kan voor andere GEO-ICT projecten ook van praktisch belang zijn, bijvoorbeeld omdat het de kennis van een tool verhoogt. Dit kan een overweging zijn om een kennis-domein te versterken en hierin te investeren.
 
 ## Encodings (bestandsformaten)
-*Encodings* of te wel bestandsformaten zijn beschreven in de [INSPIRE dataspecificatie](#inspire-dataspecificaties) en wel in paragraaf 9.3. De default encoding voor INSPIRE is [GML](#gml). Ook [andere encodings](#andere-encoding), zoals bijvoorbeeld GeoJSON of Geopackage, zijn onder voorwaarden mogelijk. 
+*Encodings* of te wel bestandsformaten zijn beschreven in de [INSPIRE dataspecificatie](#inspire-dataspecificaties) en wel in paragraaf 9.3. De default encoding voor INSPIRE is [GML](#gml). Ook [andere encodings](#andere-encodings), zoals bijvoorbeeld GeoJSON of Geopackage, zijn onder voorwaarden mogelijk. 
 
 ### GML
 GML is de default encoding voor INSPIRE, zoals beschreven staat in paragraaf 9.3.1 van de [INSPIRE dataspecificatie](#inspire-dataspecificaties). Daarvoor zijn de encoding rules in de dataspecificaties van de UML modellen naar <a href="https://inspire.ec.europa.eu/schemas/" target="_blank">GML Application schemas</a> beschikbaar.
@@ -151,7 +151,7 @@ In 2017 heeft een <a href="https://github.com/INSPIRE-MIF/2017.2/" target="_blan
 *Geopackage (gpkg)* wordt veel genoemd als goede optie om data aan te bieden in een Atom feed voor een INSPIRE Downloadservice.
 Er is ook een <a href="https://github.com/INSPIRE-MIF/gp-geopackage-encodings" target="_blank">github repository</a> waarin goede  praktijkvoorbeelden worden verzameld voor het publiceren in geopackage als bestandsformaat in een download service voor INSPIRE. Als er genoeg goede praktijkvoorbeelden zijn, zal waarschijnlijk Geopackage als [good practise](#good-practices) voorgedragen worden.
 
-Ook in Nederland is onderzoek naar gedaan voor de Basisregistratie Ondergrond (BRO) van TNO  met een [rapport](docs/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf) als eindresultaat.
+Ook in Nederland is onderzoek naar gedaan voor de Basisregistratie Ondergrond (BRO) van TNO  met een <a href="docs/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf" target="_blank">rapport</a> als eindresultaat.
 Daarnaast is het bij het Forum Standaardisatie opgenomen in de pas toe en leguit lijst voor <a href="https://www.forumstandaardisatie.nl/open-standaarden/geo-standaarden" target="_blank">geo-standaarden</a>.
 
 
@@ -166,7 +166,7 @@ Een InspireId bestaat uit de volgende drie onderdelen:
 - VersionId (optioneel).
 
 ### Namespace
-Een namespace heeft als belangrijkste doel dat het de ruimte definieert waarbinnen de [localId](#LocalId) uniek is. Om te voorkomen dat verschillende dataproviders dezelfde namespace gebruiken, en om consistentie te verkrijgen, is er in Nederland (en Europa) een zogenaamd Namespaceregister opgezet. De namespace wordt per **dataset** ingericht. De namespace is onderdeel van het InspireId en moet derhalve ook in de data voorkomen.
+Een namespace heeft als belangrijkste doel dat het de ruimte definieert waarbinnen de [localId](#localid) uniek is. Om te voorkomen dat verschillende dataproviders dezelfde namespace gebruiken, en om consistentie te verkrijgen, is er in Nederland (en Europa) een zogenaamd Namespaceregister opgezet. De namespace wordt per **dataset** ingericht. De namespace is onderdeel van het InspireId en moet derhalve ook in de data voorkomen.
 
 De Nederlandse namespaces worden geregistreerd in het Nederlandse INSPIRE Namespaceregister. 
 
@@ -201,7 +201,7 @@ Door URI's te gebruiken, kun je op een unieke manier naar een object verwijzen e
 Een InspireId kan ook een (optioneel) versionId hebben. Dit versienummer kan gebruikt worden als er van hetzelfde object op verschillende tijdstippen verschillende versies in omloop zijn die van elkaar onderscheiden moeten worden.
 
 ## Codelijsten
-INSPIRE-data wordt mede aan de hand van codelijsten en opsommingen (*enumerations*) geharmoniseerd. Beide worden gebruik om een lijstje toegestane waarden voor een attribuut te bepalen. In het geval van een enumeration zijn de toegestane waarden bekend vanaf het moment dat het model gemaakt is; de waarden maken deel uit van het model. Meestal gaat het om kleine lijstjes waar geen discussie over mogelijk is. Bij codelijsten zijn de toegestane waarden nog niet (allemaal) bekend op het moment dat het model gemaakt wordt; de toegestane waarden worden op een andere manier bepaald. Er zijn een verschillende regimes waarmee de waarden van een codelijst beheerd kunnen worden. Een uitgebreide beschrijving hiervan staat in paragraaf 9.5.2.2 *The code list classifiers* van het [Generic Conceptual Model](#generic-conceptual-model). Codelijsten voor de INSPIRE thema's staan in het Europese of Nederlandse [codelijstregister](#Codelijstregister) en in Annex C van de betreffende [INSPIRE dataspecificatie](#inspire-dataspecificaties). Voor sommige thema's is het verplicht om gebruik te maken van deze codelijsten. 
+INSPIRE-data wordt mede aan de hand van codelijsten en opsommingen (*enumerations*) geharmoniseerd. Beide worden gebruik om een lijstje toegestane waarden voor een attribuut te bepalen. In het geval van een enumeration zijn de toegestane waarden bekend vanaf het moment dat het model gemaakt is; de waarden maken deel uit van het model. Meestal gaat het om kleine lijstjes waar geen discussie over mogelijk is. Bij codelijsten zijn de toegestane waarden nog niet (allemaal) bekend op het moment dat het model gemaakt wordt; de toegestane waarden worden op een andere manier bepaald. Er zijn een verschillende regimes waarmee de waarden van een codelijst beheerd kunnen worden. Een uitgebreide beschrijving hiervan staat in paragraaf 9.5.2.2 *The code list classifiers* van het [Generic Conceptual Model](#generic-conceptual-model). Codelijsten voor de INSPIRE thema's staan in het Europese of Nederlandse [codelijstregister](#codelijstregister) en in Annex C van de betreffende [INSPIRE dataspecificatie](#inspire-dataspecificaties). Voor sommige thema's is het verplicht om gebruik te maken van deze codelijsten. 
 
 ### Uitbreidbaarheid van codelijsten
 Iedere INSPIRE-codelijst valt onder een van de volgende uitbreidingsregimes:
