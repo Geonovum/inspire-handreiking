@@ -200,11 +200,13 @@ Het capabilities-document bevat (naast de verplichte WMS-elementen) ook de volge
 2. De ondersteunde defaulttaal (eventueel aangevuld met aanvullende ondersteunde talen);
 3. De default respons-taal.
 
-| INSPIRE-metadata-elementen | Extended Capabilities |
-|-----------------|-------------|
-| MetadataURL | inspire_vs:MetadataURL |
-| SupportedLanguages | inspire_vs:SupportedLanguages |
-| ResponseLanguage | inspire_vs:ResponseLanguage |
+| INSPIRE-metadata-elementen | M / C^ |  Extended Capabilities |
+|-----------------|----- |-------------|
+| MetadataURL | M | inspire_vs:MetadataURL |
+| SupportedLanguages | M | inspire_vs:SupportedLanguages |
+| ResponseLanguage | M | inspire_vs:ResponseLanguage |
+
+^ *M: Mandatory, C: Conditional*
 
 
 **MetadataURL (M)**
@@ -238,7 +240,7 @@ Het capabilities-document gaat hiermee fungeren als de bron om een metadata-voor
 - Waar een mapping naar WMS-elementen mogelijk is, worden INSPIRE-elementen gemapped naar de WMS-elementen;
 - Waar geen mapping naar WMS-elementen mogelijk is, worden de INSPIRE-elementen opgenomen als ExtendedCapabilities in het Capabilities-document.
 
-| INSPIRE-metadata-elementen | M/C | ISO 19128 WMS-elementen | Extended Capabilities |
+| INSPIRE-metadata-elementen | M/C^ | ISO 19128 WMS-elementen | Extended Capabilities |
 |-----------------|-------------|-------------|-------------|
 | Resource Title | M | wms:Title | |
 | Resource Abstract | M | wms:Abstract | |
@@ -257,6 +259,9 @@ Het capabilities-document gaat hiermee fungeren als de bron om een metadata-voor
 | Metadata Point of Contact | M | | inspire_common:MetadataPointOfContact |
 | Metadata Date | M | | inspire_common:MetadataDate |
 | Metadata Language | M	| | inspire_common:SupportedLanguages |
+
+^ *M: Mandatory, C: Conditional*
+
 
 
 **Resource Title (M)**
@@ -330,7 +335,7 @@ Dit element heeft een vaste waarde 'view' en wordt ingevuld als `inspire_common:
 
 Er is één keyword verplicht. Dat is het keyword om de classificatie van de service te duiden (`classificationOfSpatialDataService`). Daarnaast kunnen nog andere keywords worden opgenomen. Keywords kunnen op meerdere manieren worden ingevuld:
 1. met het `wms:Keyword` onder het `wms:Service` element en
-2. in de `inspire_vs:ExtendedCapabilities` met de elementen `inspire_common:Keyword` en `inspire_common:MandatoryKeyword`. Het verplichte keyword voor de classificatie van de service is er een uit de lijst die in Part D.4 uit INS MD te vinden is. Voor een viewservice is dat in ieder geval "infoMapAccessService".
+2. in de `inspire_vs:ExtendedCapabilities` met de elementen `inspire_common:Keyword` en `inspire_common:MandatoryKeyword`. Het verplichte keyword voor de classificatie van de service is er een uit de <a href="https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory" target="_blank">"Classification of Spatial Data Services" lijst</a>. Voor een viewservice is dat in ieder geval "infoMapAccessService".
 
 *1. gebruik wms:keyword*
 
@@ -575,7 +580,7 @@ Voor GeographicBoundingBox wordt het element `wms:Layer`/`wms:BoundingBox` gebru
 
 **Link to metadata on the spatial dataset**
 
-Het element `wms:Layer`/`wms:MetadataURL` wordt gebruikt om een verwijzing op te nemen naar het metadatadocument bij de dataset die via deze Layer wordt gevisualiseerd. Dit element wordt gevuld met een GetRecordById request naar een catalog service waarmee dit metadatadocument kan worden opgehaald of een directe link naar een ISO 19115/19139 metadatadocument.
+Het element `wms:Layer`/`wms:MetadataURL` wordt gebruikt om een verwijzing op te nemen naar het metadatadocument bij de dataset die via deze Layer wordt gevisualiseerd. Dit element wordt gevuld met een GetRecordById request naar een discovery service waarmee dit metadatadocument kan worden opgehaald of een directe link naar een ISO 19115/19139 metadatadocument.
 
 <pre class="xml">
 &lt;MetadataURL type="ISO19115:2003"&gt;
@@ -591,7 +596,7 @@ De Unique Resource Identifier  geeft de unieke identificatie weer van de bron (d
 
 Dat kan op het hoogste niveau onder `wms:Layer` of in een `wms:Layer` element daaronder (`wms:Layer`/`wms:Layer`). De eerste methode kan worden gebruikt om één keer voor alle Layers één AuthorityURL aan te geven. Alle onderliggende `wms:Layer` elementen worden dan verondersteld gebruikt te maken van deze AuthorityURL. 
 
-De tweede methode kan worden gebruikt om per `wms:Layer` een unieke AuthorityURL op te nemen. Het laatste geval kan zich voordoen als een service is gemaakt die Layers bevat waarmee datasets van verschillende dataproviders worden gevisualiseerd. De technical guidance raadt aan om voor het element `wms:Identifier` een [UUID](#uuid) te gebruiken om de dataset mee te identificeren.
+De tweede methode kan worden gebruikt om per `wms:Layer` een unieke AuthorityURL op te nemen. Het laatste geval kan zich voordoen als een service is gemaakt die Layers bevat waarmee datasets van verschillende dataproviders worden gevisualiseerd. De technical guidance raadt aan om voor het element `wms:Identifier` een UUID te gebruiken om de dataset mee te identificeren.
 
 <pre class="xml">
  &lt;!-- Codespace om de authority uniek mee te identificeren--&gt;
@@ -725,7 +730,8 @@ Als een Layer meerdere regionale datasets visualiseert, of meerdere featuretypes
 </pre>
 
 
-Volgens de Technical Guidance voor view services, moet een Category Layer een naam hebben (eis 49). Daarnaast gelden de algemene eisen van WMS, die INSPIRE overneemt. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden.
+
+Volgens de [Technical Guidance voor view services](#technische-inspire-richtlijnen), moet een Category Layer een naam hebben (eis 49). Daarnaast gelden de algemene eisen van WMS, die INSPIRE overneemt. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden.
 INSPIRE volgt de WMS 1.3.0 specificatie voor overerving van de Layer elementen. In de paragraaf "7.2.4.8 Inheritance of layer properties" van de WMS 1.3.0 specificatie is aangegeven per element wat wel en wat niet overgeorven kan worden.
 
 
@@ -743,6 +749,7 @@ De downloadservice (of downloaddienst) heeft als functie de gegevens die via de 
 3. Web Coverage Service (WCS)
 4. Sensor Observation Services (SOS)
 5. OGC API Features (OAPIF of OAF)
+6. OGC SensorThings API (STA)
 
 Afhankelijk van het type gegevens of de voorkeuren van een dataprovider, bepaalt de dataprovider het type service. In de volgende paragrafen worden de verschillende download service implementaties behandeld. 
 
