@@ -1,8 +1,8 @@
 var respecConfig = {
   specStatus: "GN-WV", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specStatus
   specType: "HR", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specType
-  //pubDomain: "wp", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/pubDomain. Of vraag aan bij beheerders
-  publishDate: "2022-02-01", // Datum als jjjj-mm-dd, bijvoorbeeld
+  pubDomain: "EU", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/pubDomain. Of vraag aan bij beheerders
+  publishDate: "2022-02-09", // Datum als jjjj-mm-dd, bijvoorbeeld
   editors: [
     {
       name: "Geonovum INSPIRE team",
@@ -10,8 +10,8 @@ var respecConfig = {
       companyURL: "http://www.geonovum.nl/",
     }
     ],
-  shortName: "inspire-handreiking",
-  subtitle: "Voldoen aan de INSPIRE-verplichtingen",
+  shortName: "INSPIRE-handreiking",
+  subtitle: "Aan de slag met INSPIRE",
   github: "https://github.com/Geonovum/inspire-handreiking",
   issueBase: "https://github.com/Geonovum/inspire-handreiking/issues/",
   license: 'cc-by-nd',
