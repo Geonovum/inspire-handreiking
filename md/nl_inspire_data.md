@@ -121,7 +121,7 @@ In het <a href="https://wikis.ec.europa.eu/display/InspireMIG/INSPIRE+work+progr
 Er zijn momenteel verschillende lopende initiatieven en projecten die de mogelijkheid onderzoeken om de INSPIRE-infrastructuur rechtstreeks te gebruiken voor het creëren van pan-Europese datasets en toepassingen (bijv. Eurostat-projecten, Copernicus in-situ-activiteiten, IACS-gegevensuitwisseling). Bovendien moet bij het prioriteren van de datasets ook rekening worden gehouden met de <a href="https://geonovum.github.io/eu_regelingen_datastrategie/" target="_blank">nieuwe politieke agenda en opkomende wettelijke kaders</a>, zoals de Europese dataspaces met de Green Deal dataspace en de *High value datasets* onder de Open Data Richtlijn.
 
 De volgende prioriteiten zijn nu benoemd in Action 2.1:
-- IACS-datasets (van DG AGRI);
+- [IACS-datasets](#iacs-datasets) (van DG AGRI, zie paragraaf hieronder);
 - <a href="https://geonovum.github.io/eu_regelingen_datastrategie/#high-value-data-lijst" target="_blank"> High value datasets</a> van de Open Data Richtlijn;
 - En de referentie datasets (met name de INSPIRE thema's uit Annex I).
 
