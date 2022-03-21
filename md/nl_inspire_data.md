@@ -122,7 +122,7 @@ Er zijn momenteel verschillende lopende initiatieven en projecten die de mogelij
 
 De volgende prioriteiten zijn nu benoemd in Action 2.1:
 - [IACS-datasets](#iacs-datasets) (van DG AGRI, zie paragraaf hieronder);
-- <a href="https://geonovum.github.io/eu_regelingen_datastrategie/#high-value-data-lijst" target="_blank"> High value datasets</a> van de Open Data Richtlijn;
+- <a href="https://geonovum.github.io/eu_regelingen_datastrategie/#high-value-data-lijst" target="_blank"> High value datasets</a> van de Open Data Richtlijn (verwijst naar de Handreiking EU Informatie);
 - En de referentie datasets (met name de INSPIRE thema's uit Annex I).
 
 Meer informatie over Action 2.1 is te vinden op de <a href="https://github.com/INSPIRE-MIF/need-driven-data-prioritisation" target="_blank">Github Repository for INSPIRE MIWP Action 2.1 'Need-driven data prioritisation'</a>.
