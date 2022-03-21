@@ -94,6 +94,8 @@ De Europese INSPIRE validator kent zogenaamde conformance classes. Dit zijn te t
 
 Voor metadata zijn er meerdere conformance classes beschikbaar. Wanneer de metadata getest wordt met de Europese INSPIRE validator, worden de relevante conformanceclasses automatisch op de achtergrond geselecteerd voor de gebruiker. 
 
+Voor de prioritaire [IACS-datasets](#iacs-datasets) is ook een conformance class beschikbaar. Deze dient echter handmatig aangevinkt te worden via de *Advanced options* (de optie conformance Class 2c: 'INSPIRE data sets and data set series metadata for IACS').
+
 ### Conformance classes datavalidatie
 
 Om (geharmoniseerde) data te valideren zijn per thema validators beschikbaar. Dat betekent dat er naast de GML-structuur, ook gevalideerd wordt tegen het XSD-bestand van het applicatieschema, en dus de thema-specifieke bestandsstructuur wordt gecontroleerd. Bij de keuze van het thema worden de relevante conformance classes automatisch geselecteerd. Algemeen advies is om alle conformance classes van een thema te selecteren bij het testen. Desgewenst kan echter ook een selectie gemaakt worden, als een bepaald onderdeel van de dataharmonisatie getest moet worden.
