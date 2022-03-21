@@ -120,6 +120,14 @@ In het <a href="https://wikis.ec.europa.eu/display/InspireMIG/INSPIRE+work+progr
 
 Er zijn momenteel verschillende lopende initiatieven en projecten die de mogelijkheid onderzoeken om de INSPIRE-infrastructuur rechtstreeks te gebruiken voor het creëren van pan-Europese datasets en toepassingen (bijv. Eurostat-projecten, Copernicus in-situ-activiteiten, IACS-gegevensuitwisseling). Bovendien moet bij het prioriteren van de datasets ook rekening worden gehouden met de <a href="https://geonovum.github.io/eu_regelingen_datastrategie/" target="_blank">nieuwe politieke agenda en opkomende wettelijke kaders</a>, zoals de Europese dataspaces met de Green Deal dataspace en de *High value datasets* onder de Open Data Richtlijn.
 
+De volgende prioriteiten zijn nu benoemd in Action 2.1:
+- IACS-datasets (van DG AGRI);
+- <a href="https://geonovum.github.io/eu_regelingen_datastrategie/#high-value-data-lijst" target="_blank"> High value datasets</a> van de Open Data Richtlijn;
+- En de referentie datasets (met name de INSPIRE thema's uit Annex I).
+
+Meer informatie over Action 2.1 is te vinden op de <a href="https://github.com/INSPIRE-MIF/need-driven-data-prioritisation" target="_blank">Github Repository for INSPIRE MIWP Action 2.1 'Need-driven data prioritisation'</a>.
+
+#### IACS-datasets
 De prioritaire datasetlijst voor de **IACS-datasets** van DG AGRI zijn beschikbaar. In de <a href="https://marswiki.jrc.ec.europa.eu/wikicap/images/f/f8/DS-CDP-2019-04_REV2_TechnicalGuideline_IacsSpatialDataSharing_Part1_Final.pdf" target="_blank"> *Technical Guidelines on IACS Spatial Data Sharing, Part 1*</a>  staat de voorlopige lijst beschreven in hoofdstuk 3. In deze technische guidelines staat ook beschreven hoe de dataproviders extra trefwoorden opnemen in de [metadata van de dataset](#metadata-van-prioritaire-datasets) van deze prioritaire IACS-datasets. De IACS-datasets zijn ook vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>.
 
 De prioritaire datasetlijsten voor de andere nieuwe ontwikkelingen zijn op dit moment nog niet definitief beschikbaar. Wel zijn de volgende prioriteiten benoemd:
