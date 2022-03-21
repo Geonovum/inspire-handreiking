@@ -71,7 +71,7 @@ In de [Invulinstructie dataset metadata](#invulinstructie-dataset-metadata) zijn
 ### Invulinstructie dataset metadata
 De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen. Let erop, dat er zowel verplichte ('Ja') als conditionele ('C') elementen in voorkomen. Zo kan bijvoorbeeld een aantal elementen pas worden ingevuld wanneer de dataharmonisatie is voltooid. 
 
-Voor [prioritaire datasets voor e-reporting](#prioritaire-datasets) is de aanvullende instructie over het gebruik van [*anchors*](#hoe-om-te-gaan-met-anchor-en-uri) bij het opnemen van de trefwoorden in de metadata ook in de invulinstructies meegenomen. Voor de [IACS-datasets](#uitbreiding-prioritaire-datasets) staat in een <a href="https://marswiki.jrc.ec.europa.eu/wikicap/images/f/f8/DS-CDP-2019-04_REV2_TechnicalGuideline_IacsSpatialDataSharing_Part1_Final.pdf" target="_blank"> aparte technische specificatie</a> de aanvullende instructie vanuit DG AGRI.
+Voor [prioritaire datasets voor e-reporting](#prioritaire-datasets) is de aanvullende instructie over het gebruik van [*anchors*](#hoe-om-te-gaan-met-anchor-en-uri) bij het opnemen van de trefwoorden in de metadata ook in de invulinstructies meegenomen. Voor de [IACS-datasets](#iacs-datasets) staat in een <a href="https://marswiki.jrc.ec.europa.eu/wikicap/images/f/f8/DS-CDP-2019-04_REV2_TechnicalGuideline_IacsSpatialDataSharing_Part1_Final.pdf" target="_blank"> aparte technische specificatie</a> de aanvullende instructie vanuit DG AGRI.
 
 
 | Metadata-element 									| Longname 		| INSPIRE-verplicht | Omschrijving 	| Voorbeeldwaarde |
