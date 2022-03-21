@@ -129,9 +129,3 @@ Meer informatie over Action 2.1 is te vinden op de <a href="https://github.com/I
 
 #### IACS-datasets
 De prioritaire datasetlijst voor de **IACS-datasets** van DG AGRI zijn beschikbaar. In de <a href="https://marswiki.jrc.ec.europa.eu/wikicap/images/f/f8/DS-CDP-2019-04_REV2_TechnicalGuideline_IacsSpatialDataSharing_Part1_Final.pdf" target="_blank"> *Technical Guidelines on IACS Spatial Data Sharing, Part 1*</a>  staat de voorlopige lijst beschreven in hoofdstuk 3. In deze technische guidelines staat ook beschreven hoe de dataproviders extra trefwoorden opnemen in de [metadata van de dataset](#metadata-van-prioritaire-datasets) van deze prioritaire IACS-datasets. De IACS-datasets zijn ook vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>.
-
-De prioritaire datasetlijsten voor de andere nieuwe ontwikkelingen zijn op dit moment nog niet definitief beschikbaar. Wel zijn de volgende prioriteiten benoemd:
-- Referentie datasets (met name de INSPIRE thema's uit Annex I);
-- <a href="https://geonovum.github.io/eu_regelingen_datastrategie/#high-value-data-lijst" target="_blank"> High value datasets</a> van de Open Data Richtlijn.
-
-Meer informatie over Action 2.1 is te vinden op de <a href="https://github.com/INSPIRE-MIF/need-driven-data-prioritisation" target="_blank">Github Repository for INSPIRE MIWP Action 2.1 'Need-driven data prioritisation'</a>.
