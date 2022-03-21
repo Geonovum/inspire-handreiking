@@ -69,7 +69,9 @@ De gebruiksvoorwaarden, ook als daarvan wordt afgezien in Public Domain Mark of 
 In de [Invulinstructie dataset metadata](#invulinstructie-dataset-metadata) zijn de INSPIRE specifieke instructies opgenomen, die als aanvulling gelden op <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/" target="_blank">Nederlands metadata profiel op ISO 19115</a>. Daarnaast is er een  [voorbeeld bestand](#voorbeeld-metadatabestand-xml-voor-inspire-dataset) beschikbaar.
 
 ### Invulinstructie dataset metadata
-De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen. Let erop, dat er zowel verplichte ('Ja') als conditionele ('C') elementen in voorkomen. Zo kan bijvoorbeeld een aantal elementen pas worden ingevuld wanneer de dataharmonisatie is voltooid. Voor [prioritaire datasets](#prioritaire-datasets) is de aanvullende instructie over het gebruik van [*anchors*](#hoe-om-te-gaan-met-anchor-en-uri) bij het opnemen van de trefwoorden in de metadata ook in de invulinstructies meegenomen.
+De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen. Let erop, dat er zowel verplichte ('Ja') als conditionele ('C') elementen in voorkomen. Zo kan bijvoorbeeld een aantal elementen pas worden ingevuld wanneer de dataharmonisatie is voltooid. 
+
+Voor [prioritaire datasets voor e-reporting](#prioritaire-datasets) is de aanvullende instructie over het gebruik van [*anchors*](#hoe-om-te-gaan-met-anchor-en-uri) bij het opnemen van de trefwoorden in de metadata ook in de invulinstructies meegenomen. Voor de [IACS-datasets](#uitbreiding-prioritaire-datasets) staat in een <a href="https://marswiki.jrc.ec.europa.eu/wikicap/images/f/f8/DS-CDP-2019-04_REV2_TechnicalGuideline_IacsSpatialDataSharing_Part1_Final.pdf" target="_blank"> aparte technische specificatie</a> de aanvullende instructie vanuit DG AGRI.
 
 
 | Metadata-element 									| Longname 		| INSPIRE-verplicht | Omschrijving 	| Voorbeeldwaarde |
@@ -372,7 +374,7 @@ Voor het aanmaken voor metadata voor de Spatial Data Service (SDS) is een voorbe
 
 
 ## Metadata validatie
-Validatie is een mechanisme om te controleren of een bepaalde metadatabeschrijving aan de INSPIRE specificaties voldoet. Het is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Er zijn verschillende validatietools beschikbaar om (verschillende onderdelen van) INSPIRE-metadata te valideren. Zie voor meerinformatie hierover het hoofdstuk [validatie](#validatie).
+Validatie is een mechanisme om te controleren of een bepaalde metadatabeschrijving aan de INSPIRE specificaties voldoet. Het is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Er zijn verschillende validatietools beschikbaar om (verschillende onderdelen van) INSPIRE-metadata te valideren. Zie voor meer informatie hierover het hoofdstuk [validatie](#validatie).
 
 
 ## Metadata publiceren
