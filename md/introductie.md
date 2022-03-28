@@ -46,7 +46,7 @@ De Nederlandse standaarden zijn te vinden via de Geo-standaarden op de <a href="
 
 Al deze processtappen (Nationaal Georegister, metadata, services, data) hebben ook een onderlinge relatie die in volgende afbeelding is getoond. 
 
-![Simple_INSPIRE_Domain_Model](media/DM_simple.png "Eenvoudig Domein model")
+![Relatie processtappen](media/processtappen_relatie.png "Relatie processtappen")
 
 ## Deadlines
 Alle INSPIRE deadlines om datasets beschikbaar te maken zijn reeds verstreken. De oorspronkelijke INSPIRE roadmap met alle verschillende deadlines is <a href="https://inspire.ec.europa.eu/road-map-graphic/32443" target="_blank">hier</a> te vinden.
