@@ -45,5 +45,10 @@ zie ook [hier](#hoe-om-te-gaan-met-anchor-en-uri)
 
 #### stap3: Heeft de data een download link
 Als het download pictogram ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png)
-ontbreekt
+ontbreekt terwijl die er wel had moeten zijn kan dat verschillende oorzaken hebben:
+1) De koppeling ontbreekt bij het SpatialDataSetIdentifier element in de Extended GetCapabilities (WFS, SOS en WCS) of in de link element (rel="describedby") in de entry in de top feed van de Atom service.
+2) De link naar de metadata van de dataset opgenomen in het element MetadataURL van het FeatureType. Deze moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service!
+
+
+
  
