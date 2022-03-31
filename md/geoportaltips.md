@@ -49,7 +49,6 @@ ontbreekt terwijl die er wel had moeten zijn kan dat verschillende oorzaken hebb
 Daarvoor moeten we onderscheid maken tussen [WFS](#wfs), [ATOM](#atom-feed), [SOS](#sos) en [WCS](#wcs).
 
 ***WFS***
-
 Het kan zijn dat de koppeling ontbreekt bij het SpatialDataSetIdentifier element in de Extended GetCapabilities.
 Het SpatialDataSetIdentifier element bestaat uit twee subelementen:
 1) identifier: inspire_dls:SpatialDataSetIdentifier/inspire_common:Code
@@ -59,13 +58,45 @@ De inspire_common:Namespace mag worden weggelaten als er geen aparte namespace i
 Als er wel een aparte namespace bij de dataset identifier in de metadata staat, dient het element inspire_common:Namespace die namespace te bevatten. Dit betekent wel dat de metadata de zogenaamde RS_Identifier gebruikt, met 2 elementen: een code en een codeSpace voor de namespace, om de dataset te identificeren. 
 Het gebruik van zowel MD_identifier als RS_identifier is mogelijk volgens het NL Metadata profiel v 1.3.1.
 
-Daarnaast moet ook de link naar de metadata van de dataset opgenomen zijn in het element MetadataURL van het FeatureType.
+Check ook of de links naar de metadata van de dataset opgenomen zijn in het element MetadataURL per FeatureType.
 Deze moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service.
+Let op: Deze wordt niet getoond in onderstaande figuur.
+
+Als 3e kan gecontroleerd worden of de link naar de metadata van de service opgenomen is via <inspire_dls:ExtendedCapabilities> en <inspire_common:MetadataUrl>
+Dit en de elementen uit de eerst genoemde check worden wel getoond in onderstaande figuur.
 
 ![stap 3_WFS](media/geoportaltip3_wfs.png "Check dataset service koppeling WFS")
 
 ***ATOM***
-1) De koppeling ontbreekt in de link element (rel="describedby") in de entry in de top feed van de Atom service.
-2) 
+Het kan zijn dat de koppeling naar de metadata van de dataset ontbreekt in het ***link element*** in de entry in de top feed van de Atom service.
+De link  bevat:
+- De link naar de metadata van de dataset (href="URL naar metadata in bv NGR")
+- De relatie (rel="describedby") 
+- Het type (type="application/xml" )
+Deze link moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de Atom service!
+
+Daarnaast wordt in deze entry ook de identifier en namespace van de dataset opgenomen in het ***spatial_dataset_identifier_code element*** en ***spatial_dataset_identifier_namespace element***.
+De identifier moet hetzelfde zijn als die in het element unieke identifier van de bron, zoals opgegeven in de metadata van de dataset.
+Voor Atom feeds is de situatie vergelijkbaar als bij WFS. De elementen voor de INSPIRE namespace dienen alleen ingevuld te worden als er een apart namespace element is, bij de dataset identifier in de dataset metadata.
+Dit is in een werkgroep onder de MIG (INSPIRE Maintenance and Implementation Group) behandeld, zie ook de discussie online: https://github.com/inspire-eu-validation/download-service/issues/89. De Technical Guidance Download Services is hier momenteel niet heel duidelijk in, maar wordt hierop aangepast.
+
+![stap 3_ATOM](media/geoportaltip3_atom.png "Check dataset service koppeling ATOM-feed")
+
+***SOS***
+De koppeling tussen de dataset en de SOS wordt voor elke ”ObservationOffering” net als bij de WFS gelegd in het element SpatialDataSetIdentifier via de capabilities van de SOS.
+
+Of de koppeling naar de metadata van de service en de dataset opgenomen moet worden is niet bekend.
+
+***WCS***
+De koppeling tussen de dataset en de SOS wordt voor elke coverage net als bij de WFS gelegd in het element SpatialDataSetIdentifier via de capabilities van de WCS.
+
+Daarnaast wordt ook de link naar de metadata van de dataset opgenomen in het element MetadataURL van de Coverage.
+Deze moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service.
+
+Of de koppeling naar de metadata van de service opgenomen moet worden is niet bekend.
+
+
+
+
 
  
