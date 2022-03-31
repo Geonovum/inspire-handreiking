@@ -138,7 +138,7 @@ Als de (meta)data voorkomt in de lijst met data en
 2) De data ook daadwerkelijk te downloaden en te bekijken is, 
 Dan is verdere actie niet noodzakelijk.
 
-!check 1](media/geoportaltip1.png "Check of de data vindbaar is")
+![check 1](media/geoportaltip1.png "Check of de data vindbaar is")
 
 #### check 2: Is de dataset te vinden onder het INSPIRE thema
 Check of de data is te vinden onder het INSPIRE data thema, waar het onder valt.
