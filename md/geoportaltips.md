@@ -45,10 +45,27 @@ zie ook [hier](#hoe-om-te-gaan-met-anchor-en-uri)
 
 #### stap3: Heeft de data een download link
 Als het download pictogram ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png)
-ontbreekt terwijl die er wel had moeten zijn kan dat verschillende oorzaken hebben:
-1) De koppeling ontbreekt bij het SpatialDataSetIdentifier element in de Extended GetCapabilities (WFS, SOS en WCS) of in de link element (rel="describedby") in de entry in de top feed van de Atom service.
-2) De link naar de metadata van de dataset opgenomen in het element MetadataURL van het FeatureType. Deze moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service!
+ontbreekt terwijl die er wel had moeten zijn kan dat verschillende oorzaken hebben.
+Daarvoor moeten we onderscheid maken tussen [WFS](#wfs), [ATOM](#atom-feed), [SOS](#sos) en [WCS](#wcs).
 
+***WFS***
 
+Het kan zijn dat de koppeling ontbreekt bij het SpatialDataSetIdentifier element in de Extended GetCapabilities.
+Het SpatialDataSetIdentifier element bestaat uit twee subelementen:
+1) identifier: inspire_dls:SpatialDataSetIdentifier/inspire_common:Code
+2) namespace: inspire_dls:SpatialDataSetIdentifier/inspire_common:Namespace
+De identifier moet hetzelfde zijn als die in het element unieke identifier van de bron, in de metadata van de dataset!
+De inspire_common:Namespace mag worden weggelaten als er geen aparte namespace in de metadata van de data is opgenomen voor de dataset identifier. De dataset identifier en de inspire_common:Code, moeten in dat geval de unieke bron identificatie van de dataset bevatten.
+Als er wel een aparte namespace bij de dataset identifier in de metadata staat, dient het element inspire_common:Namespace die namespace te bevatten. Dit betekent wel dat de metadata de zogenaamde RS_Identifier gebruikt, met 2 elementen: een code en een codeSpace voor de namespace, om de dataset te identificeren. 
+Het gebruik van zowel MD_identifier als RS_identifier is mogelijk volgens het NL Metadata profiel v 1.3.1.
+
+Daarnaast moet ook de link naar de metadata van de dataset opgenomen zijn in het element MetadataURL van het FeatureType.
+Deze moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service.
+
+![stap 3_WFS](media/geoportaltip3_wfs.png "Check dataset service koppeling WFS")
+
+***ATOM***
+1) De koppeling ontbreekt in de link element (rel="describedby") in de entry in de top feed van de Atom service.
+2) 
 
  
