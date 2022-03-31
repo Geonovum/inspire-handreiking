@@ -116,7 +116,7 @@ De Link checker kan gestart worden door bestaande of nieuwe metadata van een dat
 
 ### Checks om data goed in het Geoportal te krijgen
 In deze paragraaf is aangegeven wat de oorzaak kan zijn als data niet in het Europese INSPIRE Geoportal aanwezig is en waarom een download en/of view link kunnen ontbreken terwijl dat niet de bedoeling was. Ook is hier te vinden via welke elementen de relatie tussen (metadata)data en service wordt gelegd. 
-Loop onderstaande check door, voor verder in het diepe te duiken:
+Loop onderstaande checks door, voor verder in het diepe te duiken:
 
 1. Is de data beschikbaar?
 2. Check of de data is te vinden onder het INSPIRE data thema, waar het onder valt.
@@ -144,16 +144,15 @@ Dit wordt zichtbaar door een selectie toe te passen op een thema en lidstaat.
 In het voorbeeld hieronder is er geen (meta)data onder het thema Gegraphical grid systems voor Nederland.
 ![check 2](media/geoportaltip2.png "Check of vindbaar onder thema")
 Als de (meta)data niet voorkomt in de Geoportal, dan is 
-Of de metadata niet in het NGR gepubliceerd met de categorie INSPIRE, 
-      zie https://geonovum.github.io/inspire-handreiking/#publiceren-inspire-aanduiding
+- Of de metadata niet in het NGR gepubliceerd met de categorie INSPIRE, zie ook [hier](#publiceren-inspire-aanduiding)
 - Of het INSPIRE thema en citatie naar de thesaurus is niet goed opgenomen in de metadata van de dataset.
 
 Het INSPIRE thema wordt opgenomen uit de INSPIRE Thesaurus.
 De INSPIRE Thesaurus citatie, is als volgt: 
-Thesaurus: ”GEMET - INSPIRE themes, version 1.0”
-Datum: ”2008-06-01”  
-Datum type: ”publication”
-zie ook [hier](#hoe-om-te-gaan-met-anchor-en-uri)
+- Thesaurus: ”GEMET - INSPIRE themes, version 1.0”
+- Datum: ”2008-06-01”  
+- Datum type: ”publication”
+zie ook [hier](#hoe-om-te-gaan-met-anchor-en-uri) voor meer informatie.
 
 #### check 3: Heeft de data een download link
 Als het download pictogram ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png)
@@ -191,7 +190,7 @@ Deze link moet hetzelfde zijn als de link in het OperatesOn element in de metada
 
 Daarnaast wordt in deze entry ook de identifier en namespace van de dataset opgenomen in het ***spatial_dataset_identifier_code element*** en ***spatial_dataset_identifier_namespace element***.
 De identifier moet hetzelfde zijn als die in het element unieke identifier van de bron, zoals opgegeven in de metadata van de dataset.
-Voor Atom feeds is de situatie vergelijkbaar als bij WFS. De elementen voor de INSPIRE namespace dienen alleen ingevuld te worden als er een apart namespace element is, bij de dataset identifier in de dataset metadata.
+Voor Atom feeds is de situatie vergelijkbaar met WFS. De elementen voor de INSPIRE namespace dienen alleen ingevuld te worden als er een apart namespace element is, bij de dataset identifier in de dataset metadata.
 Dit is in een werkgroep onder de MIG (INSPIRE Maintenance and Implementation Group) behandeld, zie ook de discussie <a href="https://github.com/inspire-eu-validation/download-service/issues/89" target="_blank">online</a>.
 De Technical Guidance Download Services is hier momenteel niet heel duidelijk in, maar wordt hierop aangepast.
 ![check 3_ATOM](media/geoportaltip3_atom.png "Check dataset service koppeling ATOM-feed")
@@ -207,6 +206,7 @@ Of de koppeling naar de metadata van de service en de dataset opgenomen moet wor
 De koppeling tussen de dataset en de SOS wordt voor elke coverage net als bij de WFS gelegd in het element SpatialDataSetIdentifier via de capabilities van de WCS.
 Daarnaast wordt ook de link naar de metadata van de dataset opgenomen in het element MetadataURL van de Coverage.
 Deze moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service.
+
 Of de koppeling naar de metadata van de service opgenomen moet worden is niet bekend.
 
 #### check 4: Heeft de data een view link
@@ -219,11 +219,11 @@ De link tussen de metadata van de dataset en den View Service wordt gelegd via 
 
 #### check 5: Daadwerkelijk download data
 Check of de data getoond wordt nadat geklikt wordt op ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png).
-en daarna op de blauwe knop "Get Data Set"
+en daarna op de blauwe knop "Get Data Set".
 
 #### check 6: Daadwerkelijk viewable data
 Check of de data getoond wordt nadat geklikt wordt op ![image](https://user-images.githubusercontent.com/80040145/161044869-375c840f-0b01-489c-a644-37818329f354.png).
-en daarna op de blauwe knop "Preview Data Set"
+en daarna op de blauwe knop "Preview Data Set".
 
 #### check 7: Data en services valideren
 Als check 5 of 6 niet gelukt is, valideer dan de data en de services zoals beschreven in het hoofdstuk over [valideren](#validatie).
@@ -246,4 +246,4 @@ De prioritaire datasets zijn ook opgenomen in het <a href="https://inspireaanmer
 Bij INSPIRE geldt dat je maar 1 dataset in de WFS kan ontsluiten <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">(TG INSPIRE Download Services)</a>
 ![check 9_TG RQ 52](media/geoportaltip_TG-RQ-52.png "max 1 dataset per WFS")
 Het Geoportal wordt maandelijks geharvest, zie <a href="https://inspire-geoportal.ec.europa.eu/harvesting_status.html" target="_blank">harvesting status</a> en zoek dan op NL voor actuele harvest datum. 
-Als door de dataprovider veel aanpassingen zijn doorgevoerd en het resultaat daarvan wil zien in het Geoportal, stuur dan even een mail naar de INSPIRE helpdesk (inspire@geonovum.nl). We kunnen in dat geval speciaal een nieuwe harvest laten runnen!
+Als door de dataprovider veel aanpassingen zijn doorgevoerd en het resultaat daarvan wil zien in het Geoportal, stuur dan even een mail naar de INSPIRE helpdesk (inspire@geonovum.nl). In zulke gevallen is het mogelijk om een nieuwe harvest te laten runnen!
