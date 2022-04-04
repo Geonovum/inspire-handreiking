@@ -113,7 +113,9 @@ Om de verwijzingen te controleren op juistheid bevat het Europese INSPIRE Geopor
 De Link checker kan gestart worden door bestaande of nieuwe metadata van een dataset en services op te geven. Advies is om altijd voor New metadata te kiezen, omdat dan ook wijzigingen gelijk getest kunnen worden. Een Engelstalige beschrijving van de Link checker is <a href="https://inspire-geoportal.ec.europa.eu/files/INSPIRE_Geoportal_process_for_data-service_linking_v1.0.pdf" target="_blank">hier</a> te vinden.
 
 ## Checks om data raadpleegbaar en downoadbaar in het Geoportal te krijgen
-In deze paragraaf is aangegeven wat de oorzaak kan zijn als data niet in het Europese INSPIRE Geoportal aanwezig is en waarom een download en/of view link kunnen ontbreken terwijl dat niet de bedoeling was. Ook is hier te vinden via welke elementen de relatie tussen (metadata)data en service wordt gelegd. 
+Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> toont in welke mate een dataset ook daadwerkelijk raadpleegbaar (via een viewservice) en downloadbaar (via een downloadservice) is. Hiervoor moeten diverse verwijzingen (via links en identifiers) tussen metadata en services goed opgegeven zijn. 
+
+Om de verwijzingen te controleren is in deze paragraaf aangegeven op welke elementen de relatie tussen data en service wordt gelegd en wat de oorzaak kan zijn als data en services niet in het Europese INSPIRE Geoportal getoond wordt. 
 Loop onderstaande checks door, voor verder in het diepe te duiken:
 
 1. Is de data beschikbaar?
@@ -157,27 +159,27 @@ zie ook [hier](#hoe-om-te-gaan-met-anchor-en-uri) voor meer informatie.
 
 ### Check 3: Heeft de data een download link
 Als het download pictogram ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png)
-ontbreekt terwijl die er wel had moeten zijn kan dat verschillende oorzaken hebben.
+ontbreekt terwijl er wel een download service beschikbaar is, check dan of de koppeling tussen dataset en service goed is.
 Daarvoor moeten we onderscheid maken tussen [WFS](#wfs), [ATOM](#atom-feed), [SOS](#sos) en [WCS](#wcs).
 
 ***WFS***
 
-Het kan zijn dat de koppeling ontbreekt bij het SpatialDataSetIdentifier element in de Extended GetCapabilities.
+Het kan zijn dat de koppeling ontbreekt of niet correct is. De koppeling tussen een dataset en een WFS wordt in het Geoportal gelegd via het SpatialDataSetIdentifier element in de Extended Capabilities van de OGC WFS service:
+
 Het SpatialDataSetIdentifier element bestaat uit twee subelementen:
 1. identifier: inspire_dls:SpatialDataSetIdentifier/inspire_common:Code
 2. namespace: inspire_dls:SpatialDataSetIdentifier/inspire_common:Namespace
 
-De identifier moet hetzelfde zijn als die in het element unieke identifier van de bron, in de metadata van de dataset!
+De identifier moet hetzelfde zijn als die in het element unieke identifier van de bron, in de metadata van de dataset.
+
 De inspire_common:Namespace mag worden weggelaten als er geen aparte namespace in de metadata van de data is opgenomen voor de dataset identifier. De dataset identifier en de inspire_common:Code, moeten in dat geval de unieke bron identificatie van de dataset bevatten.
 Als er wel een aparte namespace bij de dataset identifier in de metadata staat, dient het element inspire_common:Namespace die namespace te bevatten. Dit betekent wel dat de metadata de zogenaamde RS_Identifier gebruikt, met 2 elementen: een code en een codeSpace voor de namespace, om de dataset te identificeren. 
-Het gebruik van zowel MD_identifier als RS_identifier is mogelijk volgens het NL Metadata profiel v 1.3.1.
+
 
 Check ook of de links naar de metadata van de dataset opgenomen zijn in het element MetadataURL per FeatureType.
 Deze moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service.
-Let op: Deze wordt niet getoond in onderstaande figuur.
 
-Als 3e kan gecontroleerd worden of de link naar de metadata van de service opgenomen is via <inspire_dls:ExtendedCapabilities> en <inspire_common:MetadataUrl>
-Dit en de elementen uit de eerst genoemde check worden wel getoond in onderstaande figuur.
+Als laatste kan gecontroleerd worden of de link naar de metadata van de service opgenomen is via inspire_common:MetadataUrl
 
 ![check 3_WFS](media/geoportaltip3_wfs.png "Check dataset service koppeling WFS")
 
