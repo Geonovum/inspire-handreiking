@@ -29,7 +29,11 @@ Op dit moment is voor INSPIRE de metadata gebaseerd op ISO 19115 en ISO 19119 st
 Zie voor meer informatie over metadata in het algemeen, het  <a href="https://www.geonovum.nl/geo-standaarden/metadata" target="_blank">dossier Metadata</a> op de Geonovum-website.
 
 ### Metadata van prioritaire datasets
-Voor de prioritaire datasets zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de Europese [INSPIRE registry](#inspire-registry)</a> en staan daar beschreven in het <a href="https://inspire.ec.europa.eu/metadata-codelist" target="_blank">INSPIRE metadata codelijstregister</a>. Op dit moment dienen voor twee soorten [prioritaire datasets](#prioritaire-datasets) deze trefwoorden worden opgenomen, namelijk voor de prioritaire datasets voor eReporting en voor de IACS-datasets.
+Voor de [prioritaire datasets](#prioritaire-datasets) zijn er aanvullende vereisten voor de metadata. Voor elke *directive* waar de data voor gebruikt wordt, wordt een trefwoord toegevoegd. Deze trefwoorden komen uit de Europese [INSPIRE registry](#inspire-registry)</a> en staan daar beschreven in het <a href="https://inspire.ec.europa.eu/metadata-codelist" target="_blank">INSPIRE metadata codelijstregister</a>. 
+
+
+De trefwoorden voor de prioritaire datasets voor eReporting zijn <a href="https://inspire.ec.europa.eu/metadata-codelist/PriorityDataset" target="_blank">hier</a> te vinden. De trefwoorden voor de IACS-datasets staan <a href="https://inspire.ec.europa.eu/metadata-codelist/IACSData" target="_blank">hier</a> beschreven.
+
 
 De trefwoorden en thesaurus worden toegevoegd met *anchors* en *URI's*. Hoe dit moet worden opgenomen in de metadata staat [hier](#hoe-om-te-gaan-met-anchor-en-uri).
 
@@ -71,7 +75,7 @@ In de [Invulinstructie dataset metadata](#invulinstructie-dataset-metadata) zijn
 ### Invulinstructie dataset metadata
 De onderstaande tabel geeft invulinstructies die van belang zijn bij INSPIRE-metadata-elementen. Let erop, dat er zowel verplichte ('Ja') als conditionele ('C') elementen in voorkomen. Zo kan bijvoorbeeld een aantal elementen pas worden ingevuld wanneer de dataharmonisatie is voltooid. 
 
-Voor [prioritaire datasets voor e-reporting](#prioritaire-datasets) is de aanvullende instructie over het gebruik van [*anchors*](#hoe-om-te-gaan-met-anchor-en-uri) bij het opnemen van de trefwoorden in de metadata ook in de invulinstructies meegenomen. Voor de [IACS-datasets](#iacs-datasets) staat in een <a href="https://marswiki.jrc.ec.europa.eu/wikicap/images/f/f8/DS-CDP-2019-04_REV2_TechnicalGuideline_IacsSpatialDataSharing_Part1_Final.pdf" target="_blank"> aparte technische specificatie</a> de aanvullende instructie vanuit DG AGRI.
+Voor [prioritaire datasets voor e-reporting](#prioritaire-datasets) is de aanvullende instructie over het gebruik van [*anchors*](#hoe-om-te-gaan-met-anchor-en-uri) bij het opnemen van de trefwoorden in de metadata ook in de invulinstructies meegenomen. Voor de [IACS-datasets](#iacs-datasets) staat in een <a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC121450" target="_blank"> aparte technische specificatie</a> de aanvullende instructie vanuit DG AGRI.
 
 
 | Metadata-element 									| Longname 		| INSPIRE-verplicht | Omschrijving 	| Voorbeeldwaarde |
