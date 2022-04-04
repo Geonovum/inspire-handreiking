@@ -20,11 +20,11 @@ Hieronder volgen enkele tips voor onze buurlanden.
 - Groot Brittannië: https://www.gov.uk/guidance/how-to-access-natural-englands-maps-and-data/
 
 Omdat het hier vooral om INSPIRE datasets gaat is het verstandig ook het betreffende INSPIRE thema als zoekcriterium te gebruiken. 
-Daarnaast helpt het om eerst het datamodel van dit thema goed te besuderen en vervolgens het feature type te kiezen waar men naar op zoek is. 
+Daarnaast helpt het om eerst het datamodel van dit thema goed te bestuderen en vervolgens het feature type te kiezen waar men naar op zoek is. 
 Ook dat kan vaak als zoekcriterium gebruikt worden.
 
 Wanneer het gaat om grensoverschreidend gebruik is het natuurlijk verstandig eerst te zoeken naar datasets die geharmoniseerd zijn naar het betreffende thema. 
-Als dat niet te vinden is, kan de AsIs data een soms toch ook voldoende zijn voor het gebruiksdoel.
+Als dat niet te vinden is, kan de AsIs data soms toch ook voldoende zijn voor het gebruiksdoel.
 
 ## Bestuderen van de metadata
 Bij het bestuderen van de metadata gaat het in eerste instantie om de vraag of de dataset geschikt is voor het doel van het gebruik. 
@@ -53,9 +53,9 @@ In de afbeelding hieronder is te zien hoe dit bv in het Nationaal Georegister te
 
 ### Gebruik in GIS
 
-***QGIS direct***
-***QGIS-plugin***
-***PDOK-plugin***
+***QGIS direct***/n
+***QGIS-plugin***/n
+***PDOK-plugin***/n
 
 ### Gebruik in app
 
