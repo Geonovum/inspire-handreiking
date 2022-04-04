@@ -123,9 +123,9 @@ Er zijn momenteel verschillende lopende initiatieven en projecten die de mogelij
 De volgende prioriteiten zijn nu benoemd in Action 2.1:
 - [IACS-datasets](#iacs-datasets) (van DG AGRI, zie paragraaf hieronder);
 - <a href="https://geonovum.github.io/eu_regelingen_datastrategie/#high-value-data-lijst" target="_blank"> High value datasets</a> van de Open Data Richtlijn (verwijst naar de Handreiking EU Informatie);
-- En de referentie datasets (met name de INSPIRE thema's uit Annex I).
+- En de referentie datasets (betreft met name de INSPIRE thema's uit Annex I).
 
 Meer informatie over Action 2.1 is te vinden op de <a href="https://github.com/INSPIRE-MIF/need-driven-data-prioritisation" target="_blank">Github Repository for INSPIRE MIWP Action 2.1 'Need-driven data prioritisation'</a>.
 
 #### IACS-datasets
-De prioritaire datasetlijst voor de **IACS-datasets** van DG AGRI zijn beschikbaar. In de <a href="https://marswiki.jrc.ec.europa.eu/wikicap/images/f/f8/DS-CDP-2019-04_REV2_TechnicalGuideline_IacsSpatialDataSharing_Part1_Final.pdf" target="_blank"> *Technical Guidelines on IACS Spatial Data Sharing, Part 1*</a>  staat de voorlopige lijst beschreven in hoofdstuk 3. In deze technische guidelines staat ook beschreven hoe de dataproviders extra trefwoorden opnemen in de [metadata van de dataset](#metadata-van-prioritaire-datasets) van deze prioritaire IACS-datasets. De IACS-datasets zijn ook vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>.
+Vanuit DG Agri is de voorlopige prioritaire datasetlijst voor de **IACS-datasets** beschikbaar. Deze staat beschreven in hoofdstuk 3 in de <a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC121450" target="_blank"> *Technical Guidelines on IACS Spatial Data Sharing, Part 1*</a>. In deze technische guidelines staat ook beschreven hoe de dataproviders extra trefwoorden opnemen in de [metadata van de dataset](#metadata-van-prioritaire-datasets) van deze prioritaire IACS-datasets. De IACS-datasets zijn ook vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>.
