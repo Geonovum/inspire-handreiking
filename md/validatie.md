@@ -30,8 +30,6 @@ Geonovum raadt je aan deze validatietools (en eventuele steekproefsgewijs handma
 
 **Gebruik daarnaast, ook als het INSPIRE (meta)data of een service is, de <a href="https://validatie.geostandaarden.nl/" target="_blank">Nederlandse validator</a> voor het checken van compliance aan de Nederlandse profielen voor <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Metadata" target="_blank">metadata</a>, <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services" target="_blank">WMS en WFS</a>.**
 
-**Voor WFS werkt de EU-validatietooling met bepaalde implementaties <a href="https://github.com/INSPIRE-MIF/helpdesk-validator/issues?q=WFS+is%3Aopen" target="_blank">niet</a>. Gebruik in dat geval nog de <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE" target="_blank">Nederlandse INSPIRE validatietooling voor WFS</a>.**
-
 Validatietools zijn nooit feilloos. Er kunnen bugs in zitten en de tools kunnen achterlopen op de ontwikkeling van Technical Guidelines. Ook kunnen twee tools op hetzelfde onderdeel testen en toch een andere uitkomst geven. Dat kan bijvoorbeeld komen doordat bij de ontwikkeling van validatietools bepaalde afwegingen gemaakt worden, bijvoorbeeld hoe er getest wordt. 
 
 Geonovum adviseert de Europese validatietools te gebruiken. Het is belangrijk te realiseren dat validatietools voornamelijk technisch valideren (bijvoorbeeld of er een identifier is). Of iets fout is ingevuld (bijvoorbeeld, de identifier verwijst niet naar de juiste dataset), kan niet altijd ondervangen worden. Daarnaast zijn niet alle vereisten door middel van geautomatiseerde processen te testen. Daarom is het aan te raden om zelf kritisch naar je gepubliceerde data en services te kijken, bijvoorbeeld door te controleren of deze goed vindbaar, te bekijken en te downloaden zijn in de <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">Europese INSPIRE geoportal</a>.
@@ -50,7 +48,7 @@ In de tabel hieronder staan welke tests beschikbaar zijn en aangeraden worden om
 | WMTS | | <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Validator: View Service WMTS</a> |
 | **Download service** | | |
 | ATOM | | <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Validator: Download service – Pre-defined ATOM</a> |
-| WFS | Validator: <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services" target="_blank">Nederlands WFS profiel WFS 2_0_0 ISO 19142</a> en <a href="http://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=INSPIRE" target="_blank">INSPIRE Download service WFS 2_0_0</a> bij niet-werkende EU-implementatie. | <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Validator: Download Service - Direct WFS en/of Download Service - Pre-defined WFS</a> |
+| WFS | Validator: <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services" target="_blank">Nederlands WFS profiel WFS 2_0_0 ISO 19142</a> | <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Validator: Download Service - Direct WFS en/of Download Service - Pre-defined WFS</a> |
 | WCS | | <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Validator: Download service – WCS core</a> |
 | SOS | | <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Validator: Download service – Pre-defined SOS</a> |
 | OGC API - Features | | <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Validator: Download service – OGC API - Features</a> |
@@ -78,7 +76,7 @@ De Europese INSPIRE validator kan ook middels een API aangeroepen worden. Bij he
 
 **Bekende problemen**
 
-De Europese INSPIRE validator werkt over het algemeen goed. Er zijn echter nog een paar bekende problemen te vinden op de <a href="https://github.com/INSPIRE-MIF/helpdesk-validator/issues" target="_blank">helpdesk</a> van de Europese INSPIRE validator. Voor <a href="https://github.com/INSPIRE-MIF/helpdesk-validator/issues?q=WFS+is%3Aopen" target="_blank">WFS</a> werkt de Europese INSPIRE validator met bepaalde implementaties niet goed. Gebruik in dat geval nog de de Nederlandse INSPIRE validator voor WFS, zie voor meer informatie ook de paragraaf [Te gebruiken validators](#te-gebruiken-validators). 
+De Europese INSPIRE validator werkt over het algemeen goed. Er zijn echter nog een paar bekende problemen te vinden op de <a href="https://github.com/INSPIRE-MIF/helpdesk-validator/issues" target="_blank">helpdesk</a> van de Europese INSPIRE validator. 
 
 
 ### Nederlandse INSPIRE validator
@@ -114,7 +112,7 @@ Om de verwijzingen te controleren op juistheid bevat het Europese INSPIRE Geopor
 
 De Link checker kan gestart worden door bestaande of nieuwe metadata van een dataset en services op te geven. Advies is om altijd voor New metadata te kiezen, omdat dan ook wijzigingen gelijk getest kunnen worden. Een Engelstalige beschrijving van de Link checker is <a href="https://inspire-geoportal.ec.europa.eu/files/INSPIRE_Geoportal_process_for_data-service_linking_v1.0.pdf" target="_blank">hier</a> te vinden.
 
-## Checks om data goed in het Geoportal te krijgen
+## Checks om data raadpleegbaar en downoadbaar in het Geoportal te krijgen
 In deze paragraaf is aangegeven wat de oorzaak kan zijn als data niet in het Europese INSPIRE Geoportal aanwezig is en waarom een download en/of view link kunnen ontbreken terwijl dat niet de bedoeling was. Ook is hier te vinden via welke elementen de relatie tussen (metadata)data en service wordt gelegd. 
 Loop onderstaande checks door, voor verder in het diepe te duiken:
 
