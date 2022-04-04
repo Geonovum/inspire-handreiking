@@ -245,7 +245,7 @@ Als de (meta)data voorkomt in de lijst met bij het Geoportal bekende datasets, m
 Dit kan verschillende oorzaken hebben, maar een vaak voorkomend probleem is de koppeling tussen de dataset en de view service.
 
 Als er een view service beschikbaar is, maar niet getoond wordt in de lijst, check dan of de koppeling aanwezig is met de metadata van de dataset.
-De link tussen de metadata van de dataset en den View Service wordt gelegd via het MetadataURL element van de Layer in het capabilities document van de OGC WMS service. Deze link moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service!
+De link tussen de metadata van de dataset en de View Service wordt gelegd via het MetadataURL element van de Layer in het capabilities document van de OGC WMS service. Deze link moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service!
 
 Als laatste kan gecontroleerd worden of de link naar de metadata van de service opgenomen is en of de metadata van de service in het NGR gepubliceerd is met de categorie INSPIRE, zie ook [hier](#publiceren-inspire-aanduiding)
 
