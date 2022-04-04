@@ -61,10 +61,10 @@ In de tabel hieronder staan welke tests beschikbaar zijn en aangeraden worden om
 Op 25 juli 2017 is de <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Europese INSPIRE validator</a> gelanceerd. Daarmee is er nu voor alle lidstaten één tool waarmee je kunt testen in hoeverre je voldoet aan de INSPIRE-vereisten. De Europese INSPIRE validator wordt op Europees niveau onderhouden en doorontwikkeld. Voor meer informatie zie de <a href="https://github.com/INSPIRE-MIF/helpdesk-validator/" target="_blank">github-pagina over de Europese INSPIRE validator</a>. Hier zijn bekende problemen beschreven als ook de link naar de changelog van de huidige en eerdere releases te vinden en de release strategie van toekomstige releases.
 
 Met de Europese INSPIRE validator kunnen validatietesten worden uitgevoerd voor de volgende onderdelen:
-- INSPIRE-themaspecifieke vereisten;
-- Generieke vereisten voor INSPIRE-datasets;
-- Applicatieschema;
-- GML.
+
+-metadata
+-services
+-datasets
 
 Naast de officiële <a href="https://inspire.ec.europa.eu/validator/" target="_blank">Europese INSPIRE-validator</a> is er ook een testversie van de validator, de zogeheten <a href="https://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/etf-webapp/" target="_blank">staging instance</a> beschikbaar waar de nieuwste functionaliteit in verwerkt is, maar die nog niet volledig getest is.
 
