@@ -53,9 +53,11 @@ In de afbeelding hieronder is te zien hoe dit bv in het Nationaal Georegister te
 
 ### Gebruik in GIS
 
-***QGIS direct***/n
-***QGIS-plugin***/n
-***PDOK-plugin***/n
+***QGIS direct***
+
+***QGIS-plugin***
+
+***PDOK-plugin***
 
 ### Gebruik in app
 
