@@ -134,8 +134,7 @@ Ga naar het startscherm van het <a href="https://inspire-geoportal.ec.europa.eu/
 Pas in het Geoportal een selectie toe op het INSPIRE thema van de dataset en lidstaat. Check of
 1. De (meta)data voorkomt in de lijst met data. 
 Als de (meta)data voorkomt in de lijst met data en 
-2. De data ook daadwerkelijk te downloaden en te bekijken is, 
-Dan is verdere actie niet noodzakelijk.
+2. De data ook daadwerkelijk te downloaden en te bekijken is, dan is verdere actie niet noodzakelijk.
 
 ![check 1](media/geoportaltip1.png "Check of de data vindbaar is")
 
@@ -196,6 +195,7 @@ Deze link moet hetzelfde zijn als de link in het OperatesOn element in de metada
 
 Daarnaast wordt in deze entry ook de identifier en namespace van de dataset opgenomen in het spatial_dataset_identifier_code element en spatial_dataset_identifier_namespace element.
 De identifier moet hetzelfde zijn als die in het element unieke identifier van de bron, zoals opgegeven in de metadata van de dataset.
+
 De elementen voor de INSPIRE namespace dienen alleen ingevuld te worden als er een apart namespace element is, bij de dataset identifier in de dataset metadata.
 De dataset identifier en de spatial_dataset_identifier_code, moeten in dat geval de unieke bron identificatie van de dataset bevatten.
 
