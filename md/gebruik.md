@@ -49,7 +49,24 @@ In de afbeelding hieronder is te zien hoe dit bv in het Nationaal Georegister te
 
 ### Viewen
 
+Vaak is de dataset al direct te bekijken via de matadatacatalogus via de WMS. Hieronder is een voorbeeld hoe dat werkt in het Nationaal Georegister.
+
+![viewen via NGR](media/view1.png "viewen via NGR")
+
+Druk op de knop "Voeg aan kaart toe" om de dataset te bekijken.
+Let op: soms moet je eerst inzoomen voordat je wat te zien krijgt.
+Het resultaat ziet er dan als volgt uit.
+
+![view resultaat](media/view2.png "view resultaat")
+
+Het is ook mogelijk de WMS te viewen in een browser met bv: 
+https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?SERVICE=WMS&REQUEST=GetMap&WIDTH=1920&HEIGHT=1024&VERSION=1.3.0&FORMAT=image/png&BBOX=0.0,300000.0,650000.0,650000.&CRS=EPSG:28992&STYLES=&TRANSPARENT=TRUE&LAYERS=Gemeentegebied
+
+Daarnaast zijn er verschillende applicaties die helpen bij het tonen van een WMS. De meest bekende zijn de GIS-applicaties zoals [QGIS](#), maar er zijn ook vele andere online applicaties ontwikkeld die gebruiken maken van de WMS. Het enige wat voor deze applicaties van belang is als input is de Stam URL van de WMS zoals te vinden in de metadata (bv https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0? in het voorbeeld hierboven.
+
 ### Downloaden
+
+
 
 ### Gebruik in GIS
 
