@@ -62,21 +62,39 @@ Het resultaat ziet er dan als volgt uit.
 Het is ook mogelijk de WMS te viewen in een browser met bv: 
 https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?SERVICE=WMS&REQUEST=GetMap&WIDTH=1920&HEIGHT=1024&VERSION=1.3.0&FORMAT=image/png&BBOX=0.0,300000.0,650000.0,650000.&CRS=EPSG:28992&STYLES=&TRANSPARENT=TRUE&LAYERS=Gemeentegebied
 
-Daarnaast zijn er verschillende applicaties die helpen bij het tonen van een WMS. De meest bekende zijn de GIS-applicaties zoals [QGIS](#), maar er zijn ook vele andere online applicaties ontwikkeld die gebruiken maken van de WMS. Het enige wat voor deze applicaties van belang is als input is de Stam URL van de WMS zoals te vinden in de metadata (bv https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0? in het voorbeeld hierboven.
+Via het GetCapabilities request kan o.a. gezien worden welke layers, styles en CRS-en ondersteund worden. Voor het voorbeeld van hierboven:
+https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?SERVICE=WMS&REQUEST=GetCapabilities
+
+Daarnaast zijn er verschillende applicaties die helpen bij het tonen van een WMS. De meest bekende zijn de GIS-applicaties zoals [QGIS](#Gebruik-in-GIS), maar er zijn ook vele andere online applicaties ontwikkeld die gebruiken maken van de WMS. Het enige wat voor deze applicaties van belang is als input is de stam URL van de WMS zoals te vinden in de metadata (bv https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0? in het voorbeeld hierboven.
 
 ### Downloaden
+Voor het downloaden zijn er vaak verschillende opties. Zie ook [hier](#download-services). Is het de bedoeling de hele dataset te downloaden, dan is de Atomfeed een goede optie, indien die beschikbaar is. Gaat het om slechts een deelgebied of slechts enkele features dan is een WFS, WCS, SOS of OGC-APIFeature service een betere optie. Net als bij de WMS, zijn de datasets via downloads op meerdere manieren te benaderen.
 
+De Atomfeed kan verschillende formaten terug leveren, meestal ingepakt in een zip-file. De WFS geeft defeault een GML bestand terug. De OGC-API-features geven in de meeste gevallen default een Geojson bestand. Voor beide geldt dat ook andere formaten geïmplementeerd kunnen zijn. 
+Net als bij de WMS is de downloadservices WFS ook direct via de browser te bevragen met het GetCapabilities request. Om specifieke features op te vragen is het GetFeature request beschikbaar. vb:
+https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0?service=WFS&version=2.0.0&request=GetFeature&typename=gemeentegebied&CRS=epsg:28992&format=GML&filter=<Filter+xmlns="http://www.opengis.net/ogc"><PropertyIsEqualTo><PropertyName>identificatie</PropertyName><Literal>GM0503</Literal></PropertyIsEqualTo></Filter>
+geeft de GML file van de gemeente Delft met code GM0503. In de meeste browsers is dit daarna via de rechter muisknop op te slaan als een lokaal GML bestand. 
 
+Het is niet altijd nodig de bestanden lokaal op te slaan. De meeste download-services kunnen ook direct gebruikt worden in applicaties die toegang hebben tot internet. Dit geldt ook voor GIS-applicaties zoals beschreven in de volgende paragraaf.
 
 ### Gebruik in GIS
 
-***QGIS direct***
+In deze paragraaf wordt aan de hand van de open source GIS-applicatie QGIS met 4 voorbeelden getoond hoe INSPIRE services gebruikt kunnen worden.
 
-***QGIS-plugin***
+- ***QGIS basisfunctionaliteit***
 
-***PDOK-plugin***
+In onderstaande afbeelding wordt getoond hoe een WMS is toe te voegen aan een QGIS project met de basisfunctionaliteit van QGIS.
+De stam URL van de WMS moet opgegeven worden en er mag een eigen bedachte naam aan gegeven worden. 
+![WMS in QGIS](media/WMS_QGIS.png "WMS verbinding maken in QGIS")
+Nadat de verbinding is gemaakt, kan een laag gekozen worden en zal de laag getoond worden.
 
-### Gebruik in app
+Voor de downloadservices als WFS,OGC-API- Features en WCS worden vergelijkbare stappen doorlopen. Het loont bij grote datasets om eerst de WMS te laden, dan in te zoomen op het interesse gebied en daarna pas de downloadservices te laden, omdat dan minder features ingelezen hoeven te worden. 
+
+- ***QGIS-INSPIRE plugin***
+
+
+
+- ***PDOK-PDOK plugin***
 
 ## Algemene tips
 
