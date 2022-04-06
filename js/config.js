@@ -2,7 +2,7 @@ var respecConfig = {
   specStatus: "GN-WV", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specStatus
   specType: "HR", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specType
   pubDomain: "EU", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/pubDomain. Of vraag aan bij beheerders
-  publishDate: "2022-03-21", // Datum als jjjj-mm-dd, bijvoorbeeld
+  publishDate: "2022-04-06", // Datum als jjjj-mm-dd, bijvoorbeeld
   editors: [
     {
       name: "Geonovum INSPIRE team",
