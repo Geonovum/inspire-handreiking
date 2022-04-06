@@ -6,25 +6,39 @@ Na het bestuderen van de metadata moet dan de juiste benadering van de data bepa
 
 ## Vinden van de data
 
-Wanneer het alleen Nederlandse geodata betreft wordt geadviseerd eerst te zoeken in het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister</a>. 
-Wanneer het geen geodata, maar wel Nederlandse overheids data betreft wordt geadviseerd eerst te zoeken in het <a href="https://data.overheid.nl/" target="_blank">open data portaal van de overheid</a>.
+Wanneer het alleen Nederlandse geodata betreft wordt geadviseerd eerst te zoeken in het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister</a> (NGR). Om alleen INSPIRE-datasets en services te vinden, kan hiervoor een vinkje in de linker kolom geplaatst worden bij Categorie "Inspire". Let op: dit kan nog niet op de startpagina van NGR, maar pas nadat er eerst een ander zoek criterium is opgegeven.
+
+Wanneer het geen geodata, maar wel Nederlandse overheidsdata betreft wordt geadviseerd eerst te zoeken in het <a href="https://data.overheid.nl/" target="_blank">open data portaal van de overheid</a>.
 
 Wanneer het geen Nederlandse data betreft kan het beste in eerste instantie gezocht worden via het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE GEOPORTAL</a>
-Wanneer het niet te vinden is via het INSPIRE GEOPORTAL, dan kan het mogelijk nog gevonden worden via de locale catalogie.
+
+Wanneer het niet te vinden is via het INSPIRE GEOPORTAL, dan kan het mogelijk nog gevonden worden via de lokale catalogi.
 Hieronder volgen enkele tips voor onze buurlanden.
 - Duitsland, Nedersaksen: https://www.geodaten.niedersachsen.de/
 - Duitsland, Noordrijn Westfalen: https://www.geoportal.nrw/
-- Belgie, Vlaanderen: https://www.geopunt.be/
-- Belgie, Wallonië: http://geoportail.wallonie.be/
+- België, Vlaanderen: https://www.geopunt.be/
+- België, Wallonië: http://geoportail.wallonie.be/
 - Noordzee: https://www.noordzeeloket.nl/beheer/noordzeeatlas/
 - Groot Brittannië: https://www.gov.uk/guidance/how-to-access-natural-englands-maps-and-data/
 
-Omdat het hier vooral om INSPIRE datasets gaat is het verstandig ook het betreffende INSPIRE thema als zoekcriterium te gebruiken. 
-Daarnaast helpt het om eerst het datamodel van dit thema goed te bestuderen en vervolgens het feature type te kiezen waar men naar op zoek is. 
-Ook dat kan vaak als zoekcriterium gebruikt worden.
-
-Wanneer het gaat om grensoverschreidend gebruik is het natuurlijk verstandig eerst te zoeken naar datasets die geharmoniseerd zijn naar het betreffende thema. 
+Wanneer het gaat om grensoverschrijdend gebruik is het natuurlijk verstandig eerst te zoeken naar datasets die geharmoniseerd zijn naar het betreffende thema. 
 Als dat niet te vinden is, kan de AsIs data soms toch ook voldoende zijn voor het gebruiksdoel.
+
+Omdat het hier vooral om INSPIRE datasets gaat is het verstandig ook het betreffende INSPIRE thema als zoekcriterium te gebruiken. 
+Daarnaast helpt het om eerst het datamodel van dit thema goed te bestuderen en vervolgens het feature type te kiezen waar men naar op zoek is te kiezen als zoekterm. 
+Dit feature type is meestal verplicht in de laagnamen en zal daarom voor alle landen gelijk zijn wanneer het geharmoniseerde bestanden betreft.
+
+Andere belemmeringen voor het gebruik van INSPIRE data in grensoverschrijdende projecten kunnen zijn:
+- De metadata is vaak in de lokale taal.
+- Dataset in de buurlanden zijn vaak regionaal versnipperd.
+- Actualiteit en detailniveau kunnen sterk verschillen.
+- Schijnbaar dezelfde data van buurlanden kan toch semantisch verschillend zijn, waardoor appels met peren vergeleken worden.
+- Soms moet er eerst iets ondertekend worden voordat je het mag downloaden.
+- De Inspire geharmoniseerde datasets zijn niet altijd de meest actuele en volledige datasets.
+- Complexe GML is vaak moeilijk in het gebruik.
+- Verschillende styling
+- Verschillende coördinaatsystemen. Kies bij voorkeur een op ETRS89 gebaseerd coördinaatsyteem, omdat dat voor INSPIRE ondersteund moet worden.
+- Te grote datasets die niet in zijn geheel via een WFS in een GIS-systeem te gebruiken zijn. Het advies is om grote datasets eerst te downloaden.
 
 ## Bestuderen van de metadata
 Bij het bestuderen van de metadata gaat het in eerste instantie om de vraag of de dataset geschikt is voor het doel van het gebruik. 
@@ -35,10 +49,11 @@ Daarbij spelen aspecten als:
 - Gebruiksbeperkingen
 - Hoe de data te benaderen is
 - Geharmoniseerd of AsIs
+- Is het beschikbaar in het gewenste CRS
 
 Maar eigenlijk alles wat hierover beschreven staat in het hoofdstuk over [metadata](#metadata)
 
-In het geval de metadata niet het antwoord geeft dat gezocht wordt kan contact opgenomen wordt met de organisatie die verantwoordelijk is. Die contact-informatie is ook te vinden in de metadata.
+In het geval de metadata niet het antwoord geeft dat gezocht wordt, kan contact opgenomen wordt met de organisatie die verantwoordelijk is. Die contact-informatie is ook te vinden in de metadata.
 
 ## Benadering van de data
 In de metadata van de dataset is te zien op welke manier de data benaderd kan worden.
@@ -65,12 +80,12 @@ https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?SERVICE=WMS&REQUE
 Via het GetCapabilities request kan o.a. gezien worden welke layers, styles en CRS-en ondersteund worden. Voor het voorbeeld van hierboven:
 https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?SERVICE=WMS&REQUEST=GetCapabilities
 
-Daarnaast zijn er verschillende applicaties die helpen bij het tonen van een WMS. De meest bekende zijn de GIS-applicaties zoals [QGIS](#Gebruik-in-GIS), maar er zijn ook vele andere online applicaties ontwikkeld die gebruiken maken van de WMS. Het enige wat voor deze applicaties van belang is als input is de stam URL van de WMS zoals te vinden in de metadata (bv https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0? in het voorbeeld hierboven.
+Daarnaast zijn er verschillende applicaties die helpen bij het tonen van een WMS. De meest bekende zijn de GIS-applicaties zoals [QGIS](#Gebruik-in-GIS), maar er zijn ook vele andere online applicaties ontwikkeld die gebruik maken van de WMS. Het enige wat voor deze applicaties van belang is als input is de stam URL van de WMS zoals te vinden in de metadata (bv https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0? in het voorbeeld hierboven.
 
 ### Downloaden
 Voor het downloaden zijn er vaak verschillende opties. Zie ook [hier](#download-services). Is het de bedoeling de hele dataset te downloaden, dan is de Atomfeed een goede optie, indien die beschikbaar is. Gaat het om slechts een deelgebied of slechts enkele features dan is een WFS, WCS, SOS of OGC-APIFeature service een betere optie. Net als bij de WMS, zijn de datasets via downloads op meerdere manieren te benaderen.
 
-De Atomfeed kan verschillende formaten terug leveren, meestal ingepakt in een zip-file. De WFS geeft defeault een GML bestand terug. De OGC-API-features geven in de meeste gevallen default een Geojson bestand. Voor beide geldt dat ook andere formaten geïmplementeerd kunnen zijn. 
+De Atomfeed kan verschillende formaten terug leveren, meestal ingepakt in een zip-file. De WFS geeft default een GML bestand terug. De OGC-API-features geven in de meeste gevallen default een Geojson bestand. Voor beide geldt dat ook andere formaten geïmplementeerd kunnen zijn. 
 Net als bij de WMS is de downloadservices WFS ook direct via de browser te bevragen met het GetCapabilities request. Om specifieke features op te vragen is het GetFeature request beschikbaar. vb:
 https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0?service=WFS&version=2.0.0&request=GetFeature&typename=gemeentegebied&CRS=epsg:28992&format=GML&filter=<Filter+xmlns="http://www.opengis.net/ogc"><PropertyIsEqualTo><PropertyName>identificatie</PropertyName><Literal>GM0503</Literal></PropertyIsEqualTo></Filter>
 geeft de GML file van de gemeente Delft met code GM0503. In de meeste browsers is dit daarna via de rechter muisknop op te slaan als een lokaal GML bestand. 
@@ -82,19 +97,36 @@ Het is niet altijd nodig de bestanden lokaal op te slaan. De meeste download-ser
 In deze paragraaf wordt aan de hand van de open source GIS-applicatie QGIS met 4 voorbeelden getoond hoe INSPIRE services gebruikt kunnen worden.
 
 - ***QGIS basisfunctionaliteit***
-
 In onderstaande afbeelding wordt getoond hoe een WMS is toe te voegen aan een QGIS project met de basisfunctionaliteit van QGIS.
 De stam URL van de WMS moet opgegeven worden en er mag een eigen bedachte naam aan gegeven worden. 
 ![WMS in QGIS](media/WMS_QGIS.png "WMS verbinding maken in QGIS")
 Nadat de verbinding is gemaakt, kan een laag gekozen worden en zal de laag getoond worden.
 
 Voor de downloadservices als WFS,OGC-API- Features en WCS worden vergelijkbare stappen doorlopen. Het loont bij grote datasets om eerst de WMS te laden, dan in te zoomen op het interesse gebied en daarna pas de downloadservices te laden, omdat dan minder features ingelezen hoeven te worden. 
+CBS heeft een internetpagina ingericht waarin het <a href="https://www.cbs.nl/geoservices/" target="_blank">gebruik van geoservices</a> in QGIS wordt uitgelegd met een handleiding en video. Het is inmiddels enigszins verouderd, maar het principe is nog steeds hetzelfde.
 
 - ***QGIS-INSPIRE plugin***
+Om het gebruik van INSPIRE data te vergemakkelijken voor de GIS-gebruikers in Nederland is er een QGIS plugin ontwikkeld. De plugin maakt het gemakkelijk om direct de INSPIRE datasets en services te vinden, te raadplegen en te downloaden. Via de plugin kan een gebruiker zowel vrij zoeken als INSPIRE-data zoeken op trefwoord, INSPIRE-thema, organisatie of type service. Het gevonden resultaat kan je direct toevoegen aan QGIS. Je kunt de INSPIRE plugin downloaden vanuit de werkbalk van QGIS. 
+De INSPIRE QGIS plugin is tot stand gekomen onder verantwoordelijkheid van Geonovum. De plugin is ontwikkeld door <a href="https://kgis.be/" target="_blank">KGIS</a>.
 
+Er is een <a href="https://youtu.be/X-LPuf5Vchg" target="_blank">video</a> gemaakt om uit te leggen hoe de plugin geïnstalleerd en gebruikt kan worden.
+Daarnaast is er een <a href="https://github.com/warrieka/inspireNL" target="_blank">Github pagina</a> over deze plugin. Hier kunnen de source-code en issues gevonden worden. Bekende issues zijn dat niet elke Atom feed een goede download geeft en dat als Type op service gezet wordt, dat dan niet alles gevonden wordt.
 
+![QGIS plugin](media/QGIS_plugin.png "QGIS INSPIRE plugin")
+
+In sommige gevallen leiden de INSPIRE datamodellen tot complexe GML die niet direct in te lezen is in QGIS.
+Het kan dan helpen om ***QGIS GML Application Schema Toolbox*** ook te laden via het plugin menu in QGIS.
+
+![GML_ASTB plugin](media/GML_ASTB_plugin.png "QGIS GML Application Schema Toolbox plugin")
 
 - ***PDOK-PDOK plugin***
 
+Tenslotte is er ook nog de PDOK plugin in QGIS die kan helpen.
+
+![PDOK plugin](media/PDOK_plugin.png "QGIS PDOK plugin")
+
 ## Algemene tips
 
+Op GeoForum kan je ervaringen delen en/of vragen stellen aan vakgenoten bij collega dataproviders, specialisten van PDOK en Geonovum. Door gebruik te maken van het GeoForum kunnen we issues èn oplossingen direct met elkaar delen. Dus heb je een vraag over INSPIRE? Stel hem op GeoForum.
+
+Om kennis te delen, issues te signaleren en feedback te vragen van experts uit heel Europa kan je terecht bij het INSPIRE Community Forum. Op het community platform vind je 11 discussiegroepen: negen thematische discussiegroepen rond clusters van de INSPIRE thema’s, een discussiegroep over software en tools en een discussiegroep over INSPIRE en het milieubeleid. Gebruik maken van dit Europese expertisenetwerk? Ga naar INSPIRE Community Forum.
