@@ -87,7 +87,7 @@ Voor het downloaden zijn er vaak verschillende opties. Zie ook [hier](#download-
 
 De Atomfeed kan verschillende formaten terug leveren, meestal ingepakt in een zip-file. De WFS geeft default een GML bestand terug. De OGC-API-features geven in de meeste gevallen default een Geojson bestand. Voor beide geldt dat ook andere formaten geïmplementeerd kunnen zijn. 
 Net als bij de WMS is de downloadservices WFS ook direct via de browser te bevragen met het GetCapabilities request. Om specifieke features op te vragen is het GetFeature request beschikbaar. vb:
-https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0?service=WFS&version=2.0.0&request=GetFeature&typename=gemeentegebied&CRS=epsg:28992&format=GML&filter=<Filter+xmlns="http://www.opengis.net/ogc"><PropertyIsEqualTo><PropertyName>identificatie</PropertyName><Literal>GM0503</Literal></PropertyIsEqualTo></Filter>
+https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0?service=WFS&version=2.0.0&request=GetFeature&typename=gemeentegebied&CRS=epsg:28992&format=GML&filter=%3CFilter%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Eidentificatie%3C%2FPropertyName%3E%3CLiteral%3EGM0503%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2FFilter%3E 
 geeft de GML file van de gemeente Delft met code GM0503. In de meeste browsers is dit daarna via de rechter muisknop op te slaan als een lokaal GML bestand. 
 
 Het is niet altijd nodig de bestanden lokaal op te slaan. De meeste download-services kunnen ook direct gebruikt worden in applicaties die toegang hebben tot internet. Dit geldt ook voor GIS-applicaties zoals beschreven in de volgende paragraaf.
