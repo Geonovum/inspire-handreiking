@@ -117,7 +117,7 @@ In deze paragraaf wordt aan de hand van de open source GIS-applicatie QGIS met 3
 
 - ***PDOK-PDOK plugin***
 
-    Tenslotte is er ook nog de PDOK plugin in QGIS die kan helpen.
+Tenslotte is er ook nog de PDOK plugin in QGIS die kan helpen. Deze toont alle services die beschikbaar zijn bij PDOK. Het voordeel t.o.v. de INSPIRE plugin is dat ook niet INSPIRE services getoond worden. Daarnaast laadt deze plugin ook de bijbehorende styles voor de verschillende WMS services, zoals hieronder getoond. Nadeel is dat alleen de PDOK services getoond worden en niet die van andere providers.
     ![PDOK plugin](media/PDOK_plugin.png "QGIS PDOK plugin")
 
 ## Algemene gebruikstips
