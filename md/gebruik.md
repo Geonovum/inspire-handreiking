@@ -19,7 +19,7 @@ Hieronder volgen enkele tips voor onze buurlanden.
 - België <a href="https://www.geopunt.be/" target="_blank">Vlaanderen</a>
 - België <a href="http://geoportail.wallonie.be/" target="_blank">Wallonië</a>
 - <a href="https://www.noordzeeloket.nl/beheer/noordzeeatlas/" target="_blank">Noordzee</a>
-- <a href="https://www.gov.uk/guidance/how-to-access-natural-englands-maps-and-data/" target="_blank">Groot Brittannië</a>
+- <a href="https://ckan.publishing.service.gov.uk/dataset/" target="_blank">Groot Brittannië</a>
 
 Wanneer het gaat om grensoverschrijdend gebruik is het natuurlijk verstandig eerst te zoeken naar datasets die geharmoniseerd zijn naar het betreffende thema. 
 Als dat niet te vinden is, kan de AsIs data soms toch ook voldoende zijn voor het gebruiksdoel.
