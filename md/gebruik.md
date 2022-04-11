@@ -14,12 +14,12 @@ Wanneer het geen Nederlandse data betreft kan het beste in eerste instantie gezo
 
 Wanneer het niet te vinden is via het INSPIRE GEOPORTAL, dan kan het mogelijk nog gevonden worden via de lokale catalogi.
 Hieronder volgen enkele tips voor onze buurlanden.
-- Duitsland, Nedersaksen: https://www.geodaten.niedersachsen.de/
-- Duitsland, Noordrijn Westfalen: https://www.geoportal.nrw/
-- België, Vlaanderen: https://www.geopunt.be/
-- België, Wallonië: http://geoportail.wallonie.be/
-- Noordzee: https://www.noordzeeloket.nl/beheer/noordzeeatlas/
-- Groot Brittannië: https://www.gov.uk/guidance/how-to-access-natural-englands-maps-and-data/
+- Duitsland <a href="https://www.geodaten.niedersachsen.de/" target="_blank">Nedersaksen</a>
+- Duitsland <a href="https://www.geoportal.nrw/" target="_blank"> Noordrijn Westfalen</a>
+- België <a href="https://www.geopunt.be/" target="_blank">Vlaanderen</a>
+- België <a href="http://geoportail.wallonie.be/" target="_blank">Wallonië</a>
+- <a href="https://www.noordzeeloket.nl/beheer/noordzeeatlas/" target="_blank">Noordzee</a>
+- <a href="https://www.gov.uk/guidance/how-to-access-natural-englands-maps-and-data/" target="_blank">Groot Brittannië</a>
 
 Wanneer het gaat om grensoverschrijdend gebruik is het natuurlijk verstandig eerst te zoeken naar datasets die geharmoniseerd zijn naar het betreffende thema. 
 Als dat niet te vinden is, kan de AsIs data soms toch ook voldoende zijn voor het gebruiksdoel.
