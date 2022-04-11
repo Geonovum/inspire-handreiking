@@ -1,4 +1,4 @@
-# Checklist
+# Checklist voor dataprovider
 
 Hieronder staat een korte checklist van alle stappen die een dataprovider moet doorlopen om een INSPIRE conforme dataset inclusief services te publiceren:
 
