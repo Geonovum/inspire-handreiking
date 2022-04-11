@@ -53,7 +53,7 @@ Daarbij spelen aspecten als:
 
 Maar eigenlijk alles wat hierover beschreven staat in het hoofdstuk over [metadata](#metadata)
 
-In het geval de metadata niet het antwoord geeft dat gezocht wordt, kan contact opgenomen wordt met de organisatie die verantwoordelijk is. Die contact-informatie is ook te vinden in de metadata.
+In het geval de metadata niet het antwoord geeft dat gezocht wordt, kan contact opgenomen worden met de organisatie die verantwoordelijk is. Die contact-informatie is ook te vinden in de metadata.
 
 ## Benadering van de data
 In de metadata van de dataset is te zien op welke manier de data benaderd kan worden.
