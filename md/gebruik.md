@@ -98,28 +98,27 @@ In deze paragraaf wordt aan de hand van de open source GIS-applicatie QGIS met 3
 
 - ***QGIS basisfunctionaliteit***
 
-*Tabspace* In onderstaande afbeelding wordt getoond hoe een WMS is toe te voegen aan een QGIS project met de basisfunctionaliteit van QGIS.
-De stam URL van de WMS moet opgegeven worden en er mag een eigen bedachte naam aan gegeven worden. 
-![WMS in QGIS](media/WMS_QGIS.png "WMS verbinding maken in QGIS")
-Nadat de verbinding is gemaakt, kan een laag gekozen worden en zal de laag getoond worden.
-Voor de downloadservices als WFS,OGC-API- Features en WCS worden vergelijkbare stappen doorlopen. Het loont bij grote datasets om eerst de WMS te laden, dan in te zoomen op het interesse gebied en daarna pas de downloadservices te laden, omdat dan minder features ingelezen hoeven te worden. 
-CBS heeft een internetpagina ingericht waarin het <a href="https://www.cbs.nl/geoservices/" target="_blank">gebruik van geoservices</a> in QGIS wordt uitgelegd met een handleiding en video. Het is inmiddels enigszins verouderd, maar het principe is nog steeds hetzelfde.
+    In onderstaande afbeelding wordt getoond hoe een WMS is toe te voegen aan een QGIS project met de basisfunctionaliteit van QGIS. De stam URL van de WMS moet opgegeven worden en er mag een eigen bedachte naam aan gegeven worden. 
+    ![WMS in QGIS](media/WMS_QGIS.png "WMS verbinding maken in QGIS")
+    Nadat de verbinding is gemaakt, kan een laag gekozen worden en zal de laag getoond worden.
+    Voor de downloadservices als WFS,OGC-API- Features en WCS worden vergelijkbare stappen doorlopen. Het loont bij grote datasets om eerst de WMS te laden, dan in te zoomen op het interesse gebied en daarna pas de downloadservices te laden, omdat dan minder features ingelezen hoeven te worden. 
+    CBS heeft een internetpagina ingericht waarin het <a href="https://www.cbs.nl/geoservices/" target="_blank">gebruik van geoservices</a> in QGIS wordt uitgelegd met een handleiding en video. Het is inmiddels enigszins verouderd, maar het principe is nog steeds hetzelfde.
 
 - ***QGIS-INSPIRE plugin***
 
-*Tabspace* Om het gebruik van INSPIRE data te vergemakkelijken voor de GIS-gebruikers in Nederland is er een QGIS plugin ontwikkeld. De plugin maakt het gemakkelijk om direct de INSPIRE datasets en services te vinden, te raadplegen en te downloaden. Via de plugin kan een gebruiker zowel vrij zoeken als INSPIRE-data zoeken op trefwoord, INSPIRE-thema, organisatie of type service. Het gevonden resultaat kan je direct toevoegen aan QGIS. Je kunt de INSPIRE plugin downloaden vanuit de werkbalk van QGIS. 
-De INSPIRE QGIS plugin is tot stand gekomen onder verantwoordelijkheid van Geonovum. De plugin is ontwikkeld door <a href="https://kgis.be/" target="_blank">KGIS</a>.
-Er is een <a href="https://youtu.be/X-LPuf5Vchg" target="_blank">video</a> gemaakt om uit te leggen hoe de plugin geïnstalleerd en gebruikt kan worden.
-Daarnaast is er een <a href="https://github.com/warrieka/inspireNL" target="_blank">Github pagina</a> over deze plugin. Hier kunnen de source-code en issues gevonden worden. Bekende issues zijn dat niet elke Atom feed een goede download geeft en dat als Type op service gezet wordt, dat dan niet alles gevonden wordt.
-![QGIS plugin](media/QGIS_plugin.png "QGIS INSPIRE plugin")
-In sommige gevallen leiden de INSPIRE datamodellen tot complexe GML die niet direct in te lezen is in QGIS.
-Het kan dan helpen om ***QGIS GML Application Schema Toolbox*** ook te laden via het plugin menu in QGIS.
-![GML_ASTB plugin](media/GML_ASTB.png "QGIS GML Application Schema Toolbox plugin")
+    Om het gebruik van INSPIRE data te vergemakkelijken voor de GIS-gebruikers in Nederland is er een QGIS plugin ontwikkeld. De plugin maakt het gemakkelijk om direct de INSPIRE datasets en services te vinden, te raadplegen en te downloaden. Via de plugin kan een gebruiker zowel vrij zoeken als INSPIRE-data zoeken op trefwoord, INSPIRE-thema, organisatie of type service. Het gevonden resultaat kan je direct toevoegen aan QGIS. Je kunt de INSPIRE plugin downloaden vanuit de werkbalk van QGIS. 
+    De INSPIRE QGIS plugin is tot stand gekomen onder verantwoordelijkheid van Geonovum. De plugin is ontwikkeld door <a href="https://kgis.be/" target="_blank">KGIS</a>.
+    Er is een <a href="https://youtu.be/X-LPuf5Vchg" target="_blank">video</a> gemaakt om uit te leggen hoe de plugin geïnstalleerd en gebruikt kan worden.
+    Daarnaast is er een <a href="https://github.com/warrieka/inspireNL" target="_blank">Github pagina</a> over deze plugin. Hier kunnen de source-code en issues gevonden worden. Bekende issues zijn dat niet elke Atom feed een goede download geeft en dat als Type op service gezet wordt, dat dan niet alles gevonden wordt.
+    ![QGIS plugin](media/QGIS_plugin.png "QGIS INSPIRE plugin")
+    In sommige gevallen leiden de INSPIRE datamodellen tot complexe GML die niet direct in te lezen is in QGIS.
+    Het kan dan helpen om ***QGIS GML Application Schema Toolbox*** ook te laden via het plugin menu in QGIS.
+    ![GML_ASTB plugin](media/GML_ASTB.png "QGIS GML Application Schema Toolbox plugin")
 
 - ***PDOK-PDOK plugin***
 
-*Tabspace* Tenslotte is er ook nog de PDOK plugin in QGIS die kan helpen.
-![PDOK plugin](media/PDOK_plugin.png "QGIS PDOK plugin")
+    Tenslotte is er ook nog de PDOK plugin in QGIS die kan helpen.
+    ![PDOK plugin](media/PDOK_plugin.png "QGIS PDOK plugin")
 
 ## Algemene gebruikstips
 
