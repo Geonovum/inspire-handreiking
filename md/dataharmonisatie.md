@@ -188,6 +188,11 @@ voor de INSPIRE namespaces gelden de volgende lexicografische spelregels (restri
 - Begin namespace code met een letter;
 - Gebruik minimaal 3 karakters. Lange namespace codes zijn niet wenselijk.
 
+Deze regels zijn strikter dan de lexicografische regels in NEN3610, want daarin mogen bv wel hoofdletters gebruikt worden.
+Deze regels vallen echter wel binnen de lexicografische regels in NEN3610. Daarmee zou conform beide, data beschikbaar kunnen worden gesteld.
+De motivatie voor het hanteren van de striktere regels kan gevonden worden in de <a href="https://www.geonovum.nl/uploads/documents/D1-2013-09-19_Towards_a_NL_URI_Strategy.pdf" target="_blank">nationale URI-strategie</a>.
+Daarin is aangegeven:
+**Avoid the use of strange symbols in a URI. It is best to limit oneself to lowercase letters, digits and, if necessary, hyphens as punctuation.**
 
 ### LocalId
 De LocalId is de unieke identifier voor een object (binnen een namespace). De dataprovider is verantwoordelijk voor het uitdelen van deze unieke identifiers (de localId). In het [Generic Conceptual Model](#generic-conceptual-model) staat in hoofdstuk 14 'Identifier management'een algemene uitleg beschreven over het gebruik van unieke identifiers. Per INSPIRE thema kunnen er nog specifieke uitbreidingen staan in de [INSPIRE dataspecificatie](#inspire-dataspecificaties) van het betreffende thema.
