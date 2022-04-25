@@ -193,7 +193,9 @@ Deze regels vallen echter wel binnen de lexicografische regels in NEN3610. Daarm
 De motivatie voor het hanteren van de striktere regels kan gevonden worden in de <a href="https://www.geonovum.nl/uploads/documents/D1-2013-09-19_Towards_a_NL_URI_Strategy.pdf" target="_blank">nationale URI-strategie</a>.
 Daarin is aangegeven:
 
-*Avoid the use of strange symbols in a URI. It is best to limit oneself to lowercase letters, digits and, if necessary, hyphens as punctuation.*
+  *Avoid the use of strange symbols in a URI. It is best to limit oneself to lowercase letters, digits and, if necessary, hyphens as punctuation.*
+
+De namespace in het NL INSPIRE namespace register is een technische implementatie. Daarbij wordt er rekening mee gehouden dat een namespace onderdeel kan zijn van een URI. Daarvoor moet de identificatie zo gestructureerd zijn dat er een URL uit opgebouwd kan worden.
 
 ### LocalId
 De LocalId is de unieke identifier voor een object (binnen een namespace). De dataprovider is verantwoordelijk voor het uitdelen van deze unieke identifiers (de localId). In het [Generic Conceptual Model](#generic-conceptual-model) staat in hoofdstuk 14 'Identifier management'een algemene uitleg beschreven over het gebruik van unieke identifiers. Per INSPIRE thema kunnen er nog specifieke uitbreidingen staan in de [INSPIRE dataspecificatie](#inspire-dataspecificaties) van het betreffende thema.
