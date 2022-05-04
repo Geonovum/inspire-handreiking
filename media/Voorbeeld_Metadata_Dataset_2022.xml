@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_Metadata 
+	xmlns:gml="http://www.opengis.net/gml" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+	xmlns:gmx="http://www.isotc211.org/2005/gmx"
+	xmlns:gts="http://www.isotc211.org/2005/gts" 
+	xmlns:gco="http://www.isotc211.org/2005/gco" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd
+	http://www.isotc211.org/2005/gmx http://schemas.opengis.net/iso/19139/20060504/gmx/gmx.xsd">
+	<!-- Voorbeeld document voor Metadata voor datasets -->
+	<!-- Het voorbeeld is gebaseerd op een fictieve dataset -->
+	<!-- Unieke identifier van dit metadata voor data document -->
+	<gmd:fileIdentifier>
+		<!-- Voorbeeld: C2DFBDBC-5092-11E0-BA8E-B62DE0D72085 -->
+		<gco:CharacterString>C2DFBDBC-5092-11E0-BA8E-B62DE0D72085</gco:CharacterString>
+	</gmd:fileIdentifier>
+	<gmd:language>
+		<!-- Codering van de metadata taal in 3 letterige ISO 639-2 code -->
+		<!-- attribuut codeList bevat de verwijzing naar de ISO 639-2 online codelijst -->
+		<!-- attribuut codeListValue bevat de 3 letter ISO 639-2 code voor de taal -->
+		<!-- Waarde van het element LanguageCode bevat de uitgeschreven waarde in de taal die wordt aangegeven door de codeListValue -->
+		<gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut">Nederlands</gmd:LanguageCode>
+	</gmd:language>
+	<gmd:characterSet>
+		<gmd:MD_CharacterSetCode
+			codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode"
+			codeListValue="utf8"/>
+	</gmd:characterSet>
+	<gmd:parentIdentifier>
+		<gco:CharacterString></gco:CharacterString>
+	</gmd:parentIdentifier>
+	<!-- Vaste waarde voor INSPIRE dataset is "dataset" -->
+	<gmd:hierarchyLevel>
+		<gmd:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+	</gmd:hierarchyLevel>
+	<gmd:contact>
+		<gmd:CI_ResponsibleParty>
+		<!-- Organisatie die verantwoordelijk is voor de metadata van de dataset -->
+			<gmd:organisationName>
+				<gco:CharacterString>Naam organisatie verantwoordelijk voor metadata (*)</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<gmd:address>
+						<gmd:CI_Address>
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>Email@organisatie.nl</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+			<!-- Voor INSPIRE vaste waarde pointOfContact -->
+				<gmd:CI_RoleCode codeListValue="pointOfContact" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode"/>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</gmd:contact>
+	<gmd:dateStamp>
+		<!-- Datum waarop de metadata is aangemaakt -->
+		<gco:Date>2019-06-04</gco:Date>
+	</gmd:dateStamp>
+	<gmd:metadataStandardName>
+		<gco:CharacterString >ISO 19115</gco:CharacterString>
+	</gmd:metadataStandardName>
+	<gmd:metadataStandardVersion>
+		<gco:CharacterString>Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0</gco:CharacterString>
+	</gmd:metadataStandardVersion>
+	<gmd:referenceSystemInfo>
+		<gmd:MD_ReferenceSystem>
+			<gmd:referenceSystemIdentifier>
+				<gmd:RS_Identifier>
+					<gmd:code>
+					<!-- Code voor het referentiessysteem 28992 is RD, 4937 is ETRS89 -->
+						<gmx:Anchor xlink:href="http://www.opengis.net/def/crs/EPSG/0/28992">RD</gmx:Anchor>
+					</gmd:code>
+				</gmd:RS_Identifier>
+			</gmd:referenceSystemIdentifier>
+		</gmd:MD_ReferenceSystem>
+	</gmd:referenceSystemInfo>
+	<gmd:identificationInfo>
+		<gmd:MD_DataIdentification>
+			<gmd:citation>
+				<gmd:CI_Citation>
+					<gmd:title>
+						<gco:CharacterString>Naam van de dataset (*)</gco:CharacterString>
+					</gmd:title>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+							<!-- Datum waarop de dataset is aangemaakt -->
+								<gco:Date>2019-01-30</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeListValue="creation" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<gmd:identifier>
+						<gmd:MD_Identifier>
+							<gmd:code>
+								<!-- Unieke identifier van de dataset, deze kan men zelf maken en beheren. -->
+								<!-- Het gebuik van een URI is conditioneel, het is verplicht voor INSPIRE datasets. -->
+								<!-- Dit is niet hetzelfde als de metadata identifier van dit document -->
+								<gmx:Anchor xlink:href="http://namespace/id/ee543323-0fe4-4353-9161-eda61ff26c07">ee543323-0fe4-4353-9161-eda61ff26c07</gmx:Anchor>
+							</gmd:code>
+						</gmd:MD_Identifier>
+					</gmd:identifier>
+				</gmd:CI_Citation>
+			</gmd:citation>
+			<gmd:abstract>
+				<gco:CharacterString>Samenvatting (*)</gco:CharacterString>
+			</gmd:abstract>
+			<gmd:purpose>
+				<gco:CharacterString>Doel van vervaardiging</gco:CharacterString>
+			</gmd:purpose>
+			<gmd:status>
+				<gmd:MD_ProgressCode codeListValue="onGoing" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ProgressCode"/>
+			</gmd:status>
+			<gmd:pointOfContact>
+				<gmd:CI_ResponsibleParty>
+					<gmd:organisationName>
+						<gco:CharacterString>Naam organisatie verantwoordelijk voor v dataset  (*)</gco:CharacterString>
+					</gmd:organisationName>
+					<gmd:contactInfo>
+						<gmd:CI_Contact>
+							<gmd:address>
+								<gmd:CI_Address>
+									<gmd:electronicMailAddress>
+										<gco:CharacterString>Email@organisatie.nl</gco:CharacterString>
+									</gmd:electronicMailAddress>
+								</gmd:CI_Address>
+							</gmd:address>
+						</gmd:CI_Contact>
+					</gmd:contactInfo>
+					<gmd:role>
+						<gmd:CI_RoleCode codeListValue="pointOfContact" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode"/>
+					</gmd:role>
+				</gmd:CI_ResponsibleParty>
+			</gmd:pointOfContact>
+			<!-- optioneel -->
+			<gmd:resourceMaintenance>
+				<gmd:MD_MaintenanceInformation>
+					<gmd:maintenanceAndUpdateFrequency>
+						<gmd:MD_MaintenanceFrequencyCode codeListValue="continual" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_MaintenanceFrequencyCode"/>
+					</gmd:maintenanceAndUpdateFrequency>
+					<gmd:dateOfNextUpdate>
+						<gco:Date>2015-12-30</gco:Date>
+					</gmd:dateOfNextUpdate>
+				</gmd:MD_MaintenanceInformation>
+			</gmd:resourceMaintenance>
+			<gmd:graphicOverview>
+				<gmd:MD_BrowseGraphic>
+					<gmd:fileName>
+					<!-- Hiermee kan een voorbeeld weergave getoond worden, het is ook mogelijk om un het NGR een voorbeeldweergave te uploaden -->
+					<!-- De URL moet ook extern te benaderen zijn -->
+					<!-- Als een voorbeeldweergave word geupload, dit element leeg laten -->
+						<gco:CharacterString>URL naar voorbeeldweergave van de dataset</gco:CharacterString>
+					</gmd:fileName>
+				</gmd:MD_BrowseGraphic>
+			</gmd:graphicOverview>
+			<!-- eind optioneel -->
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+					<!--Trefwoord, voor INSPIRE minimaal het thema. Meerdere trefwoorden in meerdere elementen opnemen -->
+						<gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-theme/ps">Beschermde gebieden</gmx:Anchor>
+					</gmd:keyword>
+					<gmd:thesaurusName>
+					<!-- De GEMET Thesaurus waaruit het INSPIRE thema is gedefinieerd -->
+						<gmd:CI_Citation>
+							<gmd:title>
+							     <gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/inspire-themes/">GEMET - INSPIRE themes, version 1.0</gmx:Anchor>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2008-06-01</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+				</gmd:descriptiveKeywords>
+			<!--Trefwoord, voor INSPIRE  een trefwoord voor de ruimtelijke dekking. -->
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national">Nationaal</gmx:Anchor>
+					</gmd:keyword>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope">Ruimtelijke dekking</gmx:Anchor>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>
+											2019-05-22
+										</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeListValue="publication" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode"/>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			
+			<!--Trefwoord, voor INSPIRE prioriaire datasets een trefwoord voor rapportage verplichting -->
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/HabitatTypesRange-dir-1992-43">Verspreidingsgebied van habitattypen (Habitatrichtlijn)</gmx:Anchor>
+					</gmd:keyword>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset">INSPIRE prioritaire dataset</gmx:Anchor>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date xmlns:gco="http://www.isotc211.org/2005/gco">
+											2018-04-04
+										</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeListValue="publication" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode"/>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			
+				<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>Trefwoorden uit een andere thesaurus</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>GEMET </gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2000-12-13</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>Trefwoord zonder thesaurus</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>Tweede trefwoord zonder thesaurus</gco:CharacterString>
+					</gmd:keyword>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<gmd:resourceConstraints>
+				<gmd:MD_Constraints>
+					<gmd:useLimitation>
+						<gco:CharacterString>Gebruiksbeperkingen (*), Toepassingen waarvoor de data niet geschikt is.</gco:CharacterString>
+					</gmd:useLimitation>					
+				</gmd:MD_Constraints>
+			</gmd:resourceConstraints>
+			<!-- Data zonder beperkingen -->
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:accessConstraints>
+						<gmd:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode"/>
+					</gmd:accessConstraints>   
+					<gmd:otherConstraints>
+						<gmx:Anchor xlink:href="https://creativecommons.org/publicdomain/mark/*/deed.nl">Geen beperkingen</gmx:Anchor>
+					</gmd:otherConstraints>
+					<!-- Voor INSPIRE data in een tweede <gmd:otherConstraints> element ook een waarde uit de codelijt ConditionsApplyingToAccessAndUse opnemen -->
+					<gmd:otherConstraints>
+						<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply">Geen condities voor toegang en gebruik</gmx:Anchor>
+						</gmd:otherConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<!-- Voor INSPIRE data, in een tweede <gmd:resourceConstraints> elementengroep ook een waarde uit de codelijt LimitationsOnPublicAccess opnemen -->		
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:accessConstraints>
+						<gmd:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode"/>
+					</gmd:accessConstraints>
+					<gmd:otherConstraints>
+						<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">Geen beperkingen op publieke toegang</gmx:Anchor>
+					</gmd:otherConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>  
+			
+			<gmd:spatialRepresentationType>
+				<gmd:MD_SpatialRepresentationTypeCode codeListValue="vector" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_SpatialRepresentationTypeCode"/>
+			</gmd:spatialRepresentationType>
+
+			<gmd:spatialResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>1000</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gmd:spatialResolution>
+			<gmd:language>
+				<gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut"></gmd:LanguageCode>
+			</gmd:language>
+			<gmd:characterSet>
+				<gmd:MD_CharacterSetCode codeListValue="utf8" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode"/>
+			</gmd:characterSet>
+			<gmd:topicCategory>
+				<gmd:MD_TopicCategoryCode>farming</gmd:MD_TopicCategoryCode>
+			</gmd:topicCategory>
+			<gmd:extent>
+				<gmd:EX_Extent>
+					<gmd:geographicElement>
+						<gmd:EX_GeographicBoundingBox>
+							<gmd:westBoundLongitude>
+								<gco:Decimal>3.37087</gco:Decimal>
+							</gmd:westBoundLongitude>
+							<gmd:eastBoundLongitude>
+								<gco:Decimal>7.21097</gco:Decimal>
+							</gmd:eastBoundLongitude>
+							<gmd:southBoundLatitude>
+								<gco:Decimal>50.7539</gco:Decimal>
+							</gmd:southBoundLatitude>
+							<gmd:northBoundLatitude>
+								<gco:Decimal>53.4658</gco:Decimal>
+							</gmd:northBoundLatitude>
+						</gmd:EX_GeographicBoundingBox>
+					</gmd:geographicElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
+		</gmd:MD_DataIdentification>
+	</gmd:identificationInfo>
+	<gmd:distributionInfo>
+		<gmd:MD_Distribution>
+			<gmd:distributionFormat>
+				<gmd:MD_Format>
+					<!-- Voor geharmoniseerde INSPIRE data naar het applicatie schema verwijzen-->
+					<gmd:name>
+						<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/schemas/hh/4.0/HumanHealth.xsd">Human Health GML application schema</gmx:Anchor>
+					</gmd:name>
+					<gmd:version>
+						<gco:CharacterString>GML, version 3.2.1</gco:CharacterString>
+					</gmd:version>
+					<!-- Voor geharmoniseerde INSPIRE data naar de data specificatie  verwijzen -->
+					<gmd:specification>
+						<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/id/document/tg/hh">Data specificatie menselijke gezondheid en veiligheid</gmx:Anchor>
+					</gmd:specification>
+				</gmd:MD_Format>
+			</gmd:distributionFormat>
+		
+			<gmd:transferOptions>
+				<gmd:MD_DigitalTransferOptions>
+					<gmd:onLine>
+						<gmd:CI_OnlineResource>
+							<!-- Verwijzing naar het Capabilities document van de service-->
+							<gmd:linkage>
+								<gmd:URL>http://inspirelab.geonovum.nl/test/rws/wms?request=GetCapabilities&amp;service=WMS</gmd:URL>
+							</gmd:linkage>
+							<gmd:protocol>
+								<gmx:Anchor xlink:href="http://www.opengis.net/def/serviceType/ogc/wms">OGC:WMS</gmx:Anchor>
+							</gmd:protocol>
+							<!-- Alleen opnemen voor de service die als view service voor INSPIRE dient-->
+							<gmd:applicationProfile>
+								<gmx:Anchor
+									xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view">Raadpleegdienst</gmx:Anchor>
+							</gmd:applicationProfile>
+							<gmd:name>
+								<gco:CharacterString>Naam van de view service</gco:CharacterString>
+							</gmd:name>
+							<gmd:description>
+								<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+							</gmd:description>
+						</gmd:CI_OnlineResource>
+					</gmd:onLine>
+					
+					<gmd:onLine>
+						<gmd:CI_OnlineResource>
+							<!-- Verwijzing naar de service feed van de service-->
+							<gmd:linkage>
+								<gmd:URL>http://www.url_naar_de_ATOM_service</gmd:URL>
+							</gmd:linkage>
+							<gmd:protocol>
+								<gmx:Anchor xlink:href="https://tools.ietf.org/html/rfc4287">INSPIRE Atom</gmx:Anchor>
+							</gmd:protocol>
+							<!-- Alleen opnemen voor de service die als download service voor INSPIRE dient-->
+							<gmd:applicationProfile>
+								<gmx:Anchor
+									xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download">Downloaddienst</gmx:Anchor> 
+							</gmd:applicationProfile> 
+							<gmd:name>
+								<gco:CharacterString>Naam van de download service</gco:CharacterString>
+							</gmd:name>
+							<gmd:description>
+								<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+							</gmd:description>
+						</gmd:CI_OnlineResource>
+					</gmd:onLine>
+		
+					<gmd:onLine>
+						<gmd:CI_OnlineResource>
+							<!-- Verwijzing naar het Capabilities document van de service-->
+							<gmd:linkage>
+								<gmd:URL>http://inspirelab.geonovum.nl/test/rws/wfs?request=GetCapabilities&amp;service=WFS</gmd:URL>
+							</gmd:linkage>
+							<gmd:protocol>
+								<gmx:Anchor xlink:href="http://www.opengis.net/def/serviceType/ogc/wfs">
+									OGC:WFS</gmx:Anchor>
+							</gmd:protocol>
+							<!-- Alleen opnemen voor de service die als download service voor INSPIRE dient-->
+							<gmd:applicationProfile>
+								<gmx:Anchor
+									xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download">Downloaddienst</gmx:Anchor> 
+							</gmd:applicationProfile> 
+							<gmd:name>
+								<gco:CharacterString>Naam van de download service</gco:CharacterString>
+							</gmd:name>
+							<gmd:description>
+								<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+							</gmd:description>
+						</gmd:CI_OnlineResource>
+					</gmd:onLine>
+				
+				</gmd:MD_DigitalTransferOptions>
+			</gmd:transferOptions>
+		</gmd:MD_Distribution>
+	</gmd:distributionInfo>
+	<gmd:dataQualityInfo>
+		<gmd:DQ_DataQuality>
+			<gmd:scope>
+				<gmd:DQ_Scope>
+					<gmd:level>
+						<gmd:MD_ScopeCode codeListValue="dataset" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode"/>
+					</gmd:level>
+				</gmd:DQ_Scope>
+			</gmd:scope>		
+			<gmd:report>		
+				<gmd:DQ_DomainConsistency>	
+					<gmd:result>
+						<gmd:DQ_ConformanceResult>
+							<gmd:specification>
+								<gmd:CI_Citation>
+									<gmd:title> 
+										<gmx:Anchor xlink:href="http://data.europa.eu/eli/reg/2010/1089">VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens</gmx:Anchor>
+									</gmd:title>
+									<gmd:date>
+										<gmd:CI_Date>
+											<gmd:date>
+												<gco:Date>2010-12-08</gco:Date>
+											</gmd:date>
+											<gmd:dateType>
+												<gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+											</gmd:dateType>
+										</gmd:CI_Date>
+									</gmd:date>
+								</gmd:CI_Citation>
+							</gmd:specification>
+							<gmd:explanation>
+								<gco:CharacterString>Nadere uitleg bij het al dan niet volledig voldoen aan de specificatie</gco:CharacterString>
+							</gmd:explanation>
+							<gmd:pass>
+								<gco:Boolean>false</gco:Boolean>
+							</gmd:pass>
+						</gmd:DQ_ConformanceResult>
+					</gmd:result>
+				</gmd:DQ_DomainConsistency>
+		</gmd:report>			
+			<gmd:report>
+				<gmd:DQ_DomainConsistency>
+					<gmd:result>
+						<gmd:DQ_ConformanceResult>
+							<gmd:specification>
+								<gmd:CI_Citation>
+									<gmd:title>
+										<gmx:Anchor
+											xlink:href="http://inspire.ec.europa.eu/id/document/tg/hh">Data specificatie menselijke gezondheid en veligjeid</gmx:Anchor>
+								</gmd:title>
+									<gmd:date>
+										<gmd:CI_Date>
+											<gmd:date>
+												<gco:Date>2014-04-17</gco:Date>
+											</gmd:date>
+											<gmd:dateType>
+												<gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+											</gmd:dateType>
+										</gmd:CI_Date>
+									</gmd:date>
+								</gmd:CI_Citation>
+							</gmd:specification>
+							<gmd:explanation>
+								<gco:CharacterString>Nadere uitleg bij het al dan niet volledig voldoen aan de  technische specificaties</gco:CharacterString>
+							</gmd:explanation>
+							<gmd:pass>
+								<gco:Boolean>false</gco:Boolean>
+							</gmd:pass>
+						</gmd:DQ_ConformanceResult>
+					</gmd:result>
+				</gmd:DQ_DomainConsistency>
+			</gmd:report>
+			<gmd:lineage>
+				<gmd:LI_Lineage>
+					<gmd:statement>
+						<gco:CharacterString>Algemene beschrijving of opmerking, betreffende de geschiedenis van de bron. Dit kunnen ook beschrijvingen of opmerkingen zijn over de brongegevens en/of het productieproces. (*)</gco:CharacterString>
+					</gmd:statement>
+				</gmd:LI_Lineage>
+			</gmd:lineage>
+		</gmd:DQ_DataQuality>
+	</gmd:dataQualityInfo>
+</gmd:MD_Metadata>

@@ -207,7 +207,7 @@ De volgende acties zijn nodig wanneer trefwoord en thesaurus worden toegevoegd m
 
 ### Voorbeeld metadatabestand (XML) voor INSPIRE dataset
 
-Hier is een <a href="https:docs/Voorbeeld_Metadata_Dataset_2022.xml" target="_blank">voorbeeld-metadatabestand voor een dataset</a> met trefwoorden voor een prioritaire dataset te vinden.
+Hier is een <a href="media/Voorbeeld_Metadata_Dataset_2022.xml" target="_blank">voorbeeld-metadatabestand voor een dataset</a> met trefwoorden voor een prioritaire dataset te vinden.
 
 
 ## Service metadata
@@ -248,7 +248,7 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 
 ### Voorbeeldbestand XML voor INSPIRE service-metadata
 
-Hier is een <a href="https:docs/Voorbeeld_Metadata_Services_2022.xml" target="_blank">voorbeeld-metadatabestand voor een service</a> te vinden.
+Hier is een <a href="https:media/Voorbeeld_Metadata_Services_2022.xml" target="_blank">voorbeeld-metadatabestand voor een service</a> te vinden.
 
 
 ## Spatial data services (SDS) metadata
@@ -374,7 +374,7 @@ De invulinstrucies voor *optie 2* staan in onderstaande tabel.
 
 Voor het aanmaken voor metadata voor de Spatial Data Service (SDS) is een voorbeeld beschikbaar; 
 
-<a href="docs/Voorbeeld_Metadata_Services_2022_max.xml" target="_blank">Voorbeeld metadata van een harmonised SDS</a>
+<a href="media/Voorbeeld_Metadata_Services_2022_max.xml" target="_blank">Voorbeeld metadata van een harmonised SDS</a>
 
 
 ## Metadata validatie

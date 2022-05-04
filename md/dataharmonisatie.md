@@ -103,7 +103,7 @@ Bij het harmoniseren van de data in het kader van INSPIRE is het vooral de â€˜Tâ
 
 Er zijn verschillende bedrijven die ETL software bouwen die specifiek gericht is op de INSPIRE dataproviders. Een aantal populaire ETL software tools zijn:
 - <a href="https://www.safe.com/" target="_blank">FME</a>;
-- <a href="https://www.wetransform.to/products/halestudio/" target="_blank">HALE</a>; RVO heeft voor het gebruik van HALE een beknopte <a href="https://github.com/Geonovum/inspire-handreiking/blob/main/docs/Handleiding_Gebruik_HALE_voor_INSPIRE_dataharmonisatie_120618.pdf" target="_blank">handleiding</a> geschreven;
+- <a href="https://www.wetransform.to/products/halestudio/" target="_blank">HALE</a>; RVO heeft voor het gebruik van HALE een beknopte <a href="media/Handleiding_Gebruik_HALE_voor_INSPIRE_dataharmonisatie_120618.pdf" target="_blank">handleiding</a> geschreven;
 - <a href="https://www.talend.com/resources/what-is-etl/" target="_blank">Talend</a>;
 - <a href="https://www.altova.com/mapforce" target="_blank">MapForce</a>;
 - <a href="https://snowflakesoftware.com/geospatial-products/" target="_blank">GO Publisher</a>;
@@ -151,7 +151,7 @@ In 2017 heeft een <a href="https://github.com/INSPIRE-MIF/2017.2/" target="_blan
 *Geopackage (gpkg)* wordt veel genoemd als goede optie om data aan te bieden in een Atom feed voor een INSPIRE Downloadservice.
 Er is ook een <a href="https://github.com/INSPIRE-MIF/gp-geopackage-encodings" target="_blank">github repository</a> waarin goede  praktijkvoorbeelden worden verzameld voor het publiceren in geopackage als bestandsformaat in een download service voor INSPIRE. Als er genoeg goede praktijkvoorbeelden zijn, zal waarschijnlijk Geopackage als [good practise](#good-practices) voorgedragen worden.
 
-Ook in Nederland is onderzoek naar gedaan voor de Basisregistratie Ondergrond (BRO) van TNO  met een <a href="docs/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf" target="_blank">rapport</a> als eindresultaat.
+Ook in Nederland is onderzoek naar gedaan voor de Basisregistratie Ondergrond (BRO) van TNO  met een <a href="media/Advies%20BRO%20-%20INSPIRE%20-%20Geopackages%20definitief.pdf" target="_blank">rapport</a> als eindresultaat.
 Daarnaast is het bij het Forum Standaardisatie opgenomen in de pas toe en leguit lijst voor <a href="https://www.forumstandaardisatie.nl/open-standaarden/geo-standaarden" target="_blank">geo-standaarden</a>.
 
 

@@ -736,7 +736,7 @@ INSPIRE volgt de WMS 1.3.0 specificatie voor overerving van de Layer elementen. 
 
 
 ### Voorbeeldbestand XML voor Capabilities
-Hier zijn twee voorbeeldbestanden te vinden voor de capabilities-documenten, volgens [scenario 1](docs/WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](docs/WMSCapabilities_Voorbeeld_Scenario2.zip).
+Hier zijn twee voorbeeldbestanden te vinden voor de capabilities-documenten, volgens [scenario 1](media/WMS_Capabilities_Voorbeeld_Scenario1.zip) en [scenario 2](media/WMSCapabilities_Voorbeeld_Scenario2.zip).
 
 
 
