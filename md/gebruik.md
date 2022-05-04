@@ -3,14 +3,45 @@
 In dit hoofdstuk worden enkele aspecten van het gebruik van INSPIRE datasets behandeld.
 Het gebruik begint bij het vinden van de juiste dataset via de metadata in catalogi. 
 Na het bestuderen van de metadata moet dan de juiste benadering van de data bepaald worden.
+Voor het gebruik maakt het nogal uit of het gaat om het gebruik van alleen Nederlandse data of ook data van andere Europese landen.
+Daarom is dit hoodfstuk opgesplitst in 2 delen op basis van dit onderscheid.
 
-## Vinden van de data
+##Gebruik Nederlandse INSPIRE data
 
-Wanneer het alleen Nederlandse geodata betreft wordt geadviseerd eerst te zoeken in het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister</a> (NGR). Om alleen INSPIRE-datasets en services te vinden, kan hiervoor een vinkje in de linker kolom geplaatst worden bij Categorie "Inspire". Let op: dit kan nog niet op de startpagina van NGR, maar pas nadat er eerst een ander zoek criterium is opgegeven.
+### Vinden van NL-data
 
-Wanneer het geen geodata, maar wel Nederlandse overheidsdata betreft wordt geadviseerd eerst te zoeken in het <a href="https://data.overheid.nl/" target="_blank">open data portaal van de overheid</a>.
+In het geval van Nederlandse INSPIRE-data wordt geadviseerd eerst te zoeken in het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister</a> (NGR).
+Om alleen INSPIRE-datasets en services te vinden, kan je filteren op de zoekresultaten met de categorie INSPIRE.
+![NGR](media/NGR-categorie-INSPIRE.png "Nationaalgeoregister")
+
+Veel data komt meerdere keren voor maar dan als verschilend brontype. Meestal als dataset, maar ook vaak als verschillende services. Om deze dubbeling er uit te halen kan gefilterd worden op bontype.
+Daarnaast kan er ook gefilterd worden op verantwoordelijke organisatie, trefwoorden, type lycenties, servicetypen en tijdsaspecten.
+Via de helpknop reschtboven de pagina kan hulp gevonden worden.
+
+### Bestuderen van de metadata
+Bij het bestuderen van de metadata gaat het in eerste instantie om de vraag of de dataset geschikt is voor het doel van het gebruik. 
+Daarbij spelen aspecten als:
+- Actualiteit
+- Nauwkeurigheid
+- Volledigheid
+- Gebruiksbeperkingen
+- Hoe de data te benaderen is
+- Geharmoniseerd of AsIs?
+- Beschikbare coördinaatsysteem
+
+Maar eigenlijk alles wat hierover beschreven staat in het hoofdstuk over [metadata](#metadata)
+
+In het geval de metadata niet het antwoord geeft dat gezocht wordt, kan contact opgenomen worden met de organisatie die verantwoordelijk is. Die contact-informatie is ook te vinden in de metadata.
+
+###Benaderen van NL-data
+
+
+##Gebruik Europese INSPIRE data 
+
+### Vinden van EU-data
 
 Wanneer het geen Nederlandse data betreft kan het beste in eerste instantie gezocht worden via het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE GEOPORTAL</a>
+![EU-geoportal](media/geoportaltip8a.png "EU INSPIRE GEOPORTAL")
 
 Wanneer het niet te vinden is via het INSPIRE GEOPORTAL, dan kan het mogelijk nog gevonden worden via de lokale catalogi.
 Hieronder volgen enkele tips voor onze buurlanden.
@@ -40,20 +71,7 @@ Andere belemmeringen voor het gebruik van INSPIRE data in grensoverschrijdende p
 - Verschillende coördinaatsystemen. Kies bij voorkeur een op ETRS89 gebaseerd coördinaatsyteem, omdat dat voor INSPIRE ondersteund moet worden.
 - Te grote datasets die niet in zijn geheel via een WFS in een GIS-systeem te gebruiken zijn. Het advies is om grote datasets eerst te downloaden.
 
-## Bestuderen van de metadata
-Bij het bestuderen van de metadata gaat het in eerste instantie om de vraag of de dataset geschikt is voor het doel van het gebruik. 
-Daarbij spelen aspecten als:
-- Actualiteit
-- Nauwkeurigheid
-- Volledigheid
-- Gebruiksbeperkingen
-- Hoe de data te benaderen is
-- Geharmoniseerd of AsIs?
-- Beschikbare coördinaatsysteem
 
-Maar eigenlijk alles wat hierover beschreven staat in het hoofdstuk over [metadata](#metadata)
-
-In het geval de metadata niet het antwoord geeft dat gezocht wordt, kan contact opgenomen worden met de organisatie die verantwoordelijk is. Die contact-informatie is ook te vinden in de metadata.
 
 ## Benadering van de data
 In de metadata van de dataset is te zien op welke manier de data benaderd kan worden.
