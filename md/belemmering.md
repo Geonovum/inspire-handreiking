@@ -1,0 +1,11 @@
+Belemmeringen voor het gebruik van INSPIRE data in grensoverschrijdende projecten kunnen zijn:
+- De metadata is vaak in de lokale taal.
+- Dataset in de buurlanden zijn vaak regionaal versnipperd.
+- Actualiteit en detailniveau kunnen sterk verschillen.
+- Schijnbaar dezelfde data van buurlanden kan toch semantisch verschillend zijn, waardoor appels met peren vergeleken worden.
+- Soms moet er eerst iets ondertekend worden voordat je het mag downloaden.
+- De Inspire geharmoniseerde datasets zijn niet altijd de meest actuele en volledige datasets.
+- De soms gebruikte complexe INSPIRE modelen, leiden vaak tot complexe GML en die is vaak moeilijk in het gebruik.
+- Verschillende styling.
+- Verschillende coördinaatsystemen. Kies bij voorkeur een op ETRS89 gebaseerd coördinaatsyteem, omdat dat voor INSPIRE ondersteund moet worden.
+- Te grote datasets die niet in zijn geheel via een WFS in een GIS-systeem te gebruiken zijn. Het advies is om grote datasets eerst te downloaden.
