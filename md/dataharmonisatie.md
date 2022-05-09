@@ -9,7 +9,7 @@ In de onderstaande tabel staan de belangrijkste INSPIRE-documenten voor de datah
 |Titel | Versie | Datum | Opmerking |
 |-----------------|-------------|-------------|-------------|
 | <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">INSPIRE dataspecificaties</a> | 4.0  | 2017-04-01   | Dataspecificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
-| <a href="https://inspire.ec.europa.eu/schemas/" target="_blank">GML Application schemas</a> | 4.0  |    | GML applicatie schema's voor alle themas   |
+| <a href="https://inspire.ec.europa.eu/schemas/" target="_blank">GML Application schemas</a> | 4.0  |    | GML applicatie schema's voor alle themas. De wijzigingen aan de applicatie schema's worden beheerd op de <a href="https://github.com/INSPIRE-MIF/application-schemas" target="_blank"> Github repository INSPIRE XML schemas</a>.   |
 | <a href="https://inspire.ec.europa.eu/codelist" target="_blank">Codelijstregister</a>  |  |    | Bevat de codelijsten en hun waarden  |
 | <a href="https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model" target="_blank">INSPIRE Generic Conceptual Model (GCM; D2.5)</a> | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
 
@@ -17,7 +17,7 @@ Daarnaast zijn de onderstaande documenten ook handig bij dataharmonisatie:
 
 |Titel | Versie | Datum | Opmerking |
 |-----------------|-------------|-------------|-------------|
-| <a href="https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?" target="_blank">INSPIRE datamodellen (UML)</a> | r 4618  | 2011-02-06  |Hier staan alle datamodellen uit de INSPIRE dataspecificaties overzichtelijk bij elkaar. De modellen die hier genoemd worden in IR's zijn definitief (*approved*). Dit geldt niet voor de *extended* delen (die zijn geen onderdeel van de IR's, maar wel van dataspecificaties) (*draft*)   |
+| <a href="https://inspire-mif.github.io/uml-models/approved/html/" target="_blank">INSPIRE datamodellen (UML)</a> |   |   |Hier staan alle datamodellen uit de INSPIRE dataspecificaties overzichtelijk bij elkaar. De modellen die hier genoemd worden in IR's zijn definitief (*approved*). Dit geldt niet voor de *extended* delen (die zijn geen onderdeel van de IR's, maar wel van dataspecificaties) (*draft*). De wijzigingen aan de UML modellen worden beheerd op de <a href="https://github.com/INSPIRE-MIF/uml-models" target="_blank">Github repository INSPIRE UML models</a>.   |
 |<a href="https://inspire.ec.europa.eu/documents/inspire-data-specifications-%E2%80%93-base-models-%E2%80%93-generic-network-model" target="_blank">INSPIRE Base model - Generic Network Model (GNM)</a> |1.0rc3|2013-04-05|Algemeen basismodel voor netwerken zoals bijvoorbeeld vervoersnetwerken|
 |<a href="https://inspire.ec.europa.eu/documents/guidelines-encoding-spatial-data" target="_blank">Guidelines for the Encoding of Spatial Data (D2.7)</a>  | 3.3  | 2014-04-08   | Het document beschrijft de algemene encoding richtlijnen voor INSPIRE  |
 <a href="https://inspire.ec.europa.eu/id/document/tg/d2.9-o%26m-swe" target="_blank">Guidelines for the use of Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE</a>| 3.0|2016-12-16|Richtlijnen voor het gebruik van "Observations & Measurements and Sensor Web Enablement-related standards in INSPIRE"|
