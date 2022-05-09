@@ -60,8 +60,7 @@ De documenten die het OGC publiceert (bv. abstract specifications, implementatio
 
 ## UML-notatie
 
-Voor het beschrijven van de verschillende INSPIRE datamodellen wordt gebruik gemaakt van de grafische modelleertaal UML 2.0 (Unified Modelling Language). In de onderstaande afbeelding zijn de belangrijkste begrippen en notaties die gebruikt worden in een UML klassediagram, weergegeven. De UML diagrammen voor de verschillende INSPIRE thema's vind je
-<a href="https://inspire.ec.europa.eu/data-model/approved/r4618-ir/html/index.htm?" target="_blank">hier</a> op de Europese INSPIRE website.
+Voor het beschrijven van de verschillende INSPIRE datamodellen wordt gebruik gemaakt van de grafische modelleertaal UML 2.0 (Unified Modelling Language). In de onderstaande afbeelding zijn de belangrijkste begrippen en notaties die gebruikt worden in een UML klassediagram, weergegeven. De UML diagrammen voor de verschillende INSPIRE thema's vind je <a href="https://inspire-mif.github.io/uml-models/approved/html/" target="_blank">hier</a> op de Europese INSPIRE website.
 
 ![UML](media/Uml_cheatsheet.png "Notatie van een UML-klassediagram.")
 
