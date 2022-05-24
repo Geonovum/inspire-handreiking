@@ -1,10 +1,13 @@
 # Gebruik INSPIRE data
 
 In dit hoofdstuk worden enkele aspecten van het gebruik van INSPIRE datasets behandeld.
+Bij de beoogde gebruiker wordt wel van een basis GIS-kennis uitgegaan.
 Het gebruik begint bij het vinden van de juiste dataset via de metadata in catalogi. 
 Na het bestuderen van de metadata moet dan de juiste benadering van de data bepaald worden.
 Voor het gebruik maakt het nogal uit of het gaat om het gebruik van alleen Nederlandse data of ook data van andere Europese landen.
-Daarom zijn paragraven hieronder wanneer relevant opgesplitst in 2 delen op basis van dit onderscheid.
+Daarom zijn paragraven hieronder, wanneer relevant opgesplitst in 2 delen op basis van dit onderscheid.
+
+Heb je na het lezen van deze paragraaf een nog vraag over het gebruik van INSPIRE data, dan kun je die stellen bij het <a href="https://geoforum.nl/c/standaarden/inspire/71" target="_blank">INSPIRE topic van het GeoForum</a>.
 
 ## Vinden
 
@@ -13,6 +16,7 @@ Daarom zijn paragraven hieronder wanneer relevant opgesplitst in 2 delen op basi
 De meeste Nederlandse dataproviders van (INSPIRE-) geoinformatie beschrijven hun datasets via metadata en publiceren dat in het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister</a> (NGR).
 Daarom wordt geadviseerd hier ook eerst te zoeken.
 Om alleen INSPIRE-datasets en services te vinden, kan je filteren op de zoekresultaten met de categorie INSPIRE.
+
 ![NGR](media/NGR-categorie-INSPIRE.png "Nationaalgeoregister")
 
 Veel data komt meerdere keren voor maar dan als verschilend brontype. Meestal als dataset, maar ook vaak als verschillende services. Om deze dubbeling er uit te halen kan gefilterd worden op bontype.
@@ -22,11 +26,15 @@ Via de helpknop reschtboven de pagina kan hulp gevonden worden.
 ### Vinden van EU-data
 
 Wanneer het EU data betreft kan het beste in eerste instantie gezocht worden via het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE GEOPORTAL</a>
+
 ![EU-geoportal](media/geoportaltip8a.png "EU INSPIRE GEOPORTAL")
+
 In dit portaal kan vervolgens gekozen worden uit *Priority Datasets Viewer* en *INSPIRE Thematic Viewer*. De linker is voor datasets die ook onder een Europese rapportageverplichting vallen.
 De rechter is specifiek voor INSPIRE datasets. Daarin kan vervolgens gefilterd worden op het INSPIRE thema waaronder de gezochte data zou moeten vallen en er kan op het land gefiltered worden.
 Nadat een keuze is gemaakt in deze filteropties verschijnt een lijst van datasets die hieraan voldoen.
+
 ![EU-geoportal na selectie](media/geoportaltip1.png "EU INSPIRE GEOPORTAL na selectie")
+
 Hierop kan gezien worden of de datasets viewbaar en/of dowwnloadbaar en of ze regionaal of landsdekkend zijn.
 Wanneer de lijst van zoekresultaten te lang is kan er eventueel nog verder gezocht worden met zoektermen.
 De metadata wordt getoond wanneer op één van de datasets in de lijst wordt geklikt. 
@@ -35,7 +43,9 @@ Wanneer het gaat om grensoverschrijdend gebruik is het natuurlijk verstandig eer
 Als datasets geharmoniseerd zijn zullen ze beter op elkaar aansluiten. Zowel ruimtelijk als thematisch.
 Als de geharmoniseerde data niet te vinden is, kan de niet geharmoniseerde data [AsIs-data](#as-is-versus-geharmoniseerde-data) soms toch ook voldoende zijn voor het gebruiksdoel.
 Of een dataset geharmoniseerd is, is aangegeven in het matadata element *DQ_ConformanceResult*. 
-Dat wordt helaas niet getoond in het INSPIRE Geoportal, maar kan wel in de xml metadata gevonden, waar ook een link naar staat in de wel getoonde metadata.
+Dat wordt helaas niet getoond in het INSPIRE Geoportal, maar kan wel in de xml metadata gevonden, waar ook een link naar staat in de getoonde metadata nadat op één van de items gedrukt wordt in de lijst met gevonden datasets.
+
+![EU-geoportal metadata](media/metadata_EU_portal.png "EU INSPIRE metadata met link naar xml file")
 
 Wanneer het niet te vinden is via het INSPIRE Geoportal, dan kan het mogelijk nog gevonden worden via de lokale catalogi.
 Hieronder volgen enkele tips voor onze buurlanden.
@@ -65,14 +75,16 @@ Daarbij spelen aspecten als:
 
 Maar eigenlijk alles wat hierover beschreven staat in het hoofdstuk over [metadata](#metadata).
 
-In het geval de metadata niet het antwoord geeft dat gezocht wordt, kan contact opgenomen worden met de organisatie die verantwoordelijk is. Die contact-informatie is ook te vinden in de metadata.
+In het geval de metadata niet het antwoord geeft dat gezocht wordt, kan contact opgenomen worden met de organisatie die vermoedelijk verantwoordelijk is voor de gezochte informatie. De contact-informatie kan eventueel gevonden worden in de metadata van andere datasets van deze organisatie.
 
 ## Benaderen
 
 In de metadata van de dataset is te zien op welke manier de data benaderd kan worden.
 INSPIRE eist dat data naast vindbaar ook viewbaar en downloadbaar is. 
 In de afbeelding hieronder is te zien hoe dit bv. in het Nationaal Georegister te zien is via het tabblad "Download, View en links".
+
 ![Download, View en Links](media/gebruik_benaderen.png "Download, View en Links")
+
 Ook in het EU Geoportaal is dit duidelijk aangegegen per dataset.
 
 ### Viewen NL-data via NGR
@@ -89,7 +101,7 @@ Het resultaat ziet er dan bijvoorbeeld als volgt uit.
 
 ### Viewen EU-data via GEOPORTAL
 
-Door op het oogje te klikken bij de gevonden kaartlagen in het EU Geoportaal kan de data bekeken worden. Ook hier geldt dat je soms moet inzoemen voor de data getoond wordt.
+Door op het oogje te klikken bij de gevonden kaartlagen in het EU Geoportaal kan de data bekeken worden. Ook hier geldt dat je soms moet inzoemen voordat de data getoond wordt.
 
 ### Downloaden
 
@@ -102,14 +114,19 @@ De OGC-API-features geven in de meeste gevallen default een Geojson bestand. Voo
 
 Het is niet altijd nodig de bestanden lokaal op te slaan. De meeste download-services kunnen ook direct gebruikt worden in applicaties die toegang hebben tot internet. Dit geldt ook voor GIS-applicaties zoals beschreven in de volgende paragraaf.
 
+In het geval van te grote datasets die niet in zijn geheel via een WFS in een GIS te gebruiken zijn, is het advies om deze grote datasets eerst te downloaden via de bulkdownload optie die in principe door INSPIRE gevraagd wordt.
+
 ### Gebruik in GIS algemeen
 
+Wanneer een kaartlagen in een GIS getoond worden is het verstandig eerst een coordinaatsysteem te kiezen dat door alle te gebruiken services ondersteund wordt. Een ETRS89 gebaseerd coördinaatsyteem is dan voor de handliggend, omdat dat voor INSPIRE ondersteund moet worden.
 In deze en volgende paragraaf wordt aan de hand van de open source GIS-applicatie QGIS met voorbeelden getoond hoe INSPIRE services gebruikt kunnen worden.
 
 ***QGIS basisfunctionaliteit***
 
-In onderstaande afbeelding wordt getoond hoe een WMS is toe te voegen aan een QGIS project met de basisfunctionaliteit van QGIS. De stam URL van de WMS moet opgegeven worden en er mag een eigen bedachte naam aan gegeven worden. 
+In onderstaande afbeelding wordt getoond hoe een WMS is toe te voegen aan een QGIS project met de basisfunctionaliteit van QGIS. De stam URL van de WMS moet opgegeven worden en er mag een eigen bedachte naam aan gegeven worden.
+
 ![WMS in QGIS](media/WMS_QGIS.png "WMS verbinding maken in QGIS")
+
 Nadat de verbinding is gemaakt, kan een laag gekozen worden en zal de laag getoond worden.
 Voor de downloadservices als WFS,OGC-API- Features en WCS worden vergelijkbare stappen doorlopen. Het loont bij grote datasets om eerst de WMS te laden, dan in te zoomen op het interesse gebied en daarna pas de downloadservices te laden, omdat dan minder features ingelezen hoeven te worden. 
 CBS heeft een internetpagina ingericht waarin het <a href="https://www.cbs.nl/geoservices/" target="_blank">gebruik van geoservices</a> in QGIS wordt uitgelegd met een handleiding en video. Het is inmiddels enigszins verouderd, maar het principe is nog steeds hetzelfde.
@@ -126,6 +143,7 @@ Om het gebruik van Nederlandse INSPIRE data te vergemakkelijken voor de GIS-gebr
 De INSPIRE QGIS plugin is tot stand gekomen onder verantwoordelijkheid van Geonovum. De plugin is ontwikkeld door <a href="https://kgis.be/" target="_blank">KGIS</a>.
 Er is een <a href="https://youtu.be/X-LPuf5Vchg" target="_blank">video</a> gemaakt om uit te leggen hoe de plugin geïnstalleerd en gebruikt kan worden.
 Daarnaast is er een <a href="https://github.com/warrieka/inspireNL" target="_blank">Github pagina</a> over deze plugin. Hier kunnen de source-code en issues gevonden worden. Bekende issues zijn dat niet elke Atom feed een goede download geeft en dat als Type op service gezet wordt, dat dan niet alles gevonden wordt.
+
 ![QGIS plugin](media/QGIS_plugin.png "QGIS INSPIRE plugin")
 
 ***PDOK-PDOK plugin***
@@ -137,14 +155,15 @@ Tenslotte is er ook nog de PDOK plugin in QGIS die kan helpen. Deze toont alle s
 
 Het is ook mogelijk de WMS te viewen in een browser met bv: 
 https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?REQUEST=GetMap&WIDTH=1920&HEIGHT=1024&VERSION=1.3.0&FORMAT=image/png&BBOX=0.0,300000.0,650000.0,650000.&CRS=EPSG:28992&LAYERS=Gemeentegebied
--https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0? is de algemene stam-URL van de service.
--REQUEST=GetMap is het toon kaart verzoek.
--WIDTH=1920&HEIGHT=1024 is het formaat in de browser.
--VERSION=1.3.0 is de versie van het servicetype.
--FORMAT=image/png is het gewenste outputformaat.
--BBOX=0.0,300000.0,650000.0,650000.0 geeft de begrenzing van het gebied aan dat afgebeeld moet worden.
--CRS=EPSG:28992 is het coordinaatsysteem, waarin de BBOX gegeven is.
--LAYERS=Gemeentegebied
+Hierin is:
+- https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0? de algemene stam-URL van de service.
+- ***REQUEST=GetMap*** het toon kaart verzoek.
+- ***WIDTH=1920&HEIGHT=1024*** het formaat in de browser.
+- ***VERSION=1.3.0*** de versie van het servicetype.
+- ***FORMAT=image/png*** het gewenste outputformaat.
+- ***BBOX=0.0,300000.0,650000.0,650000.0*** de begrenzing van het gebied dat afgebeeld moet worden.
+- ***CRS=EPSG:28992*** het coordinaatsysteem, waarin de BBOX gegeven is.
+- ***LAYERS=Gemeentegebied*** de kaartlaag
 
 Via het GetCapabilities request kan o.a. gezien worden welke layers, styles en CRS-en ondersteund worden. Voor het voorbeeld van de bestuurlijke gebieden hierboven:
 https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?SERVICE=WMS&REQUEST=GetCapabilities
@@ -158,18 +177,11 @@ Net als bij de WMS is de downloadservices WFS ook direct via de browser te bevra
 https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0?service=WFS&version=2.0.0&request=GetFeature&typename=gemeentegebied&CRS=epsg:28992&format=GML&filter=%3CFilter%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Eidentificatie%3C%2FPropertyName%3E%3CLiteral%3EGM0503%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2FFilter%3E 
 Hierin is
 - https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0? de stam-URL 
-- service=WFS&version=2.0.0 de versie
-- request=GetFeature het verzoek
-- typename=gemeentegebied de laagnaam
-- CRS=epsg:28992 het gevraagde coordinaatsysteem voor de coordinaten
-- format=GML het outputformaat
-- filter=%3CFilter%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Eidentificatie%3C%2FPropertyName%3E%3CLiteral%3EGM0503%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2FFilter%3E 
-Dit geeft de GML file van de gemeente Delft met code GM0503.
+- ***service=WFS&version=2.0.0*** de versie
+- ***request=GetFeature*** het verzoek
+- ***typename=gemeentegebied*** de laagnaam
+- ***CRS=epsg:28992*** het gevraagde coordinaatsysteem voor de coordinaten
+- ***format=GML*** het outputformaat
+- filter=%3CFilter%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Eidentificatie%3C%2FPropertyName%3E%3CLiteral%3EGM0503%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2FFilter%3E de filter op de gemeente Delft met code GM0503.
+
 In de meeste browsers is dit daarna via de rechter muisknop op te slaan als een lokaal GML bestand.
-
-## Algemene gebruikstips
-
-- Op GeoForum kan je ervaringen delen en/of vragen stellen aan specialisten zoals die van PDOK en Geonovum. Door gebruik te maken van het GeoForum kunnen we issues èn oplossingen direct met elkaar delen. Dus heb je een vraag over INSPIRE? Stel hem op GeoForum.
-
-- Kies bij het afbeelden voor een coordinaatsysteem dat door alle services ondersteund wordt. Een ETRS89 gebaseerd coördinaatsyteem is dan voor de handliggend, omdat dat voor INSPIRE ondersteund moet worden.
-- In het geval van te grote datasets die niet in zijn geheel via een WFS in een GIS-systeem te gebruiken zijn, is het advies om deze grote datasets eerst te downloaden via de bulkdownload optie die in principe door INSPIRE gevraagd wordt.
