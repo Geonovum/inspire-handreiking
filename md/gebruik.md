@@ -105,8 +105,8 @@ Door op een object in de getoonde kaart te klikken kan in de meeste gevallen ook
 
 ### Viewen EU-data via GEOPORTAL
 
-Ook in het EU Geoportaal is dit duidelijk aangegegen per dataset met het view symbool ![image](https://user-images.githubusercontent.com/80040145/161044869-375c840f-0b01-489c-a644-37818329f354.png) en het download symbool ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png). 
-Door op het view symbool te klikken bij de gevonden kaartlagen in het EU Geoportaal kan de data bekeken worden. Ook hier geldt dat je soms moet inzoemen voordat de data goed getoond wordt.
+In het EU Geoportaal is per dataset aangegeven hoe de dataset te benaderen is met het view symbool ![image](https://user-images.githubusercontent.com/80040145/170225076-edd06c12-fa61-4756-8d15-178b0c16f60c.png) en met het download symbool ![image](https://user-images.githubusercontent.com/80040145/170225177-156c949a-e107-4c0f-9613-5d0102738d33.png). 
+Door op het view symbool te klikken bij de gevonden kaartlagen in het EU Geoportaal kan de data bekeken worden. Ook hier geldt dat je soms moet inzoomen voordat de data goed getoond wordt.
 
 ![view resultaat EU Geoportal](media/viewresultaat_EU_Geoportal.png "view resultaat in het EU Geoportaal")
 
