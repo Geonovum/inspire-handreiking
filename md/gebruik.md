@@ -1,7 +1,7 @@
 # Gebruik INSPIRE data
 
 In dit hoofdstuk worden enkele aspecten van het gebruik van INSPIRE datasets behandeld.
-Bij de beoogde gebruiker wordt wel van een basis GIS-kennis uitgegaan.
+Bij de beoogde gebruiker wordt uitgegaan van een basiskennis op het gebied van geoinformatie.
 Het gebruik begint bij het vinden van de juiste dataset via de metadata in catalogi. 
 Na het bestuderen van de metadata moet dan de juiste benadering van de data bepaald worden.
 Voor het gebruik maakt het nogal uit of het gaat om het gebruik van alleen Nederlandse data of ook data van andere Europese landen.
@@ -33,9 +33,11 @@ In dit portaal kan vervolgens gekozen worden uit *Priority Datasets Viewer* en *
 De rechter is specifiek voor INSPIRE datasets. Daarin kan vervolgens gefilterd worden op het INSPIRE thema waaronder de gezochte data zou moeten vallen en er kan op het land gefiltered worden.
 Nadat een keuze is gemaakt in deze filteropties verschijnt een lijst van datasets die hieraan voldoen.
 
-![EU-geoportal na selectie](media/geoportaltip1.png "EU INSPIRE GEOPORTAL na selectie")
+![EU-geoportal na selectie](media/geoportaltip1.png "EU INSPIRE GEOPORTAL na selectie op Nederlandse data")
 
-Hierop kan gezien worden of de datasets viewbaar en/of dowwnloadbaar en of ze regionaal of landsdekkend zijn.
+Hierop kan gezien worden of de datasets viewbaar ![image](https://user-images.githubusercontent.com/80040145/161044869-375c840f-0b01-489c-a644-37818329f354.png) en/of dowwnloadbaar ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png)en of ze regionaal ![image](https://user-images.githubusercontent.com/80040145/170218509-aea835b9-89b7-477e-a3ba-5f94e40badcc.png)
+ of landsdekkend ![image](https://user-images.githubusercontent.com/80040145/170218358-2065a7c1-c783-43f2-a956-fa8852828429.png)
+zijn.
 Wanneer de lijst van zoekresultaten te lang is kan er eventueel nog verder gezocht worden met zoektermen.
 De metadata wordt getoond wanneer op één van de datasets in de lijst wordt geklikt. 
 
@@ -43,7 +45,8 @@ Wanneer het gaat om grensoverschrijdend gebruik is het natuurlijk verstandig eer
 Als datasets geharmoniseerd zijn zullen ze beter op elkaar aansluiten. Zowel ruimtelijk als thematisch.
 Als de geharmoniseerde data niet te vinden is, kan de niet geharmoniseerde data [AsIs-data](#as-is-versus-geharmoniseerde-data) soms toch ook voldoende zijn voor het gebruiksdoel.
 Of een dataset geharmoniseerd is, is aangegeven in het matadata element *DQ_ConformanceResult*. 
-Dat wordt helaas niet getoond in het INSPIRE Geoportal, maar kan wel in de xml metadata gevonden, waar ook een link naar staat in de getoonde metadata nadat op één van de items gedrukt wordt in de lijst met gevonden datasets.
+Dat wordt helaas niet getoond in het INSPIRE Geoportal, maar kan wel in de xml metadata gevonden worden.
+Een link naar de metadata in xml staat in de getoonde metadata zoals in de afbeelding hieronder is aangegeven met de rode pijl.
 
 ![EU-geoportal metadata](media/metadata_EU_portal.png "EU INSPIRE metadata met link naar xml file")
 
@@ -80,28 +83,33 @@ In het geval de metadata niet het antwoord geeft dat gezocht wordt, kan contact 
 ## Benaderen
 
 In de metadata van de dataset is te zien op welke manier de data benaderd kan worden.
-INSPIRE eist dat data naast vindbaar ook viewbaar en downloadbaar is. 
-In de afbeelding hieronder is te zien hoe dit bv. in het Nationaal Georegister te zien is via het tabblad "Download, View en links".
-
-![Download, View en Links](media/gebruik_benaderen.png "Download, View en Links")
-
-Ook in het EU Geoportaal is dit duidelijk aangegegen per dataset.
+INSPIRE eist dat data naast vindbaar ook viewbaar en downloadbaar is. Hieronder wordt het bekijken (viewen) van de data behandeld voor de Nederlandse data in het Nationaal Georegister en daarna voor EU-data via het EU Geoportaal.
+Daarna wordt in het algemeen beschreven hoe het downloaden werkt en hoe de data in een GIS benaderd kan worden.
+Tenslotte wordt ook beschreven hoe de data in een browser benaderd kan worden. 
 
 ### Viewen NL-data via NGR
 
-Vaak is de dataset al direct te bekijken via de matadatacatalogus via de WMS. Hieronder is een voorbeeld hoe dat werkt in het Nationaal Georegister.
+In de afbeelding hieronder is te zien hoe in het Nationaal Georegister aan de metadata te zien is of een dataset downloadbaar of viewbaaar is via het tabblad "Download, View en links".
+
+![Download, View en Links](media/gebruik_benaderen.png "Download, View en Links")
+
+Druk op de knop "Voeg aan kaart toe" om de dataset te bekijken.
 
 ![viewen via NGR](media/view1.png "viewen via NGR")
 
-Druk op de knop "Voeg aan kaart toe" om de dataset te bekijken.
 Let op: Om performance redenen moet je soms eerst inzoomen voordat je wat te zien krijgt.
 Het resultaat ziet er dan bijvoorbeeld als volgt uit.
 
 ![view resultaat](media/view2.png "view resultaat")
 
+Door op een object in de getoonde kaart te klikken kan in de meeste gevallen ook de attribuutinformatie van dat object getoond worden.
+
 ### Viewen EU-data via GEOPORTAL
 
-Door op het oogje te klikken bij de gevonden kaartlagen in het EU Geoportaal kan de data bekeken worden. Ook hier geldt dat je soms moet inzoemen voordat de data getoond wordt.
+Ook in het EU Geoportaal is dit duidelijk aangegegen per dataset met het view symbool ![image](https://user-images.githubusercontent.com/80040145/161044869-375c840f-0b01-489c-a644-37818329f354.png) en het download symbool ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png). 
+Door op het view symbool te klikken bij de gevonden kaartlagen in het EU Geoportaal kan de data bekeken worden. Ook hier geldt dat je soms moet inzoemen voordat de data goed getoond wordt.
+
+![view resultaat EU Geoportal](media/viewresultaat_EU_Geoportal.png "view resultaat in het EU Geoportaal")
 
 ### Downloaden
 
