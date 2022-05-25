@@ -35,15 +35,14 @@ Nadat een keuze is gemaakt in deze filteropties verschijnt een lijst van dataset
 
 ![EU-geoportal na selectie](media/geoportaltip1.png "EU INSPIRE GEOPORTAL na selectie op Nederlandse data")
 
-Hierop kan gezien worden of de datasets viewbaar ![image](https://user-images.githubusercontent.com/80040145/161044869-375c840f-0b01-489c-a644-37818329f354.png) en/of dowwnloadbaar ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png)en of ze regionaal ![image](https://user-images.githubusercontent.com/80040145/170218509-aea835b9-89b7-477e-a3ba-5f94e40badcc.png)
+Hierop kan gezien worden of de datasets viewbaar ![image](https://user-images.githubusercontent.com/80040145/170225076-edd06c12-fa61-4756-8d15-178b0c16f60c.png) en/of dowwnloadbaar ![image](https://user-images.githubusercontent.com/80040145/170225177-156c949a-e107-4c0f-9613-5d0102738d33.png) en of ze regionaal ![image](https://user-images.githubusercontent.com/80040145/170218509-aea835b9-89b7-477e-a3ba-5f94e40badcc.png)
  of landsdekkend ![image](https://user-images.githubusercontent.com/80040145/170218358-2065a7c1-c783-43f2-a956-fa8852828429.png)
 zijn.
 Wanneer de lijst van zoekresultaten te lang is kan er eventueel nog verder gezocht worden met zoektermen.
 De metadata wordt getoond wanneer op één van de datasets in de lijst wordt geklikt. 
 
-Wanneer het gaat om grensoverschrijdend gebruik is het natuurlijk verstandig eerst te zoeken naar datasets die geharmoniseerd zijn naar het betreffende INSPIRE-thema. 
-Als datasets geharmoniseerd zijn zullen ze beter op elkaar aansluiten. Zowel ruimtelijk als thematisch.
-Als de geharmoniseerde data niet te vinden is, kan de niet geharmoniseerde data [AsIs-data](#as-is-versus-geharmoniseerde-data) soms toch ook voldoende zijn voor het gebruiksdoel.
+Wanneer het gaat om grensoverschrijdend gebruik is het verstandig eerst te zoeken naar datasets die geharmoniseerd zijn naar het betreffende INSPIRE-thema. Als datasets geharmoniseerd zijn zullen ze beter op elkaar aansluiten. Zowel ruimtelijk als thematisch.
+Als de geharmoniseerde data niet te vinden is, kan de niet geharmoniseerde data ([AsIs-data](#as-is-versus-geharmoniseerde-data)) ook voldoende zijn voor het gebruiksdoel.
 Of een dataset geharmoniseerd is, is aangegeven in het matadata element *DQ_ConformanceResult*. 
 Dat wordt helaas niet getoond in het INSPIRE Geoportal, maar kan wel in de xml metadata gevonden worden.
 Een link naar de metadata in xml staat in de getoonde metadata zoals in de afbeelding hieronder is aangegeven met de rode pijl.
@@ -60,8 +59,8 @@ Hieronder volgen enkele tips voor onze buurlanden.
 - <a href="https://ckan.publishing.service.gov.uk/dataset/" target="_blank">Groot Brittannië</a>
 
 Tips voor het vinden van Europese data:
-- Omdat de metadata vaak in de lokale taal is loont het zoektermen in de gebruikte metadata taal te vinden.
-- Omdat datasets in de buurlanden vaak regionaal versnipperd zijn loont het ook te zoeken op de regionale naam.
+- Omdat de metadata vaak in de lokale taal is, loont het zoektermen in de gebruikte metadata taal te vinden.
+- Omdat datasets in de buurlanden vaak regionaal versnipperd zijn, loont het ook te zoeken op de regionale naam.
 - Houd rekening met verschillen in de actualiteit en detailniveau.
 
 ## Bestuderen metadata
