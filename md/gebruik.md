@@ -189,6 +189,6 @@ Hierin is
 - ***typename=gemeentegebied*** de laagnaam
 - ***CRS=epsg:28992*** het gevraagde coordinaatsysteem voor de coordinaten
 - ***format=GML*** het outputformaat
-- filter=%3CFilter%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Eidentificatie%3C%2FPropertyName%3E%3CLiteral%3EGM0503%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2FFilter%3E de filter op de gemeente Delft met code GM0503.
+- ***filter=%3CFilter%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Eidentificatie%3C%2FPropertyName%3E%3CLiteral%3EGM0503%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2FFilter%3E*** de filter op de gemeente Delft met code GM0503.
 
 In de meeste browsers is dit daarna via de rechter muisknop op te slaan als een lokaal GML bestand.
