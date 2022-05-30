@@ -43,9 +43,25 @@ Tot slot zijn in het Aanmerkingsregister een drietal <a href="https://inspireaan
 - De derde kwaliteitscontrole toont de harvestresultaten uit het [Europese INSPIRE geoportal](#europese-inspire-geoportal). Het overzicht toont waar nog problemen zijn met het downloadbaar of viewbaar beschikbaar maken van de dataset in het Europese INSPIRE geoportal. Elke eerste maandag van de maand wordt er geharvest naar het Europese INSPIRE geoportal en wordt dit overzicht gegenereerd.
 
 ### Wijziging van de aanmerking
-In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. In het <a href="https://www.geonovum.nl/uploads/documents/proces%20wijziging%20aanmerking%20data%20provider%20v3.0.pdf" target="_blank">processchema wijziging aanmerking dataproviders</a> staat welke stappen doorlopen moeten worden om de aanmerking te wijzigen. Via het gesloten gedeelte van het INSPIRE aanmerkingsregister kan de dataprovider een wijzigingsverzoek indienen.
+In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. Dit kan om verschillende redenen, bijvoorbeeld omdat:
+- de dataset oud en onvolledig is;
+- de dataset niet langer beheerd wordt door veranderend beleid of wettelijke verplichting;
+- een andere organisatie de dataset gaat beheren of beschikbaar stellen; 
+- of omdat een actuelere versie van de dataset voorhanden is. 
+
+In de onderstaande figuur staat welke stappen doorlopen moeten worden om een aanmerking te wijzigen. Via het gesloten gedeelte van het INSPIRE aanmerkingsregister kan de dataprovider een wijzigingsverzoek indienen.
 
 ![processtappenaanmerking](media/Processtappen_wijzigingsverzoek.png "De stappen die genomen moeten worden om een aanmerking te wijzigen.")
+
+### Aanmerken en versies van datasets
+Zoals hierboven beschreven, kan om verschillende redenen een wijzging in de aanmerking plaats vinden omdat een actuelere versie van de dataset voorhanden is. De vraag is dan of de oudere versies van de dataset wel of niet beschikbaar moeten blijven voor INSPIRE. De INSPIRE richtlijn zelf stelt geen eisen m.b.t. het beschikbaar houden van data als er een nieuwe versie van de dataset wordt gepubliceerd. Het belang van het beschikbaar houden is per dataset verschillend. De ene dataset komt in aanmerking voor monitoringsdoeleinden over verschillende jaren heen, waar dat bij andere datasets niet van toepassing is.
+
+De belangrijkste vraag is of de aangemerkte versies van de dataset nog worden gebruikt. Is er nog vraag naar de data?
+
+Als het antwoord hierop JA is. Dan is het logisch om de datasets ook te blijven aan te bieden voor INSPIRE. De datasets blijven aangemerkt.
+
+Als het antwoord hierop NEE is, dan kunnen de datasets afgemerkt worden voor INSPIRE. Aanvullend advies is wel dat de dataproviders kunnen overwegen om de metadata van de dataset te blijven aanbieden en in de metadata aan te geven dat de dataset opvraagbaar is bij de dataprovider.
+
 
 ## Inrichten organisatie
 Het inrichten van de organisatie en het exacte werkproces zal per organisatie en per dataset verschillen. Aandachtspunt is dat INSPIRE niet een eenmalig is, maar juist een doorlopend proces. Wanneer de processtappen doorlopen zijn en de dataprovider ‘conform INSPIRE’ opereert, is het zaak dat de ‘processtappen in de lijn worden opgenomen en dat de activiteiten van alle processtappen bij het dagelijkse beheer worden opgenomen.
