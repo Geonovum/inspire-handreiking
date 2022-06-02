@@ -14,11 +14,12 @@ CRS-en worden geidentificeerd met zogenaamde <a href="https://docs.geostandaarde
 
 ### Hoogtereferentie systeem
 
+In Nederland worden hoogtes meestal vastgesteld t.o.v. NAP. Deze hoogtes zijn middels waterpassing vastgesteld. Dat betekent dat ze het zwaartekrachtveld volgen. 
 Het EVRS is het Europese referentiesysteem voor de hoogte. Het EVRS wordt gerealiseerd door een geodetische vereffening van waterpasnetwerken van Europese landen, waarmee uniforme hoogten voor de punten in de waterpasnetwerken worden berekend.
 Wanneer de nauwkeurigheid van de data beter is dan 5 cm, is het noodzakelijk dat er een transformatie plaatsvindt van NAP naar EVRS. Anders kunnen de hoogtes gelijk gesteld worden en is een transformatie dus niet echt noodzakelijk. 
 
 Omdat het EVRS regelmatig wordt aangepast verschijnen er regelmatig nieuwe realisaties van EVRS met nieuwe EPSG-codes die daarna ook weer opgenomen moeten worden in de lijst met toegestane verticale referentiesystemen.
-Recent is daarover een <a href="https://github.com/INSPIRE-MIF/technical-guidelines/issues/27" target="_blank">issue</a> aangemaakt vanuit RWS.
+Dat hier behoefte aan is blijkt ook uit dit <a href="https://github.com/INSPIRE-MIF/technical-guidelines/issues/27" target="_blank">issue</a> dat aangemaakt is vanuit RWS.
 
 
 
