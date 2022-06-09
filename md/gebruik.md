@@ -19,11 +19,11 @@ Om alleen INSPIRE-datasets en services te vinden, kan je filteren op de zoekresu
 
 ![NGR](media/NGR-categorie-INSPIRE.png "Nationaalgeoregister")
 
-Zowel de dataset als de view en download services op die dataset zijn voorzien van metadata. Door te filteren op brontype kan aangeven worden of alleen de dataset metadata getoond moet worden of juist de service metadata.
+Zowel de dataset als de view en download services op die dataset, zijn voorzien van metadata. Door te filteren op brontype kan aangeven worden of alleen de dataset metadata getoond moet worden of juist de service metadata.
 Daarnaast kan er ook gefilterd worden op verantwoordelijke organisatie, trefwoorden, type lycenties, servicetypen en tijdsaspecten.
 Via de helpknop reschtboven de pagina kan hulp gevonden worden.
-
 Via de knop geavanceerd zoeken, kan ook gericht op INSPIRE thema's gezocht worden.
+
 ![NGR_geavanceerd zoeken](media/NGR_geavanceerd_zoeken.png "Zoeken op INSPIRE thema in NGR")
 
 ### Vinden van EU-data
@@ -32,8 +32,8 @@ Wanneer het EU data betreft kan het beste in eerste instantie gezocht worden via
 
 ![EU-geoportal](media/geoportaltip8a.png "EU INSPIRE GEOPORTAL")
 
-De INSPIRE Thematic Viewer geeft toegang tot alle datasets die onder INSPIRE vallen. De Priority Dataset Viewer geeft toegang tot de INSPIRE datasets, die ook voor milieu rapportage verplichtingen gebruikt worden.
-Hierin kan onder andere gezocht worden via de milieu wetgeving waarvoor gerapporteerd wordt. In de INSPIRE Thematic Viewer gefilterd worden op het INSPIRE thema waaronder de gezochte data zou moeten vallen en er kan op het land gefiltered worden.
+De INSPIRE Thematic Viewer geeft toegang tot alle datasets die onder INSPIRE vallen. De Priority Dataset Viewer geeft toegang tot de INSPIRE datasets die ook voor milieu rapportage verplichtingen gebruikt worden.
+Hierin kan onder andere gezocht worden via de milieu wetgeving waarvoor gerapporteerd wordt. In de INSPIRE Thematic Viewer kan gefilterd worden op het INSPIRE thema waaronder de gezochte data zou moeten vallen en er kan op het land gefiltered worden.
 Nadat een keuze is gemaakt in deze filteropties verschijnt een lijst van datasets die hieraan voldoen.
 
 ![EU-geoportal na selectie](media/geoportaltip1.png "EU INSPIRE GEOPORTAL na selectie op Nederlandse data")
@@ -90,8 +90,8 @@ Tenslotte wordt ook beschreven hoe de data in een browser benaderd kan worden.
 
 ### Viewen NL-data via NGR
 
-In de afbeelding hieronder is te zien hoe in het Nationaal Georegister aan de metadata te zien is of een dataset downloadbaar of viewbaaar is via het tabblad "Download, View en links".
-Druk op de knop "Voeg aan kaart toe" om de dataset te bekijken.
+In de afbeelding hieronder is te zien hoe in het Nationaal Georegister aan de metadata te zien is, of een dataset downloadbaar of viewbaaar is via het tabblad "Download, View en links".
+Druk op de knop "Voeg aan kaart toe" bij de WMS om de dataset te bekijken.
 
 ![viewen via NGR](media/view1.png "viewen via NGR")
 
@@ -136,7 +136,9 @@ In deze en volgende paragraaf wordt aan de hand van de open source GIS-applicati
 
 ***QGIS basisfunctionaliteit***
 
-In onderstaande afbeelding wordt getoond hoe een WMS is toe te voegen aan een QGIS project met de basisfunctionaliteit van QGIS. De stam URL van de WMS moet opgegeven worden en er mag een eigen bedachte naam aan gegeven worden.
+In onderstaande afbeelding wordt getoond hoe een WMS is toe te voegen aan een QGIS project met de basisfunctionaliteit van QGIS. 
+Door met de rechter muisknop op "WMS/WMTS" in de browser te klikken, kan een nieuwe verinding gemaakt worden met een view service.
+De stam URL van de WMS moet opgegeven worden en er mag een eigen bedachte naam aan gegeven worden.
 
 ![WMS in QGIS](media/WMS_QGIS.png "WMS verbinding maken in QGIS")
 
@@ -162,12 +164,14 @@ Daarnaast is er een <a href="https://github.com/warrieka/inspireNL" target="_bla
 ***PDOK-PDOK plugin***
 
 Tenslotte is er ook nog de PDOK plugin in QGIS die kan helpen. Deze toont alle services die beschikbaar zijn bij PDOK. Het voordeel t.o.v. de INSPIRE plugin is dat ook niet INSPIRE services getoond worden. Daarnaast laadt deze plugin ook de bijbehorende styles voor de verschillende WMS services, zoals hieronder getoond. Nadeel is dat alleen de PDOK services getoond worden en niet die van andere providers.
+
 ![PDOK plugin](media/PDOK_plugin.png "QGIS PDOK plugin").
 
 ### Viewen via een browser
 
 Het is ook mogelijk de WMS te viewen in een browser met bv: 
 https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?REQUEST=GetMap&WIDTH=1920&HEIGHT=1024&VERSION=1.3.0&FORMAT=image/png&BBOX=0.0,300000.0,650000.0,650000.&CRS=EPSG:28992&LAYERS=Gemeentegebied
+
 Hierin is:
 - https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0? de algemene stam-URL van de service.
 - ***REQUEST=GetMap*** het toon kaart verzoek.
@@ -182,12 +186,13 @@ Via het GetCapabilities request kan o.a. gezien worden welke layers, styles en C
 https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?SERVICE=WMS&REQUEST=GetCapabilities
 
 Daarnaast zijn er verschillende applicaties die helpen bij het tonen van een WMS. Genoemd zijn al de GIS-applicaties zoals [QGIS](#gebruik-in-gis-algemeen), maar er zijn ook vele andere online applicaties ontwikkeld die gebruik maken van de WMS.
-Het enige wat voor deze applicaties van belang is als input, is de stam URL van de WMS zoals te vinden in de metadata (bv https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0? in het voorbeeld van de bestuurlijke gebieden hierboven.
+Het enige wat voor deze applicaties van belang is als input, is de stam URL van de WMS, zoals te vinden in de metadata (bv https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0? in het voorbeeld van de bestuurlijke gebieden hierboven).
 
 ### Downloaden via een browser
 
 Net als bij de WMS is de downloadservices WFS ook direct via de browser te bevragen met het GetCapabilities request. Om specifieke features op te vragen is het GetFeature request beschikbaar in combinatie met een filter. vb:
 https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0?service=WFS&version=2.0.0&request=GetFeature&typename=gemeentegebied&CRS=epsg:28992&format=GML&filter=%3CFilter%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Eidentificatie%3C%2FPropertyName%3E%3CLiteral%3EGM0503%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2FFilter%3E 
+
 Hierin is
 - https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0? de stam-URL 
 - ***service=WFS&version=2.0.0*** de versie
