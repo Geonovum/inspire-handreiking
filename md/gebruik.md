@@ -11,7 +11,7 @@ Heb je na het lezen van deze paragraaf een nog vraag over het gebruik van INSPIR
 
 ## Vinden
 
-### Vinden van NL-data
+### Vinden van Nederlandse data
 
 INSPIRE datasets zijn beschreven met metadata die gepubliceerd is in het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister (NGR)</a>.
 Daarom wordt geadviseerd hier ook eerst te zoeken.
@@ -19,51 +19,55 @@ Om alleen INSPIRE-datasets en services te vinden, kan je filteren op de zoekresu
 
 ![NGR](media/NGR-categorie-INSPIRE.png "Nationaalgeoregister")
 
-Zowel de dataset als de view en download services op die dataset, zijn voorzien van metadata. Door te filteren op brontype kan aangeven worden of alleen de dataset metadata getoond moet worden of juist de service metadata.
-Daarnaast kan er ook gefilterd worden op verantwoordelijke organisatie, trefwoorden, type lycenties, servicetypen en tijdsaspecten.
-Via de helpknop reschtboven de pagina kan hulp gevonden worden.
+Zowel de dataset als de view- en downloadservices op die dataset, zijn voorzien van metadata. Door te filteren op brontype kan aangeven worden of alleen de dataset metadata getoond moet worden of juist de service metadata.
+Daarnaast kan er ook gefilterd worden op verantwoordelijke organisatie, trefwoorden, type lycenties, servicetypen of tijdsaspecten.
+Via de helpknop rechtsboven de pagina kan hulp gevonden worden.
 Via de knop geavanceerd zoeken, kan ook gericht op INSPIRE thema's gezocht worden.
 
 ![NGR_geavanceerd zoeken](media/NGR_geavanceerd_zoeken.png "Zoeken op INSPIRE thema in NGR")
 
-### Vinden van EU-data
+### Vinden van Europese data
 
-Wanneer het EU data betreft kan het beste in eerste instantie gezocht worden via het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE GEOPORTAL</a>
+Wanneer het data van andere Europese lidstaten betreft kan het beste in eerste instantie gezocht worden via het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">Europese INSPIRE geoportal</a>
 
 ![EU-geoportal](media/geoportaltip8a.png "EU INSPIRE GEOPORTAL")
 
-De INSPIRE Thematic Viewer geeft toegang tot alle datasets die onder INSPIRE vallen. De Priority Dataset Viewer geeft toegang tot de INSPIRE datasets die ook voor milieu rapportage verplichtingen gebruikt worden.
-Hierin kan onder andere gezocht worden via de milieu wetgeving waarvoor gerapporteerd wordt. In de INSPIRE Thematic Viewer kan gefilterd worden op het INSPIRE thema waaronder de gezochte data zou moeten vallen en er kan op het land gefiltered worden.
-Nadat een keuze is gemaakt in deze filteropties verschijnt een lijst van datasets die hieraan voldoen.
+De INSPIRE Thematic Viewer geeft toegang tot alle datasets die onder INSPIRE vallen. In de INSPIRE Thematic Viewer kan gefilterd worden op het INSPIRE thema waaronder de gezochte data zou moeten vallen en er kan op het land gefiltered worden. Nadat een keuze is gemaakt in deze filteropties verschijnt een lijst van datasets die hieraan voldoen.
+
+De Priority Dataset Viewer geeft toegang tot de [INSPIRE prioritaire datasets](#prioritaire-datasets) die ook voor milieu rapportage verplichtingen gebruikt worden.
+Hierin kan onder andere gezocht worden via de milieuwetgeving waarvoor gerapporteerd wordt. 
+
 
 ![EU-geoportal na selectie](media/geoportaltip1.png "EU INSPIRE GEOPORTAL na selectie op Nederlandse data")
 
-Hierop kan gezien worden of de datasets viewbaar ![image](https://user-images.githubusercontent.com/80040145/170225076-edd06c12-fa61-4756-8d15-178b0c16f60c.png) en/of dowwnloadbaar ![image](https://user-images.githubusercontent.com/80040145/170225177-156c949a-e107-4c0f-9613-5d0102738d33.png) en of ze regionaal ![image](https://user-images.githubusercontent.com/80040145/170218509-aea835b9-89b7-477e-a3ba-5f94e40badcc.png)
+Hierop kan gezien worden of de datasets viewbaar ![image](https://user-images.githubusercontent.com/80040145/170225076-edd06c12-fa61-4756-8d15-178b0c16f60c.png) en/of downloadbaar ![image](https://user-images.githubusercontent.com/80040145/170225177-156c949a-e107-4c0f-9613-5d0102738d33.png) en of ze regionaal ![image](https://user-images.githubusercontent.com/80040145/170218509-aea835b9-89b7-477e-a3ba-5f94e40badcc.png)
  of landsdekkend ![image](https://user-images.githubusercontent.com/80040145/170218358-2065a7c1-c783-43f2-a956-fa8852828429.png)
 zijn.
 Wanneer de lijst van zoekresultaten te lang is kan er eventueel nog verder gezocht worden met zoektermen.
 De metadata wordt getoond wanneer op één van de datasets in de lijst wordt geklikt. 
 
 Voor grensoverschrijdend gebruik heeft geharmoniseerde data waarschijnlijk de voorkeur, want geharmoniseerde data sluit zowel ruimtelijk als thematisch beter op elkaar aan.
-Of een dataset geharmoniseerd is, is aangegeven in het matadata element *DQ_ConformanceResult*. 
-Dat wordt helaas niet getoond in het INSPIRE Geoportal, maar kan wel in de xml metadata gevonden worden.
+Of een dataset geharmoniseerd is, is aangegeven in het metadata element *DQ_ConformanceResult*. 
+Dit metadata element wordt helaas niet getoond in het INSPIRE Geoportal, maar kan wel in de xml metadata gevonden worden.
 Een link naar de metadata in xml staat in de getoonde metadata zoals in de afbeelding hieronder is aangegeven met de rode pijl.
 
 ![EU-geoportal metadata](media/metadata_EU_portal.png "EU INSPIRE metadata met link naar xml file")
 
 Wanneer de gezochte dataset niet te vinden is via het INSPIRE Geoportal, dan kan deze mogelijk nog gevonden worden via de nationale of regionale catalogi.
 Hieronder volgen enkele tips voor onze buurlanden.
-- Duitsland <a href="https://www.geodaten.niedersachsen.de/" target="_blank">Nedersaksen</a>
-- Duitsland <a href="https://www.geoportal.nrw/" target="_blank"> Noordrijn Westfalen</a>
-- België <a href="https://www.geopunt.be/" target="_blank">Vlaanderen</a>
-- België <a href="http://geoportail.wallonie.be/" target="_blank">Wallonië</a>
-- <a href="https://www.noordzeeloket.nl/beheer/noordzeeatlas/" target="_blank">Noordzee</a>
+- Duitsland: 
+   - <a href="https://www.geodaten.niedersachsen.de/" target="_blank">Nedersaksen</a>
+   - <a href="https://www.geoportal.nrw/" target="_blank"> Noordrijn Westfalen</a>
+- België:
+   - <a href="https://www.geopunt.be/" target="_blank">Vlaanderen</a>
+   - <a href="http://geoportail.wallonie.be/" target="_blank">Wallonië</a>
 - <a href="https://ckan.publishing.service.gov.uk/dataset/" target="_blank">Groot Brittannië</a>
+- - <a href="https://www.noordzeeloket.nl/beheer/noordzeeatlas/" target="_blank">Noordzee atlas</a>
 
 Tips voor het vinden van Europese data:
-- Omdat de metadata vaak in de lokale taal is, loont het om eerst op INSPIRE thema te zoeken en om op zoektermen in de gebruikte metadata taal te zoeken. Er is in het EU-Geoportal ook een optie om de metadata automatisch in het Engels te vertalen.
+- Omdat de metadata vaak in de lokale taal is, loont het om eerst op INSPIRE thema te zoeken en om op zoektermen in de gebruikte metadata taal te zoeken. Er is in het INSPIRE geoportal ook een optie om de metadata automatisch in het Engels te vertalen (zie rechtsboven onder Show metadata fields in:).
 - Omdat datasets in de buurlanden vaak regionaal versnipperd zijn, loont het ook te zoeken op de regionale naam.
-- Houd rekening met verschillen in de actualiteit en detailniveau.
+- Houdt rekening met verschillen in de actualiteit en detailniveau.
 
 ## Bestuderen metadata
 
@@ -84,13 +88,13 @@ In het geval de metadata niet het antwoord geeft dat gezocht wordt, kan contact 
 ## Benaderen
 
 In de metadata van de dataset is te zien op welke manier de data benaderd kan worden.
-INSPIRE eist dat data naast vindbaar ook viewbaar en downloadbaar is. Hieronder wordt het bekijken (viewen) van de data behandeld voor de Nederlandse data in het Nationaal Georegister en daarna voor EU-data via het EU Geoportaal.
+INSPIRE eist dat data naast vindbaar ook viewbaar en downloadbaar is. Hieronder wordt het bekijken (viewen) van de data behandeld voor de Nederlandse data in het Nationaal Georegister (NGR) en daarna voor Europese data via het Europese INSPIRE Geoportal.
 Daarna wordt in het algemeen beschreven hoe het downloaden werkt en hoe de data in een GIS benaderd kan worden.
 Tenslotte wordt ook beschreven hoe de data in een browser benaderd kan worden. 
 
-### Viewen NL-data via NGR
+### Viewen Nederlandse data via NGR
 
-In de afbeelding hieronder is te zien hoe in het Nationaal Georegister aan de metadata te zien is, of een dataset downloadbaar of viewbaaar is via het tabblad "Download, View en links".
+In de afbeelding hieronder is te zien hoe in het Nationaal Georegister (NGR) aan de metadata te zien is, of een dataset downloadbaar of viewbaaar is via het tabblad "Download, View en links".
 Druk op de knop "Voeg aan kaart toe" bij de WMS om de dataset te bekijken.
 
 ![viewen via NGR](media/view1.png "viewen via NGR")
@@ -102,16 +106,16 @@ Het resultaat ziet er dan bijvoorbeeld als volgt uit.
 
 Door op een object in de getoonde kaart te klikken kan in de meeste gevallen ook de attribuutinformatie van dat object getoond worden.
 
-### Viewen EU-data via GEOPORTAL
+### Viewen Europese data via INSPIRE Geoportal
 
-In het EU Geoportaal is per dataset aangegeven hoe de dataset te benaderen is met het view symbool ![image](https://user-images.githubusercontent.com/80040145/170225076-edd06c12-fa61-4756-8d15-178b0c16f60c.png) en met het download symbool ![image](https://user-images.githubusercontent.com/80040145/170225177-156c949a-e107-4c0f-9613-5d0102738d33.png). 
-Door op het view symbool te klikken bij de gevonden kaartlagen in het EU Geoportaal kan de data bekeken worden. Ook hier geldt dat je soms moet inzoomen voordat de data goed getoond wordt.
+In het INSPIRE Geoportal is per dataset aangegeven hoe de dataset te benaderen is met het view symbool ![image](https://user-images.githubusercontent.com/80040145/170225076-edd06c12-fa61-4756-8d15-178b0c16f60c.png) en met het download symbool ![image](https://user-images.githubusercontent.com/80040145/170225177-156c949a-e107-4c0f-9613-5d0102738d33.png). 
+Door op het view symbool te klikken bij de gevonden kaartlagen in het INSPIRE Geoportal kan de data bekeken worden. Ook hier geldt dat je soms moet inzoomen voordat de data goed getoond wordt.
 
 ![view resultaat EU Geoportal](media/viewresultaat_EU_Geoportal.png "view resultaat in het EU Geoportaal")
 
-### Downloaden
+### Downloaden data
 
-Voor het downloaden zijn er vaak verschillende opties. Is het de bedoeling de hele dataset te downloaden, dan is de [Atomfeed](#atom-feed) een goede optie, indien die beschikbaar is.
+Voor het downloaden van data zijn er vaak verschillende opties. Is het de bedoeling de hele dataset te downloaden, dan is de [Atomfeed](#atom-feed) een goede optie, indien die beschikbaar is.
 Gaat het om slechts een deelgebied of slechts enkele features dan is een [WFS](#wfs), [WCS](#wcs), [SOS](#sos) of [OGC-API Feature service](#ogc-api-s) een betere optie.
 Net als bij de WMS, zijn de datasets via downloads op meerdere manieren te benaderen. 
 
@@ -119,8 +123,8 @@ De Atomfeed kan verschillende formaten terug leveren, meestal ingepakt in een zi
 De directe URL voor het downloaden van de zip-file via een Atomfeed is te vinden via de service-feed. Dat is een xml-file waarvan de URL in de metadata van de dataset en de Atom service moet staan.
 In deze xml file staat dan dan een link naar de dataset-feed. Die bevat dan de directe URL voor het downloaden van de zip-file. Het komt voor dat deze link al direct is opgenomen in de service-feed.
 
-Het downloaden van data via WFS, WCS, OGC-API-features of SOS kan via een [browser](#downloaden-via-een-browser), via een [GIS](#gebruik-in-gis-algemeen) of via catalogie als NGR of het EU-Geoportal. 
-Het EU-Geoportal heeft een beperking ingebouwd dat er maar 2 features geleverd worden om te voorkomen dat het systeem overbevraagd wordt.  
+Het downloaden van data via WFS, WCS, OGC-API-features of SOS kan via een [browser](#downloaden-via-een-browser), via een [GIS](#gebruik-in-gis-algemeen) of via catalogie als NGR of het INSPIRE Geoportal. 
+Het INSPIRE Geoportal heeft een beperking ingebouwd dat er maar 2 features geleverd worden om te voorkomen dat het systeem overbevraagd wordt.  
 
 De WFS geeft default een GML bestand terug. 
 De OGC-API-features geven in de meeste gevallen default een Geojson bestand. Voor beide geldt dat ook andere formaten geïmplementeerd kunnen zijn. 
