@@ -133,9 +133,20 @@ Het is niet altijd nodig de bestanden lokaal op te slaan. De meeste download-ser
 
 In het geval van te grote datasets die niet in zijn geheel via een WFS in een GIS te gebruiken zijn, is het advies om deze grote datasets eerst te downloaden via de bulkdownload optie die in principe door INSPIRE gevraagd wordt.
 
-### Gebruik in GIS algemeen
+### Gebruik in GIS van NL data
 
-Wanneer een kaartlagen in een GIS getoond worden is het verstandig eerst een coordinaatsysteem te kiezen dat door alle te gebruiken services ondersteund wordt. Een ETRS89 gebaseerd coördinaatsyteem is dan voor de handliggend, omdat dat voor INSPIRE ondersteund moet worden.
+***QGIS-INSPIRE plugin***
+
+Om het gebruik van Nederlandse INSPIRE data te vergemakkelijken voor de GIS-gebruikers in Nederland is er een QGIS plugin ontwikkeld. De plugin maakt het gemakkelijk om direct de INSPIRE datasets en services te vinden, te raadplegen en te downloaden. Via de plugin kan een gebruiker zowel vrij zoeken als INSPIRE-data zoeken op trefwoord, INSPIRE-thema, organisatie of type service. Het gevonden resultaat kan je direct toevoegen aan QGIS. Je kunt de INSPIRE plugin downloaden vanuit de werkbalk van QGIS. 
+De INSPIRE QGIS plugin is tot stand gekomen onder verantwoordelijkheid van Geonovum. De plugin is ontwikkeld door <a href="https://kgis.be/" target="_blank">KGIS</a>.
+Er is een <a href="https://youtu.be/X-LPuf5Vchg" target="_blank">video</a> gemaakt om uit te leggen hoe de plugin geïnstalleerd en gebruikt kan worden.
+Daarnaast is er een <a href="https://github.com/warrieka/inspireNL" target="_blank">Github pagina</a> over deze plugin. Hier kunnen de source-code en issues gevonden worden. Bekende issues zijn dat niet elke Atom feed een goede download geeft en dat als Type op service gezet wordt, dat dan niet alles gevonden wordt.
+
+![QGIS plugin](media/QGIS_plugin.png "QGIS INSPIRE plugin")
+
+### Gebruik in GIS van EU data
+
+Wanneer INSPIRE kaartlagen in een GIS getoond worden is het verstandig eerst een coordinaatsysteem te kiezen dat door alle te gebruiken services ondersteund wordt. Een ETRS89 gebaseerd coördinaatsyteem is dan voor de handliggend, omdat dat voor INSPIRE ondersteund moet worden.
 In deze en volgende paragraaf wordt aan de hand van de open source GIS-applicatie QGIS met voorbeelden getoond hoe INSPIRE services gebruikt kunnen worden.
 
 ***QGIS basisfunctionaliteit***
@@ -153,23 +164,6 @@ CBS heeft een internetpagina ingericht waarin het <a href="https://www.cbs.nl/ge
 In sommige gevallen leiden de INSPIRE datamodellen tot complexe GML die niet direct in te lezen is in QGIS.
 Het kan dan helpen om ***QGIS GML Application Schema Toolbox*** ook te laden via het plugin menu in QGIS.
 ![GML_ASTB plugin](media/GML_ASTB.png "QGIS GML Application Schema Toolbox plugin")
-	
-### Gebruik in GIS in NL
-
-***QGIS-INSPIRE plugin***
-
-Om het gebruik van Nederlandse INSPIRE data te vergemakkelijken voor de GIS-gebruikers in Nederland is er een QGIS plugin ontwikkeld. De plugin maakt het gemakkelijk om direct de INSPIRE datasets en services te vinden, te raadplegen en te downloaden. Via de plugin kan een gebruiker zowel vrij zoeken als INSPIRE-data zoeken op trefwoord, INSPIRE-thema, organisatie of type service. Het gevonden resultaat kan je direct toevoegen aan QGIS. Je kunt de INSPIRE plugin downloaden vanuit de werkbalk van QGIS. 
-De INSPIRE QGIS plugin is tot stand gekomen onder verantwoordelijkheid van Geonovum. De plugin is ontwikkeld door <a href="https://kgis.be/" target="_blank">KGIS</a>.
-Er is een <a href="https://youtu.be/X-LPuf5Vchg" target="_blank">video</a> gemaakt om uit te leggen hoe de plugin geïnstalleerd en gebruikt kan worden.
-Daarnaast is er een <a href="https://github.com/warrieka/inspireNL" target="_blank">Github pagina</a> over deze plugin. Hier kunnen de source-code en issues gevonden worden. Bekende issues zijn dat niet elke Atom feed een goede download geeft en dat als Type op service gezet wordt, dat dan niet alles gevonden wordt.
-
-![QGIS plugin](media/QGIS_plugin.png "QGIS INSPIRE plugin")
-
-***PDOK-PDOK plugin***
-
-Tenslotte is er ook nog de PDOK plugin in QGIS die kan helpen. Deze toont alle services die beschikbaar zijn bij PDOK. Het voordeel t.o.v. de INSPIRE plugin is dat ook niet INSPIRE services getoond worden. Daarnaast laadt deze plugin ook de bijbehorende styles voor de verschillende WMS services, zoals hieronder getoond. Nadeel is dat alleen de PDOK services getoond worden en niet die van andere providers.
-
-![PDOK plugin](media/PDOK_plugin.png "QGIS PDOK plugin").
 
 ### Viewen via een browser
 
