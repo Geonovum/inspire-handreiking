@@ -133,7 +133,7 @@ Het is niet altijd nodig de bestanden lokaal op te slaan. De meeste download-ser
 
 In het geval van te grote datasets die niet in zijn geheel via een WFS in een GIS te gebruiken zijn, is het advies om deze grote datasets eerst te downloaden via de bulkdownload optie die in principe door INSPIRE gevraagd wordt.
 
-### Gebruik in GIS van NL data
+### Gebruik NL INSPIRE data in GIS
 
 ***QGIS-INSPIRE plugin***
 
@@ -144,20 +144,24 @@ Daarnaast is er een <a href="https://github.com/warrieka/inspireNL" target="_bla
 
 ![QGIS plugin](media/QGIS_plugin.png "QGIS INSPIRE plugin")
 
-### Gebruik in GIS van EU data
+### Gebruik EU INSPIRE data in GIS 
 
-Wanneer INSPIRE kaartlagen in een GIS getoond worden is het verstandig eerst een coordinaatsysteem te kiezen dat door alle te gebruiken services ondersteund wordt. Een ETRS89 gebaseerd coördinaatsyteem is dan voor de handliggend, omdat dat voor INSPIRE ondersteund moet worden.
-In deze en volgende paragraaf wordt aan de hand van de open source GIS-applicatie QGIS met voorbeelden getoond hoe INSPIRE services gebruikt kunnen worden.
+Niet Nederlandse INSPIRE data is helaas niet met de QGIS-plugin in te lezen, maar wel met de basisfunctionaliteit van QGIS. 
+Omdat het grensoverschreidend kunnen werken met geoinformatie, een belangrijk doel is van INSPIRE, wordt in deze paragraaf een voorbeeld getoond.
 
-***QGIS basisfunctionaliteit***
-
-In onderstaande afbeelding wordt getoond hoe een WMS is toe te voegen aan een QGIS project met de basisfunctionaliteit van QGIS. 
+Wanneer INSPIRE kaartlagen van verschillende EU-landen in een GIS getoond worden is het verstandig eerst een coordinaatsysteem te kiezen dat door alle te gebruiken services ondersteund wordt.
+Een ETRS89 gebaseerd coördinaatsyteem is dan voor de handliggend, omdat dat voor INSPIRE ondersteund moet worden.
+In onderstaande afbeelding wordt getoond hoe INSPIRE WMS-en van twee EU-landen toe te voegen zijn aan een QGIS project met de basisfunctionaliteit van QGIS. 
 Door met de rechter muisknop op "WMS/WMTS" in de browser te klikken, kan een nieuwe verinding gemaakt worden met een view service.
-De stam URL van de WMS moet opgegeven worden en er mag een eigen bedachte naam aan gegeven worden.
+De stam URL van de WMS, zoals te vinden in de metadata moet opgegeven worden en er mag een eigen bedachte naam aan gegeven worden.
 
 ![WMS in QGIS](media/WMS_QGIS.png "WMS verbinding maken in QGIS")
 
 Nadat de verbinding is gemaakt, kan een laag gekozen worden en zal de laag getoond worden.
+Wanneer daarna ook de WMS-en van de Administrative Units van Belgie en Duitsland voor de gemeentes worden toegevoegd ontstaat het volgende beeld:
+
+![WMS in QGIS EU data](media/AU_NL_B_D_QGIS.png "WMS INSPIRE datasets van 3 EU landen")
+
 Voor de downloadservices als WFS,OGC-API- Features en WCS worden vergelijkbare stappen doorlopen. Het loont bij grote datasets om eerst de WMS te laden, dan in te zoomen op het interesse gebied en daarna pas de downloadservices te laden, omdat dan minder features ingelezen hoeven te worden. 
 CBS heeft een internetpagina ingericht waarin het <a href="https://www.cbs.nl/geoservices/" target="_blank">gebruik van geoservices</a> in QGIS wordt uitgelegd met een handleiding en video. Het is inmiddels enigszins verouderd, maar het principe is nog steeds hetzelfde.
 
