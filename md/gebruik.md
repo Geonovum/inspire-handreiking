@@ -69,7 +69,7 @@ Tips voor het vinden van Europese data:
 - Omdat datasets in de buurlanden vaak regionaal versnipperd zijn, loont het ook te zoeken op de regionale naam.
 - Houdt rekening met verschillen in de actualiteit en detailniveau.
 
-## Bestuderen metadata
+### Bestuderen metadata
 
 Bij het bestuderen van de metadata gaat het in eerste instantie om de vraag of de dataset geschikt is voor het doel van het gebruik. 
 Daarbij spelen aspecten als:
@@ -80,8 +80,6 @@ Daarbij spelen aspecten als:
 - Hoe de data te benaderen is
 - Geharmoniseerd of AsIs?
 - Beschikbare coördinaatsysteem
-
-Maar eigenlijk alles wat hierover beschreven staat in het hoofdstuk over [metadata](#metadata).
 
 In het geval de metadata niet het antwoord geeft dat gezocht wordt, kan contact opgenomen worden met de organisatie die vermoedelijk verantwoordelijk is voor de gezochte informatie. De contact-informatie kan eventueel gevonden worden in de metadata van andere datasets van deze organisatie.
 
@@ -119,9 +117,10 @@ Voor het downloaden van data zijn er vaak verschillende opties. Is het de bedoel
 Gaat het om slechts een deelgebied of slechts enkele features dan is een [WFS](#wfs), [WCS](#wcs), [SOS](#sos) of [OGC-API Feature service](#ogc-api-s) een betere optie.
 Net als bij de WMS, zijn de datasets via downloads op meerdere manieren te benaderen. 
 
-De Atomfeed kan verschillende formaten terug leveren, meestal ingepakt in een zip-file.  
-De directe URL voor het downloaden van de zip-file via een Atomfeed is te vinden via de service-feed. Dat is een xml-file waarvan de URL in de metadata van de dataset en de Atom service moet staan.
-In deze xml file staat dan dan een link naar de dataset-feed. Die bevat dan de directe URL voor het downloaden van de zip-file. Het komt voor dat deze link al direct is opgenomen in de service-feed.
+De Atomfeed kan verschillende formaten terug leveren, meestal ingepakt in een zip-file.
+Deze is meestal direct te downloaden via catologi als NGR of het INSPIRE Geoportal waar de dataset gevonden is.  
+<!--- De directe URL voor het downloaden van de zip-file via een Atomfeed is te vinden via de service-feed. Dat is een xml-file waarvan de URL in de metadata van de dataset en de Atom service moet staan.
+In deze xml file staat dan dan een link naar de dataset-feed. Die bevat dan de directe URL voor het downloaden van de zip-file. Het komt voor dat deze link al direct is opgenomen in de service-feed. --->
 
 Het downloaden van data via WFS, WCS, OGC-API-features of SOS kan via een [browser](#downloaden-via-een-browser), via een [GIS](#gebruik-in-gis-algemeen) of via catalogie als NGR of het INSPIRE Geoportal. 
 Het INSPIRE Geoportal heeft een beperking ingebouwd dat er maar 2 features geleverd worden om te voorkomen dat het systeem overbevraagd wordt.  
@@ -147,18 +146,22 @@ Daarnaast is er een <a href="https://github.com/warrieka/inspireNL" target="_bla
 ### Gebruik EU INSPIRE data in GIS 
 
 Niet Nederlandse INSPIRE data is helaas niet met de QGIS-plugin in te lezen, maar wel met de basisfunctionaliteit van QGIS. 
-Omdat het grensoverschreidend kunnen werken met geoinformatie, een belangrijk doel is van INSPIRE, wordt in deze paragraaf een voorbeeld getoond.
+Omdat het grensoverschrijdend kunnen werken met geoinformatie, een belangrijk doel is van INSPIRE, wordt in deze paragraaf daarvan een voorbeeld getoond.
 
 Wanneer INSPIRE kaartlagen van verschillende EU-landen in een GIS getoond worden is het verstandig eerst een coordinaatsysteem te kiezen dat door alle te gebruiken services ondersteund wordt.
-Een ETRS89 gebaseerd coördinaatsyteem is dan voor de handliggend, omdat dat voor INSPIRE ondersteund moet worden.
-In onderstaande afbeelding wordt getoond hoe INSPIRE WMS-en van twee EU-landen toe te voegen zijn aan een QGIS project met de basisfunctionaliteit van QGIS. 
+Een ETRS89 gebaseerd coördinaatsyteem is dan voor de hand liggend, omdat dat voor INSPIRE ondersteund moet worden.
+In onderstaande afbeelding wordt getoond hoe INSPIRE WMS-en van meerdere EU-landen toe te voegen zijn aan een QGIS project met de basisfunctionaliteit van QGIS. 
 Door met de rechter muisknop op "WMS/WMTS" in de browser te klikken, kan een nieuwe verinding gemaakt worden met een view service.
 De stam URL van de WMS, zoals te vinden in de metadata moet opgegeven worden en er mag een eigen bedachte naam aan gegeven worden.
 
 ![WMS in QGIS](media/WMS_QGIS.png "WMS verbinding maken in QGIS")
 
-Nadat de verbinding is gemaakt, kan een laag gekozen worden en zal de laag getoond worden.
-Wanneer daarna ook de WMS-en van de Administrative Units van Belgie en Duitsland voor de gemeentes worden toegevoegd ontstaat het volgende beeld:
+Nadat de verbinding is gemaakt, kan een laag gekozen worden en de kaartlaag is toegevoegd zal de laag getoond worden.
+Daarna kunnen ook de WMS-en van de Administrative Units van Belgie en Duitsland voor de gemeentes worden toegevoegd via de URL's die in de metadata gevonden kunnen worden.
+- https://ccff02.minfin.fgov.be/geoservices/arcgis/services/INSPIRE/AU/MapServer/WMSServer
+- http://sg.geodatenzentrum.de/wms_dlm250_inspire? (let op, hier moet je de asorientatie negeren. Dat is een vinkje in de verbindingdetails)
+
+Daarna ontstaat het volgende beeld:
 
 ![WMS in QGIS EU data](media/AU_NL_B_D_QGIS.png "WMS INSPIRE datasets van 3 EU landen")
 
