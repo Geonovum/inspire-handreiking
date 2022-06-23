@@ -55,19 +55,14 @@ Een link naar de metadata in xml staat in de getoonde metadata zoals in de afbee
 ![EU-geoportal metadata](media/metadata_EU_portal.png "EU INSPIRE metadata met link naar xml file")
 
 Wanneer de gezochte dataset niet te vinden is via het INSPIRE Geoportal, dan kan deze mogelijk nog gevonden worden via de nationale of regionale catalogi.
-Hieronder volgen enkele tips voor onze buurlanden.
+Hieronder volgen enkele tips:
 
-Duitsland: 
-- <a href="https://www.geodaten.niedersachsen.de/" target="_blank">Nedersaksen</a>
-- <a href="https://www.geoportal.nrw/" target="_blank"> Noordrijn Westfalen</a>
-
-België:
-- <a href="https://www.geopunt.be/" target="_blank">Vlaanderen</a>
-- <a href="http://geoportail.wallonie.be/" target="_blank">Wallonië</a>
-
-<a href="https://ckan.publishing.service.gov.uk/dataset/" target="_blank">Groot Brittannië</a>
-
-<a href="https://www.noordzeeloket.nl/beheer/noordzeeatlas/" target="_blank">Noordzee atlas</a>
+- <a href="https://www.geodaten.niedersachsen.de/" target="_blank">Nedersaksen</a> (Duitsland)
+- <a href="https://www.geoportal.nrw/" target="_blank"> Noordrijn Westfalen</a> Duitsland
+- <a href="https://www.geopunt.be/" target="_blank">Vlaanderen</a> (België)
+- <a href="http://geoportail.wallonie.be/" target="_blank">Wallonië</a> (België)
+- <a href="https://ckan.publishing.service.gov.uk/dataset/" target="_blank">Groot Brittannië</a>
+- <a href="https://www.noordzeeloket.nl/beheer/noordzeeatlas/" target="_blank">Noordzee atlas</a>
 
 Tips voor het vinden van Europese data:
 - Omdat de metadata vaak in de lokale taal is, loont het om eerst op INSPIRE thema te zoeken en om op zoektermen in de gebruikte metadata taal te zoeken. Er is in het INSPIRE geoportal ook een optie om de metadata automatisch in het Engels te vertalen (zie rechtsboven onder Show metadata fields in:).
