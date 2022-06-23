@@ -32,11 +32,12 @@ Wanneer het data van andere Europese lidstaten betreft kan het beste in eerste i
 
 ![EU-geoportal](media/geoportaltip8a.png "EU INSPIRE GEOPORTAL")
 
-De INSPIRE Thematic Viewer geeft toegang tot alle datasets die onder INSPIRE vallen. In de INSPIRE Thematic Viewer kan gefilterd worden op het INSPIRE thema waaronder de gezochte data zou moeten vallen en er kan op het land gefiltered worden. Nadat een keuze is gemaakt in deze filteropties verschijnt een lijst van datasets die hieraan voldoen.
+De INSPIRE Thematic Viewer geeft toegang tot alle datasets die onder INSPIRE vallen. In de INSPIRE Thematic Viewer kan gefilterd worden op het INSPIRE thema waaronder de gezochte data zou moeten vallen en er kan op het land gefiltered worden. 
 
 De Priority Dataset Viewer geeft toegang tot de [INSPIRE prioritaire datasets](#prioritaire-datasets) die ook voor milieu rapportage verplichtingen gebruikt worden.
 Hierin kan onder andere gezocht worden via de milieuwetgeving waarvoor gerapporteerd wordt. 
 
+Nadat een keuze is gemaakt in de filteropties verschijnt een lijst van datasets die aan de filteropties voldoen.
 
 ![EU-geoportal na selectie](media/geoportaltip1.png "EU INSPIRE GEOPORTAL na selectie op Nederlandse data")
 
@@ -55,14 +56,18 @@ Een link naar de metadata in xml staat in de getoonde metadata zoals in de afbee
 
 Wanneer de gezochte dataset niet te vinden is via het INSPIRE Geoportal, dan kan deze mogelijk nog gevonden worden via de nationale of regionale catalogi.
 Hieronder volgen enkele tips voor onze buurlanden.
-- Duitsland: 
-   - <a href="https://www.geodaten.niedersachsen.de/" target="_blank">Nedersaksen</a>
-   - <a href="https://www.geoportal.nrw/" target="_blank"> Noordrijn Westfalen</a>
-- België:
-   - <a href="https://www.geopunt.be/" target="_blank">Vlaanderen</a>
-   - <a href="http://geoportail.wallonie.be/" target="_blank">Wallonië</a>
-- <a href="https://ckan.publishing.service.gov.uk/dataset/" target="_blank">Groot Brittannië</a>
-- - <a href="https://www.noordzeeloket.nl/beheer/noordzeeatlas/" target="_blank">Noordzee atlas</a>
+
+Duitsland: 
+- <a href="https://www.geodaten.niedersachsen.de/" target="_blank">Nedersaksen</a>
+- <a href="https://www.geoportal.nrw/" target="_blank"> Noordrijn Westfalen</a>
+
+België:
+- <a href="https://www.geopunt.be/" target="_blank">Vlaanderen</a>
+- <a href="http://geoportail.wallonie.be/" target="_blank">Wallonië</a>
+
+<a href="https://ckan.publishing.service.gov.uk/dataset/" target="_blank">Groot Brittannië</a>
+
+<a href="https://www.noordzeeloket.nl/beheer/noordzeeatlas/" target="_blank">Noordzee atlas</a>
 
 Tips voor het vinden van Europese data:
 - Omdat de metadata vaak in de lokale taal is, loont het om eerst op INSPIRE thema te zoeken en om op zoektermen in de gebruikte metadata taal te zoeken. Er is in het INSPIRE geoportal ook een optie om de metadata automatisch in het Engels te vertalen (zie rechtsboven onder Show metadata fields in:).
