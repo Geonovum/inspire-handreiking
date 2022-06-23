@@ -58,7 +58,7 @@ Wanneer de gezochte dataset niet te vinden is via het INSPIRE Geoportal, dan kan
 Hieronder volgen enkele tips:
 
 - <a href="https://www.geodaten.niedersachsen.de/" target="_blank">Nedersaksen</a> (Duitsland)
-- <a href="https://www.geoportal.nrw/" target="_blank"> Noordrijn Westfalen</a> Duitsland
+- <a href="https://www.geoportal.nrw/" target="_blank"> Noordrijn Westfalen</a> (Duitsland)
 - <a href="https://www.geopunt.be/" target="_blank">Vlaanderen</a> (België)
 - <a href="http://geoportail.wallonie.be/" target="_blank">Wallonië</a> (België)
 - <a href="https://ckan.publishing.service.gov.uk/dataset/" target="_blank">Groot Brittannië</a>
