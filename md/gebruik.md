@@ -7,7 +7,7 @@ Na het bestuderen van de metadata moet dan de juiste benadering van de data bepa
 Voor het gebruik maakt het nogal uit of het gaat om het gebruik van alleen Nederlandse data of ook data van andere Europese landen.
 Daarom zijn paragraven hieronder, wanneer relevant opgesplitst in 2 delen op basis van dit onderscheid.
 
-Heb je na het lezen van deze paragraaf een nog vraag over het gebruik van INSPIRE data, dan kun je die stellen bij het <a href="https://geoforum.nl/c/standaarden/inspire/71" target="_blank">INSPIRE topic van het GeoForum</a>.
+Heb je na het lezen van deze paragraaf nog een vraag over het gebruik van INSPIRE data, dan kun je die stellen bij het <a href="https://geoforum.nl/c/standaarden/inspire/71" target="_blank">INSPIRE topic van het GeoForum</a>.
 
 ## Vinden
 
