@@ -81,7 +81,7 @@ Daarbij spelen aspecten als:
 - Geharmoniseerd of As-is?
 - Beschikbare coördinaatsysteem
 
-In het geval de metadata niet het antwoord geeft op de data geschikt is, kan contact opgenomen worden met de organisatie die verantwoordelijk voor de dataset. De contactgegevens van de verantwoordelijke organisatie staan beschreven in de metadata.
+In het geval de metadata niet het antwoord geeft of de data geschikt is, kan contact opgenomen worden met de organisatie die verantwoordelijk voor de dataset. De contactgegevens van de verantwoordelijke organisatie staan beschreven in de metadata.
 
 ## Benaderen
 
@@ -130,7 +130,8 @@ De OGC-API-features geven in de meeste gevallen default een GeoJSON bestand. Voo
 
 Het is niet altijd nodig de bestanden lokaal op te slaan. De meeste download-services kunnen ook direct gebruikt worden in applicaties die toegang hebben tot internet. Dit geldt ook voor GIS-applicaties zoals beschreven in de volgende paragraaf.
 
-In het geval van te grote datasets die niet in zijn geheel via een WFS in een GIS te gebruiken zijn, is het advies om deze grote datasets eerst te downloaden via de Atomfeed optie die in principe door INSPIRE gevraagd wordt.
+In het geval van te grote datasets die niet in zijn geheel via een WFS in een GIS te gebruiken zijn, is het advies om deze grote datasets eerst te downloaden via de predefined download die gevraagd wordt voor een INSPIRE download service. 
+Dat kan via een Atomfeed zijn, maar ook via een stored query in een WFS.
 
 ### Gebruik NL INSPIRE data in GIS
 
