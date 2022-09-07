@@ -1,25 +1,40 @@
 ## CRS
 
 Geo-informatie is direct gekoppeld aan een locatie op aarde. De wijze waarop die koppeling wordt gelegd, wordt beschreven in het coördinaatreferentiesysteem (CRS) waarin coördinaten van een locatie worden vastgelegd. 
-RD, ETRS89 en WGS 84 zijn bekende voorbeelden van CRS-en.
+Het Nederlandse RD (Rijks Driehoeksstelsel), het Europese ETRS89 en het mondiale WGS84 gebruikt door GPS ontvangers zijn bekende voorbeelden van CRS-en.
+Er zijn 2 hoofdsoorten van coördinaatreferentiesystemen. De geografische en de geprojecteerde.  
 
-De CRS-en die voor geharmoniseerde datasets ondersteund moeten worden kunnen verschillen per INSPIRE thema en staan meestal vermeld in hoofdstuk 6 van de technical guidance behorende bij het thema.
-Naast de verplichte CRS-en is het voor Nederlandse datasets ook van belang om de <a href="https://docs.geostandaarden.nl/crs/crs/" target="_blank">handreiking gebruik coördinaatreferentiesystemen</a> te volgen.
+Bij een geografische CRS worden punten vastgelegd met een lengte- en breedtegraad op een bol of ellipsoïde met eventueel nog een hoogte. ETRS89 en WGS84 zijn hiervan voorbeelden.
+Ze zijn gekoppeld aan verschillende continentale platen die t.o.v. elkaar verschuiven. ETRS89 is aan de Eurpese plaat gekoppeld en WGS84 aan de Amerikaanse. Ze verschuiven 2 cm per jaar.
+Omdat lengte en breedtegraad onpraktisch zijn voor metingen en berekeningen en omdat ze ongeschikt zijn voor afbeelding op een plat vlak, bestaan er ook geprojecteerde coördinaatsystemen.
+
+Geprojecteerd wil zeggen dat punten op een bol of ellipsoïde geprojecteerd zijn op een plat vlak, waardoor ook afbeelding op een kaart mogelijk is. Een kaart is immers ook een plat vlak.
+De geprojecteerde punten worden vastgelegd in X- en Y-coördinaten met eventueel een hoogte als Z-coördinaat.
+Geprojecteerde coördinaten kunnen meetkundig afgeleid worden van geografisch coördinaten mits die op dezelfde continentale plaat en ellipsoïde gedefinieerd zijn. Zo is het Nederlandse RD af te leiden uit ETRS89. 
+Projecteren kan op verschillende manieren. Er bestaat geen perfecte projectie, want er wordt altijd op een bepaalde manier iets vervormd. 
+De toepassing van de kaart bepaalt eigenlijk wat de beste manier is. Zo is het voor statistiek belangrijk dat de kaart oppervlaktegetrouw blijft, maar voor de zeevaart is het belangrijk dat de kaart hoekgetrouw blijft.
+Ook de vorm en ligging van het te karteren gebied maken uit voor de keuze van de beste projectie. De handleiding van QGIS geeft een goede <a href="https://docs.qgis.org/3.16/nl/docs/gentle_gis_introduction/coordinate_reference_systems.html#overview" target="_blank">uitleg over projecties</a>.
+Omdat er geen optimale projectie voor alle toepassingen bestaat en omdat ze gedefinieerd kunnen zijn op t.o.v. verschillende verschuivende continentale platen, bestaan er dus verschillende CRS-sen.
+
+De CRS-en die voor geharmoniseerde datasets ondersteund moeten worden vanuit EU-perspectief, kunnen verschillen per INSPIRE thema en staan vermeld in hoofdstuk 6 van de dataspecificatie behorende bij het thema.
+Het is voor Nederlandse datasets ook van belang om de <a href="https://docs.geostandaarden.nl/crs/crs/" target="_blank">handreiking gebruik coördinaatreferentiesystemen</a> te volgen.
 Daarin staat een <a href="https://docs.geostandaarden.nl/crs/crs/#mogelijke-crs-en-binnen-inspire" target="_blank">apart hoofdstuk over INSPIRE</a>.
   
-Voor Nederlandse 2D data wordt geadviseerd INSPIRE data te publiceren met ETRS89 en daarnaast RD.
-Voor Nederlandse 3D data wordt geadviseerd INSPIRE data te publiceren met ETRS89 + EVRS en daarnaast RD + NAP
-
-CRS-en worden geidentificeerd met zogenaamde <a href="https://docs.geostandaarden.nl/crs/crs/#bijlage-a-crs-overzicht-tabel" target="_blank">EPSG-codes</a>. 
+CRS-en worden geïdentificeerd met zogenaamde <a href="https://docs.geostandaarden.nl/crs/crs/#bijlage-a-crs-overzicht-tabel" target="_blank">EPSG-codes</a>. 
 
 ### Hoogtereferentie systeem
 
-In Nederland worden hoogtes meestal vastgesteld t.o.v. NAP. Deze hoogtes zijn middels waterpassing vastgesteld. Dat betekent dat ze het zwaartekrachtveld volgen. 
-Het EVRS is het Europese referentiesysteem voor de hoogte. Het EVRS wordt gerealiseerd door een geodetische vereffening van waterpasnetwerken van Europese landen, waarmee uniforme hoogten voor de punten in de waterpasnetwerken worden berekend.
-Wanneer de nauwkeurigheid van de data beter is dan 5 cm, is het noodzakelijk dat er een transformatie plaatsvindt van NAP naar EVRS. Anders kunnen de hoogtes gelijk gesteld worden en is een transformatie dus niet echt noodzakelijk. 
+In Nederland worden hoogtes vastgesteld t.o.v. NAP. 
+Het EVRS is het Europese referentiesysteem voor de hoogte. 
+NAP is strikt genomen geen geldig hoogtesysteem in INSPIRE. In die zin kan NAP dus niet gebruikt worden voor geharmoniseerde data in de context van INSPIRE.
+Hier staat tegenover dat het verschil tussen NAP en EVRS klein is (verschil van maximaal een paar centimeter). 
+Voor veel datasets is dat verschil kleiner dan de nauwkeurigheid van de data zelf. In zo’n geval kan NAP gezien worden als de Nederlandse realisatie van EVRS.
+Met andere woorden: hoogtes opgegeven in NAP hoeven niet getransformeerd te worden, als de hoogte component van de data minder nauwkeurig is dan het verschil tussen NAP en EVRS.
+Voor AHN bijvoorbeeld geldt dit, want het AHN heeft een hoogtenauwkeurigheid van 5 centimeter. Dus de hoogte in NAP kan worden beschouwd als de hoogte in EVRS. 
+Andersom geldt dat hoogtes in EVRS op land in Nederland als NAP hoogte kunnen worden geïnterpreteerd, als de nauwkeurigheid van de verticale component groter is dan het verschil tussen NAP en EVRS.
+Omdat het EVRS regelmatig wordt aangepast verschijnen er regelmatig nieuwe realisaties van EVRS met nieuwe EPSG-codes. Voor INSPIRE worden die daarna ook weer opgenomen de lijst met toegestane verticale referentiesystemen.
 
-Omdat het EVRS regelmatig wordt aangepast verschijnen er regelmatig nieuwe realisaties van EVRS met nieuwe EPSG-codes die daarna ook weer opgenomen moeten worden in de lijst met toegestane verticale referentiesystemen.
-Dat hier behoefte aan is blijkt ook uit dit <a href="https://github.com/INSPIRE-MIF/technical-guidelines/issues/27" target="_blank">issue</a> dat aangemaakt is vanuit RWS.
+
 
 
 
