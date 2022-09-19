@@ -15,6 +15,9 @@ De handleiding van QGIS geeft een goede <a href="https://docs.qgis.org/3.16/nl/d
 De CRS-en die voor geharmoniseerde datasets ondersteund moeten worden vanuit EU-perspectief, kunnen verschillen per INSPIRE thema en staan vermeld in hoofdstuk 6 van de dataspecificatie behorende bij het thema.
 Het is voor Nederlandse datasets ook van belang om de <a href="https://docs.geostandaarden.nl/crs/crs/" target="_blank">handreiking gebruik coördinaatreferentiesystemen</a> te volgen.
 Daarin staat een <a href="https://docs.geostandaarden.nl/crs/crs/#mogelijke-crs-en-binnen-inspire" target="_blank">apart hoofdstuk over INSPIRE</a>.
+
+In het geval dat er transformate nodig is tussen RD and ETRS89, wordt sterk aanbevolen om de laatste versie van de <a href="https://docs.geostandaarden.nl/crs/cv-hr-crs-20211125/#transformatie-en-conversie-tussen-rd-nap-en-etrs89" target="_blank">RDNAPTRANS™ procedure</a> te volgen.
+Dat is gecertificeerde software om de transformatie tussen deze twee CRS-en uit te voeren. In veel GIS-software is deze procedure geïmplementeerd.
   
 CRS-en worden geïdentificeerd met zogenaamde <a href="https://docs.geostandaarden.nl/crs/crs/#bijlage-a-crs-overzicht-tabel" target="_blank">EPSG-codes</a>. 
 
