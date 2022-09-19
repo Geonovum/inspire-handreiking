@@ -5,16 +5,12 @@ Het Nederlandse RD (Rijks Driehoeksstelsel), het Europese ETRS89 en het mondiale
 Er zijn 2 hoofdsoorten van coördinaatreferentiesystemen. De geografische en de geprojecteerde.  
 
 Bij een geografische CRS worden punten vastgelegd met een lengte- en breedtegraad op een bol of ellipsoïde met eventueel nog een hoogte. ETRS89 en WGS84 zijn hiervan voorbeelden.
-Ze zijn gekoppeld aan verschillende continentale platen die t.o.v. elkaar verschuiven. ETRS89 is aan de Eurpese plaat gekoppeld en WGS84 aan de Amerikaanse. Ze verschuiven 2 cm per jaar.
-Omdat lengte en breedtegraad onpraktisch zijn voor metingen en berekeningen en omdat ze ongeschikt zijn voor afbeelding op een plat vlak, bestaan er ook geprojecteerde coördinaatsystemen.
-
-Geprojecteerd wil zeggen dat punten van het oppervlak van een bol of ellipsoïde geprojecteerd zijn op een plat vlak, waardoor ook afbeelding op een kaart mogelijk is. Een kaart is immers ook een plat vlak.
+Bij een geprojecteerd CRS zijn punten van het oppervlak van een bol of ellipsoïde geprojecteerd op een plat vlak, waardoor ook afbeelding op een platte kaart mogelijk is.
 De geprojecteerde punten worden vastgelegd in X- en Y-coördinaten met eventueel een hoogte als Z-coördinaat.
-Geprojecteerde coördinaten kunnen meetkundig afgeleid worden van geografisch coördinaten mits die op dezelfde continentale plaat en ellipsoïde gedefinieerd zijn. Zo is het Nederlandse RD af te leiden uit ETRS89.  
+Het Nederlandse RD is een projectie vanuit dezelfde ellipsoide als waarop ETRS89 gedefinieerd is.
 Projecteren kan op verschillende manieren. Er bestaat geen perfecte projectie, want er wordt altijd op een bepaalde manier iets vervormd.
-De toepassing van de kaart bepaalt eigenlijk wat de beste manier is. Zo is het voor statistiek belangrijk dat de kaart oppervlaktegetrouw blijft, maar voor de zeevaart is het belangrijk dat de kaart hoekgetrouw blijft.
-Ook de vorm en ligging van het te karteren gebied maken uit voor de keuze van de beste projectie. De handleiding van QGIS geeft een goede <a href="https://docs.qgis.org/3.16/nl/docs/gentle_gis_introduction/coordinate_reference_systems.html#overview" target="_blank">uitleg over projecties</a>.  
-Omdat er geen optimale projectie voor alle toepassingen bestaat en omdat ze gedefinieerd kunnen zijn op t.o.v. verschillende verschuivende continentale platen, bestaan er dus verschillende CRS-sen.
+De toepassing van de kaart bepaalt eigenlijk wat de beste manier is.
+De handleiding van QGIS geeft een goede <a href="https://docs.qgis.org/3.16/nl/docs/gentle_gis_introduction/coordinate_reference_systems.html#overview" target="_blank">uitleg over projecties</a>.  
 
 De CRS-en die voor geharmoniseerde datasets ondersteund moeten worden vanuit EU-perspectief, kunnen verschillen per INSPIRE thema en staan vermeld in hoofdstuk 6 van de dataspecificatie behorende bij het thema.
 Het is voor Nederlandse datasets ook van belang om de <a href="https://docs.geostandaarden.nl/crs/crs/" target="_blank">handreiking gebruik coördinaatreferentiesystemen</a> te volgen.
