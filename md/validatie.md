@@ -104,13 +104,13 @@ Voor de meeste service validators (WMS, WMTS, WFS pre-defined, WFS direct access
 
 ## Link checker
 
-Om direct inzicht te hebben in de relaties tussen datasets, metadata en services is het niet nodig te wachten op de harvesting van het Europese INSPIRE geoportal. Met de <a href="https://inspire-geoportal.ec.europa.eu/linkagechecker.html" target="_blank">Link checker</a> van het Europese INSPIRE Geoportal kan deze check op elk willekeurig moment worden uitgevoerd.
+Om direct inzicht te hebben in de relaties tussen datasets, metadata en services is het niet nodig te wachten op de harvesting van het Europese INSPIRE geoportal. Met de <a href="https://inspire-geoportal.ec.europa.eu/linkagechecker.html" target="_blank">Link checker</a> in het Europese INSPIRE geoportal kan deze check op elk willekeurig moment worden uitgevoerd.
 
-Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> toont in welke mate een dataset ook daadwerkelijk raadpleegbaar (via een viewservice) en downloadbaar (via een downloadservice) is. Hiervoor moeten diverse verwijzingen (via links en identifiers) tussen metadata en services goed opgegeven zijn. Dit is essentieel voor een werkende infrastructuur: als een dataset niet raadpleegbaar of niet downloadbaar is, is deze niet goed aangeboden aan INSPIRE en niet goed of zelfs helemaal niet bruikbaar.
+Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE geoportal</a> toont in welke mate een dataset ook daadwerkelijk raadpleegbaar (via een viewservice) en downloadbaar (via een downloadservice) is. Hiervoor moeten diverse verwijzingen (via links en identifiers) tussen metadata en services goed opgegeven zijn. Dit is essentieel voor een werkende infrastructuur: als een dataset niet raadpleegbaar of niet downloadbaar is, is deze niet goed aangeboden aan INSPIRE en niet goed of zelfs helemaal niet bruikbaar.
 
-Om de verwijzingen te controleren op juistheid bevat het Europese INSPIRE Geoportal de Link checker: een tool om na te gaan of alle verwijzingen goed staan en waar eventuele correcties noodzakelijk zijn. De Link checker voert geen validatie uit van de metadata, dataset en services. Deze onderdelen moeten apart gevalideerd worden, zie hiervoor de paragraaf [Te gebruiken validators](#te-gebruiken-validators).
+Om de verwijzingen te controleren op juistheid bevat het INSPIRE geoportal de <a href="https://inspire-geoportal.ec.europa.eu/linkagechecker.html" target="_blank">Link checker</a>: een tool om na te gaan of alle verwijzingen tussen datasets, metadata en services goed staan en waar eventuele correcties noodzakelijk zijn. De Link checker voert geen validaties uit van de metadata, dataset en services. Deze onderdelen moeten apart gevalideerd worden, zie hiervoor de paragraaf [Te gebruiken validators](#te-gebruiken-validators).
 
-De Link checker kan gestart worden door bestaande of nieuwe metadata van een dataset en services op te geven. Advies is om altijd voor New metadata te kiezen, omdat dan ook wijzigingen gelijk getest kunnen worden. Een Engelstalige beschrijving van de Link checker is <a href="https://inspire-geoportal.ec.europa.eu/files/INSPIRE_Geoportal_process_for_data-service_linking_v1.0.pdf" target="_blank">hier</a> te vinden.
+De Link checker kan gestart worden door bestaande of nieuwe metadata van een dataset en services op te geven. Advies is om altijd voor New metadata te kiezen, omdat dan ook wijzigingen gelijk getest kunnen worden. Een korte Engelstalige beschrijving hoe de verschillende verwijzingen tot stand moeten komen, is <a href="https://inspire-geoportal.ec.europa.eu/files/INSPIRE_Geoportal_process_for_data-service_linking_v1.0.pdf" target="_blank">hier</a> te vinden. In de volgende paragraaf wordt hier ook nog verder op ingegaan bij [check 3](#check-3-heeft-de-data-een-download-link) en [check 4](#check-4-heeft-de-data-een-view-link).
 
 ## Tips om data raadpleegbaar en downoadbaar in het Geoportal te krijgen
 Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> toont in welke mate een dataset ook daadwerkelijk raadpleegbaar (via een viewservice) en downloadbaar (via een downloadservice) is. Hiervoor moeten diverse verwijzingen (via links en identifiers) tussen metadata en services goed opgegeven zijn. 
@@ -251,7 +251,7 @@ Als laatste kan gecontroleerd worden of de link naar de metadata van de service 
 
 ![check 4_WMS](media/geoportaltip4.png "Check dataset service koppeling WMS")
 
-### check 5: Daadwerkelijk download data
+### Check 5: Daadwerkelijk download data
 Check of de data gedownload wordt nadat geklikt wordt op ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png).
 en daarna op de blauwe knop "Get Data Set".
 
