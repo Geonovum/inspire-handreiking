@@ -110,15 +110,16 @@ Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE ge
 
 Om de verwijzingen te controleren op juistheid bevat het INSPIRE geoportal de <a href="https://inspire-geoportal.ec.europa.eu/linkagechecker.html" target="_blank">Link checker</a>: een tool om na te gaan of alle verwijzingen tussen datasets, metadata en services goed staan en waar eventuele correcties noodzakelijk zijn. De Link checker voert geen validaties uit van de metadata, dataset en services. Deze onderdelen moeten apart gevalideerd worden, zie hiervoor de paragraaf [Te gebruiken validators](#te-gebruiken-validators).
 
-De Link checker kan gestart worden door bestaande of nieuwe metadata van een dataset en services op te geven. Advies is om altijd voor New metadata te kiezen, omdat dan ook wijzigingen gelijk getest kunnen worden. Een korte Engelstalige beschrijving hoe de verschillende verwijzingen tot stand moeten komen, is <a href="https://inspire-geoportal.ec.europa.eu/files/INSPIRE_Geoportal_process_for_data-service_linking_v1.0.pdf" target="_blank">hier</a> te vinden. In de volgende paragraaf wordt hier ook nog verder op ingegaan bij [check 3](#check-3-heeft-de-data-een-download-link) en [check 4](#check-4-heeft-de-data-een-view-link).
+De Link checker kan gestart worden door bestaande of nieuwe metadata van een dataset en services op te geven. Advies is om altijd voor New metadata te kiezen, omdat dan ook wijzigingen gelijk getest kunnen worden. Een korte Engelstalige beschrijving hoe de verschillende verwijzingen tot stand moeten komen, is <a href="https://inspire-geoportal.ec.europa.eu/files/INSPIRE_Geoportal_process_for_data-service_linking_v1.0.pdf" target="_blank">hier</a> te vinden. 
+In de volgende paragraaf wordt hier ook nog verder op ingegaan bij [check 3 (heeft de data een download link)](#check-3-heeft-de-data-een-download-link) en [check 4 (heeft de data een view link)](#check-4-heeft-de-data-een-view-link).
 
-## Tips om data raadpleegbaar en downoadbaar in het Geoportal te krijgen
+## Tips om data te vinden, viewbaar en downoadbaar in het INSPIRE Geoportal te krijgen
 Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> toont in welke mate een dataset ook daadwerkelijk raadpleegbaar (via een viewservice) en downloadbaar (via een downloadservice) is. Hiervoor moeten diverse verwijzingen (via links en identifiers) tussen metadata en services goed opgegeven zijn. 
 
-Om de verwijzingen te controleren is in deze paragraaf aangegeven op welke elementen de relatie tussen data en service wordt gelegd en wat de oorzaak kan zijn als data en services niet in het Europese INSPIRE Geoportal getoond wordt. 
-Loop onderstaande checks door, voor verder in het diepe te duiken:
+Om de verwijzingen te controleren is in deze paragraaf aangegeven op welke elementen de relatie tussen data en service wordt gelegd en wat de oorzaak kan zijn als data en services niet in het INSPIRE Geoportal getoond wordt.
 
-1. Is de data beschikbaar?
+Loop hiervoor onderstaande checks door:
+1. Is de data beschikbaar in het INSPIRE Geoportal?
 2. Check of de data is te vinden onder het INSPIRE data thema, waar het onder valt.
 3. Check of de data een download link heeft.
 4. Check of de data view link heeft.
@@ -128,25 +129,25 @@ Loop onderstaande checks door, voor verder in het diepe te duiken:
 8. Check of de data te vinden is onder het domein voor e-reporting.
 9. Overige aandachtspunten.
 
-### Check 1: Is de data beschikbaar?
-Ga naar het startscherm van het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">Geoportal</a> en kies INSPIRE Thematic Viewer.
+### Check 1: Is de data beschikbaar in het INSPIRE Geoportal?
+Ga naar het startscherm van het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> en kies de INSPIRE Thematic Viewer.
 ![check 8 PDS Viewer](media/geoportaltip8a.png "Start Priority Data Sets Viewer ") 
-Pas in het Geoportal een selectie toe op het INSPIRE thema van de dataset en lidstaat. Check of
-1. De (meta)data voorkomt in de lijst met data. 
+Kies vervolgens het INSPITE thema waar de dataset ondervalt en kies vervolgen voor Nederland. Check of
+1. De (meta)data voorkomt in de lijst met datasets. 
 Als de (meta)data voorkomt in de lijst met data en 
 2. De data ook daadwerkelijk te downloaden en te bekijken is, dan is verdere actie niet noodzakelijk.
 
 ![check 1](media/geoportaltip1.png "Check of de data vindbaar is")
 
-### Check 2: Is de dataset te vinden onder het INSPIRE thema
-Check of de data is te vinden onder het INSPIRE data thema, waar het onder valt.
-Dit wordt zichtbaar door een selectie toe te passen op een thema en lidstaat.
+### Check 2: Is de dataset te vinden onder het juiste INSPIRE thema
+Check of de dataset is te vinden onder het juiste INSPIRE thema, waar het onder valt.
+Dit wordt zichtbaar in het INSPIRE Geoportal door een selectie te maken op het juiste thema en te kiezen voor Nederland.
 In het voorbeeld hieronder is er geen (meta)data onder het thema Gegraphical grid systems voor Nederland.
 
 ![check 2](media/geoportaltip2.png "Check of vindbaar onder thema")
 
-Als de (meta)data niet voorkomt in de Geoportal, dan is 
-- Of de metadata niet in het NGR gepubliceerd met de categorie INSPIRE, zie ook [hier](#publiceren-inspire-aanduiding)
+Als de (meta)data niet voorkomt in het INSPIRE Geoportal, dan is 
+- Of de metadata niet in het NGR gepubliceerd met de categorie INSPIRE, zie ook [de paragraaf 'Publiceren INSPIRE-aanduiding'](#publiceren-inspire-aanduiding).
 - Of het INSPIRE thema en citatie naar de thesaurus is niet goed opgenomen in de metadata van de dataset.
 
 Het INSPIRE thema wordt opgenomen uit de INSPIRE Thesaurus.
@@ -154,17 +155,20 @@ De INSPIRE Thesaurus citatie, is als volgt:
 - Thesaurus: ”GEMET - INSPIRE themes, version 1.0”
 - Datum: ”2008-06-01”  
 - Datum type: ”publication”
-zie ook [hier](#hoe-om-te-gaan-met-anchor-en-uri) voor meer informatie.
+
+Zie ook [in paragraaf 'Hoe om te gaan met anchor en URI'](#hoe-om-te-gaan-met-anchor-en-uri) voor meer informatie en het voorbeeld INSPIRE thema uit thesaurus.
 
 ### Check 3: Heeft de data een download link
 Als het download pictogram ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png)
-ontbreekt terwijl er wel een download service beschikbaar is, check dan of de metadata van de service in het NGR gepubliceerd is met de categorie INSPIRE, zie ook [hier](#publiceren-inspire-aanduiding).
-Als de metadata correct is gepubliceerd, check dan of de koppeling tussen dataset en service goed is.
-Daarvoor moeten we onderscheid maken tussen [WFS](#wfs), [ATOM](#atom-feed), [SOS](#sos) en [WCS](#wcs).
+ontbreekt, terwijl er wel een download service beschikbaar is, check dan of de metadata van de service in het NGR gepubliceerd is met de categorie INSPIRE, zie ook [de paragraaf 'Publiceren INSPIRE-aanduiding'](#publiceren-inspire-aanduiding).
+
+
+Als de metadata van de service met de categorie INSPIRE is gepubliceerd in het NGR, check dan of de koppeling tussen dataset en service goed is.
+Daarvoor moeten we onderscheid maken tussen de soort service: [WFS](#wfs), [ATOM](#atom-feed), [SOS](#sos) en [WCS](#wcs).
 
 ***WFS***
 
-Chek of de koppeling aanwezig en correct is. De koppeling tussen een dataset en een WFS wordt in het Geoportal gelegd via het SpatialDataSetIdentifier element in de Extended Capabilities van de OGC WFS service:
+De koppeling tussen een dataset en een WFS wordt in het INSPIRE Geoportal gelegd via het SpatialDataSetIdentifier element in de Extended Capabilities van de OGC WFS service:
 
 Het SpatialDataSetIdentifier element bestaat uit twee subelementen:
 - identifier: inspire_dls:SpatialDataSetIdentifier/inspire_common:Code
@@ -172,7 +176,7 @@ Het SpatialDataSetIdentifier element bestaat uit twee subelementen:
 
 De SpatialDataSetIdentifier moet hetzelfde zijn als die in het element unieke identifier van de bron, in de metadata van de dataset.
 
-De inspire_common:Namespace mag worden weggelaten als er geen aparte namespace in de metadata van de data is opgenomen voor de dataset identifier. De dataset identifier en de inspire_common:Code, moeten in dat geval de unieke bron identificatie van de dataset bevatten.
+De inspire_common:Namespace mag worden weggelaten als er geen aparte namespace in de metadata van de dataset is opgenomen voor de dataset identifier. De dataset identifier en de inspire_common:Code, moeten in dat geval de unieke bron identificatie van de dataset bevatten.
 Als er wel een aparte namespace bij de dataset identifier in de metadata staat, dient het element inspire_common:Namespace die namespace te bevatten. Dit betekent wel dat de metadata de zogenaamde RS_Identifier gebruikt, met twee elementen: een code en een codeSpace voor de namespace, om de dataset te identificeren. 
 
 
@@ -185,12 +189,12 @@ Als laatste kan gecontroleerd worden of de link naar de metadata van de service 
 
 ***Atom***
 
-Chek of de koppeling aanwezig en correct is. De koppeling tussen een dataset en een Atom wordt in het Geoportal gelegd via het link element (rel="describedby") in de entry in de top feed van de Atom service.   
+De koppeling tussen een dataset en een Atom wordt in het INSPIRE Geoportal gelegd via het link element (rel="describedby") in de entry in de top feed van de Atom service.   
 
-De link  bevat:
-- De link naar de metadata van de dataset (href="URL naar metadata in bv NGR")
+De link bevat:
+- De link naar de metadata van de dataset (href="URL naar metadata in het NGR")
 - De relatie (rel="describedby") 
-- Het type (type="application/xml" )
+- Het type (type="application/xml")
 Deze link moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service.
 
 Daarnaast wordt in deze entry ook de identifier en namespace van de dataset opgenomen in het spatial_dataset_identifier_code element en spatial_dataset_identifier_namespace element.
@@ -205,7 +209,7 @@ Als laatste kan gecontroleerd worden of de link naar de metadata van de service 
 
 ***SOS***
 
-De koppeling tussen de dataset en de SOS wordt gelegd in het element SpatialDataSetIdentifier element in de Extended Capabilities van de  service voor elke ”ObservationOffering”. 
+De koppeling tussen de dataset en de SOS wordt gelegd in het element SpatialDataSetIdentifier element in de Extended Capabilities van de service voor elke ”ObservationOffering”. 
 Het SpatialDataSetIdentifier element bestaat uit twee subelementen:
 
 capabilities van de SOS via ”SpatialDataSet-Identifier”
@@ -223,7 +227,7 @@ Als laatste kan gecontroleerd worden of de link naar de metadata van de service 
 
 ***WCS***
 
-De koppeling tussen de dataset en de WCS wordt gelegd in het element SpatialDataSetIdentifierin de Extended Capabilities van de  service. Het SpatialDataSetIdentifier element bestaat uit twee subelementen:
+De koppeling tussen de dataset en de WCS wordt gelegd in het element SpatialDataSetIdentifierin de Extended Capabilities van de service. Het SpatialDataSetIdentifier element bestaat uit twee subelementen:
 
 - inspire_dls:SpatialDataSetIdentifier/inspire_common:Code
 - inspire_dls:SpatialDataSetIdentifier/inspire_common:Namespace
@@ -240,52 +244,55 @@ Deze moet hetzelfde zijn als de link in het OperatesOn element in de metadata va
 
 Als laatste kan gecontroleerd worden of de link naar de metadata van de service opgenomen is via inspire_common:MetadataUrl
 
-### Check 4: Heeft de data een view link
-Als de (meta)data voorkomt in de lijst met bij het Geoportal bekende datasets, maar het view symbool ![image](https://user-images.githubusercontent.com/80040145/161044869-375c840f-0b01-489c-a644-37818329f354.png) ontbreekt, is de data niet viewable.
-Dit kan verschillende oorzaken hebben, maar een vaak voorkomend probleem is de koppeling tussen de dataset en de view service.
+### Check 4: Heeft de dataset een view link
+Als de (meta)data voorkomt in de lijst in het INSPIRE Geoportal, maar het view symbool ![image](https://user-images.githubusercontent.com/80040145/161044869-375c840f-0b01-489c-a644-37818329f354.png) ontbreekt, dan is de data niet raadpleegbaar (viewbaar).
+Dit kan verschillende oorzaken hebben, maar een vaak voorkomend probleem is de koppeling tussen de dataset en de view service. 
 
-Als er een view service beschikbaar is, maar niet getoond wordt in de lijst, check dan of de koppeling aanwezig is met de metadata van de dataset.
-De link tussen de metadata van de dataset en de View Service wordt gelegd via het MetadataURL element van de Layer in het capabilities document van de OGC WMS service. Deze link moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service!
+Controleer eerst of de metadata van de view service in het NGR gepubliceerd is met de categorie INSPIRE, zie voor meer informatie ook de [paragraaf 'Publiceren INSPIRE-aanduiding'](#publiceren-inspire-aanduiding).
 
-Als laatste kan gecontroleerd worden of de link naar de metadata van de service opgenomen is in het element inspire_vs:ResourceLocator en of de metadata van de service in het NGR gepubliceerd is met de categorie INSPIRE, zie ook [hier](#publiceren-inspire-aanduiding)
+Als er een view service beschikbaar is in het NGR met de categorie INSPIRE, maar niet getoond wordt in de lijst in het INSPIRE Geoportal, check dan of de koppeling aanwezig is met de metadata van de dataset.
+De link tussen de metadata van de dataset en de view service wordt gelegd via het MetadataURL element van de Layer in het capabilities document van de OGC WMS service. Deze link moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service.
+
+Als laatste kan gecontroleerd worden of de link naar de metadata van de service opgenomen is in het element inspire_vs:ResourceLocator. 
 
 ![check 4_WMS](media/geoportaltip4.png "Check dataset service koppeling WMS")
 
-### Check 5: Daadwerkelijk download data
-Check of de data gedownload wordt nadat geklikt wordt op ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png).
-en daarna op de blauwe knop "Get Data Set".
+### Check 5: Daadwerkelijk downloadbare data
+Check of de dataset gedownload wordt, nadat geklikt wordt op ![image](https://user-images.githubusercontent.com/80040145/160800473-0b6b17e2-65e5-4254-820a-02fdd9552723.png) in het INSPIRE Geoportal. Klik daarna op de blauwe knop 'Get Data Set' om te kijken of de dataset daadwerkelijk gedownload wordt.
 
-### Check 6: Daadwerkelijk viewable data
-Check of de data getoond wordt nadat geklikt wordt op ![image](https://user-images.githubusercontent.com/80040145/161044869-375c840f-0b01-489c-a644-37818329f354.png).
-en daarna op de blauwe knop "Preview Data Set".
+### Check 6: Daadwerkelijk viewbare data
+Check of de data getoond wordt, nadat geklikt wordt op ![image](https://user-images.githubusercontent.com/80040145/161044869-375c840f-0b01-489c-a644-37818329f354.png) in het INSPIRE Geoportal. Klik daarna op de blauwe knop 'Preview Data Set' om te kijken of de dataset daadwerkelijk getoond wordt in het INSPIRE Geoportal.
 
 ### Check 7: Data en services valideren
-Als check 5 of 6 niet gelukt is, valideer dan de data en de services zoals beschreven in het hoofdstuk over [valideren](#validatie).
+Als check 5 of 6 niet gelukt is, valideer dan de data en de services zoals beschreven in het hoofdstuk over [validatie](#validatie).
 
-### Check 8: Priority Data Sets Viewer
-Check of de data is te vinden is onder het betreffende Directive voor e-reporting, als dit van [toepassing](#prioritaire-datasets) is.
-Ga daarvoor weer naar het startscherm van het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">Geoportal</a> en kies nu "Priority Data Sets Viewer".
+### Check 8: Zijn prioritaire datasets te vinden
+Check voor de [prioritaire datasets](#prioritaire-datasets) of deze te vinden zijn onder de betreffende directive voor e-reporting. Ga hiervoor naar het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> en kies nu de optie "Priority Data Sets Viewer".
 
-![check 8 PDS Viewer](media/geoportaltip8a.png "Start Priority Data Sets Viewer ")
+![check 8 PDS Viewer](media/geoportaltip8a.png "Start Priority Data Sets Viewer")
 
-En kies dan het betreffende domein:
+Onder de Priority Data Sets Viewer zijn drie ingangen:
+- per lidstaat
+- per milieudomein
+- per milieudirective
+
+Hieronder zijn de verschillende milieudomeinen te zien die onderscheiden worden:
 
 ![check 8_Domein selectie](media/geoportaltip8b.png "Selecteer voor e-reporting domein")
 
-In de meeste gevallen is de (meta)data te vinden onder de domeinen van de prioritaire datasets. 
-Dan wordt dit zichtbaar door een selectie toe te passen op een domein en lidstaat.
-Check of de (meta)data voorkomt in de lijst met data met een selectie op het Directive waar de data ook voor beschikbaar wordt gemaakt.
+In de meeste gevallen is de (meta)data te vinden onder de milieudomeinen van de prioritaire datasets. 
+Dit wordt zichtbaar door te selecteren op een milieudomein en vervolgens op Nederland.
+Check of de (meta)data voorkomt in de lijst met datasets.
 
 ![check 8_Lijst](media/geoportaltip8c.png "lijst na selectie domein en land")
 
-Als de (meta)data niet voorkomt onder de Directive, dan is het INSPIRE prioritaire dataset trefwoord en citatie naar de codelijst waarschijnlijk onjuist.
-Voor prioritaire datasets dienen de juiste trefwoorden en de juiste citatie informatie van thesaurus te zijn opgenomen, zie voor [instructie](#hoe-om-te-gaan-met-anchor-en-uri).
-De prioritaire datasets zijn ook opgenomen in het <a href="https://inspireaanmerking.nl/" target="_blank">Aanmerkingsregister</a>.
+Als de (meta)data niet voorkomt in het Priority Data Sets Viewer, check dan of de dataset wel voorkomt in het INSPIRE Geoportal via de checks 1 t/m 7. Als deze checks allemaal correct zijn, dan is waarschijnlijk het INSPIRE prioritaire dataset trefwoord en citatie naar de codelijst onjuist.
+Voor prioritaire datasets dienen de juiste trefwoorden en de juiste citatie informatie van thesaurus te zijn opgenomen. In de paragraaf ['Hoe om te gaan met anchor en URI'](#hoe-om-te-gaan-met-anchor-en-uri) staat precies beschreven hoe.
 
 ### Check 9: Overige checks
 Bij INSPIRE geldt dat je maar 1 dataset in de WFS kan ontsluiten <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">(TG INSPIRE Download Services)</a>
 
 ![check 9_TG RQ 52](media/geoportaltip_TG-RQ-52.png "max 1 dataset per WFS")
 
-Het Geoportal wordt maandelijks geharvest, zie <a href="https://inspire-geoportal.ec.europa.eu/harvesting_status.html" target="_blank">harvesting status</a> en zoek dan op NL voor actuele harvest datum. 
-Als door de dataprovider veel aanpassingen zijn doorgevoerd en het resultaat daarvan wil zien in het Geoportal, stuur dan even een mail naar de INSPIRE helpdesk (inspire@geonovum.nl). In zulke gevallen is het mogelijk om een nieuwe harvest te laten runnen!
+~~Het INSPIRE Geoportal wordt maandelijks geharvest, zie <a href="https://inspire-geoportal.ec.europa.eu/harvesting_status.html" target="_blank">harvesting status</a> en zoek dan op NL voor actuele harvest datum. 
+Als door de dataprovider veel aanpassingen zijn doorgevoerd en het resultaat daarvan wil zien in het Geoportal, stuur dan even een mail naar de INSPIRE helpdesk (inspire@geonovum.nl). In zulke gevallen is het mogelijk om een nieuwe harvest te laten runnen!~~
