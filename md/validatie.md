@@ -168,7 +168,8 @@ Als de metadata van de service met de categorie INSPIRE is gepubliceerd in het N
 Daarvoor moeten we onderscheid maken tussen de soort service: [WFS](#wfs), [ATOM](#atom-feed), [SOS](#sos) en [WCS](#wcs).
 
 ***WFS***
-Bij INSPIRE geldt dat je maar één dataset in de WFS kan ontsluiten <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">(TG INSPIRE Download Services)</a>. 
+
+Bij INSPIRE geldt dat je maar één dataset in de WFS kan ontsluiten, zie de [vereisten voor WFS](#vereisten-wfs). 
 
 ![check 9_TG RQ 52](media/geoportaltip_TG-RQ-52.png "max 1 dataset per WFS")
 
