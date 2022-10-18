@@ -104,7 +104,7 @@ Voor de meeste service validators (WMS, WMTS, WFS pre-defined, WFS direct access
 
 ## Link checker
 
-Om direct inzicht te hebben in de relaties tussen datasets, metadata en services is het niet nodig te wachten op de harvesting van het [Europese INSPIRE geoportal](#europese-inspire-geoportal). Met de <a href="https://inspire-geoportal.ec.europa.eu/linkagechecker.html" target="_blank">Link checker</a> in het Europese INSPIRE geoportal kan deze check op elk willekeurig moment worden uitgevoerd.
+Om direct inzicht te hebben in de relaties tussen datasets, metadata en services is het niet nodig te wachten op de [harvesting van het Europese INSPIRE geoportal](#harvesting). Met de <a href="https://inspire-geoportal.ec.europa.eu/linkagechecker.html" target="_blank">Link checker</a> in het Europese INSPIRE geoportal kan deze check op elk willekeurig moment worden uitgevoerd.
 
 Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE geoportal</a> toont in welke mate een dataset ook daadwerkelijk raadpleegbaar (via een viewservice) en downloadbaar (via een downloadservice) is. Hiervoor moeten diverse verwijzingen (via links en identifiers) tussen metadata en services goed opgegeven zijn. Dit is essentieel voor een werkende infrastructuur: als een dataset niet raadpleegbaar of niet downloadbaar is, is deze niet goed aangeboden aan INSPIRE en niet goed of zelfs helemaal niet bruikbaar.
 
@@ -113,8 +113,8 @@ Om de verwijzingen te controleren op juistheid bevat het INSPIRE geoportal de <a
 De Link checker kan gestart worden door bestaande of nieuwe metadata van een dataset en services op te geven. Advies is om altijd voor New metadata te kiezen, omdat dan ook wijzigingen gelijk getest kunnen worden. Een korte Engelstalige beschrijving hoe de verschillende verwijzingen tot stand moeten komen, is <a href="https://inspire-geoportal.ec.europa.eu/files/INSPIRE_Geoportal_process_for_data-service_linking_v1.0.pdf" target="_blank">hier</a> te vinden. 
 In de volgende paragraaf wordt hier ook nog verder op ingegaan bij [check 3 (heeft de data een download link)](#check-3-heeft-de-data-een-download-link) en [check 4 (heeft de data een view link)](#check-4-heeft-de-data-een-view-link).
 
-## Tips om data te vinden, viewbaar en downoadbaar in het INSPIRE Geoportal te krijgen
-Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> toont in welke mate een dataset ook daadwerkelijk raadpleegbaar (via een viewservice) en downloadbaar (via een downloadservice) is. Hiervoor moeten diverse verwijzingen (via links en identifiers) tussen metadata en services goed opgegeven zijn. 
+## Tips om data te vinden, viewbaar en downoadbaar in het INSPIRE geoportal te krijgen
+Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE geoportal</a> toont in welke mate een dataset ook daadwerkelijk raadpleegbaar (via een viewservice) en downloadbaar (via een downloadservice) is. Hiervoor moeten diverse verwijzingen (via links en identifiers) tussen metadata en services goed opgegeven zijn. 
 
 Om de verwijzingen te controleren is in deze paragraaf aangegeven op welke elementen de relatie tussen data en service wordt gelegd en wat de oorzaak kan zijn als data en services niet in het INSPIRE Geoportal getoond wordt.
 
@@ -128,7 +128,7 @@ Loop hiervoor onderstaande checks door:
 7. Check of de data, service en metadata valide is.
 8. Check of de data te vinden is onder het domein voor e-reporting.
 
-Als alle onderstaande checks zijn doorlopen en de eventuele aanpassingen zijn doorgevoerd, kan vervolgens met de [Link checker](#link-checker) worden gecontroleerd of de relaties tussen de dataset, metadata en services wel goed is gelegd. 
+Als alle onderstaande checks zijn doorlopen en de eventuele aanpassingen zijn doorgevoerd, kan vervolgens met de [Link checker](#link-checker) worden gecontroleerd of de relaties tussen de dataset, metadata en services wel goed is gelegd. Maandelijks vindt de harvest van het NGR naar het INSPIRE Geoportal plaats, zie [hier](#harvesting) voor meer informatie.
 
 ### Check 1: Is de data beschikbaar in het INSPIRE Geoportal?
 Ga naar het startscherm van het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> en kies de INSPIRE Thematic Viewer.
