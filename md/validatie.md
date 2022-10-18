@@ -133,7 +133,7 @@ Als alle onderstaande checks zijn doorlopen en de eventuele aanpassingen zijn do
 ### Check 1: Is de data beschikbaar in het INSPIRE Geoportal?
 Ga naar het startscherm van het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> en kies de INSPIRE Thematic Viewer.
 ![check 8 PDS Viewer](media/geoportaltip8a.png "Start Priority Data Sets Viewer ") 
-Kies vervolgens het INSPITE thema waar de dataset ondervalt en kies vervolgen voor Nederland. Check of
+Kies vervolgens het INSPIRE thema waar de dataset ondervalt en kies vervolgen voor Nederland. Check of
 1. De (meta)data voorkomt in de lijst met datasets. 
 Als de (meta)data voorkomt in de lijst met data en 
 2. De data ook daadwerkelijk te downloaden en te bekijken is, dan is verdere actie niet noodzakelijk.
