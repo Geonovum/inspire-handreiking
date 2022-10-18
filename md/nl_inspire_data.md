@@ -40,7 +40,7 @@ Daarnaast kan de dataprovider alle eigen datasets exporteren naar een Excel-best
 
 Tot slot zijn in het Aanmerkingsregister een drietal <a href="https://inspireaanmerking.nl/kwaliteitscontrole/" target="_blank">kwaliteitscontroletools</a> opgenomen:
 - Twee tools richten zich op de metadata in het Aanmerkingregister en het NGR: metadata in het Aanmerkingsregister die ontbreekt in het Nationaal Georegister of andersom. Deze twee controles worden dagelijks uitgevoerd.
-- De derde kwaliteitscontrole toont de harvestresultaten uit het [Europese INSPIRE geoportal](#europese-inspire-geoportal). Het overzicht toont waar nog problemen zijn met het downloadbaar of viewbaar beschikbaar maken van de dataset in het Europese INSPIRE geoportal. Elke eerste maandag van de maand wordt er geharvest naar het Europese INSPIRE geoportal en wordt dit overzicht gegenereerd.
+- De derde kwaliteitscontrole toont de [harvestresultaten](#harvesting) uit het Europese INSPIRE geoportal. Het overzicht laat zien waar nog problemen zijn met het downloadbaar of viewbaar beschikbaar maken van de dataset in het Europese INSPIRE geoportal. 
 
 ### Wijziging van de aanmerking
 In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. Dit kan om verschillende redenen, bijvoorbeeld omdat:
