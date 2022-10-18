@@ -104,7 +104,7 @@ Voor de meeste service validators (WMS, WMTS, WFS pre-defined, WFS direct access
 
 ## Link checker
 
-Om direct inzicht te hebben in de relaties tussen datasets, metadata en services is het niet nodig te wachten op de harvesting van het Europese INSPIRE geoportal. Met de <a href="https://inspire-geoportal.ec.europa.eu/linkagechecker.html" target="_blank">Link checker</a> in het Europese INSPIRE geoportal kan deze check op elk willekeurig moment worden uitgevoerd.
+Om direct inzicht te hebben in de relaties tussen datasets, metadata en services is het niet nodig te wachten op de harvesting van het [Europese INSPIRE geoportal](#europese-inspire-geoportal). Met de <a href="https://inspire-geoportal.ec.europa.eu/linkagechecker.html" target="_blank">Link checker</a> in het Europese INSPIRE geoportal kan deze check op elk willekeurig moment worden uitgevoerd.
 
 Het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE geoportal</a> toont in welke mate een dataset ook daadwerkelijk raadpleegbaar (via een viewservice) en downloadbaar (via een downloadservice) is. Hiervoor moeten diverse verwijzingen (via links en identifiers) tussen metadata en services goed opgegeven zijn. Dit is essentieel voor een werkende infrastructuur: als een dataset niet raadpleegbaar of niet downloadbaar is, is deze niet goed aangeboden aan INSPIRE en niet goed of zelfs helemaal niet bruikbaar.
 
@@ -127,7 +127,8 @@ Loop hiervoor onderstaande checks door:
 6. Check of de data daadwerkelijk viewable is.
 7. Check of de data, service en metadata valide is.
 8. Check of de data te vinden is onder het domein voor e-reporting.
-9. Overige aandachtspunten.
+
+Als alle onderstaande checks zijn doorlopen en de eventuele aanpassingen zijn doorgevoerd, kan vervolgens met de [Link checker](#link-checker) worden gecontroleerd of de relaties tussen de dataset, metadata en services wel goed is gelegd. 
 
 ### Check 1: Is de data beschikbaar in het INSPIRE Geoportal?
 Ga naar het startscherm van het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> en kies de INSPIRE Thematic Viewer.
@@ -167,6 +168,9 @@ Als de metadata van de service met de categorie INSPIRE is gepubliceerd in het N
 Daarvoor moeten we onderscheid maken tussen de soort service: [WFS](#wfs), [ATOM](#atom-feed), [SOS](#sos) en [WCS](#wcs).
 
 ***WFS***
+Bij INSPIRE geldt dat je maar één dataset in de WFS kan ontsluiten <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">(TG INSPIRE Download Services)</a>. 
+
+![check 9_TG RQ 52](media/geoportaltip_TG-RQ-52.png "max 1 dataset per WFS")
 
 De koppeling tussen een dataset en een WFS wordt in het INSPIRE Geoportal gelegd via het SpatialDataSetIdentifier element in de Extended Capabilities van de OGC WFS service:
 
@@ -174,7 +178,7 @@ Het SpatialDataSetIdentifier element bestaat uit twee subelementen:
 - identifier: inspire_dls:SpatialDataSetIdentifier/inspire_common:Code
 - namespace: inspire_dls:SpatialDataSetIdentifier/inspire_common:Namespace
 
-De SpatialDataSetIdentifier moet hetzelfde zijn als die in het element unieke identifier van de bron, in de metadata van de dataset.
+De SpatialDataSetIdentifier moet hetzelfde zijn als die in het element <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#unieke-identifier-van-de-bron" target="_blank">unieke identifier van de bron</a> in de metadata van de dataset.
 
 De inspire_common:Namespace mag worden weggelaten als er geen aparte namespace in de metadata van de dataset is opgenomen voor de dataset identifier. De dataset identifier en de inspire_common:Code, moeten in dat geval de unieke bron identificatie van de dataset bevatten.
 Als er wel een aparte namespace bij de dataset identifier in de metadata staat, dient het element inspire_common:Namespace die namespace te bevatten. Dit betekent wel dat de metadata de zogenaamde RS_Identifier gebruikt, met twee elementen: een code en een codeSpace voor de namespace, om de dataset te identificeren. 
@@ -198,7 +202,8 @@ De link bevat:
 Deze link moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service.
 
 Daarnaast wordt in deze entry ook de identifier en namespace van de dataset opgenomen in het spatial_dataset_identifier_code element en spatial_dataset_identifier_namespace element.
-De identifier moet hetzelfde zijn als die in het element unieke identifier van de bron, zoals opgegeven in de metadata van de dataset.
+
+De identifier moet hetzelfde zijn als die in het element <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#unieke-identifier-van-de-bron" target="_blank">unieke identifier van de bron</a>, zoals opgegeven in de metadata van de dataset.
 
 De elementen voor de INSPIRE namespace dienen alleen ingevuld te worden als er een apart namespace element is, bij de dataset identifier in de dataset metadata.
 De dataset identifier en de spatial_dataset_identifier_code, moeten in dat geval de unieke bron identificatie van de dataset bevatten.
@@ -218,7 +223,7 @@ capabilities van de SOS via ”SpatialDataSet-Identifier”
 
 Hierin wordt  de identifier en eventueel de namespace van de dataset opgenomen. 
 
-De identifier moet hetzelfde zijn als die in het element unieke identifier van de bron, in de metadata van de dataset.
+De identifier moet hetzelfde zijn als die in het element <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#unieke-identifier-van-de-bron" target="_blank">unieke identifier van de bron</a>, zoals opgegeven in de metadata van de dataset.
 
 De inspire_common:Namespace mag worden weggelaten als er geen aparte namespace in de metadata van de data is opgenomen voor de dataset identifier. De dataset identifier en de inspire_common:Code, moeten in dat geval de unieke bron identificatie van de dataset bevatten.
 Als er wel een aparte namespace bij de dataset identifier in de metadata staat, dient het element inspire_common:Namespace die namespace te bevatten. Dit betekent wel dat de metadata de zogenaamde RS_Identifier gebruikt, met twee elementen: een code en een codeSpace voor de namespace, om de dataset te identificeren. 
@@ -234,7 +239,7 @@ De koppeling tussen de dataset en de WCS wordt gelegd in het element SpatialData
 
 Hierin wordt  de identifier en eventueel de namespace van de dataset opgenomen. 
 
-De identifier moet hetzelfde zijn als die in het element unieke identifier van de bron, in de metadata van de dataset.
+De identifier moet hetzelfde zijn als die in het element <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#unieke-identifier-van-de-bron" target="_blank">unieke identifier van de bron</a>, zoals opgegeven in de metadata van de dataset.
 
 De inspire_common:Namespace mag worden weggelaten als er geen aparte namespace in de metadata van de data is opgenomen voor de dataset identifier. De dataset identifier en de inspire_common:Code, moeten in dat geval de unieke bron identificatie van de dataset bevatten.
 Als er wel een aparte namespace bij de dataset identifier in de metadata staat, dient het element inspire_common:Namespace die namespace te bevatten. Dit betekent wel dat de metadata de zogenaamde RS_Identifier gebruikt, met twee elementen: een code en een codeSpace voor de namespace, om de dataset te identificeren. 
@@ -251,9 +256,10 @@ Dit kan verschillende oorzaken hebben, maar een vaak voorkomend probleem is de k
 Controleer eerst of de metadata van de view service in het NGR gepubliceerd is met de categorie INSPIRE, zie voor meer informatie ook de [paragraaf 'Publiceren INSPIRE-aanduiding'](#publiceren-inspire-aanduiding).
 
 Als er een view service beschikbaar is in het NGR met de categorie INSPIRE, maar niet getoond wordt in de lijst in het INSPIRE Geoportal, check dan of de koppeling aanwezig is met de metadata van de dataset.
-De link tussen de metadata van de dataset en de view service wordt gelegd via het MetadataURL element van de Layer in het capabilities document van de OGC WMS service. Deze link moet hetzelfde zijn als de link in het OperatesOn element in de metadata van de service.
 
-Als laatste kan gecontroleerd worden of de link naar de metadata van de service opgenomen is in het element inspire_vs:ResourceLocator. 
+De link tussen de metadata van de dataset en de view service wordt gelegd via het MetadataURL element van de Layer in het capabilities document van de OGC WMS service. De identiefier in deze link moet hetzelfde zijn als de identifier in de link in het OperatesOn element in de metadata van de service. Het betreft de identifier van de metadata van de dataset.
+
+Als laatste kan gecontroleerd worden of in de ExtendedCapabilities de link naar de metadata van de service opgenomen is in het element inspire_common:MetadataURL. 
 
 ![check 4_WMS](media/geoportaltip4.png "Check dataset service koppeling WMS")
 
@@ -263,8 +269,8 @@ Check of de dataset gedownload wordt, nadat geklikt wordt op ![image](https://us
 ### Check 6: Daadwerkelijk viewbare data
 Check of de data getoond wordt, nadat geklikt wordt op ![image](https://user-images.githubusercontent.com/80040145/161044869-375c840f-0b01-489c-a644-37818329f354.png) in het INSPIRE Geoportal. Klik daarna op de blauwe knop 'Preview Data Set' om te kijken of de dataset daadwerkelijk getoond wordt in het INSPIRE Geoportal.
 
-### Check 7: Data en services valideren
-Als check 5 of 6 niet gelukt is, valideer dan de data en de services zoals beschreven in het hoofdstuk over [validatie](#validatie).
+### Check 7: Services valideren
+Als check 5 of 6 niet gelukt is, valideer dan de services zoals beschreven in het hoofdstuk over [validatie](#validatie).
 
 ### Check 8: Zijn prioritaire datasets te vinden
 Check voor de [prioritaire datasets](#prioritaire-datasets) of deze te vinden zijn onder de betreffende directive voor e-reporting. Ga hiervoor naar het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE Geoportal</a> en kies nu de optie "Priority Data Sets Viewer".
@@ -289,10 +295,4 @@ Check of de (meta)data voorkomt in de lijst met datasets.
 Als de (meta)data niet voorkomt in het Priority Data Sets Viewer, check dan of de dataset wel voorkomt in het INSPIRE Geoportal via de checks 1 t/m 7. Als deze checks allemaal correct zijn, dan is waarschijnlijk het INSPIRE prioritaire dataset trefwoord en citatie naar de codelijst onjuist.
 Voor prioritaire datasets dienen de juiste trefwoorden en de juiste citatie informatie van thesaurus te zijn opgenomen. In de paragraaf ['Hoe om te gaan met anchor en URI'](#hoe-om-te-gaan-met-anchor-en-uri) staat precies beschreven hoe.
 
-### Check 9: Overige checks
-Bij INSPIRE geldt dat je maar 1 dataset in de WFS kan ontsluiten <a href="https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services" target="_blank">(TG INSPIRE Download Services)</a>
 
-![check 9_TG RQ 52](media/geoportaltip_TG-RQ-52.png "max 1 dataset per WFS")
-
-~~Het INSPIRE Geoportal wordt maandelijks geharvest, zie <a href="https://inspire-geoportal.ec.europa.eu/harvesting_status.html" target="_blank">harvesting status</a> en zoek dan op NL voor actuele harvest datum. 
-Als door de dataprovider veel aanpassingen zijn doorgevoerd en het resultaat daarvan wil zien in het Geoportal, stuur dan even een mail naar de INSPIRE helpdesk (inspire@geonovum.nl). In zulke gevallen is het mogelijk om een nieuwe harvest te laten runnen!~~
