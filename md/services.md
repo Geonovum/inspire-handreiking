@@ -947,6 +947,9 @@ De [Technical Guidance](#technische-inspire-richtlijnen) bevat de eisen die INSP
 - voldoen aan de conformance class HTTP GET uit WFS 2.0: de WFS dient in ieder geval de HTTP GET vormen van de requests te ondersteunen.
 - voldoen aan de conformance class Query uit FE 2.0. De WFS is in staat een query uit te voeren (zoals de stored query GetFeatureById).
 - ondersteuning van Stored Queries om de pre-defined datasets om alle mogelijke combinaties van het CRS, een dataset (via de dataset ID) en de taal terug te geven. De WFS moet hiervoor Stored Queries aanbieden.
+- de WFS dient één dataset te ontsluiten. 
+
+![check 9_TG RQ 52](media/geoportaltip_TG-RQ-52.png "max 1 dataset per WFS")
 
 De [Technical Guidance](#technische-inspire-richtlijnen) beschrijft in hoofdstuk 6 hoe een Download service voor Pre-defined datasets geïmplementeerd kan worden met een Web Feature Service (WFS) en Filter Encoding (FE).
 
