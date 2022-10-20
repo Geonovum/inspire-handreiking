@@ -3,7 +3,6 @@
 In dit hoofdstuk worden enkele aspecten van het gebruik van INSPIRE datasets behandeld.
 Bij de beoogde gebruiker wordt uitgegaan van een basiskennis op het gebied van geoinformatie.
 Het gebruik begint bij het vinden van de juiste dataset via de metadata in catalogi. 
-Na het bestuderen van de metadata moet vervolgens de juiste benadering van de data bepaald worden.
 Voor het gebruik maakt het uit of het gaat om het gebruik van alleen Nederlandse data of ook data van andere Europese lidstaten.
 Daarom zijn paragrafen hieronder, wanneer relevant opgesplitst in 2 delen op basis van dit onderscheid.
 
