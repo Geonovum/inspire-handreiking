@@ -69,26 +69,12 @@ Tips voor het vinden van Europese data:
 - Omdat datasets in de buurlanden vaak regionaal versnipperd zijn, loont het ook te zoeken op de regionale naam.
 - Houdt rekening met verschillen in de actualiteit en detailniveau.
 
-### Bestuderen metadata
-
-Bij het bestuderen van de metadata gaat het in eerste instantie om de vraag of de dataset geschikt is voor het doel van het gebruik. 
-Daarbij spelen aspecten als:
-- Actualiteit
-- Nauwkeurigheid
-- Volledigheid
-- Gebruiksbeperkingen
-- Hoe de data te benaderen is
-- Geharmoniseerd of As-is?
-- Beschikbare coördinaatsysteem
-
-In het geval de metadata niet het antwoord geeft of de data geschikt is, kan contact opgenomen worden met de organisatie die verantwoordelijk voor de dataset. De contactgegevens van de verantwoordelijke organisatie staan beschreven in de metadata.
 
 ## Benaderen
 
 In de metadata van de dataset is te zien op welke manier de data benaderd kan worden.
-INSPIRE eist dat data naast vindbaar ook viewbaar en downloadbaar is. Hieronder wordt het bekijken (viewen) van de data behandeld voor de Nederlandse data in het Nationaal Georegister (NGR) en daarna voor Europese data via het Europese INSPIRE Geoportal.
-Daarna wordt in het algemeen beschreven hoe het downloaden werkt en hoe de data in een GIS benaderd kan worden.
-Tenslotte wordt ook beschreven hoe de data in een browser benaderd kan worden. 
+INSPIRE eist dat data naast vindbaar ook viewbaar en downloadbaar is. Hieronder wordt het bekijken (viewen) van de data behandeld voor de Nederlandse data in het Nationaal Georegister (NGR) en daarna voor Europese data via het Europese INSPIRE Geoportal. Daarnaast is beschreven hoe de data in een GIS of browser benaderd kan worden.
+
 
 ### Viewen Nederlandse data via NGR
 
