@@ -62,7 +62,7 @@ Uiterlijk 6 maanden nadat de wijziging in de brongegevensverzameling was aangebr
 
 Dat betekent dat binnen 6 maanden nadat de brondata aangepast is:
 
-1. de metadata van de dataset conform INSPIRE specificaties moet worden aangeboden (zie [invulinstructie](#invulinstructie-dataset-metadata)
+1. de metadata van de dataset conform INSPIRE specificaties moet worden aangeboden
 2. de view en downloadservices conform INSPIRE specificaties moeten worden aangeboden
 3. de link naar de metadata in het aanmerkingsregister ingevuld moet worden
 
