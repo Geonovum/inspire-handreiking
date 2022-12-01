@@ -477,7 +477,7 @@
 				<gmd:DQ_ConceptualConsistency>
 					<gmd:nameOfMeasure> 
 					<gmx:Anchor
-						xlink:href="http://inspire.ec.europa.eu/metadatacodelist/QualityOfServiceCriteriaCode/availability">beschikbaarheid</gmx:Anchor>
+						xlink:href="http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteriaCode/availability">beschikbaarheid</gmx:Anchor>
 						</gmd:nameOfMeasure>
 					<gmd:measureDescription>
 						<gco:CharacterString>Beschikbaarheid op jaarbasis, uitgedrukt in percentage in tijd</gco:CharacterString>
@@ -496,7 +496,7 @@
 				<gmd:DQ_ConceptualConsistency>
 					<gmd:nameOfMeasure> 
 						<gmx:Anchor
-							xlink:href="http://inspire.ec.europa.eu/metadatacodelist/QualityOfServiceCriteriaCode/performance">performance</gmx:Anchor>
+							xlink:href="http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteriaCode/performance">performance</gmx:Anchor>
 					</gmd:nameOfMeasure>
 					<gmd:measureDescription>
 						<gco:CharacterString>Gemiddelde response tijd, uitgedrukt in seconden</gco:CharacterString>
@@ -515,7 +515,7 @@
 				<gmd:DQ_ConceptualConsistency>
 					<gmd:nameOfMeasure> 
 						<gmx:Anchor
-							xlink:href="http://inspire.ec.europa.eu/metadatacodelist/QualityOfServiceCriteriaCode/capacity">capaciteit</gmx:Anchor>
+							xlink:href="http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteriaCode/capacity">capaciteit</gmx:Anchor>
 					</gmd:nameOfMeasure>
 					<gmd:measureDescription>
 						<gco:CharacterString>Maximum aantal simultane requests per seconde die aan de performance criteria voldoen, uitgedrukt als aantal requests per seconde</gco:CharacterString>
