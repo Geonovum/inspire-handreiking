@@ -10,7 +10,7 @@ De INSPIRE-handreiking is als volgt opgebouwd:
 4. [Metadata](#metadata)
 5. [Services](#services)
 6. [Validatie](#validatie)
-7. [Checklist](#checklist)
+7. [Checklist](#checklist-voor-dataprovider)
 8. [Monitoring en rapportage](#monitoring-en-rapportage)
 9. [Extra informatie](#extra-informatie)
 
