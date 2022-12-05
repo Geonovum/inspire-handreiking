@@ -107,7 +107,7 @@ Deze is meestal direct te downloaden via de catologi als NGR of het INSPIRE Geop
 <!--- De directe URL voor het downloaden van de zip-file via een Atomfeed is te vinden via de service-feed. Dat is een xml-file waarvan de URL in de metadata van de dataset en de Atom service moet staan.
 In deze xml file staat dan dan een link naar de dataset-feed. Die bevat dan de directe URL voor het downloaden van de zip-file. Het komt voor dat deze link al direct is opgenomen in de service-feed. --->
 
-Het downloaden van data via een WFS, WCS, OGC-API-features of SOS kan via een [browser](#downloaden-via-een-browser), via een [GIS](#gebruik-in-gis-algemeen) of via catalogi als NGR of het INSPIRE Geoportal. 
+Het downloaden van data via een WFS, WCS, OGC-API-features of SOS kan via een [browser](#downloaden-via-een-browser), via een [GIS](#gebruik-nl-inspire-data-in-gis) of via catalogi als NGR of het INSPIRE Geoportal. 
 Het INSPIRE Geoportal heeft echter een beperking ingebouwd dat er maar 2 features geleverd worden om te voorkomen dat het systeem overbevraagd wordt.  
 
 De WFS geeft default een GML bestand terug. 
@@ -175,7 +175,7 @@ Hierin is:
 Via het GetCapabilities request kan o.a. gezien worden welke layers (lagen), styles en CRS-en ondersteund worden. Voor het voorbeeld van de bestuurlijke gebieden hierboven, zijn de Capabilities als volgt op te vragen:
 https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0?SERVICE=WMS&REQUEST=GetCapabilities
 
-Daarnaast zijn er verschillende applicaties die helpen bij het tonen van een WMS. Genoemd zijn al de GIS-applicaties zoals [QGIS](#gebruik-in-gis-algemeen), maar er zijn ook vele andere online applicaties ontwikkeld die gebruik maken van de WMS.
+Daarnaast zijn er verschillende applicaties die helpen bij het tonen van een WMS. Genoemd zijn al de GIS-applicaties zoals [QGIS](#gebruik-nl-inspire-data-in-gis), maar er zijn ook vele andere online applicaties ontwikkeld die gebruik maken van de WMS.
 Het enige wat voor deze applicaties van belang is als input, is de stam URL van de WMS, zoals te vinden in de metadata (zoals https://service.pdok.nl/kadaster/bestuurlijkegebieden/wms/v1_0? in het voorbeeld van de bestuurlijke gebieden hierboven).
 
 ### Downloaden via een browser
