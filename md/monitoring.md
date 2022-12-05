@@ -36,4 +36,4 @@ Zorg dat de metadata in het NGR op orde is. De Europese monitoringsrapportage wo
 
 **Geharmoniseerde data**
 
-Zie het hoofdstuk [Checklist](#checklist) voor specifieke punten die spelen rondom publiceren van geharmoniseerde datasets.
+Zie het hoofdstuk [Checklist](#checklist-voor-dataprovider) voor specifieke punten die spelen rondom publiceren van geharmoniseerde datasets.
