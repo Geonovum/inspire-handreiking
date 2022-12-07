@@ -353,7 +353,7 @@ De invulinstrucies voor *optie 1* staan in onderstaande tabel.
 | ---------------- | -------- |  ------------ | --------------- |
 | **Operatie naam**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.operationName | Naam van de operatie die toegang geeft tot de beschrijving van operaties en endpoints | getCapabilities |
 | **DCP**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.DCP | Dit element bevat het Distributed Computing Platforms waarop de operatie is geïmplementeerd. INSPIRE gaat van de default waarde WebServices uit. | WebServices |
-| **Connectie URL**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.connectPoint> CI_OnlineResource.linkage | Netwerkadres van de service | http://www.url_naar_de_capabilities_van_de_service |
+| **Connectie URL**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.connectPoint> CI_OnlineResource.linkage | Netwerkadres van de service | https://www.url_naar_de_capabilities_van_de_service |
 
 
 De invulinstrucies voor *optie 2* staan in onderstaande tabel.
