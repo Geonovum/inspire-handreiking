@@ -125,7 +125,7 @@ Conformiteit kan opgenomen worden voor meerdere specificaties. De elementengroep
 Ook voor "as-is" data is het opgeven van de conformiteit met de verordening verplicht. 
 
 
-Voor datasets en dataset-series die onder INSPIRE vallen, dient men de thema’s waar de data onder valt op te nemen als trefwoord. Deze INSPIRE-thema’s zijn te vinden in de <a href="http://www.eionet.europa.eu/gemet/inspire_themes" target="_blank">GEMET INSPIRE themes thesaurus</a>. Voor INSPIRE datasets moet tenminste één trefwoord uit deze thesaurus in de metadata worden opgenomen. Als een trefwoord uit de GEMET INSPIRE themes thesaurus ontbreekt, kan de metadata niet getoond worden in het Europese INSPIRE geoportal.
+Voor datasets en dataset-series die onder INSPIRE vallen, dient men de thema’s waar de data onder valt op te nemen als trefwoord. Deze INSPIRE-thema’s zijn te vinden in de <a href="https://www.eionet.europa.eu/gemet/nl/inspire-themes" target="_blank">GEMET INSPIRE themes thesaurus</a>. Voor INSPIRE datasets moet tenminste één trefwoord uit deze thesaurus in de metadata worden opgenomen. Als een trefwoord uit de GEMET INSPIRE themes thesaurus ontbreekt, kan de metadata niet getoond worden in het Europese INSPIRE geoportal.
 Het is ook mogelijk daarnaast zelfgedefinieerde trefwoorden, of trefwoorden uit een andere thesaurus op te nemen. Het element trefwoord, in combinatie met de thesaurus komt dan meerdere keren voor in de metadata. 
 
 
