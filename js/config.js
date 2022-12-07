@@ -7,7 +7,7 @@ var respecConfig = {
     {
       name: "Geonovum INSPIRE team",
       company: "Geonovum",
-      companyURL: "http://www.geonovum.nl/",
+      companyURL: "https://www.geonovum.nl/",
     }
     ],
   shortName: "INSPIRE-handreiking",
