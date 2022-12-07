@@ -769,7 +769,7 @@ Kenmerken zijn:
 - De Atomfeed beschrijft waar de data te downloaden is, op welke datum die gepubliceerd is en legt relaties met metadata-records.
 - De pre-defined dataset kent een metadata-record dat via de discovery service gevonden kan worden.
 
-De <a href="https://tools.ietf.org/html/rfc4287" target="_blank">Atom-standaard</a> is een (voorgestelde) standaard van IETF, the <a href="https://www.ietf.org/" target="_blank">Internet Engineering Task Force</a>. Atom is een XML-formaat om (op internet beschikbare) informatie te publiceren in feeds. Deze feeds bevatten vaak een algemeen deel en verscheidene items. Zo'n item (entry) bestaat uit elementen die de informatie beschrijven en ernaar verwijzen. Items kunnen bijvoorbeeld nieuwsberichten zijn, weblog-posts of gepubliceerde video's.
+De <a href="https://www.rfc-editor.org/rfc/rfc4287" target="_blank">Atom-standaard</a> is een (voorgestelde) standaard van IETF, the <a href="https://www.ietf.org/" target="_blank">Internet Engineering Task Force</a>. Atom is een XML-formaat om (op internet beschikbare) informatie te publiceren in feeds. Deze feeds bevatten vaak een algemeen deel en verscheidene items. Zo'n item (entry) bestaat uit elementen die de informatie beschrijven en ernaar verwijzen. Items kunnen bijvoorbeeld nieuwsberichten zijn, weblog-posts of gepubliceerde video's.
 
 De <a href="https://www.ogc.org/standards/georss" target="_blank">GeoRSS-specificatie</a> breidt feeds uit met elementen om de geografische eigenschappen van gegevens te publiceren. Dit is bijvoorbeeld een puntlocatie of bounding box van het gebied waar de gegevens betrekking op hebben.
 
