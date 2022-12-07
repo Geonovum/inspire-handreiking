@@ -106,7 +106,7 @@ Er zijn verschillende bedrijven die ETL software bouwen die specifiek gericht is
 - <a href="https://www.wetransform.to/products/halestudio/" target="_blank">HALE</a>; RVO heeft voor het gebruik van HALE een beknopte <a href="media/Handleiding_Gebruik_HALE_voor_INSPIRE_dataharmonisatie_120618.pdf" target="_blank">handleiding</a> geschreven;
 - <a href="https://www.talend.com/resources/what-is-etl/" target="_blank">Talend</a>;
 - <a href="https://www.altova.com/mapforce" target="_blank">MapForce</a>;
-- <a href="https://snowflakesoftware.com/geospatial-products/" target="_blank">GO Publisher</a>;
+- <a href="https://www.snowflakesoftware.com/geospatial-products/" target="_blank">GO Publisher</a>;
 - <a href="https://desktop.arcgis.com/en/arcmap/latest/extensions/data-interoperability/spatial-etl-tools.htm" target="_blank">ArcGIS Pro</a>.
 
 
