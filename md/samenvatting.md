@@ -12,6 +12,7 @@ De INSPIRE-handreiking is als volgt opgebouwd:
 6. [Validatie](#validatie)
 7. [Checklist](#checklist-voor-dataprovider)
 8. [Monitoring en rapportage](#monitoring-en-rapportage)
-9. [Extra informatie](#extra-informatie)
+9. [Gebruik INSPIRE data](#gebruik-inspire-data)
+10. [Extra informatie](#extra-informatie)
 
 Via de inhoudsopgave aan de linkerzijde kun je gemakkelijk navigeren tussen de verschillende hoofdstukken. 
