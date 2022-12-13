@@ -1,3 +1,27 @@
+//-- Postprocessors -------------------------------------------------------------------
+
+//-- haalt gh-pages weg aan het eind van een URL
+//-- Stopt zodra de eerste is gevonden (want komt maar 1x voor)
+//-- JvG 2019-11-12
+function custGHPG(respecConfig)  
+{
+  var tags = document.getElementsByTagName("a");
+  var srch = "gh-pages";
+  var slen = srch.length;
+  var i;
+
+  for (i = 0; i < tags.length; i++) 
+  {
+    if(tags[i].href.indexOf(srch) > -1)
+    {
+      console.log(tags[i].href + " is gevonden");
+      tags[i].href = tags[i].href.substring(0, tags[i].href.length - slen);
+      console.log(tags[i].href + " is aangepast");
+      break;
+    }
+  } 
+}
+
 var respecConfig = {
   specStatus: "GN-WV", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specStatus
   specType: "HR", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specType
@@ -18,4 +42,6 @@ var respecConfig = {
   // logos: [], // Geef een lege array op als er geen Geonovum logo moet staan
   doJsonLd: true,
   localBiblio: {},
+  
+  postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 };
