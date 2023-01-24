@@ -186,7 +186,7 @@ voor de INSPIRE namespaces gelden de volgende lexicografische spelregels (restri
 - Gebruik alleen lowercase letters in de namespace code;
 - Gebruik geen diacrieten in de namespace code, dus geen umlaut bijvoorbeeld;
 - Begin namespace code met een letter;
-- Gebruik minimaal 3 karakters. Lange namespace codes zijn niet wenselijk.
+- Gebruik minimaal 3 karakters. Lange namespace codes zijn onwenselijk en het register hanteert een maximum van 32 karakters.
 
 Deze regels zijn strikter dan de lexicografische regels in NEN3610, want daarin mogen bv wel hoofdletters gebruikt worden.
 Deze regels vallen echter wel binnen de lexicografische regels in NEN3610. Daarmee zou conform beide, data beschikbaar kunnen worden gesteld.
