@@ -8,7 +8,7 @@ In de onderstaande tabel staan de belangrijkste INSPIRE-documenten voor de datah
 
 |Titel | Versie | Datum | Opmerking |
 |-----------------|-------------|-------------|-------------|
-| <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">INSPIRE dataspecificaties</a> | 4.0  | 2017-04-01   | Dataspecificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
+| <a href="https://github.com/INSPIRE-MIF/technical-guidelines" target="_blank">INSPIRE dataspecificaties</a> | 4.0  | 2017-04-01   | Dataspecificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
 | <a href="https://inspire.ec.europa.eu/schemas/" target="_blank">GML Application schemas</a> | 4.0  |    | GML applicatie schema's voor alle themas. De wijzigingen aan de applicatie schema's worden beheerd op de <a href="https://github.com/INSPIRE-MIF/application-schemas" target="_blank"> Github repository INSPIRE XML schemas</a>.   |
 | <a href="https://inspire.ec.europa.eu/codelist" target="_blank">Codelijstregister</a>  |  |    | Bevat de codelijsten en hun waarden  |
 | <a href="https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model" target="_blank">INSPIRE Generic Conceptual Model (GCM; D2.5)</a> | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
@@ -28,7 +28,7 @@ Daarnaast zijn de onderstaande documenten ook handig bij dataharmonisatie:
 Om data consistent te kunnen uitwisselen beschrijft INSPIRE in de INSPIRE dataspecificaties voor elk thema een datamodel van de gegevens die uitgewisseld moeten worden. Daarnaast beschrijft het ook een bestandsformaat waarin de gegevens moeten worden uitgewisseld. Algemene specificaties (die voor alle thema's hetzelfde zijn) worden beschreven in het <a href="https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model" target="_blank">Generic Conceptual Model (GCM)</a>. Een INSPIRE dataspecificatie moet dus altijd gelezen worden in de context van dit generieke conceptuele model.
 
 ### INSPIRE dataspecificaties
-Voor alle 34 INSPIRE-thema's is door de EU een INSPIRE dataspecificatie vastgelegd die beschrijft welke gegevens en op welke manier deze gegevens moeten worden geleverd. Zoals in de tabel met belangrijke documenten is aangegeven, zijn de INSPIRE dataspecificaties <a href="https://inspire.ec.europa.eu/data-specifications/2892" target="_blank">hier</a> te vinden. 
+Voor alle 34 INSPIRE-thema's is door de EU een INSPIRE dataspecificatie vastgelegd die beschrijft welke gegevens en op welke manier deze gegevens moeten worden geleverd. Zoals in de tabel met belangrijke documenten is aangegeven, zijn de INSPIRE dataspecificaties <a href="https://github.com/INSPIRE-MIF/technical-guidelines" target="_blank">hier</a> te vinden. 
 
 De INSPIRE dataspecificaties zijn per annex gegroepeerd:
 
@@ -268,8 +268,8 @@ Naast de geometrische benadering van 'valide objecten' zijn er ook specifieke re
 Binnen de INSPIRE thema's **Hydrografie** en **Vervoersnetwerken** zijn er aanvullende eisen gedefinieerd over het op elkaar aansluiten van deze netwerken (voorbeeld: wegen op waterwegen op spoor). Hiervoor is een mechanisme uitgewerkt waarin aangegeven moet worden welke knooppunten op elkaar horen aan te sluiten. Hiermee is het mogelijk de verschillende netwerken te koppelen zonder dat deze fysiek al op elkaar liggen. Dit moet op datasetniveau worden opgepakt.
 
 De aanvullende eisen hiervoor staan in de subparagraaf 'Logical Consistency – Topological consistency' van de INSPIRE dataspecificaties: 
-- voor het INSPIRE thema **Hydrografie** is dit in paragraaf 7.1.5 van de betreffende <a href="https://inspire.ec.europa.eu/id/document/tg/hy" target="_blank">dataspecificatie</a>;
-- voor het INSPIRE thema **Vervoersnetwerken** is dit in paragraaf 7.1.6 van de betreffende <a href="https://inspire.ec.europa.eu/id/document/tg/tn" target="_blank">dataspecificatie</a>. 
+- voor het INSPIRE thema **Hydrografie** is dit in paragraaf 7.1.5 van de betreffende <a href="https://github.com/INSPIRE-MIF/technical-guidelines/blob/main/data/hy" target="_blank">dataspecificatie</a>;
+- voor het INSPIRE thema **Vervoersnetwerken** is dit in paragraaf 7.1.6 van de betreffende <a href="https://github.com/INSPIRE-MIF/technical-guidelines/blob/main/data/tn" target="_blank">dataspecificatie</a>. 
 
 ### Cross-boundary harmonisatie
 Bij het gebruik van geodata over lands-, regio- en administratieve grenzen heen kunnen verschillende soorten fouten optreden, o.a. door:
@@ -286,7 +286,7 @@ Het verbeteren van grensoverstijgende onregelmatigheden kan alleen op basis van 
 
 INSPIRE geeft op verschillende plaatsen aan welke zogenaamde *edge matching*-technieken gebruikt kunnen worden om met deze situaties om te gaan:
 - Annex B 'Management of connections at international boundaries' van <a href="https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.6_v3.0.pdf" target="_blank">Methodology for the development of data specifications (D2.6)</a> beschrijft verschillende situaties en welke oplossingen INSPIRE adviseert.
-- De <a href="https://inspire.ec.europa.eu/id/document/tg/hy" target="_blank">dataspecificatie</a> van **Hydrografie** beschrijft in paragraaf 10.2.7 de grensoverschrijdende dataharmonisatie situaties.
+- De <a href="https://github.com/INSPIRE-MIF/technical-guidelines/blob/main/data/hy" target="_blank">dataspecificatie</a> van **Hydrografie** beschrijft in paragraaf 10.2.7 de grensoverschrijdende dataharmonisatie situaties.
 - Ook bij het thema **Vervoersnetwerken** speelt het probleem van de edge-matching. Voor de grensoverschrijdende connectiviteit (verbindingen tussen netwerken over lands- en regiogrenzen heen) wordt hier gebruik van een mechanisme dat wordt geleverd door het [INSPIRE Base model - Generic Network Model (GNM)](#documentatie-dataharmonisatie).
 - De INSPIRE dataspecificaties van de andere thema's kennen geen specifieke aandacht voor dit onderwerp. Dat wil overigens niet zeggen dat de problematiek van cross-boundary harmonisation daar niet zal voorkomen.
 
