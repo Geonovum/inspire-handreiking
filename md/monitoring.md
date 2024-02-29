@@ -1,6 +1,6 @@
 # Monitoring en rapportage
 
-De Implementing Rule '<a href="https://inspire.ec.europa.eu/monitoring-and-reporting/69" target="_blank">Monitoring en Reporting</a>' is niet opgenomen in de processtappen die in de handreiking een leidraad voor dataproviders vormen. De achterliggende reden is dat deze IR in feite geen onderdeel is van het (technische) proces dat dataproviders moeten doorlopen om (meta)data en services met de INSPIRE richtlijnen te harmoniseren. Buiten dat is de IR wel degelijk van belang en leveren de dataproviders indirect gegevens, zodat de voortgang van de implementatie in Nederland gemonitord kan worden.
+De Implementing Rule '<a href="https://knowledge-base.inspire.ec.europa.eu/legislation/implementing-rules_en" target="_blank">Monitoring en Reporting</a>' is niet opgenomen in de processtappen die in de handreiking een leidraad voor dataproviders vormen. De achterliggende reden is dat deze IR in feite geen onderdeel is van het (technische) proces dat dataproviders moeten doorlopen om (meta)data en services met de INSPIRE richtlijnen te harmoniseren. Buiten dat is de IR wel degelijk van belang en leveren de dataproviders indirect gegevens, zodat de voortgang van de implementatie in Nederland gemonitord kan worden.
 
 De IR 'Monitoring en Reporting' omvat twee aspecten:
 - Rapportage over de coördinatie en infrastructuur;
