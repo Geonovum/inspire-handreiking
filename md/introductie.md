@@ -77,9 +77,6 @@ Hier is onder andere de volgende informatie te vinden:
 - <a href="https://github.com/INSPIRE-MIF/technical-guidelines" target="_blank">Technische guidelines</a>
 - <a href="https://inspire.ec.europa.eu/portfolio/inspire-your-country" target="_blank">Overzicht van de implementatie van INSPIRE in de verschillende lidstaten</a>
 
-De online tool <a href="https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/FindYourScope.action" target="_blank">Find Your Scope</a> ondersteunt de dataproviders bij het bepalen van de INSPIRE thema's en ruimtelijke objecttypes die relevant zijn voor de dataset(s) die de dataproviders beheren. Er zijn drie manieren om de INSPIRE thema's en/of objecttypes te bepalen namelijk via een catalogus van alle INSPIRE objecttypes, via een interactieve werkflow of via direct zoeken.
-
-
 ### Europese INSPIRE geoportal
 In het Europese <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE geoportal</a> kan je Europese milieu gegevens vinden die onder de INSPIRE-richtlijn vallen. Dit portaal biedt verschillende zoekingangen. Zo is er een ingang op thema en een op datasets die relevant zijn voor milieurapportage. 
 Het Europese geoportal harvest de metadata van 36 officieel geregistreerde nationale data catalogi van Europese lidstaten en EFTA landen. Het INSPIRE Geoportal team wordt ontwikkeld door het Joint Research Centre (JRC).
