@@ -80,7 +80,7 @@ Voor [prioritaire datasets voor e-reporting](#prioritaire-datasets) is de aanvul
 
 | Metadata-element 									| Longname 		| INSPIRE-verplicht | Omschrijving 	| Voorbeeldwaarde |
 |------------										|-------------	|-------------		|------------	|-------|
-| **URL**  											| MD_Metadata.distributionInfo> MD_Distribution.transferOptions> MD_DigitalTransferOptions.onLine> CI_OnlineResource.linkage | Ja | Voor INSPIRE wordt hier ten minste de URL van de view- en de downloadservice opgenomen naar het accesspoint (voor WMS en WFS is dat de capabilities). Als er meerdere datasets in één service worden ontsloten wordt hier ook het endpoint van elke dataset (zowel view als download) opgenomen. | http://inspirelab.geonovum.nl/test/rws/wms?request=GetCapabilities |
+| **URL**  											| MD_Metadata.distributionInfo> MD_Distribution.transferOptions> MD_DigitalTransferOptions.onLine> CI_OnlineResource.linkage | Ja | Voor INSPIRE wordt hier ten minste de URL van de view- en de downloadservice opgenomen naar het accesspoint (voor WMS en WFS is dat de capabilities). Als er meerdere datasets in één service worden ontsloten wordt hier ook het endpoint van elke dataset (zowel view als download) opgenomen. | https://service.pdok.nl/brt/top10nl/wms/v1_0?request=GetCapabilities&service=wms |
 | **Protocol**  									| MD_Metadata.distributionInfo> MD_Distribution.transferOptions> MD_DigitalTransferOptions.onLine> CI_OnlineResource.protocol| Ja | Verplicht als er een URL is opgegeven. | xlink:href="http://www.opengis.net/def/serviceType/ogc/wms OGC:WMS |
 | **Applicatieprofiel**  							| MD_Metadata.distributionInfo> MD_Distribution.transferOptions> MD_DigitalTransferOptions.onLine> CI_OnlineResource.applicationProfile | Ja | Aanbevolen voor eenvoudigere dataservice-koppeling INSPIRE, hiermee wordt aangegeven dat aan betreffende technische specificatie wordt voldaan. Dit alleen opnemen voor het accesspoint (voor WMS en WFS is dat de capabilities). Kies een waarde uit http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType in een [anchor](#hoe-om-te-gaan-met-anchor-en-uri). | xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download Downloaddienst|
 | **Naam**  										| MD_Metadata.distributionInfo> MD_Distribution.transferOptions> MD_DigitalTransferOptions.onLine> CI_OnlineResource.name| Ja | Het is verplicht als het protocol één van de volgende waardes heeft: OGC:WMS, OGC:WFS, OGC:WMTS, OGC:WCS en INSPIRE:Atom.| Gemeentegrenzen |
@@ -248,7 +248,7 @@ De elementen Specificatie Titel, Specificatie Datum, Specificatie Datum Type, Ve
 
 ### Voorbeeldbestand XML voor INSPIRE service-metadata
 
-Hier is een <a href="https:media/Voorbeeld_Metadata_Services_2022.xml" target="_blank">voorbeeld-metadatabestand voor een service</a> te vinden.
+Hier is een <a href="media/Voorbeeld_Metadata_Services_2022.xml" target="_blank">voorbeeld-metadatabestand voor een service</a> te vinden.
 
 
 ## Spatial data services (SDS) metadata
@@ -353,7 +353,7 @@ De invulinstrucies voor *optie 1* staan in onderstaande tabel.
 | ---------------- | -------- |  ------------ | --------------- |
 | **Operatie naam**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.operationName | Naam van de operatie die toegang geeft tot de beschrijving van operaties en endpoints | getCapabilities |
 | **DCP**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.DCP | Dit element bevat het Distributed Computing Platforms waarop de operatie is geïmplementeerd. INSPIRE gaat van de default waarde WebServices uit. | WebServices |
-| **Connectie URL**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.connectPoint> CI_OnlineResource.linkage | Netwerkadres van de service | https://www.url_naar_de_capabilities_van_de_service |
+| **Connectie URL**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.connectPoint> CI_OnlineResource.linkage | Netwerkadres van de service | URL naar de capabilities van de service |
 
 
 De invulinstrucies voor *optie 2* staan in onderstaande tabel.
@@ -365,7 +365,7 @@ De invulinstrucies voor *optie 2* staan in onderstaande tabel.
 | **Parameter naam**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.parameters> SV_Parameter.name | Naam van de parameter zoals in de service voorkomt | Borehole |
 | **Parameter optionaliteit**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.parameters> SV_Parameter.optionality | Geeft aan of de parameter optioneel of verplicht is  | Verplicht |
 | **Parameter herhaalbaarheid**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.parameters> SV_Parameter.repeatability | Geeft aan of de parameter meerdere keren kan voorkomen | true |
-| **Connectie URL**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.connectPoint> CI_OnlineResource.linkage | Netwerkadres van de service | http://www.url_naar_de_capabilities_van_de_service |
+| **Connectie URL**	| MD_Metadata.identificationInfo> SV_ServiceIdentification.containsOperations> SV_OperationMetadata.connectPoint> CI_OnlineResource.linkage | Netwerkadres van de service | URL naar de capabilities van de service |
 
 
 

@@ -22,14 +22,14 @@ De aanmerking van de INSPIRE datasets heeft per annex plaats gevonden. Hieronder
 - Annex III: <a href="https://www.geonovum.nl/uploads/documents/Rapport%20Definitieve%20aanmerking%20INSPIRE%20Annex%20III%20v3.0.pdf" target="_blank">Rapport Definitieve aanmerking INSPIRE Annex III (2013)</a>
 
 ### Aanmerkingsregister
-Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt, heeft het Ministerie van BZK het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a> ontwikkeld. Het register is openbaar en online toegankelijk.
+Om inzicht te bieden in welke Nederlandse datasets voor INSPIRE zijn aangemerkt, heeft het Ministerie van BZK het <a href="https://www.aanmerking.nl/" target="_blank">aanmerkingsregister</a> ontwikkeld. Het register is openbaar en online toegankelijk.
 
-Het doel van het INSPIRE aanmerkingsregister is meervoudig:
+Het doel van het aanmerkingsregister is meervoudig:
 - In het aanmerkingsregister worden de aanmerkingen en wijzigingen op de aanmerkingen bijgehouden door het ministerie van BZK.
 - Via het aanmerkingsregister kan iedereen de voortgang van de INSPIRE implementatie volgen. 
-- Vanuit het aanmerkingsregister is er ook een directe link naar de publicatie van de metadata van betreffende dataset in het <a href="http://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister (NGR)</a>. De dataset is daar dan ook te raadplegen.
+- Vanuit het aanmerkingsregister is er ook een directe link naar de publicatie van de metadata van betreffende dataset in het <a href="https://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister (NGR)</a>. De dataset is daar dan ook te raadplegen.
 
-In het openbare gedeelte kan de bezoeker de <a href="https://inspireaanmerking.nl/aanmerkingsregister" target="_blank">aanmerkingen</a> bekijken en selecties maken op bijvoorbeeld dataprovider, thema en prioriteit. Ook kan de bezoeker een dataset <a href="https://inspireaanmerking.nl/aanmelden-dataset" target="_blank">aanmelden</a> als de bezoeker een datasets mist in het overzicht of denkt dat een bepaalde dataset wel in aanmerking komt voor INSPIRE.
+In het openbare gedeelte kan de bezoeker de <a href="https://www.aanmerking.nl/aanmerkingsregister" target="_blank">aanmerkingen</a> bekijken en selecties maken op bijvoorbeeld dataprovider, thema en prioriteit. Ook kan de bezoeker een dataset <a href="https://www.aanmerking.nl/aanmelden-dataset" target="_blank">aanmelden</a> als de bezoeker een datasets mist in het overzicht of denkt dat een bepaalde dataset wel in aanmerking komt voor INSPIRE.
 
 Naast een openbare gedeelte heeft het aanmerkingregister ook een gesloten gedeelte voor de INSPIRE dataproviders. De gesloten omgeving voorziet in extra functionaliteit om het aanmerkings- en implementatieproces te ondersteunen. Binnen deze omgeving kunnen dataproviders per dataset:
 - de directe link naar de publicatie van de metadata van betreffende dataset in het NGR opnemen voor zowel de as-is als de geharmoniseerde dataset;
@@ -38,7 +38,7 @@ Naast een openbare gedeelte heeft het aanmerkingregister ook een gesloten gedeel
 
 Daarnaast kan de dataprovider alle eigen datasets exporteren naar een Excel-bestand. 
 
-Tot slot zijn in het Aanmerkingsregister een drietal <a href="https://inspireaanmerking.nl/kwaliteitscontrole/" target="_blank">kwaliteitscontroletools</a> opgenomen:
+Tot slot zijn in het Aanmerkingsregister een drietal <a href="https://www.aanmerking.nl/kwaliteitscontrole/" target="_blank">kwaliteitscontroletools</a> opgenomen:
 - Twee tools richten zich op de metadata in het Aanmerkingregister en het NGR: metadata in het Aanmerkingsregister die ontbreekt in het Nationaal Georegister of andersom. Deze twee controles worden dagelijks uitgevoerd.
 - De derde kwaliteitscontrole toont de [harvestresultaten](#harvesting) uit het Europese INSPIRE geoportal. Het overzicht laat zien waar nog problemen zijn met het downloadbaar of viewbaar beschikbaar maken van de dataset in het Europese INSPIRE geoportal. 
 
@@ -49,7 +49,7 @@ In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dat
 - een andere organisatie de dataset gaat beheren of beschikbaar stellen; 
 - of omdat een actuelere versie van de dataset voorhanden is. 
 
-In de onderstaande figuur staat welke stappen doorlopen moeten worden om een aanmerking te wijzigen. Via het gesloten gedeelte van het INSPIRE aanmerkingsregister kan de dataprovider een wijzigingsverzoek indienen.
+In de onderstaande figuur staat welke stappen doorlopen moeten worden om een aanmerking te wijzigen. Via het gesloten gedeelte van het aanmerkingsregister kan de dataprovider een wijzigingsverzoek indienen.
 
 ![processtappenaanmerking](media/Processtappen_wijzigingsverzoek.png "De stappen die genomen moeten worden om een aanmerking te wijzigen.")
 
@@ -131,7 +131,7 @@ In 2017 heeft de Europese Commissie een fitness check afgerond over Environmenta
 
 **Hoe zijn de prioritaire datasets te vinden?**
 
-Alle Nederlandse prioritaire datasets voor e-reporting zijn vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>. In het Europese Geoportal zijn de datasets te vinden via de <a href="https://inspire-geoportal.ec.europa.eu/pdv_home.html" target="_blank">*Priority Data Sets Viewer*</a>. De dataproviders moeten hiervoor een extra trefwoord(en) opnemen in de [metadata van de dataset](#metadata-van-prioritaire-datasets) van de prioritaire datasets. Via de viewer kun je per lidstaat, milieudomein of via de verschillende milieurichtlijnen de datasets vinden.
+Alle Nederlandse prioritaire datasets voor e-reporting zijn vermeld in het <a href="https://www.aanmerking.nl/" target="_blank">aanmerkingsregister</a>. In het Europese Geoportal zijn de datasets te vinden via de <a href="https://inspire-geoportal.ec.europa.eu/pdv_home.html" target="_blank">*Priority Data Sets Viewer*</a>. De dataproviders moeten hiervoor een extra trefwoord(en) opnemen in de [metadata van de dataset](#metadata-van-prioritaire-datasets) van de prioritaire datasets. Via de viewer kun je per lidstaat, milieudomein of via de verschillende milieurichtlijnen de datasets vinden.
 
 #### Uitbreiding prioritaire datasets
 In het <a href="https://wikis.ec.europa.eu/display/InspireMIG/INSPIRE+work+programme+2021-24" target="_blank">Europese INSPIRE werkprogramma 2021-2024</a> worden de INSPIRE prioritaire datasets verder uitgebreid. 
@@ -148,4 +148,4 @@ De volgende prioriteiten zijn nu benoemd in Action 2.1:
 Meer informatie over Action 2.1 is te vinden op de <a href="https://github.com/INSPIRE-MIF/need-driven-data-prioritisation" target="_blank">Github Repository for INSPIRE MIWP Action 2.1 'Need-driven data prioritisation'</a>.
 
 #### IACS-datasets
-Vanuit DG Agri is de voorlopige prioritaire datasetlijst voor de IACS-datasets beschikbaar. Deze staat beschreven in hoofdstuk 3 in de <a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC121450" target="_blank"> *Technical Guidelines on IACS Spatial Data Sharing, Part 1*</a>. In deze technische guidelines staat ook beschreven hoe de dataproviders extra trefwoorden opnemen in de [metadata van de dataset](#metadata-van-prioritaire-datasets) van deze prioritaire IACS-datasets. De IACS-datasets zijn ook vermeld in het <a href="https://inspireaanmerking.nl/" target="_blank">INSPIRE aanmerkingsregister</a>.
+Vanuit DG Agri is de voorlopige prioritaire datasetlijst voor de IACS-datasets beschikbaar. Deze staat beschreven in hoofdstuk 3 in de <a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC121450" target="_blank"> *Technical Guidelines on IACS Spatial Data Sharing, Part 1*</a>. In deze technische guidelines staat ook beschreven hoe de dataproviders extra trefwoorden opnemen in de [metadata van de dataset](#metadata-van-prioritaire-datasets) van deze prioritaire IACS-datasets. De IACS-datasets zijn ook vermeld in het <a href="https://www.aanmerking.nl/" target="_blank">aanmerkingsregister</a>.

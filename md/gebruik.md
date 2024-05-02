@@ -56,8 +56,9 @@ Een link naar de xml metadata staat in de getoonde metadata zoals in de afbeeldi
 Wanneer een dataset niet te vinden is via het Europese INSPIRE Geoportal, dan kan deze mogelijk gevonden worden via de nationale of regionale catalogi van de lidstaten.
 Hieronder volgen enkele tips voor onze buurlanden:
 
-- <a href="https://www.geodaten.niedersachsen.de/" target="_blank">Nedersaksen</a> (Duitsland)
+- <a href="https://www.geodaten.niedersachsen.de/startseite/" target="_blank">Nedersaksen</a> (Duitsland)
 - <a href="https://www.geoportal.nrw/" target="_blank"> Noordrijn Westfalen</a> (Duitsland)
+- <a href="https://gdk.gdi-de.org/gdi-de/srv/dut/catalog.search#/home" target="_blank">Duitsland: Geodatencatalog</a> (Duitsland en ondersteunt Nederlands)
 - <a href="https://www.geopunt.be/" target="_blank">Vlaanderen</a> (België)
 - <a href="http://geoportail.wallonie.be/" target="_blank">Wallonië</a> (België)
 - <a href="https://ckan.publishing.service.gov.uk/dataset/" target="_blank">Groot Brittannië</a>
@@ -143,8 +144,8 @@ De stam URL van de WMS, zoals te vinden in de metadata, moet opgegeven worden en
 
 Nadat de verbinding is gemaakt, kan een laag uit de WMS gekozen worden en de kaartlaag zal worden toegevoegd en getoond.
 Daarna kunnen ook andere services worden toegevoegd, zoals bijvoorbeeld de WMS-en van de gemeentelijke administratieve eenheden van België en Duitsland via de URL's die in de metadata beschreven worden:
-- https://ccff02.minfin.fgov.be/geoservices/arcgis/services/INSPIRE/AU/MapServer/WMSServer
-- http://sg.geodatenzentrum.de/wms_dlm250_inspire? (let op, hier moet je de asorientatie negeren. Dat is een vinkje in de verbindingdetails)
+- https://ccff02.minfin.fgov.be/geoservices/arcgis/services/INSPIRE/AU/MapServer/WMSServer?service=WMS&request=GetCapabilities
+- https://www.wms.nrw.de/geobasis/wms_nw_inspire-verwaltungseinheiten_atkis-basis-dlm?REQUEST=GetCapabilities&SERVICE=WMS&VERSION=1.3.0
 
 Daarna ontstaat het volgende beeld:
 
@@ -180,7 +181,7 @@ Het enige wat voor deze applicaties van belang is als input, is de stam URL van 
 
 ### Downloaden via een browser
 
-Net als bij de WMS is de downloadservices WFS ook direct via de browser te bevragen met het GetCapabilities request. Om specifieke features op te vragen is het GetFeature request beschikbaar in combinatie met een filter. Een voorbeeld van een WFS is:
+Net als bij de WMS is de downloadservices WFS ook direct via de browser te bevragen met het GetCapabilities request. Om specifieke features op te vragen is het GetFeature request beschikbaar in combinatie met een filter. Een voorbeeld van een WFS-request is:
 https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0?service=WFS&version=2.0.0&request=GetFeature&typename=gemeentegebied&CRS=epsg:28992&format=GML&filter=%3CFilter%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Eidentificatie%3C%2FPropertyName%3E%3CLiteral%3EGM0503%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2FFilter%3E 
 
 Hierin is
@@ -190,6 +191,6 @@ Hierin is
 - ***typename=gemeentegebied*** de laagnaam
 - ***CRS=epsg:28992*** het gevraagde coordinaatsysteem voor de coordinaten
 - ***format=GML*** het outputformaat
-- ***filter=%3CFilter%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Eidentificatie%3C%2FPropertyName%3E%3CLiteral%3EGM0503%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2FFilter%3E*** de filter op de gemeente Delft met code GM0503.
+- ***filter=tekst tot het einde van het request*** de filter op de gemeente Delft met code GM0503.
 
 In de meeste browsers is dit daarna via de rechter muisknop op te slaan als een lokaal GML bestand.
