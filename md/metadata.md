@@ -24,7 +24,7 @@ Voor services geldt het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso
 
 INSPIRE specifiek zijn de aanvullende [invulinstructie dataset metadata](#invulinstructie-dataset-metadata) en [invulinstructie service metadata](#invulinstructie-service-metadata) beschikbaar. Deze invulinstructies staan verderop in de handreiking beschreven.
 
-Op dit moment is voor INSPIRE de metadata gebaseerd op ISO 19115 en ISO 19119 standaard. DCAT is een standaard in opkomst, die veel in open data portalen wordt gebruikt. Het is mogelijk om de INSPIRE / ISO metadata te transformeneren naar DCAT-AP, zodat de metadata voor een bredere community beschikbaar is. Deze transformatie is uitgewerkt in de [INSPIRE good practice](#good-practices): <a href="https://inspire.ec.europa.eu/good-practice/geodcat-ap" target="_blank">GeoDCAT-AP</a>.
+Op dit moment is voor INSPIRE de metadata gebaseerd op ISO 19115 en ISO 19119 standaard. DCAT is een standaard in opkomst, die veel in open data portalen wordt gebruikt. Het is mogelijk om de INSPIRE / ISO metadata te transformeneren naar DCAT-AP, zodat de metadata voor een bredere community beschikbaar is. Deze transformatie is uitgewerkt in de [INSPIRE good practice](#good-practices): <a href="https://knowledge-base.inspire.ec.europa.eu/evolution/good-practice-library/geodcat-ap_en" target="_blank">GeoDCAT-AP</a>.
 
 Zie voor meer informatie over metadata in het algemeen, het  <a href="https://www.geonovum.nl/geo-standaarden/metadata" target="_blank">dossier Metadata</a> op de Geonovum-website.
 
