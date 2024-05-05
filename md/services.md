@@ -1056,7 +1056,7 @@ Wanneer je zelf iets wil doen op het Geonovum testbed, dan kan <a href="https://
 
 De standaard voor <a href="https://docs.ogc.org/is/18-088/18-088.html" target="_blank">OGC SensorThings API</a> (STA) biedt een open, geospatiale en uniforme manier om de Internet of Things (IoT)-apparaten, gegevens en applicaties via het web met elkaar te verbinden. Op een hoog niveau biedt de OGC SensorThings API twee hoofdfunctionaliteiten en elke functie wordt afgehandeld door een onderdeel. De twee delen zijn het Sensing-gedeelte en het Tasking-gedeelte. Het Sensing-gedeelte biedt een standaard manier om observaties en metadata van heterogene IoT-sensorsystemen te beheren en op te halen. Het Tasking-gedeelte is gepland als een toekomstige werkactiviteit en zal in een apart document worden gedefinieerd als <a href="https://docs.opengeospatial.org/is/17-079r1/17-079r1.html" target="_blank">Part II van de SensorThings API</a>.
 
-Voor het publiceren van sensor data conform INSPIRE is de good practice <a href="https://inspire.ec.europa.eu/good-practice/ogc-sensorthings-api-inspire-download-service" target="_blank">OGC SensorThings API as an INSPIRE download service</a> relevant. 
+Voor het publiceren van sensor data conform INSPIRE is de good practice <a href="https://github.com/INSPIRE-MIF/gp-ogc-sensorthings-api" target="_blank">OGC SensorThings API as an INSPIRE download service</a> relevant. 
 
 
 ### Andere OGC API's
