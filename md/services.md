@@ -1074,7 +1074,7 @@ Spatial data services (SDS) zijn INSPIRE-services, waarmee operaties kunnen word
 
 Voor de Spatial Data Services (SDS), die wel INSPIRE data ontsluiten, maar geen view of download service zijn, gelden ook INSPIRE vereisten. Deze vereisten zijn beperkt voor de categorie invocable SDS en zijn uitgebreider voor de categorie harmonised SDS. De eisen zijn voornamelijk op het gebied van metadata, zie [Spatial Data Service (SDS) metadata](#spatial-data-services-sds-metadata). Alleen voor de categorie harmonised SDS, worden er ook aan de [service implementatie eisen](#vereisten-sds) gesteld. 
 
-De SDS zijn middels een amendement opgenomen in <a href="https://knowledge-base.inspire.ec.europa.eu/legislation/implementing-rules_en" target="_blank">Implementing Rules for Spatial Data  Services</a>. In de <a href="https://inspire.ec.europa.eu/Technical-Guidelines2/Spatial-Data-Services/580" target="_blank">Technical Guidance for INSPIRE Spatial Data Services and services allowing spatial data services to be invoked</a> zijn de vereisten voor implementatie opgenomen.
+De SDS zijn middels een amendement opgenomen in <a href="https://knowledge-base.inspire.ec.europa.eu/legislation/implementing-rules_en" target="_blank">Implementing Rules for Spatial Data  Services</a>. In de <a href="https://knowledge-base.inspire.ec.europa.eu/publications/technical-guidance-inspire-spatial-data-services-and-services-allowing-spatial-data-services-be_en" target="_blank">Technical Guidance for INSPIRE Spatial Data Services and services allowing spatial data services to be invoked</a> zijn de vereisten voor implementatie opgenomen.
 
 
 **SDS-categorieën**
