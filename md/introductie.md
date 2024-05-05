@@ -71,11 +71,11 @@ Dat betekent dat binnen 6 maanden nadat de brondata aangepast is:
 ### Europese INSPIRE website
 De <a href="https://inspire.ec.europa.eu/" target="_blank">Europese INSPIRE website</a> is een belangrijke bron voor informatie. 
 Hier is onder andere de volgende informatie te vinden:
-- <a href="https://inspire.ec.europa.eu/inspire-legislation/26" target="_blank">INSPIRE wetgeving</a>
+- <a href="https://knowledge-base.inspire.ec.europa.eu/legislation_en" target="_blank">INSPIRE wetgeving</a>
 - <a href="https://knowledge-base.inspire.ec.europa.eu/legislation/implementing-rules_en" target="_blank">Implementing rules</a>
-- <a href="https://github.com/INSPIRE-MIF/technical-guidelines" target="_blank">INSPIRE dataspecificaties</a>
+- <a href="https://github.com/INSPIRE-MIF/technical-guidelines/tree/main/data" target="_blank">INSPIRE dataspecificaties</a>
 - <a href="https://github.com/INSPIRE-MIF/technical-guidelines" target="_blank">Technische guidelines</a>
-- <a href="https://inspire.ec.europa.eu/portfolio/inspire-your-country" target="_blank">Overzicht van de implementatie van INSPIRE in de verschillende lidstaten</a>
+- <a href="https://knowledge-base.inspire.ec.europa.eu/tools/inspire-your-country_en" target="_blank">Overzicht van de implementatie van INSPIRE in de verschillende lidstaten</a>
 
 ### Europese INSPIRE geoportal
 In het Europese <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE geoportal</a> kan je Europese milieu gegevens vinden die onder de INSPIRE-richtlijn vallen. Dit portaal biedt verschillende zoekingangen. Zo is er een ingang op thema en een op datasets die relevant zijn voor milieurapportage. 
