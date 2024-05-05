@@ -1021,7 +1021,7 @@ De <a href="https://inspire.ec.europa.eu/id/document/tg/download-wcs" target="_b
 - hoe Direct Access in te vullen is via de processing extension van WCS;
 - Quality of Service voor de verschillende operaties.
 
-Voor het publiceren van raster data conform INSPIRE is de good practice <a href="https://inspire.ec.europa.eu/good-practice/ogc-compliant-inspire-coverage-data-and-service-implementation" target="_blank">OGC compliant INSPIRE Coverage data and service implementation</a> relevant. 
+Voor het publiceren van raster data conform INSPIRE is de good practice <a href="https://github.com/INSPIRE-MIF/gp-coverage-encoding" target="_blank">OGC compliant INSPIRE Coverage data and service implementation</a> relevant. 
 
 
 ## SOS
@@ -1042,7 +1042,7 @@ De <a href="https://ogcapi.ogc.org/" target="_blank">OGC API's</a> vormen een fa
 
 <a href="https://docs.opengeospatial.org/is/17-069r3/17-069r3.html" target="_blank">*OGC API features*</a> (OAPIF of OAF) is een vorm van een download service op basis van een *Application Program Interface (API)*; gebaseerd op de OGC standaarden. Het wordt beschouwd als opvolger van de OGC WFS standaard. Dit betekent niet dat het de WFS standaard in de nabije toekomst volledig gaat vervangen; ook al zou dat in de verre toekomst wel het geval kunnen zijn. Voorlopig zijn ze nog complementair aan elkaar. De WFS zal vooral in de GIS wereld worden gebruikt terwijl de OAPIF meer bedoeld is voor andere gebruikers, zoals webapplicatie ontwikkelaars.
 
-Voor het publiceren van OGC API features (OAPIF of OAF) is de good practice <a href="https://inspire.ec.europa.eu/good-practice/ogc-api-%E2%80%93-features-inspire-download-service" target="_blank">OGC API – Features as an INSPIRE download service</a> relevant.  
+Voor het publiceren van OGC API features (OAPIF of OAF) is de good practice <a href="https://github.com/INSPIRE-MIF/gp-ogc-api-features/blob/master/spec/oapif-inspire-download.md" target="_blank">OGC API – Features as an INSPIRE download service</a> relevant.  
 
 De OGC API features (OAPIF of OAF) is eenvoudiger in het gebruik en vergt minder geo-kennis, maar is bijvoorbeeld op twee punten na nog niet echt geschikt voor INSPIRE:
 1. Het werkt nu alleen nog op basis van simpele datamodellen en uitwisselformaten en is dus moeilijk te implementeren voor complexe INSPIRE datamodellen waarbij het complexere GML nog de default is. Mapping naar eenvoudigere modellen en uitwisselformaten is mogelijk, maar moet dan voor INSPIRE wel goed beschreven en gepubliceerd worden om aan de INSPIRE vereisten te voldoen.
