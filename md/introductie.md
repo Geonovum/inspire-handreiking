@@ -41,7 +41,7 @@ Per processtap wordt de bijbehorende documentatie weergegeven:
 - de Nederlandse standaarden die INSPIRE ondersteunen (in blauw);
 Om het figuur zo overzichtelijk mogelijk te houden, is er voor gekozen om de wetteksten (IR’s - *decisions en regulations*) hier niet in op te nemen. 
 
-De Europese documenten zijn te vinden via de <a href="https://inspire.ec.europa.eu/" target="_blank">Europese INSPIRE website</a>. In de paragraaf [bronnen](#bronnen) in deze handreiking worden deze documenten nader toegelicht.
+De Europese documenten zijn te vinden via de <a href="https://knowledge-base.inspire.ec.europa.eu/index_en" target="_blank">Europese INSPIRE website</a>. In de paragraaf [bronnen](#bronnen) in deze handreiking worden deze documenten nader toegelicht.
 De Nederlandse standaarden zijn te vinden via de Geo-standaarden op de <a href="https://www.geonovum.nl/geo-standaarden" target="_blank">Geonovum website</a>.
 
 Al deze processtappen (Nationaal Georegister, metadata, services, data) hebben ook een onderlinge relatie die in volgende afbeelding is getoond. 
@@ -69,7 +69,7 @@ Dat betekent dat binnen 6 maanden nadat de brondata aangepast is:
 ## Bronnen
 
 ### Europese INSPIRE website
-De <a href="https://inspire.ec.europa.eu/" target="_blank">Europese INSPIRE website</a> is een belangrijke bron voor informatie. 
+De <a href="https://knowledge-base.inspire.ec.europa.eu/index_en" target="_blank">Europese INSPIRE website</a> is een belangrijke bron voor informatie. 
 Hier is onder andere de volgende informatie te vinden:
 - <a href="https://knowledge-base.inspire.ec.europa.eu/legislation_en" target="_blank">INSPIRE wetgeving</a>
 - <a href="https://knowledge-base.inspire.ec.europa.eu/legislation/implementing-rules_en" target="_blank">Implementing rules</a>
