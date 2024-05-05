@@ -8,7 +8,7 @@ De IR 'Monitoring en Reporting' omvat twee aspecten:
 
 Ten behoeve van de monitoring van de voortgang van de implementatie van INSPIRE dient jaarlijks informatie verstrekt te worden aan de EU aan de hand van voorgeschreven indicatoren. Daarvoor wordt gebruik gemaakt van de informatie, die aanwezig is in het INSPIRE-portaal in Nederland, het [Nationaal Georegister (NGR)](#nationaal-georegister). Op basis van de daarin opgenomen informatie worden de indicatoren voor de monitoring geautomatiseerd afgeleid en berekend. Het is voor de monitoring van belang dat de metadata van alle aangemerkte datasets en bijbehorende services goed bijgehouden wordt en voldoet aan de INSPIRE vereisten. Alleen de metadata die in het NGR is gepubliceerd en als INSPIRE data herkenbaar is gemaakt door het opnemen van de categorie INSPIRE, wordt voor de monitoring gebruikt. 
 
-De resultaten van de monitoring en de rapportage worden op <a href="https://inspire.ec.europa.eu/mr/NL/69" target="_blank">Monitoring en Reporting NL</a> onder het kopje 'Country fiche' gepubliceerd.
+De resultaten van de monitoring en de rapportage worden op <a href="https://knowledge-base.inspire.ec.europa.eu/monitoring-and-reporting_en" target="_blank">Monitoring en Reporting NL</a> onder het kopje 'INSPIRE in your country' gepubliceerd.
 
 ## Tijdlijn
 
