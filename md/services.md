@@ -46,7 +46,7 @@ Op de Europese website van INSPIRE is de wetgeving met betrekking tot network se
 | Amendement voor download services en transformation services | <a href="https://ec.europa.eu/transparency/comitology-register/screen/home" target="_blank">comitology</a> | <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32010R1088" target="_blank">COMMISSION REGULATION (EU) No 1088/2010 of 23 November 2010 amending Regulation (EC) No 976/2009 as regards download services and transformation services</a> |
 
 ### Technische INSPIRE richtlijnen
-In de Technical Guidances (of Guidance Documents) zijn de technische specificaties opgesteld voor network services, als uitwerking van de wettelijke eisen. De technical guidances definiëren hiermee waar een network service aan zal moeten voldoen. De huidig geldende versies van de technical guidances van de network services zijn te vinden op de <a href="https://inspire.ec.europa.eu/Technical-Guidelines2/Network-Services/41" target="_blank">Europese website van INSPIRE</a>. De tabel hieronder biedt de directe links naar de documenten.
+In de Technical Guidances (of Guidance Documents) zijn de technische specificaties opgesteld voor network services, als uitwerking van de wettelijke eisen. De technical guidances definiëren hiermee waar een network service aan zal moeten voldoen. De huidig geldende versies van de technical guidances van de network services zijn te vinden op de <a href="https://github.com/INSPIRE-MIF/technical-guidelines/tree/main/services" target="_blank">Europese website van INSPIRE</a>. De tabel hieronder biedt de directe links naar de documenten.
 
 | Titel | Opmerking |
 |-----------------|-------------|
