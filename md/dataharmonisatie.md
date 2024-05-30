@@ -9,7 +9,7 @@ In de onderstaande tabel staan de belangrijkste INSPIRE-documenten voor de datah
 |Titel | Versie | Datum | Opmerking |
 |-----------------|-------------|-------------|-------------|
 | <a href="https://github.com/INSPIRE-MIF/technical-guidelines" target="_blank">INSPIRE dataspecificaties</a> | 4.0  | 2017-04-01   | Dataspecificaties voor alle themas in UML, GML, Feature Catalogue en Code list dictionaries voor voor Annex I, II en III  |
-| <a href="https://inspire.ec.europa.eu/schemas/" target="_blank">GML Application schemas</a> | 4.0  |    | GML applicatie schema's voor alle themas. De wijzigingen aan de applicatie schema's worden beheerd op de <a href="https://github.com/INSPIRE-MIF/application-schemas" target="_blank"> Github repository INSPIRE XML schemas</a>.   |
+| <a href="https://inspire.ec.europa.eu/schemas/index.html" target="_blank">GML Application schemas</a> | 4.0  |    | GML applicatie schema's voor alle themas. De wijzigingen aan de applicatie schema's worden beheerd op de <a href="https://github.com/INSPIRE-MIF/application-schemas" target="_blank"> Github repository INSPIRE XML schemas</a>.   |
 | <a href="https://inspire.ec.europa.eu/codelist" target="_blank">Codelijstregister</a>  |  |    | Bevat de codelijsten en hun waarden  |
 | <a href="https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model" target="_blank">INSPIRE Generic Conceptual Model (GCM; D2.5)</a> | 3.4   | 2014-04-08   |Basismodel met hierin de voor alle dataspecificaties relevante ‘basis typen’.   |
 
