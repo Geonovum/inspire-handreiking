@@ -23,10 +23,10 @@ function custGHPG(respecConfig)
 }
 
 var respecConfig = {
-  specStatus: "GN-LD", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specStatus
+  specStatus: "GN-WV", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specStatus
   specType: "HR", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specType
   pubDomain: "EU", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/pubDomain. Of vraag aan bij beheerders
-  publishDate: "2024-06-05", // Datum als jjjj-mm-dd, bijvoorbeeld
+  //publishDate: "2024-06-05", // Datum als jjjj-mm-dd, bijvoorbeeld. Zet in geval van een werkversie de dubbele slash ervoor.
   editors: [
     {
       name: "Geonovum INSPIRE team",
