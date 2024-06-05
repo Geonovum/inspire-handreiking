@@ -27,6 +27,8 @@ var respecConfig = {
   specType: "HR", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/specType
   pubDomain: "EU", // Kies uit de lijst: https://github.com/Geonovum/respec/wiki/pubDomain. Of vraag aan bij beheerders
   //publishDate: "2024-06-05", // Datum als jjjj-mm-dd, bijvoorbeeld. Zet in geval van een werkversie de dubbele slash ervoor.
+  previousPublishDate: "2024-06-05",    	  // Format is "YYYY-MM-DD"
+  previousMaturity: "GN-LD",                 // kies 1 van deze 3 regels
   editors: [
     {
       name: "Geonovum INSPIRE team",
