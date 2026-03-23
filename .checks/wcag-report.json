@@ -1,1 +1,174 @@
-{"error":"WCAG-check mislukt (axe-cli). Zie logs voor details."}
+[
+  {
+    "url": "http://localhost:8080/snapshot.html",
+    "id": "link-name",
+    "impact": "serious",
+    "description": "Ensure links have discernible text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=webdriverjs",
+    "nodes": [
+      {
+        "target": [
+          "#toc-jump"
+        ],
+        "html": "<a id=\"toc-jump\" href=\"#toc\"><span aria-hidden=\"true\">↑</span> <span>Jump to Table of Contents</span></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "#toc-toggle"
+        ],
+        "html": "<a id=\"toc-toggle\" href=\"#toc\"><span aria-hidden=\"true\">→</span> <span>Pop Out Sidebar</span></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/snapshot.html",
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "description": "Ensure elements that have scrollable content are accessible by keyboard",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=webdriverjs",
+    "nodes": [
+      {
+        "target": [
+          "pre:nth-child(8) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "#hoe-om-te-gaan-met-anchor-en-uri > pre:nth-child(10) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "#meertaligheid > pre:nth-child(10) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(14) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(36) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(40) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(43) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(52) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(54) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(60) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(65) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(71) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(74) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(77) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(98) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(101) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(106) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(119) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(126) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "#category-layers > pre > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      }
+    ]
+  }
+]
