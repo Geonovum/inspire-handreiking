@@ -77,9 +77,9 @@ Hier is onder andere de volgende informatie te vinden:
 - <a href="https://github.com/INSPIRE-MIF/technical-guidelines" target="_blank">Technische guidelines</a>
 - <a href="https://knowledge-base.inspire.ec.europa.eu/tools/inspire-your-country_en" target="_blank">Overzicht van de implementatie van INSPIRE in de verschillende lidstaten</a>
 
-### Europese INSPIRE geoportal
-In het Europese <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE geoportal</a> kan je Europese milieu gegevens vinden die onder de INSPIRE-richtlijn vallen. Dit portaal biedt verschillende zoekingangen. Zo is er een ingang op thema en een op datasets die relevant zijn voor milieurapportage. 
-Het Europese geoportal harvest de metadata van 36 officieel geregistreerde nationale data catalogi van Europese lidstaten en EFTA landen. Het INSPIRE Geoportal team wordt ontwikkeld door het Joint Research Centre (JRC).
+### Europees toegangspunt voor INSPIRE-data
+Sinds 1 juli 2026 zijn INSPIRE-datasets en -diensten via het <a href="Europese https://data.europa.eu/" target="_blank"> dataportaal</a> toegankelijk. Dit portaal biedt verschillende zoekmogelijkheden, waaronder geospatiale zoekfuncties en thematische zoekingangen. INSPIRE-data worden daarmee ontsloten binnen het bredere Europese data-ecosysteem naast andere Europese overheidsdata. 
+Het Europese dataportaal harvest de metadata van officieel geregistreerde nationale data catalogi van Europese lidstaten en EFTA landen. 
 
 #### Harvesting
 Elke eerste maandag van de maand wordt het NGR geharvest naar het Europese INSPIRE geoportal. In het INSPIRE geoportal wordt op de pagina <a href="https://inspire-geoportal.ec.europa.eu/harvesting_status.html" target="_blank">Harvesting Status</a> getoond wanneer de laatste harvesting van alle lidstaten heeft plaats gevonden.
