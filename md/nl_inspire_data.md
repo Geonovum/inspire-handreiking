@@ -40,7 +40,7 @@ Daarnaast kan de dataprovider alle eigen datasets exporteren naar een Excel-best
 
 Tot slot zijn in het Aanmerkingsregister een drietal <a href="https://www.aanmerking.nl/kwaliteitscontrole/" target="_blank">kwaliteitscontroletools</a> opgenomen:
 - Twee tools richten zich op de metadata in het Aanmerkingregister en het NGR: metadata in het Aanmerkingsregister die ontbreekt in het Nationaal Georegister of andersom. Deze twee controles worden dagelijks uitgevoerd.
-- De derde kwaliteitscontrole toont de [harvestresultaten](#harvesting) uit het Europese INSPIRE geoportal. Het overzicht laat zien waar nog problemen zijn met het downloadbaar of viewbaar beschikbaar maken van de dataset in het Europese INSPIRE geoportal. 
+- De derde kwaliteitscontrole toont historische [harvestresultaten](#harvesting) voor INSPIRE-datasets uit het Europese INSPIRE geoportal. Sinds de zomer van 2023 zijn geen nieuwe harvestresultaten meer beschikbaar vanuit het Europese INSPIRE Geoportal.
 
 ### Wijziging van de aanmerking
 In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. Dit kan om verschillende redenen, bijvoorbeeld omdat:
@@ -59,7 +59,7 @@ Zoals hierboven beschreven, kan om verschillende redenen een wijziging in de aan
 
 De INSPIRE richtlijn zelf stelt geen eisen m.b.t. het beschikbaar houden van data als er een nieuwe versie van de dataset wordt gepubliceerd. Het belang van het beschikbaar houden is per dataset verschillend. De ene dataset komt in aanmerking voor monitoringsdoeleinden over verschillende jaren heen, waar dat bij andere datasets niet van toepassing is. 
 
-In het voorstel voor de uitvoeringsverordening voor <a href="https://docs.geostandaarden.nl/eu/handreiking-EU-informatie/#high-value-data-lijst" target="_blank">**High Value Data lijst**</a>, die op 24 mei door de Europese Commissie werd gepubliceerd, gaat wel in op versies van data. In het voorstel staan datasets die als 'high value' worden aangemerkt rond zes thema's: statistiek, geo-informatie, mobiliteit, handelsregisters, aardobservatie en milieu, en meteorologie. 24 van de 34 INSPIRE thema’s krijgen een open data verplichting. Voor de datasets die vallen onder het HVD-thema *Aardobservatie en milieu* staat het volgende aangegeven: zowel de meest actuele datasets als historische datasets net als meerdere generalisatie nivo’s worden beschikbaar gesteld.
+In het voorstel voor de uitvoeringsverordening voor <a href="https://docs.geostandaarden.nl/eu/handreiking-EU-informatie/#high-value-data-lijst" target="_blank">**High Value Data lijst**</a>, die op 24 mei door de Europese Commissie werd gepubliceerd, gaat wel in op versies van data. In het voorstel staan datasets die als 'high value' worden aangemerkt rond zes thema's: statistiek, geo-informatie, mobiliteit, handelsregisters, aardobservatie en milieu, en meteorologie. Ten minste 24 van de 34 INSPIRE-thema’s vallen geheel of gedeeltelijk onder de HVD-verordening en krijgen daarmee een open dataverplichting. Voor de datasets die vallen onder het HVD-thema *Aardobservatie en milieu* staat het volgende aangegeven: zowel de meest actuele datasets als historische datasets net als meerdere generalisatie nivo’s worden beschikbaar gesteld.
 
 De belangrijkste vraag voor het wel of niet beschikbaar houden van verschillende versies van data voor INSPIRE is of het beschikbaar moet blijven conform een andere wetgeving (zoals bijvoorbeeld de High Value Data) of dat de aangeboden versie van de dataset nog wordt gebruikt.
 
