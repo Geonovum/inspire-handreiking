@@ -254,7 +254,9 @@ Voor de specifieke afspraken wordt naar het hoofdstuk 'Data Capture' in de [INSP
 ## Geometrie
 In de [INSPIRE dataspecificaties](#inspire-dataspecificaties) en het [Generic Conceptual Model](#generic-conceptual-model) wordt aangegeven welke geometrietypen zijn toegestaan. In de meeste INSPIRE dataspecificaties wordt verwezen naar de *simple feature* specificatie van OGC, waarin exact beschreven staat hoe een valide geometrie eruit moet zien. In een aantal INSPIRE dataspecificaties worden ook geometrieën beschreven, die buiten de simple features vallen (zoals 3D-objecten).
 
-Geometrische objecten moeten voldoen aan de regels zoals deze door het OGC worden gesteld. De [Europese INSPIRE validator](#validatie) kan helpen bij het detecteren van invalide geometrieën. Via deze Europese INSPIRE validator kan een dataset van een dataprovider getest worden op de ‘INSPIRE-conformiteit’. Deze validatie test niet alleen de geometrie, maar test ook op het applicatieschema (.xsd) van het betreffende INSPIRE thema.
+Geometrische objecten moeten voldoen aan de regels zoals deze door het OGC worden gesteld. Validatietools voor INSPIRE kunnen helpen bij het detecteren van invalide geometrieën. Met deze tools kan een dataset van een dataprovider worden getest op de INSPIRE-conformiteit. Daarbij wordt niet alleen de geometrie gevalideerd, maar ook de conformiteit met het applicatieschema (.xsd) van het betreffende INSPIRE-thema.
+
+Let op: Sinds 2026 is de centrale Europese [Europese INSPIRE validator](#validatie) niet meer beschikbaar als centrale dienst. Voor validatie van de INSPIRE-standaard kunnen validatietools worden gebruikt die de INSPIRE-validatieregels ondersteunen. Voor het testen van de Nederlandse profielen blijven de Nederlandse validatietools relevant.
 
 Wanneer je alleen de geometrie wilt valideren, zijn er verschillende opties die conform de OGC-regels testen, zowel open-source tools (bijvoorbeeld <a href="https://github.com/locationtech/jts" target="_blank">JavaTopologySuite (JTS)</a>) als closed-source tools.
 
@@ -323,4 +325,4 @@ Omdat het EVRS regelmatig wordt aangepast verschijnen er regelmatig nieuwe reali
 
 ## Data validatie
 Data validatie is een mechanisme om te controleren of een bepaalde dataset aan de INSPIRE specificaties voldoet en is een onmisbaar hulpmiddel om tot een correcte implementatie te komen. Het is daarmee een onmisbare toets op de vraag of de dataharmonisatie goed is uitgevoerd.
-Data validatie wordt uitgevoerd met de Europese INSPIRE-validator. Lees meer over dit onderwerp in het hoofdstuk [Validatie](#validatie).
+Met INSPIRE-validatietools kan worden gecontroleerd of een dataset voldoet aan de INSPIRE-standaard. Lees meer over dit onderwerp in het hoofdstuk [Validatie](#validatie).
