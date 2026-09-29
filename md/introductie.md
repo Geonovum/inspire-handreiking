@@ -78,7 +78,7 @@ Hier is onder andere de volgende informatie te vinden:
 - <a href="https://knowledge-base.inspire.ec.europa.eu/tools/inspire-your-country_en" target="_blank">Overzicht van de implementatie van INSPIRE in de verschillende lidstaten</a>
 
 ### Europees toegangspunt voor INSPIRE-data
-Sinds 1 juli 2026 zijn INSPIRE-datasets en -diensten via het <a href="Europese https://data.europa.eu/" target="_blank"> dataportaal</a> toegankelijk. Dit portaal biedt verschillende zoekmogelijkheden, waaronder geospatiale zoekfuncties en thematische zoekingangen. INSPIRE-data worden daarmee ontsloten binnen het bredere Europese data-ecosysteem naast andere Europese overheidsdata. 
+Sinds 1 juli 2026 zijn INSPIRE-datasets en -diensten via het <a href="https://data.europa.eu/" target="_blank">Europese Data Portal</a> toegankelijk. Dit portaal biedt verschillende zoekmogelijkheden, waaronder geospatiale zoekfuncties en thematische zoekingangen. INSPIRE-data worden daarmee ontsloten binnen het bredere Europese data-ecosysteem naast andere Europese overheidsdata. 
 Het Europese dataportaal harvest de metadata van officieel geregistreerde nationale data catalogi van Europese lidstaten en EFTA landen. 
 
 #### Harvesting
