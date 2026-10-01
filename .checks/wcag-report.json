@@ -1,24 +1,17 @@
 [
   {
     "url": "http://localhost:8080/snapshot.html",
-    "id": "link-name",
+    "id": "color-contrast",
     "impact": "serious",
-    "description": "Ensure links have discernible text",
-    "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=webdriverjs",
+    "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=webdriverjs",
     "nodes": [
       {
         "target": [
-          "#toc-jump"
+          ".sidelabel"
         ],
-        "html": "<a id=\"toc-jump\" href=\"#toc\"><span aria-hidden=\"true\">↑</span> <span>Jump to Table of Contents</span></a>",
-        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
-      },
-      {
-        "target": [
-          "#toc-toggle"
-        ],
-        "html": "<a id=\"toc-toggle\" href=\"#toc\"><span aria-hidden=\"true\">→</span> <span>Pop Out Sidebar</span></a>",
-        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        "html": "<div class=\"sidelabel\">Geonovum Handreiking - Werkversie</div>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.99 (foreground color: #ffffff, background color: #ff0000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
       }
     ]
   },
@@ -52,14 +45,7 @@
       },
       {
         "target": [
-          "pre:nth-child(14) > .hljs.xml"
-        ],
-        "html": "<code class=\"hljs xml\">",
-        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
-      },
-      {
-        "target": [
-          "pre:nth-child(36) > .hljs.xml"
+          "pre:nth-child(16) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
@@ -73,91 +59,98 @@
       },
       {
         "target": [
-          "pre:nth-child(43) > .hljs.xml"
+          "pre:nth-child(44) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(52) > .hljs.xml"
+          "pre:nth-child(47) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(54) > .hljs.xml"
+          "pre:nth-child(56) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(60) > .hljs.xml"
+          "pre:nth-child(58) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(65) > .hljs.xml"
+          "pre:nth-child(64) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(71) > .hljs.xml"
+          "pre:nth-child(69) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(74) > .hljs.xml"
+          "pre:nth-child(75) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(77) > .hljs.xml"
+          "pre:nth-child(78) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(98) > .hljs.xml"
+          "pre:nth-child(81) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(101) > .hljs.xml"
+          "pre:nth-child(102) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(106) > .hljs.xml"
+          "pre:nth-child(105) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(119) > .hljs.xml"
+          "pre:nth-child(110) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
       },
       {
         "target": [
-          "pre:nth-child(126) > .hljs.xml"
+          "pre:nth-child(123) > .hljs.xml"
+        ],
+        "html": "<code class=\"hljs xml\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "pre:nth-child(130) > .hljs.xml"
         ],
         "html": "<code class=\"hljs xml\">",
         "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
