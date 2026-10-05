@@ -95,6 +95,8 @@ De INSPIRE registry biedt een centraal toegangspunt voor een aantal centraal beh
 ### Nationaal Georegister
 De Nederlandse "tegenhanger" van het Europese toegangspunt voor INSPIRE-data is het <a href="http://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister (NGR)</a>. Het NGR doet dienst als INSPIRE zoekdienst (Discovery Service) en ontsluit de Nederlandse metadata over INSPIRE-datasets en -diensten voor nationale en Europese toepassingen. Voor Nederlandse dataproviders biedt het NGR functionaliteit voor het beheren, valideren en publiceren van metadata
 
+De metadata uit het NGR worden geharvest door het Europese dataportaal <a href="https://data.europa.eu/" target="_blank">data.europa.eu</a>. Hierdoor zijn Nederlandse INSPIRE-datasets en -diensten ook op Europees niveau vindbaar. De metadata bevatten verwijzingen naar de datasets en diensten bij de dataproviders.
+
 ## Over deze handreiking
 ### INSPIRE is nog steeds in beweging
 INSPIRE is nog steeds in beweging. Dat betekent dat nog niet alles over INSPIRE gezegd is. Als er aanpassingen zijn, dan wordt deze handreiking daarop aangepast. 
