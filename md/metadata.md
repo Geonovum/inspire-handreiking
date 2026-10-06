@@ -397,9 +397,9 @@ Als een organisatie een eigen catalogue heeft, kan van deze catalogue informatie
 
 ### Publiceren INSPIRE-aanduiding
 
-De selectie voor het [Europese INSPIRE geoportal](#europese-inspire-geoportal) uit het NGR vindt plaats op basis van de categorie-aanduiding INSPIRE. Via de user interface van het NGR kan men dezelfde resultaten krijgen door het filter categorie INSPIRE toe te passen.
+In het NGR kunnen metadata van INSPIRE-datasets en -diensten worden gevonden door het categoriefilter INSPIRE toe te passen.
 
-![NGR met categorie INSPIRE ](media/NGR-categorie-INSPIRE.png "Gebruik in het NGR het filter 'Inspire' om alle beschikbare INSPIRE-compliant datasets te vinden.")
+![NGR met categorie INSPIRE](media/NGR-categorie-INSPIRE.png "Gebruik in het NGR het categoriefilter INSPIRE om metadata met deze categorie te vinden.")
 
-Als dataprovider kan de categorie INSPIRE aan de metadata worden toegevoegd/verwijderd door in de publiceer omgeving van het NGR in te loggen, het juiste bestand te kiezen, met rechter muisknop op de titel te klikken, naar categorieën te gaan en bij categorie het INSPIRE vinkje te zetten/verwijderen.
+Als dataprovider kun je de categorie INSPIRE aan een metadatarecord toevoegen of deze verwijderen. Log hiervoor in op de publiceeromgeving van het NGR, selecteer het betreffende metadatarecord en pas bij de categorieën de selectie INSPIRE aan.
 

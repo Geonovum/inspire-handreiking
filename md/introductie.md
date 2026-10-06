@@ -77,18 +77,14 @@ Hier is onder andere de volgende informatie te vinden:
 - <a href="https://github.com/INSPIRE-MIF/technical-guidelines" target="_blank">Technische guidelines</a>
 - <a href="https://knowledge-base.inspire.ec.europa.eu/tools/inspire-your-country_en" target="_blank">Overzicht van de implementatie van INSPIRE in de verschillende lidstaten</a>
 
-### Europese INSPIRE geoportal
-In het Europese <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">INSPIRE geoportal</a> kan je Europese milieu gegevens vinden die onder de INSPIRE-richtlijn vallen. Dit portaal biedt verschillende zoekingangen. Zo is er een ingang op thema en een op datasets die relevant zijn voor milieurapportage. 
-Het Europese geoportal harvest de metadata van 36 officieel geregistreerde nationale data catalogi van Europese lidstaten en EFTA landen. Het INSPIRE Geoportal team wordt ontwikkeld door het Joint Research Centre (JRC).
-
-#### Harvesting
-Elke eerste maandag van de maand wordt het NGR geharvest naar het Europese INSPIRE geoportal. In het INSPIRE geoportal wordt op de pagina <a href="https://inspire-geoportal.ec.europa.eu/harvesting_status.html" target="_blank">Harvesting Status</a> getoond wanneer de laatste harvesting van alle lidstaten heeft plaats gevonden.
-
-Het [INSPIRE aanmerkingregister](#aanmerkingsregister) toont onder Kwaliteitscontrole de harvesting resultaten uit het Europese INSPIRE geoportal, die tijdens het harvesten automatisch wordt gegenereerd. Het overzicht laat zien waar nog problemen zijn met het downloadbaar of viewbaar beschikbaar maken van de dataset in het Europese INSPIRE geoportal. 
+### Europees toegangspunt voor INSPIRE-data
+Sinds 1 juli 2026 zijn INSPIRE-datasets en -diensten via het <a href="https://data.europa.eu/" target="_blank">Europese Data Portal</a> toegankelijk. Dit portaal biedt verschillende zoekmogelijkheden, waaronder geospatiale zoekfuncties en thematische zoekingangen. INSPIRE-data worden daarmee ontsloten binnen het bredere Europese data-ecosysteem naast andere Europese overheidsdata. 
+Het Europese dataportaal harvest de metadata van officieel geregistreerde nationale data catalogi van Europese lidstaten en EFTA landen. 
 
 
 ### INSPIRE registry
-De <a href="https://inspire.ec.europa.eu/registry" target="_blank">INSPIRE registry</a> omvat een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). 
+De <a href="https://inspire.ec.europa.eu/registry" target="_blank">INSPIRE registry</a> omvat een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Sinds 2026 worden deze onderdelen geleidelijk geïntegreerd in het Europese platform voor <a href="https://op.europa.eu/en/web/eu-vocabularies/inspire-registry" target="_blank">EU Vocabularies</a>.
+Registers bieden een manier aan om identificatoren toe te wijzen aan deze elementen en aan hun labels, definities en beschrijvingen (in verschillende talen). 
 
 De INSPIRE registry biedt een centraal toegangspunt voor een aantal centraal beheerde INSPIRE registers. De inhoud van deze registers is gebaseerd op de INSPIRE richtlijn, de implementing rules en de technische guidelines. Zo omvat de Registry onder meer de volgende elementen:
 - De <a href="https://inspire.ec.europa.eu/featureconcept" target="_blank">Feature Concept Dictionary (FCD)</a> bevat termen en definities die nodig zijn voor het specificeren van de thematische ruimtelijke objecttypes en het is vooral de belangrijkste rol om de harmonisatie-inspanningen te ondersteunen en om conflicten tussen de specificaties van de ruimtelijke objecttypes in de verschillende thema's te identificeren.
@@ -97,10 +93,9 @@ De INSPIRE registry biedt een centraal toegangspunt voor een aantal centraal beh
 - De <a href="https://inspire.ec.europa.eu/glossary" target="_blank">Glossary</a> bevat generieke termen en definities van veelgebruikte INSPIRE terminologie.
 
 ### Nationaal Georegister
-De Nederlandse "tegenhanger" van het INSPIRE Geoportal op Europees niveau is het <a href="http://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister (NGR)</a>. Het NGR doet dienst als de INSPIRE zoekdienst (Discovery Service), die de Nederlandse metadata over de INSPIRE datasets en services naar het [Europese INSPIRE Geoportal](#europese-inspire-geoportal) ontsluit. Het NGR wordt maandelijks geharvest naar het Europese INSPIRE geoportal, zie [hier](#harvesting) voor meer informatie.
+De Nederlandse "tegenhanger" van het Europese toegangspunt voor INSPIRE-data is het <a href="http://www.nationaalgeoregister.nl/" target="_blank">Nationaal Georegister (NGR)</a>. Het NGR doet dienst als INSPIRE zoekdienst (Discovery Service) en ontsluit de Nederlandse metadata over INSPIRE-datasets en -diensten voor nationale en Europese toepassingen. Voor Nederlandse dataproviders biedt het NGR functionaliteit voor het beheren, valideren en publiceren van metadata
 
-Het NGR biedt voor Nederlandse dataproviders een metadata editor en validator functionaliteit aan.
-
+De metadata uit het NGR worden geharvest door het Europese dataportaal <a href="https://data.europa.eu/" target="_blank">data.europa.eu</a>. Hierdoor zijn Nederlandse INSPIRE-datasets en -diensten ook op Europees niveau vindbaar. De metadata bevatten verwijzingen naar de datasets en diensten bij de dataproviders.
 
 ## Over deze handreiking
 ### INSPIRE is nog steeds in beweging

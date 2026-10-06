@@ -4,31 +4,38 @@
 <head>
   <meta content="text/html; charset=utf-8" http-equiv="content-type">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico' />
-  <title>Aan de slag met INSPIRE</title>
-
-  <link rel="stylesheet" type="text/css" href="./media/Geonovumstyle.css">
-  <script src="js/config.js" class="remove"></script>
-  <script src="https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js" class="remove" async></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://docs.geostandaarden.nl/media/Geonovum.ico" />
+  <script class="remove" src="https://cdn.jsdelivr.net/gh/digitalbazaar/respec-mermaid@1.0.1/dist/main.js"></script>
+  <script class="remove" src="https://tools.geostandaarden.nl/respec/config/geonovum-config.js"></script>
+  <script class="remove" src="js/config.js"></script>
+  <script class="remove">
+    const mergedLocalBiblio = {...organisationConfig.localBiblio, ...respecConfig.localBiblio};
+    const mergedPostProcess = {...organisationConfig.postProcess, ...respecConfig.postProcess};
+    respecConfig = {...organisationConfig, ...respecConfig, 
+      localBiblio: mergedLocalBiblio, 
+      postProcess: mergedPostProcess};
+    document.title = respecConfig.title;
+  </script>
+  <script class="remove" src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js" async=""></script>
 </head>
 
 <body>
-  <section id='abstract' data-format="markdown" data-include="md/samenvatting.md"></section>
+  <section id='abstract' data-include-format="markdown" data-include="md/samenvatting.md"></section>
   <section id='sotd'>
   </section>
   <!--<section id="conformance">-->
     <!--<p>Informatie over conformiteit.</p>-->
   <!--</section>-->
-  <section data-format="markdown" data-include="md/introductie.md"></section>
-  <section data-format="markdown" data-include="md/nl_inspire_data.md"></section>
-  <section data-format="markdown" data-include="md/dataharmonisatie.md"></section>
-  <section data-format="markdown" data-include="md/metadata.md"></section>
-  <section data-format="markdown" data-include="md/services.md"></section>
-  <section data-format="markdown" data-include="md/validatie.md"></section>
-  <section data-format="markdown" data-include="md/checklist.md"></section>
-  <section data-format="markdown" data-include="md/monitoring.md"></section>
-  <section data-format="markdown" data-include="md/gebruik.md"></section> 
-  <section data-format="markdown" data-include="md/extra.md"></section>
+  <section data-include-format="markdown" data-include="md/introductie.md"></section>
+  <section data-include-format="markdown" data-include="md/nl_inspire_data.md"></section>
+  <section data-include-format="markdown" data-include="md/dataharmonisatie.md"></section>
+  <section data-include-format="markdown" data-include="md/metadata.md"></section>
+  <section data-include-format="markdown" data-include="md/services.md"></section>
+  <section data-include-format="markdown" data-include="md/validatie.md"></section>
+  <section data-include-format="markdown" data-include="md/checklist.md"></section>
+  <section data-include-format="markdown" data-include="md/monitoring.md"></section>
+  <section data-include-format="markdown" data-include="md/gebruik.md"></section> 
+  <section data-include-format="markdown" data-include="md/extra.md"></section>
   <!-- Bijlage is een section met class="appendix" -->
   <!--
   <section class="appendix">
