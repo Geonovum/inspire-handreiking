@@ -147,7 +147,7 @@ Loop hiervoor de volgende checks door:
 7. Zijn metadata, datasets en services gevalideerd?
 8. Zijn prioritaire datasets correct beschreven?
 
-#### Check 1: Is de dataset vindbaar?
+**Check 1: Is de dataset vindbaar?**
 
 Zoek de dataset op titel in het NGR en via de <a href="https://data.europa.eu/data/datasets?source_type=geospatial&locale=en" target="_blank">geospatial search van data.europa.eu</a>. Selecteer daar Nederland en eventueel de betreffende catalogus. Controleer of het gevonden record bij de juiste dataset en dataprovider hoort.
 
@@ -155,43 +155,43 @@ Met het geospatial-filter kun je datasets uit geocatalogi zoeken, waaronder INSP
 
 Als de dataset in het NGR staat maar niet op data.europa.eu, controleer dan de selectie- en harvestingafspraken. Afwezigheid in het Europese dataportaal betekent niet automatisch dat de dataset of service niet beschikbaar is.
 
-#### Check 2: Is het juiste INSPIRE-thema opgenomen?
+**Check 2: Is het juiste INSPIRE-thema opgenomen?**
 
 Controleer in de datasetmetadata in het NGR of het juiste INSPIRE-thema en de bijbehorende thesauruscitatie zijn opgenomen.
 
 De algemene themacategorieën op data.europa.eu zijn niet hetzelfde als de INSPIRE-thema's. Gebruik daarom de datasetmetadata in het NGR voor deze controle.
 
-#### Check 3: Heeft de dataset een downloadlink?
+**Check 3: Heeft de dataset een downloadlink?**
 
 Controleer op de datasetpagina van data.europa.eu welke distributies en download- of toegangslinks beschikbaar zijn. Een toegangslink kan naar een service of toegangspagina verwijzen en hoeft geen directe downloadlink te zijn.
 
 Controleer daarnaast in de datasetmetadata in het NGR of de juiste downloadservice is opgenomen en of de verwijzingen tussen datasetmetadata, servicemetadata en servicedocumenten consistent zijn.
 
-#### Check 4: Heeft de dataset een viewlink?
+**Check 4: Heeft de dataset een viewlink?**
 
 Controleer in de datasetmetadata in het NGR of een verwijzing naar de juiste viewservice is opgenomen.
 
 Controleer daarnaast op de datasetpagina van data.europa.eu of de distributie met de viewservice is weergegeven. Voor ondersteunde services kan een Preview beschikbaar zijn. Het ontbreken van een Preview betekent niet automatisch dat de viewservice niet werkt.
 
-#### Check 5: Is de dataset daadwerkelijk downloadbaar?
+**Check 5: Is de dataset daadwerkelijk downloadbaar?**
 
 Open de aangeboden download- of toegangslink en voer een download uit met een geschikte browser of client.
 
 Controleer of het verzoek daadwerkelijk de bedoelde data oplevert. Alleen het openen van een capabilities-document, feed of toegangspagina is hiervoor onvoldoende.
 
-#### Check 6: Is de dataset daadwerkelijk raadpleegbaar?
+**Check 6: Is de dataset daadwerkelijk raadpleegbaar?**
 
 Gebruik de Preview op data.europa.eu wanneer deze beschikbaar is. Test de viewservice daarnaast rechtstreeks met een geschikte GIS-client.
 
 Controleer of de juiste layer kan worden geopend en de bedoelde data zichtbaar zijn binnen het opgegeven geografische gebied.
 
-#### Check 7: Zijn metadata, datasets en services gevalideerd?
+**Check 7: Zijn metadata, datasets en services gevalideerd?**
 
 Valideer metadata, datasets en services met de toepasselijke INSPIRE-testsets en Nederlandse profieltests, zie [Te gebruiken validators](#te-gebruiken-validators).
 
 De Metadata Quality Assessment (MQA) van data.europa.eu kan aanvullende informatie geven over de kwaliteit van de geharveste metadata en de bereikbaarheid van links. Deze beoordeling vervangt geen INSPIRE-validatie of functionele test van de services.
 
-#### Check 8: Zijn prioritaire datasets correct beschreven?
+**Check 8: Zijn prioritaire datasets correct beschreven?**
 
 Controleer voor prioritaire datasets in de datasetmetadata in het NGR of de toepasselijke trefwoorden, URI's en thesauruscitaties correct zijn opgenomen.
 
