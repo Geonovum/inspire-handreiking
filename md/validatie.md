@@ -59,19 +59,19 @@ Met de INSPIRE Reference Validator kunnen validatietesten worden uitgevoerd voor
 - Services.
 - Datasets.
 
-#### Lokale instantie: installatie en configuratie
+**Lokale instantie: installatie en configuratie**
 
 Sinds 1 april 2026 wordt de [centrale instantie van de INSPIRE Reference Validator niet meer door de Europese Commissie aangeboden](https://knowledge-base.inspire.ec.europa.eu/news-and-publications/news/discontinuation-inspire-reference-validator-2026-04-01_en). De validator kan via lokale instanties worden gebruikt. De broncode, testsets en installatie-instructies blijven hiervoor beschikbaar.
 
 Meer informatie over het installeren en configureren van een lokale instantie is te vinden in de <a href="https://github.com/inspire-eu-validation/INSPIRE-Validator-Container#readme" target="_blank">installatiedocumentatie van de INSPIRE Reference Validator</a>.
 
-#### Gebruik via een API
+**Gebruik via een API**
 
 Een lokale instantie van de INSPIRE Reference Validator kan ook via een API worden aangeroepen, indien deze beschikbaar is gesteld. Bij het (semi)geautomatiseerd uitvoeren van tests kan het nuttig zijn deze API te gebruiken. Raadpleeg hiervoor de API-documentatie van de gebruikte lokale instantie.
 
 Meer achtergrondinformatie over de API is beschikbaar in de <a href="https://github.com/etf-validator/docs" target="_blank">documentatie van het ETF-framework</a>. Raadpleeg daarnaast, indien beschikbaar, de interactieve documentatie via 'Web API v2' van de gebruikte lokale instantie voor de ondersteunde API-operaties en adressen.
 
-#### Bekende problemen
+**Bekende problemen**
 
 Gemelde problemen met de INSPIRE Reference Validator zijn te vinden op de <a href="https://github.com/INSPIRE-MIF/helpdesk-validator/issues" target="_blank">GitHub-issuepagina</a>. Of een probleem van toepassing is, hangt onder meer af van de softwareversie en testsets van de gebruikte instantie.
 
