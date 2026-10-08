@@ -38,9 +38,7 @@ Naast een openbare gedeelte heeft het aanmerkingregister ook een gesloten gedeel
 
 Daarnaast kan de dataprovider alle eigen datasets exporteren naar een Excel-bestand. 
 
-Tot slot zijn in het Aanmerkingsregister een drietal <a href="https://www.aanmerking.nl/kwaliteitscontrole/" target="_blank">kwaliteitscontroletools</a> opgenomen:
-- Twee tools richten zich op de metadata in het Aanmerkingregister en het NGR: metadata in het Aanmerkingsregister die ontbreekt in het Nationaal Georegister of andersom. Deze twee controles worden dagelijks uitgevoerd.
-- De derde kwaliteitscontrole toont historische [harvestresultaten](#harvesting) voor INSPIRE-datasets uit het Europese INSPIRE geoportal. Sinds de zomer van 2023 zijn geen nieuwe harvestresultaten meer beschikbaar vanuit het Europese INSPIRE Geoportal.
+Het Aanmerkingsregister bevat een overzicht van historische harvestresultaten uit het voormalige Europese INSPIRE Geoportal. Deze resultaten zijn beschikbaar via de pagina [Kwaliteitscontrole van het Aanmerkingsregister](https://www.aanmerking.nl/kwaliteitscontrole/) en kunnen worden gebruikt als referentie voor eerdere INSPIRE-validaties. De resultaten worden sinds 2023 niet meer bijgewerkt.
 
 ### Wijziging van de aanmerking
 In sommige gevallen kan een aangemerkte organisatie niet langer optreden als dataprovider voor een of meer INSPIRE-thema’s, of onderdelen daarvan. Dit kan om verschillende redenen, bijvoorbeeld omdat:
