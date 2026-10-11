@@ -27,54 +27,44 @@ Via de tekst 'Geavanceerd zoeken ↓', kan ook gericht op INSPIRE thema's gezoch
 
 ### Vinden van Europese data
 
-Wanneer het INSPIRE data van andere Europese lidstaten betreft, kan gezocht worden via het <a href="https://inspire-geoportal.ec.europa.eu/" target="_blank">Europese INSPIRE geoportal</a>.
+INSPIRE-data van andere Europese lidstaten kan worden gezocht via het [Europese dataportaal data.europa.eu](https://data.europa.eu/data/datasets?locale=nl). Dit portaal heeft sinds 1 juli 2026 het Europese INSPIRE Geoportal vervangen.
 
-![EU-geoportal](media/geoportaltip8a.png "EU INSPIRE GEOPORTAL")
+Zoek op een onderwerp, een datasetnaam of een INSPIRE-thema en verfijn de resultaten met de beschikbare filters. Gebruik de geospatiale zoekfunctie om datasets voor een bepaald geografisch gebied te vinden. Combineer zoektermen waar nodig met de naam van een land of regio.
 
-Het Europese INSPIRE geoportal heeft momenteel twee hoofdingangen. De INSPIRE Thematic Viewer geeft toegang tot alle datasets die onder INSPIRE vallen. In de INSPIRE Thematic Viewer kan gefilterd worden op het INSPIRE thema en er kan op het land gefiltered worden. 
+Klik op een zoekresultaat om de beschrijving en beschikbare metadata van de dataset te bekijken. Via de aangeboden links kan worden doorgegaan naar de broncatalogus, de website van de dataprovider of de beschikbare bekijk- en downloadservices. Voor ondersteunde geospatiale distributies biedt data.europa.eu ook een kaartvoorbeeld.
 
-De Priority Dataset Viewer geeft toegang tot de [INSPIRE prioritaire datasets](#prioritaire-datasets) die ook voor milieurapportage verplichtingen gebruikt worden.
-Hierin kan onder andere gezocht worden via de milieuwetgeving waarvoor gerapporteerd wordt. 
+Controleer bij de gevonden dataset:
 
-Nadat een keuze is gemaakt in de verschillende filteropties verschijnt een lijst van datasets die aan de filteropties voldoen.
+- of de geografische dekking overeenkomt met het gewenste gebied;
+- of de inhoud, actualiteit en het detailniveau geschikt zijn voor het beoogde gebruik;
+- welke bekijk- en downloadmogelijkheden beschikbaar zijn;
+- welke licentie en eventuele toegangs- of gebruiksvoorwaarden gelden.
 
-![EU-geoportal na selectie](media/geoportaltip1.png "EU INSPIRE GEOPORTAL na selectie op Nederlandse data")
+Voor grensoverschrijdend gebruik kan INSPIRE-geharmoniseerde data de combinatie van datasets vergemakkelijken, doordat gemeenschappelijke datamodellen en afspraken worden gebruikt. Harmonisatie garandeert echter niet dat datasets inhoudelijk of ruimtelijk volledig op elkaar aansluiten. Controleer daarom ook verschillen in definities, dekking, actualiteit en detailniveau.
 
-Hierop kan gezien worden of de datasets viewbaar ![image](https://user-images.githubusercontent.com/80040145/170225076-edd06c12-fa61-4756-8d15-178b0c16f60c.png) en/of downloadbaar ![image](https://user-images.githubusercontent.com/80040145/170225177-156c949a-e107-4c0f-9613-5d0102738d33.png) en/of ze regionaal ![image](https://user-images.githubusercontent.com/80040145/170218509-aea835b9-89b7-477e-a3ba-5f94e40badcc.png)
- of landsdekkend ![image](https://user-images.githubusercontent.com/80040145/170218358-2065a7c1-c783-43f2-a956-fa8852828429.png)
-zijn.
-Wanneer de lijst van zoekresultaten te lang is, kan er eventueel nog verder gezocht worden met zoektermen.
-De metadata van de dataset wordt getoond wanneer op één van de datasets in de lijst wordt geklikt. 
+De conformiteitsverklaring in de oorspronkelijke INSPIRE-metadata geeft aan of een dataset volgens de dataprovider aan een bepaalde specificatie voldoet. In ISO 19139 XML-metadata is deze verklaring opgenomen in het element *DQ_ConformanceResult*. Controleer zowel de genoemde specificatie als het bijbehorende resultaat. Voor harmonisatie is de verklaring over Verordening (EU) nr. 1089/2010 relevant; een verklaring over uitsluitend metadata of een netwerkservice is daarvoor niet voldoende. Raadpleeg zo nodig de oorspronkelijke metadata in de broncatalogus wanneer deze informatie niet op data.europa.eu wordt weergegeven.
 
-Voor grensoverschrijdend gebruik heeft geharmoniseerde data waarschijnlijk de voorkeur, want geharmoniseerde data sluit zowel ruimtelijk als thematisch beter op elkaar aan.
-Of een dataset geharmoniseerd is, is aangegeven in het metadata-element *DQ_ConformanceResult*. 
-Dit metadata-element wordt helaas niet getoond in de metadata in het INSPIRE Geoportal, maar kan wel via de xml metadata gevonden worden.
-Een link naar de xml metadata staat in de getoonde metadata zoals in de afbeelding hieronder is aangegeven met de rode pijl.
+Wanneer een dataset niet via data.europa.eu te vinden is, kan deze mogelijk worden gevonden via de nationale of regionale catalogi. Hieronder volgen enkele aanvullende ingangen:
 
-![EU-geoportal metadata](media/metadata_EU_portal.png "EU INSPIRE metadata met link naar xml file")
-
-Wanneer een dataset niet te vinden is via het Europese INSPIRE Geoportal, dan kan deze mogelijk gevonden worden via de nationale of regionale catalogi van de lidstaten.
-Hieronder volgen enkele tips voor onze buurlanden:
-
-- <a href="https://www.geodaten.niedersachsen.de/startseite/" target="_blank">Nedersaksen</a> (Duitsland)
-- <a href="https://www.geoportal.nrw/" target="_blank"> Noordrijn Westfalen</a> (Duitsland)
-- <a href="https://gdk.gdi-de.org/gdi-de/srv/dut/catalog.search#/home" target="_blank">Duitsland: Geodatencatalog</a> (Duitsland en ondersteunt Nederlands)
-- <a href="https://www.geopunt.be/" target="_blank">Vlaanderen</a> (België)
-- <a href="http://geoportail.wallonie.be/" target="_blank">Wallonië</a> (België)
-- <a href="https://ckan.publishing.service.gov.uk/dataset/" target="_blank">Groot Brittannië</a>
-- <a href="https://www.noordzeeloket.nl/beheer/noordzeeatlas/" target="_blank">Noordzee atlas</a>
+- [Nedersaksen](https://www.geodaten.niedersachsen.de/startseite/) (Duitsland)
+- [Noordrijn-Westfalen](https://www.geoportal.nrw/) (Duitsland)
+- [Duitsland: Geodatenkatalog](https://gdk.gdi-de.org/)
+- [Vlaanderen: Geopunt](https://www.geopunt.be/) (België)
+- [Wallonië: Géoportail](https://geoportail.wallonie.be/) (België)
+- [Verenigd Koninkrijk: data.gov.uk](https://www.data.gov.uk/)
+- [Noordzeeatlas](https://www.noordzeeloket.nl/beheer/noordzeeatlas/)
 
 Tips voor het vinden van Europese data:
-- Omdat de metadata vaak in de lokale taal staat beschreven, loont het om eerst op INSPIRE thema te zoeken en om op zoektermen in de gebruikte metadata taal te zoeken. Er is in het INSPIRE geoportal ook een optie om de metadata automatisch in het Engels te vertalen (zie rechtsboven onder Show metadata fields in:).
-- Omdat datasets in de buurlanden vaak regionaal versnipperd zijn, loont het ook te zoeken op de regionale naam.
-- Houdt rekening met verschillen in de actualiteit en detailniveau.
 
+- Metadata is vaak in de taal van het land beschreven. Zoek daarom ook met de naam van het INSPIRE-thema en relevante zoektermen in die taal.
+- Omdat datasets in buurlanden vaak per regio worden gepubliceerd, loont het om ook op de regionale naam te zoeken.
+- Houd rekening met verschillen in actualiteit, detailniveau, definities en geografische dekking.
 
 ## Benaderen
 
-In de metadata van de dataset is te zien op welke manier de data benaderd kan worden.
-INSPIRE eist dat data naast vindbaar ook viewbaar en downloadbaar is. Hieronder wordt het bekijken (viewen) van de data behandeld voor de Nederlandse data in het Nationaal Georegister (NGR) en daarna voor Europese data via het Europese INSPIRE Geoportal. Daarnaast is beschreven hoe de data in een GIS of browser benaderd kan worden.
+In de metadata van een dataset staan verwijzingen naar de mogelijkheden om de data te bekijken en te downloaden. INSPIRE voorziet hiervoor in bekijkservices (viewservices) en downloadservices. Controleer ook de eventuele toegangs- en gebruiksvoorwaarden.
 
+Hieronder wordt beschreven hoe Nederlandse data via het Nationaal Georegister (NGR) en Europese data via data.europa.eu en de bijbehorende broncatalogi kan worden benaderd. Daarnaast wordt toegelicht hoe de beschikbare services of bestanden in een GIS of browser kunnen worden gebruikt.
 
 ### Viewen Nederlandse data via NGR
 
@@ -90,12 +80,13 @@ Het resultaat ziet er dan bijvoorbeeld als volgt uit.
 
 Door op een object in de getoonde kaart te klikken kan in de meeste gevallen ook de attribuutinformatie van dat object getoond worden.
 
-### Viewen Europese data via INSPIRE Geoportal
+### Viewen Europese data via data.europa.eu
 
-In het INSPIRE Geoportal is per dataset aangegeven hoe de dataset te benaderen is met het view symbool ![image](https://user-images.githubusercontent.com/80040145/170225076-edd06c12-fa61-4756-8d15-178b0c16f60c.png) en met het download symbool ![image](https://user-images.githubusercontent.com/80040145/170225177-156c949a-e107-4c0f-9613-5d0102738d33.png). 
-Door op het view symbool te klikken bij de gevonden kaartlagen in het INSPIRE Geoportal kan de data bekeken worden. Ook hier geldt dat je soms moet inzoomen voordat de data goed getoond wordt.
+Zoek de gewenste dataset op [data.europa.eu](https://data.europa.eu/data/datasets?locale=nl) en open de datasetpagina. Voor ondersteunde geospatiale distributies biedt het portaal een kaartvoorbeeld waarmee de data direct kan worden bekeken.
 
-![view resultaat EU Geoportal](media/viewresultaat_EU_Geoportal.png "view resultaat in het EU Geoportaal")
+Wanneer geen kaartvoorbeeld beschikbaar is, volg dan de verwijzingen naar een viewer, bekijkservice (viewservice) of de broncatalogus van de dataprovider. Niet iedere servicelink opent rechtstreeks een kaartviewer; soms moet de service eerst in een GIS worden toegevoegd.
+
+Ook hier geldt dat je soms moet inzoomen voordat de kaartlagen zichtbaar worden.
 
 ### Downloaden data
 
