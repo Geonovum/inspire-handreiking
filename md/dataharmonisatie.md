@@ -216,7 +216,7 @@ Iedere INSPIRE-codelijst valt onder een van de volgende uitbreidingsregimes:
 - **any**: in dit geval zijn geen waarden bekend in de centrale codelijst en moet de data provider zijn eigen codelijst publiceren.
 
 ### Codelijstregister
-In het  <a href="http://inspire.ec.europa.eu/codelist/" target="_blank">Europese INSPIRE codelijstregister</a> worden de waarden van de door de EU beheerde codelijsten gepubliceerd. Bij een codelijst is altijd een verwijzing opgenomen naar dit Europese INSPIRE codelijstregister. 
+In het  <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http%3A%2F%2Finspire.ec.europa.eu%2Fcodelist" target="_blank">Europese INSPIRE codelijstregister</a> worden de waarden van de door de EU beheerde codelijsten gepubliceerd. Bij een codelijst is altijd een verwijzing opgenomen naar dit Europese INSPIRE codelijstregister. 
 
 Wanneer een dataprovider zijn eigen uitbreiding op een codelist definieert, moeten deze in een lokaal codelijstregister beheerd worden. Hiervoor kan het <a href="http://inspireregister.nl/codelijst" target="_blank">INSPIRE codelijstregister voor Nederland</a> worden gebruikt. Voor het registreren van codelijsten op het Nederlandse codelijstregister is een account nodig. Deze accounts zijn aan te vragen via de [INSPIRE Helpdesk](#inspire-helpdesk) door een e-mail te sturen naar inspire@geonovum.nl. Na <a href="http://inspireregister.nl:8080/re3gistry2/login" target="_blank">inloggen</a> kun je voor je gegevensbron een nieuwe codelijst registreren en vullen. Een Engelstalige handleiding voor het gebruik van het codelijstregister is <a href="https://github.com/ec-jrc/re3gistry/blob/master/documentation/user-manual.md" target="_blank">hier</a> te vinden.
 
