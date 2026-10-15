@@ -396,8 +396,7 @@ Als een organisatie een eigen catalogue heeft, kan van deze catalogue informatie
 
 
 ### Publiceren INSPIRE-aanduiding
-
-In het NGR kunnen metadata van INSPIRE-datasets en -diensten worden gevonden door het categoriefilter INSPIRE toe te passen.
+In het NGR kunnen metadata van INSPIRE-datasets en -diensten worden gevonden door het categoriefilter INSPIRE toe te passen. Deze categorie helpt om de Nederlandse INSPIRE-metadataverzameling af te bakenen. Een duidelijk afgebakende verzameling is van belang voor de ontsluiting via een INSPIRE-zoekdienst (<em>discovery service</em>) en voor de monitoring en rapportage over de uitvoering van INSPIRE op Europees niveau.
 
 ![NGR met categorie INSPIRE](media/NGR-categorie-INSPIRE.png "Gebruik in het NGR het categoriefilter INSPIRE om metadata met deze categorie te vinden.")
 
