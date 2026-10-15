@@ -14,6 +14,39 @@ In Annex A van de INSPIRE-dataspecificaties is een *Abstract Test Suite (ATS)* o
 
 Tests uit een ATS die geautomatiseerd kunnen worden uitgevoerd, worden uitgewerkt in een *Executable Test Suite (ETS)*. De INSPIRE Reference Validator gebruikt deze ETS om metadata, datasets en services te toetsen aan de INSPIRE Technical Guidelines.
 
+### Overzicht van beschikbare tests
+
+De onderstaande tabel geeft een overzicht van tests voor data, metadata en services. De genoemde INSPIRE-testnamen zijn afkomstig uit het eerdere overzicht van de INSPIRE Reference Validator. Controleer welke tests en versies beschikbaar zijn in de gebruikte lokale instantie.
+
+| INSPIRE-eis | Validatietooling NL | INSPIRE Reference Validator (lokale instantie) |
+| ----------- | ------------------- | --------------------------------------------- |
+| **Dataharmonisatie** | | |
+| INSPIRE GML | | Validator: Data theme conformance |
+| **Metadata** | | |
+| Metadata dataset | <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Metadata" target="_blank">Validator: Nederlands profiel op ISO 19115 v21 2020</a> | Validator: INSPIRE Profile based on EN ISO 19115 and EN ISO 19119 |
+| Metadata service | <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Metadata" target="_blank">Validator: Nederlands profiel op ISO 19119 v21 2020</a> | Validator: INSPIRE Profile based on EN ISO 19115 and EN ISO 19119 |
+| **View service** | | |
+| WMS | <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services" target="_blank">Validator: Nederlands WMS profiel 1_3_0</a> | Validator: View Service WMS |
+| WMTS | | Validator: View Service WMTS |
+| **Download service** | | |
+| ATOM | | Validator: Download service – Pre-defined ATOM |
+| WFS | Validator: <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services" target="_blank">Nederlands WFS profiel WFS 2_0_0 ISO 19142</a> | Validator: Download Service - Direct WFS en/of Download Service - Pre-defined WFS |
+| WCS | | Validator: Download service – WCS core |
+| SOS | | Validator: Download service – Pre-defined SOS |
+| OGC API - Features | | Validator: Download service – OGC API - Features |
+| **Discovery service** | | |
+| Discovery service | | Validator: Discovery Service - CSW Core |
+
+### Beperkingen van validatietools
+
+Validatietools zijn nooit feilloos. Ze kunnen fouten bevatten of achterlopen op de ontwikkeling van de Technical Guidelines. Ook kunnen verschillende tools voor hetzelfde onderdeel verschillende resultaten geven, bijvoorbeeld doordat zij andere testmethoden of versies van testsets gebruiken.
+
+Controleer daarom welke eisen en versies van de testsets de gebruikte validatietool ondersteunt.
+
+Validatietools toetsen voornamelijk technische aspecten, zoals de aanwezigheid en structuur van een identifier. Of die identifier naar de juiste dataset verwijst, kan niet altijd automatisch worden vastgesteld. Bovendien zijn niet alle vereisten geautomatiseerd te toetsen.
+
+Vul geautomatiseerde validatie daarom aan met handmatige controles. Controleer of de datasets vindbaar zijn en test rechtstreeks of de data via de aangeboden services kunnen worden bekeken en gedownload.
+
 ### Conformance classes
 
 De INSPIRE Reference Validator gebruikt zogenaamde conformance classes. Deze groeperen vereisten waaraan een implementatie kan worden getoetst. In bepaalde gevallen zijn meerdere conformance classes van belang. Sommige classes zijn afhankelijk van andere classes. Controleer of de gebruikte lokale instantie deze afhankelijkheden automatisch meeneemt.
@@ -51,8 +84,6 @@ Voor het toetsen aan Nederlandse profielen zijn de Nederlandse validatietools be
 
 ### INSPIRE Reference Validator
 
-De INSPIRE Reference Validator is een tool waarmee je kunt testen in hoeverre metadata, services en datasets voldoen aan de INSPIRE Technical Guidelines.
-
 Met de INSPIRE Reference Validator kunnen validatietesten worden uitgevoerd voor de volgende onderdelen:
 
 - Metadata.
@@ -85,52 +116,17 @@ Voordat de Europese INSPIRE Reference Validator beschikbaar was, kon Nederlandse
 
 De INSPIRE-regels in de Nederlandse validatietools worden niet meer bijgewerkt. Gebruik deze tools daarom voor het toetsen aan de Nederlandse profielen. Voor het toetsen aan de INSPIRE Technical Guidelines kan een lokale instantie van de INSPIRE Reference Validator worden gebruikt.
 
-### Overzicht van beschikbare tests
-
-De onderstaande tabel geeft een overzicht van tests voor data, metadata en services. De genoemde INSPIRE-testnamen zijn afkomstig uit het eerdere overzicht van de INSPIRE Reference Validator. Controleer welke tests en versies beschikbaar zijn in de gebruikte lokale instantie.
-
-| INSPIRE-eis | Validatietooling NL | INSPIRE Reference Validator (lokale instantie) |
-| ----------- | ------------------- | --------------------------------------------- |
-| **Dataharmonisatie** | | |
-| INSPIRE GML | | Validator: Data theme conformance |
-| **Metadata** | | |
-| Metadata dataset | <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Metadata" target="_blank">Validator: Nederlands profiel op ISO 19115 v21 2020</a> | Validator: INSPIRE Profile based on EN ISO 19115 and EN ISO 19119 |
-| Metadata service | <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Metadata" target="_blank">Validator: Nederlands profiel op ISO 19119 v21 2020</a> | Validator: INSPIRE Profile based on EN ISO 19115 and EN ISO 19119 |
-| **View service** | | |
-| WMS | <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services" target="_blank">Validator: Nederlands WMS profiel 1_3_0</a> | Validator: View Service WMS |
-| WMTS | | Validator: View Service WMTS |
-| **Download service** | | |
-| ATOM | | Validator: Download service – Pre-defined ATOM |
-| WFS | Validator: <a href="https://validatie.geostandaarden.nl/etf-webapp/testprojects?testdomain=Nederlandse%20profielen%20services" target="_blank">Nederlands WFS profiel WFS 2_0_0 ISO 19142</a> | Validator: Download Service - Direct WFS en/of Download Service - Pre-defined WFS |
-| WCS | | Validator: Download service – WCS core |
-| SOS | | Validator: Download service – Pre-defined SOS |
-| OGC API - Features | | Validator: Download service – OGC API - Features |
-| **Discovery service** | | |
-| Discovery service | | Validator: Discovery Service - CSW Core |
-
-**Let op:** De beschikbaarheid en benaming van de INSPIRE-tests kunnen per lokale instantie en versie verschillen.
-
-### Beperkingen van validatietools
-
-Validatietools zijn nooit feilloos. Ze kunnen fouten bevatten of achterlopen op de ontwikkeling van de Technical Guidelines. Ook kunnen verschillende tools voor hetzelfde onderdeel verschillende resultaten geven, bijvoorbeeld doordat zij andere testmethoden of versies van testsets gebruiken.
-
-Controleer daarom welke eisen en versies van de testsets de gebruikte validatietool ondersteunt.
-
-Validatietools toetsen voornamelijk technische aspecten, zoals de aanwezigheid en structuur van een identifier. Of die identifier naar de juiste dataset verwijst, kan niet altijd automatisch worden vastgesteld. Bovendien zijn niet alle vereisten geautomatiseerd te toetsen.
-
-Vul geautomatiseerde validatie daarom aan met handmatige controles. Controleer of de datasets vindbaar zijn en test rechtstreeks of de data via de aangeboden services kunnen worden bekeken en gedownload.
-
 ## Aanvullende controles
 
 ### Link checker
 
 De Link checker was een functie van het voormalige Europese INSPIRE Geoportal waarmee de verwijzingen tussen datasets, metadata en services konden worden gecontroleerd.
-
-Deze verwijzingen kunnen rechtstreeks worden gecontroleerd in de gepubliceerde metadata en servicedocumenten. Hiervoor is het niet nodig te wachten op harvesting door een dataportaal.
+Nu het INSPIRE Geoportal niet meer beschikbaar is, blijft het belangrijk om deze koppelingen correct vast te leggen en te controleren. De INSPIRE Good Practice [Data–Service Linking Simplification](https://github.com/INSPIRE-MIF/gp-data-service-linking-simplification) beschrijft een vereenvoudigde aanpak voor het vastleggen van deze koppelingen. De verwijzingen kunnen rechtstreeks worden gecontroleerd in de gepubliceerde metadata en servicedocumenten, zonder te wachten op harvesting door een dataportaal.
 
 Correcte verwijzingen via links en identifiers zijn essentieel voor een werkende infrastructuur. Hiermee wordt de relatie gelegd tussen een dataset, de bijbehorende metadata en de services waarmee de data kunnen worden bekeken en gedownload.
 
 Het controleren van verwijzingen en het testen van de werking van services vervangen niet de validatie van metadata, datasets en services. Zie hiervoor de paragraaf [Te gebruiken validators](#te-gebruiken-validators).
+
 
 ### Tips om data vindbaar, raadpleegbaar en downloadbaar te maken via het Europese dataportaal data.europa.eu
 
