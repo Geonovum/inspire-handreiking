@@ -78,9 +78,9 @@ Hier is onder andere de volgende informatie te vinden:
 - <a href="https://knowledge-base.inspire.ec.europa.eu/tools/inspire-your-country_en" target="_blank">Overzicht van de implementatie van INSPIRE in de verschillende lidstaten</a>
 
 ### Europees toegangspunt voor INSPIRE-data
-Sinds 1 juli 2026 zijn INSPIRE-datasets en -diensten via het <a href="https://data.europa.eu/" target="_blank">Europese Data Portal</a> toegankelijk. Dit portaal biedt verschillende zoekmogelijkheden, waaronder geospatiale zoekfuncties en thematische zoekingangen. INSPIRE-data worden daarmee ontsloten binnen het bredere Europese data-ecosysteem naast andere Europese overheidsdata. 
-Het Europese dataportaal harvest de metadata van officieel geregistreerde nationale data catalogi van Europese lidstaten en EFTA landen. 
+Sinds 1 juli 2026 vervangt het <a href="https://data.europa.eu/en/news-events/news/inspire-datasets-move-european-data-portal" target="_blank">Europese dataportaal het INSPIRE Geoportal als Europees toegangspunt voor INSPIRE-data</a>. INSPIRE-data worden daarmee ontsloten binnen het bredere Europese data-ecosysteem, naast andere Europese overheidsdata.
 
+Het Europese dataportaal verzamelt (harvest) metadata uit aangesloten datacatalogi, onder meer via <a href="https://dataeuropa.gitlab.io/data-provider-manual/how-to-publish/request-harvesting/#cswinspire-catalogue-services-for-geospatial-metadata" target="_blank">INSPIRE-zoekdiensten (CSW)</a>.
 
 ### INSPIRE registry
 De <a href="https://inspire.ec.europa.eu/registry" target="_blank">INSPIRE registry</a> omvat een aantal elementen waarvoor een duidelijke beschrijving nodig is en de mogelijkheid om ernaar te verwijzen door middel van unieke identificatoren. Voorbeelden van dergelijke elementen zijn de INSPIRE themas, codelijsten, applicatie schemas of zoek diensten. Sinds 2026 worden deze onderdelen geleidelijk geïntegreerd in het Europese platform voor <a href="https://op.europa.eu/en/web/eu-vocabularies/inspire-registry" target="_blank">EU Vocabularies</a>.
