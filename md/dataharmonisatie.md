@@ -252,23 +252,17 @@ Voor de specifieke afspraken wordt naar het hoofdstuk 'Data Capture' in de [INSP
 
 
 ## Geometrie
-In de [INSPIRE dataspecificaties](#inspire-dataspecificaties) en het [Generic Conceptual Model](#generic-conceptual-model) wordt aangegeven welke geometrietypen zijn toegestaan. In de meeste INSPIRE dataspecificaties wordt verwezen naar de *simple feature* specificatie van OGC, waarin exact beschreven staat hoe een valide geometrie eruit moet zien. In een aantal INSPIRE dataspecificaties worden ook geometrieën beschreven, die buiten de simple features vallen (zoals 3D-objecten).
+In de [INSPIRE dataspecificaties](#inspire-dataspecificaties) en het [Generic Conceptual Model](#generic-conceptual-model) wordt aangegeven welke geometrietypen zijn toegestaan. De meeste INSPIRE-dataspecificaties verwijzen naar de Simple Features-specificatie van OGC, waarin de regels voor geldige geometrieën zijn vastgelegd. Een aantal INSPIRE-dataspecificaties beschrijft ook geometrieën die buiten deze specificatie vallen, zoals volumetrische geometrieën (solids).
 
-Geometrische objecten moeten voldoen aan de regels zoals deze door het OGC worden gesteld. Validatietools voor INSPIRE kunnen helpen bij het detecteren van invalide geometrieën. Met deze tools kan een dataset van een dataprovider worden getest op de INSPIRE-conformiteit. Daarbij wordt niet alleen de geometrie gevalideerd, maar ook de conformiteit met het applicatieschema (.xsd) van het betreffende INSPIRE-thema.
-
-Let op: Sinds 2026 is de centrale Europese [Europese INSPIRE validator](#validatie) niet meer beschikbaar als centrale dienst. Voor validatie van de INSPIRE-standaard kunnen validatietools worden gebruikt die de INSPIRE-validatieregels ondersteunen. Voor het testen van de Nederlandse profielen blijven de Nederlandse validatietools relevant.
-
-Wanneer je alleen de geometrie wilt valideren, zijn er verschillende opties die conform de OGC-regels testen, zowel open-source tools (bijvoorbeeld <a href="https://github.com/locationtech/jts" target="_blank">JavaTopologySuite (JTS)</a>) als closed-source tools.
-
-
-Naast de geometrische benadering van 'valide objecten' zijn er ook specifieke regels voor bepaalde INSPIRE thema's zoals in de volgende twee subparagrafen staat beschreven.
+Geometrische objecten moeten voldoen aan de geometrische regels van de toepasselijke INSPIRE-dataspecificatie en de daarin aangehaalde OGC-standaarden. Voor het controleren van de geometrische validiteit kunnen gespecialiseerde tools worden gebruikt, zoals <a href="https://github.com/locationtech/jts" target="_blank">Java Topology Suite (JTS)</a>. Een dergelijke geometriecontrole vormt op zichzelf geen volledige toetsing van een dataset aan de INSPIRE-eisen.
+Naast deze algemene regels voor geometrische validiteit gelden voor bepaalde INSPIRE-thema’s aanvullende regels. Deze worden in de volgende twee subparagrafen beschreven.
 
 ### Aansluitende netwerken
 Binnen de INSPIRE thema's **Hydrografie** en **Vervoersnetwerken** zijn er aanvullende eisen gedefinieerd over het op elkaar aansluiten van deze netwerken (voorbeeld: wegen op waterwegen op spoor). Hiervoor is een mechanisme uitgewerkt waarin aangegeven moet worden welke knooppunten op elkaar horen aan te sluiten. Hiermee is het mogelijk de verschillende netwerken te koppelen zonder dat deze fysiek al op elkaar liggen. Dit moet op datasetniveau worden opgepakt.
 
 De aanvullende eisen hiervoor staan in de subparagraaf 'Logical Consistency – Topological consistency' van de INSPIRE dataspecificaties: 
-- voor het INSPIRE thema **Hydrografie** is dit in paragraaf 7.1.5 van de betreffende <a href="https://github.com/INSPIRE-MIF/technical-guidelines/blob/main/data/hy" target="_blank">dataspecificatie</a>;
-- voor het INSPIRE thema **Vervoersnetwerken** is dit in paragraaf 7.1.6 van de betreffende <a href="https://github.com/INSPIRE-MIF/technical-guidelines/blob/main/data/tn" target="_blank">dataspecificatie</a>. 
+- voor het INSPIRE-thema **Hydrografie** is dit in paragraaf 7.1.5 van de betreffende <a href="https://github.com/INSPIRE-MIF/technical-guidelines/blob/main/data/hy" target="_blank">dataspecificatie</a>;
+- voor het INSPIRE-thema **Vervoersnetwerken** is dit in paragraaf 7.1.6 van de betreffende <a href="https://github.com/INSPIRE-MIF/technical-guidelines/blob/main/data/tn" target="_blank">dataspecificatie</a>. 
 
 ### Cross-boundary harmonisatie
 Bij het gebruik van geodata over lands-, regio- en administratieve grenzen heen kunnen verschillende soorten fouten optreden, o.a. door:
